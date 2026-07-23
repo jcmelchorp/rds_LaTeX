@@ -1,0 +1,31 @@
+Manuel canjea sus estampillas por canicas. Cada día canjea dos estampillas más
+que el día anterior.
+El canje se realiza de la siguiente forma: por cada estampilla le entregan dos
+canicas.
+Para ordenar y contar las canicas que recibirá, él elaboró la Tabla
+\ref{tab:estampillas}:
+
+\begin{table}[H]
+    \centering
+    \caption{}
+    \label{tab:estampillas}
+    \begin{tabular}{c|c|c|c|c}
+        Día         & 1 & 2 & 3  & 4  \\ \hline
+        Estampillas & 1 & 3 & 5  & 7  \\ \hline
+        Canicas     & 2 & 6 & 10 & 14
+    \end{tabular}
+\end{table}
+
+Si Manuel suma la cantidad de canicas que recibió cada día,
+\textbf{¿cuántas canicas en total tendrá Manuel por el canje de sus estampillas
+    al término de 365 días?}\\
+
+\begin{solutionbox}{6.5cm}
+    La regla de recurrencia para la serie de canicas es:
+    \[a_n=4(n-1)+2\]
+    Calculando el $365^{vo}$ término de la serie
+    \[a_{365}=4(365-1)+2=1458\]
+    Utilizando la suma de los términos de una serie:
+    \[s_{365}=\dfrac{365(2+1458)}{2}=266,450\]
+    Manuel tendrá 266,450 canicas al cabo de 365 días.
+\end{solutionbox}

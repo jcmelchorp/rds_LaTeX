@@ -1,0 +1,64 @@
+\documentclass[12pt,addpoints]{evalua}
+\grado{3$^\circ$ de Secundaria}
+\cicloescolar{2025-2026}
+\materia{Ciencias y Tecnología: Química}
+\unidad{2}
+\title{Examen de la Unidad}
+\aprendizajes{\footnotesize%
+        \item Deduce información acerca de la estructura atómica
+              a partir de datos experimentales sobre propiedades
+              atómicas periódicas.
+        \item Representa y diferencia mediante esquemas, modelos y
+              simbología química, elementos y compuestos, así como
+              átomos y moléculas.
+        \item Explica y predice propiedades físicas de los materiales
+              con base en modelos submicroscópicos sobre la
+              estructura de átomos, moléculas o iones, y sus
+              interacciones electrostáticas.
+}
+\author{Prof.: Julio César Melchor Pinto}
+\include{../blocks/periodic_table}
+\begin{document}
+\begin{questions}
+    \question[10]{\include*{../questions/question015}}
+    \newpage
+    \question[10]{\include*{../questions/question004}}
+    \question[5] {\include*{../questions/question008}}
+    \newpage
+    \question[10]{ \include*{../questions/question025b}}
+
+    % \newpage
+    % \begin{multicols}{3}
+    \question[10]{ \include*{../questions/question026f}}
+    \question[10]{ \include*{../questions/question026q}}
+    \question[10]{ \include*{../questions/question026i}}
+% \end{multicols}
+
+    \question[10]{ \include*{../questions/question012}}
+    \newpage
+    \question[5] {\include*{../questions/question016}}
+
+    \setlength{\columnsep}{1cm}
+    \begin{multicols}{2}
+        \question[5] {\include*{../questions/question013}}
+
+        \columnbreak
+
+        \question[5] {\include*{../questions/question014b}}
+    \end{multicols}
+
+    \newpage
+    \question[10]{ \include*{../questions/question009}}
+\end{questions}
+\begin{landscape}
+    \begin{minipage}[b]{\textwidth}
+        \thispagestyle{foot}
+        \begin{table}[H]
+            \centering
+            \caption{Tabla Peri\'odica de los Elementos.}
+            \TablaPeriodica[0.48]
+            \label{tab:periodic_table}
+        \end{table}
+    \end{minipage}
+\end{landscape}
+\end{document}

@@ -1,0 +1,46 @@
+Aditi y Kavita tenían 40 monedas entre las dos. Aditi le dio 10 monedas a Kavita.
+El producto de las monedas que tienen ahora es 375. Sea $x$ la cantidad de monedas que tenía Aditi al principio.
+
+\begin{subparts}
+    \subpart \textbf{¿Cuál de las siguientes ecuaciones cuadráticas satisface $x$?}
+    \vspace{-0.4cm}
+    \fullwidth{
+        \begin{oneparchoices}
+            \choice $-x^2+60x+875=0$
+            \choice $-x^2-60x+875=0$
+            \choice $-x^2-60x-875=0$
+            \CorrectChoice $-x^2+60x-875=0$
+        \end{oneparchoices}
+    }
+
+    \begin{solutionbox}{4.8cm}
+        Sea $x$ la cantidad de monedas que tenía Aditi al principio, entonces Kavita tiene $40-x$. Si Aditi le da 10 monedas a Kavita, entonces Aditi tiene $x-10$ y Kavita tiene $40-x+10=50-x$. Con estas variables, su producto es:
+        \begin{align*}
+            (x-10)(-x+50)        & =375 \\
+            -x^2+50x+10x-500-375 & = 0  \\
+            -x^2+60x-875         & = 0
+        \end{align*}
+    \end{solutionbox}
+
+    \subpart Si Aditi tenía menos de 30 monedas al principio.\\
+    \textbf{¿Con cuántas monedas empezó Aditi?}
+
+    \begin{solutionbox}{13cm}
+        Para encontrar $x$, se debe resolver la ecuación:
+        \[-x^2+60x-875  =0 \]
+        De acuerdo con la forma estándar $ax^2 + bx + c = 0$ de una ecuación cuadrática, sus coeficientes son:
+        \[a=-1, \quad b=60 \quad \text{y} \quad c=-875\]
+        Sustituyendo los coeficientes en la fórmula cuadrática:
+        \begin{align*}
+            x   & = \dfrac{-b\pm\sqrt{b^2-4ac}}{2a}                  \\[1.2em]
+            x   & = \dfrac{-60\pm\sqrt{60^2-4(-1)(-875)}}{2(-1)}     \\[1.2em]
+            x   & = \dfrac{-60\pm\sqrt{3600-3500}}{-2}               \\[1.2em]
+            x   & = \dfrac{-60\pm 10}{-2}                            \\[1.2em]
+            x_1 & = \dfrac{-60+10}{-2}=\dfrac{-50}{-2}=25 \text{ y } \\[1.2em]
+            x_2 & = \dfrac{-60-10}{-2}=\dfrac{-70}{-2}=35
+        \end{align*}
+        Ya que Aditi tenía menos de 30 monedas:
+        $\therefore x=25$
+        % \end{multicols}
+    \end{solutionbox}
+\end{subparts}

@@ -1,0 +1,21 @@
+Completa la tabla \ref{tab:3.12}.
+
+\renewcommand{\arraystretch}{3}
+
+\begin{table}[H]
+    \rowcolors{1}{}{lightgray!20}
+    \centering
+    \caption{Fórmulas de área}
+    \label{tab:3.12}
+    \begin{tabular}{|c|c|c|p{3cm}|}
+        \toprule                 \rowcolor{colorrds!80}
+        \textbf{\color{white}Figura} & \textbf{\color{white}Elementos para calcular el área} & \textbf{\color{white}Literales para simbolizar} & \textbf{\color{white}Expresión}                            \\ \midrule
+        Cuadrado                     & \ifprintanswers Un lado\fi                            & \ifprintanswers L\fi                            & \ifprintanswers $A=L^2$ \fi                                \\ \hline
+        Rectángulo                   & Base y altura                                         & $b$,$h$                                             & $A=b\times h$                                              \\ \hline
+        Triángulo rectángulo         & \ifprintanswers Base y altura\fi                      & \ifprintanswers b,h\fi                          & \ifprintanswers $A=\dfrac{b h}{2}$ \fi               \\ \hline
+        Trapecio                     & \ifprintanswers Base mayor, base menor y altura\fi    & \ifprintanswers B,b,h\fi                        & \ifprintanswers $A=\dfrac{\left(B+b\right) h}{2}$ \fi \\ \hline
+        Hexágono regular             & Un lado y el apotema                                  & $L$,$a$                                         & $A=\dfrac{6L\cdot a}{2}$                                   \\ \hline
+        Decágono regular             & \ifprintanswers Un lado y el apotema\fi               & \ifprintanswers L,a\fi                          & \ifprintanswers $A=\dfrac{10L a}{2}$ \fi             \\
+        \bottomrule
+    \end{tabular}
+\end{table}

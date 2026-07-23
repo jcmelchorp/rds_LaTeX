@@ -1,0 +1,31 @@
+\begin{infocard}{Clasificación de los enlaces químicos}
+    \begin{tikzpicture}[sibling distance=10em,level distance=4em,%grow=right,
+            tree/.style={draw,shape=rectangle,rounded corners, every node/.style={}},
+            table/.style={matrix of nodes,nodes={align=right,inner xsep=\tabcolsep}, anchor=east,}]
+        \node[tree]{Enlaces químicos}
+        child{node[tree,name=a,yshift=-2em]{Iónicos}}
+        child{node[tree]{Covalentes}
+                    [level distance=2em,sibling distance=7em]
+                child{node[tree]{Polar}}
+                child{node[tree]{No polar}}}
+        child{node[tree,name=b,yshift=-2em]{Metálicos}};
+        \matrix[table] at (a.south east) {%
+        {
+                \color{Goldenrod}\faIcon[regular]{bolt}} Conductividad eléctrica    & & & \\
+        \faIcon[regular]{flask} Solubilidad   & & & \\
+        {\color{cyan}$\text{\faIcon[regular]{thermometer-empty}}^{\text{\faIcon[regular]{snowflake}}}$} Punto de fusión & & & \\
+        {\color{red}$\text{\faIcon[regular]{thermometer-three-quarters}}^{\text{\faIcon[regular]{fire}}}$} Punto de ebullición & & & \\
+        };
+        % \begin{scope}[on background layer]
+        %     \node [fill=black!25, fit={(-6,-2) (6,-5)}, align=left,inner ysep=.05em, inner xsep=.75em, outer sep=0pt] {
+        %         \matrix [table,draw,nodes=draw]
+        %         {
+        %             \node {a};  & \node{Monday};  & \node{3};  & \node{4};  \\
+        %             \node {a};  & \node{Monday};  & \node{3};  & \node{4};  \\
+        %             \node {a};  & \node{Monday}; & \node{3}; & \node{4}; \\
+        %             \node {a}; & \node{Monday}; & \node{3}; & \node{4}; \\
+        %         }};
+        % \end{scope}
+    \end{tikzpicture}
+\end{infocard}
+

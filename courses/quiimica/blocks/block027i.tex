@@ -1,0 +1,27 @@
+\begin{warncard}[adjusted title={Algoritmo de cálculo}]
+    \begin{tikzpicture}[
+            node distance=0.5em and 2em,
+            block/.style={rectangle, draw,text width=7em,
+                    text centered, rounded corners, minimum height=2em},
+            line/.style={draw, -latex},
+        ]
+
+        \node [block, ] (hc) {Dividir entre $6.023 \times 10^{23}$};
+        \node [block, fill=Green!45, below right= of hc] (serv) {Moles};
+        \node [block, below left= of serv] (util) {Multiplicar por $6.023 \times 10^{23}$};
+        \node [block, fill=orange!45, above left = of util] (fin) {Número de partículas};
+        \node [block,  below right= of serv] (mass1) {Dividir entre $m_a$ o $m_m$};
+        \node [block, above right= of serv] (mass2) {Multiplicar por $m_a$ o $m_m$};
+        \node [block,fill=colorrds!45, below right= of mass2] (mass) {Masa};
+
+        % Connections
+        \path [line] (hc.east) to[out=0, in=90] (serv.north);
+        \path [line] (serv.south) to[out=-90, in=0] (util.east);
+        \path [line] (util.west) to[out=180, in=-90] (fin.south);
+        \path [line] (fin.north) to[out=90, in=180] (hc.west);
+        \path [line] (mass1.west) to[out=180, in=-90] (serv.south);
+        \path [line] (serv.north) to[out=90, in=180] (mass2.west);
+        \path [line] (mass2.east) to[out=0, in=90] (mass.north);
+        \path [line] (mass.south) to[out=-90, in=0] (mass1.east);
+    \end{tikzpicture}
+\end{warncard}

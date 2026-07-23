@@ -1,0 +1,14 @@
+\begin{infocard}{El c\'irculo}
+    \begin{minipage}[c][50pt][t]{.4\textwidth}
+        \begin{tikzpicture}
+            % Define radius
+            \def\r{0.7}
+            \draw (0, 0) node[circle, fill, inner sep=1] (orig) {} -- node[circle, fill, inner sep=0, label=above:$r$] (a) {} (\r,0) ;
+            \draw (orig) circle (\r);
+        \end{tikzpicture}
+    \end{minipage}\hfill
+    \begin{minipage}[c][50pt][c]{.6\textwidth}
+        Perímetro: $P=2\pi r$\\
+        Área: $A=\pi r^2$\\
+    \end{minipage}
+\end{infocard}

@@ -1,0 +1,24 @@
+\begin{infocard}{El c\'irculo}
+    \begin{minipage}{.45\textwidth}
+        \begin{tikzpicture}
+            % Puntos
+            \tkzDefPoint(0,0){A}
+            \tkzDefPoint(0:1.5){B}
+            \tkzDrawPoints(A,B)
+            % C\’{\i}rculo
+            \tkzDrawCircle[R,fill=gray, opacity=.1](A,1.5cm)
+            % Etiqueta de Puntos
+            \tkzLabelPoints[above left](B)
+            \tkzLabelPoints[below left](A)
+            % Segmento
+            \tkzDrawSegment[color=black](A,B)
+            \tkzLabelSegment[above](A,B){r}
+        \end{tikzpicture}
+    \end{minipage}\hfill
+    \begin{minipage}{.45\textwidth}
+        Perímetro:
+        \[P=2\pi r\]
+        Área:\\
+        \[A=\pi r^2\]
+    \end{minipage}
+\end{infocard}

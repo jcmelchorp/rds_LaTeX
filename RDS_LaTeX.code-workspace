@@ -17,7 +17,7 @@
 		"latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
 		"latex-workshop.latex.texDirs": [
 			"%WORKSPACE_FOLDER%/resources",
-			"%WORKSPACE_FOLDER%/aux",
+			//"%WORKSPACE_FOLDER%/aux",
 			//"%DIR%/base",
 			//"%DIR%/images",
 			//"%DIR%/base/pgf-periodictable",
@@ -37,7 +37,7 @@
 				],
 				"env": {
 					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
-					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:%DIR%/../base/:%DIR%/../images:"
 				}
 			},
 			{
@@ -88,7 +88,7 @@
 				],
 				"env": {
 					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
-					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:%DIR%/../base/:%DIR%/../images:"
 				}
 			},
 			{

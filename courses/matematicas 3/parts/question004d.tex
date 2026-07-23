@@ -1,0 +1,50 @@
+El producto de dos enteros pares positivos consecutivos es 80. Sea $n$ el menor entero.
+
+\begin{subparts}
+    \subpart  \textbf{¿Cuál de las siguientes ecuaciones cuadráticas satisface $n$?}
+
+    \begin{oneparchoices}
+        \choice $n^2+2n+80=0$
+        \choice $n^2-2n-80=0$
+        \choice $n^2-2n+80=0$
+        \CorrectChoice $n^2+2n-80=0$
+    \end{oneparchoices}
+
+    \vspace{0.5cm}
+    \begin{solutionbox}{3.5cm}
+        Sea $n$ el menor entero par positivo, y su consecutivo par $n+2$. Entonces, el producto es:
+        \begin{align*}
+            n(n+2)     & =80 \\
+            n^2+2n     & =80 \\
+            n^2+2n -80 & =0
+        \end{align*}
+    \end{solutionbox}
+
+    \subpart \textbf{Encuentra el número $n$.}
+
+    \begin{solutionbox}{15cm}
+        %\begin{multicols}{3}
+        Para encontrar $n$, se debe resolver la ecuación:
+        \[
+            n^2+2n -80 =0
+        \]
+        De acuerdo con la Forma estándar $at^2 + bt + c = 0$ de una ecuación cuadrática, sus coeficientes son:
+        \begin{align*}
+            a & =1   \\
+            b & =2   \\
+            c & =-80
+        \end{align*}
+        Sustituyendo los coeficientes en la fórmula cuadrática:
+        \begin{align*}
+            n   & = \dfrac{-b\pm\sqrt{b^2-4ac}}{2a}            \\[1.5em]
+            n   & = \dfrac{-2\pm\sqrt{(-2)^2-4(1)(-80)}}{2(1)} \\[1.5em]
+            n   & = \dfrac{-2\pm\sqrt{324}}{2}                 \\[1.5em]
+            n   & = \dfrac{-2\pm 18}{2}                        \\[1.5em]
+            n_1 & = \dfrac{-2-18}{2}=\dfrac{-20}{2}=-10        \\[1.5em]
+            n_2 & = \dfrac{-2+18}{2}=\dfrac{16}{2}=8
+        \end{align*}
+        Ya que sólo hablamos de enteros positivos:
+        \[\therefore n=8\]
+        % \end{multicols}
+    \end{solutionbox}
+\end{subparts}

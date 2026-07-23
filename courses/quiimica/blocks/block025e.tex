@@ -1,0 +1,46 @@
+\begin{warncard}
+    \newcommand*{\mytextstyle}{\large\sffamily\bfseries\color{black!85}}
+    \newcommand{\arcarrow}[4]{%
+        % inner radius, middle radius, outer radius, start angle,
+        % end angle, tip protusion angle, options, text
+        \pgfmathsetmacro{\rin}{1.7}
+        \pgfmathsetmacro{\rmid}{2.0}
+        \pgfmathsetmacro{\rout}{2.3}
+        \pgfmathsetmacro{\astart}{#1}
+        \pgfmathsetmacro{\aend}{#2}
+        \pgfmathsetmacro{\atip}{5}
+        \fill[#4, very thick] (\astart+\atip:\rin)
+        arc (\astart+\atip:\aend:\rin)
+        -- (\aend-\atip:\rmid)
+        -- (\aend:\rout)   arc (\aend:\astart+\atip:\rout)
+        -- (\astart:\rmid) -- cycle;
+        \path[
+            decoration = {
+                    text along path,
+                    text = {|\mytextstyle|#3},
+                    text align = {align = center},
+                    raise = -1ex
+                },
+            decorate
+        ](\astart+\atip:\rmid) arc (\astart+\atip:\aend+\atip:\rmid);
+    }
+    \begin{center}
+        \begin{tikzpicture}
+            \fill[even odd rule,SubjectColor!20] circle (1.6);
+
+            \node at (0,0) [
+                font  = \mytextstyle,
+                color = black,
+                align = center
+            ]{
+                Indicadores de \\
+                Reacción\\
+                Química
+            };
+            \arcarrow{140}{ 30}{Cambio de color}{Orange!40}
+            \arcarrow{200}{150}{Calor}{yellow!40}
+            \arcarrow{205}{296}{Precipitados}{Red!20}
+            \arcarrow{296}{385}{Efervecencia}{violet!20}
+        \end{tikzpicture}%
+    \end{center}%
+\end{warncard}

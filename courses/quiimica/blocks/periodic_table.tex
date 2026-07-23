@@ -1,0 +1,269 @@
+% \documentclass[tikz,border=40mm]{standalone}
+% \usetikzlibrary{shapes,calc}
+% \usepackage{anyfontsize}
+%\usepackage{mathptmx}
+%\begin{document}
+\newcommand{\ElemLabel}[4]{
+    \begin{minipage}{2.2cm}
+        \centering
+        {{\fontsize{13}{13}\selectfont\bfseries #1} \hfill {\fontsize{12}{12}\selectfont #2}}\\[1ex]
+        {\fontsize{36}{36}\selectfont \bfseries #3}\\[2ex]
+        {\fontsize{13}{13}\selectfont  \sffamily #4}
+    \end{minipage}
+}
+
+\newcommand{\NaturalElem}[4]{\ElemLabel{#1}{#2}{#3}{#4}}
+
+\newcommand{\SyntheticElem}[4]{\ElemLabel{#1}{#2}{\color{gray}#3}{\color{gray}#4}}
+
+\newcommand{\TablaPeriodica}[1][0.55]{
+    \begin{tikzpicture}[font=\normalfont,scale=#1, transform shape]
+
+        % Fill Color Styles
+        \tikzstyle{ElementFill} = [fill=gray!40]
+        \tikzstyle{AlkaliMetalFill} = [fill=RoyalPurple!50]
+        \tikzstyle{AlkalineEarthMetalFill} = [fill=RoyalBlue!55]
+        \tikzstyle{MetalFill} = [fill=SkyBlue!40]
+        \tikzstyle{MetalloidFill} = [fill=DarkOliveGreen!40]
+        \tikzstyle{NonmetalFill} = [fill=Orange!55]
+        \tikzstyle{HalogenFill} = [fill=BrickRed!40]
+        \tikzstyle{NobleGasFill} = [fill=DarkOrchid!40]
+        \tikzstyle{LanthanideActinideFill} = [fill=CornflowerBlue!40]
+
+        % Element Styles
+        \tikzstyle{Element} = [ElementFill,
+        minimum width=2.5cm, minimum height=2.5cm, node distance=2.75cm]
+        \tikzstyle{AlkaliMetal} = [Element, AlkaliMetalFill]
+        \tikzstyle{AlkalineEarthMetal} = [Element, AlkalineEarthMetalFill]
+        \tikzstyle{Metal} = [Element, MetalFill]
+        \tikzstyle{Metalloid} = [Element, MetalloidFill]
+        \tikzstyle{Nonmetal} = [Element, NonmetalFill]
+        \tikzstyle{Halogen} = [Element, HalogenFill]
+        \tikzstyle{NobleGas} = [Element, NobleGasFill]
+        \tikzstyle{LanthanideActinide} = [Element, LanthanideActinideFill]
+        \tikzstyle{PeriodLabel} = [font={\sffamily\LARGE}, node distance=2.0cm]
+        \tikzstyle{GroupLabel} = [font={\sffamily\LARGE}, minimum width=2.75cm, node distance=2.0cm]
+
+        % Group 1 - IA
+        \node[Element] (H) {\NaturalElem{1} {1.0079}{H}{Hidr\'ogeno}};
+        \node[below of=H, AlkaliMetal] (Li) {\NaturalElem{3}{6.941}{Li}{Litio}};
+        \node[below of=Li, AlkaliMetal] (Na) {\NaturalElem{11}{22.990}{Na}{Sodio}};
+        \node[below of=Na, AlkaliMetal] (K) {\NaturalElem{19}{39.098}{K}{Potasio}};
+        \node[below of=K, AlkaliMetal] (Rb) {\NaturalElem{37}{85.468}{Rb}{Rubidio}};
+        \node[below of=Rb, AlkaliMetal] (Cs) {\NaturalElem{55}{132.91}{Cs}{Cesio}};
+        \node[below of=Cs, AlkaliMetal] (Fr) {\NaturalElem{87}{223}{Fr}{Francio}};
+
+        % Group 2 - IIA
+        \node[right of=Li, AlkalineEarthMetal] (Be) {\NaturalElem{4}{9.0122}{Be}{Berilio}};
+        \node[below of=Be, AlkalineEarthMetal] (Mg) {\NaturalElem{12}{24.305}{Mg}{Magnesio}};
+        \node[below of=Mg, AlkalineEarthMetal] (Ca) {\NaturalElem{20}{40.078}{Ca}{Calcio}};
+        \node[below of=Ca, AlkalineEarthMetal] (Sr) {\NaturalElem{38}{87.62}{Sr}{Stroncio}};
+        \node[below of=Sr, AlkalineEarthMetal] (Ba) {\NaturalElem{56}{137.33}{Ba}{Bario}};
+        \node[below of=Ba, AlkalineEarthMetal] (Ra) {\NaturalElem{88}{226}{Ra}{Radio}};
+
+        % Group 3 - IIIB
+        \node[right of=Ca, Metal] (Sc) {\NaturalElem{21}{44.956}{Sc}{Escandio}};
+        \node[below of=Sc, Metal] (Y) {\NaturalElem{39}{88.906}{Y}{Itrio}};
+        \node[below of=Y, LanthanideActinide] (LaLu) {\NaturalElem{57-71}{}{*}{Lant\'anido}};
+        \node[below of=LaLu, LanthanideActinide] (AcLr) {\NaturalElem{89-103}{}{**}{Act\'inido}};
+
+        % Group 4 - IVB
+        \node[right of=Sc, Metal] (Ti) {\NaturalElem{22}{47.867}{Ti}{Titanio}};
+        \node[below of=Ti, Metal] (Zr) {\NaturalElem{40}{91.224}{Zr}{Circonio}};
+        \node[below of=Zr, Metal] (Hf) {\NaturalElem{72}{178.49}{Hf}{Hafnio}};
+        \node[below of=Hf, Metal] (Rf) {\SyntheticElem{104}{261}{Rf}{Rutherfordio}};
+
+        % Group 5 - VB
+        \node[right of=Ti, Metal] (V) {\NaturalElem{23}{50.942}{V}{Vanadio}};
+        \node[below of=V, Metal] (Nb) {\NaturalElem{41}{92.906}{Nb}{Niobio}};
+        \node[below of=Nb, Metal] (Ta) {\NaturalElem{73}{180.95}{Ta}{Tantalo}};
+        \node[below of=Ta, Metal] (Db) {\SyntheticElem{105}{262}{Db}{Dubnio}};
+
+        % Group 6 - VIB
+        \node[right of=V, Metal] (Cr) {\NaturalElem{24}{51.996}{Cr}{Cromo}};
+        \node[below of=Cr, Metal] (Mo) {\NaturalElem{42}{95.94}{Mo}{Molybdeno}};
+        \node[below of=Mo, Metal] (W) {\NaturalElem{74}{183.84}{W}{Tungstenio}};
+        \node[below of=W, Metal] (Sg) {\SyntheticElem{106}{266}{Sg}{Seaborgio}};
+
+        % Group 7 - VIIB
+        \node[right of=Cr, Metal] (Mn) {\NaturalElem{25}{54.938}{Mn}{Manganeso}};
+        \node[below of=Mn, Metal] (Tc) {\NaturalElem{43}{96}{Tc}{Tecnecio}};
+        \node[below of=Tc, Metal] (Re) {\NaturalElem{75}{186.21}{Re}{Renio}};
+        \node[below of=Re, Metal] (Bh) {\SyntheticElem{107}{264}{Bh}{Bohrio}};
+
+        % Group 8 - VIIIB
+        \node[right of=Mn, Metal] (Fe) {\NaturalElem{26}{55.845}{Fe}{Hierro}};
+        \node[below of=Fe, Metal] (Ru) {\NaturalElem{44}{101.07}{Ru}{Ruthenio}};
+        \node[below of=Ru, Metal] (Os) {\NaturalElem{76}{190.23}{Os}{Osmio}};
+        \node[below of=Os, Metal] (Hs) {\SyntheticElem{108}{277}{Hs}{Hassio}};
+
+        % Group 9 - VIIIB
+        \node[right of=Fe, Metal] (Co) {\NaturalElem{27}{58.933}{Co}{Cobalto}};
+        \node[below of=Co, Metal] (Rh) {\NaturalElem{45}{102.91}{Rh}{Rodio}};
+        \node[below of=Rh, Metal] (Ir) {\NaturalElem{77}{192.22}{Ir}{Iridio}};
+        \node[below of=Ir, Metal] (Mt) {\SyntheticElem{109}{268}{Mt}{Meitnerio}};
+
+        % Group 10 - VIIIB
+        \node[right of=Co, Metal] (Ni) {\NaturalElem{28}{58.693}{Ni}{Niquel}};
+        \node[below of=Ni, Metal] (Pd) {\NaturalElem{46}{106.42}{Pd}{Paladio}};
+        \node[below of=Pd, Metal] (Pt) {\NaturalElem{78}{195.08}{Pt}{Platino}};
+        \node[below of=Pt, Metal] (Ds) {\SyntheticElem{110}{281}{Ds}{Darmstadtio}};
+
+        % Group 11 - IB
+        \node[right of=Ni, Metal] (Cu) {\NaturalElem{29}{63.546}{Cu}{Cobre}};
+        \node[below of=Cu, Metal] (Ag) {\NaturalElem{47}{107.87}{Ag}{Plata}};
+        \node[below of=Ag, Metal] (Au) {\NaturalElem{79}{196.97}{Au}{Oro}};
+        \node[below of=Au, Metal] (Rg) {\SyntheticElem{111}{280}{Rg}{Roentgenio}};
+
+        % Group 12 - IIB
+        \node[right of=Cu, Metal] (Zn) {\NaturalElem{30}{65.39}{Zn}{Zinc}};
+        \node[below of=Zn, Metal] (Cd) {\NaturalElem{48}{112.41}{Cd}{Cadmio}};
+        \node[below of=Cd, Metal] (Hg) {\NaturalElem{80}{200.59}{Hg}{Mercurio}};
+        \node[below of=Hg, Metal] (Cn) {\SyntheticElem{112}{285}{Cn}{Copernicio}};
+
+        % Group 13 - IIIA
+        \node[right of=Zn, Metal] (Ga) {\NaturalElem{31}{69.723}{Ga}{Galio}};
+        \node[above of=Ga, Metal] (Al) {\NaturalElem{13}{26.982}{Al}{Aluminio}};
+        \node[above of=Al, Metalloid] (B) {\NaturalElem{5}{10.811}{B}{Boro}};
+        \node[below of=Ga, Metal] (In) {\NaturalElem{49}{114.82}{In}{Indo}};
+        \node[below of=In, Metal] (Tl) {\NaturalElem{81}{204.38}{Tl}{Talio}};
+        \node[below of=Tl, Metal] (Nh) {\SyntheticElem{113}{284}{Nh}{Nihonio}};
+
+        % Group 14 - IVA
+        \node[right of=B, Nonmetal] (C) {\NaturalElem{6}{12.011}{C}{Carbono}};
+        \node[below of=C, Metalloid] (Si) {\NaturalElem{14}{28.086}{Si}{Silicio}};
+        \node[below of=Si, Metalloid] (Ge) {\NaturalElem{32}{72.64}{Ge}{Germanio}};
+        \node[below of=Ge, Metal] (Sn) {\NaturalElem{50}{118.71}{Sn}{Esta\~no}};
+        \node[below of=Sn, Metal] (Pb) {\NaturalElem{82}{207.2}{Pb}{Plomo}};
+        \node[below of=Pb, Metal] (Fl) {\SyntheticElem{114}{289}{Fl}{Flerovio}};
+
+        % Group 15 - VA
+        \node[right of=C, Nonmetal] (N) {\NaturalElem{7}{14.007}{N}{Nitr\'ogeno}};
+        \node[below of=N, Nonmetal] (P) {\NaturalElem{15}{30.974}{P}{F\'osforo}};
+        \node[below of=P, Metalloid] (As) {\NaturalElem{33}{74.922}{As}{Ars\'enico}};
+        \node[below of=As, Metalloid] (Sb) {\NaturalElem{51}{121.76}{Sb}{Antimonio}};
+        \node[below of=Sb, Metal] (Bi) {\NaturalElem{83}{208.98}{Bi}{Bismuto}};
+        \node[below of=Bi, Metal] (Mc) {\SyntheticElem{115}{288}{Mc}{Moscovio}};
+
+        % Group 16 - VIA
+        \node[right of=N, Nonmetal] (O) {\NaturalElem{8}{15.999}{O}{Ox\'igeno}};
+        \node[below of=O, Nonmetal] (S) {\NaturalElem{16}{32.065}{S}{Az\'ufre}};
+        \node[below of=S, Nonmetal] (Se) {\NaturalElem{34}{78.96}{Se}{Selenio}};
+        \node[below of=Se, Metalloid] (Te) {\NaturalElem{52}{127.6}{Te}{Tellurio}};
+        \node[below of=Te, Metalloid] (Po) {\NaturalElem{84}{209}{Po}{Polonio}};
+        \node[below of=Po, Metal] (Lv) {\SyntheticElem{116}{293}{Lv}{Libermonio}};
+
+        % Group 17 - VIIA
+        \node[right of=O, Halogen] (F) {\NaturalElem{9}{18.998}{F}{Fluor}};
+        \node[below of=F, Halogen] (Cl) {\NaturalElem{17}{35.453}{Cl}{Cloro}};
+        \node[below of=Cl, Halogen] (Br) {\NaturalElem{35}{79.904}{Br}{Bromo}};
+        \node[below of=Br, Halogen] (I) {\NaturalElem{53}{126.9}{I}{Yodo}};
+        \node[below of=I, Halogen] (At) {\NaturalElem{85}{210}{At}{\'Astato}};
+        \node[below of=At, Element] (Ts) {\SyntheticElem{117}{292}{Ts}{Teneso}};
+
+        % Group 18 - VIIIA
+        \node[right of=F, NobleGas] (Ne) {\NaturalElem{10}{20.180}{Ne}{Ne\'on}};
+        \node[above of=Ne, NobleGas] (He) {\NaturalElem{2}{4.0025}{He}{Helio}};
+        \node[below of=Ne, NobleGas] (Ar) {\NaturalElem{18}{39.948}{Ar}{Arg\'on}};
+        \node[below of=Ar, NobleGas] (Kr) {\NaturalElem{36}{83.8}{Kr}{Kript\'on}};
+        \node[below of=Kr, NobleGas] (Xe) {\NaturalElem{54}{131.29}{Xe}{Xen\'on}};
+        \node[below of=Xe, NobleGas] (Rn) {\NaturalElem{86}{222}{Rn}{Rad\'on}};
+        \node[below of=Rn, Nonmetal] (Og) {\SyntheticElem{118}{294}{Og}{Oganesón}};
+        %
+        % Period
+        \node[left of=H, PeriodLabel] (Period1) {1};
+        \node[left of=Li, PeriodLabel] (Period2) {2};
+        \node[left of=Na, PeriodLabel] (Period3) {3};
+        \node[left of=K, PeriodLabel] (Period4) {4};
+        \node[left of=Rb, PeriodLabel] (Period5) {5};
+        \node[left of=Cs, PeriodLabel] (Period6) {6};
+        \node[left of=Fr, PeriodLabel] (Period7) {7};
+        %
+        % Group
+        \node[above of=H, GroupLabel] (Group1) {1 \hfill IA};
+        \node[above of=Be, GroupLabel] (Group2) {2 \hfill IIA};
+        \node[above of=Sc, GroupLabel] (Group3) {3 \hfill IIIB};
+        \node[above of=Ti, GroupLabel] (Group4) {4 \hfill IVB};
+        \node[above of=V, GroupLabel] (Group5) {5 \hfill VB};
+        \node[above of=Cr, GroupLabel] (Group6) {6 \hfill VIB};
+        \node[above of=Mn, GroupLabel] (Group7) {7 \hfill VIIB};
+        \node[above of=Fe, GroupLabel] (Group8) {8 \hfill VIIIB};
+        \node[above of=Co, GroupLabel] (Group9) {9 \hfill VIIIB};
+        \node[above of=Ni, GroupLabel] (Group10) {10 \hfill VIIIB};
+        \node[above of=Cu, GroupLabel] (Group11) {11 \hfill IB};
+        \node[above of=Zn, GroupLabel] (Group12) {12 \hfill IIB};
+        \node[above of=B, GroupLabel] (Group13) {13 \hfill IIIA};
+        \node[above of=C, GroupLabel] (Group14) {14 \hfill IVA};
+        \node[above of=N, GroupLabel] (Group15) {15 \hfill VA};
+        \node[above of=O, GroupLabel] (Group16) {16 \hfill VIA};
+        \node[above of=F, GroupLabel] (Group17) {17 \hfill VIIA};
+        \node[above of=He, GroupLabel] (Group18) {18 \hfill VIIIA};
+        %
+        % Lanthanide
+        \node[below of=Rf, LanthanideActinide, yshift=-1cm] (La) {\NaturalElem{57}{138.91}{La}{Lant\'anido}};
+        \node[right of=La, LanthanideActinide] (Ce) {\NaturalElem{58}{140.12}{Ce}{Cerio}};
+        \node[right of=Ce, LanthanideActinide] (Pr) {\NaturalElem{59}{140.91}{Pr}{Praseodymio}};
+        \node[right of=Pr, LanthanideActinide] (Nd) {\NaturalElem{60}{144.24}{Nd}{Neodimio}};
+        \node[right of=Nd, LanthanideActinide] (Pm) {\NaturalElem{61}{145}{Pm}{Prometio}};
+        \node[right of=Pm, LanthanideActinide] (Sm) {\NaturalElem{62}{150.36}{Sm}{Samario}};
+        \node[right of=Sm, LanthanideActinide] (Eu) {\NaturalElem{63}{151.96}{Eu}{Europio}};
+        \node[right of=Eu, LanthanideActinide] (Gd) {\NaturalElem{64}{157.25}{Gd}{Gadolinio}};
+        \node[right of=Gd, LanthanideActinide] (Tb) {\NaturalElem{65}{158.93}{Tb}{Terbio}};
+        \node[right of=Tb, LanthanideActinide] (Dy) {\NaturalElem{66}{162.50}{Dy}{Disprosio}};
+        \node[right of=Dy, LanthanideActinide] (Ho) {\NaturalElem{67}{164.93}{Ho}{Holmio}};
+        \node[right of=Ho, LanthanideActinide] (Er) {\NaturalElem{68}{167.26}{Er}{Erbio}};
+        \node[right of=Er, LanthanideActinide] (Tm) {\NaturalElem{69}{168.93}{Tm}{Tulio}};
+        \node[right of=Tm, LanthanideActinide] (Yb) {\NaturalElem{70}{173.04}{Yb}{Yterbio}};
+        \node[right of=Yb, LanthanideActinide] (Lu) {\NaturalElem{71}{174.97}{Lu}{Luterio}};
+        %
+        % Actinide
+        \node[below of=La, LanthanideActinide] (Ac) {\NaturalElem{89}{227}{Ac}{Actinio}};
+        \node[right of=Ac, LanthanideActinide]              (Th) {\NaturalElem{90}{232.04}{Th}{Torio}};
+        \node[right of=Th, LanthanideActinide]              (Pa) {\NaturalElem{91}{231.04}{Pa}{Protactinio}};
+        \node[right of=Pa, LanthanideActinide]              (U)  {\NaturalElem{92}{238.03}{U}{Uranio}};
+        \node[right of=U, LanthanideActinide]               (Np) {\SyntheticElem{93}{237}{Np}{Neptunio}};
+        \node[right of=Np, LanthanideActinide]              (Pu) {\SyntheticElem{94}{244}{Pu}{Plutonio}};
+        \node[right of=Pu, LanthanideActinide]              (Am) {\SyntheticElem{95}{243}{Am}{Americio}};
+        \node[right of=Am, LanthanideActinide]              (Cm) {\SyntheticElem{96}{247}{Cm}{Curio}};
+        \node[right of=Cm, LanthanideActinide]              (Bk) {\SyntheticElem{97}{247}{Bk}{Berkelio}};
+        \node[right of=Bk, LanthanideActinide]              (Cf) {\SyntheticElem{98}{251}{Cf}{Californio}};
+        \node[right of=Cf, LanthanideActinide]              (Es) {\SyntheticElem{99}{252}{Es}{Einsteinio}};
+        \node[right of=Es, LanthanideActinide]              (Fm) {\SyntheticElem{100}{257}{Fm}{Fermio}};
+        \node[right of=Fm, LanthanideActinide]              (Md) {\SyntheticElem{101}{258}{Md}{Mendelevio}};
+        \node[right of=Md, LanthanideActinide]              (No) {\SyntheticElem{102}{259}{No}{Nobelio}};
+        \node[right of=No, LanthanideActinide]              (Lr) {\SyntheticElem{103}{262}{Lr}{Lawrencio}};
+        %
+        % Draw dotted lines connecting Lanthanide breakout to main table
+        \draw[thick,dotted] (LaLu.north east) -- (La.north west)
+        (LaLu.south west) -- (La.south west);
+        % Draw dotted lines connecting Actinide breakout to main table
+        \draw[thick,dotted] (AcLr.north east) -- (Ac.north west)
+        (AcLr.south west) -- (Ac.south west);
+        %
+        % Legend
+        \fill[AlkaliMetalFill] ($(La -| Period7.west) + (0em,2em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex]  (AlkaliMetal) {\fontsize{20}{20}\selectfont \bfseries Metales Alcalinos};
+        \fill[AlkalineEarthMetalFill] ($(AlkaliMetal.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (AlkalineEarthMetal) {\fontsize{20}{20}\selectfont \bfseries Metales Alcalino-terreos};
+        \fill[MetalFill] ($(AlkalineEarthMetal.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (Metal) {\fontsize{20}{20}\selectfont \bfseries Metal};
+        \fill[MetalloidFill] ($(Metal.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (Metalloid) {\fontsize{20}{20}\selectfont \bfseries Metaloide};
+        \fill[NonmetalFill] ($(Metalloid.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (Non-metal) {\fontsize{20}{20}\selectfont \bfseries No metal};
+        \fill[HalogenFill] ($(Non-metal.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (Halogen) {\fontsize{20}{20}\selectfont \bfseries Hal\'ogeno};
+        \fill[NobleGasFill] ($(Halogen.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (NobleGas) {\fontsize{20}{20}\selectfont \bfseries Gases Nobles};
+        \fill[LanthanideActinideFill] ($(NobleGas.west) - (2em,4em)$)
+        rectangle +(2em, 2em) node[right, yshift=-2ex] (Lanthanide/Actinide) {\fontsize{20}{20}\selectfont \bfseries Lant\'anidos/Act\'inidos};
+        %
+        \node at (Li -| V) [draw, Element, fill=white] (legend) {\NaturalElem{Z}{$A_r$}{\fontsize{36}{36}\selectfont S}{Símbolo}};
+        \node[align=left,xshift=2mm] at (Li -| Cr.east) {\fontsize{20}{20}\selectfont \bfseries Negro: Naturales \\ {\fontsize{20}{20}\selectfont \bfseries\color{gray}Gris: Sint\'eticos}};
+        \node[align=center] at (H -| Cr) {\fontsize{36}{6}\selectfont  \bfseries Simbología:};
+        % Diagram Title
+        % \node at (H.west -| Fe.north) [scale=2, font={\sffamily\Huge\bfseries}]
+        % {Tabla Peri\'odica de los Elementos};
+    \end{tikzpicture}
+}
+%\end{document}

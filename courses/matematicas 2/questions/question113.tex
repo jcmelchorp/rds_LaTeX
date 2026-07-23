@@ -1,0 +1,27 @@
+Un padre repartirá 3000 dólares entre sus cinco hijos, de tal forma que la diferencia entre los montos que reciba cada hijo sea la misma.
+Si le entrega 1000 dólares a su hijo mayor,
+\textbf{¿cuánto dinero recibirán los otros cuatro hijos?}
+
+\begin{solutionbox}{8cm}
+    \begin{multicols}{2}
+        Sabemos que la suma de la serie que representa la reparticion del dinero es:
+        \[s_{5}=\dfrac{5(1000+a_{5})}{2}=3,000\]
+        despejando $a_5$:
+        \begin{align*}
+            \dfrac{5(1000+a_{5})}{2} & =3,000     \\
+            5(360+a_{5})             & =6,000     \\
+            360+a_{5}                & = 1,200    \\
+            a_{5}                    & =1,200-360 \\
+            a_{5}                    & =840
+        \end{align*}
+        El hijo menor recibió 840 dólares; calculando la regla de recurrencia:
+        \[a_{5}=d(5-1)+1000=840\]
+        despejando $d$:
+        \begin{align*}
+            d(5-1)+1000 & =840      \\
+            d(5-1)      & =840-1000 \\
+            d           & =-40
+        \end{align*}
+        Por lo tanto, el hijo mayor (1) recibe 1000 dólares, el segundo recibe 960 dólares, el tercero recibe 920 dólares, el cuarto recibe 880 dólares, y el menor (5) recibe 840 dólares.
+    \end{multicols}
+\end{solutionbox}

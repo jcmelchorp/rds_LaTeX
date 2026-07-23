@@ -1,0 +1,43 @@
+Pedro es 10 años más joven que Ana. El producto de sus edades hace 2 años era 39. Sea $x$ la edad de Ana.
+\begin{subparts}
+    \subpart  \textbf{¿Cuál de las siguientes ecuaciones cuadráticas satisface $x$?}
+
+    \begin{oneparchoices}
+        \choice $x^2+14x+15=0$
+        \choice $x^2-14x+15=0$
+        \CorrectChoice $x^2-14x-15=0$
+        \choice $x^2+14x-15=0$
+    \end{oneparchoices}
+
+    \begin{solutionbox}{4.5cm}
+        Sea $x$ la edad de Ana, entonces Pedro tiene $x-10$. Hace 2 años, Ana tenía $x-2$ y Pedro $x-10-2=x-12$. El producto es:
+        \begin{align*}
+            (x-2)(x-12)   & =39  \\
+            x^2-14x+24    & = 39 \\
+            x^2-14x+24-39 & = 0  \\
+            x^2-14x-15    & = 0
+        \end{align*}
+    \end{solutionbox}
+
+    \subpart \textbf{Calcula la edad actual de Ana.}
+
+    \begin{solutionbox}{14.2cm}
+        Para encontrar $x$, se debe resolver la ecuación:
+        \[ x^2-14x-15  =0 \]
+        De acuerdo con la forma estándar $ax^2 + bx + c = 0$ de una ecuación cuadrática, sus coeficientes son:
+        \[a=-1, \quad b=-14 \quad \text{y} \quad c=-15\]
+        Sustituyendo los coeficientes en la fórmula cuadrática:
+        \begin{align*}
+            x   & = \dfrac{-b\pm\sqrt{b^2-4ac}}{2a}                 \\[1.2em]
+            x   & = \dfrac{-(-14)\pm\sqrt{(-14)^2-4(1)(-15)}}{2(1)} \\[1.2em]
+            x   & = \dfrac{14\pm\sqrt{256}}{2}                      \\[1.2em]
+            x   & = \dfrac{14\pm 16}{2}                             \\[1.2em]
+            x_1 & = \dfrac{14-16}{2}=\dfrac{-2}{2}=-1 \text{ y }    \\[1.2em]
+            x_2 & = \dfrac{14+16}{2}=\dfrac{30}{2}=15
+        \end{align*}
+
+        Ya que la edad de una persona no puede ser negativa:
+        \[\therefore x=15\]
+        %\end{multicols}
+    \end{solutionbox}
+\end{subparts}

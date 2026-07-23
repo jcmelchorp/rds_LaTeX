@@ -1,0 +1,58 @@
+Encuentra el valor de $x$ en el siguiente triángulo isóceles:
+
+% \begin{minipage}[t][][t]{0.3\textwidth}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\linewidth]{../images/pitagoras9.png}
+    \caption{}
+    \label{fig:pitagoras9}
+\end{figure}
+% \end{minipage}\hfill
+% \begin{minipage}[t][][t]{0.68\textwidth}
+\begin{solutionbox}{14cm}
+    \begin{minipage}{0.2\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\linewidth]{../images/pitagoras9a.png}
+            \caption{}
+            \label{fig:pitagoras9a}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\linewidth]{../images/pitagoras9b.png}
+            \caption{}
+            \label{fig:pitagoras9b}
+        \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.75\linewidth]{../images/pitagoras9c.png}
+            \caption{}
+            \label{fig:pitagoras9c}
+        \end{figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.75\textwidth}
+        El triángulo isóceles está formado por 2 triángulos congruentes (ver Figura \ref{fig:pitagoras9a}).
+        La base de cada triángulo rectángulo es la mitad de la base del triángulo isóceles.
+        Cuando se trata de un triángulo rectángulo podemos utilizar el teorema de Pitágoras para encontrar un lado faltante.
+        La ecuación del teorema de Pitágoras es:
+        \[{\color{orange}c}^2={\color{cyan}a}^2+{\color{LimeGreen}b}^2\]
+        donde $a$ y $b$ son las longitudes de los catetos, y $c$ es la longitud de la hipotenusa.
+        Etiquetemos la Figura del problema con $a$, $b$ y $c$ (ver Figura \ref{fig:pitagoras9b}).
+        Observa que $a$ y $b$ pueden intercambiarse, pues son catetos.
+        \begin{align*}
+            {\color{cyan}a}^2+{\color{LimeGreen}b}^2  ={\color{orange}c}^2         & \text{\quad El teorema de Pitágoras}                          \\
+            {\color{cyan}a}^2+{\color{LimeGreen}8}^2  ={\color{orange}\sqrt{80}}^2 & \text{\quad Sustituye las longitudes}                         \\
+            a^2+64   =80                                                           & \text{\quad Evalua los cuadrados conocidos}                   \\
+            a^2=80-64                                                              & \text{\quad Despejando } x                                    \\
+            a^2=16                                                                 & \text{\quad Restando}                                         \\
+            a=4                                                                    & \text{\quad Calculando la raíz en ambos lados de la ecuación} \\
+        \end{align*}
+        Como $a=4$ y $a$ es la mitad de la longitud de $x$ (ver Figura \ref{fig:pitagoras9c}), podemos multiplicar para obtener $x$.
+        \begin{align*}
+            x & = a\cdot 2 \\
+            x & = 4\cdot 2 \\
+            x & = 8        \\
+        \end{align*}
+    \end{minipage}
+\end{solutionbox}
+% \end{minipage}

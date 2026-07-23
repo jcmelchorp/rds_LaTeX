@@ -1,0 +1,27 @@
+Un padre repartirá 2700 dólares entre sus cinco hijos y decidió que cada hijo reciba un monto de dinero distinto de tal forma que la diferencia de montos entre los hijos sea la misma.
+Si le dará 780 dólares al hijo mayor,
+\textbf{¿cuánto dinero recibirán los demas hijos?}
+
+\begin{solutionbox}{8cm}
+    \begin{multicols}{2}
+        Sabemos que la suma de la serie que representa la reparticion del dinero es:
+        \[s_{5}=\dfrac{5(780+a_{5})}{2}=2,700\]
+        despejando $a_5$:
+        \begin{align*}
+            \dfrac{5(780+a_{5})}{2} & =2,700     \\
+            5(780+a_{5})            & =5,400     \\
+            780+a_{5}               & = 1,080    \\
+            a_{5}                   & =1,080-780 \\
+            a_{5}                   & =300
+        \end{align*}
+        El hijo menor recibirón 300 dólares; calculando la regla de recurrencia:
+        \[a_{5}=d(5-1)+780=300\]
+        despejando $d$:
+        \begin{align*}
+            d(5-1)+ 780 & =300     \\
+            d(5-1)      & =300-780 \\
+            d           & =-120
+        \end{align*}
+        Por lo tanto, el hijo mayor (1) recibe 780 dólares, el segundo recibe 660 dólares, el tercero recibe 540 dólares, el cuarto recibe 420 dólares, y el menor (5) recibe 300 dólares.
+    \end{multicols}
+\end{solutionbox}

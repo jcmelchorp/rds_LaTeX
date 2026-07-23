@@ -1,0 +1,20 @@
+Escribe en la Tabla \ref{tab:3.9} dos reglas equivalentes de cada sucesión.
+
+\renewcommand{\arraystretch}{2}
+
+\begin{table}[H]
+    \rowcolors{3}{colorrds!10}{lightgray!10}
+    \centering
+    \caption{}
+    \label{tab:3.9}
+    \begin{tabular}{r|p{2.5cm}|p{2.5cm}|}
+        \toprule
+        \rowcolor{colorrds!80}
+        {\bfseries\color{white}Término en la sucesión}               & \multicolumn{2}{c|}{\bfseries\color{white}Regla de recurrencia}                                       \\ \cline{2-3}
+        1, 4, 7, 10, 13, 16, 19,\dots                                & \ifprintanswers $1 + 3(n - 1)$                               \fi & \ifprintanswers $3n - 2$ \fi       \\ \hline
+        14, 21, 28, 35, 42, 49, 56,\dots                             & \ifprintanswers $14 + 7(n - 1)$                              \fi & \ifprintanswers $7n + 7$ \fi       \\ \hline
+        5, 1, -3, -7, -11, -15, -19,\dots                            & \ifprintanswers $5 - 4(n - 1)$                               \fi & \ifprintanswers $9 - 4n$ \fi       \\ \hline
+        $\dfrac{1}{2}$, 1,  $\dfrac{3}{2}$, 2, $\dfrac{5}{2}$, \dots & \ifprintanswers $-\dfrac{1}{2}+\dfrac{1}{2}\left(n-1\right)$ \fi & \ifprintanswers $\dfrac{1}{2}n$\fi \\ \cline{2-3}
+        \bottomrule
+    \end{tabular}
+\end{table}

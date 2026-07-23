@@ -1,0 +1,53 @@
+\begin{sectionbox}{Ondas electromagnéticas}
+
+    \begin{minipage}{0.38\linewidth}
+        La radiación electromagnética es una de muchas maneras como la energía viaja a través del espacio. El calor de un fuego que arde, la luz del sol, los rayos X que utiliza tu doctor, así como la energía que utiliza un microondas para cocinar comida, son diferentes formas de la radiación electromagnética. Mientras que estas formas de energía pueden verse muy diferentes una de otra, están relacionadas en que todas exhiben propiedades características de las ondas.
+        Si alguna vez has ido a nadar al océano, ya estás familiarizado con las ondas. 
+    \end{minipage}\qquad%
+    \begin{minipage}{0.5\linewidth}
+        \begin{figure}[H]
+            \centering
+            \caption{Las ondas electromagnéticas consisten de un campo eléctrico que oscila y de un campo magnético perpendicular que también oscila.}
+            \label{fig:emwave}
+            \begin{tikzpicture}[x={(-150:0.7)}, y={(90:1.0)}, z={(-10:8mm)}]
+                % Wave Function
+                \def\wave{
+                    \draw[fill, very thick, fill opacity=.2]
+                    (0,0) sin (1,1) cos (2,0) sin (3,-1) cos (4,0)
+                    sin (5,1) cos (6,0) sin (7,-1) cos (8,0);
+                    %sin (9,1) cos (10,0) sin (11,-1) cos (12,0);
+
+                    \foreach \shift in {0,4}
+                        {
+                            \begin{scope}[xshift=\shift cm,thin]
+                                \draw[-stealth, thick] (.5,0)  -- (0.5,0 |- 45:1cm);
+                                \draw[-stealth, thick] (1,0)   -- (1,1);
+                                \draw[-stealth, thick] (1.5,0) -- (1.5,0 |- 45:1cm);
+                                \draw[-stealth, thick] (2.5,0) -- (2.5,0 |- -45:1cm);
+                                \draw[-stealth, thick] (3,0)   -- (3,-1);
+                                \draw[-stealth, thick] (3.5,0) -- (3.5,0 |- -45:1cm);
+                            \end{scope}
+                        }
+                }
+
+                % Red Wave
+                \begin{scope}[canvas is zy plane at x=0, draw=red, fill=red]
+                    \draw[-latex, thick, black] (0,0) -- (0, 1.5) node[above] {$\mathbf E$};
+                    \wave
+                \end{scope}
+
+                % Blue Wave
+                \begin{scope}[canvas is zx plane at y=0, draw=blue, fill=blue]
+                    %% Direction of Propagation
+                    \draw[-latex, thick, black] (0,0) -- (9, 0) node[rotate = -12, pos=1.05] {Dirección de \\ propagación};
+                    \draw[-latex, thick, black] (0,0) -- (0,2) node[left] {$\mathbf B$};
+                    \wave
+                \end{scope}
+
+            \end{tikzpicture}
+        \end{figure}
+    \end{minipage}
+    
+    Las ondas son simplemente perturbaciones en un medio físico particular o en un campo, que resultan en vibraciones u oscilaciones. La subida de una ola en el océano, junto con su caída subsecuente, son simplemente una vibración u oscilación del agua en la superficie del mar. Las ondas electromagnéticas son similares pero también distintas, pues de hecho consisten en 2 ondas que oscilan perpendicularmente la una de la otra. Una de las ondas es un {\color{blue}campo magnético $B$} que oscila; la otra, un {\color{red}campo eléctrico $E$} que oscila, como se muestra en la figura \ref{fig:emwave}.
+    Aunque es bueno tener una comprensión básica de lo que es la radiación electromagnética, la mayoría de los químicos están menos interesados en la física detrás de este tipo de energía, y mucho más interesados en cómo estas ondas interactúan con la materia. Específicamente, los químicos estudian cómo las diferentes formas de radiación electromagnética interactúan con los átomos y las moléculas. De estas interacciones, un químico puede obtener información sobre la estructura de una molécula, así como los tipos de enlaces que ocurren en ella. Antes de hablar de eso, sin embargo, es necesario hablar un poco de las propiedades físicas de las ondas de luz.
+\end{sectionbox}

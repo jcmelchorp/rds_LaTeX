@@ -1,0 +1,36 @@
+Completa la Tabla \ref{tab:edades} que muestra las edades de un grupo de 30 alumnos en el que
+hay la misma cantidad de niños cuyas edades son de 11 y 14 años.
+
+\begin{minipage}[t][][t]{0.5\textwidth}
+    \begin{table}[H]
+        \rowcolors{2}{colorrds!10}{lightgray!10}
+        \centering
+        \caption{Edades de un grupo de alumnos.}
+        \label{tab:edades}
+        \begin{tabular}{|*{1}{c|}*{1}{>{\centering}p{1.5cm}|}*{1}{p{4cm}|}}
+            \toprule
+            \rowcolor{colorrds!80}
+            \textbf{\color{white}Edad (años)} & \textbf{\color{white}Cantidad de alumnos} & \textbf{\color{white}Razón entre cantidad de alumnos y edad} \\\midrule
+            11                                & \ifprintanswers $6$\fi                    & \ifprintanswers $0.\overline{54}$\fi                         \\\hline
+            12                                & 8                                         & \ifprintanswers $0.\overline{6}$\fi                          \\\hline
+            13                                & 10                                        & \ifprintanswers$0.\overline{769230}$\fi                      \\\hline
+            14                                & \ifprintanswers$6$\fi                     & \ifprintanswers$0.\overline{428571}$\fi                      \\\cline{2-3}
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{minipage}\hfill
+\begin{minipage}[t][][t]{0.45\textwidth}
+    \begin{parts}
+        \part ¿El número de alumnos en el grupo es proporcional a su edad? \emph{Explica por qué.}
+
+        \begin{solutionbox}{1.8cm}
+            No. Porque la razón entre el número de alumnos y su edad no es constante.
+        \end{solutionbox}
+
+        \part ¿Se puede calcular la constante de proporcionalidad para esta situación?
+
+        \begin{solutionbox}{1.8cm}
+            No, pues la situación no es de variación proporcional.
+        \end{solutionbox}
+    \end{parts}
+\end{minipage}

@@ -1,0 +1,82 @@
+Completa la Tabla \ref{tab:3.1}; luego, responde lo que se pide.
+
+%\cellwidth{2em}
+% \renewcommand{\arraystretch}{2}
+
+\begin{table}[H]
+    \rowcolors{3}{colorrds!10}{lightgray!10}
+    \centering
+    % \large
+    \caption{}
+    \label{tab:3.1}
+    \begin{tabular}{|r|*{8}{p{1cm}|}}
+        \toprule
+        \rowcolor{colorrds!80}
+        \textbf{\color{white}Posición del término} & \textbf{\color{white}1} & \textbf{\color{white}2} & \textbf{\color{white}3} & \textbf{\color{white}4} & \textbf{\color{white}\ifprintanswers5 \fi} & \textbf{\color{white}\ifprintanswers 6\fi} & \textbf{\color{white}\ifprintanswers 7 \fi} & \textbf{\color{white}\ifprintanswers 8 \fi} \\ \midrule
+        Término de la sucesión                     & \ifprintanswers12\fi    & \ifprintanswers3\fi     & \ifprintanswers-6\fi    & \ifprintanswers-15\fi   & \ifprintanswers-24\fi                      & -33                                        & -42                                         & \ifprintanswers-50\fi                       \\ \hline
+        Diferencias                                & \ifprintanswers-9\fi    & \ifprintanswers-9\fi    & \ifprintanswers-9\fi    & \ifprintanswers-9\fi    & \ifprintanswers-9\fi                       & \ifprintanswers-9\fi                       & \ifprintanswers-9\fi                        & \ifprintanswers-9\fi                        \\ \cline{2-9}
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{multicols}{2}
+    \begin{parts}
+        ¿Cuál es el primer término de la sucesión?
+
+        \begin{solutionbox}{4em}
+            12
+        \end{solutionbox}
+
+        A partir del primer término, ¿cómo se obtiene el segundo?
+
+        \begin{solutionbox}{4em}
+            Restando 9 unidades.
+        \end{solutionbox}
+
+        ¿Cómo se obtiene el tercer término de la sucesión a partir del primero?
+
+        \begin{solutionbox}{5em}
+            Restando 2 por 9 = 18 unidades. El término es $12 - 18 = - 6$
+        \end{solutionbox}
+
+        Analiza los resultados del renglón de las diferencias. ¿Qué observas?
+
+        \begin{solutionbox}{4em}
+            Que se obtiene el mismo valor de -9.
+        \end{solutionbox}
+
+        \columnbreak
+        Escribe la regla general de la diferencia entre dos términos consecutivos de la
+        sucesión.
+
+        \begin{solutionbox}{5em}
+            $n - m = -9$. Donde $n$ es el enésimo elemento y $m$ el consecutivo.
+        \end{solutionbox}
+
+        Escribe el término que ocupa la posición 60.
+
+        \begin{solutionbox}{6em}
+            La regla general de la sucesión es $-9n + 21$. El término de la posición
+            60 es $-9(60) + 21 = -540 + 21 = -519$.
+        \end{solutionbox}
+
+        ¿Qué posición tiene el término -78?
+
+        \begin{solutionbox}{4em}
+            Se resuelve $-9n + 21 = -78$. Se obtiene $n = 11$.
+        \end{solutionbox}
+
+        ¿Hay alguna posición en la que aparezca el número -138? ¿Cuál?
+
+        \begin{solutionbox}{6em}
+            Se resuelve $-9n + 21 = -138$. Se obtiene $n = 17.66$\dots Como no es entero, el
+            número -138 no es elemento de la sucesión.
+        \end{solutionbox}
+
+        % Compara la regla que obtuviste con la de tus compañeros. Si hay diferencias, argumenta tu respuesta y corrige si es necesario.
+
+        % \begin{solutionbox}{2cm}
+        % \end{solutionbox}
+    \end{parts}
+
+\end{multicols}
