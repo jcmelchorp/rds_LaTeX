@@ -82,7 +82,7 @@
 					"-interaction=nonstopmode",
 					"-file-line-error",
 					"-pdf",
-					"--aux-directory=%OUTDIR%",
+					"--aux-directory=%WORKSPACE_FOLDER%/aux",
 					"-outdir=%OUTDIR%",
 					"%DOC%"
 				],

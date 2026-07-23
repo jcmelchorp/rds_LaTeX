@@ -1,0 +1,337 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum,lmodern}
+\usepackage{amssymb}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary {calendar,shapes.misc}
+\usepackage{array}
+\usepackage{multicol}
+% \usepackage{colortbl}
+\usepackage[table]{xcolor}
+\setlength{\arrayrulewidth}{0.1pt}
+\renewcommand{\arraystretch}{1.0}
+
+\renewcommand\fbox{\fcolorbox{white}{rdsColor!10!white}}
+
+\definecolor{rdsColor}{HTML}{0060A0} % Custom colour
+\newcommand{\periodoslectivos}[1]{%
+   \headerbox{%
+        {#1}\ %
+        \begin{minipage}[b]{0.6cm}\sffamily\tiny Períodos\\[-0.5em]lectivos\end{minipage}%
+    }%
+}
+\newtcbox{\headerbox}{frame empty,on line,size=fbox,  colback=white,}
+\newcommand{\coolTitle}[1]{%
+\periodoslectivos{5} \ El Tema que tu prefieras \hfill \headerbox{3 nov $<$ 7 nov}
+}
+
+
+\begin{document}
+%----------------------------------------------------------
+\section{Colored boxes}
+
+
+
+
+\tikz[every day/.style={anchor=mid}]
+%  \foreach \b in {1,...,13} {
+  \calendar [dates=2025-11-03+-4 to 2025-11-07+4,
+             week list,month label above centered,
+             month text=\texttt{\%mt \%y0}]
+             if (Sunday,Saturday)            [gray]
+             if (equals=2025-09-16) {\draw (0,0.04) circle (0.7em);}
+             if (equals=2025-09-26) {\draw (-0.25,-0.2) rectangle (0.25,0.25);}
+             if (equals=2025-10-31) {\draw (-0.25,-0.2) rectangle (0.25,0.25);};
+% }
+% \tcbset{enhanced,fonttitle=\bfseries\large,fontupper=\normalsize\sffamily,
+% colback=yellow!10!white,colframe=red!50!black,colbacktitle=red!30!white,
+% coltitle=black,}
+\begin{tcolorbox}[
+  enhanced,
+  drop fuzzy shadow=black,
+  tabulars={@{\extracolsep{\fill}\hspace{3mm}}lr@{\hspace{3mm}}},
+  arc=1pt, colframe=rdsColor,boxrule=0.1pt,left=0mm,right=0mm,top=0mm,bottom=0mm,
+  coltitle=rdsColor!20!black,
+  colbacktitle=rdsColor!20!white,
+  colback=white,
+  toptitle=0mm,
+  bottomtitle=0mm,
+  title={\coolTitle}]
+{\sffamily Actividad} & {\sffamily Fecha \qquad Calificación} \\\hline\hline
+$\Large\square$ Red   & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}} \\\hline
+$\Large\square$ Green & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\\hline
+$\Large\square$ Blue  & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\
+\end{tcolorbox}
+
+\newpage
+
+
+\begin{tcolorbox}[nobeforeafter,on line,size=small,top=0pt,bottom=0pt,left=0pt,right=0pt]
+23 nov $<$ 27 nov
+\end{tcolorbox}Hola que haze
+
+\tcboxfit[top=0pt,bottom=0pt,left=0pt,right=0pt]{3 nov $<$ 7 nov}
+\begin{multicols}{2}
+\begin{tcbraster}[breakable] % Or any other raster configuration
+  \begin{tcolorbox}[enhanced, title=Long Breakable Box]
+      % Content that is long enough to span multiple pages
+      \lipsum[1-2] % Example content using the lipsum package
+  \end{tcolorbox}
+  \begin{tcolorbox}[
+    enhanced,
+    drop fuzzy shadow=black,
+    tabulars={@{\extracolsep{\fill}\hspace{3mm}}lr@{\hspace{3mm}}},
+    arc=1pt, colframe=rdsColor,boxrule=0.1pt,left=0mm,right=0mm,top=0mm,bottom=0mm,
+    coltitle=rdsColor!20!black,
+    colbacktitle=rdsColor!20!white,
+    colback=white,
+    toptitle=0mm,
+    bottomtitle=0mm,
+    title={\coolTitle}]
+  {\sffamily Actividad} & {\sffamily Fecha \qquad Calificación} \\\hline\hline
+  $\Large\square$ Red   & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}} \\\hline
+  $\Large\square$ Green & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\\hline
+  $\Large\square$ Blue  & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\
+  \end{tcolorbox}
+  \begin{tcolorbox}[enhanced, title=Long Breakable Box]
+    % Content that is long enough to span multiple pages
+    \lipsum[1-2] % Example content using the lipsum package
+\end{tcolorbox}
+\begin{tcolorbox}[
+  enhanced,
+  drop fuzzy shadow=black,
+  tabulars={@{\extracolsep{\fill}\hspace{3mm}}lr@{\hspace{3mm}}},
+  arc=1pt, colframe=rdsColor,boxrule=0.1pt,left=0mm,right=0mm,top=0mm,bottom=0mm,
+  coltitle=rdsColor!20!black,
+  colbacktitle=rdsColor!20!white,
+  colback=white,
+  toptitle=0mm,
+  bottomtitle=0mm,
+  title={\coolTitle}]
+{\sffamily Actividad} & {\sffamily Fecha \qquad Calificación} \\\hline\hline
+$\Large\square$ Red   & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}} \\\hline
+$\Large\square$ Green & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\\hline
+$\Large\square$ Blue  & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\
+\end{tcolorbox}
+\begin{tcolorbox}[enhanced, title=Long Breakable Box]
+  % Content that is long enough to span multiple pages
+  \lipsum[1-2] % Example content using the lipsum package
+\end{tcolorbox}
+\begin{tcolorbox}[
+enhanced,
+drop fuzzy shadow=black,
+tabulars={@{\extracolsep{\fill}\hspace{3mm}}lr@{\hspace{3mm}}},
+arc=1pt, colframe=rdsColor,boxrule=0.1pt,left=0mm,right=0mm,top=0mm,bottom=0mm,
+coltitle=rdsColor!20!black,
+colbacktitle=rdsColor!20!white,
+colback=white,
+toptitle=0mm,
+bottomtitle=0mm,
+title={\coolTitle}]
+{\sffamily Actividad} & {\sffamily Fecha \qquad Calificación} \\\hline\hline
+$\Large\square$ Red   & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}} \\\hline
+$\Large\square$ Green & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\\hline
+$\Large\square$ Blue  & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}\\
+\end{tcolorbox}
+\end{tcbraster}
+\end{multicols}
+
+% \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=My title]
+%   My box with my title.
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black]
+%   Upper part of my box.
+%   \tcblower
+%   Lower part of my box.
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=yellow!5!white,colframe=yellow!50!black,
+%   colbacktitle=yellow!75!black,title=My title]
+%   I can do this also with a title.
+%   \tcblower
+%   Lower part of my box.
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=yellow!10!white,colframe=red!75!black,lowerbox=invisible,
+%   savelowerto=\jobname_ex.tex]
+%   Now, we play hide and seek. Where is the lower part?
+%   \tcblower
+%   I'm invisible until you find me.
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=yellow!10!white,colframe=red!75!black,title=Here I am]
+%   \input{\jobname_ex.tex}
+% \end{tcolorbox}
+
+
+% \begin{tcolorbox}[enhanced,sharp corners=uphill,
+%     colback=blue!50!white,colframe=blue!25!black,coltext=yellow,
+%     fontupper=\Large\bfseries,arc=6mm,boxrule=2mm,boxsep=5mm,
+%     borderline={0.3mm}{0.3mm}{white}]
+%   Funny settings.
+% \end{tcolorbox}
+
+
+% \begin{tcolorbox}[enhanced,frame style image=blueshade.png,
+%   opacityback=0.75,opacitybacktitle=0.25,
+%   colback=blue!5!white,colframe=blue!75!black,
+%   title=My title]
+%   This box is filled with an external image.\par
+%   Title and interior are made partly transparent to show the image.
+% \end{tcolorbox}
+
+
+% \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+%   colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,
+%   title=My title,fonttitle=\bfseries,
+%   boxed title style={size=small,colframe=red!50!black} ]
+%   This box uses a \textit{boxed title}. The box of the title can
+%   be formatted independently from the main box.
+% \end{tcolorbox}
+
+
+% \clearpage
+% %----------------------------------------------------------
+% \section{\LaTeX-Examples}
+
+% \begin{tcblisting}{colback=red!5!white,colframe=red!75!black}
+% This is a \LaTeX\ example:
+% \begin{equation}
+% \sum\limits_{i=1}^n i = \frac{n(n+1)}{2}.
+% \end{equation}
+% \end{tcblisting}
+
+
+% \begin{tcblisting}{colback=red!5!white,colframe=red!75!black,listing side text,
+%   title=Side by side,fonttitle=\bfseries}
+% This is a \LaTeX\ example:
+% \begin{equation}
+% \sum\limits_{i=1}^n i = \frac{n(n+1)}{2}.
+% \end{equation}
+% \end{tcblisting}
+
+
+% %----------------------------------------------------------
+% \section{Theorems}
+
+% \newtcbtheorem[auto counter,number within=section]{theo}%
+%   {Theorem}{fonttitle=\bfseries\upshape, fontupper=\slshape,
+%      arc=0mm, colback=blue!5!white,colframe=blue!75!black}{theorem}
+
+% \begin{theo}{Summation of Numbers}{summation}
+%   For all natural number $n$ it holds:
+%   \begin{equation}
+%   \tcbhighmath{\sum\limits_{i=1}^n i = \frac{n(n+1)}{2}.}
+%   \end{equation}
+% \end{theo}
+
+% We have given Theorem \ref{theorem:summation} on page \pageref{theorem:summation}.
+
+% \newtcbtheorem[use counter from=theo]{antheo}%
+%   {Theorem}{theorem style=change,oversize,enlarge top by=1mm,enlarge bottom by=1mm,
+%     enhanced jigsaw,interior hidden,fuzzy halo=1mm with green,
+%      fonttitle=\bfseries\upshape,fontupper=\slshape,
+%      colframe=green!75!black,coltitle=green!50!blue!75!black}{antheorem}
+
+% \begin{antheo}{Summation of Numbers}{summation}
+%   For all natural number $n$ it holds:
+%   \begin{equation}
+%   \tcbhighmath{\sum\limits_{i=1}^n i = \frac{n(n+1)}{2}.}
+%   \end{equation}
+% \end{antheo}
+
+% %----------------------------------------------------------
+% \section{Watermarks}
+
+% \begin{tcolorbox}[enhanced,watermark graphics=logo.png,
+%   watermark opacity=0.3,watermark zoom=0.9,
+%   colback=green!5!white,colframe=green!75!black,
+%   fonttitle=\bfseries, title=Box with a watermark picture]
+%   Here, you see my nice box with a picture as a watermark.
+%   This picture is automatically resized to fit the dimensions
+%   of my box. Instead of a picture, some text could be used or
+%   arbitrary graphical code. See the documentation for more options.
+% \end{tcolorbox}
+
+% %----------------------------------------------------------
+% \section{Boxes in boxes}
+% \begin{tcolorbox}[colback=yellow!10!white,colframe=yellow!50!black,
+%   every box/.style={fonttitle=\bfseries},title=Box]
+%   \begin{tcolorbox}[enhanced,colback=red!10!white,colframe=red!50!black,
+%     colbacktitle=red!85!black,
+%     title=Box inside box,drop fuzzy shadow]
+%     \begin{tcolorbox}[beamer,colframe=blue!50!black,title=Box inside box inside box]
+%       And now for something completely different: Boxes!\par\medskip
+%       \newtcbox{\mybox}[1][]{nobeforeafter,tcbox raise base,colframe=green!50!black,colback=green!10!white,
+%         sharp corners,top=1pt,bottom=1pt,before upper=\strut,#1}
+%       \mybox[rounded corners=west]{This} \mybox{is} \mybox{another} \mybox[rounded corners=east]{box.}
+%     \end{tcolorbox}
+%   \end{tcolorbox}
+% \end{tcolorbox}
+
+
+
+% %----------------------------------------------------------
+% \section{Breakable Boxes}
+% \begin{tcolorbox}[enhanced jigsaw,breakable,pad at break*=1mm,
+%   colback=blue!5!white,colframe=blue!75!black,title=Breakable box,
+%   watermark color=white,watermark text=\Roman{tcbbreakpart}]
+%   \lipsum[1-12]
+% \end{tcolorbox}
+
+% %----------------------------------------------------------
+% \clearpage
+% \section{Fit Boxes}
+
+% \begin{tcolorbox}[enhanced,fit to height=10cm,
+%   colback=green!25!black!10!white,colframe=green!75!black,title=Fit box (10cm),
+%   drop fuzzy shadow,watermark color=white,watermark text=Fit]
+%   \lipsum[1-4]
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[enhanced,fit to height=5cm,
+%   colback=green!25!black!10!white,colframe=green!75!black,title=Fit box (5cm),
+%   drop fuzzy shadow,watermark color=white,watermark text=Fit]
+%   \lipsum[1-4]
+% \end{tcolorbox}
+
+% %----------------------------------------------------------
+% \begin{tcolorbox}[tile,size=fbox,boxsep=2mm,boxrule=0pt,
+%     colback=blue!20!black,colbacktitle=yellow!40!black,
+%     phantom={\thispagestyle{empty}},
+%     title=\section{Rasters of Boxes},spread=-1cm]
+%   \begin{tcbitemize}[raster columns=3,raster rows=4,raster equal skip=2mm,
+%       raster height=\tcbtextheight,
+%       title={Box~\thetcbrasternum},fonttitle=\bfseries,
+%       enhanced,colframe=blue!50,colback=blue!5]
+%     \tcbitem A
+%     \tcbitem[flip title={interior hidden}] B
+%     \tcbitem[colbacktitle=blue!40!black] C
+%     \tcbitem[colbacktitle=blue!40!black,flip title] D
+%     \tcbitem[beamer] E
+%     \tcbitem[tile,colbacktitle=red!40!black] F
+%     \tcbitem[tile,colbacktitle=red!40!black,flip title={sharp corners}] G
+%     \tcbitem[blankest]
+%       \begin{tcbitemize}[raster columns=2,raster rows=2,raster height=\tcbtextheight,
+%           tile,halign=center,valign=center,fontupper=\bfseries\Huge,before upper=\strut,
+%           colback=green!20]
+%         \tcbitem a
+%         \tcbitem b
+%         \tcbitem c
+%         \tcbitem d
+%       \end{tcbitemize}
+%     \tcbitem[widget] I
+%     \tcbitem[frame style image=goldshade,opacityback=0.5,colback=white] J
+%     \tcbitem[frame style image=blueshade,opacityback=0.5,colback=white,
+%       center title,flip title={frame hidden,opacityback=0.25,colback=black}] K
+%     \tcbitem[octogon arc,arc is angular,halign=center,valign=center,
+%       detach title,watermark text={\tcbtitletext}] L
+%   \end{tcbitemize}
+% \end{tcolorbox}
+
+
+
+\end{document}

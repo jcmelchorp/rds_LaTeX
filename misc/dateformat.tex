@@ -1,0 +1,24 @@
+\documentclass{article}
+% \usepackage{babel}
+% \usepackage{fmtcount}
+\usepackage[calc,es-ES,spanish]{datetime2}
+% Define short month names for Spanish
+\newcommand{\DTMspanishshortMonthname}[1]{%
+  \ifcase#1
+  \or Ene.\or Feb.\or Mar.\or Abr.\or May.\or Jun.\or Jul.\or Ago.\or Sep.\or Oct.\or Nov.\or Dic.\fi
+}
+% Redefine the month name command to use the short version
+\renewcommand{\DTMspanishmonthname}[1]{%
+  \DTMspanishshortMonthname{#1}%
+}
+\DTMnewdatestyle{dashdate}{%
+\renewcommand{\DTMdisplaydate}[4]{%
+ \DTMtwodigits{##2} \DTMspanishmonthname{##2}}%-\number##1 }%
+\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+\DTMsetdatestyle{dashdate}
+\begin{document}
+\today\\
+\DTMdate{2025-11-04}
+
+\end{document}

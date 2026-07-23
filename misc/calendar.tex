@@ -1,0 +1,178 @@
+\documentclass[12pt,multi={tikzpicture}]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[active,tightpage]{preview}
+\usepackage{tikz}
+\usetikzlibrary{shapes,calc, positioning,shadows,calendar,decorations.markings}
+\usetikzlibrary{babel}
+\usetikzlibrary{patterns.meta}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+% \usepackage{babel}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}%
+\definecolor{rdsColor}{HTML}{0060A0} % Custom colour
+\def\currentyear{2025}
+\def\nextyear{2026}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt,fill=white,circular glow={fill=rdsColor!40!white},thin] (char) {#1};}}
+		
+\newcommand{\calrow}[1]{\node[anchor=base east,xshift=0.5em](lun){L};
+\node[base right=of lun](mar){M}; \node[base right=of mar](mie){X};
+\node[base right=of mie](jue){J}; \node[base right=of jue](vie){V};
+\node[base right=of vie](sab){S}; \node[base right=of sab](dom){D};
+\node[rdsColor,above=of jue]{#1};}
+
+% \newcommand{\calperiod}[1]{\calendar[dates=\the\year-#1-01 to \the\year-#1-last]
+% if(Sunday,Saturday) [black!50] \holidays;}
+\newcounter{ABCD}
+\newcounter{spur}
+\newcommand{\calperiod}[2]{\calendar[dates=#1 to #2,
+execute at begin day scope={%
+% \ifdate{Monday}{
+% \pgfmathtruncatemacro{\itest}{\pgfcalendarcurrentday}
+% \pgfmathtruncatemacro{\iABCD}{\value{spur}} 
+% \setcounter{ABCD}{\iABCD}
+% \ifnum\itest<8
+% \ifnum\itest>1
+% \node at (-1.2em,1.2em) [anchor=base east,overlay,text=rdsColor] {\circled{\arabic{ABCD}}};
+% \fi
+% \fi
+% \stepcounter{spur}
+% % \pgfmathtruncatemacro{\iABCD}{Mod(\value{spur},12)+1} 
+% \pgfmathtruncatemacro{\iABCD}{\value{spur}} 
+% \setcounter{ABCD}{\iABCD}
+% \node at (-1.2em,-0.2em) [anchor=base east,text=rdsColor] {\circled{\arabic{ABCD}}};
+% }
+}
+]
+\examday\holidays\ctedays\birthdays
+if (equals=2025-11-03) [red,draw] 
+if(Sunday,Saturday) [gray];
+    }
+\def\holidays{% holidays
+if (equals=2025-09-16) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+if (equals=2025-11-17) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+if (equals=2026-02-02) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+if (equals=2026-03-16) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+if (equals=2026-05-01) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+if (equals=2026-05-05) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+if (equals=2026-05-15) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.5pt]},pattern color=red] (0,0.04) circle (0.75em);}
+}
+
+\def\ctedays{% CTE days
+if (equals=2025-09-26) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2025-10-31) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2025-11-28) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2026-01-30) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2026-02-27) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2026-03-27) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2026-05-29) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2026-06-26) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+if (equals=2026-07-31) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=green] (0,0.04) circle (0.75em);}
+}
+
+\def\examday{%
+if (equals=2025-11-03) {\draw (0.0,0.04) circle (0.7em);} 
+}
+\def\birthdays{% CTE days
+if (equals=2025-09-08) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2025-09-11) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2025-10-11) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2025-10-17) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2025-12-19) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-01-01) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-02-16) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-02-27) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-04-20) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-04-23) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-05-15) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-06-03) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-06-08) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+if (equals=2026-06-15) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.5pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+}
+
+\begin{document}
+\setcounter{ABCD}{1}
+\begin{tikzpicture}[every calendar/.style={week list},every day/.style={anchor=mid}]
+	\sffamily
+	\matrix[%
+		row 1/.style={rdsColor,node distance=.6ex},%
+		% row 3/.style={rdsColor,node distance=.5ex},
+		% row 5/.style={rdsColor,node distance=.5ex},
+		% row 7/.style={rdsColor,node distance=.5ex},
+		column sep=3ex,%
+		draw=rdsColor,thin,rounded corners=5pt,%
+		postaction={decorate,decoration={markings,mark=at position 0.01 with
+							{\node[fill=white,text=rdsColor,font={\bfseries\Large}] (year)
+								{\currentyear};}}},
+		postaction={decorate,decoration={markings,mark=at position 0.385 with
+							{\node[fill=white,text=rdsColor,font={\bfseries\Large}] (year)
+								{\currentyear};}}},
+	]{%
+		\calrow{Septiembre}                  & \calrow{Octubre}                     & \calrow{Noviembre}                 \\
+		\calperiod{2025-09-01}{2025-09-last} & \calperiod{2025-10-01}{2025-10-last} & \calperiod{2025-11-01}{2025-11-23} \\
+	};
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[every calendar/.style={week list},every day/.style={anchor=mid}]
+	\sffamily
+	\matrix[%
+		row 1/.style={rdsColor,node distance=.5ex},%
+		row 3/.style={rdsColor,node distance=.5ex},
+		row 5/.style={rdsColor,node distance=.5ex},
+		row 7/.style={rdsColor,node distance=.5ex},
+		row 9/.style={rdsColor,node distance=.5ex},
+		column sep=3ex,%
+		draw=rdsColor,thin,rounded corners=5pt,%
+		postaction={decorate,decoration={markings,mark=at position 0.01 with
+							{\node[fill=white,text=rdsColor,font={\bfseries\Large}] (year)
+								{\currentyear};}}},
+		postaction={decorate,decoration={markings,mark=at position 0.61 with
+							{\node[fill=white,text=rdsColor,font={\bfseries\Large}] (year)
+								{\nextyear};}}}
+	]{%
+		\calrow{Noviembre} \\ \calperiod{2025-11-24}{2025-11-30}  \\
+		\calrow{Diciembre} \\  \calperiod{2025-12-01}{2025-12-18} \\
+		\calrow{Enero}     \\ \calperiod{2026-01-12}{2026-01-31}\\
+		\calrow{Febrero}   \\  \calperiod{2026-02-01}{2026-02-last} \\
+		\calrow{Marzo}     \\  \calperiod{2026-03-01}{2026-03-22} \\
+	};
+\end{tikzpicture}%
+\begin{tikzpicture}[every calendar/.style={week list},every day/.style={anchor=mid}]
+	\sffamily
+	\matrix[%
+		row 1/.style={rdsColor,node distance=.5ex},%
+		row 3/.style={rdsColor,node distance=.5ex},
+		row 5/.style={rdsColor,node distance=.5ex},
+		row 7/.style={rdsColor,node distance=.5ex},
+		row 9/.style={rdsColor,node distance=.5ex},
+		column sep=3ex,%
+		draw=rdsColor,thin,rounded corners=5pt,%
+		postaction={decorate,decoration={markings,mark=at position 0.01 with
+							{\node[fill=white,text=rdsColor,font={\bfseries\Large}] (year)
+								{\nextyear};}}},
+		postaction={decorate,decoration={markings,mark=at position 0.61 with
+							{\node[fill=white,text=rdsColor,font={\bfseries\Large}] (year)
+								{\nextyear};}}}
+	]{%
+		\calrow{Marzo} \\ \calperiod{2026-03-23}{2026-03-29}  \\
+		\calrow{Abril} \\  \calperiod{2026-04-13}{2026-04-last}\\
+		\calrow{Mayo}  \\ \calperiod{2026-05-01}{2026-05-last}\\
+		\calrow{Junio} \\  \calperiod{2026-06-01}{2026-06-last} \\
+		\calrow{Julio} \\  \calperiod{2026-07-01}{2026-07-15} \\
+	};
+\end{tikzpicture}
+
+
+
+
+% \tikz[every day/.style={anchor=mid}]
+%   \calendar [dates=2025-09-01 to 2025-11-16,
+%              week list,month label above centered,
+%              month text=\texttt{\%mt \%y0}]
+%              if (between=\year-11-16 and \year-11-30) [black!30]%
+%              \holidays\ctedays\examday;
+\end{document}
