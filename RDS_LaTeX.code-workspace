@@ -11,13 +11,13 @@
 		"latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
 		"latex-workshop.linting.chktex.enabled": true,
 		"latex-workshop.showContextMenu": true,
-		"latex-workshop.formatting.latex": "latexindent",
+		"latex-workshop.formatting.latex": "tex-fmt",
 		"latex-workshop.latex.autoBuild.run": "onSave",
 		"latex-workshop.check.duplicatedLabels.enabled": false,
-		"latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
+		"latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output/",
 		"latex-workshop.latex.texDirs": [
-			"%WORKSPACE_FOLDER%/resources",
-			//"%WORKSPACE_FOLDER%/aux",
+			"%WORKSPACE_FOLDER%/resources/",
+			"%WORKSPACE_FOLDER%/aux/",
 			//"%DIR%/base",
 			//"%DIR%/images",
 			//"%DIR%/base/pgf-periodictable",
@@ -31,13 +31,13 @@
 					"-interaction=nonstopmode",
 					"-file-line-error",
 					"-pdf",
-					"-aux-directory=%WORKSPACE_FOLDER%/aux",
+					"-aux-directory=%WORKSPACE_FOLDER%/aux/",
 					"-outdir=%OUTDIR%",
 					"%DOC%"
 				],
 				"env": {
 					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
-					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:%DIR%/../base/:%DIR%/../images:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux/:%DIR%/../base/:%DIR%/../images/:"
 				}
 			},
 			{
@@ -82,13 +82,13 @@
 					"-interaction=nonstopmode",
 					"-file-line-error",
 					"-pdf",
-					"--aux-directory=%WORKSPACE_FOLDER%/aux",
+					"--aux-directory=%WORKSPACE_FOLDER%/aux/",
 					"-outdir=%OUTDIR%",
 					"%DOC%"
 				],
 				"env": {
 					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
-					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:%DIR%/../base/:%DIR%/../images:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux/:%DIR%/../base/:%DIR%/../images/:"
 				}
 			},
 			{

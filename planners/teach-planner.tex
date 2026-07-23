@@ -37,6 +37,7 @@
 \definecolor{mathColor}{HTML}{E3A857}
 \definecolor{physColor}{HTML}{228B22}
 \definecolor{chemColor}{HTML}{228B22}
+\definecolor{geogColor}{HTML}{8B4513}
 \definecolor{sec1Color}{HTML}{86608E}
 \definecolor{sec2Color}{HTML}{4C8BA7}
 \definecolor{sec3Color}{HTML}{A94939}
@@ -179,6 +180,7 @@
   \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{\textbf{Matemáticas 1}}}{}%
   \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{\textbf{Matemáticas 2}}}{}%
   \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{\textbf{Matemáticas 3}}}{}%
+  \ifthenelse{\equal{#1}{geog1}}{\textcolor{geogColor}{\textbf{Geografía}}}{}%
   \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{\textbf{Química}}}{}%
   \ifthenelse{\equal{#1}{phys2}}{\textcolor{physColor}{\textbf{Física}}}{}%
   \ifthenelse{\equal{#1}{test0}}{\textcolor{red}{\textbf{TESTING}}}{}%
@@ -286,7 +288,7 @@
 % \planner{2}{math}{1}%
 % \planner{3}{math}{1}%
 % \planner{3}{chem}{1}%
-\planner{2}{phys}{1}%
+\planner{1}{geog}{1}%
 \JSONParseArrayMapInline{\weekdata}{weeks}{%
     \begin{tcolorbox}[titlebox,title=\planTitle
             {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
