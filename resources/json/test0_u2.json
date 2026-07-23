@@ -1,0 +1,456 @@
+{
+  "general":{
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Matemáticas II",
+    "Grado": "2º",
+    "Nivel": "Secundaria",
+    "Unidad": "1",
+    "NombreDeLaUnidad": "Números enteros, números negativos y plano cartesiano",
+    "DuracionEnSemanas": 10,
+    "HorasPorSemana": 5,
+    "HorasTotales": 50,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2025-08-24",
+    "FechaDeActualizacion": "2025-08-24",
+    "FechaInicial": "2025-09-01",
+    "FechaFinal": "2025-11-07",
+    "Alumnos": [
+      "Bisio Lara Bruno Aimone",
+      "Castro Bulnes Cristel",
+      "Colonna Figueroa Fabrizzio",
+      "Flores Pérez Ángel Leonel",
+      "Fuentes Navas Juan Pablo",
+      "Guerra Pitalúa Suad Alana",
+      "Mata Guzmán Layla Gabriela",
+      "Mendoza Martínez Acteón Eliud",
+      "Montiel Díaz Antonio",
+      "Murrieta Zúñiga Matías Harim",
+      "Pérez Castrejón Ehécatl",
+      "Rendón Torrez Mateo",
+      "Rivera Rojas Pedro Antonio",
+      "Rodríguez Aguilar Miguel Ángel",
+      "Sosa Álvarez Mateo",
+      "Utrera González María José"
+    ],
+   "fechasDeExamen": [
+      "2025-11-03"
+    ]
+  },
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-01",
+      "FechaDeCierre": "2025-09-05",
+      "SemanaEscolar": 1,
+      "Contenido": "Operaciones básicas con números enteros y decimales (suma y resta).",
+      "Aprendizaje": "Comprenderán y realizarán sumas y restas con números enteros y decimales, aplicando los procedimientos correctos.",
+      "Tema": "Cálculos numéricos",
+      "Leccion": "Uso de las operaciones de suma y resta en situaciones cotidianas.",
+      "Inicio": "La clase comenzará cone el primer momento.",
+      "Desarrollo": "Durante el desarrontro de los equipos.",
+      "Cierre": "Para concluir, los grue su vida cotidiana.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación de la participación en discusiones, corrección de ejercicios en clase, y tarea de problemas mixtos de suma y resta."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Resuelve problemas sobre dinámica de poblaciones, utilizando la suma para calcular el total de individuos tras nacimientos o inmigraciones, y la resta para determinar la población restante después de muertes o emigraciones.",
+      "Worklist": [
+        "A.1.  Suma de números",
+        "A.2.  Resta de números",
+        "A.3.  Multiplicación de números",
+        "A.4.  División de números",
+        "A.5.  Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-08",
+      "FechaDeCierre": "2025-09-12",
+      "SemanaEscolar": 2,
+      "Contenido": "Clasificación y representación de fracciones. Nombres de fracciones y su representación en la recta numérica.",
+      "Aprendizaje": "El alumno identificará y clasificará diferentes tipos de fracciones (propias, impropias y mixtas) y las representará de manera gráfica. El alumno nombrará fracciones y las ubicará correctamente en la recta numérica.",
+      "Tema": "Fracciones.",
+      "Leccion": "Clasificación y representación. Nombres y ubicación en la recta numérica.",
+      "Inicio": "La clase comenzará connocimientos previos.",
+      "Desarrollo": "Se explicará la clrlas en una gráfica.",
+      "Cierre": "Para cerrar, los estude nuevas fracciones.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Evaluación mediante ejercicios de clasificación y representación, participación en discusiones grupales, y un póster de fracciones como proyecto."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Convierte los resultados de cruzas genéticas mendelianas  a fracciones y las compara con otras probabilidades genéticas para determinar qué rasgo es más probable que aparezca.",
+      "Worklist": [
+        "A.6.  Clasificación de fracciones",
+        "A.7.  Representación de fracciones",
+        "A.8.  Nombre de fracciones",
+        "A.9.  Fracciones en la recta numérica",
+        "A.10. Conversión de fracciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "PeriodosLectivos": 3,
+      "FechaDeInicio": "2025-09-15",
+      "FechaDeCierre": "2025-09-19",
+      "SemanaEscolar": 3,
+      "Contenido": "Conversión y comparación de fracciones utilizando M.C.D y M.C.M.",
+      "Aprendizaje": "El alumno convertirá fracciones y las comparará utilizando el M.C.D y M.C.M.",
+      "Tema": "Fracciones MCD y MCM",
+      "Leccion": "Conversión y comparación.",
+      "Inicio": "Se iniciará la clase cceptos a fracciones.",
+      "Desarrollo": "El profesor demosteforzar la práctica.",
+      "Cierre": "Se realizará una activra resolver en casa.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Ejercicios de conversión y comparación en grupo, quiz individual."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "11",
+        "12"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Aplica operaciones con fracciones para calcular la porción de un terreno que se reforestará. ",
+      "Worklist": [
+        "A.11. Comparación de fracciones",
+        "A.12. Fracciones equivalentes"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-09-22",
+      "FechaDeCierre": "2025-09-26",
+      "SemanaEscolar": 4,
+      "Contenido": "Simplificación de fracciones y resolución de problemas.",
+      "Aprendizaje": "El alumno simplificará fracciones y aplicará sus conocimientos para resolver problemas contextualizados.",
+      "Tema": "Fracciones MCD y MCM",
+      "Leccion": "Simplificación y aplicación.",
+      "Inicio": "La clase comenzará concomida o materiales.",
+      "Desarrollo": "Se presentarán proálculos posteriores.",
+      "Cierre": "Para finalizar, se reala siguiente sesión.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en parejas, evaluación con rubrica."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "13",
+        "14",
+        "15"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Aplica operaciones con fracciones para calcular la porción de un terreno que se reforestará. ",
+      "Worklist": [
+        "A.13. M.C.D y M.C.M",
+        "A.14. Simplificación de fracciones",
+        "A.15. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "13",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-29",
+      "FechaDeCierre": "2025-10-03",
+      "SemanaEscolar": 5,
+      "Contenido": "Ubicación de números decimales en la recta numérica y conversión de porcentajes a decimales.",
+      "Aprendizaje": "El alumno ubicará números decimales en la recta numérica y convertirá porcentajes a decimales.",
+      "Tema": "Números Decimales",
+      "Leccion": "Decimales y porcentajes.",
+      "Inicio": "Se iniciará la clase ccciones y decimales.",
+      "Desarrollo": "Los alumnos particmeros representados.",
+      "Cierre": "Los estudiantes realizluar su comprensión.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Ejercicios de conversión y ubicación en la recta numérica."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "16",
+        "17"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Calcula el Índice de Masa Corporal (IMC) de una persona utilizando la fórmula que involucra números decimales",
+      "Worklist": [
+        "A.16. Ubicación en la recta numérica",
+        "A.17. Porcentajes a decimal"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-06",
+      "FechaDeCierre": "2025-10-10",
+      "SemanaEscolar": 6,
+      "Contenido": "Operaciones con múltiplos de 10 y conversión de fracciones a decimales.",
+      "Aprendizaje": "El alumno realizará operaciones con múltiplos de 10 y convertirá fracciones a decimales.",
+      "Tema": "Números Decimales",
+      "Leccion": "Operaciones y conversión.",
+      "Inicio": "El inicio se centrará con múltiplos de 10.",
+      "Desarrollo": "El docente explica cálculos de dinero.",
+      "Cierre": "La clase finalizará coonceptos aprendidos.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos y quiz de conversión."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+         "18",
+        "19",
+        "20"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Utiliza operaciones con decimales para calcular el crecimiento total o promedio a lo largo del tiempo.",
+      "Worklist": [
+        "A.18. Operaciones con múltiplos de 10",
+        "A.19. Conversión de fracciones a decimales",
+        "A.20. Conversión de decimales a fracciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-13",
+      "FechaDeCierre": "2025-10-17",
+      "SemanaEscolar": 7,
+      "Contenido": "Suma y resta de números negativos.",
+      "Aprendizaje": "El alumno sumará y restará números negativos correctamente.",
+      "Tema": "Números negativos.",
+      "Leccion": "Suma y resta.",
+      "Inicio": "La clase comenzará connocimientos previos.",
+      "Desarrollo": "El docente explicatésica del concepto.",
+      "Cierre": "Para concluir, se realomo tarea para casa.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Ejercicios de cálculo y juegos interactivos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Interpreta los números negativos para describir temperaturas bajo cero (°C) en ecosistemas",
+      "Worklist": [
+        "A.21. Ubicación en la recta numérica",
+        "A.22. Comparación de negativos",
+        "A.23. Determina el signo",
+        "A.24. Suma y resta con negativos 1",
+        "A.25. Suma y resta con negativos 2"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-20",
+      "FechaDeCierre": "2025-10-24",
+      "SemanaEscolar": 8,
+      "Contenido": "Multiplicación, división y potencias con números negativos.",
+      "Aprendizaje": "El alumno multiplicará, dividirá y calculará potencias de números negativos siguiendo las reglas correspondientes.",
+      "Tema": "Números negativos.",
+      "Leccion": "Multiplicación y división",
+      "Inicio": "La clase iniciará con d de esta habilidad.",
+      "Desarrollo": "El docente demostreforzar el concepto.",
+      "Cierre": "Para cerrar la unidad, práctica para casa.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Evaluación sumativa con ejercicios de multiplicación, división y potencias."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Resuelve problemas sumando y restando números negativos para calcular el cambio neto en la población de una especie a lo largo de varias temporadas.",
+      "Worklist": [
+        "A.26. Comparación de negativos",
+        "A.27. Suma y resta con negativos",
+        "A.28. Multiplicación y división con negativos",
+        "A.29. Potencias con numeros negativos",
+        "A.30. Jerarquía de operaciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-10-27",
+      "FechaDeCierre": "2025-10-31",
+      "SemanaEscolar": 9,
+      "Contenido": "Recapitulación e integración de los conocimientos y aprendizajes.",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Preparación a la evaluación",
+      "Leccion": "Revisión grupal de los saberes acumulados en el período de evaluación",
+      "Inicio": "Se presenta el objetivr focos de atención.",
+      "Desarrollo": "Los alumnos comienerentes estrategias.",
+      "Cierre": "Se dedica un espacio fr su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-11-03",
+      "FechaDeCierre": "2025-11-07",
+      "SemanaEscolar": 10,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Semana de evaluación",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se da la bienvenida a  la prueba sumativa.",
+      "Desarrollo": "El núcleo de la se durante el período.",
+      "Cierre": "Se dedica la última se que está por venir.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos en MeXmáticas",
+      "Vinculacion": "",
+      "Worklist": [
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

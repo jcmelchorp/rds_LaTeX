@@ -1,0 +1,491 @@
+{
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Matemáticas II",
+    "Grado": "2º",
+    "Nivel": "Secundaria",
+    "Unidad": "1",
+    "NombreDeLaUnidad": "Números enteros, números negativos y plano cartesiano",
+    "DuracionEnSemanas": 10,
+    "HorasPorSemana": 5,
+    "HorasTotales": 50,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2025-08-24",
+    "FechaDeActualizacion": "2025-08-24",
+    "FechaInicial": "2025-09-01",
+    "FechaFinal": "2025-11-07",
+    "Words":"Les doy la bienvenida a este nuevo ciclo escolar 2025-2026. El sendero que iniciamos el año pasado nos ha traído hasta aquí, a un paraje más elevado en la montaña del saber. Contento estoy, ya que tendré el honor de ser su guía, no aquel que les muestra el destino, sino aquel que camina a su lado, señalando las maravillas que se ocultan a simple vista. \\\\[1em] \\qquad El año pasado aprendimos los primeros pasos, el lenguaje fundamental del universo. Aprendimos que el mundo tiene un orden, un ritmo, una lógica que podemos empezar a comprender. Ahora, en Matemáticas II, ya no sólo caminaremos por el sendero, sino que aprenderemos a leer los mapas del terreno que pisamos. \\\\[1em] \\qquad El viaje de mil millas comienza con un solo paso. Ustedes ya dieron ese primer paso. Ahora, el camino se vuelve más sinuoso, más interesante. Si el año pasado aprendimos a nombrar los elementos del universo con números, este año aprenderemos a escuchar sus conversaciones a través del álgebra. Descubriremos que una simple letra, como la x, puede contener en su vacío el potencial de todos los números. En su quietud, esconde un infinito de posibilidades, esperando ser revelado. \\\\[1em] \\qquad Nuestra aula no será un lugar de respuestas, sino un espacio para cultivar las preguntas correctas. Será un dojo para la mente, donde practicaremos el arte de la quietud. Porque la verdadera maestría matemática no reside en la velocidad para calcular, sino en la serenidad de una mente que puede observar un problema complejo y encontrar en él la simplicidad oculta. \\\\[1em] \\qquad Este año, les invito a no \"hacer\" matemáticas, sino a \"ser\" matemáticos. A mirar un edificio y ver la geometría que lo sostiene; a escuchar una canción y sentir las proporciones que la hacen bella; a resolver una ecuación y experimentar la profunda satisfacción de traer orden al caos. \\\\[1em] No busquen solo la respuesta correcta en el libro, busquen la claridad en su propia mente. El objetivo de este viaje no es acumular conocimiento como quien llena un cántaro, sino afinar su percepción hasta que puedan ver la estructura invisible que conecta todas las cosas. \\\\[1em] \\qquad Que su curiosidad sea su brújula y su paciencia sea su báculo.",
+    "Nociones": [
+      "A.1. Suma de números",
+      "A.2. Resta de números",
+      "A.3. Multiplicación de números",
+      "A.4. División de números",
+      "A.5. Resolución de problemas",
+      "A.6. Ubicación en la recta numérica",
+      "A.7. Comparación de negativos",
+      "A.8. Suma y resta con negativos",
+      "A.9. Multiplicación y división con negativos",
+      "A.10. Potencias con números negativos",
+      "A.11. Suma de exponentes",
+      "A.12. Resta de exponentes",
+      "A.13. Multiplicación de exponentes",
+      "A.14. Notación científica 1",
+      "A.15. Notación científica 2",
+      "A.16. Ubicación en el plano cartesiano",
+      "A.17. Cuadrantes en el plano cartesiano",
+      "A.18. Pendiente de una recta",
+      "A.19. Pendiente y ordenada",
+      "A.20. Ecuación de una recta",
+      "A.21. Porcentajes a decimal",
+      "A.22. Decimal a porcentaje",
+      "A.23. Porcentaje de cantidades 1",
+      "A.24. Porcentaje de cantidades 2",
+      "A.25. Resolución de problemas"
+    ],
+    "Nombres": [
+      "Bruno",
+      "Cristel",
+      "Fabrizzio",
+      "Ángel",
+      "Juan",
+      "Alana",
+      "Layla",
+      "Acteón",
+      "Antonio",
+      "Matías",
+      "Ehécatl",
+      "Mateo",
+      "Pedro",
+      "Miguel Á",
+      "Mateo",
+      "MaJo"
+    ],
+    "Alumnos": [
+      "Bruno Aimone Bisio Lara",
+      "Cristel Castro Bulnes",
+      "Fabrizzio Colonna Figueroa",
+      "Ángel Leonel Flores Pérez",
+      "Juan Pablo Fuentes Navas",
+      "Suad Alana Guerra Pitalúa",
+      "Layla Gabriela Mata Guzmán",
+      "Acteón Eliud Mendoza Martínez",
+      "Antonio Montiel Díaz",
+      "Matías Harim Murrieta Zúñiga",
+      "Ehécatl Pérez Castrejón",
+      "Mateo Rendón Torrez",
+      "Pedro Antonio Rivera Rojas",
+      "Miguel Ángel Rodríguez Aguilar",
+      "Mateo Sosa Álvarez",
+      "María José Utrera González",
+      "Regina Villar"
+    ],
+    "fechasDeExamen": [
+      "2025-11-03"
+    ]
+  },
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-01",
+      "FechaDeCierre": "2025-09-05",
+      "SemanaEscolar": 1,
+      "Contenido": "Operaciones básicas con números enteros.",
+      "Aprendizaje": "Resolver problemas que impliquen la suma, resta, la multiplicación y la división de números enteros, aplicando las reglas correspondientes.",
+      "Tema": "Cálculos numéricos",
+      "Leccion": "Suma de números\nResta de números.\nMultiplicación de números\nDivisión de números.",
+      "Inicio": "Se comienza con una actividad de reflexión en la que los alumnos recuerden las reglas básicas de la suma y resta con números enteros positivos, mediante preguntas dirigidas y ejemplos cotidianos (como calcular la diferencia entre el dinero que tienen y lo que necesitan para comprar algo). Se utilizará la pizarra para visualizar estas ideas y para conectar con el conocimiento previo. Se realizará una lluvia de ideas sobre situaciones diarias en las que usan estas operaciones. Luego, se introducen conceptos de multiplicación y división con números enteros mediante ejemplos simples, como la idea de repetición en la multiplicación y la partición en la división. Se utilizan ejemplos visuales para ilustrar los conceptos, como bloques o dibujos en la pizarra.",
+      "Desarrollo": "Se introducen los conceptos formales de la suma y resta de números enteros, usando una recta numérica para visualizar los movimientos a la derecha (suma) y a la izquierda (resta). Se realizan ejemplos guiados, y luego se invita a los estudiantes a resolver ejercicios en parejas, promoviendo la colaboración y la autoevaluación entre compañeros. Se presentan problemas contextualizados para reforzar la aplicación práctica de estos conceptos, como calcular el saldo bancario tras varias transacciones. Los alumnos trabajan con ejemplos progresivamente más complejos explicando cómo las reglas cambian dependiendo del signo de los números involucrados. Se utilizan ejercicios interactivos y retos en grupo para fomentar la participación activa y el trabajo en equipo. Se presentan problemas aplicados, como cálculos de áreas en contextos reales, y se trabaja con escenarios donde se requiere dividir objetos o cantidades en partes iguales.",
+      "Cierre": "Los alumnos presentan sus soluciones a algunos problemas en el pizarrón, explicando su razonamiento. Se hace una recapitulación conjunta de las reglas aprendidas y se clarifican dudas. Finalmente, se deja una tarea práctica para reforzar los aprendizajes, consistente en problemas de la vida diaria que impliquen suma y resta de enteros. Se da un breve adelanto de la próxima clase para mantener el interés.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación durante la práctica, resolución de ejercicios en clase, participación en discusiones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve problemas de cinemática calculando la distancia total recorrida (suma), el desplazamiento (resta) o la rapidez promedio (división) de un objeto en movimiento.",
+      "Worklist": [
+        "A.1.  Suma de números",
+        "A.2.  Resta de números",
+        "A.3.  Multiplicación de números",
+        "A.4.  División de números",
+        "A.5.  Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-08",
+      "FechaDeCierre": "2025-09-12",
+      "SemanaEscolar": 2,
+      "Contenido": "Conceptos básicos de números negativos y su representación en la recta numérica.",
+      "Aprendizaje": "Identificar y ubicar números negativos en una recta numérica, comparando su magnitud.",
+      "Tema": "Números negativos.",
+      "Leccion": "Ubicación en la recta numérica.",
+      "Inicio": "La clase comienza con una introducción a los números negativos a través de ejemplos de la vida diaria, como temperaturas bajo cero o deudas. Se muestra una recta numérica grande en la pizarra y se pide a los alumnos que ubiquen diferentes números en ella, primero con enteros positivos y luego con negativos. Se hace hincapié en la continuidad de los números y la noción de opuestos. Se inicia la siguiente clase con un repaso de la recta numérica, enfatizando la posición relativa de los números negativos respecto a los positivos y el cero. Se presentan ejemplos de la vida real para conectar estos conceptos con situaciones prácticas. Los alumnos son invitados a pensar en otros contextos donde se aplican los números negativos y a discutir sus ideas en grupos pequeños.",
+      "Desarrollo": "Se explica formalmente cómo se ubican los números negativos en la recta numérica, destacando la importancia del cero como punto de referencia. Los estudiantes practican la ubicación de números negativos y positivos en una recta dibujada en sus cuadernos y luego resuelven ejercicios de comparación entre estos números, utilizando símbolos de mayor que, menor que e igual a. Se discuten ejemplos donde los números negativos juegan un rol importante, como en altitudes bajo el nivel del mar o en contextos financieros. Se enseñan las reglas para sumar, restar, multiplicar y dividir números negativos mediante ejemplos claros y progresivos en la pizarra. Los alumnos practican primero con ejercicios básicos y luego con problemas más complejos que combinan varias operaciones. Se utilizan recursos visuales, como bloques o fichas, para ayudar a los alumnos a entender mejor cómo los signos afectan los resultados de las operaciones.",
+      "Cierre": "Los estudiantes se involucran en una actividad lúdica donde deben ubicar números en una recta numérica gigante hecha en el piso del salón, trabajando en equipos para posicionar correctamente números dados por el profesor. Se finaliza con una discusión en clase sobre la importancia de entender los números negativos y se asigna una tarea que incluye ejercicios de ubicación y comparación. Se motivan a los alumnos a reflexionar sobre situaciones cotidianas donde encuentran números negativos. Se realiza un juego de competencia en el que los alumnos responden preguntas rápidas sobre operaciones con números negativos para reforzar su comprensión. Se concluye la clase revisando los puntos clave de las reglas operativas y resolviendo dudas. La tarea asignada incluye problemas de aplicación y una breve reflexión escrita sobre las dificultades que encontraron y cómo las superaron. Se resalta la importancia de manejar correctamente estas operaciones en situaciones cotidianas.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Pruebas de ubicación en la recta, ejercicios de comparación, participación en actividades lúdicas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Compara temperaturas de diversas sustancias en grados Celsius, ubicándolas en una recta numérica para determinar cuál está más fría o cuál es el punto de congelación.",
+      "Worklist": [
+        "A.6.  Ubicación en la recta numérica",
+        "A.7.  Comparación de negativos",
+        "A.8.  Suma y resta con negativos",
+        "A.9.  Multiplicación y división con negativos"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "PeriodosLectivos": 3,
+      "FechaDeInicio": "2025-09-15",
+      "FechaDeCierre": "2025-09-19",
+      "SemanaEscolar": 3,
+      "Contenido": "Uso de potencias y sus propiedades en números negativos.",
+      "Aprendizaje": "Aplicar las propiedades de las potencias a números negativos en la resolución de problemas.",
+      "Tema": "Números negativos.",
+      "Leccion": "Potencias con números negativos.",
+      "Inicio": "La clase inicia con un recordatorio de qué son las potencias y cómo se calculan, relacionando con ejemplos sencillos como el cuadrado y el cubo de números pequeños. Se introduce el concepto de elevar números negativos a diferentes potencias, destacando cómo cambia el resultado dependiendo de si la potencia es par o impar.",
+      "Desarrollo": "Se desarrollan ejercicios prácticos que incluyen elevar números negativos a distintas potencias, tanto pares como impares. Se discuten las propiedades de las potencias y se analizan patrones que surgen al elevar números negativos a diferentes exponentes. Los alumnos trabajan en parejas para resolver una serie de ejercicios y luego comparan sus respuestas con otros equipos, fomentando la colaboración y la verificación de resultados.",
+      "Cierre": "Los estudiantes presentan sus resultados en la pizarra y explican el razonamiento detrás de sus respuestas. Se aclaran dudas y se hace un resumen de las reglas principales, anotándolas de forma visible. Se asigna una tarea que incluye problemas aplicados de potencias con números negativos y una breve reflexión sobre la importancia de entender estos conceptos en contextos académicos y de la vida diaria.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en clase, evaluación escrita, participación en actividades prácticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "10"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Interpreta el signo en modelos de oscilaciones o vibraciones, donde una potencia par puede significar un retorno a la posición inicial y una impar una posición opuesta.",
+      "Worklist": [
+        "A.10. Potencias con números negativos"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "10"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-09-22",
+      "FechaDeCierre": "2025-09-26",
+      "SemanaEscolar": 4,
+      "Contenido": "Propiedades de los exponentes y aplicación de la notación científica.",
+      "Aprendizaje": "Resolver problemas que involucren la suma, resta y multiplicación de exponentes, y expresar números en notación científica.",
+      "Tema": "Exponentes",
+      "Leccion": "Suma de exponentes\nResta de exponentes\nMultiplicación de exponentes.",
+      "Inicio": "Se inicia con una introducción sobre cómo los exponentes son una forma abreviada de expresar multiplicaciones repetidas. Se presentan ejemplos que muestran cómo sumar, restar y multiplicar exponentes, utilizando bases iguales. Se explica la importancia de estas operaciones en el contexto de la notación científica, que se usa para expresar números muy grandes o muy pequeños de manera más manejable.",
+      "Desarrollo": "Los estudiantes trabajan en ejercicios que incluyen la simplificación de expresiones con exponentes, aplicando las reglas vistas. Se enseña cómo convertir números a notación científica y cómo operar con ellos. Se realizan actividades en parejas para practicar estos conceptos y se discuten casos reales donde la notación científica es útil, como en la ciencia y la tecnología.",
+      "Cierre": "Los estudiantes presentan sus respuestas a los problemas planteados y explican los pasos que siguieron. Se realiza una recapitulación de las reglas clave y se resuelven dudas específicas. La tarea incluye ejercicios de simplificación de expresiones con exponentes y problemas de conversión a notación científica, junto con una breve reflexión escrita sobre dónde podrían encontrar estos conceptos en su vida futura.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Ejercicios en clase, evaluación de la comprensión mediante problemas aplicados, participación en la explicación de conceptos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "11",
+        "12",
+        "13"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Utiliza las leyes de los exponentes para simplificar operaciones con el número de Avogadro ($6.022 \\times 10\\^{23}$) al calcular la cantidad de átomos o moléculas en una muestra.",
+      "Worklist": [
+        "A.11. Suma de exponentes",
+        "A.12. Resta de exponentes",
+        "A.13. Multiplicación de exponentes"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-29",
+      "FechaDeCierre": "2025-10-03",
+      "SemanaEscolar": 5,
+      "Contenido": "Uso práctico de la notación científica para representar y operar con números grandes y pequeños.",
+      "Aprendizaje": "Resolver problemas de contexto científico y tecnológico utilizando la notación científica.",
+      "Tema": "Notación científica.",
+      "Leccion": "Notación científica",
+      "Inicio": "La clase comienza con una breve recapitulación de lo aprendido sobre exponentes y su uso en la notación científica. Se presentan ejemplos de números muy grandes y muy pequeños, como las distancias astronómicas y las medidas subatómicas, para contextualizar la utilidad de la notación científica. Los alumnos son invitados a compartir otros ejemplos que hayan visto en la vida cotidiana o en los medios.",
+      "Desarrollo": "Se desarrollan ejercicios donde los estudiantes deben convertir números entre la notación decimal y la notación científica, y operar con ellos. Se utiliza software o calculadoras científicas para facilitar la conversión y para realizar operaciones, permitiendo a los estudiantes familiarizarse con herramientas digitales. Se discuten errores comunes y se brindan consejos para evitarlos, como la importancia de manejar correctamente los signos de los exponentes.",
+      "Cierre": "Los estudiantes presentan sus resultados y se realiza un debate sobre la importancia de la notación científica en el mundo actual, incluyendo ejemplos de su uso en investigaciones científicas y tecnologías avanzadas. Se deja una tarea con problemas que involucran la conversión y operación con números en notación científica, y una reflexión sobre cómo estas habilidades pueden ser útiles en el futuro, tanto académico como profesional.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación en la resolución de problemas, cuestionarios escritos, participación en discusiones de grupo."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "14",
+        "15"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Expresa y compara en notación científica el tamaño de un virus con el diámetro de un planeta para comprender las diferentes escalas del universo.",
+      "Worklist": [
+        "A.14. Notación científica 1",
+        "A.15. Notación científica 2"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-06",
+      "FechaDeCierre": "2025-10-10",
+      "SemanaEscolar": 6,
+      "Contenido": "Ubicación de puntos en el plano cartesiano y comprensión de los cuadrantes.",
+      "Aprendizaje": "Identificar y ubicar puntos en el plano cartesiano, y comprender la estructura de los cuadrantes.",
+      "Tema": "Plano cartesiano y la recta.",
+      "Leccion": "Ubicación en el plano cartesiano\nCuadrantes en el plano cartesiano.",
+      "Inicio": "La clase inicia con una actividad interactiva donde los alumnos ubican objetos en un plano en el salón de clases para familiarizarse con la idea de ejes y coordenadas. Se presenta formalmente el plano cartesiano, explicando cómo se estructura con dos ejes perpendiculares y los cuadrantes que resultan de su intersección. Se discuten ejemplos simples de cómo ubicar puntos en este plano.",
+      "Desarrollo": "Los alumnos practican la ubicación de puntos en el plano cartesiano a través de ejercicios guiados, primero en la pizarra y luego en sus cuadernos. Se introducen actividades en parejas donde deben ubicar puntos dados por coordenadas y luego describir la posición de esos puntos a sus compañeros. Se utilizan ejercicios visuales, como mapas y gráficos, para reforzar la comprensión de los cuadrantes y las coordenadas.",
+      "Cierre": "Se finaliza la clase con una actividad de juego en la que Compiten para ubicar correctamente puntos en un plano cartesiano gigante dibujado en el patio. Se hace un resumen de las reglas básicas y se asigna una tarea que incluye ejercicios de ubicación y problemas aplicados, como encontrar lugares en un mapa. Se refuerza la importancia de entender el plano cartesiano para interpretar gráficos y mapas en la vida cotidiana.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación en actividades prácticas, ejercicios escritos, evaluación del trabajo en equipo."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "16",
+        "17"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Representa vectores de fuerza o velocidad en un plano cartesiano, identificando el cuadrante para describir la dirección y el sentido del movimiento de un objeto.",
+      "Worklist": [
+        "A.16. Ubicación en el plano cartesiano",
+        "A.17. Cuadrantes en el plano cartesiano"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-13",
+      "FechaDeCierre": "2025-10-17",
+      "SemanaEscolar": 7,
+      "Contenido": "Concepto y cálculo de la pendiente de una recta en el plano cartesiano.",
+      "Aprendizaje": "Calcular la pendiente de una recta y comprender su significado en diferentes contextos.",
+      "Tema": "Plano cartesiano y la recta",
+      "Leccion": "Pendiente y ordenada\nEcuación de una recta",
+      "Inicio": "Se inicia con una actividad de repaso sobre el plano cartesiano y la ubicación de puntos. Se introduce el concepto de pendiente de una recta mediante ejemplos visuales de inclinaciones en rampas y colinas, conectando con situaciones reales. Se presenta la fórmula para calcular la pendiente y se resuelven ejemplos simples para ilustrar cómo aplicar la fórmula. Después, una breve introducción a la ecuación de la recta en su forma punto-pendiente. Se presentan ejemplos de cómo usar la pendiente y un punto para derivar la ecuación, mostrando paso a paso el proceso en la pizarra. Los alumnos son invitados a trabajar en parejas para practicar con ejemplos simples.",
+      "Desarrollo": "Los estudiantes trabajan en ejercicios prácticos para calcular la pendiente de diferentes rectas en el plano cartesiano, tanto en ejercicios guiados como en situaciones de la vida real. Se discuten las implicaciones de diferentes tipos de pendientes (positiva, negativa, cero, indefinida) y cómo se relacionan con el comportamiento de las rectas. Se utilizan gráficos y software de visualización para reforzar estos conceptos. Los alumnos practican derivando la ecuación de una recta con diferentes datos proporcionados, como dos puntos o un punto y la pendiente. Se resuelven problemas aplicados que requieren el uso de la ecuación de la recta, como calcular dónde se intersectan dos líneas o determinar si un punto pertenece a una recta dada. Se utilizan gráficos y simulaciones para visualizar cómo cambian las rectas con diferentes pendientes y ordenadas al origen.",
+      "Cierre": "Se concluye la clase con una actividad en la que los estudiantes deben crear y presentar un problema propio que involucre la pendiente de una recta, explicando su proceso de solución. Se hace un resumen de los puntos clave y se asigna una tarea que incluye problemas aplicados de cálculo de pendientes. Se refuerza la importancia de comprender la pendiente en contextos como el diseño y la física. Se finaliza con una actividad de presentación donde los estudiantes explican cómo resolvieron un problema que incluía la ecuación de una recta, resaltando los pasos y las estrategias utilizadas. Se hace una recapitulación de las formas de la ecuación de la recta y se asigna una tarea con problemas que incluyen aplicaciones prácticas y reflexiones sobre la utilidad de estos conceptos en la vida diaria.",
+      "EjesArticuladores": "Inclusión,Apropiación de las culturas, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Resolución de ejercicios, participación en la explicación de conceptos, evaluación mediante problemas aplicados."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "18",
+        "19",
+        "20"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Interpreta que la pendiente de una gráfica de posición contra tiempo representa la velocidad de un móvil y la ordenada al origen, su posición inicial.",
+      "Worklist": [
+        "A.18. Pendiente de una recta",
+        "A.19. Pendiente y ordenada",
+        "A.20. Ecuación de una recta"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-20",
+      "FechaDeCierre": "2025-10-24",
+      "SemanaEscolar": 8,
+      "Contenido": "Conversión entre porcentajes y decimales, y aplicación de porcentajes en la resolución de problemas.",
+      "Aprendizaje": "Resolver problemas que involucren el uso de porcentajes, aplicando conversiones y cálculos adecuados.",
+      "Tema": "Porcentajes.",
+      "Leccion": "Porcentajes a decimal\nDecimal a porcentaje\nPorcentaje de cantidades\nResolución de problemas.",
+      "Inicio": "Se inicia con una actividad interactiva que invita a los estudiantes a estimar porcentajes de diferentes cantidades en un juego de comparación visual, como determinar qué fracción de un gráfico circular está coloreada. Se presenta el concepto de porcentaje y su relación con los decimales, explicando cómo hacer las conversiones de una forma a otra. Se muestran ejemplos de cómo estos conceptos se aplican en situaciones reales, como en descuentos y tasas de interés.",
+      "Desarrollo": "Los estudiantes trabajan en ejercicios que incluyen convertir porcentajes a decimales y viceversa, y calcular porcentajes de diferentes cantidades. Se presentan problemas de aplicación, como calcular descuentos en compras o intereses en ahorros, para reforzar la comprensión de cómo se usan los porcentajes en la vida diaria. Se utilizan herramientas digitales, como calculadoras y hojas de cálculo, para facilitar los cálculos y para que los estudiantes se familiaricen con el uso de la tecnología en matemáticas.",
+      "Cierre": "Se realiza una actividad de cierre donde los estudiantes deben crear un problema realista que involucre porcentajes, y luego intercambiarlo con un compañero para resolverlo. Se hace una recapitulación conjunta de los conceptos clave y se aclaran dudas. Se asigna una tarea que incluye problemas de porcentajes y una breve reflexión sobre la importancia de entender y manejar porcentajes en su vida diaria, tanto en el ámbito personal como profesional.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en clase, evaluación escrita, observación de la participación en actividades prácticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Convierte la proporción de supervivencia de una especie a un porcentaje para comunicar la tasa de supervivencia en un estudio de población.",
+      "Worklist": [
+        "A.21. Porcentajes a decimal",
+        "A.22. Decimal a porcentaje",
+        "A.23. Porcentaje de cantidades 1",
+        "A.24. Porcentaje de cantidades 2",
+        "A.25. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-10-27",
+      "FechaDeCierre": "2025-10-31",
+      "SemanaEscolar": 9,
+      "Contenido": "Recapitulación e integración de los conocimientos y aprendizajes.",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Preparación a la evaluación",
+      "Leccion": "Revisión grupal de los saberes acumulados en el período de evaluación",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-11-03",
+      "FechaDeCierre": "2025-11-07",
+      "SemanaEscolar": 10,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Evaluación de la unidad",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Se realizará a través de la observación directa del desempeño del alumno al resolver los ejercicios.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos en MeXmáticas",
+      "Vinculacion": "",
+      "Worklist": [
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

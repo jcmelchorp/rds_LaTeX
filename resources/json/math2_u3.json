@@ -1,0 +1,503 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "23 mar",
+      "FechaDeCierre": "27 mar",
+      "SemanaEscolar": 27,
+      "Contenido": "Estadística",
+      "Aprendizaje": "Calcular y utilizar medidas de tendencia central y entender gráficos estadísticos.",
+      "Tema": "Probabilidad y estadística",
+      "Leccion": "Promedio, mediana y moda e interpretación de gráficas",
+      "Inicio": "Comenzar la semana introduciendo los conceptos de promedio, mediana y moda. Explicar cómo estos indicadores nos ayudan a interpretar datos y tomar decisiones informadas. Utilizar ejemplos prácticos como calificaciones escolares y encuestas de opinión. Realizar una actividad inicial que involucre la recolección de datos sencillos entre los estudiantes para calcular estas medidas. Además, presentar diferentes tipos de gráficos estadísticos (barras, pastel, histogramas) y cómo se utilizan para visualizar datos. Es importante que los estudiantes comprendan que cada medida de tendencia central y tipo de gráfico tiene su propio propósito y contexto de uso.",
+      "Desarrollo": "Durante el desarrollo, los alumnos trabajarán en ejercicios que les permitan calcular promedio, mediana y moda con diferentes conjuntos de datos. Un error común es confundir estos tres conceptos y aplicar fórmulas incorrectas. Para superar este error, se deben realizar múltiples prácticas y comparaciones entre los métodos de cálculo. Utilizar gráficos y tablas para visualizar los datos y sus medidas de tendencia central. Fomentar la interpretación y análisis crítico de los resultados. Además, se les enseñará a los estudiantes a crear e interpretar diversos tipos de gráficos estadísticos, vinculándolos con los datos calculados. Trabajar en equipos pequeños para facilitar la discusión y el intercambio de ideas. Introducir ejemplos de la vida real y datos relevantes para los estudiantes para mantener su interés y mostrar la aplicación práctica de estos conceptos.",
+      "Cierre": "Para cerrar la semana, se puede realizar un proyecto donde los estudiantes recojan datos y creen sus propias gráficas. Evaluar su habilidad para calcular y utilizar promedio, mediana y moda a partir de sus propios datos. Reflexionar sobre la importancia de las estadísticas en la vida diaria y cómo estas herramientas nos ayudan a comprender el mundo. Concluir con una discusión sobre los diferentes tipos de gráficos y su interpretación. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Finalmente, realizar una sesión de preguntas y respuestas para aclarar cualquier duda y repasar los puntos clave, asegurando que todos los estudiantes han comprendido los conceptos de promedio, mediana, moda e interpretación de gráficas.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "56",
+        "57",
+        "58"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Analiza los resultados de un experimento (ej. crecimiento de plantas), calculando el promedio, la mediana y la moda para determinar el efecto de una variable (luz, agua).",
+      "Worklist": [
+        "A.56. Mediana y moda",
+        "A.57. Promedio",
+        "A.58. Interpretación de gráficas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "56",
+        "57",
+        "58"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "13 abr",
+      "FechaDeCierre": "17 abr",
+      "SemanaEscolar": 28,
+      "Contenido": "Probabilidad",
+      "Aprendizaje": "Comprender y aplicar conceptos de probabilidad en la resolución de problemas.",
+      "Tema": "Probabilidad y estadística",
+      "Leccion": "Eventos dependientes, independientes y mutuamente excluyentes",
+      "Inicio": "Iniciar la semana introduciendo los conceptos de eventos dependientes, independientes y mutuamente excluyentes en probabilidad. Utilizar ejemplos prácticos y cotidianos para ilustrar estos conceptos, como tirar un dado, sacar cartas de una baraja o elegir bolas de una urna. Realizar una actividad inicial donde los estudiantes identifiquen y clasifiquen diferentes eventos en términos de dependientes, independientes o mutuamente excluyentes. Es crucial que comprendan las diferencias entre estos tipos de eventos y cómo afectan los cálculos de probabilidad.",
+      "Desarrollo": "En esta fase, los estudiantes trabajarán en ejercicios que les permitan practicar el cálculo de probabilidades para eventos dependientes, independientes y mutuamente excluyentes. Un error común es no identificar correctamente el tipo de evento, lo que lleva a errores en los cálculos de probabilidad. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de diagramas de árbol y tablas de contingencia para visualizar las probabilidades. Introducir problemas de la vida real que requieran aplicar estos conceptos para mantener a los estudiantes interesados y mostrar la relevancia práctica de la probabilidad. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de probabilidad aprendidos en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender la probabilidad en situaciones cotidianas, como en juegos de azar y toma de decisiones basadas en riesgos. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido las diferencias entre eventos dependientes, independientes y mutuamente excluyentes, así como cómo calcular sus probabilidades.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "59",
+        "60"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Calcula la probabilidad de que un descendiente herede dos rasgos genéticos independientes multiplicando sus probabilidades individuales.",
+      "Worklist": [
+        "A.59. Eventos mutuamente excluyentes",
+        "A.60. Eventos dependientes e independientes"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "59",
+        "60"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "20 abr",
+      "FechaDeCierre": "24 abr",
+      "SemanaEscolar": 29,
+      "Contenido": "Razones y proporciones",
+      "Aprendizaje": "Comprender y utilizar razones y proporciones en la resolución de problemas.",
+      "Tema": "Razones y proporciones",
+      "Leccion": "Relaciones proporcionales y constante de proporcionalidad",
+      "Inicio": "Comenzar la semana explicando los conceptos de razones y proporciones, así como la constante de proporcionalidad. Utilizar ejemplos cotidianos para ilustrar cómo se aplican estos conceptos, como recetas de cocina y velocidad. Realizar una actividad inicial que involucre la comparación de cantidades para despertar el interés y la curiosidad de los alumnos. Introducir el concepto de relaciones proporcionales y cómo se puede identificar la constante de proporcionalidad en distintas situaciones. Es importante que los estudiantes entiendan que las proporciones pueden representar relaciones entre distintas magnitudes y cómo identificar si una relación es proporcional.",
+      "Desarrollo": "En esta fase, los alumnos practicarán con ejercicios que implican el uso de razones y proporciones, así como la identificación y cálculo de la constante de proporcionalidad. Un error común es confundir cuándo usar una razón y cuándo una proporción. Para superar este error, es útil emplear ejemplos prácticos y situaciones reales. Trabajar en grupo y discutir soluciones ayuda a solidificar el entendimiento. Además, se pueden usar gráficos y tablas para representar visualmente las proporciones y facilitar su comprensión. Introducir problemas del mundo real que requieran el uso de razones y proporciones para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Fomentar la participación activa y la discusión para que los estudiantes puedan aprender unos de otros y aclarar sus dudas.",
+      "Cierre": "Para cerrar la semana, se debe realizar una actividad de evaluación donde los estudiantes apliquen los conceptos aprendidos en problemas del mundo real. Se pueden usar juegos interactivos y ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de las proporciones en la vida diaria y cómo estos conceptos nos ayudan a entender y resolver problemas cotidianos. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo identificar y utilizar relaciones proporcionales y la constante de proporcionalidad en distintas situaciones.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "61",
+        "62",
+        "63"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Determina la constante de proporcionalidad (masa) en la Segunda Ley de Newton, al analizar la relación directa entre la fuerza aplicada y la aceleración producida.",
+      "Worklist": [
+        "A.61. Relaciones proporcionales",
+        "A.62. Constante de proporcionalidad",
+        "A.63. Regla de correspondencia"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "61",
+        "62",
+        "63"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "27 abr",
+      "FechaDeCierre": "1 may",
+      "SemanaEscolar": 30,
+      "Contenido": "Razones y proporciones",
+      "Aprendizaje": "Aplicar proporciones directas, inversas y compuestas en la resolución de problemas.",
+      "Tema": "Razones y proporciones",
+      "Leccion": "Proporción directa, inversa y compuestas",
+      "Inicio": "Iniciar la semana explicando las diferencias entre proporción directa, inversa y compuestas. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos, como la relación entre velocidad y tiempo para una distancia constante (proporción inversa) y la relación entre cantidad de ingredientes y tamaño de la receta (proporción directa). Realizar una actividad inicial donde los estudiantes identifiquen y clasifiquen ejemplos de proporciones directas, inversas y compuestas en diversas situaciones. Es crucial que los estudiantes comprendan las diferencias entre estos tipos de proporciones y cuándo aplicar cada una en la resolución de problemas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la aplicación de proporciones directas, inversas y compuestas en la resolución de problemas. Un error común es no identificar correctamente el tipo de proporción, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar las proporciones y sus relaciones. Introducir problemas de la vida real que requieran aplicar estos conceptos para mantener a los estudiantes interesados y mostrar la relevancia práctica de las proporciones. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de proporciones directas, inversas y compuestas en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de las proporciones en la vida diaria y cómo estos conceptos nos ayudan a entender y resolver problemas cotidianos. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo aplicar proporciones directas, inversas y compuestas en distintas situaciones.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "64",
+        "65"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Utiliza la Ley de Boyle para resolver problemas de proporción inversa entre la presión y el volumen de un gas a temperatura constante.",
+      "Worklist": [
+        "A.64. Proporción directa e inversa",
+        "A.65. Proporciones compuestas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "64",
+        "65"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "4 may",
+      "FechaDeCierre": "8 may",
+      "SemanaEscolar": 31,
+      "Contenido": "Sucesiones aritméticas",
+      "Aprendizaje": "Identificar y completar sucesiones aritméticas, calcular la diferencia común.",
+      "Tema": "Sucesiones aritméticas",
+      "Leccion": "Completando la sucesión y diferencia de una sucesión",
+      "Inicio": "Iniciar la semana explicando el concepto de sucesiones aritméticas y cómo identificar y calcular la diferencia común. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes identifiquen patrones en sucesiones aritméticas sencillas y calculen la diferencia común entre términos consecutivos. Es crucial que los estudiantes comprendan cómo se forma una sucesión aritmética y la importancia de la diferencia común.",
+      "Desarrollo": "En esta fase, los estudiantes trabajarán en ejercicios que les permitan identificar y completar sucesiones aritméticas, así como calcular la diferencia común. Un error común es no identificar correctamente la diferencia común, lo que lleva a errores en la continuación de la sucesión. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar las sucesiones aritméticas. Introducir problemas de la vida real que requieran el uso de sucesiones aritméticas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de sucesiones aritméticas en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender las sucesiones aritméticas en situaciones cotidianas, como la planificación financiera y la progresión de tareas. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo identificar y completar sucesiones aritméticas, así como calcular la diferencia común.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "66",
+        "67"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Modela el crecimiento de una población de bacterias que se duplica cada hora como una sucesión geométrica, prediciendo su tamaño en etapas futuras.",
+      "Worklist": [
+        "A.66. Completando la sucesión",
+        "A.67. Diferencia de una sucesión"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "66",
+        "67"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "11 may",
+      "FechaDeCierre": "15 may",
+      "SemanaEscolar": 32,
+      "Contenido": "Sucesiones aritméticas",
+      "Aprendizaje": "Calcular el término enésimo y general de una sucesión aritmética.",
+      "Tema": "Sucesiones aritméticas",
+      "Leccion": "Término enésimo y general",
+      "Inicio": "Iniciar la semana explicando cómo calcular el término enésimo y general de una sucesión aritmética. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes identifiquen patrones en sucesiones aritméticas sencillas y calculen el término enésimo utilizando la fórmula correspondiente. Es crucial que los estudiantes comprendan cómo se calcula el término enésimo y general en una sucesión aritmética.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan calcular el término enésimo y general de una sucesión aritmética. Un error común es aplicar incorrectamente la fórmula del término enésimo, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar las sucesiones aritméticas y los términos enésimos. Introducir problemas de la vida real que requieran el uso de sucesiones aritméticas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de sucesiones aritméticas en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender las sucesiones aritméticas en situaciones cotidianas, como la planificación financiera y la progresión de tareas. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo calcular el término enésimo y general de una sucesión aritmética.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "68",
+        "69",
+        "70"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Desarrolla una fórmula general para encontrar la posición de un objeto en cualquier instante $t$, basándose en su patrón de movimiento (sucesión aritmética).",
+      "Worklist": [
+        "A.68. Término enésimo 1",
+        "A.69. Término general",
+        "A.70. Término enésimo 2"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "68",
+        "69",
+        "70"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "18 may",
+      "FechaDeCierre": "22 may",
+      "SemanaEscolar": 33,
+      "Contenido": "Ecuaciones lineales",
+      "Aprendizaje": "Utilizar el lenguaje algebraico para representar problemas y resolver ecuaciones mediante la sustitución de valores.",
+      "Tema": "Ecuaciones lineales",
+      "Leccion": "Lenguaje algebraico y sustitución de valores",
+      "Inicio": "Comenzar la semana introduciendo el lenguaje algebraico y su importancia en la formulación de ecuaciones. Utilizar ejemplos sencillos y visuales para mostrar cómo las letras y los símbolos se utilizan para representar números y operaciones. Realizar una actividad inicial donde los estudiantes traduzcan expresiones verbales a algebraicas. Es crucial que los estudiantes comprendan cómo se utiliza el lenguaje algebraico en la representación de problemas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar el uso del lenguaje algebraico y la sustitución de valores en la resolución de ecuaciones. Un error común es confundir el significado de las letras y cómo se utilizan en las ecuaciones. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar las ecuaciones y los valores sustituidos. Introducir problemas de la vida real que requieran el uso del lenguaje algebraico para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen el lenguaje algebraico en la formulación y resolución de ecuaciones mediante la sustitución de valores. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia del lenguaje algebraico en la resolución de problemas matemáticos y su aplicación en situaciones reales. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo utilizar el lenguaje algebraico y la sustitución de valores en la resolución de ecuaciones.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "71",
+        "72"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Sustituye valores de masa y velocidad en la fórmula de la energía cinética ($E\\_c =\\\\dfrac{1}{2}  m v^2$) para calcular la energía de un objeto en movimiento.",
+      "Worklist": [
+        "A.71. Lenguaje algebraico",
+        "A.72. Sustitución de valores"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "71",
+        "72"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "25 may",
+      "FechaDeCierre": "29 may",
+      "SemanaEscolar": 34,
+      "Contenido": "Ecuaciones lineales",
+      "Aprendizaje": "Resolver ecuaciones de primer grado y aplicar estos conocimientos en la resolución de problemas.",
+      "Tema": "Ecuaciones lineales",
+      "Leccion": "Ecuaciones de primer grado y resolución de problemas",
+      "Inicio": "Iniciar la semana explicando cómo resolver ecuaciones de primer grado. Utilizar ejemplos visuales y prácticos para ilustrar el proceso de resolver estas ecuaciones paso a paso. Realizar una actividad inicial donde los estudiantes resuelvan ecuaciones sencillas y verifiquen sus soluciones. Es crucial que los estudiantes comprendan cómo se resuelven las ecuaciones de primer grado y su importancia en la resolución de problemas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la resolución de ecuaciones de primer grado. Un error común es no seguir los pasos correctamente para despejar la variable x. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar las ecuaciones y los pasos necesarios para resolverlas. Introducir problemas de la vida real que requieran el uso de ecuaciones de primer grado para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para cerrar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando ecuaciones de primer grado. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de estas ecuaciones en situaciones reales, como la economía y la ciencia. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver ecuaciones de primer grado y aplicar estos conocimientos en la resolución de problemas.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "73",
+        "74",
+        "75"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Despeja una variable desconocida en una ecuación de primer grado, como calcular el tiempo ($t$) en la fórmula $v\\_f =v\\_i +at$.",
+      "Worklist": [
+        "A.73. Ecuaciones de primer grado 1",
+        "A.74. Ecuaciones de primer grado 2",
+        "A.75. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "73",
+        "74",
+        "75"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "1 jun",
+      "FechaDeCierre": "5 jun",
+      "SemanaEscolar": 35,
+      "Contenido": "Sistemas de ecuaciones",
+      "Aprendizaje": "Resolver sistemas de ecuaciones lineales utilizando el método de eliminación.",
+      "Tema": "Sistemas de ecuaciones",
+      "Leccion": "Métodode eliminación",
+      "Inicio": "Iniciar la semana explicando el concepto de sistemas de ecuaciones y el método de eliminación. Utilizar ejemplos visuales y prácticos para ilustrar el proceso de resolver sistemas de ecuaciones mediante este método. Realizar una actividad inicial donde los estudiantes resuelvan sistemas de ecuaciones sencillos utilizando la eliminación. Es crucial que los estudiantes comprendan cómo se utilizan los sistemas de ecuaciones para resolver problemas con múltiples incógnitas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la resolución de sistemas de ecuaciones utilizando el método de eliminación. Un error común es no alinear correctamente las ecuaciones para aplicar la eliminación, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar los sistemas de ecuaciones y los pasos necesarios para resolverlos. Introducir problemas de la vida real que requieran el uso de sistemas de ecuaciones para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando el método de eliminación. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de los sistemas de ecuaciones en situaciones reales, como la economía y la ciencia. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver sistemas de ecuaciones utilizando el método de eliminación.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "76"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve un sistema de ecuaciones para encontrar las corrientes desconocidas en diferentes partes de un circuito eléctrico, aplicando las leyes de Kirchhoff.",
+      "Worklist": [
+        "A.76. Método de eliminación"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "76"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "8 jun",
+      "FechaDeCierre": "12 jun",
+      "SemanaEscolar": 36,
+      "Contenido": "Sistemas de ecuaciones",
+      "Aprendizaje": "Resolver sistemas de ecuaciones lineales utilizando el método de sustitución.",
+      "Tema": "Sistemas de ecuaciones",
+      "Leccion": "Método de sustitución",
+      "Inicio": "Iniciar la semana explicando el concepto de sistemas de ecuaciones y el método de sustitución. Utilizar ejemplos visuales y prácticos para ilustrar el proceso de resolver sistemas de ecuaciones mediante este método. Realizar una actividad inicial donde los estudiantes resuelvan sistemas de ecuaciones sencillos utilizando la sustitución. Es crucial que los estudiantes comprendan cómo se utilizan los sistemas de ecuaciones para resolver problemas con múltiples incógnitas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la resolución de sistemas de ecuaciones utilizando el método de sustitución. Un error común es no sustituir correctamente las variables, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar los sistemas de ecuaciones y los pasos necesarios para resolverlos. Introducir problemas de la vida real que requieran el uso de sistemas de ecuaciones para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando el método de sustitución. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de los sistemas de ecuaciones en situaciones reales, como la economía y la ciencia. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver sistemas de ecuaciones utilizando el método de sustitución.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "77"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Aplica un método algebraico (ej. sustitución) para resolver un sistema de ecuaciones que representa el balance de materia en una reacción química con múltiples reactivos.",
+      "Worklist": [
+        "A.77. Método de sustitución"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "77"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "15 jun",
+      "FechaDeCierre": "19 jun",
+      "SemanaEscolar": 37,
+      "Contenido": "Sistemas de ecuaciones",
+      "Aprendizaje": "Resolver sistemas de ecuaciones lineales utilizando el método de igualación.",
+      "Tema": "Sistemas de ecuaciones",
+      "Leccion": "Método de igualación",
+      "Inicio": "Iniciar la semana explicando el concepto de sistemas de ecuaciones y el método de igualación. Utilizar ejemplos visuales y prácticos para ilustrar el proceso de resolver sistemas de ecuaciones mediante este método. Realizar una actividad inicial donde los estudiantes resuelvan sistemas de ecuaciones sencillos utilizando la igualación. Es crucial que los estudiantes comprendan cómo se utilizan los sistemas de ecuaciones para resolver problemas con múltiples incógnitas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la resolución de sistemas de ecuaciones utilizando el método de igualación. Un error común es no igualar correctamente las ecuaciones, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar los sistemas de ecuaciones y los pasos necesarios para resolverlos. Introducir problemas de la vida real que requieran el uso de sistemas de ecuaciones para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando el método de igualación. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de los sistemas de ecuaciones en situaciones reales, como la economía y la ciencia. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver sistemas de ecuaciones utilizando el método de igualación.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "78"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve un sistema de ecuaciones para encontrar las corrientes desconocidas en diferentes partes de un circuito eléctrico, aplicando las leyes de Kirchhoff.",
+      "Worklist": [
+        "A.78. Método de igualación"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "78"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "22 jun",
+      "FechaDeCierre": "26 jun",
+      "SemanaEscolar": 38,
+      "Contenido": "Sistemas de ecuaciones",
+      "Aprendizaje": "Resolver sistemas de ecuaciones lineales con dos y tres variables.",
+      "Tema": "Sistemas de ecuaciones",
+      "Leccion": "Sistema de ecuaciones",
+      "Inicio": "Iniciar la semana explicando el concepto de sistemas de ecuaciones con dos y tres variables. Utilizar ejemplos visuales y prácticos para ilustrar el proceso de resolver sistemas de ecuaciones con dos variables utilizando diversos métodos (eliminación, sustitución, igualación). Realizar una actividad inicial donde los estudiantes resuelvan sistemas de ecuaciones sencillos con dos variables. Es crucial que los estudiantes comprendan cómo se utilizan los sistemas de ecuaciones para resolver problemas con múltiples incógnitas. Después, abordamos el problema de tres variables.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la resolución de sistemas de ecuaciones con dos variables utilizando diferentes métodos. Un error común es no alinear correctamente las ecuaciones o no aplicar el método adecuado, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales claros. Fomentar el uso de gráficos y tablas para visualizar los sistemas de ecuaciones y los pasos necesarios para resolverlos. Introducir problemas de la vida real que requieran el uso de sistemas de ecuaciones con dos variables para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando sistemas de ecuaciones con dos variables. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de los sistemas de ecuaciones con dos o tres variables en situaciones reales, como la economía y la ciencia. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver sistemas de ecuaciones con dos y tres variables utilizando diferentes métodos.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "79",
+        "80"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve un sistema de ecuaciones para encontrar las corrientes desconocidas en diferentes partes de un circuito eléctrico, aplicando las leyes de Kirchhoff.",
+      "Worklist": [
+        "A.79. Sistema de ecuaciones 2x2",
+        "A.80. Sistema de ecuaciones 3x3"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "79",
+        "80"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "29 jun",
+      "FechaDeCierre": "3 jul",
+      "SemanaEscolar": 39,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Evaluación de la unidad",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Se realizará a través de la observación directa del desempeño del alumno al resolver los ejercicios.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

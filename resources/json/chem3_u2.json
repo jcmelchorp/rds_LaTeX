@@ -1,0 +1,628 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "24 nov",
+      "FechaDeCierre": "28 nov",
+      "SemanaEscolar": 13,
+      "Contenido": "Mezclas, compuestos y elementos representados con el modelo corpuscular.",
+      "Aprendizaje": "Explica semejanzas y diferencias de mezclas, compuestos y elementos, a partir de actividades experimentales y los clasifica en materiales de uso cotidiano.",
+      "Tema": "Compuestos y mezclas",
+      "Leccion": "L1. Sustancias elementales y compuestos",
+      "Inicio": "La lección presenta la clasificación y las características de las sustancias puras, es decir, de los elementos y los compuestos, haciendo la distinción entre estos y las mezclas. La actividad de esta etapa tiene como propósito que los estudiantes analicen una gráfica para encontrar una relación entre el número de crímenes cometidos con violencia en los Estados Unidos de América y la cantidad de plomo emitido a la atmósfera. Si bien es cierto que, con los datos de la gráfica, es posible suponer una correlación entre la presencia de plomo en el medio ambiente y el comportamiento violento de las personas, explíqueles que se equieren más evidencias que sustenten este argumento y sugiérales que investiguen sobre más afectaciones a la salud provocadas por otros metales como el cadmio, el mercurio y el arsénico.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta sección es que los educandos reconozcan que los elementos químicos son sustancias que no pueden descomponerse en otras más simples, mientras que los compuestos sí lo pueden hacer por medio de diversos métodos químicos. Además, dicha sección muestra la clasificación que se hace de los elementos y de los compuestos para estudiarlos en Química. Respecto a las actividades, en la primera de ellas (página 83) se sugiere orientarlos sobre los tipos de clasificaciones que pueden hacer para agrupar las sustancias que aparecen en la tabla, sobre todo, que lo hagan en función de cuáles sustancias son elementos y cuáles son compuestos. Para la actividad experimental (página 84), haga énfasis en el hecho de que se empleará la electrólisis, que es un método químico que permite separar un compuesto en los elementos que lo conforman. Para complementar este trabajo, se sugiere solicitarles que hagan una investigación sobre las aplicaciones de la electrólisis en la industria. Para el segundo experimento (páginas 85 y 86), el alumnado deberá identificar las propiedades físicas de distintas sustancias, como el color, el brillo, la maleabilidad, la ductilidad y la conductividad eléctrica y, con base en los resultados obtenidos, tendrá que proponer una clasificación en metales y no metales. Sobre esto, se sugiere que les comente que dichas propiedades no son un criterio definitivo de clasificación.",
+      "Cierre": "La actividad de esta etapa busca que apliquen los conocimientos adquiridos en la lección. Pídales que investiguen las fórmulas químicas de dos compuestos y dos elementos, así como algunos usos de éstos. Por último, haga énfasis en el hecho de que las mezclas pueden separarse por procedimientos físicos, los cuales se basan en ciertas propiedades y características como los estados de agregación, la solubilidad, el magnetismo, la densidad, etcétera; mientras que para separar los compuestos en los elementos que los conforman se requiere de métodos químicos, como la electrólisis. Pida a los estudiantes que resuelvan la ficha \"Contaminación del aire, una asesina silenciosa\" de su cuaderno de evidencias.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Distingue los elementos de los compuestos."
+      ],
+      "Evidencias": [
+        "F7"
+      ],
+      "Actividades": [
+        "1",
+        "2",
+        "3"
+      ],
+      "Proyectos": [],
+      "LibroSep": "",
+      "LibroMcMillan": "Química Imagina 82-87",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.\\\\ \\textbf{Matemáticas:} Analiza datos en gráficas.",
+      "Worklist": [
+        "L1. Sustancias elementales y compuestos",
+        "A.1 Mezclas y sustancias puras",
+        "A.2 ¿Elemento, compuesto o mezcla?",
+        "A.3 Elementos y compuestos",
+        "F7. Aire limpio, planeta sano"
+      ],
+      "Libros": [
+        "Química Imagina 82-87"
+      ],
+      "ActPro": [
+        "1",
+        "2",
+        "3",
+        "F7"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "1 dic",
+      "FechaDeCierre": "5 dic",
+      "SemanaEscolar": 14,
+      "Contenido": "Mezclas, compuestos y elementos representados con el modelo corpuscular.",
+      "Aprendizaje": "Construye modelos corpusculares de mezclas, compuestos y elementos, a fin de comprender la estructura interna de los materiales en diferentes estados de agregación.",
+      "Tema": "Modelo corpuscular",
+      "Leccion": "L2. Modelo corpuscular",
+      "Inicio": "La lección muestra el uso de los modelos corpusculares para representar la materia, es decir, las mezclas y las sustancias (compuestos y elementos). En sí, con esta lección se busca que los estudiantes desarrollen su capacidad de abstracción, a fin de que puedan relacionar fenómenos que ocurren a nivel macroscópico con descripciones de lo que sucede a nivel nanoscópico. La actividad de este apartado tiene como objetivo que los educandos reconozcan que la materia está formada por partículas; sin embargo, es posible que sus dibujos sean representaciones macroscópicas, sólo que hechas a una escala menor; por ejemplo, tanto el agua como el etanol, es posible que los representen como si fueran gotas más pequeñas, mientras que el dióxido de carbono lo pueden dibujar como si fueran ondas de viento o como pequeños puntos. Por consiguiente, se recomienda repasar la teoría cinética de la materia para orientarlos en las representaciones que deben elaborar.",
+      "Desarrollo": "El propósito de los textos y las actividades de este apartado es mostrarles a los estudiantes que en la representación de una sustancia elemental se observan átomos que son iguales entre sí; en cambio, para los compuestos, éstos son de diferente tipo. Antes de resolver las actividades, se sugiere que refuerce el término nanoscópico y retome los conceptos vistos en la lección pasada, que trata sobre los elementos y los compuestos. Para la primera actividad (página 89), retome lo visto en el tema de mezclas y recalque a los alumnos que tanto los elementos como los compuestos pueden formar moléculas, no obstante, haga énfasis en que algunos elementos, como los gases nobles, se encuentran como átomos independientes. Aunado a ello, apóyese en la figura 2.2 de la página 89 que muestra el cobre; coménteles que existen sustancias elementales que no están formadas por moléculas o átomos independientes, sino por átomos organizados en arreglos especiales, los cuales forman redes cristalinas o estructuras tridimensionales. Por otra parte, para la actividad de la página 90 solicite a los educandos que organizados en equipos, hagan una investigación acerca de los alótropos y que indiquen qué otros elementos poseen esta característica. Incluso, el producto de esta investigación puede formar parte del portafolio de evidencias.",
+      "Cierre": "La actividad de esta etapa busca que los alumnos apliquen los conocimientos adquiridos en la lección. El objetivo es que usen la representación química para las diferentes sustancias que aparecen en la tabla. Una vez que la hayan terminado, pídales que expliquen sus representaciones con base en el modelo corpuscular. Asimismo, pídales que vuelvan a responder la actividad de \"Inicio\" (página 88) y que analicen si hubo cambios o no en las representaciones elaboradas. Por último, haga énfasis en que los átomos no poseen color, y que el código empleado tanto en las imágenes como en las actividades es una convención para facilitar el lenguaje en Química.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Elabora de manera correcta una representación de los elementos y compuestos con el modelo corpuscular.",
+        "Identifica la representación de los elementos y compuestos presentes en una mezcla utilizando el modelo corpuscular."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "4"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y Pensamiento Científico 217",
+      "LibroMcMillan": "Química Imagina 88-91",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.",
+      "Worklist": [
+        "L2. Modelo corpuscular",
+        "A.4 ¿Elemento, compuesto o mezcla? 2"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 217",
+        "Química Imagina 88-91"
+      ],
+      "ActPro": [
+        "4"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "8 dic",
+      "FechaDeCierre": "12 dic",
+      "SemanaEscolar": 15,
+      "Contenido": "La Tabla periódica: criterios de clasificación de los elementos químicos y sus propiedades.",
+      "Aprendizaje": "Reconoce la presencia y predominancia de algunos elementos químicos que conforman a los seres vivos, la Tierra y el Universo, así como su ubicación en la Tabla periódica: metales, no metales y semimetales.",
+      "Tema": "Elementos en los seres vivos",
+      "Leccion": "L3. Elementos en todos lados",
+      "Inicio": "La lección tiene el propósito de que los estudiantes reconozcan que en su entorno hay elementos químicos, sobre todo, que sean conscientes de que éstos se encuentran presentes en todos los seres vivos, en la Tierra y el Universo. El objetivo de la actividad de este apartado es que los estudiantes reflexionen acerca del impacto que tienen los metales (ejemplos de elementos) en el desarrollo del país. Sobre esto, mencione las múltiples aplicaciones de los materiales metálicos y solicíteles que las relacionen con el desarrollo económico de México.",
+      "Desarrollo": "El propósito de los textos y las actividades de esta etapa es mostrar a los educandos que los elementos químicos cumplen funciones necesarias para la subsistencia de los seres vivos, y los requieren para llevar a cabo sus funciones vitales. Por otra parte, también se pretende que reconozcan que, debido a las propiedades que poseen los elementos metálicos, como la maleabilidad, la ductilidad, la conductividad eléctrica y térmica y el brillo, es que éstos son ampliamente utilizados en gran variedad de industrias y sectores. Para la primera actividad (página 93), que aborda el tema del uso de los metales, comente a los alumnos que, tanto los elementos metálicos como las aleaciones (mezclas de metales), han sido empleados por las civilizaciones desde la antigüedad; debido a ello, algunas etapas importantes de la historia de los seres humanos llevan el nombre del metal o la aleación que se utilizaba en una determinada época, por ejemplo, Edad de Cobre, Edad de Bronce y Edad de Hierro. Por otra parte, respecto al proceso de reúso y reciclado, explíqueles que varios metales reciclados logran conservar sus propiedades y, en algunos casos, no tienen limitaciones para ser reutilizados. Asimismo, mencione que para otros metales puede ocurrir que los costos de extracción y producción, así como el impacto ambiental que generan estos procesos, deberían conllevar la reducción o rechazo de dichos elementos metálicos. Para la segunda actividad (página 94), se elaborarán y analizarán dos gráficas a partir de los datos experimentales de abundancia de los elementos químicos en dos sistemas distintos, uno de ellos es el cuerpo humano y el otro es la corteza terrestre. Al respecto de esta actividad, coménteles que la abundancia de los elementos se expresa comúnmente en porcentaje en masa.",
+      "Cierre": "La actividad de esta etapa busca que los educandos apliquen los conocimientos adquiridos en la lección. El objetivo es que reflexionen en torno a la presencia de los elementos químicos en el universo. Explíqueles que la Tierra es el planeta idóneo para que prolifere la vida, y esto se debe a ciertas características como la presencia de oxígeno, la existencia de agua en los tres estados de agregación de la materia y la distancia que tiene nuestro planeta al Sol, entre otras.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Reconoce los elementos químicos en la Tierra y en el cuerpo humano."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "5",
+        "6"
+      ],
+      "Proyectos": [],
+      "LibroSep": "",
+      "LibroMcMillan": "Química Imagina 92-95",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.\\\\ \\textbf{Matemáticas:} Analiza datos en tablas y gráficas.",
+      "Worklist": [
+        "L3. Elementos en todos lados",
+        "A.5 Elementos y su abundancia",
+        "A.6 Modelo corpuscular"
+      ],
+      "Libros": [
+        "Química Imagina 92-95"
+      ],
+      "ActPro": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "15 dic",
+      "FechaDeCierre": "19 dic",
+      "SemanaEscolar": 16,
+      "Contenido": "La Tabla periódica: criterios de clasificación de los elementos químicos y sus propiedades.",
+      "Aprendizaje": "Construye modelos atómicos de Bohr -distribución de electrones en órbitas- con base en el número atómico de los primeros elementos químicos, con la intención de representar su conformación: protones, neutrones y electrones.",
+      "Tema": "Modelos atómicos",
+      "Leccion": "L4. Modelos atómicos",
+      "Inicio": "La lección tiene por objetivo que Comprendan la estructura de un átomo en función de las partículas subatómicas que lo constituyen, así como la manera en que el número de dichas partículas permite identificarlos y diferenciarlos entre sí. Por otra parte, también se pretende que conozcan los conceptos de mol, constante de Avogadro y masa molar. La actividad de esta etapa tiene como propósito que los educandos adivinen cuáles objetos se encuentran al interior de una caja, porque no es posible observarlos. Al respecto, haga énfasis en el hecho de que en diversas ocasiones la evidencia que se requiere no siempre se puede obtener de manera directa.",
+      "Desarrollo": "El propósito de los textos y las actividades de esta sección es mostrarles a los alumnos la importancia de las partículas subatómicas. Por ejemplo, en el caso de los protones, el número de éstos determina la identidad de cada átomo; la ganancia o pérdida de electrones es útil para explicar el comportamiento químico y, en el caso de los neutrones, el hecho de que puede haber un número diferente de éstos en los átomos de un mismo elemento hace que existan los isótopos. La primera actividad (página 97) busca que los estudiantes indaguen más información sobre los isótopos. Para enriquecer este tema, se sugiere que también les solicite investigar acerca de isótopos que se emplean en medicina nuclear. Para la segunda actividad (página 98), oriente la reflexión de tal manera que comprendan que algunos electrones se localizan más cerca del núcleo, mientras que otros se encuentran en regiones más lejanas. En la tercera actividad (página 99), es conveniente que les recalque que un átomo es una partícula eléctricamente neutra, ya que tiene el mismo número de protones y de electrones; sin embargo, si un átomo gana o pierde electrones adquiere una carga eléctrica porque cambia el balance entre sus protones y sus electrones. Asimismo, se sugiere que les solicite que en las representaciones visuales que elaboren incluyan los protones que posee cada ion. Por último, haga énfasis en el hecho de que la masa molar se calcula a partir de la fórmula química de una sustancia, por lo cual es importante tomar en cuenta los subíndices, ya que éstos indican el número de átomos que hay de un determinado elemento en un compuesto.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los educandos apliquen los conocimientos adquiridos en la lección, para ello deberán emplear el concepto de cantidad de sustancia y cómo dicho concepto es útil para hacer cálculos matemáticos relacionados con la cantidad de partículas y con la cantidad de masa. También haga énfasis en que la masa molar se utiliza como un factor de conversión para transformar gramos a moles y viceversa.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Diferencia entre número atómico y número de masa.",
+        "Utiliza factores de conversión para relacionar la masa, el mol y el número de Avogadro."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "7",
+        "8"
+      ],
+      "Proyectos": [
+        "Atomos"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 216-220",
+      "LibroMcMillan": "Química Imagina 96-101",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.\\\\ \\textbf{Matemáticas:} Resuelve operaciones.",
+      "Worklist": [
+        "L4. Modelos atómicos",
+        "A.7 Estructura atómica",
+        "A.8 Cantidad de la materia"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 216-220",
+        "Química Imagina 96-101"
+      ],
+      "ActPro": [
+        "7",
+        "8",
+        "Atomos"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "12 ene",
+      "FechaDeCierre": "16 ene",
+      "SemanaEscolar": 17,
+      "Contenido": "La Tabla periódica: criterios de clasificación de los elementos químicos y sus propiedades.",
+      "Aprendizaje": "Interpreta la información de la Tabla periódica ordenada por el número atómico, así como por grupos y periodos e identifca las propiedades periódicas de elementos representativos que permita inferir su comportamiento químico.",
+      "Tema": "Tabla periódica",
+      "Leccion": "L5. Tabla periódica",
+      "Inicio": "La lección les muestra a los estudiantes la manera en que está organizada la tabla periódica que se usa en la actualidad, así como las características, las propiedades y los usos de algunos elementos representativos. Para la actividad de esta etapa fomente la creatividad de los educandos. Se sugiere que con esta actividad inicie la lección, aunque deberá solicitar que averigüen con antelación. Más adelante, y si el tiempo lo permite, organice una exposición, ya sea entre los compañeros del mismo grupo, con integrantes de otro grupo o grado o con los padres de familia, para que muestren algunos productos de la relación de los elementos y obras de arte.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta etapa es que los alumnos comprendan la organización de los elementos en la tabla periódica, así como su importancia, y conozcan la información que ésta aporta. Coménteles que fue el químico sueco Jöns Jacob Berzelius quien sugirió el uso de símbolos para representar los elementos; para ello, propuso que se utilizara la primera letra en mayúscula del nombre griego o latín de la sustancia en cuestión, y que, en caso de que hubiera elementos que comenzaran con la misma letra, se agregara una segunda letra minúscula para poder diferenciarlos. Para la primera actividad, mencione que antes de Dimitri Mendeleiev otros científicos también hicieron propuestas para organizar los elementos químicos conocidos hasta ese momento. Por ejemplo, el químico Johann Wolfgang Döbereiner relacionó la masa atómica de ciertos elementos con sus propiedades, de tal manera que los acomodó en forma de tríadas, e indicó que la masa atómica de uno de los tres elementos de la tríada es intermedia entre la masa atómica de los otros dos. Posteriormente, John Alexander Newlands propuso una clasificación de los elementos conocida como la Ley de las Octavas, ya que al ordenarlos en forma ascendente con base en su masa atómica notó que siete elementos consecutivos tenían propiedades diferentes, pero que el octavo elemento tenía propiedades parecidas al primero del grupo anterior. Asimismo, Alexandre Béguyer de Chancourtois hizo una propuesta en la cual acomodó los elementos químicos en una curva helicoidal según el orden creciente de sus masas atómicas. Solicite a los estudiantes que hagan una propuesta sobre la manera en que hubieran acomodado los elementos químicos, pero solamente tomando en cuenta la información de la cual disponían en el siglo xix . Para la segunda actividad, que es experimental (páginas 108 y 109), indique a los educandos que creen un registro fotográfico, a fin de que puedan comparar las propiedades del azufre antes y después de fundirlo y enfriarlo.",
+      "Cierre": "La actividad de este apartado tiene como propósito que los alumnos apliquen los conocimientos adquiridos en la lección; para ello, deberán adivinar el elemento químico que se les ha sido asignado al azar con base en una serie de preguntas, como la ubicación en la tabla periódica, clasificación, reactividad, propiedades, usos, entre otros. Por último, explíqueles la importancia de la sistematización de los elementos químicos en la tabla periódica propuesta por Mendeleiev y destaque el hecho de que fue el antecedente para que se propusiera la ley periódica de manera posterior.",
+      "EjesArticuladores": "Artes y experiencias estéticas. Reconoce la relación de algunas obras de arte y la tabla periódica.",
+      "EvaluacionFormativa": [
+        "Identifica y utiliza la información proporcionada por la tabla periódica."
+      ],
+      "Evidencias": [
+        "F8"
+      ],
+      "Actividades": [
+        "9",
+        "1"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y Pensamiento Científico 255-260",
+      "LibroMcMillan": "Química Imagina 102-109",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.\\\\ \\textbf{Matemáticas:} Analiza datos en tablas.",
+      "Worklist": [
+        "L5. Tabla periódica",
+        "A.9 ¿De qué elemento se trata?",
+        "A.10 Identificación atómica"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 255-260",
+        "Química Imagina 102-109"
+      ],
+      "ActPro": [
+        "9",
+        "1",
+        "F8"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "19 ene",
+      "FechaDeCierre": "23 ene",
+      "SemanaEscolar": 18,
+      "Contenido": "La Tabla periódica: criterios de clasificación de los elementos químicos y sus propiedades.",
+      "Aprendizaje": "Representa los electrones de valencia de átomos de diferentes elementos químicos, por medio de diagramas de Lewis y los relaciona con el grupo al que pertenece en la Tabla periódica.",
+      "Tema": "Propiedades periódicas",
+      "Leccion": "L6. Propiedades periódicas",
+      "Inicio": "La lección tiene el propósito que los estudiantes se familiaricen con el concepto de periodicidad y las propiedades de los elementos que la presentan en la tabla periódica. Sobre la actividad de esta sección mencióneles que los procesos de extracción y explotación de minerales tienen impactos ambientales significativos, los cuales pueden perdurar en el tiempo, e incluso ser permanentes, a pesar de que haya cesado la actividad minera en un determinado lugar. Solicíteles que investiguen las consecuencias que implica esta actividad; por ejemplo, en la contaminación del agua, el aire y el suelo; la deforestación; los daños a la flora y la fauna; el desplazamiento de las poblaciones humanas; etcétera.",
+      "Desarrollo": "El propósito de los textos y las actividades de esta etapa es que los educandos comprendan que las propiedades periódicas permiten hacer predicciones en las propiedades físicas y químicas de los elementos con base en su posición o ubicación en la tabla periódica. Para la primera actividad (página 111), los alumnos deberán establecer una relación entre el punto de fusión y el número atómico de diversos elementos. Haga énfasis en el hecho de que la gráfica mostrará un comportamiento periódico, porque se observará que los valores del punto de fusión incrementarán o disminuirán de manera repetitiva. Recuérdeles que la valencia se relaciona con el grupo al que pertenece el elemento y con el número de electrones que se encuentran en la última capa de un átomo. Para la segunda actividad (página 113), mencione que para estudiar el radio atómico se debe considerar a los átomos como esferas y que éste es una propiedad periódica que depende de las fuerzas electrostáticas entre los protones y los electrones, y de la forma en que estos últimos se acomodan en capas. Para la tercera actividad (páginas 113 y 114), haga énfasis en que la ganancia o pérdida de electrones se presenta en la capa externa de los átomos. También explíqueles que existe otra propiedad periódica conocida como afinidad electrónica, la cual se define como la energía que resulta de agregar un electrón a un átomo en estado gaseoso, y además presenta la misma tendencia que la energía de ionización, es decir, que aumenta a medida que se incrementa el número atómico, mientras que para un mismo grupo o familia disminuye al aumentar dicho número.",
+      "Cierre": "La actividad de esta etapa tiene como fin que los estudiantes apliquen los conocimientos adquiridos en la lección; para ello, se les pide que relacionen diversas propiedades, como la densidad, los puntos de fusión y de ebullición, el radio atómico y la energía de ionización con el número atómico de diversos elementos, a fin de que encuentren un comportamiento periódico en función de la ubicación de dichos elementos en la tabla periódica. Por último, haga hincapié en el hecho de que las propiedades periódicas dependen del número de electrones en la capa de valencia de cada tipo de átomo y de la forma en que los electrones se distribuyen.",
+      "EjesArticuladores": "",
+      "EvaluacionFormativa": [
+        "Identifica las propiedades periódicas de los elementos representativos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "11",
+        "12"
+      ],
+      "Proyectos": [
+        "Periodica"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 260-262",
+      "LibroMcMillan": "Química Imagina 110-115",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia. \\\\ \\textbf{Matemáticas:} Analiza datos en tablas y gráficas.",
+      "Worklist": [
+        "L6. Propiedades periódicas",
+        "A.11 ¿Cuántos electrones de valencia tiene?",
+        "A.12 Tabla periódica y propiedades de los elementos",
+        "F8. La calidad del suelo, sostén para la vida"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 260-262",
+        "Química Imagina 110-115"
+      ],
+      "ActPro": [
+        "11",
+        "12",
+        "Periodica"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "26 ene",
+      "FechaDeCierre": "30 ene",
+      "SemanaEscolar": 19,
+      "Contenido": "La Tabla periódica: criterios de clasificación de los elementos químicos y sus propiedades.",
+      "Aprendizaje": "Experimenta y diferencia los compuestos iónicos y moleculares, a partir de las propiedades identificadas en actividades experimentales; elabora conclusiones, inferencias y predicciones con base en la evidencia obtenida.",
+      "Tema": "Diagrama de Lewis",
+      "Leccion": "L7. Enlaces químicos",
+      "Inicio": "El objetivo de la lección es que los estudiantes representen el enlace químico mediante los electrones de valencia a partir de la estructura de Lewis. La actividad de esta etapa busca favorecer en los educandos la capacidad de abstracción, ya que se les invita a representar a nivel nanoscópico los átomos que conforman la molécula de agua. Al respecto, es posible que dibujen pequeñas gotas de agua, en vez de elaborar representaciones de átomos y enlaces; en ese sentido, se sugiere repasar el modelo corpuscular de la materia.",
+      "Desarrollo": "El propósito de los textos y la actividad en esta etapa es que los alumnos elaboren estructuras de Lewis de especies neutras y de iones. Para estudiar el enlace químico, mencione que éste se genera por la interacción de los electrones de valencia, lo cual conlleva la unión de dos o más átomos. Si los electrones de valencia de un átomo se transfieren a otro(s) átomo(s), se formarán iones, mientras que si los electrones ocupan simultáneamente la capa de valencia de dos o más átomos, se dice que entre estos se comparten los electrones. La primera actividad tiene como finalidad que los estudiantes retomen lo aprendido sobre los diagramas de punto y las estructuras de Lewis para la representación química de diversas sustancias. Sobre esto, haga énfasis en que deben identificar los electrones de valencia de cada elemento para poder construir el diagrama de puntos; para ello, es importante que primero ubiquen en la tabla periódica el grupo o familia al que pertenece el elemento en cuestión. Por otra parte, para elaborar estructuras de Lewis de los iones, recuérdeles que deben agregar o eliminar los electrones necesarios para cumplir con la carga de la especie química correspondiente, es decir, que si se trata de un catión, deberán quitarle electrones según el número que indique la carga, pero si se trata de un anión, deberán añadir el número de electrones que indique la carga. Por último, explíqueles que no todos los átomos atraen con la misma fuerza a los electrones de valencia en un enlace químico, por ejemplo, algunos átomos como los del flúor y el oxígeno atraen con más fuerza a los electrones que los átomos de carbono e hidrógeno; por consiguiente, esta situación genera que la distribución de los electrones no sea la misma en todas las partes, aunque la molécula formada sea eléctricamente neutra. Sobre esto, mencióneles que la electronegatividad es una manera de medir la fuerza con la que diferentes átomos atraen a los electrones en un enlace, y que cuando ocurre un enlace químico entre átomos diferentes, el átomo más electronegativo será parcialmente negativo, mientras que el átomo menos electronegativo será parcialmente positivo.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los educandos apliquen los conocimientos adquiridos en la secuencia. El objetivo de esta es que propongan las estructuras de Lewis para algunas moléculas simples. Se sugiere que utilicen diferentes colores para representar los distintos átomos participantes en el enlace. Por último, haga énfasis en la importancia que tienen los electrones de valencia para explicar la estructura y la reactividad de las sustancias. Coménteles que el tipo de átomos que se combinan para formar una molécula y la manera en la que se enlazan determina la geometría, la cual es una característica de las moléculas que permite explicar su comportamiento químico.",
+      "EjesArticuladores": "",
+      "EvaluacionFormativa": [
+        "Representa estructuras de Lewis para átomos neutros y iones.",
+        "Representa estructuras de Lewis para moléculas simples."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "13",
+        "14"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y Pensamiento Científico 204-207",
+      "LibroMcMillan": "Química Imagina 116-119",
+      "Vinculacion": "\\textbf{Física:} Reconoce las interacciones de la electricidad y el magnetismo.",
+      "Worklist": [
+        "L7. Enlaces químicos",
+        "A.13 Protones y electrones de valencia",
+        "A.14 Representaciones de las sustancias"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 204-207",
+        "Química Imagina 116-119"
+      ],
+      "ActPro": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2 feb",
+      "FechaDeCierre": "6 feb",
+      "SemanaEscolar": 20,
+      "Contenido": "Los compuestos iónicos y moleculares: propiedades y estructura.",
+      "Aprendizaje": "Analiza la formación y estructura de compuestos iónicos y moleculares a partir de las propiedades de la Tabla periódica",
+      "Tema": "Compuestos iónicos y moleculares",
+      "Leccion": "L8. Sustancias moleculares y compuestos iónicos",
+      "Inicio": "El objetivo de la lección es mostrarles a los estudiantes que los materiales presentan diversas propiedades debido a que están formados por átomos distintos y porque éstos se unen de diferentes maneras. Con la actividad de este apartado se busca que los educandos analicen y comparen las propiedades de varias sustancias y expliquen sus semejanzas y sus diferencias con base en el modelo de enlace que las caracteriza. Oriéntelos de tal manera que observen que el primer grupo de sustancias está formado por compuestos cuyos elementos que los constituyen son no metales, mientras que las sustancias del segundo grupo están formadas por metales y no metales.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta etapa es que los alumnos conozcan el tipo de partículas que participan en la formación de los enlaces químicos y la manera en que éstas interactúan. Para la primera actividad (página 122), se sugiere que incluya en su explicación que la fórmula química condensada indica el número y tipo de átomos que participan en el enlace, mientras que la fórmula estructural hace alusión a la manera en que los átomos se encuentran enlazados, por ejemplo, si forman enlaces sencillos o enlaces múltiples (dobles y triples). Vuelva a retomar el hecho de que la valencia está relacionada con el grupo al que pertenece un determinado elemento y con el número de electrones de la última capa de un átomo; también coménteles que un electrón de valencia puede formar una pareja con un electrón de valencia de otro átomo al establecer un enlace. Para la actividad experimental (página 123), emplearán la electrólisis con la finalidad de separar un compuesto en los elementos que lo constituyen; para dicha actividad se empleará agua y se obtendrá oxígeno e hidrógeno. Se sugiere que haga énfasis en que observen con detalle el proceso, para que puedan notar los cambios que ocurren, en especial lo concerniente a la formación de ambos gases. La tercera actividad (página 124) busca que los estudiantes analicen el proceso de formación de los enlaces iónicos entre distintos átomos. Explique sobre esto que los metales tienden a perder electrones y formar cationes; en cambio, los no metales tienden a ganar electrones y formar aniones.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los estudiantes apliquen los conocimientos adquiridos en la lección; para ello, deberán proponer el tipo de enlace y analizar el tipo de elementos que interactuarán, es decir, si son metales o no metales. Por otra parte, en la representación nanoscópica de los compuestos con enlace iónico, puede orientarlos para que los representen con redes cristalinas, las cuales están formadas por aniones y cationes dispuestos en redes tridimensionales ordenadas.",
+      "EjesArticuladores": "",
+      "EvaluacionFormativa": [
+        "Explica las características de los enlaces químicos a partir del modelo de compartición de electrones (covalente) y de tranferencia de electrones (iónico)."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "15",
+        "16",
+        "17"
+      ],
+      "Proyectos": [
+        "Disociacion"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 166-169 y 221-225",
+      "LibroMcMillan": "Química Imagina 120-125",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.",
+      "Worklist": [
+        "L8. Sustancias moleculares y compuestos iónicos",
+        "A.15 ¿Cuál catión y anión forman el compuesto?",
+        "A.16 ¿Qué tipo de enlace tiene?",
+        "A.17 Química de disoluciones acuosas"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 166-169 y 221-225",
+        "Química Imagina 120-125"
+      ],
+      "ActPro": [
+        "15",
+        "16",
+        "17",
+        "Disociacion"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "9 feb",
+      "FechaDeCierre": "13 feb",
+      "SemanaEscolar": 21,
+      "Contenido": "Los compuestos iónicos y moleculares: propiedades y estructura.",
+      "Aprendizaje": "Valora el aprovechamiento de propiedades de compuestos iónicos y moleculares en el cuerpo humano y en diferentes ámbitos.",
+      "Tema": "Compuestos iónicos y moleculares",
+      "Leccion": "L9. Aprovechamiento de compuestos iónicos y moleculares",
+      "Inicio": "La lección busca que los estudiantes reflexionen acerca de los materiales que los rodean, ya sea que dichos materiales tengan un origen natural o sean sintéticos. El objetivo de la actividad de esta etapa es que relacionen las propiedades de los materiales con la estructura química que presentan. Explíqueles que los fertilizantes pueden ser de origen animal, mineral, vegetal o sintético y que se utilizan para enriquecer y mejorar las características físicas, químicas y biológicas del suelo, a fin de incrementar el rendimiento de los cultivos.",
+      "Desarrollo": "El propósito de los textos y las actividades de esta etapa es que los educandos analicen beneficios y desventajas que supone el aprovechamiento de sustancias moleculares y compuestos iónicos. Para la primera actividad experimental (página 128), los alumnos trabajarán con poliestireno y observarán qué le ocurre si entra en contacto con agua y acetona. Mencióneles que los polímeros son sustancias formadas por grandes cadenas de monómeros que se unen entre sí mediante enlaces covalentes. También explíqueles que poseen propiedades físicas, químicas y mecánicas, siendo estas últimas las que describen el comportamiento de un material ante las fuerzas que se le aplican; algunas de éstas son resistencia frente a esfuerzos externos, rigidez frente a deformaciones, dureza ante la deformación cuando se está bajo una carga compresiva concentrada y la tenacidad en el momento en que el material se somete a impactos. Puede tomar como ejemplo al policarbonato, el cual se caracteriza por su rigidez, dureza y buena resistencia a los impactos, por lo cual se puede utilizar en la elaboración de los escudos antidisturbios. Para la segunda actividad (página 129), mencióneles que los plásticos biodegradables están fabricados con materiales que se pueden descomponer en un lapso menor al de las resinas plásticas; algunos de éstos son el trigo, el maíz, las papas, los plátanos, entre otros. Para la tercera actividad (página 130), haga énfasis en que cuando un compuesto iónico se disuelve en agua sus iones se separan, lo cual permite el flujo de electricidad, y es por ello que las disoluciones acuosas de compuestos iónicos tienen la capacidad de conducir la corriente eléctrica. Sobre esto, explique que el proceso en el cual las moléculas de un disolvente como el agua interactúan con los iones del soluto recibe el nombre de solvatación.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los estudiantes apliquen los conocimientos adquiridos en la secuencia. El objetivo es que reflexionen en torno al grave problema de contaminación que generan los residuos plásticos al no degradarse rápidamente, porque esto ocurre en un lapso muy grande y, desafortunadamente, gran cantidad de desechos terminan en el mar. Por último, haga hincapié en los efectos negativos que tiene la contaminación por plásticos en los ecosistemas marinos y terrestres. Resalte cómo los compuestos iónicos y moleculares se aprovechan en el cuerpo humano y en diversos ámbitos de la vida cotidiana. Solicite a los alumnos que resuelvan la ficha \"Un poco de sal para preparar agua dulce\" de su cuaderno de evidencias para valorar el aprovechamiento de compuestos iónicos en diversos procesos, como la desalinización del agua.",
+      "EjesArticuladores": "",
+      "EvaluacionFormativa": [
+        "Reconoce la importancia de los compuestos iónicos y moleculares en diferentes ámbitos."
+      ],
+      "Evidencias": [
+        "F9"
+      ],
+      "Actividades": [
+        "18",
+        "19"
+      ],
+      "Proyectos": [
+        "Polimero"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 223-226",
+      "LibroMcMillan": "Química Imagina 126-131",
+      "Vinculacion": "\\textbf{Física:} Identifica la estructura, propiedades y características de la materia.",
+      "Worklist": [
+        "L9. Compuestos iónicos y moleculares",
+        "A.18 Química de los plásticos",
+        "A.19 ¿Natural o sintético?",
+        "F9. Un poco de sal"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 223-226",
+        "Química Imagina 126-131"
+      ],
+      "ActPro": [
+        "18",
+        "19",
+        "F9",
+        "Polimero"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "16 feb",
+      "FechaDeCierre": "20 feb",
+      "SemanaEscolar": 22,
+      "Contenido": "La química como fuente de energía química: carbohidratos, proteínas y lípidos.",
+      "Aprendizaje": "Valora la importancia de vitaminas, minerales y agua simple potable, para el adecuado funcionamiento del cuerpo humano, e identifica los impactos de su deficiencia.",
+      "Tema": "Vitaminas y minerales",
+      "Leccion": "L10. Agua, vitaminas y minerales",
+      "Inicio": "El objetivo de la lección es mostrarles a los estudiantes la importancia que tiene para el buen funcionamiento del cuerpo humano el consumo en cantidades adecuadas de vitaminas, minerales y agua. Con la actividad de esta etapa, se busca que los educandos reflexionen acerca de lo vital que resulta para la sociedad tener acceso a agua potable. Sobre esto, mencione que a lo largo de la historia todas las civilizaciones han requerido de una buena gestión del agua para asegurar su subsistencia, y que incluso las civilizaciones prehispánicas tenían un vínculo especial con este líquido. Recuérdeles que la capital del imperio mexica, Tenochtitlan, se fundó sobre un islote en el gran lago de Texcoco, y que para mejorar el abastecimiento de agua dulce de la capital se construyó un acueducto que transportaba este líquido desde Chapultepec hasta el centro de Tenochtitlan.",
+      "Desarrollo": "El propósito de los textos y las actividades de esta etapa es que los alumnos reflexionen en torno a lo fundamental que es incluir en la dieta alimentos que contengan vitaminas y minerales, así como consumir la cantidad de agua adecuada. Para la primera actividad (página 133), recalque el hecho de que el agua está formada por dos átomos de hidrógeno (H) y uno de oxígeno (O) unidos por un enlace covalente polar. También mencione que este compuesto tiene una amplia capacidad para disolver sustancias iónicas y moleculares, muchas de las cuales están presentes en los seres vivos y son necesarias para su buen funcionamiento. Sobre el acceso al agua potable, señale que las fuentes de este líquido en México provienen de aguas superficiales como ríos y lagos, sin embargo, el principal problema de las aguas superficiales es la contaminación debida a las aguas residuales de origen doméstico, industrial, agrícola y ganadero, las cuales, al ser vertidas sin tratamiento previo, contienen importantes cantidades de contaminantes. Otras fuentes de suministro son el agua subterránea, que desafortunadamente se encuentra sobreexplotada, y las precipitaciones, cuyo principal inconveniente es que la lluvia no cae de manera uniforme en todo el país ni es constante a lo largo del año. Para la segunda actividad (página 134), comente a los alumnos que las vitaminas, los minerales y el agua potable son nutrientes esenciales que el cuerpo necesita para funcionar de manera correcta. En el caso de las vitaminas, hay algunas que son liposolubles y, por tanto, se recomienda consumirlas con moderación porque el cuerpo puede almacenarlas (productos de origen animal y alimentos que contienen grasas). Hay otras vitaminas que son solubles en agua y esas deben ingerirse todos los días (frutas, verduras, leche, productos lácteos y cereales). Los minerales ayudan a construir dientes y huesos fuertes y a transformar los alimentos que se consumen en energía. Cabe mencionar que el cuerpo necesita algunos minerales más que otros. Por ejemplo, el calcio, el fósforo, el magnesio, el sodio y el potasio son esenciales para un mejor funcionamiento del organismo. El agua, además de refrescar, mantiene al cuerpo a una temperatura normal, protege la médula espinal y otros tejidos sensibles, y desahoga los desechos gracias a la micción, la transpiración y las deposiciones. Complemente con otros ejemplos de beneficios a la salud que aportan las vitaminas, mencione que la vitamina A es importante para prevenir problemas oculares y favorecer el buen funcionamiento de los ojos, o que la vitamina B6 es necesaria para el desarrollo cerebral y para mantener saludable al sistema inmunitario.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los estudiantes apliquen los conocimientos adquiridos en la lección y propongan una serie de alimentos que les garanticen la ingesta adecuada de vitaminas y minerales. Sobre esto, comente que las dietas deben estar en función de varios factores, pues el estado de salud, preferencias alimenticias, edad, sexo, índice de masa corporal, entre otros, son diferentes en cada persona. A manera de ejemplo, mencione que los pacientes con insuficiencia renal requieren una ingesta controlada de agua y no deben consumir alimentos con alto contenido de sal. Invite a los alumnos a resolver la ficha \"Vitaminas y minerales para todos\". Al terminar, incentive una reflexión en grupo sobre la importancia de mantener una dieta equilibrada para asegurar el aporte adecuado de vitaminas, minerales y agua potable.",
+      "EjesArticuladores": "Vida saludable. Reconoce algunas prácticas para el cuidado de la salud.",
+      "EvaluacionFormativa": [
+        "Comprende la importancia del acceso al agua potable.",
+        "Propone una dieta que incluya la ingesta de vitaminas y minerales."
+      ],
+      "Evidencias": [
+        "F10"
+      ],
+      "Actividades": [
+        "20",
+        "21"
+      ],
+      "Proyectos": [
+        "Vitamina C"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 319-330",
+      "LibroMcMillan": "Química Imagina 132-135",
+      "Vinculacion": "\\textbf{Biología:} Participa en la prevención de enfermedades relacionadas con la alimentación y el consumo de alimentos ultraprocesados.",
+      "Worklist": [
+        "L10. Agua, vitaminas y minerales",
+        "A.20 ¿Qué elementos son más abundantes?",
+        "A.21 Agua, vitaminas y minerales",
+        "F10. Vitaminas y minerales para todos"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 319-330",
+        "Química Imagina 132-135"
+      ],
+      "ActPro": [
+        "20",
+        "21",
+        "F10",
+        "Vitamina C"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "23 feb",
+      "FechaDeCierre": "27 feb",
+      "SemanaEscolar": 23,
+      "Contenido": "Las reacciones químicas: manifestaciones de las ecuaciones químicas.",
+      "Aprendizaje": "Reconoce distintas reacciones químicas en su entorno y en actividades experimentales, a partir de sus manifestaciones y el cambio de propiedades de reactivos a productos.",
+      "Tema": "Reacciones químicas",
+      "Leccion": "L11. Reacciones químicas",
+      "Inicio": "La lección busca que los educandos identifiquen el cambio químico y la forma en que puede manifestarse en fenómenos cotidianos. La actividad de esta etapa tiene como propósito que observen una serie de imágenes y determinen en cuáles ha ocurrido una reacción química. Sobre esto, es importante que distingan entre cambios físicos y químicos, y que reflexionen acerca de la manera en que pueden saber que ha tenido lugar un cambio químico.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta etapa es que Comprendan que en una reacción química las sustancias se transforman en otras con propiedades distintas |de las que les dieron origen. |Asimismo, se señalan las características de un cambio químico y |se muestran algunos ejemplos comunes de estos procesos. |Haga énfasis que en lo que ocurre con una reacción química a nivel |nanoscópico, es decir, que a nivel de partículas se presenta un cambio |en la forma en que se organizan y reagrupan los átomos. |La primera actividad (página 137) busca que los alumnos perciban |si ha ocurrido algún cambio en las situaciones propuestas. Al respecto, aproveche para comentarles que a nivel macroscópico es posible |notar algunos indicios de que se han formado nuevas sustancias, por |ejemplo, la producción de ciertos olores o productos coloridos, la liberación o absorción de energía en forma de calor y la efervescencia. |La segunda actividad (página 139) pretende que los estudiantes |establezcan una diferencia entre un proceso físico (la ebullición) y un |proceso químico (la combustión). Se sugiere hacerles notar que la |temperatura de ignición se relaciona con la energía necesaria para |que inicie la combustión. |Sobre la reacción de combustión coménteles que gracias a los |avances tecnológicos y científicos se han diseñado motores más eficientes, con los cuales se espera disminuir la cantidad de gases contaminantes que se emiten a la atmósfera. |En el caso de la actividad experimental (página 140), es recomendable que también se investigue la fórmula química o símbolo |de los reactivos. |Por último, es importante hacerles notar que las reacciones de |descomposición son procesos químicos que siguen una dirección inversa a la de las reacciones de combinación, y que la diferencia entre |ambas tiene que ver con el número de reactivos que participan en la |reacción o el número de productos que se forman.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los educandos apliquen los conocimientos adquiridos en la secuencia, para ello deberán identificar el tipo de reacción que ha ocurrido. Se sugiere que los oriente de tal manera que analicen cuántos reactivos participan, cuántos productos se forman o si, en específico, los reactivos son sustancias moleculares que contienen átomos de carbono e hidrógeno y reaccionan con oxígeno.",
+      "EjesArticuladores": "",
+      "EvaluacionFormativa": [
+        "Diferencia entre cambios físicos y cambios químicos.",
+        "Distingue en una reacción química de combinación y una reacción química de descomposición."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "22",
+        "23",
+        "24"
+      ],
+      "Proyectos": [
+        "Cambio Quimico"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 269-273,Nuestro libro de Proyectos 122-131",
+      "LibroMcMillan": "Química Imagina 136-141",
+      "Vinculacion": "\\textbf{Física:} Reconoce el pensamiento científico, una forma de plantear y solucionar problemas y su incidencia en la transformación de la sociedad.\\\\ \\textbf{Matemáticas:} Analiza datos en tablas.",
+      "Worklist": [
+        "L11. Reacciones químicas",
+        "A.22 Cambio físico y cambio químico",
+        "A.23 Cambios en los procesos químicos",
+        "A.24 Cambios químicos y cómo identificarlos"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 269-273",
+        "Nuestro libro de Proyectos 122-131",
+        "Química Imagina 136-141"
+      ],
+      "ActPro": [
+        "22",
+        "23",
+        "24",
+        "Cambio Quimico"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2 mar",
+      "FechaDeCierre": "6 mar",
+      "SemanaEscolar": 24,
+      "Contenido": "Las reacciones químicas: manifestaciones de las ecuaciones químicas.",
+      "Aprendizaje": "Representa reacciones mediante modelos tridimensionales y ecuaciones químicas, con base en el lenguaje científico y la Ley de la conservación de la materia.",
+      "Tema": "Conservación de la materia",
+      "Leccion": "L12. Conservación de la materia",
+      "Inicio": "La lección tiene como propósito que los alumnos comprendan la importancia de la ley de conservación de la materia y explicarla a partir de los conocimientos adquiridos sobre ecuaciones y reacciones químicas. La actividad de esta etapa retoma la reacción de combustión para mostrarle que en este proceso se forman nuevas sustancias y que, a pesar de que puedan percibir que hay variaciones en el peso y el volumen de los materiales originales y las cenizas que se forman, la materia siempre se conserva.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta etapa es hacer énfasis en el hecho de que, al ocurrir una reacción química, los átomos no se crean ni se destruyen, sino que cambia la forma en que se unen, y la cantidad de estos a lo largo de dicho proceso permanece constante. La primera actividad (páginas 143 y 144) tiene la intención de que los educandos retomen lo aprendido sobre las reacciones químicas de combustión, combinación y descomposición. Se sugiere que, al elaborar las representaciones nanoscópicas, les solicite que representen los átomos participantes con diversos colores. Respecto a la ecuación química, coménteles que ésta es la manera en que se representan los reactivos y los productos que participan en una reacción química, la cual muestra que los átomos cambian de posición, es decir, que en las nuevas sustancias (productos) se unen con otros átomos. Asimismo, recálqueles la importancia de que las ecuaciones químicas se encuentren balanceadas, a fin de que se cumpla la ley de la conservación de la materia, porque no es posible que los átomos desaparezcan o, por el contrario, aparezcan de la nada. Por otra parte, mencione la importancia de incluir el estado físico de las sustancias al escribir una ecuación química. La segunda actividad (página 145) pretende que los estudiantes se familiaricen con el proceso de balanceo en una ecuación química para que ésta cumpla con la ley de la conservación de la materia; para ello, deben aprender a identificar y contar los átomos que participan en la reacción química. Sobre esto, haga énfasis en que los coeficientes estequiométricos son los que nos ayudan a balancear la ecuación química, porque aseguran que haya el mismo número de cada tipo de átomo antes y después del proceso. Por último, mencióneles que la información que proporciona una ecuación química hace alusión al número de moles de los reactivos y de los productos en una reacción química, y que el término mol hace referencia a un conjunto de 6.023 × 1023 partículas.",
+      "Cierre": "En la actividad de esta etapa se espera que los estudiantes apliquen los conocimientos adquiridos en la lección. Para ello, el propósito es que balanceen una ecuación química y utilicen factores de conversión para transformar los moles de una sustancia en relación con otra, además de que relacionen los moles con otras unidades como la masa o el número de moléculas. Invite a los alumnos a resolver la ficha \"Química de la vida\" de su cuaderno de evidencias. Al terminar, incentive una reflexión en grupo sobre la importancia de representar a las reacciones químicas de manera precisa y coherente.",
+      "EjesArticuladores": "",
+      "EvaluacionFormativa": [
+        "Dibuja representaciones nanoscópicas de las reacciones químicas.",
+        "Balancea ecuaciones químicas.,Resuelve ejercicios de estequiometría (relaciones estequiométricas y conversiones)."
+      ],
+      "Evidencias": [
+        "F11"
+      ],
+      "Actividades": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "Proyectos": [
+        "Hierro"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 208-215",
+      "LibroMcMillan": "Química Imagina 142-147",
+      "Vinculacion": "\\textbf{Física:} Reconoce el pensamiento científico, una forma de plantear y solucionar problemas y su incidencia en la transformación de la sociedad.\\\\ \\textbf{Matemáticas:} Resuelve operaciones.",
+      "Worklist": [
+        "L12. Conservación de la materia",
+        "A.25 Conservación de la materia en cambios",
+        "A.26 Ecuaciones y reacciones",
+        "A.27 La misma cantidad de ambos lados",
+        "A.28 Ecuación química",
+        "A.29 Érase una vez que",
+        "F11. Productos en la vida cotidiana"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 208-215",
+        "Química Imagina 142-147"
+      ],
+      "ActPro": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "F11",
+        "Hierro"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "9 mar",
+      "FechaDeCierre": "13 mar",
+      "SemanaEscolar": 25,
+      "Contenido": "Las reacciones químicas: manifestaciones de las ecuaciones químicas.",
+      "Aprendizaje": "Explica lo que cambia y lo que permanece en una reacción química y valora su importancia, para producir nuevas sustancias y satisfacer necesidades humanas, así como solucionar problemas relacionados con la salud y el medio ambiente.",
+      "Tema": "Reacciones químicas",
+      "Leccion": "L13. Reacciones químicas que solucionan problemas",
+      "Inicio": "La lección presenta las áreas de aplicación de las reacciones químicas, así como los beneficios y costos que implican. La actividad de esta etapa tiene como propósito que los estudiantes reflexionen en torno a las consecuencias de la emisión de gases de efecto invernadero. Sobre esto, explíqueles que el efecto invernadero es un fenómeno natural en el que unos determinados gases que están presentes en la atmósfera retienen parte de la energía solar que emite la superficie terrestre, lo cual produce un aumento en la temperatura. Haga énfasis en el hecho de que el efecto invernadero ha permitido el desarrollo de la vida en la Tierra; sin embargo, las actividades humanas han hecho que este efecto se intensifique, favoreciendo el incremento de la temperatura global.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta etapa es que los educandos conozcan los usos que tienen las reacciones químicas. Acerca de la síntesis química, mencióneles que es un proceso mediante el cual se obtiene gran variedad de compuestos químicos a partir de sustancias más simples. También comente que con la síntesis química se producen materiales que no se pueden obtener de manera directa de fuentes naturales. En el análisis químico, las reacciones químicas son útiles para detectar, identificar y cuantificar las sustancias presentes en un determinado medio. Mencione que el análisis químico se emplea en múltiples áreas, por ejemplo, en las ciencias forenses, en estudios ambientales, en la industria alimenticia y farmacéutica, en el campo de la salud, entre otros. Respecto a las transformaciones químicas, explique a los estudiantes que con las reacciones químicas se pueden formar productos no deseados, los cuales en ocasiones suelen generar problemas ambientales, de salud o repercusiones económicas o sociales. En la primera actividad (páginas 149 y 150) se sugiere que investiguen la importancia que tienen los polímeros para la sociedad, así como problemas al medio ambiente y a los seres vivos que la síntesis de estos ha generado. Por otra parte, indíqueles que, además de las propiedades físicas que registren del producto que generaron en el experimento, también evalúen la elasticidad y la resistencia al impacto que éste tenga. Para la segunda actividad (página 150), recalque lo fundamental que resultan los análisis clínicos para un buen diagnóstico y tratamiento de un determinado padecimiento o enfermedad.",
+      "Cierre": "La actividad de esta etapa busca que los alumnos apliquen los conocimientos adquiridos en la lección; para ello, se recomienda solicitarles que elaboren representaciones nanoscópicas de las reacciones químicas que se presentan. Por último, recalque que tanto las industrias, como los centros de investigación y la sociedad en general deben procurar el control de las reacciones, ya sea evitando en la medida de lo posible generar productos no deseados y dándoles otro uso, u optimizando los recursos e insumos que se requieren para llevar a cabo las reacciones químicas. Solicite a los alumnos que resuelvan la ficha \"¿Qué tanto color da las reacciones químicas?\" de su cuaderno de evidencias. El objetivo de este recurso es que los estudiantes reconozcan la utilidad de las reacciones químicas en la producción de nuevas sustancias que son fundamentales para solucionar problemas que se relacionan con la salud y el medio ambiente.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Valora la importancia de las reacciones químicas para producir nuevas sustancias y solucionar problemas relacionados con la salud y el medio ambiente."
+      ],
+      "Evidencias": [
+        "F12"
+      ],
+      "Actividades": [],
+      "Proyectos": [
+        "Cambio"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 315-318 ,Nuestro libro de Proyectos 122-131",
+      "LibroMcMillan": "Química Imagina 148-151",
+      "Vinculacion": "\\textbf{Física:} Reconoce el pensamiento científico, una forma de plantear y solucionar problemas y su incidencia en la transformación de la sociedad.",
+      "Worklist": [
+        "L13. Reacciones químicas",
+        "A.30 Cantidad de la materia",
+        "F12. La química de la vida"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 315-318 ",
+        "Nuestro libro de Proyectos 122-131",
+        "Química Imagina 148-151"
+      ],
+      "ActPro": [
+        "F12",
+        "Cambio"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "16 mar",
+      "FechaDeCierre": "20 mar",
+      "SemanaEscolar": 26,
+      "Contenido": "Las reacciones químicas: manifestaciones de las ecuaciones químicas.",
+      "Aprendizaje": "Explica y representa intercambios de materia y energía - endotérmicas y exotérmicas - de reactivos a productos y su aprovechamiento en actividades humanas.",
+      "Tema": "Endotérmica y exotérmica",
+      "Leccion": "L14. Reacciones endotérmicas y exotérmicas",
+      "Inicio": "El objetivo de la lección es que los alumnos conozcan la relación que existe entre las reacciones químicas y la energía. En la actividad de esta etapa se sugiere que, después de haber leído el fragmento del texto de Isaac Asimov, motive la reflexión en torno al impacto que tiene la obtención y el uso de los combustibles fósiles en el medio ambiente, y también que analicen cuáles serían las consecuencias que tendría la falta del petróleo y sus derivados en la elaboración de productos como medicamentos, cosméticos, plásticos, entre otros.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta etapa es mostrarles a los educandos que en las reacciones químicas ocurre una transferencia de energía entre el sistema y los alrededores. Para introducir al tema de las reacciones exotérmicas y endotérmicas, solicíteles que identifiquen algunos eventos de su vida cotidiana en los que hayan notado que la energía calorífica se libera o, por el contrario, se absorbe. Para la primera actividad experimental (página 153), se sugiere también pedirles que elaboren representaciones nanoscópicas de las reacciones químicas de ambos experimentos. Por otra parte, es conveniente que investiguen el origen etimológico de los términos exotérmico y endotérmico, con la finalidad de mejorar la comprensión de estos conceptos. Dado que las reacciones químicas exotérmicas son importantes, en especial a nivel industrial, se sugiere que les solicite que investiguen sobre el uso de estas reacciones en la generación de energía, el uso de combustibles fósiles y otros combustibles alternativos; por ejemplo, el hidrógeno y el biodiésel. Al respecto de las reacciones endotérmicas, coménteles que éstas son menos comunes a nivel industrial y que es más frecuente que ocurran en los procesos biológicos que llevan a cabo los seres vivos. Por último, haga énfasis en el hecho de que, dependiendo como sea el balance neto de la energía, es decir, entre aquella que se requiere para romper enlaces en los reactivos y la que se produce cuando se forman los nuevos enlaces en los productos, es que una reacción química puede clasificarse en exotérmica o endotérmica.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los estudiantes apliquen los conocimientos adquiridos en la lección; para ello, se les invita a reflexionar acerca del impacto que tienen en el medio ambiente sus hábitos de consumo y el uso de energía en su vida cotidiana. También acerca de los efectos negativos del uso de combustibles fósiles como principal fuente de energía.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Representa intercambios de materia y energía."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "Proyectos": [
+        "Repaso de Unidad"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 308-310",
+      "LibroMcMillan": "Química Imagina 152-159",
+      "Vinculacion": "\\textbf{Física:} Reconoce las Interacciones en fenómenos relacionados con la fuerza y el movimiento.\\\\ \\textbf{Matemáticas:} Resuelve operaciones.",
+      "Worklist": [
+        "L14. Reacciones endotérmicas y exotérmicas",
+        "A.31 Intercambios de energía en procesos",
+        "A.32 Transferencia de energía en cambios químicos",
+        "A.33 ¿Qué tipo de reacción es?",
+        "A.34 Energía química en tu entorno",
+        "A.35 Costos y riesgos de la energía química",
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 308-310",
+        "Química Imagina 152-159"
+      ],
+      "ActPro": [
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "Repaso de Unidad"
+      ]
+    }
+  ]
+}

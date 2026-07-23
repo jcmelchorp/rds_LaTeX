@@ -1,0 +1,559 @@
+{
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Física",
+    "Grado": "2º",
+    "Nivel": "Secundaria",
+    "Unidad": "1",
+    "NombreDeLaUnidad": "El pensamiento científico y la materia",
+    "DuracionEnSemanas": 6,
+    "HorasPorSemana": 6,
+    "HorasTotales": 36,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2025-08-24",
+    "FechaDeActualizacion": "2025-08-24",
+    "FechaInicial": "2025-09-01",
+    "FechaFinal": "2025-10-10",
+    "Words":"Con la quietud de una estrella lejana y la energía de un nuevo amanecer, les doy la más serena bienvenida a este nuevo ciclo de descubrimiento. Este año tendré el privilegio de ser su guía para ayudarles a formular las preguntas que abren el universo. Nos adentramos en el estudio de la Física, que no es una materia, sino el arte de aprender sobre el Universo. \\\\[1em] \\qquad Hasta ahora, han habitado el mundo. A partir de hoy, comenzarán a comprender su danza invisible. ¿Alguna vez se han detenido a contemplar una hoja que cae de un árbol? No se precipita con prisa, sino que traza una espiral en el aire, en un diálogo silencioso entre su peso y la caricia del viento. ¿Han sentido el eco de su propia voz en un valle y se han preguntado si la montaña les responde? ¿Han observado cómo un rayo de sol atraviesa una ventana, revelando un universo de polvo danzante en su interior? \\\\[1em] \\qquad Estas no son cosas ordinarias. Son poemas escritos en el lenguaje del movimiento, la energía y la materia. La Física es la gramática de esa poesía. El universo no hace alarde de sus secretos, sino que los revela en lo simple y lo cotidiano. No necesitaremos telescopios lejanos para encontrar maravillas; aprenderemos a ver lo extraordinario en una pelota que rebota, en el vapor que se eleva de una taza caliente o en el simple acto de encender una luz. Descubriremos que las mismas leyes que gobiernan el majestuoso viaje de los planetas son las que dictan la trayectoria de una canica que ruedan por el suelo. \\\\[1em] \\qquad Este año, nuestro laboratorio principal no estará entre estas cuatro paredes, sino en su propia curiosidad. Antes de abrir el libro, abrimos bien los ojos y los oídos. Un experimento no será una receta a seguir, sino una pregunta que le hacemos al mundo con nuestras propias manos. El resultado, sea cual sea, no es un \"éxito\" o un \"fracaso\", sino la respuesta honesta que el universo nos da. Nuestra única tarea es aprender a escucharla con humildad. \\\\[1em] \\qquad Comprenderemos que nada en la existencia ocurre de forma aislada. Que cada acción, como una piedra arrojada a un estanque, genera ondas que se expanden y provocan una reacción. Veremos que la energía no se crea ni se destruye, solo se transforma en una danza eterna, fluyendo de la luz del sol a la planta, de la planta al alimento, y del alimento a la fuerza que ahora mismo les permite leer estas palabras. Todo está interconectado. \\\\[1em] \\qquad Les invito a entrar a esta aula con la mente de un principiante, vacía de prejuicios y llena de asombro. Hagan preguntas. Cuestionen lo que ven. Duden de lo que creen saber. Pues solo aquel que reconoce que no sabe, está verdaderamente listo para aprender. \\\\[1em] \\qquad Con un espíritu lleno de esperanza y entusiasmo, les doy la bienvenida a su clase de Física.",
+    "Nociones": [
+      "Me preparo",
+      "L.1. Conocimiento empírico",
+      "A.1. Conocimiento empírico",
+      "A.2. Tipos de conocimientos",
+      "A.3. Otras formas de conocimiento",
+      "L.2. El conocimiento científico",
+      "A.4. ¿Qué es la ciencia?",
+      "A.5. Método científico",
+      "F.1. Siete razones para dedicarse a la ciencia",
+      "L.3. Física y sociedad",
+      "A.6. ¿Qué es la Física?",
+      "A.7. División de la Física",
+      "F.2. Ciencia para todos",
+      "L.4. Mediciones",
+      "A.8. Mediciones",
+      "L.5. Unidades fundamentales y derivadas de medida",
+      "A.9. Unidades fundamentales",
+      "L.6. Múltiplos y submúltiplos",
+      "A.10. Múltiplos",
+      "L.7. Instrumentos de medición",
+      "A.11. Es momento de medir",
+      "F.3. Contaminantes del aire",
+      "L.8. Materiales y sus propiedades",
+      "A.12. Propiedades de la materia",
+      "A.13. ¿Qué es la materia?",
+      "F.4. Litio, el oro blanco del siglo XXI",
+      "F.5. La isla de plástico",
+      "L.9. Origen de las teorías sobre la estructura de la materia",
+      "A.14. Un modelo para la materia",
+      "L.10. La teoría atómica",
+      "A.15. Construyendo un modelo para el átomo",
+      "A.16. ¿Thomson, Rutherford o Bohr?",
+      "A.17. La estructura interna de la materia",
+      "F.6. Invierno nuclear",
+      "L.11. Estados de agregación de la materia y modelo cinético",
+      "A.18. ¿Cómo se organiza la materia?",
+      "A.19. Las facetas de la materia",
+      "A.20. La materia",
+      "L.12. Temperatura y equilibrio térmico",
+      "A.21. Conversaciones entre escalas de temperatura",
+      "A.22. ¿Cómo se mide la temperatura?",
+      "¿Qué aprendí?"
+    ],
+    "Nombres": [
+      "Bruno",
+      "Cristel",
+      "Fabrizzio",
+      "Ángel",
+      "Juan",
+      "Alana",
+      "Layla",
+      "Acteón",
+      "Antonio",
+      "Matías",
+      "Ehécatl",
+      "Mateo",
+      "Pedro",
+      "Miguel Á",
+      "Mateo",
+      "MaJo"
+    ],
+    "Alumnos": [
+      "Bruno Aimone Bisio Lara",
+      "Cristel Castro Bulnes",
+      "Fabrizzio Colonna Figueroa",
+      "Ángel Leonel Flores Pérez",
+      "Juan Pablo Fuentes Navas",
+      "Suad Alana Guerra Pitalúa",
+      "Layla Gabriela Mata Guzmán",
+      "Acteón Eliud Mendoza Martínez",
+      "Antonio Montiel Díaz",
+      "Matías Harim Murrieta Zúñiga",
+      "Ehécatl Pérez Castrejón",
+      "Mateo Rendón Torrez",
+      "Pedro Antonio Rivera Rojas",
+      "Miguel Ángel Rodríguez Aguilar",
+      "Mateo Sosa Álvarez",
+      "María José Utrera González",
+      "Regina Villar"
+    ],
+    "fechasDeExamen": [
+      "2025-11-05"
+    ]
+  },
+  "weeks": [
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-01",
+      "FechaDeCierre": "2025-09-05",
+      "SemanaEscolar": 1,
+      "Contenido": "El pensamiento científico, una forma de plantear y solucionar problemas.",
+      "Aprendizaje": "Identifica problemas de la vida cotidiana y plantea soluciones.",
+      "Tema": "Conocimiento científico",
+      "Leccion": "L1. Conocimiento empírico. L2. El conocimiento científico",
+      "Inicio": "La sección Inicio comenta las características generales de dos códices que contienen conocimientos empíricos sobre las propiedades medicinales de algunas plantas, animales y piedras. Se sugiere compartir o proyectar videos que traten sobre la obtención de fármacos y medicamentos a partir de plantas, o mostrar ilustraciones de plantas medicinales junto con sus efectos benéficos tomados de herbarios antiguos o modernos, esto para resaltar el valor de esta forma de conocimiento.",
+      "Desarrollo": "Como punto de partida, se sugiere tomar la figura 1.1 para provocar la reflexión de los estudiantes en torno a las diferencias entre los seres humanos y otras especies, en cuanto a la necesidad que tenemos de adquirir conocimientos.  Para el contenido trabajado con el subtítulo: \"Características del conocimiento empírico\", se sugiere que los alumnos analicen casos fácilmente observables; por ejemplo, la forma en que un niño pequeño aprende a manipular un teléfono celular, un control remoto o un juguete electrónico, o bien, la manera en que un niño mayor logra dominar alguna habilidad en un deporte o en un videojuego. Resalte, entonces, el hecho de que es el ejercicio o la práctica de estas acciones lo que fortalece la habilidad o el conocimiento deseados; destaque esta conclusión al señalar que estas habilidades o conocimientos no son fácilmente transmisibles de manera verbal solamente, ni son explicables de modo simple en términos de sus causas. En este punto le sugerimos enumerar y contrastar en cada ejemplo las características del conocimiento empírico descritas en el texto.  La actividad de la página 18, \"Analiza y reflexiona\", es muy importante para corroborar la información del texto. Proporcione opciones para su realización teniendo en cuenta las características de su comunidad.  Por último, la sección \"Otras formas de conocimiento\" es una excelente oportunidad para motivar a los estudiantes a valorar esas otras formas de comprensión que en conjunto forman lo que llamamos cultura; es importante que resalte que este conjunto de conocimientos es esencial para la vida en comunidad, pues cubren necesidades muy particulares de la naturaleza humana.",
+      "Cierre": "La sección de Cierre busca retomar la situación de Inicio, pero con una nueva visión a partir de lo aprendido en clase. Igualmente, busca ejercitar a los estudiantes en cuanto a la reflexión de los temas tratados. El video disponible en www.edutics.mx/xoN muestra la importancia de las plantas en la obtención de medicamentos y es recomendable para terminar con la lección.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Comprende el significado del conocimiento empírico y su relación con el aprendizaje en la vida cotidiana.",
+        "Identifica diferentes tipos de conocimiento empírico, así como su importancia en la vida de las personas y en la sociedad."
+      ],
+      "Evidencias": [
+        "F1"
+      ],
+      "Actividades": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 267-268,Nuestro libro de proyectos 187-192",
+      "LibroMcMillan": "Física Imagina  14-19",
+      "Vinculacion": "\\textbf{Biología: } Reconoce la importancia de los conocimientos, prácticas e innovaciones de los pueblos originarios y su aplicación para resolver problemas concretos.",
+      "Worklist": [
+        "Me preparo",
+        "L1. Conocimiento empírico",
+        "A.1. Conocimiento empírico",
+        "A.2. Tipos de conocimientos",
+        "A.3. Otras formas de conocimiento",
+        "L2. El conocimiento científico",
+        "A.4. ¿Qué es la ciencia?",
+        "A.5. Método científico",
+        "F1. Siete razones para dedicarse a la ciencia"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 267-268",
+        "Nuestro libro de proyectos 187-192",
+        "Física Imagina  14-19 y 20-25"
+      ],
+      "ActPro": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-08",
+      "FechaDeCierre": "2025-09-12",
+      "SemanaEscolar": 2,
+      "Contenido": "El pensamiento científico, una forma de plantear y solucionar problemas.",
+      "Aprendizaje": "Valora la influencia del conocimiento científico. Identifica las unidades de medición que se ocupan en su entorno.",
+      "Tema": "Física y sociedad.",
+      "Leccion": "L3. Física y sociedad. L4. Mediciones",
+      "Inicio": "En esta lección los estudiantes aprenderán que la Física tiene importantes aplicaciones que contribuyen al bienestar de la sociedad en diversos ámbitos.  La sección Inicio presenta como ejemplo de lo anterior el caso de la resonancia magnética. Para contrastar el significativo avance de esta tecnología, podría proporcionar previamente alguna información adicional sobre las radiografías y sus efectos adversos o las biopsias y otro tipo de técnicas invasivas para diagnóstico.  Conviene presentar también desarrollos o prácticas que tengan repercusiones adversas o polémicas y comentar cuáles son, ello para no dar una visión sesgada de la ciencia y contribuir a que los estudiantes se formen sus propias opiniones. Aquéllas pueden ser los desarrollos relacionados con las aplicaciones militares, las armas nucleares, las prácticas de experimentación con animales, etcétera.",
+      "Desarrollo": "Para caracterizar el campo de actividad de la Física, conviene complementar la información del texto con ejemplos diversos de sus investigaciones o reportajes de las revistas de divulgación, por ejemplo, ¿Cómo ves? y Conversus. Puede resultar interesante el ejemplo de la aplicación de la Física en los deportes, como el desarrollo de los balones de futbol, que implican técnicas muy avanzadas de investigación, o la forma de patear el balón para que \"agarre chanfle\", es decir, una trayectoria curva muy utilizada en los tiros libres.  Es importante dar ejemplos de fenómenos físicos y fenómenos químicos y verificar que Comprenden la diferencia. Se sugiere proponer ejemplos que resulten difíciles de clasificar, como el derretimiento de una vela: puede parecer que es sólo un cambio de estado, de sólido a líquido, pero también implica la ruptura de enlaces y la reorganización molecular. Dar y comentar estos detalles contribuirá a que el estudiante comprenda que la clasificación es meramente una herramienta cognitiva y no algo absoluto e inquebrantable. Otro ejemplo es la disolución de la sal de mesa en agua, en realidad es un fenómeno químico pues se forman nuevas sustancias, pero como no lo percibimos y es posible separar después la sal, parece ser un fenómeno físico.  Para la sección titulada \"División de la Física\", conviene hacer notar a los estudiantes que la ciencia actual tiende a ser bastante interdisciplinaria, razón por la cual la Física entra en juego en investigaciones más bien centradas en procesos químicos, biológicos, sociales, etcétera; por ejemplo, participa en las investigaciones de las sensaciones y percepciones de los sentidos, y también aplica sus métodos en el estudio de la economía (la Econofísica).  Es fácil mostrar la importancia de la Física en el mundo actual, en vista de toda la tecnología necesaria para realizar nuestras actividades cotidianas; sin embargo, para la sección \"Importancia de la Física en la sociedad\", conviene ofrecer un panorama completo e indicar que el mundo actual ha sido construido gracias a las contribuciones de todas las ciencias en su conjunto y no solamente de la Física; por ejemplo, para el desarrollo de la electrónica, se requiere de la Química en la formación de compuestos y sustancias con semiconductores, o en la energía atómica, que se requiere de la obtención de elementos radiactivos como el uranio con cierto grado de pureza y para su enriquecimiento.",
+      "Cierre": "La sección pretende explorar si el estudiante valora la importancia de la Física en la sociedad y también que su dominio requiere el aprendizaje de un lenguaje y unas técnicas particulares. Puede complementar con información sobre las posibilidades de la Física como profesión. Haga notar la necesidad del desarrollo de las ciencias básicas y de las Matemáticas en beneficio de la sociedad, pues son el sustento de la tecnología actual y futura. La Ciencia no tiene género. Invite a sus alumnos a resolver la ficha 2 y conocer sobre una de las contribuciones más importantes de la ciencia actual hecha por una mujer famosa.",
+      "EjesArticuladores": "Pensamiento crítico. Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Identifica el campo de estudio de la Física.",
+        "Comprende en qué consiste la medición y cuál es su importancia. ",
+        "Comprende la importancia de las aplicaciones de la Física para el beneficio de la sociedad."
+      ],
+      "Evidencias": [
+        "F2"
+      ],
+      "Actividades": [
+        "6",
+        "7"
+      ],
+      "Proyectos": [
+        "Tecnologia"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 153-161",
+      "LibroMcMillan": "Física Imagina  26-29",
+      "Vinculacion": "\\textbf{Biología: } Reconoce que los avances en la Biología contribuyen a mejorar la calidad de vida de las personas.",
+      "Worklist": [
+        "L3. Física y sociedad",
+        "A.6. ¿Qué es la Física?",
+        "A.7. División de la Física",
+        "F2. Ciencia para todos",
+        "L4. Mediciones",
+        "A.8. Mediciones"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 145 y 153-161",
+        "Física Imagina  26-29 33-34"
+      ],
+      "ActPro": [
+        "6",
+        "7",
+        "F2",
+        "Tecnologia"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-09-15",
+      "FechaDeCierre": "2025-09-19",
+      "SemanaEscolar": 3,
+      "Contenido": "Unidades de medida y magnitudes físicas del Sistema Internacional de Unidades.",
+      "Aprendizaje": "Identifica y convierte conversiones con los múltiplos y submúltiplos del Sistema Internacional de Unidades.",
+      "Tema": "Unidades de medida",
+      "Leccion": "L5. Unidades fundamentales y derivadas de medida. L6 Múltiplos y submúltiplos",
+      "Inicio": "En esta sección se hace énfasis en la inclusión y la igualdad de género al exponer que la ingeniera de estrategia del equipo de Checo Pérez es mujer; resalta sus habilidades y responsabilidades en el equipo y la importancia de sus procesos de revisión para la seguridad del conductor en las carreras, independientemente de su género. Además, se plantean las aplicaciones del uso de las unidades de medición en el ámbito deportivo y tecnológico.  Continúe con el desarrollo de la lección anterior, propiamente resaltando la necesidad de un sistema de medidas accesible y de uso generalizado en diferentes lugares del mundo. Esta necesidad dio origen al Sistema Internacional de Unidades (SI), comente que establecerlo internacionalmente no es una tarea sencilla, pues existe resistencia de personas, empresas y países. Resalte los beneficios de contar con ese sistema y los problemas culturales y económicos que se pueden provocar al modificar los sistemas de medición regionales y adoptar el SI.",
+      "Desarrollo": "La introducción de esta sección hace énfasis en la importancia de contar con un sistema de unidades universal, que facilite el comercio y las transacciones entre países. Comente que todavía existen muchos países que utilizan distintas unidades de medida, pero que para insertarse en el comercio global se cuenta con equivalencias entre esas unidades y el SI.  La lección establece la relación entre las magnitudes físicas y sus unidades de medida en el SI; es decir, indica cómo se definieron y qué magnitud miden. Pida a sus alumnos que investiguen cómo se definen las unidades fundamentales, por ejemplo, que el metro se definió originalmente como una diezmillonésima parte del cuadrante del meridiano terrestre, magnitud que podía ser determinada por científicos en diferentes partes del mundo mediante cálculos geométricos y de ahí pasar a un modelo físico, originalmente de una aleación de platino e iridio. Actualmente el metro se define en términos de la velocidad de la luz, y se mide a partir de la longitud de onda de rayos láser específicos (conceptos que se estudiarán a lo largo del curso). El kelvin que se usa para medir temperatura se define a partir de la temperatura del punto triple del agua, es decir, como el punto de presión y temperatura donde el agua se presenta en los tres estados de agregación de manera simultánea. Estas magnitudes se obtienen por procedimientos científicos y técnicos por personas especializadas y después se transmiten a la población en general. Comente que en México es el Centro Nacional de Metrología el encargado de establecer las unidades de medida y de regular su uso en todo el país. La actividad de la página 36 tiene el objetivo de que los estudiantes reflexionen acerca de las distintas unidades en las que se pueden medir algunas magnitudes físicas y cuáles serían sus ventajas y desventajas. Haga notar el hecho de que los aparatos electrodomésticos que usamos a diario tienen especificaciones basadas en las unidades del SI y pídales que mencionen y descubran otros aspectos de la vida diaria donde se usan estas unidades.  En la página 37 se definen las unidades derivadas, cuál es su origen y cómo se utilizan para medir otras magnitudes físicas que también derivan de las fundamentales. La actividad de reflexión en esta página tiene el objetivo de que investiguen otras magnitudes que se midan con unidades derivadas y que establezcan relaciones entre ellas.",
+      "Cierre": "La finalidad de la actividad de Cierre es que los alumnos revisen su comprensión de los contenidos de la lección, que sean capaces de definir e identificar las diferencias de las unidades fundamentales y derivadas.  Además, se retoma la actividad de Inicio para que establezcan la relación con los contenidos e identifiquen su utilidad en la vida cotidiana, en este caso, en las carreras de Fórmula 1.  Pida a sus alumnos que comenten en qué situaciones sería un problema que no se contara con un sistema de medidas universal, para remarcar la importancia de contar con el SI.",
+      "EjesArticuladores": "Pensamiento crítico. Inclusión",
+      "EvaluacionFormativa": [
+        "Comprende la diferencia entre magnitudes físicas y unidades de medición.",
+        "Comprende la diferencia entre unidades de medición, fundamentales y derivadas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "9",
+        "10"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 146-151",
+      "LibroMcMillan": "Física Imagina  34-37",
+      "Vinculacion": "\\textbf{Biología: } Reconoce que las unidades de medida usadas en la Biología y otras ciencias tienen su base en las unidades de SI.",
+      "Worklist": [
+        "L5. Unidades fundamentales y derivadas",
+        "A.9. Unidades fundamentales",
+        "L6. Múltiplos y submúltiplos",
+        "A.10. Múltiplos"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 146-151",
+        "Física Imagina  34-37"
+      ],
+      "ActPro": [
+        "9",
+        "10"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-22",
+      "FechaDeCierre": "2025-09-26",
+      "SemanaEscolar": 4,
+      "Contenido": "Unidades y medidas utilizados en Física.",
+      "Aprendizaje": "Conoce los instrumentos de medición.",
+      "Tema": "Instrumentos de medición",
+      "Leccion": "L7. Instrumentos de medición",
+      "Inicio": "El objetivo de esta sección es mostrar a los alumnos la importancia de la medición, pero que no siempre se cuenta con los instrumentos adecuados para hacerlas. Sin embargo, la curiosidad y la creatividad natural del ser humano lo ha llevado a crear diversas maneras de tratar de responder a sus inquietudes. La invención de los dispositivos para medir masa, longitud, tiempo, luminosidad, etcétera, ha llevado a la humanidad a avanzar a pasos agigantados en el desarrollo de la tecnología en apenas un par de siglos. Permítales a los alumnos que usen su imaginación para inventar dispositivos de medición. Que expliquen sus ideas y las comparen con las de sus compañeros, para que hagan consciencia de la utilidad y la importancia de los instrumentos de medición en la vida cotidiana. Antes de responder las preguntas de esta sección, pídales que comenten qué instrumentos de medición conocen y para qué sirven. Seguramente sólo mencionarán los más comunes, para medir masa, tiempo y longitud. Invítelos a mencionar otros instrumentos, por ejemplo, para medir volumen y capacidad, qué instrumento se utiliza para medir la fuerza, o la luminosidad de un foco.",
+      "Desarrollo": "Antes de que lean esta página, pregunte a sus alumnos qué creen que significan los términos precisión, sensibilidad, exactitud y fiabilidad en el contexto de la medición. Pregunte sobre un término a la vez y pida que le den ejemplos; es decir, que expliquen qué creen que significa que un instrumento de medición sea preciso y mencionen algunos ejemplos. Haga lo mismo para el resto de los conceptos y luego pida a distintos alumnos que lean las definiciones que están en el libro. Después, pídales que corrijan su concepción original de cada término, si es necesario. Si tiene la posibilidad, lleve algunos de los instrumentos de medición como vernier, micrómetro, cinta métrica y multímetro. Muestre a sus estudiantes cómo se utilizan y pregúnteles qué medirían con cada uno. Le sugerimos que, de ser posible, proyecte los videos sugeridos en la página 43. Si cuenta con ellos, muéstreles también una báscula, un dinamómetro, un cronómetro y un termómetro, y pregúnteles qué creen que mide cada uno. Organice a sus alumnos en tercias y pídales que anoten en su cuaderno qué medirían con los instrumentos anteriores y en qué contextos de su vida cotidiana lo harían. Después, anímelos a compartir sus ejemplos con sus compañeros y que comparen sus respuestas. También, utilice los ejemplos de instrumentos de medición para unidades derivadas que se preguntan en la actividad de reflexión y asígnelos a otros equipos para su presentación. Anímelos a utilizar diversas formas de presentar su trabajo, ya sea mediante presentaciones electrónicas o hechas en cartulinas con recortes y dibujos.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia, que lo apliquen en la resolución de situaciones de su vida cotidiana y que comprendan por qué existen diversos instrumentos para medir la misma unidad básica, dependiendo del contexto en el que se utilicen. ¿Qué instrumentos se usan, por ejemplo, para medir la calidad del aire que respiramos? Para responder invite a sus alumnos a trabajar la ficha 3 del Cuaderno de evidencias.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Sabe qué es un instrumento de medición y para qué se utiliza."
+      ],
+      "Evidencias": [
+        "F3"
+      ],
+      "Actividades": [
+        "11"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 250-252,Nuestro librode proyectos, 96-105",
+      "LibroMcMillan": "Física Imagina  42-45",
+      "Vinculacion": "\\textbf{Matemáticas: } Aprende a leer cantidades en los instrumentos de medición.",
+      "Worklist": [
+        "L7. Instrumentos de medición",
+        "A.11. Es momento de medir",
+        "F3. Contaminantes del aire"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 250-252",
+        "Nuestro librode proyectos",
+        " 96-105",
+        "Física Imagina  42-45"
+      ],
+      "ActPro": [
+        "11",
+        "F3"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-29",
+      "FechaDeCierre": "2025-10-03",
+      "SemanaEscolar": 5,
+      "Contenido": "Estructura, propiedades y características de la materia.",
+      "Aprendizaje": "Materiales y sus propiedades.",
+      "Tema": "Propiedades de la materia",
+      "Leccion": "L8 Materiales y sus propiedades.",
+      "Inicio": "El objetivo de esta sección es mostrar a los alumnos las aplicaciones de los materiales en los distintos aspectos de la vida y la forma en la que han sido utilizados por el ser humano para obtener alimento y protegerse del clima y los elementos externos. Sin embargo, también nos presenta la realidad de la sobreexplotación de los recursos naturales y cómo se ha acelerado en los últimos dos siglos como consecuencia de los avances tecnológicos y los procesos de producción. Da algunos ejemplos y plantea qué podrías hacer para disminuir el desperdicio. La sección de Inicio también tiene la intención de despertar el asombro de los estudiantes al presentar una máquina capaz de cortar acero a partir de un chorro de agua, resalte esta propiedad del líquido que a primera vista parecería imposible y reflexione con ellos sobre las características de los materiales que podríamos aprovechar en aplicaciones inesperadas, todo gracias al ingenio humano.",
+      "Desarrollo": "El primer párrafo de esta sección plantea que la materia es un concepto abstracto, pero podría pedirles a sus estudiantes que digan qué cosas que observan a su alrededor están hechas de materia. Probablemente mencionen que todas lo están, entonces pregúnteles si el aire está hecho de materia y cómo podemos percibirlo. Después, mencione otras cosas que no son materia, como las ideas, el tiempo y el espacio, para aclarar el concepto y propiedades de la materia. Pregunte cuáles creen que son las propiedades de la materia que se pueden medir, pida ejemplos concretos, anímelos a observar los objetos que los rodean en el salón de clases y que describan algunas de sus propiedades. Si observa que los alumnos no pueden expresar sus ideas, puede orientarlos con propiedades como la masa, la longitud, el volumen, etcétera. Si mencionan características como el olor, el sabor o el color, explíqueles que éstas son propiedades cualitativas que no se pueden medir, mientras que las cuantitativas como la masa y la longitud, sí. Solicite a sus estudiantes que den ejemplos de cómo medir las propiedades extensivas, qué instrumentos se utilizan y cuáles son las unidades de medida correspondientes. En la página 47 se hace énfasis en el cálculo de la densidad de los materiales. Coménteles que la densidad es una característica distintiva de los materiales, es decir, si conocemos la densidad, podemos determinar de qué material se trata. También le recomendamos que resuelva problemas en los que se calcule la masa y el volumen en lugar de la densidad.",
+      "Cierre": "El propósito de esta sección es que los alumnos apliquen los conocimientos adquiridos en la lección y reflexionen sobre la aplicación de las propiedades de los distintos materiales en la elaboración de diferentes productos",
+      "EjesArticuladores": "Inclusión.",
+      "EvaluacionFormativa": [
+        "Reconoce la diferencia entre propiedades extensivas e intensivas de la materia. ",
+        "Comprende e identifica las propiedades de los materiales y su aplicación en la vida cotidiana."
+      ],
+      "Evidencias": [
+        "F4",
+        "F5"
+      ],
+      "Actividades": [
+        "12",
+        "13",
+        "14"
+      ],
+      "Proyectos": [
+        "Densidad"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 241-244,Nuestro libro de proyectos 156-162",
+      "LibroMcMillan": "Física Imagina  46-49",
+      "Vinculacion": "\\textbf{Biología: } Identifica que diferentes materiales usados en su entorno tienen un origen natural.",
+      "Worklist": [
+        "L8. Materiales y sus propiedades",
+        "A.12. Propiedades de la materia",
+        "A.13. ¿Qué es la materia?",
+        "F4. Litio, el oro blanco del siglo XXI",
+        "F5 La isla de plástico"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 199 y 241-244",
+        "Nuestro libro de proyectos 156-162",
+        "Física Imagina  46-49 y 50-53"
+      ],
+      "ActPro": [
+        "12",
+        "13",
+        "14",
+        "F4",
+        "F5",
+        "Densidad"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-06",
+      "FechaDeCierre": "2025-10-10",
+      "SemanaEscolar": 6,
+      "Contenido": "Estructura, propiedades y características de la materia.",
+      "Aprendizaje": "Explora algunos avances recientes en la comprensión de la constitución de la materia y reconoce el proceso histórico de construcción de nuevas teorías.",
+      "Tema": "Teoría atómica",
+      "Leccion": "L9 Estructura de la materia. L10. La teoría atómica",
+      "Inicio": "La situación de Inicio plantea un tema muy interesante para comentar con los alumnos, ya que involucra el desarrollo de la tecnología nuclear y sus catastróficas consecuencias. Es un punto importante para analizar sobre los posibles resultados del desarrollo científico y la responsabilidad que tienen los científicos sobre el uso de sus conocimientos. Las preguntas planteadas al final del texto le permitirán organizar un debate con sus alumnos. Por ejemplo, puede dividir al grupo en dos, que una parte exponga los beneficios de la tecnología nuclear y la otra, las consecuencias dañinas para la vida en el planeta.",
+      "Desarrollo": "En esta sección se explican los diferentes modelos planteados para explicar la composición fundamental de la materia y sus propiedades. Los alumnos aprenderán conceptos nuevos que pueden ser difíciles de comprender, por lo que le recomendamos que después de leer cada modelo vea con los alumnos los siguientes videos, en el orden propuesto: El modelo atómico de Dalton.  www.edutics.mx/x3h El experimento de J. J. Thomson.  www.edutics.mx/T7F ¿Qué es el modelo atómico de Thomson y cuáles son sus postulados?  www.edutics.mx/xij El modelo atómico de Rutherford.  www.edutics.mx/x37 Le sugerimos que, después de leer los primeros párrafos de la página 58, proyecte el siguiente video, que explica los espectros de emisión y absorción de los distintos elementos. ¿Qué son los espectros de emisión y absorción?  www.edutics.mx/x38 Después, continúe con el video del modelo atómico de Bohr y el descubrimiento del neutrón. El modelo atómico de Bohr.  www.edutics.mx/x3X ¿Cómo se descubrió el protón y el neutrón?  www.edutics.mx/x3B Después de ver cada video, organice a los alumnos para que comenten sobre los principales postulados de cada uno y los anoten en tarjetas. Esto les servirá para después diseñar un juego de lotería o de memoria de los modelos atómicos. Le recomendamos que deje de tarea ver el video sugerido en la sección \"Consulta\" de la página 54, para que complementen su información. Pídales que hagan un cuestionario para que lo apliquen a sus compañeros de clase. Revise, junto con sus alumnos, las preguntas y resuelva dudas o sugiera ajustes. Finalmente, propóngales que, para evaluar los contenidos de esta lección, diseñen un juego de mesa. Usted puede proponerles la lotería y la memoria, pero anímelos a que ellos inventen su propio juego",
+      "Cierre": "El propósito de esta sección es que los alumnos comparen las diferentes teorías atómicas que se trataron en la lección y que puedan explicar cómo evolucionaron hasta la teoría actual. También tiene el objetivo de que reflexionen acerca de las aplicaciones de la energía nuclear. Podría proponer a sus alumnos que, en equipos, hagan una maqueta que represente los modelos del átomo de cada teoría explicada en la lección.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Reconoce que las teorías sobre la estructura atómica evolucionaron con los descubrimientos científicos a lo largo de los años. ",
+        "Reconoce las diferencias y similitudes entre las distintas teorías atómicas."
+      ],
+      "Evidencias": [
+        "F6"
+      ],
+      "Actividades": [
+        "15",
+        "16",
+        "17"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 200-203 y 209-215",
+      "LibroMcMillan": "Física Imagina  54-59",
+      "Vinculacion": "\\textbf{Matemáticas: } Utiliza potencias de diez y las propiedades de los exponentes para comprender las dimensiones atómicas.",
+      "Worklist": [
+        "L9. Teorías sobre estructura de la materia",
+        "A.14. Un modelo para la materia",
+        "L10. La teoría atómica",
+        "A.15. Construyendo un modelo para el átomo",
+        "A.16. ¿Thomson, Rutherford o Bohr?",
+        "A.17. La estructura interna de la materia",
+        "F6. Invierno nuclear"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 200-203 y 209-215",
+        "Física Imagina  54-59"
+      ],
+      "ActPro": [
+        "15",
+        "16",
+        "17",
+        "F6"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-13",
+      "FechaDeCierre": "2025-10-17",
+      "SemanaEscolar": 7,
+      "Contenido": "Estados de agregación de la materia.",
+      "Aprendizaje": "Experimenta e interpreta los modelos atómicos y de partículas al proponer hipótesis que expliquen los tres estados de la materia, sus propiedades físicas como la temperatura de fusión, ebullición, densidad, entre otros.",
+      "Tema": "Estados de la materia",
+      "Leccion": "L11. Estados de agregación de la materia y modelo cinético",
+      "Inicio": "En esta sección se plantean tres situaciones diferentes en las que se describen las transformaciones de la materia. Las preguntas de la sección le servirán para animar a los estudiantes a que den más ejemplos de cambios de estado. Pídales que los ejemplos que propongan sean concretos y que estén relacionados con situaciones de su vida cotidiana, por ejemplo:  La fundición de metales.  La transformación de la mantequilla o la cera de una vela cuando la calientan  La evaporación del sudor que sirve para controlar la temperatura corporal. En cuanto a la primera pregunta, solicite a sus alumnos que se reúnan en equipos para que discutan sus ideas antes de responder. Después, organice una sesión en la que compartan cómo explicarían los cambios de estado con el modelo de partículas. Se espera que puedan relacionar la energía de las partículas que conforman la materia, con el aumento y la disminución de la temperatura.",
+      "Desarrollo": "En la página 61 se explica cómo se encuentran las partículas en los sólidos, los líquidos y los gases. Se explica también qué ocurre si se aumenta la presión o la temperatura de un cuerpo en estos estados; para ilustrarlo, le recomendamos que proyecte las simulaciones que encontrará en el siguiente vínculo. Simulador de estados de la materia y cambios de fase.  www.edutics.mx/SYm Después de ver la simulación, pregunte nuevamente a sus alumnos cómo explican los cambios de estado a partir del modelo de partículas; se espera que digan que, si aumenta la temperatura, éstas se mueven más rápidamente porque su energía aumenta y, por tanto, se separan hasta cambiar de estado. En la segunda parte del simulador, podrán ver qué ocurre cuando se aumenta o se disminuye la presión, coménteles que se pueden combinar los valores de estas variables. En la página 62 se explican los cambios de estado únicamente como consecuencia del aumento o disminución de la temperatura. Lleve a cabo la práctica propuesta en la página 62 en el laboratorio escolar. Puede hacer la práctica demostrativa o, si cuenta con el material necesario, organizar al grupo en equipos para que realicen  el experimento y anoten sus observaciones. Pídales que tomen la temperatura cada dos minutos y que lo anoten en una tabla de dos columnas para que puedan graficar sus datos. Coménteles que guarden su reporte de observaciones en su Portafolio de evidencias. Solicite a un estudiante que lea el primer párrafo de \"La densidad y el modelo cinético\" de la página 64; después pídales que expliquen la densidad con el modelo de partículas. Le sugerimos dejar de tarea la actividad de esta página y organizar una sesión para que compartan sus respuestas. En la sección de recursos de apoyo, le sugerimos un video que explica por qué el hielo flota en el agua, que puede proyectar en clase después de leer la primera sección de la página 65. Por último, le sugerimos que deje de tarea leer el tema del plasma y que les proponga hacer una presentación por equipos en la que ilustren y expliquen qué es el plasma, algunos ejemplos y sus aplicaciones.",
+      "Cierre": "El propósito es que los alumnos retomen lo aprendido en la lección y respondan las preguntas que pueden servirle como evaluación del tema.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Entiende e identifica los estados de la materia y sus transformaciones. ",
+        "Explica los cambios deestado y la densidad con elmodelo de partículas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "18",
+        "19",
+        "20"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 274-275",
+      "LibroMcMillan": "Física Imagina  60-65",
+      "Vinculacion": "\\textbf{Biología: } Identifica los estados de la materia en los ciclos biogeoquímicos.",
+      "Worklist": [
+        "L11. Estados de agregación de la materia",
+        "A.18. ¿Cómo se organiza la materia?",
+        "A.19. Las facetas de la materia",
+        "A.20. La materia"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 274-275",
+        "Física Imagina  60-65"
+      ],
+      "ActPro": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-20",
+      "FechaDeCierre": "2025-10-24",
+      "SemanaEscolar": 8,
+      "Contenido": "Temperatura y el equilibrio térmico.",
+      "Aprendizaje": "Interpreta la temperatura y el equilibrio térmico con base en el modelo de partículas.",
+      "Tema": "Temperatura",
+      "Leccion": "L12. Temperatura y equilibrio térmico",
+      "Inicio": "La situación de inicio habla de los receptores de temperatura que tienen los organismos vivos para percibir y regular su propia temperatura o actuar, ya sea metabólicamente o moviéndose a zonas de mayor o menor temperatura dependiendo de sus necesidades. Le recomendamos el siguiente video que explica la diferencia entre animales de sangre caliente y sangre fría. Se presentan diversos ejemplos y se explica que los organismos vivos no sólo se clasifican con estos dos términos.",
+      "Desarrollo": "La lección tiene como objetivo que los alumnos aprendan qué son los múltiplos y submúltiplos de las unidades del SI. Aprenderán a utilizar la notación científica para escribir cantidades muy grandes y muy pequeñas y complementarlas con las unidades de medición, para representar el valor de las magnitudes físicas y hacer comparaciones entre ellas.  En la página 39 se muestra una tabla con los múltiplos y submúltiplos y los prefijos que se utilizan para acompañar a las unidades del SI, su representación en notación científica, su símbolo y su equivalencia. Le recomendamos que, además de revisar esa tabla con los alumnos, haga algunos ejercicios en los que ellos comparen cantidades escritas en múltiplos y submúltiplos y que también hagan conversiones entre ellas. Por ejemplo: ¿Qué es mayor, 5 kg o 5000 g?  ¿Qué es mayor, 100 cm o 0.00001 km? En la página 40 se resuelven operaciones con notación científica y se aplican las potencias negativas y positivas. Es importante que los alumnos distingan que los valores muy grandes se representan con potencias positivas de 10 y los muy pequeños con potencias negativas. En la actividad de esta página se pretende que los alumnos practiquen el uso de la notación científica y la equivalencia entre múltiplos y submúltiplos de las unidades de medición. Puede empezar con ejemplos como:  ¿Qué es mayor, 100 cm o $10^{-5}$ km?  ¿Cómo se escribe en notación científica 2000000000? También se muestra cómo hacer conversiones entre múltiplos y submúltiplos de unidades de medición utilizando la notación científica. Revise que los alumnos tengan claro el procedimiento pero no con la idea de memorizarlo, sino de comprenderlo, pida que propongan su propio método. En la página 41 se explica cómo hacer las conversiones mediante la multiplicación y la división, para después aplicar este recurso en la conversión de unidades, que se aborda en la actividad de esta página. Le sugerimos que, utilizando la tabla que se presenta en la página, repase en qué sentido se hacen las operaciones (multiplicación y división) para hacer las conversiones. Considere que lo más importante es la comprensión antes que la memorización o mecanización de procedimientos.",
+      "Cierre": "El propósito es que los alumnos retomen lo aprendido en la lección y respondan las preguntas que pueden servirle como evaluación del tema.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Comprende la diferencia entre calor, temperatura y energía térmica. ",
+        "Entiende qué es el equilibrio térmico y sus aplicaciones en situaciones cotidianas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "21",
+        "22"
+      ],
+      "Proyectos": [
+        "Temperatura"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 170-174,Saberes y pensamiento científico 183-186,Saberes y pensamiento científico 196-197",
+      "LibroMcMillan": "Física Imagina  66-73",
+      "Vinculacion": "\\textbf{Matemáticas: } Realiza conversiones entre las distintas unidades de temperatura.",
+      "Worklist": [
+        "L12. Temperatura y equilibrio térmico",
+        "A.21. Conversaciones entre temperaturas",
+        "A.22. ¿Cómo se mide la temperatura?"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 170-174",
+        "Saberes y pensamiento científico 183-186",
+        "Saberes y pensamiento científico 196-197",
+        "Física Imagina  66-73"
+      ],
+      "ActPro": [
+        "21",
+        "22",
+        "Temperatura"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-27",
+      "FechaDeCierre": "2025-10-31",
+      "SemanaEscolar": 9,
+      "Contenido": "Recapitulación e integración de los conocimientos y aprendizajes.",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Practica la Unidad",
+      "Leccion": "Revisión grupal de los saberes acumulados en el período de evaluación",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Lo que aprendí\\dots",
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico",
+        "Química Imagina",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad",
+        "Lo que aprendí\\dots"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-11-03",
+      "FechaDeCierre": "2025-11-07",
+      "SemanaEscolar": 10,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Semana de evaluación",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se da la bienvenida a los estudiantes a la semana de evaluación, estableciendo como objetivo principal no solo medir el conocimiento a través de un examen, sino también reflexionar sobre el proceso de aprendizaje del trimestre. Se establece un ambiente de concentración y se fomenta una actitud proactiva, explicando que cada actividad está diseñada para consolidar sus saberes. La primera parte de la semana se dedica a un período lectivo de repaso y preparación final, donde, a través de una competencia lúdica con preguntas clave y la resolución de un examen de simulación, los alumnos identifican sus fortalezas y áreas de oportunidad antes de la prueba sumativa.",
+      "Desarrollo": "El núcleo de la semana se centra en la aplicación de la evaluación y la retroalimentación del proceso, distribuido en los siguientes períodos lectivos clave. La primera sesión se dedica a la resolución individual del examen. Se generan las condiciones óptimas de silencio y concentración, dando indicaciones claras y precisas. El docente supervisa el proceso, asegurando la equidad y el cumplimiento de las normas para una evaluación objetiva del aprendizaje alcanzado. Una vez calificados, se entregan los exámenes a los alumnos. En lugar de solo informar una nota, se realiza una revisión grupal de los reactivos con mayor índice de error. Se explica el razonamiento detrás de las respuestas correctas, convirtiendo la evaluación en una oportunidad de aprendizaje tangible y permitiendo que los alumnos comprendan el origen de sus equivocaciones. Los alumnos entregan su portafolio de evidencias junto con un formato de Autocontrol, donde verifican haber completado todos los trabajos y actividades del trimestre. Esta entrega complementa la calificación del examen, valorando también el esfuerzo, la organización y la constancia demostrada durante el período.",
+      "Cierre": "Se dedica la última sesión a cerrar formalmente el trimestre. Se da una retroalimentación general al grupo sobre su desempeño y se presenta de manera atractiva y motivadora el proyecto o los temas centrales que se abordarán en el siguiente periodo. Se puede realizar una actividad breve y creativa de arranque para generar curiosidad e interés por lo que está por venir.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos en MeXmáticas",
+      "Vinculacion": "",
+      "Worklist": [
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico",
+        "Química Imagina",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

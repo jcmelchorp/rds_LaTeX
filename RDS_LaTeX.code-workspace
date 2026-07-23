@@ -1,0 +1,173 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "RDS en LaTeX",
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": false,
+		"editor.formatOnType": false,
+		"latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
+		"latex-workshop.linting.chktex.enabled": true,
+		"latex-workshop.showContextMenu": true,
+		"latex-workshop.formatting.latex": "latexindent",
+		"latex-workshop.latex.autoBuild.run": "onSave",
+		"latex-workshop.check.duplicatedLabels.enabled": false,
+		"latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/output",
+		"latex-workshop.latex.texDirs": [
+			"%WORKSPACE_FOLDER%/resources",
+			"%WORKSPACE_FOLDER%/aux",
+			//"%DIR%/base",
+			//"%DIR%/images",
+			//"%DIR%/base/pgf-periodictable",
+		],
+		"latex-workshop.latex.tools": [
+			{
+				"name": "latexmk",
+				"command": "latexmk",
+				"args": [
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdf",
+					"-aux-directory=%WORKSPACE_FOLDER%/aux",
+					"-outdir=%OUTDIR%",
+					"%DOC%"
+				],
+				"env": {
+					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:"
+				}
+			},
+			{
+				"name": "lualatexmk",
+				"command": "latexmk",
+				"args": [
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-lualatex",
+					"-outdir=%OUTDIR%",
+					"%DOC%"
+				],
+				"env": {}
+			},
+			{
+				"name": "xelatexmk",
+				"command": "latexmk",
+				"args": [
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-xelatex",
+					"-outdir=%OUTDIR%",
+					"%DOC%"
+				],
+				"env": {}
+			},
+			{
+				"name": "latexmk_rconly",
+				"command": "latexmk",
+				"args": [
+					"%DOC%"
+				],
+				"env": {}
+			},
+			{
+				"name": "pdflatex",
+				"command": "pdflatex",
+				"args": [
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"-pdf",
+					"--aux-directory=%OUTDIR%",
+					"-outdir=%OUTDIR%",
+					"%DOC%"
+				],
+				"env": {
+					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%WORKSPACE_FOLDER%/aux:"
+				}
+			},
+			{
+				"name": "bibtex",
+				"command": "bibtex",
+				"args": [
+					"%DOCFILE%"
+				],
+				"env": {}
+			},
+			{
+				"name": "rnw2tex",
+				"command": "Rscript",
+				"args": [
+					"-e",
+					"knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+				],
+				"env": {}
+			},
+			{
+				"name": "jnw2tex",
+				"command": "julia",
+				"args": [
+					"-e",
+					"using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+				],
+				"env": {}
+			},
+			{
+				"name": "jnw2texminted",
+				"command": "julia",
+				"args": [
+					"-e",
+					"using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+				],
+				"env": {}
+			},
+			{
+				"name": "pnw2tex",
+				"command": "pweave",
+				"args": [
+					"-f",
+					"tex",
+					"%DOC_EXT%"
+				],
+				"env": {}
+			},
+			{
+				"name": "pnw2texminted",
+				"command": "pweave",
+				"args": [
+					"-f",
+					"texminted",
+					"%DOC_EXT%"
+				],
+				"env": {}
+			},
+			{
+				"name": "tectonic",
+				"command": "tectonic",
+				"args": [
+					"--synctex",
+					"--keep-logs",
+					"%DOC%.tex"
+				],
+				"env": {}
+			},
+			{
+				"name": "texify",
+				"command": "texify",
+				"args": [
+					"--synctex",
+					"--pdf",
+					"--tex-option=\"-interaction=nonstopmode\"",
+					"--tex-option=\"-file-line-error\"",
+					"%DOC_EXT%"
+				],
+				"env": {}
+			}
+		],
+	}
+}

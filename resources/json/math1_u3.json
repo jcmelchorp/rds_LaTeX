@@ -1,0 +1,504 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "23 mar",
+      "FechaDeCierre": "27 mar",
+      "SemanaEscolar": 27,
+      "Contenido": "Sucesiones",
+      "Aprendizaje": "Identificar y completar patrones en sucesiones aritméticas y geométricas.",
+      "Tema": "Sucesiones",
+      "Leccion": "Completa la sucesión aritmética y geométrica.",
+      "Inicio": "El docente comenzará con una dinámica grupal que invite a reflexionar sobre patrones en la naturaleza (hojas, caracoles, etc.). Posteriormente, se hará una introducción sobre el concepto de sucesión, destacando su importancia en contextos reales como la programación o la economía. Se presentará un video breve explicativo (disponible en plataformas como YouTube o MeXmáticas). Se motivará a los estudiantes con preguntas como: \"¿Cómo se forman los patrones? ¿Qué tipo de reglas podemos encontrar detrás de ellos?\" Para generar interés, se trabajará en equipo con ejemplos cotidianos.",
+      "Desarrollo": "Los estudiantes resolverán una serie de ejercicios guiados por el docente, donde se les presentarán ejemplos de sucesiones aritméticas (como 2, 4, 6, 8...) y geométricas (2, 4, 8, 16...). Cada equipo identificará la regla de formación y completará los términos faltantes. Se utilizarán materiales manipulativos como fichas o bloques para visualizar el crecimiento de las sucesiones. Se propondrán problemas que involucren patrones visuales y se incorporará tecnología mediante simulaciones en MeXmáticas para analizar cambios en sucesiones dinámicas.",
+      "Cierre": "Los estudiantes expondrán en equipo cómo identificaron las reglas de sus sucesiones y se promoverá la retroalimentación colaborativa. El docente destacará los errores comunes, como asumir que una sucesión es geométrica cuando es aritmética, o confundir la diferencia común con la razón. Para superarlos, se reforzará el análisis sistemático de cada término. Finalmente, se evaluará mediante una actividad interactiva donde completen sucesiones en la plataforma digital y reciban retroalimentación automática.",
+      "EjesArticuladores": "Inclusión, pensamiento lógico-matemático, y habilidades para la resolución de problemas.",
+      "EvaluacionFormativa": [
+        "Resolución de actividades interactivas en MeXmáticas, análisis de patrones y presentación grupal de soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "56",
+        "57"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Discute las limitaciones biológicas de estos modelos, como la disponibilidad de recursos y la competencia.",
+      "Worklist": [
+        "A.56. Completa la sucesión aritmética 1",
+        "A.57. Completa la sucesión aritmética 2"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "56",
+        "57"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "13 abr",
+      "FechaDeCierre": "17 abr",
+      "SemanaEscolar": 28,
+      "Contenido": "Sucesiones",
+      "Aprendizaje": "Calcular la diferencia común y determinar términos específicos en una sucesión aritmética.",
+      "Tema": "Sucesiones",
+      "Leccion": "Diferencia de una sucesión aritmética; Término de una sucesión aritmética.",
+      "Inicio": "Se iniciará con una actividad donde los estudiantes observen una tabla con sucesiones y determinen qué tienen en común. El docente explicará cómo identificar la diferencia común y por qué es fundamental para trabajar con sucesiones aritméticas. Se enfatizará su aplicación práctica, como calcular pagos mensuales o planificar ahorros. Se formularán preguntas desafiantes como: \"¿Qué pasa si no conocemos todos los términos de una sucesión?\"",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para identificar diferencias comunes en sucesiones aritméticas. Se les proporcionarán ejercicios de distintos niveles de dificultad para calcular el enésimo término utilizando la fórmula $a_n=a_1+(n-1)d$. Se incorporará la gamificación mediante retos en MeXmáticas y actividades interactivas. El docente supervisará, resolviendo dudas y corrigiendo errores comunes, como confundir la posición del término ($n$) con su valor ($a_n$).",
+      "Cierre": "Cada equipo compartirá sus procedimientos y resultados, explicando los pasos seguidos. Se analizarán errores recurrentes, como omitir la diferencia común o confundir la fórmula general. El docente ofrecerá estrategias prácticas, como subrayar los valores iniciales y calcular con cuidado las operaciones. La evaluación final consistirá en resolver un desafío grupal con varias sucesiones y justificar sus métodos.",
+      "EjesArticuladores": "Inclusión. Interculturalidad crítica",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en MeXmáticas, elaboración de diagramas con explicaciones detalladas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "58",
+        "59",
+        "60"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Modela y resuelve problemas que involucran el crecimiento exponencial de poblaciones (bacterias, virus, etc.), representando el comportamiento a través de sucesiones geométricas.",
+      "Worklist": [
+        "A.58. Completa la sucesión geométrica",
+        "A.59. Diferencia de una sucesión",
+        "A.60. Término de una sucesión"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "58",
+        "59",
+        "60"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "20 abr",
+      "FechaDeCierre": "24 abr",
+      "SemanaEscolar": 29,
+      "Contenido": "Proporcionalidad",
+      "Aprendizaje": "Resolver problemas que involucren razones y proporciones directa e inversa.",
+      "Tema": "Proporcionalidad y estadística",
+      "Leccion": "Razones y proporciones directa e inversa.",
+      "Inicio": "El docente planteará una situación problemática, como calcular ingredientes para una receta o repartir materiales proporcionalmente en equipos. Esto permitirá introducir el concepto de razón y proporción de manera contextualizada. Mediante preguntas dirigidas, los estudiantes reflexionarán sobre cómo identificar relaciones proporcionales en su vida diaria. Se reforzará el uso de representaciones gráficas para visualizar las proporciones.",
+      "Desarrollo": "A través de ejercicios prácticos, los estudiantes identificarán y resolverán problemas de proporciones directas e inversas. Se utilizarán tablas y gráficos para representar relaciones proporcionales. El docente destacará errores frecuentes, como invertir los términos de la razón o no simplificar las fracciones, y modelará estrategias correctas. La clase se dividirá en equipos para resolver casos reales, como calcular precios o tasas de cambio.",
+      "Cierre": "Se realizará una puesta en común, donde los estudiantes explicarán cómo resolvieron sus problemas y qué estrategias encontraron más útiles. Se proporcionará retroalimentación grupal, enfatizando la importancia de analizar cuidadosamente los datos antes de resolver. La evaluación incluirá actividades en MeXmáticas que simulen problemas cotidianos relacionados con proporciones.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en MeXmáticas y análisis de situaciones prácticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "61",
+        "62"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Utiliza relaciones de proporcionalidad directa para analizar y comparar características anatómicas y fisiológicas entre diferentes especies.",
+      "Worklist": [
+        "A.61. Razones y proporciones",
+        "A.62. Variación directa e inversa"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "61",
+        "62"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "27 abr",
+      "FechaDeCierre": "1 may",
+      "SemanaEscolar": 30,
+      "Contenido": "Estadística",
+      "Aprendizaje": "Calcular promedio, mediana y moda; interpretar gráficos estadísticos para describir datos.",
+      "Tema": "Estadística",
+      "Leccion": "Promedio, mediana, moda e interpretación de gráficas.",
+      "Inicio": "El docente comenzará con una encuesta rápida entre los estudiantes sobre su tema favorito en matemáticas y registrará los resultados en la pizarra. A partir de estos datos, se discutirá qué medidas podrían resumir la información de manera efectiva. Se introducirá el concepto de promedio, mediana y moda, explicando cómo se usan en situaciones reales, como estudios de mercado o análisis de calificaciones.",
+      "Desarrollo": "Los estudiantes trabajarán con conjuntos de datos reales y ficticios para calcular las tres medidas estadísticas. Se les asignarán diferentes formatos de datos, como tablas, listas o diagramas, para fomentar habilidades de análisis. Se usarán herramientas digitales para graficar datos y realizar interpretaciones. Se abordarán errores comunes, como confundir el cálculo de promedio con mediana o seleccionar valores incorrectos para la moda. Para superarlos, se trabajará con ejemplos claros y se harán ejercicios paso a paso.",
+      "Cierre": "Cada equipo expondrá un conjunto de datos, sus medidas estadísticas y una gráfica que represente los datos. El docente guiará una discusión sobre la utilidad de cada medida en contextos diferentes. La evaluación se realizará mediante actividades prácticas en MeXmáticas, donde los estudiantes analizarán gráficos e identificarán medidas de tendencia central.",
+      "EjesArticuladores": "Inclusión. Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Análisis de conjuntos de datos en MeXmáticas, creación de gráficas y resolución de problemas estadísticos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "63",
+        "64",
+        "65"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Calcula e interpreta medidas de tendencia central y dispersión para argumentar sobre la diversidad biológica y los efectos de la selección natural.",
+      "Worklist": [
+        "A.63. Mediana y moda",
+        "A.64. Promedio",
+        "A.65. Interpretación de gráficas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "63",
+        "64",
+        "65"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "4 may",
+      "FechaDeCierre": "8 may",
+      "SemanaEscolar": 31,
+      "Contenido": "Círculo",
+      "Aprendizaje": "Identificar y calcular el radio y el diámetro de un círculo a partir de medidas dadas o problemas contextualizados. Resolver problemas relacionados con el perímetro y el área de un círculo, aplicando las fórmulas correspondientes.",
+      "Tema": "Círculo",
+      "Leccion": "Radio y diámetro de un círculo. Perímetro, área y resolución de problemas.",
+      "Inicio": "El docente iniciará mostrando imágenes de objetos circulares (ruedas, monedas, relojes) y planteará preguntas como: \"¿Qué características tienen en común?\" Se introducirá el concepto de radio y diámetro explicando su relación con el centro del círculo. Se realizarán ejercicios de observación directa utilizando objetos reales, como tapas o platos, para medir radio y diámetro. El docente planteará una situación práctica: calcular la cantidad de material necesario para cubrir un círculo, como una mesa redonda o un campo deportivo. Se revisarán las fórmulas de perímetro ($P=2\\pi r$) y área ($A=\\pi r^2$) del círculo. Se explicará cómo elegir las fórmulas adecuadas según el problema.",
+      "Desarrollo": "Los estudiantes trabajarán con problemas prácticos para calcular radio y diámetro. Usarán instrumentos como reglas y compases para construir círculos y verificar relaciones. Se destacarán errores comunes, como sumar el radio dos veces al calcular el diámetro o identificar incorrectamente el centro. El docente modelará estrategias correctas, enfatizando el uso de definiciones y mediciones precisas. Los estudiantes trabajarán en equipos para resolver problemas con medidas reales y contextos diversos. Usarán calculadoras para realizar operaciones y verificar resultados. El docente supervisará y abordará errores comunes, como confundir radio con diámetro o usar mal el valor de $\\pi$ . Para reforzar, se realizarán ejercicios donde construyan círculos con compases y calculen sus medidas.",
+      "Cierre": "Se realizará un concurso donde los estudiantes identifiquen radios y diámetros en diferentes figuras, y expliquen sus razonamientos. La evaluación incluirá actividades en MeXmáticas, donde completen ejercicios interactivos con retroalimentación automática. Los estudiantes compartirán los pasos y resultados de sus problemas, recibiendo retroalimentación grupal. La evaluación incluirá problemas interactivos en MeXmáticas y desafíos colaborativos.",
+      "EjesArticuladores": "Inclusión. Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Resolución de ejercicios prácticos en MeXmáticas y representación gráfica."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "66",
+        "67",
+        "68",
+        "69",
+        "70"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Aplica las propiedades del círculo y la circunferencia para modelar y comparar el campo de visión de animales depredadores y presas.",
+      "Worklist": [
+        "A.66. Diámetro de un círculo",
+        "A.67. Radio de un círculo",
+        "A.68. Perímetro",
+        "A.69. Área",
+        "A.70. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "66",
+        "67",
+        "68",
+        "69",
+        "70"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "11 may",
+      "FechaDeCierre": "15 may",
+      "SemanaEscolar": 32,
+      "Contenido": "Ecuaciones",
+      "Aprendizaje": "Interpretar y expresar situaciones de la vida diaria mediante lenguaje algebraico.",
+      "Tema": "Ecuaciones",
+      "Leccion": "Lenguaje algebraico.",
+      "Inicio": "El docente comenzará con ejemplos cotidianos que involucren relaciones matemáticas, como calcular el precio total de productos en función de la cantidad comprada. Preguntará a los estudiantes cómo podrían expresar estas relaciones de forma más compacta. Esto llevará a introducir el lenguaje algebraico como una herramienta para describir situaciones con variables y operaciones matemáticas. Se presentarán ejemplos básicos como \"el triple de un número\" ($3x$) y \"un número más cinco\" ($x+5$).",
+      "Desarrollo": "Los estudiantes trabajarán en ejercicios que relacionen frases con expresiones algebraicas. Por ejemplo, \"la mitad de un número menos dos\" se traduce como $(x/2)-2$. El docente identificará errores comunes, como usar operaciones incorrectas o confundir la posición de los términos, y los corregirá modelando el análisis de cada frase paso a paso. Se reforzará la conexión entre contexto y expresión mediante problemas prácticos, como calcular ingresos, distancias o áreas.",
+      "Cierre": "Cada equipo creará una situación de la vida diaria y escribirá la expresión algebraica correspondiente. Los equipos intercambiarán situaciones y resolverán las de otros grupos. El docente evaluará la claridad en la traducción de problemas al lenguaje algebraico y reforzará el aprendizaje con ejercicios en MeXmáticas.",
+      "EjesArticuladores": "Inclusión, pensamiento crítico y habilidades de comunicación matemática.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en MeXmáticas y redacción de expresiones algebraicas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "71"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Representa mediante ecuaciones lineales procesos metabólicos fundamentales como la fotosíntesis y la respiración celular. ",
+      "Worklist": [
+        "A.71. Lenguaje algebraico"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "71"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "18 may",
+      "FechaDeCierre": "22 may",
+      "SemanaEscolar": 33,
+      "Contenido": "Ecuaciones",
+      "Aprendizaje": "Resolver ecuaciones lineales simples de la forma $x+a=b$.",
+      "Tema": "Ecuaciones",
+      "Leccion": "Ecuaciones $x+a=b$.",
+      "Inicio": "El docente planteará una situación práctica como \"Si tienes \\$150 y te faltan \\$50 para comprar un libro, ¿cuánto cuesta?\". Usando esta pregunta, introducirá la estructura de las ecuaciones y su utilidad para encontrar valores desconocidos. Se explicará cómo reorganizar la ecuación $x+a=b$ para resolverla, aplicando la operación inversa.",
+      "Desarrollo": "Los estudiantes resolverán problemas prácticos con ecuaciones de la forma $x+a=b$. Trabajarán en ejercicios progresivos, desde ecuaciones sencillas hasta contextos más complejos. El docente abordará errores comunes, como olvidar realizar la misma operación en ambos lados de la ecuación, y reforzará estrategias claras para verificar resultados. Se promoverá el uso de herramientas digitales para practicar y recibir retroalimentación inmediata.",
+      "Cierre": "Los estudiantes compartirán sus estrategias de resolución y discutirán cómo aplicaron operaciones inversas. Se realizarán ejercicios interactivos en MeXmáticas para reforzar conceptos y evaluar el dominio del tema.",
+      "EjesArticuladores": "Pensamiento lógico-matemático, resolución de problemas y equidad en el aprendizaje.",
+      "EvaluacionFormativa": [
+        "Resolución de ecuaciones en MeXmáticas y ejercicios con explicaciones paso a paso."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "72"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Representa mediante ecuaciones lineales procesos metabólicos fundamentales como la fotosíntesis y la respiración celular. ",
+      "Worklist": [
+        "A.72. Ecuaciones $x+a=b$"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "72"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "25 may",
+      "FechaDeCierre": "29 may",
+      "SemanaEscolar": 34,
+      "Contenido": "Ecuaciones",
+      "Aprendizaje": "Resolver ecuaciones lineales de la forma $ax=b$.",
+      "Tema": "Ecuaciones",
+      "Leccion": "Ecuaciones $ax=b$.",
+      "Inicio": "El docente mostrará un ejemplo práctico como \" Un tren recorre 120 km en 3 horas a velocidad constante. ¿Cuál es su velocidad?\". Esto motivará el análisis de relaciones multiplicativas y la necesidad de usar ecuaciones de la forma $ax=b$. Se introducirá la técnica de división para despejar $x$.",
+      "Desarrollo": "Los estudiantes trabajarán con ejercicios como $5x=20$ y problemas de aplicación en contextos de velocidad, costos y proporciones. Se abordarán errores comunes, como dividir de manera incorrecta o confundir las propiedades del signo. El docente modelará el procedimiento para resolver cada tipo de ecuación, enfatizando la revisión de respuestas.",
+      "Cierre": "Cada equipo resolverá un conjunto de problemas y explicará su razonamiento a la clase. Se promoverá la autoevaluación mediante actividades en MeXmáticas, donde recibirán retroalimentación inmediata sobre su desempeño.",
+      "EjesArticuladores": "Razonamiento matemático, trabajo colaborativo, y aplicación práctica.",
+      "EvaluacionFormativa": [
+        "Resolución de ecuaciones en MeXmáticas y elaboración de diagramas explicativos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "73"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Compara los resultados entre diferentes especies para explicar adaptaciones relacionadas con el consumo de energía y la termorregulación.",
+      "Worklist": [
+        "A.73. Ecuaciones $ax=b$"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "73"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "1 jun",
+      "FechaDeCierre": "5 jun",
+      "SemanaEscolar": 35,
+      "Contenido": "Ecuaciones",
+      "Aprendizaje": "Resolver ecuaciones lineales de la forma $ax+b=c$.",
+      "Tema": "Ecuaciones",
+      "Leccion": "Ecuaciones $ax+b=c$.",
+      "Inicio": "El docente presentará una situación cotidiana como: \"Si un plomero cobra \\$50 por cada hora de trabajo más un cargo fijo de \\$200, ¿cuántas horas trabajó si te cobró \\$450?\" Esto permitirá identificar ecuaciones que requieren dos pasos para resolverlas. Se explicará el procedimiento de resolución: primero restar el término independiente y luego dividir para despejar la incógnita.",
+      "Desarrollo": "Los estudiantes resolverán problemas progresivos que involucren ecuaciones de la forma $ax+b=c$. Se usarán representaciones visuales, como diagramas de barras, para facilitar la comprensión. El docente abordará errores como realizar operaciones en el orden incorrecto o no distribuir correctamente los términos. Se promoverá el uso de calculadoras para verificar operaciones y reforzar la precisión.",
+      "Cierre": "Los equipos crearán y resolverán problemas basados en situaciones reales. Compartirán sus soluciones y recibirán retroalimentación grupal. La evaluación incluirá ejercicios interactivos en MeXmáticas, con énfasis en la claridad de los procedimientos.",
+      "EjesArticuladores": "Inclusión, pensamiento lógico-matemático y resolución de problemas complejos.",
+      "EvaluacionFormativa": [
+        "Resolución de ecuaciones en MeXmáticas y ejercicios contextualizados."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "74"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Modela mediante ecuaciones la relación entre la masa corporal de un ser vivo y la dosis segura de una sustancia (medicamento, nutriente o toxina).",
+      "Worklist": [
+        "A.74. Ecuaciones $ax+b=c$"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "74"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "8 jun",
+      "FechaDeCierre": "12 jun",
+      "SemanaEscolar": 36,
+      "Contenido": "Ecuaciones",
+      "Aprendizaje": "Plantear y resolver problemas contextualizados que impliquen ecuaciones lineales.",
+      "Tema": "Ecuaciones",
+      "Leccion": "Resolución de problemas sobre ecuaciones.",
+      "Inicio": "El docente planteará problemas del mundo real, como calcular gastos totales en una tienda, dividir una cuenta o planificar un presupuesto. Esto permitirá a los estudiantes conectar las ecuaciones con situaciones prácticas. Se discutirá cómo identificar las incógnitas y plantear las ecuaciones correspondientes.",
+      "Desarrollo": "Los estudiantes trabajarán en equipos para resolver problemas más complejos que involucren ecuaciones con una incógnita. Usarán estrategias como el análisis de palabras clave y la descomposición del problema en pasos manejables. El docente supervisará y abordará errores frecuentes, como plantear ecuaciones incorrectas o perder información relevante.",
+      "Cierre": "Cada equipo presentará su problema, ecuación planteada y solución. El docente retroalimentará y reforzará estrategias efectivas para analizar y resolver problemas. La evaluación incluirá actividades prácticas en MeXmáticas y una rúbrica de autoevaluación.",
+      "EjesArticuladores": "Inclusión, pensamiento crítico y habilidades prácticas.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en MeXmáticas y presentación de soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "75"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Resuelve problemas para determinar la cantidad correcta y analiza las consecuencias biológicas de una dosificación inadecuada.",
+      "Worklist": [
+        "A.75. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "75"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "15 jun",
+      "FechaDeCierre": "19 jun",
+      "SemanaEscolar": 37,
+      "Contenido": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Resolver problemas relacionados con perímetro y área de figuras planas, aplicando las fórmulas adecuadas.",
+      "Tema": "Figuras y cuerpos geométricos",
+      "Leccion": "Perímetro, área y resolución de problemas.",
+      "Inicio": "El docente iniciará con ejemplos cotidianos en los que se calculan perímetros y áreas, como medir el borde de un jardín o calcular la superficie de un terreno rectangular. Usará diagramas en la pizarra para ilustrar las fórmulas básicas del perímetro (sumar longitudes de los lados) y el área (multiplicación o uso de fórmulas específicas, según la figura). Los estudiantes compartirán situaciones similares en su vida diaria para establecer relevancia.",
+      "Desarrollo": "Los estudiantes trabajarán con figuras geométricas como triángulos, rectángulos, círculos y trapecios, resolviendo ejercicios con fórmulas estándar. Usarán herramientas como reglas, compases y papel cuadriculado para dibujar figuras y verificar sus cálculos. Se abordarán errores comunes, como sumar longitudes incorrectas, usar valores equivocados en las fórmulas o confundir unidades. El docente realizará un ejercicio guiado paso a paso, reforzando conceptos clave y revisando el trabajo de los estudiantes.",
+      "Cierre": "Los estudiantes resolverán un problema contextualizado, como calcular el área de una habitación para comprar alfombra o pintar una pared. Cada equipo explicará los pasos que siguió, y el docente retroalimentará sobre los procedimientos y resultados. La evaluación incluirá ejercicios interactivos en MeXmáticas y un cuestionario para verificar la comprensión de las fórmulas.",
+      "EjesArticuladores": "Pensamiento lógico-matemático, habilidades prácticas y conexión con el entorno.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en MeXmáticas y diseño de figuras geométricas en papel cuadriculado."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "76",
+        "77"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Identifica y describe las formas geométricas (polígonos, poliedros) presentes en estructuras biológicas a diferentes escalas (células, virus, panales, conchas). ",
+      "Worklist": [
+        "A.76. Perímetro",
+        "A.77. Área"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "76",
+        "77"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "22 jun",
+      "FechaDeCierre": "26 jun",
+      "SemanaEscolar": 38,
+      "Contenido": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Calcular el área lateral, área total y volumen de cuerpos geométricos básicos, como prismas y cilindros.",
+      "Tema": "Figuras y cuerpos geométricos",
+      "Leccion": "Área lateral, área total y volumen.",
+      "Inicio": "El docente mostrará modelos tridimensionales de prismas y cilindros, explicando cómo el área lateral, área total y volumen permiten medir sus dimensiones físicas. Se plantearán preguntas como: \"¿Cómo determinarías la cantidad de cartón necesaria para construir esta caja?\". Esto introducirá las fórmulas correspondientes, vinculándolas con situaciones prácticas como empaques, tanques de agua o edificios.",
+      "Desarrollo": "Los estudiantes trabajarán con problemas prácticos que involucren prismas rectangulares y cilindros. Dibujarán los desarrollos planos de estas figuras para identificar las áreas laterales y totales, y calcularán los volúmenes aplicando las fórmulas. El docente abordará errores comunes, como no considerar todas las caras al calcular el área total o confundir las dimensiones al aplicar las fórmulas. Se utilizarán materiales manipulativos, como cajas o cilindros recortables, para facilitar la comprensión.",
+      "Cierre": "Cada equipo presentará un problema resuelto, explicando cómo calcularon las áreas y el volumen de un cuerpo geométrico dado. Se realizarán actividades en MeXmáticas para evaluar el dominio de las fórmulas y conceptos, con retroalimentación inmediata. Finalmente, se discutirá cómo estas habilidades pueden aplicarse en contextos reales, como la arquitectura o el diseño de objetos.",
+      "EjesArticuladores": "Resolución de problemas, pensamiento espacial y conexión con fenómenos físicos y tecnológicos.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en MeXmáticas, uso de materiales manipulativos y elaboración de modelos tridimensionales."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "78",
+        "79",
+        "80"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Relaciona la eficiencia de estas formas con su función biológica, como la optimización del espacio o la resistencia estructural.",
+      "Worklist": [
+        "A.78. Área lateral y total",
+        "A.79. Volumen",
+        "A.80. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "78",
+        "79",
+        "80"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "29 jun",
+      "FechaDeCierre": "3 jul",
+      "SemanaEscolar": 39,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Evaluación de la unidad",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Se realizará a través de la observación directa del desempeño del alumno al resolver los ejercicios.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase",
+        "Repaso de unidad"
+      ],
+      "ActPro": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

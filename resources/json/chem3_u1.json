@@ -1,0 +1,560 @@
+{
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Química",
+    "Grado": "3",
+    "Nivel": "Secundaria",
+    "Unidad": "1",
+    "NombreDeLaUnidad": "La materia y sus propiedades",
+    "DuracionEnSemanas": 6,
+    "HorasPorSemana": 6,
+    "HorasTotales": 36,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2025-08-24",
+    "FechaDeActualizacion": "2025-08-24",
+    "FechaInicial": "2025-09-01",
+    "FechaFinal": "2025-10-10",
+    "Words":"Les doy la más cordial bienvenida al curso de Química para 3° de Secundaria. En este ciclo que culmina su travesía por la secundaria, seré su guía en el fascinante mundo de las transformaciones. \\\\[1em] \\qquad Durante los años pasados, han observado el mundo. En Física, aprendieron sobre la danza del movimiento y la energía, las reglas visibles que gobiernan el universo. Ahora, en nuestro último viaje juntos, nos sumergiremos más hondo. No nos preguntaremos cómo se mueven las cosas, sino por qué se transforman. La Química es el arte de comprender el cambio. \\\\[1em] \\qquad Este año, les invito a convertirse en alquimistas de la percepción. Dejaremos de ver el mundo como una colección de objetos sólidos y estáticos, y comenzaremos a verlo como una infinita y vibrante danza de partículas. Cada sustancia, cada elemento de la Tabla Periódica, tiene su propia naturaleza. Hay elementos solitarios y nobles, como los gases que rara vez se mezclan. Hay otros, reactivos y apasionados, que buscan constantemente unirse, compartir y crear algo nuevo. Nuestra primera tarea será aprender a escuchar su naturaleza, a comprender sus anhelos. \\\\[1em] \\qquad Nuestro laboratorio no será un simple cuarto con matraces y mecheros. Será un espacio de meditación activa, una cocina sagrada donde seremos testigos y facilitadores de la transformación. Cuando mezclen dos sustancias transparentes y vean surgir un color vibrante, no estarán simplemente siguiendo una receta. Estarán presenciando el nacimiento de una nueva entidad, con propiedades que no existían antes. Es un pequeño milagro de creación en sus manos. \\\\[1em] \\qquad Descubriremos que el universo entero busca el equilibrio. Veremos cómo ácidos y bases, opuestos en su naturaleza, se buscan para encontrarse en la serena neutralidad del agua. Comprenderemos que una reacción química no es una batalla, sino una reorganización pacífica donde los átomos sueltan viejos lazos para formar uniones más estables y armoniosas. \\\\[1em] \\qquad Aprenderemos a leer el lenguaje de los símbolos químicos, que son como ideogramas que nos cuentan la historia secreta de la materia. Y descubriremos la figura del catalizador: aquella sustancia que, como un gran maestro o un bodhisattva, acelera la transformación en otros, les ayuda a alcanzar su potencial sin buscar nada para sí misma y permaneciendo inalterada. \\\\[1em] \\qquad Están en el último escalón de esta montaña. La vista desde aquí es más clara, más profunda. Que este año de Química les enseñe la más grande de las lecciones: que el cambio no debe ser temido, sino comprendido, pues es la esencia misma de la existencia. \\\\[1em] \\qquad Con gran serenidad y entusiasmo por las transformaciones que nos aguardan, les doy la bienvenida.",
+    "Nociones":[
+      "Me preparo",
+      "L.1. Aportaciones de diversas culturas",
+      "A.1 Química en la vida",
+      "A.2 Química en los alimentos",
+      "P. Materiales Prehispanicas",
+      "L.2. Química y sociedad",
+      "A.3 Química y sociedad",
+      "F.1 Dosis que te hacen fuerte",
+      "L.3. Propiedades de los materiales",
+      "A.4 Materiales y sus propiedades",
+      "A.5 Propiedades físicas cuantitativas",
+      "A.6 Procesos y propiedades",
+      "A.7 Estado de agregación de diferentes materiales",
+      "L.4. Medición e identificación de sustancias",
+      "A.8 Propiedades extensivas e intensivas",
+      "A.9 Medición e identificación de sustancias",
+      "F.2 Propiedades que te mantienen saludable",
+      "L.5. Propiedades de las sustancias e intercambio de energía",
+      "A.10 Energía y metales",
+      "A.11 Interacciones térmicas",
+      "A.12 Estados de agregación y materiales",
+      "A.13 Estados de agregación",
+      "L.6. Mezclas",
+      "A.14 Mezclas y estados de agregación",
+      "A.15 ¿Cuál es la concentración?",
+      "L.7. Métodos de separación de mezclas",
+      "A.16 ¿Cómo separar una mezcla heterogénea?",
+      "A.17 Hasta que nos separen",
+      "A.18 Distingue los métodos de separación",
+      "A.19 Separación de mezclas",
+      "A.20 ¿Homogénea o heterogénea?",
+      "F.3 Aguas brillantes y cristalinas",
+      "L.8. Concentración en mezclas",
+      "A.21 Disoluciones y cantidades",
+      "A.22 Concentración en mezclas",
+      "F.4 ¿Y adónde va la basura que tiro?",
+      "L.9. Concentración de contaminantes en el medio ambiente",
+      "A.23 Sustancias contaminantes",
+      "F.5 Agua contaminada que corre por aquí y por allá.",
+      "L.10. Hábitos de consumo y su impacto",
+      "A.24 ¿Cómo mejorar mis hábitos?",
+      "F.6 El costo de estar a la moda",
+      "¿Qué aprendí?"
+    ],
+    "Nombres": [
+      "Luisa",
+      "Ximena",
+      "Regina",
+      "Iker",
+      "Mariola",
+      "Dariana",
+      "Eva Sofía",
+      "Mario",
+      "Alexander",
+      "Michelle",
+      "Rodrigo",
+      "Ricardo",
+      "Valeria",
+      "Matías",
+      "Joshua"
+    ],
+    "Alumnos": [
+      "Luisa Fernanda Altamirano Muñoz",
+      "Ximena Corona Vásquez",
+      "Regina Díaz Aldasoro",
+      "Iker Escobar Rivera",
+      "Mariola Fadul Espejo",
+      "Dariana Hernández Alomia",
+      "Eva Sofía Hernández Calera",
+      "Mario Santiago Hernández Morales",
+      "Alexander Isleño Rivera",
+      "Michelle Areli Muro Luna",
+      "Rodrigo Ochoa Castañeda",
+      "Ricardo de Jesús Peri Domínguez",
+      "María Valeria Salinas Almanza",
+      "Matías Treviño Uscanga",
+      "Joshua Velázquez Gómez"
+    ],
+    "fechasDeExamen": [
+       "2025-11-06"
+     ]
+  },
+  "weeks": [
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-01",
+      "FechaDeCierre": "2025-09-05",
+      "SemanaEscolar": 1,
+      "Contenido": "Los hitos que contribuyeron al avance del conocimiento científico.",
+      "Aprendizaje": "Reconoce los aportes de saberes de diferentes pueblos y culturas en la satisfacción de necesidades humanas. Indaga en fuentes de consulta orales y escritas, las aportaciones de mujeres y hombres en el desarrollo del conocimiento científico y tecnológico.",
+      "Tema": "Conocimiento científico",
+      "Leccion": "L1. Aportaciones de culturas en la satisfacción de necesidades. Lección 2. Química y sociedad",
+      "Inicio": "La lección tiene el objetivo de que comprendan la importancia que tienen los saberes de los diferentes pueblos y culturas en la construcción del conocimiento científico, tecnológico y social. La actividad de esta sección tiene como propósito que los educandos conozcan acerca de las aportaciones de la civilización mexica al campo de la medicina y la herbolaria. Al respecto, explíqueles que, pese a que los pueblos mesoamericanos atribuían a las enfermedades un fuerte componente mágico-religioso, éstos poseían gran cantidad de información que permitían tratar diversas enfermedades.",
+      "Desarrollo": "El propósito de los textos y la actividad en esta sección es mostrarles a los alumnos las contribuciones que han hecho las distintas civilizaciones con el fin de mejorar las condiciones de vida de la sociedad. La actividad los invita a examinar mediante una gráfica la relación que hay entre los avances científicos y tecnológicos en el campo de la salud y el aumento en la esperanza de vida de la población, además de guiarlos, mediante algunas preguntas, a la reflexión acerca de la relación de los avances con el conocimiento y el incremento en la esperanza de vida. Comente a los estudiantes que las enfermedades han acompañado a la humanidad desde siempre, y que así como surgió la pandemia por SARS-CoV-2 en el 2020, antes otras pandemias han causado estragos en la población mundial. Mencione que una de las más devastadoras ha sido la peste negra, la cual se estima que entre 1347 y 1351 ocasionó de 75 a 200 millones de muertes. Además, haga énfasis en el hecho de que durante la Edad Media los conocimientos en medicina eran muy básicos y que las condiciones de higiene no eran adecuadas. Respecto a las aportaciones que ha hecho nuestro país, coménteles que las diversas obras hidráulicas que desarrollaron las civilizaciones mesoamericanas tuvieron el objetivo de almacenar y distribuir el agua y evitar inundaciones, principalmente. Por otra parte, explique la importancia que tienen las chinampas, las cuales fungen como terrenos de producción agrícola en los que se cultivan calabazas, frijoles, maíz, espinacas, acelgas, verdolagas, entre otras, y que cuentan con buena fertilidad del suelo y abundante agua; además, tienen la ventaja de que permiten conservar las áreas lacustres, fomentan la biodiversidad, incrementan el reciclaje de desechos orgánicos, generan fuentes de alimentación y dan empleo a los agricultores.",
+      "Cierre": "La actividad de esta etapa tiene como propósito que los estudiantes apliquen los conocimientos adquiridos en la lección, y su objetivo es que reflexionen en torno a que los avances científicos y tecnológicos han favorecido el desarrollo de la humanidad. Se sugiere que también se les solicite investigar el personaje o la civilización que inventó las aportaciones que señala la actividad.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico. Inclusión",
+      "EvaluacionFormativa": [
+        "Reconoce algunos productos para satisfacer las necesidades humanas y que incrementan la calidad de vida. ",
+        "Identifica las principales aportaciones de las culturas antiguas al desarrollo del pensamiento científico."
+      ],
+      "Evidencias": [
+        "F1"
+      ],
+      "Actividades": [
+        "1",
+        "2",
+        "3"
+      ],
+      "Proyectos": [
+        "Conocimiento Cientifico"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 293-298",
+      "LibroMcMillan": "Química Imagina 16-19",
+      "Vinculacion": "\\textbf{Biología:} Reconoce los distintos saberes de los pueblos originarios acerca del medio ambiente.\\\\ \\textbf{Matemáticas:} Analiza datos en gráficas.",
+      "Worklist": [
+        "Me preparo",
+        "L1. Aportaciones culturales a la ciencia",
+        "A.1 Química en la vida",
+        "A.2 Química en los alimentos",
+        "L2. Química y sociedad",
+        "A.3 Química y sociedad",
+        "F1. Dosis que te hacen fuerte"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 193-203 y 293-298",
+        "Química Imagina 14-15 16-19 y 20-27"
+      ],
+      "ActPro": [
+        "1",
+        "2",
+        "3",
+        "F1",
+        "Conocimiento Cientifico"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-08",
+      "FechaDeCierre": "2025-09-12",
+      "SemanaEscolar": 2,
+      "Contenido": "Las propiedades extensivas e intensivas.",
+      "Aprendizaje": "Formula hipótesis para diferenciar propiedades extensivas e intensivas, mediante actividades experimentales y, con base en el análisis de resultados, elabora conclusiones.",
+      "Tema": "Propiedades de la materia",
+      "Leccion": "L3. Propiedades de los materiales",
+      "Inicio": "La lección busca que Comprendan que las propiedades que posee una sustancia o un material determinan sus usos y aplicaciones. El propósito de esta sección es que los educandos distingan las propiedades de los plásticos, sobre todo aquellas que se pueden apreciar con los sentidos. Explique a los estudiantes que para reciclar el plástico es necesario conocer sus características; asimismo, mencione que este proceso conlleva una serie de beneficios ambientales y económicos, por ejemplo, se evita que gran cantidad de plásticos terminen en el mar, se ahorran recursos y energía, mejora la calidad del aire al disminuir la contaminación, entre otros.",
+      "Desarrollo": "El propósito de los textos y las actividades de esta sección es mostrar a los alumnos que las propiedades de los materiales y sustancias se pueden clasificar en cualitativas y cuantitativas, así como intensivas y extensivas. También las propiedades se pueden catalogar en propiedades físicas y químicas, según las cualidades que posee un material. Mencióneles que las propiedades físicas son las que pueden determinarse sin cambiar la naturaleza del material, mientras que las propiedades químicas involucran el cambio de la naturaleza de los materiales cuando se modifica la temperatura o la presión, o bien, se ponen en contacto unas sustancias con otras. Para explicar las propiedades cualitativas y cuantitativas, mencione que la diferencia es que éstas últimas pueden medirse y se les puede asignar un valor numérico, mientras que a las primeras no. Para la primera actividad (página 30), favorezca que los estudiantes usen varios criterios de clasificación con base en propiedades cualitativas como la dureza, la textura, el brillo, la opacidad, entre otras. También puede llevar esta actividad utilizando otros materiales diferentes, como vidrio, aluminio, cemento, tierra, alambre de cobre, aretes o lápiz, por mencionar algunos ejemplos. En la segunda actividad (página 31), los educandos deberán observar los cambios que ocurren en los materiales al entrar en contacto con el vinagre. Al respecto, oriéntelos para que relacionen las propiedades químicas con la forma en que una sustancia interacciona con otra. Por último, en la tercera actividad (página 33), haga énfasis en que la densidad es una propiedad física que poseen todos los objetos.",
+      "Cierre": "El objetivo de la actividad de esta sección es que los alumnos apliquen los conocimientos adquiridos en la lección, para ello se presenta un problema para identificar varios metales mediante la relación de dos propiedades (masa y volumen), calculando la densidad. Resalte la importancia que tienen las propiedades, como la densidad o el punto de fusión y de ebullición para identificar un material o sustancia; por ejemplo, la densidad nos permite definir qué material es mejor o peor para un uso determinado. Es común que esta propiedad se utilice en la industria farmacéutica para el control de calidad de diversos medicamentos. Haga énfasis en el hecho de que los materiales y las sustancias poseen diversas propiedades, las cuales nos proporcionan información valiosa que nos permiten tomar decisiones sobre su uso.",
+      "EjesArticuladores": "Igualdad de género.",
+      "EvaluacionFormativa": [
+        "Identifica un material mediante sus propiedades.",
+        "Reconoce el valor de la experimentación para determinar las características de los materiales y poder diferenciarlos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "Proyectos": [
+        "Materiales"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 263-268 ,Nuestro libro de Proyectos 102-111",
+      "LibroMcMillan": "Química Imagina 28-33",
+      "Vinculacion": "\\textbf{Física:} Reconoce el pensamiento científico, una forma de plantear y solucionar problemas y su incidencia en la transformación de la sociedad.\\\\ \\textbf{Matemáticas:} Analiza datos en tablas y encuentra las relaciones.",
+      "Worklist": [
+        "L3. Propiedades de los materiales",
+        "A.4 Materiales y sus propiedades",
+        "A.5 Propiedades físicas cuantitativas",
+        "A.6 Procesos y propiedades",
+        "A.7 Estado de agregación"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 263-268 ",
+        "Nuestro libro de Proyectos 102-111",
+        "Química Imagina 28-33"
+      ],
+      "ActPro": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "Materiales"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-15",
+      "FechaDeCierre": "2025-09-19",
+      "SemanaEscolar": 3,
+      "Contenido": "Las propiedades extensivas e intensivas.",
+      "Aprendizaje": "Reconoce la importancia del uso de instrumentos de medición, para identificar y diferenciar propiedades de sustancias y materiales cotidianos.",
+      "Tema": "Instrumentos de medición",
+      "Leccion": "L4. Medición e identificación de sustancias",
+      "Inicio": "El propósito de la lección es mostrarles a los estudiantes la importancia que tienen los instrumentos de medición. Haga énfasis en que las mediciones se aplican tanto en la vida cotidiana como en los sectores científicos, tecnológicos, industriales y económicos. En la actividad de esta sección considere la posibilidad de que relacionen la flotabilidad con la masa, el peso o el tamaño de los objetos, por tanto, oriéntelos de tal manera que relacionen la densidad con la flotabilidad.",
+      "Desarrollo": "El propósito de los textos y las actividades en esta sección es que los educandos comprendan que algunas propiedades intensivas se miden de manera directa mediante el uso de instrumentos diseñados para tal propósito, mientras que otras propiedades intensivas requieren de la medición de diferentes propiedades extensivas por separado. En la primera actividad (página 35) se analizarán los cambios en la temperatura de ebullición en función de la presión. Resalte que, a mayor altitud, menor será la temperatura de ebullición de algunos líquidos como el agua, y que esto es debido a que también disminuye la energía cinética entre las partículas. En la segunda actividad experimental (páginas 36 y 37), los alumnos deberán identificar diferentes tipos de plásticos con base en pruebas de flotabilidad. Al respecto, sugiérales que usen trozos de plástico del mismo tamaño, para evitar el surgimiento de otras variables. Haga énfasis en el hecho de que en esta prueba se compara la densidad del plástico en cuestión y la del líquido en el que se sumerja, porque si un plástico flota en uno de los líquidos, significa que su densidad es menor que la de éste, o viceversa. En este sentido, mencióneles que estas pruebas permiten determinar en qué intervalo de valores se encuentra la densidad del plástico, pero no son útiles para determinar el valor exacto de esta propiedad. Sobre el proceso de reciclaje, mencione que es importante identificar el tipo de plástico con el que está elaborado un objeto, porque de ello dependerá el tratamiento de reciclado y, sobre todo, si resulta viable llevarlo a cabo o no. Aproveche el tema del reciclaje de plásticos para fomentar también en los estudiantes el hábito de reutilizarlos o evitar el consumo de plásticos de \"un solo uso\".",
+      "Cierre": "La actividad de esta sección tiene como fin que los estudiantes apliquen los conocimientos adquiridos en la lección, para ello deberán reflexionar en torno a lo fundamental que resulta contar con información sobre las propiedades de las sustancias. Recalque la importancia de los instrumentos de medición y observación para ampliar la capacidad de percepción de los sentidos. Asimismo, se sugiere que les solicite que investiguen la historia y los diferentes tipos de un instrumento de medición que sean conocidos por ellos, por ejemplo, la balanza o el termómetro. Organice a los alumnos en equipos e invítelos a resolver la ficha \"Propiedades que te mantienen saludable\" de su cuaderno de evidencias, para que profundicen acerca del uso de las propiedades como indicadores para identificar materiales y sustancias.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Usa las propiedades de materiales sólidos para elegir una estrategia de reciclaje. ",
+        "Reconoce la utilidad de los instrumentos de medición para identificar y diferenciar las propiedades de las sustancias."
+      ],
+      "Evidencias": [
+        "F2"
+      ],
+      "Actividades": [
+        "8",
+        "9"
+      ],
+      "Proyectos": [
+        "Propiedades Intensivas"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 247-254,Nuestro libro de Proyectos 102-111",
+      "LibroMcMillan": "Química Imagina 34-37",
+      "Vinculacion": "\\textbf{Física:} Usa unidades y medidas utilizados en Física.\\\\ \\textbf{Matemáticas:} Analiza datos en gráficas.",
+      "Worklist": [
+        "L4. Medición e identificación",
+        "A.8 Propiedades extensivas e intensivas",
+        "A.9 Medición e identificación",
+        "F2. Propiedades saludables"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 247-254",
+        "Nuestro libro de Proyectos 102-111",
+        "Química Imagina 34-37"
+      ],
+      "ActPro": [
+        "8",
+        "9",
+        "F2"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-09-22",
+      "FechaDeCierre": "2025-09-26",
+      "SemanaEscolar": 4,
+      "Contenido": "Intercambios de energía.",
+      "Aprendizaje": "Reconoce intercambios de energía entre el sistema y sus alrededores durante procesos físicos.",
+      "Tema": "Materia y energía",
+      "Leccion": "L5. Propiedades e interacciones de las sustancias",
+      "Inicio": "La secuencia tiene como propósito que los alumnos conozcan la relación entre las propiedades físicas de la materia y la energía térmica, en particular con los puntos de fusión y de ebullición. Recuérdeles estos conceptos a partir de algunos ejemplos. Haga notar que todas las sustancias tienen temperaturas de fusión y de ebullición, pero que éstas pueden ser extremas, por lo que no es fácil observarlas en la naturaleza; por ejemplo, es posible obtener aire líquido en un laboratorio, aunque a temperaturas menores que -194.35 °C, e incluso en estado sólido, a temperaturas inferiores que -216.2 °C. Indique también que estas temperaturas son características de cada sustancia, por lo que son útiles para identificarlas o separarlas si forman mezclas. Para complementar la actividad de esta sección, solicite a los educandos que coloquen un poco de alcohol en una de sus manos y que soplen contra él; después, que hagan lo mismo con la mano que no tiene alcohol y que comparen la sensación térmica. Pídales que expliquen dicha diferencia.",
+      "Desarrollo": "La actividad experimental (página 39) tiene como propósito que los estudiantes observen el fenómeno de conductividad térmica. Pregúnteles por medio de qué mecanismo se ha transferido la energía térmica, cómo pueden explicar el fenómeno observado y por qué unos materiales conducen mejor que otros. Los alumnos deberán notar que los metales son mejores conductores térmicos que los no metales. Guíelos con relación en las propiedades comunes de los metales con la propiedad de ser buenos conductores, tanto de la electricidad como del calor. Plantee la idea de que las propiedades se deben a la estructura interna de las sustancias; en el caso de los metales, la conductividad térmica se debe a la presencia de electrones libres. Relacione la actividad con la clasificación de los materiales, de acuerdo con su conductividad térmica, en conductores y aislantes. Pídales que den ejemplos de conductores y aislantes térmicos, así como de sus usos cotidianos. En esta lección se introduce el tema de la dilatación térmica, que es el aumento de la longitud y el volumen de los objetos por efecto del incremento de la temperatura. Utilice el modelo cinético de partículas para explicar el fenómeno. Al aumentar la temperatura de los objetos, las partículas que lo conforman se mueven a mayor velocidad y ocupan mayor espacio, lo que macroscópicamente se manifiesta como un aumento en las dimensiones de los objetos. Mencione a los educandos que la dilatación se aplica en la elaboración de termómetros, en particular en los de mercurio. También se utiliza para cortar o romper objetos y botellas de vidrio, aprovechando la diferencia de dilatación al aplicar calor en distintas partes del objeto, lo que provoca rupturas que pueden ser bien controladas. Solicíteles que proporcionen más ejemplos de este tipo. Para la actividad de la página 40, brinde a los estudiantes ejemplos de situaciones en las que la dilatación térmica es un fenómeno importante, por ejemplo, en la unión de las vías del tren. Para hablar sobre la expansión de una masa de agua al ser enfriada, puede mencionar situaciones como las que se reportaron en Estados Unidos de América en enero de 2019 debidas al vórtice polar: tuberías y cajas de inodoros reventadas por la expansión del agua congelada. Haga énfasis en la importancia de conocer que el volumen del agua en estado sólido es mayor que en estado líquido. Induzca a los alumnos a que infieran que la densidad del hielo es menor que la del agua líquida y por eso flota. El calor específico es una característica intensiva de la materia que se relaciona con la cantidad de calor necesaria para que una sustancia eleve su temperatura en 1 °C. Hágales notar que el agua tiene el mayor grado de calor específico de las sustancias de la tabla 5.1 (página 42), y que esto tiene importantes repercusiones en la vida del planeta; por ejemplo, ayuda a regular su temperatura. La energía térmica que absorbe el agua de los océanos se libera por las noches, por lo que las diferencias de temperatura entre el día y la noche no son tan grandes como en otros planetas. Use la misma tabla para que los educandos identifiquen cuáles son las sustancias que almacenan mejor la energía térmica (tienen un mayor calor específico). Guíelos para que asocien el calor específico con la energía térmica que un material puede transferir (o recibir) por cada gramo y por cada grado Celsius. Para la primera actividad (página 43), retome la discusión en torno a la capacidad de almacenar energía térmica y el calor específico, para apoyarlos en la resolución de la actividad. Recuérdeles que el calor específico es una propiedad intensiva de la materia y que es exclusiva para cada sustancia.",
+      "Cierre": "La actividad de esta etapa tiene como fin que los estudiantes apliquen lo aprendido sobre las propiedades físicas relacionadas con la transferencia de energía térmica. Es importante que puedan identificar las propiedades y su significado. Vincule cada una con hechos o fenómenos cotidianos que ellos puedan recordar, por ejemplo, la conductividad térmica en el uso de un comal de metal; el calor específico en la regulación térmica en regiones del planeta cercanas a masas de agua (el agua tiene un alto calor específico y \"almacena\" de manera eficiente la energía térmica); el calor de fusión en la energía que hay que transferir a un hielo para que se derrita; el calor de vaporización en la energía que hay que transferir para que se evapore un líquido, entre otros.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Reconoce y compara las propiedades en diferentes sustancias y su relación con los intercambios de energía."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "Proyectos": [],
+      "LibroSep": "",
+      "LibroMcMillan": "Química Imagina 38-45",
+      "Vinculacion": "\\textbf{Física:} Estructura, propiedades y características de la materia. Reconoce los estados de agregación de la materia.\\\\ \\textbf{Matemáticas:} Resuelve operaciones y analiza datos en gráficas.",
+      "Worklist": [
+        "L5. Propiedades de las sustancias",
+        "A.10 Energía y metales",
+        "A.11 Interacciones térmicas",
+        "A.12 Estados de agregación y materiales",
+        "A.13 Estados de agregación"
+      ],
+      "Libros": [
+        "Química Imagina 38-45"
+      ],
+      "ActPro": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-09-29",
+      "FechaDeCierre": "2025-10-03",
+      "SemanaEscolar": 5,
+      "Contenido": "Composición de las mezclas y su clasificación en homogéneas y heterogéneas.",
+      "Aprendizaje": "Describe los componentes de una mezcla (soluto / disolvente; fase dispersa y fase dispersante) mediante actividades experimentales y las clasifica en homogéneas y heterogéneas en materiales de uso cotidiano.",
+      "Tema": "Mezclas",
+      "Leccion": "L6. Mezclas",
+      "Inicio": "La lectura de la actividad de esta etapa invita a los educandos a reconocer, en objetos como las artesanías o expresiones artísticas desde el óleo hasta el grafiti, la diversidad de materiales con los que se elaboran. Se pueden llevar algunas otras mezclas al salón de clases para ayudar a los estudiantes a diferenciar entre la mezcla de una fase y la de dos fases que involucren mezclas en el entorno que les rodea. Algunas mezclas son gotas de colorante en agua, polvo de gis en agua, agua y aceite, rocas en agua, tapas de refrescos de diferentes colores, todas las mezclas habrá que ponerlas en recipientes transparentes.",
+      "Desarrollo": "En los textos se presenta al alumnado dos conceptos fundamentales: sustancias puras y mezclas de sustancias. Una idea clave que les permitirá diferenciar estos dos conceptos es la combinación física, presente únicamente en las mezclas de sustancias, que da lugar a una gran diversidad. Dependiendo de la proporción en que se encuentren las sustancias en una mezcla, éstas presentarán propiedades distintas, por lo que resulta adecuado hacer ejercicios mentales sencillos que les permitan a Cuestionarse y consolidar el concepto de propiedades de las mezclas, por ejemplo: En una mezcla de agua con azúcar la característica que se puede detectar es el grado de dulzor: a medida que se incrementa uno de los componentes (agua o azúcar), la dulzura se verá modificada. Pregúnteles ¿un vaso de agua tendrá la misma dulzura al agregar una cuchara de azúcar que cuando se agreguen dos cucharadas? Además, se puede llegar a un caso extremo: si el agua es muy poca o el azúcar está en mayor proporción, la mezcla que era homogénea, donde no se diferencia el azúcar disuelta en el agua, pasará a ser heterogénea, con el azúcar al fondo del vaso. Invite a los educandos a reflexionar en torno a las consecuencias que ocasiona el aumento de gases contaminantes en una mezcla homogénea como el aire; esto les permitiría relacionar conceptos de vida saludable que revisaron en su curso de Biología. Para ayudarles a comprender la diferencia entre disolución, suspensión y coloide; muestre una botella de agua con un poco de tierra y mencione que se pueden distinguir la tierra y el agua como dos sustancias distintas, por lo que se observa una mezcla heterogénea; luego agite la mezcla y señale que ahora luce como una mezcla homogénea, aunque conforme avance el tiempo volverán a separarse. Este fenómeno no se presentará jamás en los coloides y en las disoluciones. Para poder distinguir un coloide de una disolución, una herramienta útil es la luz. Mezcle un poco de agua con almidón o un poco de leche y, al incidir la luz del celular sobre la mezcla, se podrán ver las líneas de luz (efecto Tyndall) características de un coloide.",
+      "Cierre": "En la actividad de esta etapa se deben aplicar los conceptos revisados en la lección. Los alumnos deberán clasificar las mezclas como homogéneas o heterogéneas; sin embargo, para diferenciar una disolución, un coloide o una suspensión, se recomienda que sea una actividad de investigación en casa. Se sugiere que comparta con los estudiantes alguno de los \"Recursos de apoyo complementarios\".",
+      "EjesArticuladores": "Artes y experiencias estéticas.",
+      "EvaluacionFormativa": [
+        "Clasifica mezclas homogéneas y heterogéneas, así como identifica disoluciones, suspensiones y coloides.,Identifica los componentes de una mezcla."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "14",
+        "15"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y Pensamiento Científico 178-181",
+      "LibroMcMillan": "Química Imagina 46-49",
+      "Vinculacion": "\\textbf{Física:} Aplica sus conocimientos sobre cargas eléctricas para comprender la relación entre los átomos que conforman una mezcla.",
+      "Worklist": [
+        "L6. Mezclas",
+        "A.14 Mezclas y estados de agregación",
+        "A.15 ¿Cuál es la concentración?"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 178-181",
+        "Química Imagina 46-49"
+      ],
+      "ActPro": [
+        "14",
+        "15"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-06",
+      "FechaDeCierre": "2025-10-10",
+      "SemanaEscolar": 6,
+      "Contenido": "Composición de las mezclas y su clasificación en homogéneas y heterogéneas.",
+      "Aprendizaje": "Deduce métodos para separar mezclas mediante actividades experimentales con base en las propiedades físicas de las sustancias involucradas, así como su funcionalidad en actividades humanas.",
+      "Tema": "Separación de mezclas",
+      "Leccion": "L7. Métodos de separación de mezclas",
+      "Inicio": "La actividad de esta sección, además de tener un enfoque ambiental del que se puede obtener un provecho en la formación de valores en los estudiantes, es muy útil en cuanto a dar significado y representar en un contexto cercano el concepto de separación física de una mezcla. Un contenedor de basura es un ejemplo de una mezcla heterogénea de sustancias: plásticos, metales, materia orgánica, entre otros. Un proceso mecánico de separación de mezclas es la clasificación y separación de residuos del hogar en función de las características de cada residuo. Se recomienda que los alumnos midan el volumen de los residuos generados sin clasificar y lo contrasten contra el volumen generado al clasificar y separar la basura, para hacer una reflexión sobre el impacto en el volumen que se destina a la basura en rellenos sanitarios.",
+      "Desarrollo": "La parte fundamental de esta lección es que los educandos sean capaces de identificar las propiedades de una mezcla de sustancias (estado de agregación, densidad, punto de fusión, tamaño de partícula, entre otras) así como las propiedades de cada sustancia por separado para poder identificar y aplicar el método más adecuado de separación. Es importante resaltar el estado de agregación de las mezclas de las sustancias y también indicar para qué tipo de mezclas es adecuado cada método de separación. En la actividad experimental (páginas 51 y 52), mezcla de agua, arena y grava, se sugiere preguntar previamente a los estudiantes ¿qué es más rápido y sencillo de separar, el agua de la arena o el agua de la grava? Existen múltiples formas de separar agua y grava; decantación, filtración con una coladera (tamiz grande) e incluso de forma mecánica. Después invítelos a reflexionar cómo separarían la arena del agua; también existen múltiples formas: decantación, filtración y destilación. Se debe hacer énfasis en \"qué\" se desea recuperar y \"para qué\"; por ejemplo, si se desea recuperar el agua, resulta más adecuado la destilación, porque se recuperaría en un contendor. Si lo que se desea recuperar es la arena, entonces el proceso de filtración resulta más adecuado, porque no requiere una inversión energética (proceso de calentamiento). El procedimiento de separación cromatográfico de la segunda actividad experimental (página 54) es muy útil y suele generar mucha atracción en el alumnado; sin embargo, se debe tener especial cuidado en la elección de los plumones, ya que deben ser solubles en agua. Además, de las cuatro marcas que se hacen en la hoja, una de estasdebe ser forzosamente del plumón elegido por el docente (plumóndel crimen), y se debe hacer la siguiente apreciación: si se desea queun equipo consiga identificar al plumón del crimen, entonces se debecolocar en otro espacio de nuevo el mismo plumón, dejando libres losotros dos espacios para utilizar plumones distintos, por otra parte, sepueden asignar a un equipo tres marcas de plumones que no seanel \"plumón del crimen\". Una última recomendación es que los plumones deben ser de distintos proveedores y de colores semejantes, delo contrario, no tendrá sentido si el \"plumón del crimen\" es azul y secoloca una marca amarilla.",
+      "Cierre": "La actividad de esta etapa pertenece a la denominada \"enseñanza ambiciosa de la ciencia\", un método de enseñanza novedoso que permite la generación de conocimiento a partir de la experiencia propia de los educandos. Se le recomienda evaluar la creatividad y la participación por encima del resultado. Es aconsejable hacer una pequeña introducción sobre el acceso de la población al agua potable. Se pueden retomar los resultados obtenidos de la actividad en la cual se separó la mezcla de agua, grava y arena, y añadir sal a la mezcla. Otro aspecto importante que puede resaltarse para evaluar la comprensión de los estudiantes es que expliquen qué consideran como agua purificada o la forma en que pueden garantizar que la mezcla de agua ha sido purificada o no; sin embargo, estas reflexiones deben quedar en un análisis teórico, de indagación, y no formar parte de la evaluación ni del procedimiento experimental. Complemente la etapa de \"Cierre\" con la ficha \"Aguas brillantes y cristalinas\" del cuaderno de evidencias. Pida a los estudiantes que la resuelvan e invítelos a reflexionar acerca del uso de los métodos de separación de mezclas para obtener sustancias puras y seguras. Permítales que compartan sus experiencias y aprendizajes de estas actividades.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Diseña un dispositivo de bajo costo y fácil de construir para purificar agua."
+      ],
+      "Evidencias": [
+        "F3"
+      ],
+      "Actividades": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "Proyectos": [
+        "Mezclas"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 241-246 ,Nuestro libro de Proyectos 112-121",
+      "LibroMcMillan": "Química Imagina 50-55",
+      "Vinculacion": "\\textbf{Física:} Aplica sus conocimientos sobre cargas eléctricas para comprender los diferentes métodos y separación",
+      "Worklist": [
+        "L7. Métodos de separación de mezclas",
+        "A.16 ¿Cómo separar una mezcla?",
+        "A.17 Hasta que nos separen",
+        "A.18 Distingue los métodos de separación",
+        "A.19 Separación de mezclas",
+        "A.20 ¿Homogénea o heterogénea?",
+        "F3. Aguas brillantes y cristalinas"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 241-246 ",
+        "Nuestro libro de Proyectos 112-121",
+        "Química Imagina 50-55"
+      ],
+      "ActPro": [
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "F3",
+        "Mezclas"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-13",
+      "FechaDeCierre": "2025-10-17",
+      "SemanaEscolar": 7,
+      "Contenido": "Importancia de la concentración de sustancias en mezclas de productos de uso cotidiano.",
+      "Aprendizaje": "Analiza la concentración de sustancias de una mezcla expresadas en porcentaje en masa y porcentaje en volumen en productos de higiene personal, alimentos, limpieza, entre otros, para la toma de decisiones orientadas al cuidado de la salud y al consumo responsable.Concentración de mezclas de diversos productos Relaciona la concentración de una mezcla con la efectividad o composición de diversos productos de uso cotidiano.",
+      "Tema": "Concentración de mezclas",
+      "Leccion": "L8. Concentración en mezclas. Lección 9. Concentración de contaminantes.",
+      "Inicio": "El concepto de mezcla debe ser claro para los estudiantes; sin embargo, en ocasiones resulta un buen apoyo conceptual la capacidad de cuantificar un fenómeno. Sería adecuado recordar con antelación el concepto de porcentaje con ejemplos sencillos del salón de clases. Ya que en el grupo existen personas que usan lentes y otras que no, pregunte: ¿cuál es el porcentaje de compañeros con lentes? ¿Qué representa el cien por ciento? Una vez que es claro el ejercicio de porcentaje, la tabla de la actividad de esta etapa indica la composición del aire en cuanto a masa y volumen, por lo que primero es necesario identificar en el alumnado su capacidad de entender el estado de agregación: ¿qué resulta más sencillo de medir, la masa o el volumen del aire? Se puede explicar que resulta más sencillo medir los volúmenes de los gases y que a partir de la densidad se puede calcular la masa asociada a un volumen.",
+      "Desarrollo": "La lección contiene los procedimientos adecuados para generar los cálculos de porcentaje de masa y de volumen que son necesarios para explicar el tema. La recomendación para el desarrollo de esta lección es la práctica de dichos cálculos. En un principio, guíe a los alumnos en la identificación de las variables: soluto (objeto de estudio del que se quiere conocer la cantidad relativa en una mezcla) y mezcla (cantidad total de la combinación física de las sustancias y que forma el total del que se requiere calcular en el contenido relativo del soluto). Sería conveniente señalar que en los líquidos y los gases la temperatura tiene una influencia significativa sobre el volumen, y que, debido a que la temperatura del ambiente no es una variable fácilmente controlable, resulta más adecuado el uso del porcentaje masamasa, ya que lo sólidos no tienen una dependencia significativa con la temperatura. Los ejercicios son infinitos, sin embargo, se puede hacer énfasis en temas de interés común: porcentajes de contaminantes en el aire o el contenido de sustancias como azúcares o minerales en las bebidas y los alimentos (naturales o procesados). Se debe tener particular precisión en la actividad de la \"temperatura de mezclas de azúcar con agua\" (página 58), ya que se está observando un fenómeno asociado a las propiedades coligativas de las disoluciones (aumento del punto de ebullición, disminución del punto de fusión y disminución en la presión de vapor), un tema que como tal no se aborda en el libro. De ser el caso, basta con describir a los estudiantes que estos fenómenos varían proporcionalmente la cantidad de sustancia que se agrega a la mezcla y que su estudio forma parte de un curso avanzado de fisicoquímica, por lo que, por el momento, basta con identificar su existencia.",
+      "Cierre": "La actividad de esta etapa permite retomar la influencia de la temperatura en algunos sistemas de estudio. Las interacciones de atracción entre las sustancias gaseosas y líquidas como el oxígeno y el agua suelen debilitarse debido al aumento de la temperatura, esto se puede explicar desde al menos dos puntos de vista. El primero, y con el que el alumnado está familiarizado debido a su curso de Física, es la energía cinética: las sustancias gaseosas, al recibir mayor energía en forma de calor, tienden a tener mayor energía cinética y pueden abandonar el cuerpo líquido donde se encontraban. El segundo es el enfoque químico por medio de fuerzas intermoleculares; sin embargo, este tema no forma parte del contenido del libro y se recomienda señalar que forma parte de un curso de Química más avanzado. Solicite a los alumnos que resuelvan la ficha \"¿Y adónde va la basura que tiro?\" de su cuaderno de evidencias. Recapitule los puntos clave de la clase y anime a los estudiantes a reflexionar sobre el manejo responsable de nuestros desechos y la importancia de conocer la concentración de una sustancia en el contexto de la contaminación ambiental.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Calcula la concentración en ppm y en \\%m/m y valora las afectaciones de los resultados obtenidos."
+      ],
+      "Evidencias": [
+        "F4"
+      ],
+      "Actividades": [
+        "21",
+        "22"
+      ],
+      "Proyectos": [
+        "Delincuente"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 182-191,Nuestro libro de Proyectos 112-121",
+      "LibroMcMillan": "Química Imagina 56-63",
+      "Vinculacion": "\\textbf{Matemáticas:} Resuelve operaciones de concentraciones.",
+      "Worklist": [
+        "L8. Concentración en mezclas",
+        "A.21 Disoluciones y cantidades",
+        "A.22 Concentración en mezclas",
+        "F4. ¿Y adónde va la basura que tiro?",
+        "L9. Concentración de contaminantes",
+        "A.23 Sustancias contaminantes",
+        "F5. Agua contaminada."
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 170-177 y 182-191",
+        "Nuestro libro de Proyectos 112-121",
+        "Química Imagina 56-63 y 64-69"
+      ],
+      "ActPro": [
+        "21",
+        "22",
+        "F4",
+        "Delincuente"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-20",
+      "FechaDeCierre": "2025-10-24",
+      "SemanaEscolar": 8,
+      "Contenido": "Presencia de contaminantes y su concentración.",
+      "Aprendizaje": "Indaga situaciones problemáticas relacionadas con la degradación y contaminación en la comunidad, vinculadas con el uso de productos y procesos químicos. Reflexiona acerca de los hábitos de consumo responsable, para la toma de decisiones orientadas a la sustentabilidad.",
+      "Tema": "Hábitos de consumo",
+      "Leccion": "L10. Hábitos de consumo y su impacto",
+      "Inicio": "La actividad de esta etapa debe ser una forma de invitar a la reflexión de los estudiantes y no se aconseja que el enfoque sea punitivo (que culpabilice), ya que usualmente las personas suelen sentir menos disposición a los cambios de hábito si se les obliga. Las respuestas que propongan los alumnos serán muy variadas y quizá no sean capaces de identificar todas las posibles contribuciones a la degradación del medio ambiente, por lo que se aconseja tener algunos ejemplos generales, como el consumo de \"refrescos\", que, además de impactar de manera negativa en la salud, requiere de un consumo de agua potable de alrededor de 70 litros por cada litro de refresco preparado. El consumo de refrescos no requiere estar prohibido, sólo es necesario un consumo responsable. Este mismo ejemplo puede aplicarse en el consumo de productos cárnicos a la semana. También se puede abordar el tema de la fast fashion, que tiene un impacto muy negativo durante su producción y, al ser prendas que se desechan con rapidez, provocan la acumulación de residuos urbanos. En este caso, sugiera la separación de la basura y la posibilidad de llevar ciertos residuos a centros de reciclaje que, además de disminuir la cantidad de residuos en vertederos, permiten la disminución en el consumo de materias primas. También sugiera algunos otros ejemplos útiles como el consumo responsable de luz eléctrica, tiempo en la ducha y uso de aerosoles (alimenticios y de higiene personal).",
+      "Desarrollo": "Resulta necesario mencionar que el cambio climático desde hace unos años (2020) comenzó a ser referido como crisis climática debido a la magnitud y velocidad con que los cambios están ocurriendo en el planeta. Sería recomendable que, lejos de una visión alarmista, se plantee una visión de áreas de oportunidad para que las generaciones actuales tomen un papel activo en las decisiones y acciones que permitirán disminuir y combatir los estragos asociados con la crisis climática. En México y en el mundo existen diversas organizaciones gubernamentales y no gubernamentales que, además de invitar a acciones concretas, emiten boletines y recomendaciones que permiten a la población civil conocer e involucrarse en temas de cambio climático; sin embargo, las acciones sencillas como la reducción, reutilización y el depósito de residuos en centros de reciclaje son actividades que no requieren de estar inscrito en ninguna organización. Algunos abordajes que se pueden hacer desde el punto de vista de las ciencias químicas son el diseño de nuevos materiales que ofrecen mayor eficiencia y vida útil, como los nuevos polímeros conductores de electricidad, que podrían suplantar a los metales que son propensos a la corrosión; combustibles alternos que permitan utilizar la maquinaria ya existente, como las celdas de hidrógeno, que además tienen una emisión cero de contaminantes durante su funcionamiento, y los materiales que permitan contener o degradar los contaminantes ya existentes, como los catalizadores y los filtros que pueden colocarse en las fuentes de gases como los automóviles o chimeneas industriales, para evitar la salida de las sustancias hacia la atmósfera.",
+      "Cierre": "En la actividad de esta sección se deberá dar espacio y tiempo suficiente al alumnado para compartir experiencias y puntos de vista. Sugiera algunos de los \"Recursos de apoyo complementarios\", como la \"Calculadora de huella de carbono\", y que, a partir de los resultados, se puedan proponer metas personales para lograr una reducción. Destaque la importancia de adoptar hábitos de consumo responsable y de reflexionar sobre nuestro comportamiento como consumidores. Para ello, solícite a los alumnos que resuelvan la ficha \"El costo de estar a la moda\". Al terminar, trace una tabla en el pizarrón donde Compartan algunas de las soluciones que la Química nos ofrece para un consumo más responsable y amigable con el medio ambiente.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Analiza sus hábitos de consumo para tomar decisiones orientadas a la sustentabilidad."
+      ],
+      "Evidencias": [
+        "F6"
+      ],
+      "Actividades": [
+        "24"
+      ],
+      "Proyectos": [
+        "Reutilizar agua"
+      ],
+      "LibroSep": "Saberes y Pensamiento Científico 299-306",
+      "LibroMcMillan": "Química Imagina 70-73",
+      "Vinculacion": "\\textbf{Biología:} Reconoce el impacto de distintas sustancias químicas en los ecosistemas.",
+      "Worklist": [
+        "L10. Hábitos de consumo y su impacto",
+        "A.24 ¿Cómo mejorar mis hábitos?",
+        "F6. El costo de estar a la moda"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico 299-306",
+        "Química Imagina 70-73"
+      ],
+      "ActPro": [
+        "24",
+        "F6",
+        "Reutilizar agua"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-10-27",
+      "FechaDeCierre": "2025-10-31",
+      "SemanaEscolar": 9,
+      "Contenido": "Recapitulación e integración de los conocimientos y aprendizajes.",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Practica la Unidad",
+      "Leccion": "Revisión grupal de los saberes acumulados en el período de evaluación",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Lo que aprendí\\dots",
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico",
+        "Química Imagina",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad",
+        "Lo que aprendí\\dots"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2025-11-03",
+      "FechaDeCierre": "2025-11-07",
+      "SemanaEscolar": 10,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Semana de evaluación",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se da la bienvenida a los estudiantes a la semana de evaluación, estableciendo como objetivo principal no solo medir el conocimiento a través de un examen, sino también reflexionar sobre el proceso de aprendizaje del trimestre. Se establece un ambiente de concentración y se fomenta una actitud proactiva, explicando que cada actividad está diseñada para consolidar sus saberes. La primera parte de la semana se dedica a un período lectivo de repaso y preparación final, donde, a través de una competencia lúdica con preguntas clave y la resolución de un examen de simulación, los alumnos identifican sus fortalezas y áreas de oportunidad antes de la prueba sumativa.",
+      "Desarrollo": "El núcleo de la semana se centra en la aplicación de la evaluación y la retroalimentación del proceso, distribuido en los siguientes períodos lectivos clave. La primera sesión se dedica a la resolución individual del examen. Se generan las condiciones óptimas de silencio y concentración, dando indicaciones claras y precisas. El docente supervisa el proceso, asegurando la equidad y el cumplimiento de las normas para una evaluación objetiva del aprendizaje alcanzado. Una vez calificados, se entregan los exámenes a los alumnos. En lugar de solo informar una nota, se realiza una revisión grupal de los reactivos con mayor índice de error. Se explica el razonamiento detrás de las respuestas correctas, convirtiendo la evaluación en una oportunidad de aprendizaje tangible y permitiendo que los alumnos comprendan el origen de sus equivocaciones. Los alumnos entregan su portafolio de evidencias junto con un formato de Autocontrol, donde verifican haber completado todos los trabajos y actividades del trimestre. Esta entrega complementa la calificación del examen, valorando también el esfuerzo, la organización y la constancia demostrada durante el período.",
+      "Cierre": "Se dedica la última sesión a cerrar formalmente el trimestre. Se da una retroalimentación general al grupo sobre su desempeño y se presenta de manera atractiva y motivadora el proyecto o los temas centrales que se abordarán en el siguiente periodo. Se puede realizar una actividad breve y creativa de arranque para generar curiosidad e interés por lo que está por venir.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos en MeXmáticas",
+      "Vinculacion": "",
+      "Worklist": [
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "Saberes y Pensamiento Científico",
+        "Química Imagina",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

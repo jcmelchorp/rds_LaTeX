@@ -1,0 +1,535 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "24 nov",
+      "FechaDeCierre": "28 nov",
+      "SemanaEscolar": 13,
+      "Tema": "Probabilidad y estadística",
+      "Aprendizaje": "Comprenderán y aplicarán los conceptos de mediana, moda, promedio y desviación media para interpretar y analizar datos estadísticos.",
+      "Contenido": "Mediana, moda, promedio y desviación media",
+      "Leccion": "Introducción a los conceptos de mediana, moda, promedio y desviación media",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de la estadística en la vida cotidiana, destacando cómo se utilizan los datos para tomar decisiones informadas en diversas áreas como la economía, la salud y la educación. Se presentarán ejemplos de conjuntos de datos para contextualizar el tema. Luego, se definirán los conceptos de mediana (el valor medio en un conjunto de datos ordenados), moda (el valor que más se repite en un conjunto de datos), promedio (la suma de los valores dividida entre la cantidad de valores) y desviación media (la medida de la dispersión de los datos respecto al promedio). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular la mediana, moda, promedio y desviación media de diferentes conjuntos de datos. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de ordenar correctamente los datos y aplicar correctamente las fórmulas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como analizar los resultados de una encuesta de satisfacción, interpretar las calificaciones de un grupo de estudiantes o evaluar los tiempos de entrega de un servicio. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de varios conceptos estadísticos y su aplicación en diferentes contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular la mediana, moda, promedio y desviación media. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de mediana, moda, promedio y desviación media de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "26",
+        "27"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Analiza datos de un experimento (ej. altura de 20 plantas), calculando las medidas de tendencia central y dispersión para describir la variabilidad y el comportamiento típico de la muestra.",
+      "Worklist": [
+        "A.26. Mediana y moda",
+        "A.27. Promedio"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "26",
+        "27"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "1 dic",
+      "FechaDeCierre": "5 dic",
+      "SemanaEscolar": 14,
+      "Tema": "Probabilidad y estadística.",
+      "Aprendizaje": "Comprenderán los conceptos de eventos mutuamente excluyentes y eventos dependientes e independientes, aplicándolos en la resolución de problemas de probabilidad.",
+      "Contenido": "Eventos mutuamente excluyentes y eventos dependientes e independientes.",
+      "Leccion": "Introducción a los eventos mutuamente excluyentes y eventos dependientes e independientes.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de la probabilidad en la toma de decisiones en diversos contextos, como en los seguros, los juegos de azar y la planificación de proyectos. Se presentarán ejemplos de situaciones que involucren eventos probabilísticos para contextualizar el tema. Luego, se definirán los conceptos de eventos mutuamente excluyentes (eventos que no pueden ocurrir simultáneamente), eventos dependientes (eventos cuya ocurrencia de uno afecta la probabilidad del otro) y eventos independientes (eventos cuya ocurrencia no afecta la probabilidad del otro). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que identificar y calcular la probabilidad de eventos mutuamente excluyentes, dependientes e independientes. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las reglas de probabilidad y utilizar diagramas de Venn y árboles de probabilidad para visualizar las relaciones entre los eventos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular la probabilidad de obtener ciertos resultados en un juego de cartas, determinar la probabilidad de eventos relacionados con la meteorología o evaluar la probabilidad de éxito en un proyecto basado en diferentes factores. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de varios conceptos probabilísticos y su aplicación en diferentes contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para identificar y calcular la probabilidad de eventos mutuamente excluyentes, dependientes e independientes. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de probabilidad de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "28",
+        "29",
+        "30"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Aplica las reglas de probabilidad para calcular la posibilidad de que la descendencia herede rasgos genéticos, diferenciando entre eventos independientes y mutuamente excluyentes.",
+      "Worklist": [
+        "A.28. Desviación media",
+        "A.29. Eventos mutuamente excluyentes",
+        "A.30. Eventos dependientes e independientes"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "8 dic",
+      "FechaDeCierre": "12 dic",
+      "SemanaEscolar": 15,
+      "Tema": "Figuras y cuerpos geométricos.",
+      "Aprendizaje": "Comprenderán cómo calcular el perímetro y el área de diferentes figuras geométricas y podrán aplicarlos en problemas prácticos.",
+      "Contenido": "Perímetro y área",
+      "Leccion": "Introducción al cálculo del perímetro y área de figuras geométricas.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de calcular el perímetro y el área de figuras geométricas en diferentes contextos, como en la construcción, el diseño y la planificación urbana. Se presentarán imágenes y ejemplos de figuras geométricas para contextualizar el tema. Luego, se definirán los conceptos de perímetro (la suma de las longitudes de los lados de una figura) y área (la medida de la superficie contenida dentro de una figura). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el perímetro y el área de diferentes figuras geométricas dibujadas en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo del perímetro y el área de figuras como triángulos, rectángulos, cuadrados, paralelogramos, trapecios y círculos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el perímetro de una parcela de terreno o el área de un piso para instalar una alfombra. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el perímetro y el área de figuras compuestas y su aplicación en diversos contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el perímetro y el área de figuras geométricas. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de perímetro y área de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "31",
+        "32"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Calcula el área de la superficie de un pistón para determinar la fuerza total que ejerce un gas a una presión dada ($F=P \\\\times A$).",
+      "Worklist": [
+        "A.31. Perímetro",
+        "A.32. Área"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "31",
+        "32"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "15 dic",
+      "FechaDeCierre": "19 dic",
+      "SemanaEscolar": 16,
+      "Tema": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Comprenderán los conceptos de área lateral y área total de cuerpos geométricos y podrán calcularlos.",
+      "Contenido": "Área lateral y total",
+      "Leccion": "Introducción al cálculo del área lateral y total de cuerpos geométricos",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de calcular el área lateral y total de cuerpos geométricos en diferentes contextos, como en la arquitectura, la ingeniería y el diseño industrial. Se presentarán imágenes y ejemplos de cuerpos geométricos para contextualizar el tema. Luego, se definirán los conceptos de área lateral (la superficie lateral de un cuerpo geométrico, excluyendo las bases) y área total (la suma del área lateral y las áreas de las bases). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el área lateral y el área total de diferentes cuerpos geométricos dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo del área lateral y el área total de cuerpos como prismas, cilindros, pirámides y conos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el área lateral de una caja para pintarla o el área total de un tanque cilíndrico para determinar la cantidad de material necesario para construirlo. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el área lateral y el área total de cuerpos geométricos compuestos y su aplicación en diversos contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el área lateral y el área total de cuerpos geométricos. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de área lateral y área total de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "33"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Relaciona el área superficial total de un catalizador sólido con la velocidad de una reacción química, explicando por qué un polvo reacciona más rápido que un trozo sólido.",
+      "Worklist": [
+        "A.33. Área lateral y total"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "33"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "12 ene",
+      "FechaDeCierre": "16 ene",
+      "SemanaEscolar": 17,
+      "Tema": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Comprenderán cómo calcular el volumen de diferentes cuerpos geométricos y podrán aplicarlo en la resolución de problemas.",
+      "Contenido": "Volumen y resolución de problemas",
+      "Leccion": "Introducción al cálculo del volumen de cuerpos geométricos.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de calcular el volumen de cuerpos geométricos en diferentes contextos, como en la construcción, la ingeniería y el diseño de productos. Se presentarán imágenes y ejemplos de cuerpos geométricos para contextualizar el tema. Luego, se definirán los conceptos de volumen (el espacio ocupado por un cuerpo geométrico) y se presentarán las fórmulas para calcular el volumen de prismas, cilindros, pirámides, conos y esferas. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el volumen de diferentes cuerpos geométricos dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo del volumen de cuerpos como prismas, cilindros, pirámides, conos y esferas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el volumen de una piscina, el volumen de un tanque de agua o el volumen de un paquete para envío. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el volumen de cuerpos geométricos compuestos y su aplicación en diversos contextos. Se promoverá el pensamiento crítico y la capacidad de resolución de problemas a través de la reflexión y el análisis de diferentes estrategias.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el volumen de cuerpos geométricos y su aplicación en la resolución de problemas. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de volumen de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "34",
+        "35"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Determina la densidad de una sustancia ($\\\\rho = \\\\dfrac{m}{V}$) midiendo su masa y su volumen para poder identificarla.",
+      "Worklist": [
+        "A.34. Volumen",
+        "A.35. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "34",
+        "35"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "19 ene",
+      "FechaDeCierre": "23 ene",
+      "SemanaEscolar": 18,
+      "Tema": "Plano cartesiano y recta",
+      "Aprendizaje": "Comprenderán los conceptos de ubicación y cuadrantes en el plano cartesiano y podrán aplicarlos para representar puntos y figuras geométricas.",
+      "Contenido": "Ubicación y cuadrantes en el plano cartesiano",
+      "Leccion": "Introducción a la ubicación y cuadrantes en el plano cartesiano",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia del plano cartesiano en las matemáticas y su aplicación en diferentes contextos, como en la física, la ingeniería y la informática. Se presentarán ejemplos de representaciones gráficas en el plano cartesiano para contextualizar el tema. Luego, se definirán los conceptos de origen (el punto (0,0) donde se cruzan los ejes x e y), ejes coordenados (eje x y eje y) y cuadrantes (las cuatro regiones delimitadas por los ejes). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que ubicar puntos y representar figuras geométricas en el plano cartesiano. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de identificar correctamente las coordenadas de los puntos y los cuadrantes en los que se encuentran. Además, se presentarán problemas contextualizados en situaciones de la vida real, como trazar la ruta de un objeto en movimiento, representar datos en un gráfico o diseñar un plano arquitectónico. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples conceptos del plano cartesiano y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para ubicar puntos y representar figuras geométricas en el plano cartesiano. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de ubicación y representación en el plano cartesiano de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "36",
+        "37"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Representa un vector de fuerza o desplazamiento en el plano cartesiano, identificando su cuadrante para definir su dirección y sentido.",
+      "Worklist": [
+        "A.36. Ubicación en el plano cartesiano",
+        "A.37. Cuadrantes en el plano cartesiano"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "26 ene",
+      "FechaDeCierre": "30 ene",
+      "SemanaEscolar": 19,
+      "Tema": "Plano cartesiano y recta.",
+      "Aprendizaje": "Comprenderán los conceptos de pendiente, ordenada y ecuación de una recta, aplicándolos para representar y analizar rectas en el plano cartesiano.",
+      "Contenido": "Pendiente dados dos puntos, ordenada y ecuación de una recta",
+      "Leccion": "Introducción a la pendiente, ordenada y ecuación de una recta.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de las rectas en el plano cartesiano y su aplicación en diferentes contextos, como en la física, la economía y la geometría analítica. Se presentarán ejemplos de rectas en el plano cartesiano para contextualizar el tema. Luego, se definirán los conceptos de pendiente (la inclinación de una recta, calculada como el cambio en y dividido por el cambio en x), ordenada al origen (el punto donde la recta cruza el eje $y$) y la ecuación de una recta (representada en su forma general $y = mx + b$, donde $m$ es la pendiente y $b$ es la ordenada al origen). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular la pendiente dados dos puntos, la ordenada al origen y la ecuación de una recta en el plano cartesiano. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de identificar correctamente las coordenadas de los puntos y aplicar las fórmulas para calcular la pendiente y la ecuación de la recta. Además, se presentarán problemas contextualizados en situaciones de la vida real, como analizar la pendiente de una carretera, determinar la ecuación de una trayectoria de movimiento o representar relaciones económicas en un gráfico. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples conceptos del plano cartesiano y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular la pendiente, la ordenada al origen y la ecuación de una recta en el plano cartesiano. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de pendiente, ordenada y ecuación de una recta de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "38",
+        "39",
+        "40"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Interpreta una gráfica de posición contra tiempo, calculando la pendiente (velocidad) y la ordenada al origen (posición inicial) para obtener la ecuación del movimiento.",
+      "Worklist": [
+        "A.38. Pendiente y ordenada",
+        "A.39. Pendiente dados dos puntos",
+        "A.40. Ecuación de una recta"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "38",
+        "39",
+        "40"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2 feb",
+      "FechaDeCierre": "6 feb",
+      "SemanaEscolar": 20,
+      "Tema": "Ecuación lineal",
+      "Aprendizaje": "Comprenderán el lenguaje algebraico y la representación de ecuaciones lineales, aplicándolos en la resolución de problemas algebraicos.",
+      "Contenido": "Lenguaje algebraico y ecuaciones lineales",
+      "Leccion": "Introducción al lenguaje algebraico y ecuaciones lineales",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia del lenguaje algebraico en las matemáticas y su aplicación en diferentes contextos, como en la resolución de problemas, la modelación de fenómenos y el análisis de datos. Se presentarán ejemplos de expresiones algebraicas para contextualizar el tema. Luego, se definirán los conceptos de variable (un símbolo que representa un valor desconocido), coeficiente (un número que multiplica a una variable), término (una combinación de coeficientes y variables) y ecuación lineal (una ecuación que representa una relación lineal entre variables). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que identificar y representar ecuaciones lineales a partir de situaciones dadas. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de utilizar correctamente el lenguaje algebraico y la notación de ecuaciones lineales. Además, se presentarán problemas contextualizados en situaciones de la vida real, como representar matemáticamente el costo de producción de un artículo, el crecimiento de una población o la relación entre diferentes variables en un experimento. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la representación de expresiones algebraicas en diferentes contextos y su aplicación en la resolución de problemas.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para identificar y representar ecuaciones lineales en lenguaje algebraico. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de identificación y representación de ecuaciones lineales de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Traduce una ley física, como la Ley de Ohm, a la ecuación lineal $V=IR$ y la resuelve para encontrar el valor de cualquier variable desconocida.",
+      "Worklist": [
+        "A.41. Lenguaje algebraico",
+        "A.42. Ecuaciones lineales 1",
+        "A.43. Ecuaciones lineales 2",
+        "A.44. Ecuaciones lineales con fracciones",
+        "A.45. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "9 feb",
+      "FechaDeCierre": "13 feb",
+      "SemanaEscolar": 21,
+      "Tema": "Sistemas de ecuaciones",
+      "Aprendizaje": "Comprenderán cómo resolver sistemas de ecuaciones lineales utilizando el método de eliminación y podrán aplicarlo en la resolución de problemas algebraicos.",
+      "Contenido": "Método de eliminación",
+      "Leccion": "Introducción al método de eliminación en sistemas de ecuaciones.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de resolver sistemas de ecuaciones lineales en las matemáticas y su aplicación en diferentes contextos, como en la economía, la ingeniería y la física. Se presentarán ejemplos de sistemas de ecuaciones para contextualizar el tema. Luego, se explicará el método de eliminación, que consiste en sumar o restar ecuaciones para eliminar una de las variables, lo que permite resolver el sistema paso a paso. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver sistemas de ecuaciones en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que resolver sistemas de ecuaciones lineales utilizando el método de eliminación. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de realizar correctamente las operaciones algebraicas y verificar las soluciones obtenidas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular las cantidades óptimas de producción en una fábrica, determinar las intersecciones de líneas en un gráfico o resolver problemas de mezcla de soluciones químicas. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para resolver sistemas de ecuaciones lineales utilizando el método de eliminación. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de sistemas de ecuaciones lineales de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "46"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve un sistema 2x2 para encontrar las tensiones en dos cuerdas que sostienen un objeto, sustituyendo una ecuación en otra.",
+      "Worklist": [
+        "A.46. Método de eliminación"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "46"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "16 feb",
+      "FechaDeCierre": "20 feb",
+      "SemanaEscolar": 22,
+      "Tema": "Sistemas de ecuaciones.",
+      "Aprendizaje": "Comprenderán cómo resolver sistemas de ecuaciones lineales utilizando el método de sustitución y podrán aplicarlo en la resolución de problemas algebraicos.",
+      "Contenido": "Método de sustitución.",
+      "Leccion": "Introducción al método de sustitución en sistemas de ecuaciones.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de resolver sistemas de ecuaciones lineales en las matemáticas y su aplicación en diferentes contextos, como en la economía, la ingeniería y la física. Se presentarán ejemplos de sistemas de ecuaciones para contextualizar el tema. Luego, se explicará el método de sustitución, que consiste en despejar una variable en una de las ecuaciones y sustituirla en la otra ecuación para resolver el sistema paso a paso. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver sistemas de ecuaciones en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que resolver sistemas de ecuaciones lineales utilizando el método de sustitución. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de realizar correctamente las operaciones algebraicas y verificar las soluciones obtenidas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular las cantidades óptimas de producción en una fábrica, determinar las intersecciones de líneas en un gráfico o resolver problemas de mezcla de soluciones químicas. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para resolver sistemas de ecuaciones lineales utilizando el método de sustitución. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de sistemas de ecuaciones lineales de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "47"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Aplica el método de eliminación para resolver un sistema de ecuaciones derivado de las Leyes de Kirchhoff en un circuito eléctrico simple.",
+      "Worklist": [
+        "A.47. Método de sustitución e igualación"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "47"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "23 feb",
+      "FechaDeCierre": "27 feb",
+      "SemanaEscolar": 23,
+      "Tema": "Sistemas de ecuaciones",
+      "Aprendizaje": "Comprenderán cómo resolver sistemas de ecuaciones lineales utilizando el método de igualación y podrán aplicarlo en la resolución de problemas algebraicos.",
+      "Contenido": "Método de igualación",
+      "Leccion": "Introducción al método de igualación en sistemas de ecuaciones",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de resolver sistemas de ecuaciones lineales en las matemáticas y su aplicación en diferentes contextos, como en la economía, la ingeniería y la física. Se presentarán ejemplos de sistemas de ecuaciones para contextualizar el tema. Luego, se explicará el método de igualación, que consiste en despejar la misma variable en ambas ecuaciones y luego igualarlas para resolver el sistema paso a paso. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver sistemas de ecuaciones en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que resolver sistemas de ecuaciones lineales utilizando el método de igualación. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de realizar correctamente las operaciones algebraicas y verificar las soluciones obtenidas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular las cantidades óptimas de producción en una fábrica, determinar las intersecciones de líneas en un gráfico o resolver problemas de mezcla de soluciones químicas. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para resolver sistemas de ecuaciones lineales utilizando el método de igualación. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de sistemas de ecuaciones lineales de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "48"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Utiliza el método de igualación para encontrar el punto (posición y tiempo) en que dos móviles que parten de lugares distintos se encuentran.",
+      "Worklist": [
+        "A.48. Sistema de ecuaciones 3x3"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "48"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2 mar",
+      "FechaDeCierre": "6 mar",
+      "SemanaEscolar": 24,
+      "Tema": "Sistemas de ecuaciones",
+      "Aprendizaje": "Comprenderán cómo resolver sistemas de ecuaciones lineales de tres variables utilizando diferentes métodos y podrán aplicarlo en la resolución de problemas algebraicos.",
+      "Contenido": "Sistema de ecuaciones 3x3",
+      "Leccion": "Introducción a los sistemas de ecuaciones lineales de tres variables",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de resolver sistemas de ecuaciones lineales de tres variables en las matemáticas y su aplicación en diferentes contextos, como en la ingeniería, la física y la economía. Se presentarán ejemplos de sistemas de ecuaciones 3x3 para contextualizar el tema. Luego, se explicarán los métodos para resolver estos sistemas, incluyendo el método de eliminación y el método de sustitución. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver sistemas de ecuaciones en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que resolver sistemas de ecuaciones lineales de tres variables utilizando diferentes métodos. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de realizar correctamente las operaciones algebraicas y verificar las soluciones obtenidas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como modelar fenómenos físicos, calcular proporciones en mezclas químicas o resolver problemas de optimización en ingeniería. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para resolver sistemas de ecuaciones lineales de tres variables. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de sistemas de ecuaciones 3x3 de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "49"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Balancea una ecuación química compleja estableciendo un sistema de 3x3 ecuaciones (una para cada elemento) y resolviéndolo para encontrar los coeficientes estequiométricos.",
+      "Worklist": [
+        "A.49. Sistema de ecuaciones con fracciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "49"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "9 mar",
+      "FechaDeCierre": "13 mar",
+      "SemanaEscolar": 25,
+      "Tema": "Sistemas de ecuaciones",
+      "Aprendizaje": "Comprenderán cómo resolver sistemas de ecuaciones lineales que involucren fracciones y podrán aplicarlo en la resolución de problemas algebraicos.",
+      "Contenido": "Sistema de ecuaciones con fracciones",
+      "Leccion": "Introducción a la resolución de sistemas de ecuaciones que involucren fracciones",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de resolver sistemas de ecuaciones lineales que involucren fracciones en las matemáticas y su aplicación en diferentes contextos, como en la economía, la química y la física. Se presentarán ejemplos de sistemas de ecuaciones con fracciones para contextualizar el tema. Luego, se explicarán los métodos para resolver estos sistemas, como el método de eliminación y el método de sustitución, haciendo hincapié en la importancia de manejar correctamente las fracciones y simplificar las expresiones. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver sistemas de ecuaciones en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que resolver sistemas de ecuaciones lineales que involucren fracciones utilizando los métodos explicados. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de manejar correctamente las fracciones, incluyendo la simplificación de fracciones y la realización de operaciones con fracciones. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular las proporciones de ingredientes en una receta, analizar mezclas de soluciones químicas o resolver problemas económicos que involucren fracciones. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de fracciones en sistemas de ecuaciones y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para resolver sistemas de ecuaciones lineales que involucren fracciones. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de sistemas de ecuaciones con fracciones de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "50"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Resuelve problemas de mezclas, determinando qué volúmenes de dos disoluciones con concentraciones fraccionarias se deben mezclar para obtener una nueva concentración deseada.",
+      "Worklist": [
+        "A.50. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "50"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "16 mar",
+      "FechaDeCierre": "20 mar",
+      "SemanaEscolar": 26,
+      "Tema": "Semana de evaluación",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Contenido": "Evaluación de la unidad",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Se realizará a través de la observación directa del desempeño del alumno al resolver los ejercicios.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

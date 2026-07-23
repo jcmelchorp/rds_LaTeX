@@ -1,0 +1,189 @@
+%% ===== IDENTIFICATION =====
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{card}[Defines some custom color boxes (called card) using tcolorbox.]
+
+\RequirePackage{bibentry}
+\RequirePackage{csquotes}
+% \nobibliography*
+
+
+% Command to print a colored box with a bold title
+% Ex: \tbox[gray]{Title}{Content of the box}
+% Args: [1] = Color (gray) | [2] = Title | [3] = Content 
+\newcommand{\tbox}[3][gray]{
+    \begin{tcolorbox}[
+            colback=#1!10!white,
+            colframe=#1!75!black,
+            coltext=#1!75!black,
+            fonttitle=\bfseries,
+            title=#2
+        ]
+        #3
+    \end{tcolorbox}
+}
+
+% Shorthand to add box used for definition, with a label for cross-ref
+% Ex: \tdef{Title}{Content of the box}
+% Args:  [1] = Title | [2] = id | [3] = Content 
+\newcommand{\tdef}[3]{
+    \smallskip
+    \tbox[gray]{Définition : \normalfont{#1}}{\emph{#3}}\label{def:#2}
+}
+
+% Shorthand to add box used for definition, with a label for cross-ref and a lower section (not emphasised)
+% Ex: \tdefl{Title}{Content of the box}{Content of lower part}
+% Args:  [1] = Title | [2] = id | [3] = Definition | [4] = Lower section content
+\newcommand{\tdefl}[4]{
+    \smallskip
+    \tbox[gray]{Définition : \normalfont{#1}}{\emph{#3}\tcblower#4}\label{def:#2}
+}
+
+\newtcolorbox{boxwicon}[1][gray]
+{
+    sidebyside,
+    boxsep=5pt,
+    arc=1pt,
+    lefthand width=0.8cm,
+    lower separated=false,
+    sidebyside gap=3mm,
+    left=3pt,
+    leftrule=3mm,
+    colback=#1!10!white,
+    colframe=#1!75!black,
+    coltext=#1!75!black,
+}
+
+\newtcolorbox{boxwiconwtitle}[2][gray]
+{
+    boxsep=5pt,
+    arc=1pt,
+    colback=#1!05!white,
+    colframe=#1!90!black,
+    coltext=#1!30!black,
+    fonttitle=\bfseries,
+    title=#2
+}
+
+\NewDocumentEnvironment{card}{O{note} o o o}
+{
+\IfNoValueTF{#2}
+{
+\IfStrEqCase{#1}{
+    {note}
+        {
+            \begin{boxwicon}[gray]
+            \centering\LARGE\faIcon{sticky-note}\tcblower
+        }
+        {info}
+        {
+            \begin{boxwicon}[myblue]
+            \centering\LARGE\faIcon{info-circle}\tcblower
+        }
+        {check}
+        {
+            \begin{boxwicon}[ForestGreen]
+            \centering\LARGE\faIcon{check-circle}\tcblower
+
+        }
+        {warning}
+        {
+            \begin{boxwicon}[Dandelion]
+            \centering\LARGE\faIcon{exclamation-triangle}\tcblower
+        }
+        {error}
+        {
+            \begin{boxwicon}[OrangeRed]
+            \centering\LARGE\faIcon{times-circle}\tcblower
+        }
+        {idea}
+        {
+            \begin{boxwicon}[Cerulean]
+            \centering\LARGE\faIcon{lightbul-o}\tcblower
+        }
+        {citation}
+        {
+            \begin{boxwicon}[Plum]
+            \centering\LARGE\faIcon{commenting}\tcblower
+        }
+        [
+            \begin{boxwicon}[#3]
+            \centering\LARGE\faIcon{#4}\tcblower
+        ]
+}
+}
+{
+\IfStrEqCase{#1}
+{
+{note}
+{
+\begin{boxwiconwtitle}[gray]{\faIcon{sticky-note}\quad #2}
+}
+{info}
+{
+\begin{boxwiconwtitle}[myblue]{\faIcon{info-circle}\quad #2}
+}
+{check}
+{
+\begin{boxwiconwtitle}[ForestGreen]{\faIcon{check-circle}\quad #2}
+}
+{warning}
+{
+\begin{boxwiconwtitle}[Dandelion]{\faIcon{exclamation-triangle}\quad #2}
+}
+{error}
+{
+\begin{boxwiconwtitle}[OrangeRed]{\faIcon{times-circle}\quad #2}
+}
+{idea}
+{
+\begin{boxwiconwtitle}[Cerulean]{\faIcon{lightbulb-o}\quad #2}
+}
+{citation}
+{
+\begin{boxwiconwtitle}[Plum]{\faIcon{commenting}\quad #2}
+}
+[
+\begin{boxwiconwtitle}[#3]{\faIcon{#4}\quad #2}
+    ]
+    }
+    }
+
+    }{
+    \IfNoValueTF{#2}
+    {\end{boxwicon}}
+    {
+\end{boxwiconwtitle}
+}
+}
+
+\newcounter{citationcounter}
+
+\NewDocumentCommand{\citecard}{s o m +m}{
+\IfNoValueTF{#1}
+{
+\IfNoValueTF{#2}
+{
+    \begin{card}[citation]
+}
+{
+    \begin{card}[citation][#2]
+}
+}
+{
+\stepcounter{citationcounter}
+\IfNoValueTF{#2}
+{
+    \begin{card}[citation][Citation \arabic{citationcounter}]
+}
+{
+    \begin{card}[citation][Citation \arabic{citationcounter} - #2]
+        }
+        }
+
+        \textit{\textquote{#4}}
+        \tcblower
+        \begin{flushright}
+            \footnotesize{\bibentry{#3}}
+        \end{flushright}
+    \end{card}
+}

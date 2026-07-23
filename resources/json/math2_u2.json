@@ -1,0 +1,544 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "24 nov",
+      "FechaDeCierre": "28 nov",
+      "SemanaEscolar": 13,
+      "Tema": "Círculo",
+      "Aprendizaje": "Comprenden los conceptos de diámetro y radio de un círculo y serán capaces de identificarlos y calcularlos.",
+      "Contenido": "Diámetro y radio de un círculo",
+      "Leccion": "Introducción al diámetro y radio de un círculo",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de los círculos en diferentes contextos, como en arquitectura, ingeniería y arte. Se presentarán imágenes y ejemplos de objetos cotidianos que tienen forma circular, como relojes, ruedas y mesas, para contextualizar el tema. Luego, se introducirá la definición de diámetro y radio, utilizando un círculo dibujado en el pizarrón. El diámetro se definirá como la distancia entre dos puntos opuestos del círculo que pasa por el centro, y el radio como la distancia desde el centro del círculo hasta cualquier punto de su borde. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos de objetos circulares y definiendo el diámetro y el radio de estos objetos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que identificar y calcular el diámetro y el radio de diferentes círculos dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de medir con precisión y se utilizarán herramientas como reglas y compases. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el diámetro de una rueda de bicicleta o el radio de una mesa redonda. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el diámetro y el radio, así como su aplicación en diferentes contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para identificar y calcular el diámetro y el radio de un círculo. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de identificación y cálculo de diámetro y radio de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "26",
+        "27"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Utiliza el radio de una polea o una rueda para calcular la distancia que recorre un punto en su borde (circunferencia) y relacionarla con el movimiento lineal.",
+      "Worklist": [
+        "A.26. Diámetro de un círculo",
+        "A.27. Radio de un círculo"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "26",
+        "27"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "1 dic",
+      "FechaDeCierre": "5 dic",
+      "SemanaEscolar": 14,
+      "Tema": "Círculo",
+      "Aprendizaje": "Comprenden las fórmulas para calcular el perímetro y el área de un círculo y podrán aplicarlas en problemas prácticos.",
+      "Contenido": "Perímetro y área de un círculo",
+      "Leccion": "Introducción al cálculo del perímetro y área de un círculo",
+      "Inicio": "Para iniciar la lección, el docente recordará los conceptos de diámetro y radio aprendidos en la semana anterior. Luego, se presentarán las fórmulas para calcular el perímetro (circunferencia) y el área de un círculo. Se explicará que el perímetro se calcula multiplicando el diámetro por $\\pi$ ($\\pi D$) o el radio por $2\\pi$ ($2\\pi r$), y que el área se calcula multiplicando $\\pi$ por el cuadrado del radio ($\\pi r^2$). Se utilizarán ejemplos visuales y prácticos para ilustrar estas fórmulas. Los estudiantes serán invitados a participar sugiriendo ejemplos de círculos y calculando su perímetro y área en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el perímetro y el área de diferentes círculos dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas y utilizar el valor de $\\pi$ (3.14) en los cálculos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el perímetro de una piscina circular o el área de un jardín redondo. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el perímetro y el área, así como su aplicación en diferentes contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el perímetro y el área de un círculo. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de perímetro y área de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "28",
+        "29"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Calcula el área de una caja de Petri para determinar la densidad de una colonia de bacterias (número de colonias por $cm^2$).",
+      "Worklist": [
+        "A.28. Perímetro",
+        "A.29. Área"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "28",
+        "29"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "8 dic",
+      "FechaDeCierre": "12 dic",
+      "SemanaEscolar": 15,
+      "Tema": "Círculo",
+      "Aprendizaje": "Utiliza círculos, diámetro, radio, perímetro y área para resolver problemas complejos.",
+      "Contenido": "Resolución de problemas",
+      "Leccion": "Aplicación de conceptos de círculos en la resolución de problemas",
+      "Inicio": "Para iniciar la lección, el docente revisará brevemente los conceptos de diámetro, radio, perímetro y área aprendidos en las semanas anteriores. Luego, se presentarán una serie de problemas que involucren estos conceptos, destacando la importancia de aplicar correctamente las fórmulas y métodos para resolverlos. Se explicarán diferentes estrategias para abordar problemas complejos, como descomponer el problema en pasos más pequeños y verificar los resultados. Los estudiantes serán invitados a participar sugiriendo problemas y soluciones en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en grupos pequeños para resolver una serie de problemas prácticos que involucren los conceptos de círculos, diámetro, radio, perímetro y área. Durante la actividad, el docente ofrecerá retroalimentación y apoyo, asegurando que Comprendan y apliquen correctamente las estrategias de resolución de problemas. Se presentarán problemas contextualizados en situaciones de la vida real, como calcular el área total de una parcela circular dividida en secciones o determinar el perímetro de una pista de atletismo circular. A medida que los estudiantes ganen confianza, se introducirán problemas más complejos y multifacéticos que requieran el uso de múltiples habilidades matemáticas. Las dificultades observadas se abordarán en grupo, fomentando el análisis y la discusión conjunta de errores comunes. Se promoverá el pensamiento crítico y la capacidad de resolución de problemas a través de la reflexión y el análisis de diferentes estrategias.",
+      "Cierre": "Para concluir la lección, se llevará a cabo una discusión reflexiva sobre las estrategias utilizadas para resolver problemas con círculos. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica, así como las soluciones que aplicaron para superarlos. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de resolución de problemas con círculos de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, resolución de problemas en clase, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "30"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve problemas de movimiento circular, calculando la distancia total que recorre un satélite en una órbita circular después de un número determinado de vueltas.",
+      "Worklist": [
+        "A.30. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "30"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "15 dic",
+      "FechaDeCierre": "19 dic",
+      "SemanaEscolar": 16,
+      "Tema": "Polígonos y circunferencias",
+      "Aprendizaje": "Comprenden los diferentes tipos de ángulos relacionados con polígonos y circunferencias y podrán identificarlos y calcularlos.",
+      "Contenido": "Ángulos interiores, ángulos centrales y exteriores, ángulos centrales e inscritos",
+      "Leccion": "Introducción a los ángulos relacionados con polígonos y circunferencias",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de los ángulos en la geometría y su aplicación en diferentes contextos, como en la arquitectura, el diseño y la ingeniería. Se presentarán imágenes y ejemplos de polígonos y circunferencias para contextualizar el tema. Luego, se definirá cada tipo de ángulo: ángulos interiores (los ángulos dentro de un polígono), ángulos centrales (los ángulos con vértice en el centro de una circunferencia), ángulos exteriores (los ángulos formados por la extensión de un lado del polígono y el lado adyacente) y ángulos inscritos (los ángulos cuyo vértice está en la circunferencia y los lados son cuerdas de la circunferencia). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes tipos de ángulos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que identificar y calcular diferentes tipos de ángulos en polígonos y circunferencias dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las definiciones y fórmulas de los ángulos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular ángulos en diseños arquitectónicos o en trayectorias de movimiento circular. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre diferentes tipos de ángulos y su aplicación en diversos contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para identificar y calcular diferentes tipos de ángulos en polígonos y circunferencias. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de identificación y cálculo de ángulos de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "31",
+        "32",
+        "33"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Aplica las propiedades de los ángulos para predecir la trayectoria de un rayo de luz al reflejarse en un espejo cóncavo o convexo (óptica geométrica).",
+      "Worklist": [
+        "A.31. Ángulos interiores",
+        "A.32. Ángulos centrales y exteriores",
+        "A.33. Ángulos centrales e inscritos"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "31",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "12 ene",
+      "FechaDeCierre": "16 ene",
+      "SemanaEscolar": 17,
+      "Tema": "Polígonos y circunferencias",
+      "Aprendizaje": "Comprenden los conceptos de arco de una circunferencia y área de un sector circular y podrán calcularlos.",
+      "Contenido": "Arco de una circunferencia y área de un sector circular",
+      "Leccion": "Introducción al arco de una circunferencia y al área de un sector circular",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de los arcos y sectores circulares en diferentes contextos, como en el diseño de parques, la planificación urbana y la ingeniería. Se presentarán imágenes y ejemplos de objetos y estructuras que incluyen arcos y sectores circulares para contextualizar el tema. Luego, se definirán los conceptos de arco de una circunferencia (la parte de la circunferencia delimitada por dos puntos) y área de un sector circular (la porción de un círculo delimitada por dos radios y el arco correspondiente). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que identificar y calcular la longitud de arcos y el área de sectores circulares en diferentes circunferencias dibujadas en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas: la longitud del arco se calcula multiplicando el ángulo central (en radianes) por el radio, y el área del sector circular se calcula multiplicando el ángulo central (en radianes) por el radio al cuadrado dividido entre 2. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular la longitud de arcos en estructuras arquitectónicas o el área de sectores circulares en diseño de jardines. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre diferentes conceptos y su aplicación en diversos contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para identificar y calcular la longitud de arcos y el área de sectores circulares en circunferencias. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de identificación y cálculo de arcos y sectores circulares de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "34",
+        "35"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Calcula la longitud del arco recorrido por un péndulo o el área barrida por su cuerda para analizar su movimiento oscilatorio.",
+      "Worklist": [
+        "A.34. Arco de una circunferencia",
+        "A.35. Área de un sector circular"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "34",
+        "35"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "19 ene",
+      "FechaDeCierre": "23 ene",
+      "SemanaEscolar": 18,
+      "Tema": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Comprenden cómo calcular el perímetro y el área de diferentes figuras geométricas y podrán aplicarlos en problemas prácticos.",
+      "Contenido": "Perímetro y área",
+      "Leccion": "Introducción al cálculo del perímetro y área de figuras geométricas",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de calcular el perímetro y el área de figuras geométricas en diferentes contextos, como en la construcción, el diseño y la planificación urbana. Se presentarán imágenes y ejemplos de figuras geométricas para contextualizar el tema. Luego, se definirán los conceptos de perímetro (la suma de las longitudes de los lados de una figura) y área (la medida de la superficie contenida dentro de una figura). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el perímetro y el área de diferentes figuras geométricas dibujadas en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo del perímetro y el área de figuras como triángulos, rectángulos, cuadrados, paralelogramos, trapecios y círculos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el perímetro de una parcela de terreno o el área de un piso para instalar una alfombra. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el perímetro y el área de figuras compuestas y su aplicación en diversos contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el perímetro y el área de figuras geométricas. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de perímetro y área de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "36",
+        "37"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Utiliza el área de un pistón para calcular la fuerza total ejercida por un gas a una presión determinada, aplicando la fórmula $F=P \\\\times A$.",
+      "Worklist": [
+        "A.36. Perímetro",
+        "A.37. Área"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "36",
+        "37"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "26 ene",
+      "FechaDeCierre": "30 ene",
+      "SemanaEscolar": 19,
+      "Tema": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Comprenden los conceptos de área lateral y área total de cuerpos geométricos y podrán calcularlos.",
+      "Contenido": "Área lateral y total",
+      "Leccion": "Introducción al cálculo del área lateral y total de cuerpos geométricos",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de calcular el área lateral y total de cuerpos geométricos en diferentes contextos, como en la arquitectura, la ingeniería y el diseño industrial. Se presentarán imágenes y ejemplos de cuerpos geométricos para contextualizar el tema. Luego, se definirán los conceptos de área lateral (la superficie lateral de un cuerpo geométrico, excluyendo las bases) y área total (la suma del área lateral y las áreas de las bases). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el área lateral y el área total de diferentes cuerpos geométricos dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo del área lateral y el área total de cuerpos como prismas, cilindros, pirámides y conos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el área lateral de una caja para pintarla o el área total de un tanque cilíndrico para determinar la cantidad de material necesario para construirlo. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el área lateral y el área total de cuerpos geométricos compuestos y su aplicación en diversos contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el área lateral y el área total de cuerpos geométricos. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de área lateral y área total de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "38"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Calcula el área superficial de un recipiente cilíndrico para estudiar factores que afectan la velocidad de una reacción, como la transferencia de calor.",
+      "Worklist": [
+        "A.38. Área lateral y total"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "38"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2 feb",
+      "FechaDeCierre": "6 feb",
+      "SemanaEscolar": 20,
+      "Tema": "Figuras y cuerpos geométricos",
+      "Aprendizaje": "Comprenden cómo calcular el volumen de diferentes cuerpos geométricos y podrán aplicarlo en la resolución de problemas.",
+      "Contenido": "Volumen y resolución de problemas",
+      "Leccion": "Introducción al cálculo del volumen de cuerpos geométricos y su aplicación en problemas",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de calcular el volumen de cuerpos geométricos en diferentes contextos, como en la construcción, la ingeniería y el diseño de productos. Se presentarán imágenes y ejemplos de cuerpos geométricos para contextualizar el tema. Luego, se definirán los conceptos de volumen (el espacio ocupado por un cuerpo geométrico) y se presentarán las fórmulas para calcular el volumen de prismas, cilindros, pirámides, conos y esferas. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular el volumen de diferentes cuerpos geométricos dibujados en hojas de trabajo. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo del volumen de cuerpos como prismas, cilindros, pirámides, conos y esferas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el volumen de una piscina, el volumen de un tanque de agua o el volumen de un paquete para envío. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la relación entre el volumen de cuerpos geométricos compuestos y su aplicación en diversos contextos. Se promoverá el pensamiento crítico y la capacidad de resolución de problemas a través de la reflexión y el análisis de diferentes estrategias.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular el volumen de cuerpos geométricos y su aplicación en la resolución de problemas. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de volumen de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "39",
+        "40"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Resuelve problemas de densidad, calculando el volumen de un objeto de forma irregular por desplazamiento de agua y usando su masa para encontrar su densidad ($\\\\rho = \\\\dfrac{m}{V}$).",
+      "Worklist": [
+        "A.39. Volumen",
+        "A.40. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "39",
+        "40"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "9 feb",
+      "FechaDeCierre": "13 feb",
+      "SemanaEscolar": 21,
+      "Tema": "Monomios y polinomios",
+      "Aprendizaje": "Comprenden el lenguaje algebraico y la representación de expresiones algebraicas, identificando y escribiendo monomios y polinomios.",
+      "Contenido": "Lenguaje algebraico",
+      "Leccion": "Introducción al lenguaje algebraico y la representación de monomios y polinomios",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia del lenguaje algebraico en las matemáticas y su aplicación en diferentes contextos, como en la resolución de problemas, la modelación de fenómenos y el análisis de datos. Se presentarán ejemplos de expresiones algebraicas para contextualizar el tema. Luego, se definirán los conceptos de monomio (una expresión algebraica con un solo término) y polinomio (una expresión algebraica con dos o más términos). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que identificar y escribir monomios y polinomios a partir de expresiones algebraicas dadas. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de utilizar correctamente el lenguaje algebraico y la notación de monomios y polinomios. Además, se presentarán problemas contextualizados en situaciones de la vida real, como representar matemáticamente el crecimiento de una planta, el costo de producción de un artículo o la relación entre diferentes variables. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la representación de expresiones algebraicas en diferentes contextos y su aplicación en la resolución de problemas.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para identificar y escribir monomios y polinomios en lenguaje algebraico. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de identificación y escritura de monomios y polinomios de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "41"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Traduce leyes fundamentales, como la Segunda Ley de Newton (\"La fuerza es igual a la masa por la aceleración\"), a su expresión algebraica (F=ma).",
+      "Worklist": [
+        "A.41. Lenguaje algebraico"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "41"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "16 feb",
+      "FechaDeCierre": "20 feb",
+      "SemanaEscolar": 22,
+      "Tema": "Monomios y polinomios",
+      "Aprendizaje": "Comprenden cómo sumar y restar monomios y polinomios, aplicándolos en el cálculo del perímetro de figuras geométricas.",
+      "Contenido": "Suma y resta de monomios y polinomios, perímetro de figuras geométricas.",
+      "Leccion": "Introducción a la suma y resta de monomios y polinomios en figuras geométricas.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de las operaciones con monomios y polinomios en las matemáticas y su aplicación en diferentes contextos, como en la resolución de problemas y el análisis de datos. Se presentarán ejemplos de monomios y polinomios para contextualizar el tema. Luego, se explicarán las reglas para sumar y restar monomios y polinomios, haciendo hincapié en la necesidad de combinar términos semejantes (términos con las mismas variables y exponentes). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver ejercicios en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que sumar y restar monomios y polinomios a partir de expresiones algebraicas dadas. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de combinar términos semejantes y simplificar las expresiones resultantes. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el perímetro de figuras geométricas representadas por polinomios, lo que permitirá a los estudiantes aplicar sus conocimientos de suma y resta de polinomios en contextos prácticos. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para sumar y restar monomios y polinomios y su aplicación en el cálculo del perímetro de figuras geométricas. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de suma y resta de monomios y polinomios de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Calcula el perímetro de una instalación experimental (ej. un acelerador de partículas de forma rectangular) cuyas dimensiones están dadas por expresiones algebraicas.",
+      "Worklist": [
+        "A.42. Suma de monomios y polinomios",
+        "A.43. Resta de monomios y polinomios",
+        "A.44. Operaciones combinadas",
+        "A.45. Perímetro de figuras geométricas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "23 feb",
+      "FechaDeCierre": "27 feb",
+      "SemanaEscolar": 23,
+      "Tema": "Operaciones algebraicas",
+      "Aprendizaje": "Comprenden cómo realizar operaciones de suma, resta, multiplicación y división con monomios y polinomios y podrán aplicarlas en la resolución de problemas algebraicos.",
+      "Contenido": "Suma, resta, multiplicación y división de monomios y polinomios.",
+      "Leccion": "Operaciones con monomios y polinomios y sus aplicaciones.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de las operaciones algebraicas con monomios y polinomios en las matemáticas y su aplicación en diferentes contextos, como en la resolución de problemas y la modelación de fenómenos. Se presentarán ejemplos de monomios y polinomios para contextualizar el tema. Luego, se explicarán las reglas para multiplicar y dividir monomios y polinomios, haciendo hincapié en la necesidad de aplicar las propiedades de los exponentes y la distribución en la multiplicación. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver ejercicios en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que realizar operaciones de suma, resta, multiplicación y división con monomios y polinomios. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de simplificar las expresiones resultantes y verificar los resultados obtenidos. Además, se presentarán problemas contextualizados en situaciones de la vida real, como modelar fenómenos naturales o analizar datos utilizando expresiones algebraicas. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para realizar operaciones con monomios y polinomios y su aplicación en la resolución de problemas algebraicos. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de operaciones con monomios y polinomios de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "46",
+        "47",
+        "48",
+        "49"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Manipula fórmulas que contienen polinomios, por ejemplo, al derivar la ecuación de la posición en un movimiento uniformemente acelerado.",
+      "Worklist": [
+        "A.46. Suma y resta de exponentes",
+        "A.47. Multiplicación de exponentes",
+        "A.48. Multiplicación y división de monomios",
+        "A.49. Multiplicación de polinomios"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "46",
+        "47",
+        "48",
+        "49"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2 mar",
+      "FechaDeCierre": "6 mar",
+      "SemanaEscolar": 24,
+      "Tema": "Operaciones algebraicas",
+      "Aprendizaje": "Comprenden cómo utilizar monomios y polinomios para calcular áreas de figuras geométricas y podrán aplicarlos en la resolución de problemas geométricos.",
+      "Contenido": "Áreas de figuras geométricas.",
+      "Leccion": "Aplicación de monomios y polinomios en el cálculo de áreas de figuras geométricas.",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de utilizar expresiones algebraicas para calcular áreas de figuras geométricas en diferentes contextos, como en la construcción, el diseño y la planificación urbana. Se presentarán ejemplos de figuras geométricas y sus áreas representadas por monomios y polinomios para contextualizar el tema. Luego, se explicarán las reglas para aplicar monomios y polinomios en el cálculo de áreas, haciendo hincapié en la necesidad de simplificar las expresiones resultantes. Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a resolver ejercicios en el pizarrón.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que calcular áreas de figuras geométricas utilizando monomios y polinomios. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de aplicar correctamente las fórmulas para el cálculo de áreas de figuras como triángulos, rectángulos, cuadrados, paralelogramos, trapecios y círculos, y representar las áreas mediante expresiones algebraicas. Además, se presentarán problemas contextualizados en situaciones de la vida real, como calcular el área de una parcela de terreno o el área de un piso para instalar una alfombra, utilizando monomios y polinomios. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples operaciones algebraicas y su aplicación en diferentes contextos geométricos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para calcular áreas de figuras geométricas utilizando monomios y polinomios. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de cálculo de áreas utilizando monomios y polinomios de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "50"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Estima el área de un hábitat irregular (como un lago) dividiéndolo en figuras geométricas conocidas para calcular la población total de una especie acuática.",
+      "Worklist": [
+        "A.50. Áreas de figuras geométricas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "50"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "9 mar",
+      "FechaDeCierre": "13 mar",
+      "SemanaEscolar": 25,
+      "Tema": "Sistema de unidades",
+      "Aprendizaje": "Comprenden la importancia de las unidades de longitud, masa y capacidad en la vida cotidiana y podrán convertir entre diferentes unidades del sistema métrico e imperial.",
+      "Contenido": "Unidades de longitud, masa y capacidad",
+      "Leccion": "Introducción a las unidades de longitud, masa y capacidad y su conversión",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de las unidades de medida en la vida cotidiana, mencionando ejemplos de su uso en diferentes contextos, como en la cocina, la ciencia y el comercio. Se presentarán imágenes y ejemplos de diferentes unidades de longitud, masa y capacidad para contextualizar el tema. Luego, se definirán las principales unidades del sistema métrico (milímetros, centímetros, metros, kilómetros para longitud; gramos, kilogramos para masa; mililitros, litros para capacidad) y del sistema imperial (pulgadas, pies, yardas, millas para longitud; onzas, libras para masa; onzas líquidas, pintas, cuartos, galones para capacidad). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que convertir entre diferentes unidades de longitud, masa y capacidad del sistema métrico e imperial. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de utilizar correctamente las fórmulas de conversión y se proporcionarán tablas de conversión para facilitar el proceso. Además, se presentarán problemas contextualizados en situaciones de la vida real, como convertir la altura de una persona de pies a metros, el peso de un objeto de libras a kilogramos o la capacidad de un recipiente de galones a litros. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples conversiones y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para convertir entre diferentes unidades de longitud, masa y capacidad. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de conversión de unidades de longitud, masa y capacidad de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "51",
+        "52",
+        "53"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Utiliza y convierte unidades de masa (gramos, kg) y capacidad (mililitros, L) para preparar disoluciones con una concentración específica en el laboratorio.",
+      "Worklist": [
+        "A.51. Unidades de longitud",
+        "A.52. Unidades de masa",
+        "A.53. Unidades de capacidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "51",
+        "52",
+        "53"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "16 mar",
+      "FechaDeCierre": "20 mar",
+      "SemanaEscolar": 26,
+      "Tema": "Sistema de unidades",
+      "Aprendizaje": "Comprenden la importancia de las unidades de área y volumen en la vida cotidiana y podrán convertir entre diferentes unidades del sistema métrico e imperial.",
+      "Contenido": "Unidades de área y volumen",
+      "Leccion": "Introducción a las unidades de área y volumen y su conversión",
+      "Inicio": "Para iniciar la lección, el docente explicará la importancia de las unidades de área y volumen en la vida cotidiana, mencionando ejemplos de su uso en diferentes contextos, como en la construcción, la planificación urbana y la ciencia. Se presentarán imágenes y ejemplos de diferentes unidades de área y volumen para contextualizar el tema. Luego, se definirán las principales unidades del sistema métrico (centímetros cuadrados, metros cuadrados, hectáreas para área; centímetros cúbicos, litros, metros cúbicos para volumen) y del sistema imperial (pulgadas cuadradas, pies cuadrados, acres para área; pulgadas cúbicas, pies cúbicos, galones para volumen). Los estudiantes serán invitados a participar en la actividad sugiriendo más ejemplos y ayudando a definir los diferentes conceptos.",
+      "Desarrollo": "Los estudiantes trabajarán en parejas para resolver ejercicios prácticos en los que tendrán que convertir entre diferentes unidades de área y volumen del sistema métrico e imperial. Durante la actividad, el docente circulará por el aula para brindar retroalimentación y apoyo individual. Se hará hincapié en la importancia de utilizar correctamente las fórmulas de conversión y se proporcionarán tablas de conversión para facilitar el proceso. Además, se presentarán problemas contextualizados en situaciones de la vida real, como convertir el área de un terreno de metros cuadrados a hectáreas, el volumen de un recipiente de pies cúbicos a litros o el área de una casa de pies cuadrados a metros cuadrados. A medida que los estudiantes se sientan más seguros, se introducirán problemas más complejos que involucren la combinación de múltiples conversiones y su aplicación en diferentes contextos prácticos.",
+      "Cierre": "Para concluir la lección, se realizará una discusión reflexiva sobre las estrategias utilizadas para convertir entre diferentes unidades de área y volumen. Se invitará a los estudiantes a compartir sus experiencias y desafíos encontrados durante la práctica. Se llevará a cabo un ejercicio de autoevaluación donde cada estudiante podrá reflexionar sobre su nivel de comprensión y áreas de mejora. Además, se asignará una tarea para reforzar el aprendizaje en casa, que incluirá una serie de problemas de conversión de unidades de área y volumen de diferentes niveles de dificultad. Se motivará a los estudiantes a traer preguntas o dudas a la siguiente clase para resolver cualquier confusión residual.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos, evaluación formativa"
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "54",
+        "55"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Emplea las unidades correctas de área ($m^2$) y volumen ($m^2$) para calcular magnitudes derivadas como la presión ($N\\/m^2$) o la densidad ($kg\\/m^3$).",
+      "Worklist": [
+        "A.54. Unidades de área y volumen",
+        "A.55. Unidades de capacidad 2",
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "54",
+        "55"
+      ]
+    }
+  ]
+}

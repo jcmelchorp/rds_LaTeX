@@ -1,0 +1,561 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "23 mar",
+      "FechaDeCierre": "27 mar",
+      "SemanaEscolar": 27,
+      "Contenido": "Interacciones de la electricidad y el magnetismo.",
+      "Aprendizaje": "Experimenta e interpreta algunas manifestaciones y aplicaciones de la electricidad, e identifica los cuidados que requiere su uso al revisar los protocolos de seguridad.",
+      "Tema": "Electricidad",
+      "Leccion": "L1. Electricidad",
+      "Inicio": "Se presenta una notable aplicación de la Física en la tecnología médica: el desfibrilador. Esto brinda la oportunidad de combatir una idea errónea: no existe algo como una \"energía vital\" o \"fuerza vital\", al menos en un sentido científico; hasta donde la ciencia puede probar, nuestro organismo funciona a base de fenómenos eléctricos, si bien demasiado complejos para comprenderlos en su totalidad en el presente. Esta sección también tiene la finalidad de hacer un recuento de los conocimientos previos de los estudiantes sobre la electricidad: su naturaleza, la forma en que se produce, transporta y utiliza para satisfacer las necesidades de la civilización. Para complementar el texto, conviene compartir con los estudiantes videos, infografías o diapositivas que muestren las aplicaciones de la electricidad; también puede organizar una lluvia de ideas para que comenten las aplicaciones que conocen por su propia experiencia.",
+      "Desarrollo": "En esta lección se presentan los conceptos más básicos para comprender la electricidad, se sugiere resaltar la idea central de cada uno de ellos. En la sección \"Las cargas eléctricas\", se esboza la historia del desarrollo de las investigaciones en electricidad y se concluye que en su estado actual se acepta que los objetos interactúan eléctricamente cuando poseen cargas eléctricas, las cuales pueden ser positivas y negativas. Además, se establece la relación con la teoría atómica de la materia al identificar la carga positiva con los protones y la carga negativa con los electrones. Por tanto, conviene recordar brevemente las ideas básicas de la teoría atómica y recurrir al uso de modelos icónicos que los estudiantes puedan manipular para comprender los procesos mediante los cuales es posible \"cargar\" algunos objetos de su entorno. Para apoyar a sus estudiantes en la comprensión de los mecanismos de carga, utilice simulaciones, videos o modelos que muestren el movimiento de los electrones en los materiales. En las sugerencias se enlistan algunas de estas herramientas. La subsección \"Fuerza eléctrica\" es breve, pero su contenido es muy amplio. Se recomienda profundizar de acuerdo con el nivel de conocimientos de los estudiantes; dependiendo de ello podrían ser necesarias técnicas particulares de Matemáticas, como operaciones con notación científica, solución de ecuaciones cuadráticas y el uso de vectores. Es conveniente aclarar a los estudiantes que la fórmula de la ley de Coulomb proporciona únicamente la magnitud de la fuerza eléctrica entre dos cargas, que la dirección de la fuerza resultante estará dada por la línea que une las cargas y el sentido depende de que la fuerza sea de atracción o de repulsión, es decir, lo determinan los signos de las cargas eléctricas. Por último, la sección \"Conducción, el camino de la electricidad\" tiene una orientación más cualitativa. Es relevante para abordar la siguiente lección, por ello, conviene mostrar muchos ejemplos de aparatos eléctricos cotidianos y cómo éstos son parte de circuitos eléctricos.",
+      "Cierre": "La elaboración de un mapa conceptual en esta sección es una sugerencia muy importante, en vista de que el tema de la lección es muy extenso y, sin embargo, puede sintetizarse brevemente en unas cuantas ideas clave. Dé seguimiento a los estudiantes para que puedan reconocer los conceptos más fundamentales. Invite a los estudiantes a resolver la ficha 15 de su cuaderno de evidencias.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Identifica el movimiento de los electrones como causa de la electricidad. ",
+        "Comprende y aplica la Ley de Coulomb."
+      ],
+      "Evidencias": [
+        "F15"
+      ],
+      "Actividades": [
+        "1"
+      ],
+      "Proyectos": [
+        "Electrostaticos"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 301-307",
+      "LibroMcMillan": "Física Imagina  160-167",
+      "Vinculacion": "\\textbf{Matemáticas: } Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
+      "Worklist": [
+        "L1. Electricidad",
+        "A.1. Cargas en movimiento",
+        "F15. Energía eléctrica y medio ambiente"
+            ],
+      "Libros": [
+        "Saberes y pensamiento científico 301-307",
+        "Física Imagina  160-167"
+      ],
+      "ActPro": [
+        "1",
+        "F15",
+        "Electrostaticos"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "13 abr",
+      "FechaDeCierre": "17 abr",
+      "SemanaEscolar": 28,
+      "Contenido": "Interacciones de la electricidad y el magnetismo.",
+      "Aprendizaje": "Experimenta e interpreta algunas manifestaciones y aplicaciones de la electricidad, e identifica los cuidados que requiere su uso al revisar los protocolos de seguridad.",
+      "Tema": "Electricidad y el magnetismo",
+      "Leccion": "L2. Electricidad, cuidados y precauciones",
+      "Inicio": "El propósito de la actividad de Inicio es, por un lado, mostrar que la electricidad está presente en nuestro alrededor todo el tiempo, no solamente debido a la tecnología que usamos diariamente, sino también debido a fenómenos naturales, entre los cuales el más impresionante es el rayo. Por otro lado, también pretende mostrar que la electricidad puede ser peligrosa, por lo que debe manejarse con precaución y cuidado. Aunque no es seguro que Franklin haya llevado a cabo la experiencia descrita, esta anécdota destaca los elementos más relevantes para la lección. Los estudiantes cuentan ya con ideas y experiencias previas sobre la electricidad, motívelos a recordarlas y comentarlas; en particular aquellos fenómenos que puedan interpretar intuitivamente como rayos en miniatura: las pequeñas descargas que llamamos \"toques\". Algunos estudiantes quizá estén familiarizados con los chispazos luminosos que se forman al frotar en la oscuridad una cobija o un suéter. Haga notar que estos fenómenos se han observado desde hace mucho tiempo y forman la base sobre la que se desarrollaron las investigaciones de Franklin y otros pioneros de la electricidad. Los estudiantes quizá hayan observado los chispazos producidos al juntar las conexiones de una batería de automóvil o incluso al conectar una clavija en el contacto eléctrico de su casa, muy probablemente han observado chasquidos fuertes, emisión de humo e incluso fuego. Estas experiencias podrían ser mencionadas por los alumnos o pueden observarlas en videos, ello para alertar sobre la potencia energética de la electricidad. Invite a los estudiantes a describir el uniforme y el equipo de protección que hayan observado en electricistas, técnicos en electrónica, instaladores de líneas telefónicas, internet o televisión por cable. Motívelos a encontrar coincidencias y a que relacionen aquellos elementos de protección con el peligro que representan los fenómenos previamente descritos.",
+      "Desarrollo": "La idea central del texto es que el paso de corriente eléctrica por el cuerpo humano es capaz de producir efectos que van desde ligeras molestias hasta la muerte. El enfoque se centra en analizar ese paso de la corriente desde un punto de vista atómico, una imagen en la que los electrones con sus cargas eléctricas negativas se mueven a través de la estructura atómica de la materia y, en razón de su número (el cual determina la intensidad de la corriente eléctrica) y su velocidad, aumenta en mayor o menor medida la energía de los átomos que \"atraviesan\" a su paso. De esta imagen y de la premisa de que el cuerpo funciona a base de sutiles corrientes eléctricas, los impulsos eléctricos que permiten la conexión de nervios y neuronas, se pueden deducir en el nivel elemental las prácticas de precaución y cuidado en el manejo de la electricidad. Por lo anterior, conviene asegurarse de que los estudiantes comprenden estas hipótesis. Puede apoyarlos con la proyección de videos, la elaboración de modelos y la manipulación de simulaciones computacionales. Se sugiere motivar a los estudiantes a proponer hipótesis para explicar cualitativamente cada una de las recomendaciones enlistadas a partir de la página 170 en términos del modelo atómico.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia y que lo apliquen en la prevención de riesgos latentes en su vida cotidiana respecto al manejo y uso de la electricidad. La ficha 16 del Cuaderno de evidencias trata precisamente sobre la electricidad y sus posibles consecuencias en el cuerpo humano. Pida a sus alumnos que la resuelvan de manera individual y revísela en grupo.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Explica los efectos de la corriente eléctrica en el cuerpo humano. ",
+        "Conoce las normas de protección ante riesgos de choque eléctrico en el hogar, la escuela y en lugares abiertos."
+      ],
+      "Evidencias": [
+        "F16"
+      ],
+      "Actividades": [
+        "2"
+      ],
+      "Proyectos": [
+        "Conductores"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 312-315",
+      "LibroMcMillan": "Física Imagina  168-171",
+      "Vinculacion": "\\textbf{Biología: } Explica la participación del sistema nervioso en la coordinación de las funciones del cuerpo humano.",
+      "Worklist": [
+        "L2. Electricidad, cuidados y precauciones",
+        "A.2. Cuidados con el uso de la electricidad",
+        "F16. ¡Cuidado con la electricidad!"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 312-315",
+        "Física Imagina  168-171"
+      ],
+      "ActPro": [
+        "2",
+        "F16",
+        "Conductores"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "20 abr",
+      "FechaDeCierre": "24 abr",
+      "SemanaEscolar": 29,
+      "Contenido": "Interacciones de la electricidad y el magnetismo.",
+      "Aprendizaje": "Relaciona e interpreta fenómenos comunes del magnetismo y experimenta con la interacción entre imanes.",
+      "Tema": "Magnetismo",
+      "Leccion": "L3. Electricidad y magnetismo",
+      "Inicio": "El propósito de la actividad de Inicio es introducir el concepto de magnetismo por medio de un fenómeno complejo que puede verse como una obra de arte. Se busca recuperar conocimientos previos en los estudiantes, quienes quizá hayan tenido ya experiencias previas en la manipulación de imanes o conozcan algunas de sus aplicaciones como parte activa de dispositivos sencillos. Relacione estos conocimientos previos con el funcionamiento de aparatos eléctricos y electrodomésticos, como timbres, bocinas, motores eléctricos, etcétera.",
+      "Desarrollo": "La primera parte de esta sección se centra en caracterizar de manera general a los imanes, mostrando que siempre se presentan en ellos dos polos que concentran la interacción. Mediante actividades experimentales y recursos gráficos se muestra la existencia del campo magnético. El concepto de campo de fuerza no es nuevo, pues se presenta a los estudiantes relacionado con la fuerza de gravedad; sin embargo, el enfoque sí es nuevo, pues ahora se centra en describir las interacciones entre imanes en términos de ese campo. El nuevo punto de vista es considerar la interacción entre campos, más que entre partículas. Es conveniente, por tanto, apoyar a los estudiantes mediante la mayor cantidad de recursos visuales, experimentos, simulaciones y demostraciones, para evitar errores conceptuales o ideas erróneas. La segunda parte de esta sección establece la conexión entre electricidad y magnetismo. La idea es fácil de enunciar, pero puede ser difícil de ilustrar: cuando una carga está en movimiento acelerado su campo eléctrico genera un campo magnético a su alrededor. Lo mejor en este punto puede ser mostrar simulaciones y animaciones que permitan visualizar los campos. Puede surgir la duda en el estudiante acerca de las condiciones necesarias para establecer esta conexión, y es conveniente discutirla mediante preguntas como: ¿Las cargas estáticas dan origen a un campo magnético? ¿Qué tipo de movimiento deben presentar las cargas para formar campos magnéticos? ¿Tiene alguna importancia la trayectoria que sigue la carga? Estas preguntas son relevantes porque a continuación se presenta la teoría de los dominios magnéticos, según la cual cada átomo puede considerarse como un imán, pues los electrones, que son cargas eléctricas, están en movimiento orbital y, por ello, acelerado, alrededor del núcleo. Es decir, tanto la carga como los desplazamientos involucrados son diminutos, pero sobre la aceleración poco se puede decir. Aquí surgen dificultades teóricas que van más allá de los alcances del curso. Otra dificultad conceptual que conviene aclarar es la del comportamiento colectivo, es decir, el hecho de que la suma de los efectos magnéticos de todos los átomos o dominios puede dar origen a un imán, hecho que se resalta al representar el magnetismo de toda la Tierra con un enorme imán. De ser posible, comente con los estudiantes que se trata de un principio físico o una consecuencia de la suma vectorial de los campos magnéticos para evitar ideas erróneas o infundadas acerca del modo en que un fenómeno microscópico se convierte en uno macroscópico. La última parte de la sección está dedicada a la inducción electromagnética, y será la más relevante para las aplicaciones tecnológicas y para el resto del libro. Si las dos secciones precedentes se trabajan adecuadamente, esta sección resultará fácil de abordar. Además, existen muchos recursos gráficos, visuales y experimentos para ilustrarla.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia y que lo relacionen con situaciones de la vida cotidiana.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Comprende la relación entre electricidad y magnetismo. ",
+        "Explica el funcionamiento básico de dispositivos electromagnéticos simples."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "3",
+        "4"
+      ],
+      "Proyectos": [
+        "Induccion"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 234-236",
+      "LibroMcMillan": "Física Imagina  172-177",
+      "Vinculacion": "\\textbf{Matemáticas: } Encuentra la distancia de un punto a una recta y la distancia entre dos rectas paralelas.",
+      "Worklist": [
+        "L3. Electricidad y magnetismo",
+        "A.3. ¿Qué sabes sobre el magnetismo?",
+        "A.4. Relación entre electricidad y magnetismo"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 234-236",
+        "Física Imagina  172-177"
+      ],
+      "ActPro": [
+        "3",
+        "4",
+        "Induccion"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "27 abr",
+      "FechaDeCierre": "1 may",
+      "SemanaEscolar": 30,
+      "Contenido": "Interacciones de la electricidad y el magnetismo.",
+      "Aprendizaje": "Experimenta e interpreta el comportamiento de la luz como resultado de la interacción entre electricidad y magnetismo.",
+      "Tema": "Luz visible",
+      "Leccion": "L4. Luz visible",
+      "Inicio": "En esta sección se establece la relación de la luz con el sentido de la vista. Partiendo de un repaso de la anatomía del ojo se plantea el fenómeno de la visión desde la perspectiva de la Física al señalar cómo intervienen los fenómenos de refracción y reflexión de la luz en el interior del ojo. Ilustre la formación de imágenes en el ojo humano usando una lupa y mostrando cómo se forman imágenes invertidas, también puede usar o solicitar a los alumnos que construyan una cámara oscura para ese propósito. Amplíe la reflexión planteada en el texto invitando a los estudiantes a comparar los sentidos, pues la vista es radicalmente distinta a los demás en un aspecto: mientras que el tacto y el gusto requieren de contacto directo, el olfato y el oído pueden ocurrir a cierta distancia, con un alcance limitado; pero la vista está prácticamente ilimitada en alcance: podemos ver estrellas y galaxias a simple vista, con mayor o menor agudeza. También puede invitarlos a enumerar los tipos de luz que conocen: infrarroja, ultravioleta o luz negra, luz blanca, luz láser, etcétera; y, si es posible, algunas de sus aplicaciones.",
+      "Desarrollo": "En el tema \"Características de la luz\", se plantean las leyes de la óptica. El enfoque es cualitativo y el objetivo del texto es familiarizar a los estudiantes con los fenómenos de la reflexión y la refracción de la luz y, adicionalmente, con el hecho de que la luz viaja a una velocidad muy grande, pero finita. Los elementos del modelo físico están enunciados de manera implícita y convendrá hacerlos notar a los estudiantes:  La luz se propaga en línea recta, esto se demuestra en el experimento de la página 179, con la luz láser, y puede hacerse más evidente aún si se realiza en condiciones de semioscuridad. Conviene aclarar a los estudiantes que la luz láser no es igual a la luz blanca, pero tienen la misma naturaleza, por lo que las conclusiones establecidas para el láser son válidas para la luz blanca y, de hecho, para otros tipos de luz.  En el experimento también se establece la ley básica de la reflexión: la igualdad del ángulo del rayo incidente con el ángulo del rayo reflejado.  Las conclusiones del experimento se usan para explicar observaciones cualitativas que ya se han estudiado en los cursos de Ciencias en Primaria: que un objeto en particular puede absorber casi toda, parte o nada de la luz que incide sobre él y que, en consecuencia, puede ser opaco, translúcido o transparente. Para favorecer la comprensión de la ley de reflexión puede apoyarse, adicionalmente, en videos, animaciones, simulaciones, diagramas o modelos icónicos. Y una vez establecida la ley de la reflexión, puede invitar a los alumnos a citar ejemplos de este fenómeno en la naturaleza y la forma en que es aprovechada en aparatos o dispositivos de la vida cotidiana mediante el uso de espejos. El experimento de las páginas 180 y 181 muestra la refracción de la luz de manera cualitativa. Puede ampliar el experimento usando el puntero láser del primer experimento, por ejemplo, haciendo incidir el rayo dentro de un recipiente vacío y, luego, llenándolo con agua y observando la nueva posición del punto iluminado. Aproveche el resultado para indicar que el haz de luz se quiebra o refracta al pasar de un medio material a otro. El experimento puede ser más ilustrativo si utiliza dos punteros láser de diferente color, pues podría demostrar que el ángulo en que se desvía la luz depende también de su color. Esto sería ideal para la parte final del Desarrollo, donde se trata de la descomposición de la luz blanca en el espectro de colores.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia, y lo apliquen en la comprensión del funcionamiento de dispositivos de la vida cotidiana. Le sugerimos que resuelva con sus alumnos la ficha 17 del Cuaderno de evidencias para que analicen el problema de la contaminación lumínica y propongan acciones para evitarla o disminuirla.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Comprende los conceptos de reflexión, refracción y descomposición de la luz. ",
+        "Identifica la reflexión y la refracción de la luz en fenómenos y dispositivos ópticos simples."
+      ],
+      "Evidencias": [
+        "F17"
+      ],
+      "Actividades": [
+        "5"
+      ],
+      "Proyectos": [
+        "Descomposicion"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 323-325",
+      "LibroMcMillan": "Física Imagina  178-183",
+      "Vinculacion": "\\textbf{Matemáticas: } Encuentra y calcula los ángulos que se forman al intersecar dos segmentos.",
+      "Worklist": [
+        "L4. Luz visible",
+        "A.5. ¡Qué onda con la luz!",
+        "F17. Luces deslumbrantes"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 323-325",
+        "Física Imagina  178-183"
+      ],
+      "ActPro": [
+        "5",
+        "F17",
+        "Descomposicion"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "4 may",
+      "FechaDeCierre": "8 may",
+      "SemanaEscolar": 31,
+      "Contenido": "Interacciones de la electricidad y el magnetismo.",
+      "Aprendizaje": "Explica el funcionamiento de aparatos tecnológicos de comunicación, a partir de las ondas electromagnéticas.",
+      "Tema": "Ondas electromagnéticas",
+      "Leccion": "L5. Ondas electromagnéticas",
+      "Inicio": "En el tema \"Características de la luz\", se plantean las leyes de la óptica. El enfoque es cualitativo y el objetivo del texto es familiarizar a los estudiantes con los fenómenos de la reflexión y la refracción de la luz y, adicionalmente, con el hecho de que la luz viaja a una velocidad muy grande, pero finita. Los elementos del modelo físico están enunciados de manera implícita y convendrá hacerlos notar a los estudiantes:  La luz se propaga en línea recta, esto se demuestra en el experimento de la página 179, con la luz láser, y puede hacerse más evidente aún si se realiza en condiciones de semioscuridad. Conviene aclarar a los estudiantes que la luz láser no es igual a la luz blanca, pero tienen la misma naturaleza, por lo que las conclusiones establecidas para el láser son válidas para la luz blanca y, de hecho, para otros tipos de luz.  En el experimento también se establece la ley básica de la reflexión: la igualdad del ángulo del rayo incidente con el ángulo del rayo reflejado.  Las conclusiones del experimento se usan para explicar observaciones cualitativas que ya se han estudiado en los cursos de Ciencias en Primaria: que un objeto en particular puede absorber casi toda, parte o nada de la luz que incide sobre él y que, en consecuencia, puede ser opaco, translúcido o transparente. Para favorecer la comprensión de la ley de reflexión puede apoyarse, adicionalmente, en videos, animaciones, simulaciones, diagramas o modelos icónicos. Y una vez establecida la ley de la reflexión, puede invitar a los alumnos a citar ejemplos de este fenómeno en la naturaleza y la forma en que es aprovechada en aparatos o dispositivos de la vida cotidiana mediante el uso de espejos. El experimento de las páginas 180 y 181 muestra la refracción de la luz de manera cualitativa. Puede ampliar el experimento usando el puntero láser del primer experimento, por ejemplo, haciendo incidir el rayo dentro de un recipiente vacío y, luego, llenándolo con agua y observando la nueva posición del punto iluminado. Aproveche el resultado para indicar que el haz de luz se quiebra o refracta al pasar de un medio material a otro. El experimento puede ser más ilustrativo si utiliza dos punteros láser de diferente color, pues podría demostrar que el ángulo en que se desvía la luz depende también de su color. Esto sería ideal para la parte final del Desarrollo, donde se trata de la descomposición de la luz blanca en el espectro de colores.",
+      "Desarrollo": "Esta parte de la lección se divide en tres secciones. En la sección introductoria, páginas 184 y 185, se recuerda a los estudiantes que las ondas electromagnéticas se producen siempre que se tiene una carga eléctrica acelerada; la idea clave es que una antena emisora es un circuito eléctrico en el que se acelera la carga para emitir señales en forma de ondas electromagnéticas, y la antena receptora transforma la señal electromagnética en corrientes eléctricas, es decir, actúa de manera inversa. El experimento de la página 185 demuestra la existencia de las ondas electromagnéticas y que los dispositivos de telecomunicaciones son sensibles a ellas. Use simulaciones para fomentar en los estudiantes el análisis cualitativo de la situación. La sección termina con la introducción de la fórmula de Planck, que da pie a clasificar el espectro electromagnético en términos de la frecuencia de las ondas. La sección titulada \"El espectro electromagnético\" presenta ejemplos de las aplicaciones tecnológicas particulares que se dan a cada región del espectro electromagnético. Para combatir ideas erróneas, mencione que las fuentes de radiación electromagnética pueden emitir en una franja de frecuencias, pero no lo hacen de manera homogénea, sino que la emisión se concentra en una frecuencia en particular, donde emite con mayor intensidad que el resto; por ejemplo, el Sol emite con mayor intensidad en la región visible (y en particular, el color amarillo), en razón de ello nuestros ojos se han adaptado evolutivamente a su luz; aunque hay dispositivos muy especializados, llamados fuentes monocromáticas, que emiten en una sola frecuencia, como el láser, los leds o las lámparas de vapor. Fomente la habilidad matemática de los alumnos planteando problemas para calcular la frecuencia, longitud de onda y la energía de ondas electromagnéticas en particular. Para reforzar el aprendizaje de las aplicaciones comparta con los estudiantes recursos audiovisuales o infografías, e invítelos a identificar qué tipo de radiación electromagnética utilizan los aparatos de su casa, escuela y comunidad. La sección final de esta parte de la lección: \"Aplicaciones en la tecnología de comunicaciones\", está dedicada a explicar el funcionamiento de la telefonía celular y el gps . Para comprobar el grado de comprensión que los estudiantes adquieran sobre los principios básicos de estas tecnologías, puede invitarlos a compartir hipótesis para explicar fallas en la comunicación celular cuando se atraviesan túneles o al interior de edificios con grandes estructuras metálicas.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia y lo apliquen en el análisis cualitativo y cuantitativo de fenómenos simples. La ficha 18 del Cuaderno de evidencias relaciona las ondas sísmicas con las electromagnéticas en las alertas sísmicas. Pida que la resuelvan y expliquen por qué son eficientes y útiles estos sistemas de prevención.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Comprende qué es el espectro electromagnético y cómo se clasifica. ",
+        "Explica los principios básicos del funcionamiento de la telefonía celular y el GPS."
+      ],
+      "Evidencias": [
+        "F18"
+      ],
+      "Actividades": [
+        "6",
+        "7"
+      ],
+      "Proyectos": [
+        "Ondas Electromagneticas"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 318-323",
+      "LibroMcMillan": "Física Imagina  184-189",
+      "Vinculacion": "\\textbf{Matemáticas: } Usa la notación científica al realizar cálculos con cantidades muy grandes o muy pequeñas.",
+      "Worklist": [
+        "L5. Ondas electromagnéticas",
+        "A.6. Espectro electromagnético",
+        "A.7. Radiación electromagnética",
+        "F18. Me mantengo alerta"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 318-323",
+        "Física Imagina  184-189"
+      ],
+      "ActPro": [
+        "6",
+        "7",
+        "F18",
+        "Ondas Electromagneticas"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "11 may",
+      "FechaDeCierre": "15 may",
+      "SemanaEscolar": 32,
+      "Contenido": "Composición del Universo y Sistema Solar.",
+      "Aprendizaje": "Indaga algunos avances recientes en la comprensión sobre la evolución del Universo y su composición.",
+      "Tema": "Universo y su composición",
+      "Leccion": "L6. El Universo",
+      "Inicio": "El propósito de la actividad de Inicio es mostrar que el conocimiento de la estructura del Universo es una obra en colaboración, en la cual participan científicos de todo el mundo y requiere del uso de herramientas de observación muy sofisticadas que realizan sondeos durante décadas. Para complementar esta introducción, existen infinidad de recursos disponibles, como videos, películas, documentales, animaciones, simulaciones y mapas virtuales. Es conveniente que la lección sea, esencialmente, una experiencia visual.",
+      "Desarrollo": "La lección comienza presentando las características básicas de las galaxias y la clasificación, propuesta por Hubble, según su aspecto, además de la clasificación según su cantidad de estrellas. Es recomendable utilizar muchos recursos audiovisuales y gráficos para mostrar ejemplos a los estudiantes. Para complementar el texto, puede presentar un esbozo del estudio y descubrimientos sobre las galaxias, desde la época en que se creía que nuestro Universo se reducía a la Vía Láctea hasta los sondeos actuales. Se presenta el año luz como unidad de distancia adecuada a escala galáctica. Aunque los alumnos pueden mostrar particular interés por este tema, pueden tener dificultades para concebir adecuadamente las escalas de distancia en la descripción estructural de las galaxias. Por ello, es conveniente plantear ejercicios numéricos encaminados a asimilar la escala; puede pedir, por ejemplo, que determinen el tiempo necesario para atravesar una galaxia en particular, de lado a lado, o la cantidad de veces que cabe en su diámetro el Sistema Solar. También pueden hacerse modelos de escala comparativos, al estilo de \"si nuestra galaxia es una canica, ¿a qué distancia de ella hay que poner otra canica que represente la galaxia más cercana?\". La última sección del Desarrollo presenta las mayores estructuras del Universo: los cúmulos y los supercúmulos. La atención en este punto puede ponerse en evitar ideas erróneas, como imaginar que el Universo está inmerso en un \"espacio\" más grande que lo contiene, que el mapa ha sido elaborado desde afuera, o que el Universo mismo tiene la forma de una caja, como la mostrada en la figura 6.11.",
+      "Cierre": "El propósito es que los estudiantes comparen sus ideas previas sobre el Universo con la descripción presentada durante la lección y reflexionen sobre la importancia de la fuerza de gravedad para describir la evolución del Universo.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Resuelve problemas que involucran el año luz y el parsec. ",
+        "Relaciona la gravedad con la estructura y evolución del Universo."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "8",
+        "9"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 262-264",
+      "LibroMcMillan": "Física Imagina  190-195",
+      "Vinculacion": "\\textbf{Matemáticas: } Usa la notación científica al realizar cálculos con cantidades muy grandes o muy pequeñas.",
+      "Worklist": [
+        "L6. El Universo",
+        "A.8. Las galaxias",
+        "A.9. Grupos de galaxias"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 262-264",
+        "Física Imagina  190-195"
+      ],
+      "ActPro": [
+        "8",
+        "9"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "18 may",
+      "FechaDeCierre": "22 may",
+      "SemanaEscolar": 33,
+      "Contenido": "Composición del Universo y Sistema Solar.",
+      "Aprendizaje": "Indaga algunos avances recientes en la comprensión sobre la evolución del Universo y su composición.",
+      "Tema": "Origen y evolución del Universo",
+      "Leccion": "L7. Origen y evolución del Universo",
+      "Inicio": "Esta sección introduce el tema de manera indirecta, presentando el acelerador de partículas más grande que existe, el Gran Colisionador de Hadrones. La intención es mostrar, por un lado, que la ciencia y, en particular el estudio del Universo, es una tarea de cooperación internacional, en la que además de físicos participan otros científicos e ingenieros. Por otro lado, también se pretende señalar que para comprender el origen del Universo es necesario entender las leyes que rigen a las partículas elementales. Esta aparente paradoja se explica al presentar el modelo de la Gran Explosión.",
+      "Desarrollo": "El texto introductorio de esta parte de la lección menciona un argumento temprano que refutaba la existencia infinita del Universo, la paradoja de Olbers. Existe otro argumento con la misma conclusión, elaborado en el siglo xix , la muerte térmica del Universo. Puede proponer a los estudiantes que investiguen acerca de él e invitarlos a reflexionar sobre el modo en que diferentes principios físicos guardan armonía o coherencia en sus conclusiones. En las páginas 200 y 201 se presenta el modelo de la Gran Explosión y se describe a grandes rasgos la evolución del Universo. La descripción es meramente cualitativa, complementada con algunos datos calculados a partir de las teorías cosmológicas actuales. La idea central es que la gravedad es la fuerza responsable de la evolución del Universo. Sin embargo, es importante que advierta que la fuerza que provocó el Big Bang es actualmente desconocida, así como la que provoca la expansión acelerada del Universo.",
+      "Cierre": "El propósito es que los alumnos reconsideren la información presentada en el Inicio en términos, ahora, de los conceptos relacionados con el origen y la evolución del Universo. Invite a los estudiantes a resolver la ficha 15 de su Cuaderno de evidencias.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Comprende que el Big Bang es el modelo más actual sobre el origen del Universo y que está aún en desarrollo."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "Proyectos": [
+        "Universo"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 262-264",
+      "LibroMcMillan": "Física Imagina  196-201",
+      "Vinculacion": "\\textbf{Matemáticas: } Identifica tendencias en los datos centrándose en sus valores representativos y sus variaciones.",
+      "Worklist": [
+        "L7. Origen y evolución del Universo",
+        "A.10. Expansión del universo",
+        "A.11. Mecanismos de las estrellas",
+        "A.12. Los cuerpos cósmicos",
+        "A.13. Evolución del Universo",
+        "Universo"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 262-264",
+        "Física Imagina  196-201"
+      ],
+      "ActPro": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "Universo"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "25 may",
+      "FechaDeCierre": "29 may",
+      "SemanaEscolar": 34,
+      "Contenido": "Composición del Universo y Sistema Solar.",
+      "Aprendizaje": "Indaga cómo se lleva a cabo la exploración de los cuerpos celestes, por medio de la detección y procesamiento de las ondas electromagnéticas que emiten.",
+      "Tema": "Conocimiento y exploración del Universo",
+      "Leccion": "L8. Descubrimiento del Universo",
+      "Inicio": "El objetivo general de la lección es esbozar algunos de los métodos de la Astronomía. En la sección de Inicio se muestra la historia de William y Caroline Herschel y su catálogo de estrellas. La intención es mostrar la utilidad de la recopilación cuidadosa de las observaciones astronómicas para elaborar teorías sobre la evolución de las estrellas y de otros objetos celestes. También se aprovecha la oportunidad para reflexionar sobre cuestiones sociales relacionadas con la ciencia, como la importancia del trabajo colaborativo, el papel de la mujer en la ciencia y el apoyo familiar para el desarrollo profesional. Motive a los estudiantes a notar estos diferentes aspectos en la anécdota presentada. Puede pedir que comparen la forma hipotética de la galaxia de Herschel con la imagen actual y comentar que en aquella época se creía que nuestra galaxia era todo el Universo. Se recomienda invitar a los estudiantes a indagar sobre este episodio de la historia de la ciencia, y sobre el descubrimiento posterior de otras galaxias, llamadas entonces \"Universos islas\", y comentar sobre las dificultades encaradas para determinar la forma de nuestra galaxia.",
+      "Desarrollo": "Esta parte de la lección presenta de manera gradual la forma en que el conocimiento del Universo ha ido mejorando gracias a observaciones cada vez más sofisticadas. Se comienza con observaciones simples y cotidianas, que proporcionan información valiosa sobre la disposición de los objetos a la distancia. Fomente la habilidad matemática de los estudiantes pidiendo que lean el documento sugerido en el texto, donde se explica el método geométrico usado por Eratóstenes. Solicite que lo expliquen con sus propias palabras y luego realicen los retos propuestos en el mismo documento. Si la motivación en los estudiantes es la suficiente, puede compartir con ellos algunos de los métodos usados por Aristarco para llegar a las ecuaciones que se presentan en la Práctica de la página 204. Los principales razonamientos requieren solamente de geometría y algo de álgebra. Invite a los estudiantes a realizar la actividad experimental de la página 204. Sugiérales tomar notas y registrar todo lo que llame su atención, como el paso de estrellas fugaces o fenómenos meteorológicos, para posteriormente comentarlos en grupo. Puede aprovechar para hablarles un poco de arqueoastronomía, mencionando, por ejemplo, los logros de los astrónomos mayas. La idea clave de la última parte del Desarrollo es que actualmente la Astronomía es, esencialmente, una ciencia computacional, en la que cada día cobra más importancia el uso de la inteligencia artificial.",
+      "Cierre": "Se espera que los alumnos reflexionen de nuevo sobre la analogía de Herschel para explicar los métodos usados por los científicos para conocer el Universo.",
+      "EjesArticuladores": "Igualdad de género.",
+      "EvaluacionFormativa": [
+        "Comprende la relación solar-estelar."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "14",
+        "15",
+        "16"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 231",
+      "LibroMcMillan": "Física Imagina  202-207",
+      "Vinculacion": "\\textbf{Matemáticas: } Determina la medida de ángulos inscritos y centrales, así como de arcos de circunferencia.",
+      "Worklist": [
+        "L8. Descubrimiento del Universo",
+        "A.14. El Universo a simple vista",
+        "A.15. El telescopio y paralaje",
+        "A.16. Exploración de cuerpos celestes por medio de ondas electromagnéticas"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 231",
+        "Física Imagina  202-207"
+      ],
+      "ActPro": [
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "1 jun",
+      "FechaDeCierre": "5 jun",
+      "SemanaEscolar": 35,
+      "Contenido": "Composición del Universo y Sistema Solar.",
+      "Aprendizaje": "Relaciona e interpreta las características y dinámica del Sistema Solar con la gravitación y el movimiento de los planetas, en particular el caso de la Tierra y la Luna.",
+      "Tema": "Características y dinámica del Sistema Solar.",
+      "Leccion": "L9. Sistema Solar",
+      "Inicio": "El propósito del texto inicial es presentar al Sol como el cuerpo celeste más importante del Sistema Solar por dos razones físicas: por su atracción gravitacional y por la cantidad de energía que emite. Proponga una lluvia de ideas en la cual los estudiantes elaboren una lista de los múltiples beneficios que recibimos, directa o indirectamente, del Sol, desde los más evidentes, como su calor y su luz, hasta algunos más especializados, como la fotosíntesis y, por ende, la producción de alimentos, la absorción de vitaminas en nuestro organismo, las celdas solares, la generación de vientos en el planeta, etcétera.",
+      "Desarrollo": "En la primera sección se presenta la teoría sobre el origen del Sistema Solar a partir de una nube de polvo, remanente de otros procesos en la evolución estelar, que se presenta de manera sintetizada en la infografía de las páginas 198 y 199. En la segunda parte se profundiza en que el origen y la evolución del Sistema Solar se deben a la fuerza de gravedad. Asegúrese de que los estudiantes comprenden los mecanismos por los cuales la gravedad es responsable de la estructura del Sistema Solar y de las características de los planetas.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron para responder las cuestiones planteadas en el Inicio.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Explica los efectos de la fuerza de gravedad en el Sistema Solar y en los procesos nucleares en el Sol y las estrellas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "17",
+        "18",
+        "19"
+      ],
+      "Proyectos": [
+        "Telescopio"
+      ],
+      "LibroSep": "",
+      "LibroMcMillan": "Física Imagina  208-211",
+      "Vinculacion": "\\textbf{Matemáticas: } Investiga figuras relacionadas con círculos y propiedades de los círculos.",
+      "Worklist": [
+        "L9. Sistema Solar",
+        "A.17. El Sol",
+        "A.18. Estructura del Sol",
+        "A.19. El Sistema Solar",
+        "Telescopio"
+      ],
+      "Libros": [
+        "Física Imagina  208-211"
+      ],
+      "ActPro": [
+        "17",
+        "18",
+        "19",
+        "Telescopio"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "8 jun",
+      "FechaDeCierre": "12 jun",
+      "SemanaEscolar": 36,
+      "Contenido": "Fenómenos, procesos y factores asociados al cambio climático.",
+      "Aprendizaje": "Formula hipótesis que relacionan la actividad humana con el aumento de temperatura en el planeta y la emisión de gases de efecto invernadero; diferencia entre calor, radiación y temperatura al explicar los procesos que lo originan.",
+      "Tema": "Diferencia entre calor y temperatura. Formas de transmisión del calor. Efecto invernadero",
+      "Leccion": "L10. Efecto invernadero, causas y consecuencias",
+      "Inicio": "Esta lección aborda el tema del efecto invernadero como introducción al problema del cambio climático, que será tratado a continuación. Antes de iniciar, le sugerimos que organice una sesión de recuperación de conocimientos para que los estudiantes recuerden los conceptos de calor, temperatura y los mecanismos de transferencia de calor. La sección inicial plantea el tema describiendo el cada vez más común fenómeno de la isla de calor urbana, invite a sus alumnos a explicarlo en términos del modelo cinético de partículas y de los conceptos ya estudiados de calor, temperatura y transferencia de calor.",
+      "Desarrollo": "La primera parte del Desarrollo enfatiza dos hechos importantes. En primer lugar, que cada objeto material puede absorber el calor con una eficiencia que depende de sus características particulares, como su color o su composición. En segundo lugar, que el efecto invernadero es un fenómeno natural, presente en muchos cuerpos celestes con atmósferas densas. Para comprender el principio físico detrás del efecto invernadero, puede centrar la atención de los estudiantes en el invernadero real, como el de la figura 10.3, y pedirles que analicen lo que ocurre con la luz del Sol. Los hechos importantes que deben notar son: 1) que el efecto es producido por la cubierta de vidrio o plástico transparente; 2) que al atravesar esa cubierta la luz se refleja en parte, se refracta en parte y otra más (aunque quizá muy pequeña) se absorbe (importante: no absorbe la parte infrarroja, sino que la refleja y la refracta); 3) que la luz que pasa a través de la cubierta transparente se refleja en los objetos dentro del invernadero y vuelve a ser reflejada sobre la cubierta, pero esta vez desde el interior y es reflejada otra vez, etcétera, de esta manera la luz es absorbida de manera importante por el interior del invernadero, y 4) que parte de la luz del Sol (su franja infrarroja) porta energía en forma de calor. La conclusión de esta secuencia de hechos es que el interior del invernadero gana calor y, por tanto, aumenta su temperatura. Para comprobar su grado de comprensión conceptual, pida a los estudiantes que identifiquen qué parte de la atmósfera juega aquí el papel de la cubierta transparente del invernadero.",
+      "Cierre": "El propósito es que los alumnos expliquen mediante conceptos físicos la situación descrita al inicio y así consoliden los conceptos estudiados en la lección.",
+      "EjesArticuladores": "Pensamiento crítico.",
+      "EvaluacionFormativa": [
+        "Relaciona el efecto invernadero con el calentamiento global, y éste con el cambio climático."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "20"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 175-176",
+      "LibroMcMillan": "Física Imagina  212-215",
+      "Vinculacion": "\\textbf{Matemáticas: } Relaciona e interpreta relaciones proporcionales y no proporcionales.",
+      "Worklist": [
+        "L10. Efecto invernadero, causas y consecuencias",
+        "A.20. El efecto invernadero"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 175-176",
+        "Física Imagina  212-215"
+      ],
+      "ActPro": [
+        "20"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "15 jun",
+      "FechaDeCierre": "19 jun",
+      "SemanaEscolar": 37,
+      "Contenido": "Fenómenos, procesos y factores asociados al cambio climático.",
+      "Aprendizaje": "Formula hipótesis que relacionan la actividad humana con el aumento de temperatura en el planeta y la emisión de gases de efecto invernadero; diferencia entre calor, radiación y temperatura al explicar los procesos que lo originan.",
+      "Tema": "Gases de efecto invernadero. Consecuencias de los gases de efecto invernadero en la atmósfera y a nivel regional y global",
+      "Leccion": "L11. Gases de efecto invernadero",
+      "Inicio": "La situación inicial tiene la intención de demostrar desde el principio que el cambio climático es un problema global, cuya solución amerita la participación de todos los ciudadanos del mundo. Conviene que organice una lluvia de ideas para recuperar los conocimientos previos que los estudiantes tengan acerca de los gases de efecto invernadero adquiridos, probablemente, en los medios de comunicación.",
+      "Desarrollo": "Las ideas centrales de la lección, que se presentanen esta parte, son tres: 1. Existen gases de efecto invernadero producidos y asimilados enla atmósfera y la corteza terrestre de manera natural.2. Diversas actividades humanas (como la industria y el transporte)han contribuido a aumentar la concentración de los gases y, porende, a desequilibrar sus ciclos naturales.3. La emisión de gases de efecto invernadero por actividades humanas tiene un comienzo en una etapa histórica bien identificada.Es conveniente que los estudiantes comprendan la información queen el texto aparece sintetizada en las figuras 11.2 a 11.5. Se sugiereque complemente las explicaciones aportadas; por ejemplo, puede resultar curioso para los estudiantes que la figura 11.3 sugiera a unavaca como la fuente principal de emisión de metano, y que tiene unpotencial de efecto invernadero 25 veces más alto que el dióxido decarbono, cuya fuente es un motor de combustión interna.",
+      "Cierre": "El propósito es que los alumnos relacionen el aumento de la concentración de gases de efecto invernadero con las actividades humanas y demuestren su comprensión al explicar cualitativamente fenómenos como la isla de calor de la lección anterior.",
+      "EjesArticuladores": "Vida saludable.",
+      "EvaluacionFormativa": [
+        "Explica el mecanismo del efecto invernadero en términos de la interacción de la luz con los gases de la atmósfera."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "21"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 222-225,Nuestro libro de proyectos 114-119",
+      "LibroMcMillan": "Física Imagina  216-219",
+      "Vinculacion": "\\textbf{Biología: } Analiza las prácticas de consumo que han alterado los ciclos biogeoquímicos del carbono y el nitrógeno, sus efectos asociados al calentamiento global y sus impactos en el medio ambiente y la salud.",
+      "Worklist": [
+        "L11. Gases de efecto invernadero",
+        "A.21. Gases naturales"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 222-225",
+        "Nuestro libro de proyectos 114-119",
+        "Física Imagina  216-219"
+      ],
+      "ActPro": [
+        "21"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "22 jun",
+      "FechaDeCierre": "26 jun",
+      "SemanaEscolar": 38,
+      "Contenido": "Fenómenos, procesos y factores asociados al cambio climático.",
+      "Aprendizaje": "Indaga sobre fenómenos meteorológicos extremos como olas de calor, ciclones tropicales, sequías y lluvias torrenciales; representa y explica su distribución en el mundo.",
+      "Tema": "Aumento de la temperatura del planeta",
+      "Leccion": "L12. Aumento de la temperatura del planeta",
+      "Inicio": "Esta sección comienza describiendo la ola de calor europea de 2019. El cierre de edición del libro de texto fue en el primer trimestre del año 2023, por lo que aún no había ocurrido la ola de calor que impactó a México desde el mes de junio. Así, puede ampliar la información del texto proporcionando a los estudiantes datos de la ola de calor en nuestro propio país y pidiendo que comenten sus experiencias con este fenómeno con preguntas; por ejemplo, ¿Cómo fue? ¿Qué información recuerdan haber escuchado en los noticiarios al respecto? ¿Qué medidas de protección para la salud tuvieron necesidad de acatar? ¿Qué consecuencias tuvo?",
+      "Desarrollo": "El objetivo del texto es mostrar evidencias de que el cambio climático es real y tiene como causas la forma de vida de la civilización moderna. El texto muestra fenómenos simples con descripciones cualitativas, como el derretimiento de los hielos polares y el consecuente aumento del nivel del mar, pero también presenta información dura en forma de gráficas científicas. Es conveniente aprovechar esta oportunidad para enseñar a los estudiantes a leerlas. Para empezar, señale que todas ellas refieren al pie la fuente que respalda los datos, y es importante identificar que se trata de fuentes científicas confiables, como la nasa o revistas científicas con arbitraje internacional. También muestre que se trata de mediciones científicas cuidadosas, que suelen incluir una estimación de la incertidumbre asociada a ellas (correspondiente al sombreado en torno a la línea de la gráfica). Algunas gráficas presentan, además, predicciones. En la figura 12.1, por ejemplo, se ve que la franja de incertidumbre aumenta de grosor. Puede comentar que estas predicciones se realizan mediante técnicas estadísticas que hacen uso de métodos computacionales y de inteligencia artificial. Puede proponer como ejercicio interesante que los estudiantes investiguen y recolecten algún par de gráficas científicas, las analicen críticamente, las lean o interpreten, y las comenten con sus compañeros. Para esta lección, es recomendable el uso de recursos audiovisuales que muestren cómo se vive la crisis ambiental del cambio climático en diferentes lugares del mundo. Le sugerimos que muestre reportajes y videos sobre fenómenos extremos y la migración forzada por el cambio climático. Para fomentar la empatía de los estudiantes y fortalecer sus habilidades de análisis crítico, le recomendamos organizar debates o pedirles que expresen, con recursos acordes a sus intereses y aptitudes, su opinión, sus propuestas, sentimientos o testimonios sobre el tema. Estos recursos pueden ser la redacción de textos (ensayos, cuentos, poemas), la elaboración de dibujos, cómics, videos o podcasts, canciones, etcétera. Para complementar la información del texto dada al final del Desarrollo, pida a los estudiantes que investiguen qué es la Cuarta Revolución Industrial y cuáles fueron las otras tres, y resuman sus características más sobresalientes en una línea de tiempo. Después pida que en ella identifiquen, donde sea posible, el origen de las emisiones de gases de efecto invernadero. Pida al grupo trabajar en colaboración para resumir la información sobre el cambio climático en cuadros sinópticos, mapas mentales y carteles, y que los expongan en algún lugar visible de su escuela o los presenten en alguna feria informativa sobre el tema.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia y lo apliquen al análisis de situaciones de la vida cotidiana. Le sugerimos que resuelva con sus alumnos la ficha 19 del Cuaderno de evidencias y que propongan acciones individuales a favor del ambiente.",
+      "EjesArticuladores": "Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Comprende que las actividades humanas agravan el efecto invernadero. ",
+        "Reconoce las consecuencias ambientales del cambio climático."
+      ],
+      "Evidencias": [
+        "F19"
+      ],
+      "Actividades": [
+        "22"
+      ],
+      "Proyectos": [],
+      "LibroSep": "Saberes y pensamiento científico 260",
+      "LibroMcMillan": "Física Imagina  220-223",
+      "Vinculacion": "\\textbf{Matemáticas: } Identifica tendencias en los datos centrándose en sus valores representativos y sus variaciones.",
+      "Worklist": [
+        "L12. Aumento de la temperatura del planeta",
+        "A.22. Cambio Climático",
+        "F19. ¿Calentamiento global o cambio climático?"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 260",
+        "Física Imagina  220-223"
+      ],
+      "ActPro": [
+        "22",
+        "F19"
+      ]
+    },
+    {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "29 jun",
+      "FechaDeCierre": "3 jul",
+      "SemanaEscolar": 39,
+      "Contenido": "Fenómenos, procesos y factores asociados al cambio climático.",
+      "Aprendizaje": "Propone medidas de mitigación y adaptación, encaminadas al cuidado del medio ambiente y el bienestar común, viables para su aplicación en su escuela y comunidad.",
+      "Tema": "Medidas de mitigación y adaptación en beneficio del medio ambiente",
+      "Leccion": "L13. Cuidado del ambiente",
+      "Inicio": "El propósito de la lectura es motivar a los estudiantes a emprender por sí mismos acciones en la lucha contra el cambio climático. También se busca activar su pensamiento crítico al pedirles que analicen una situación plagada de complicaciones sociales. Es importante que pueda poner en relieve que aquí intervienen dificultades de diversos tipos: económicas, sociales, tecnológicas, de comunicación, legislativas, políticas, etcétera. Es conveniente invitar a los estudiantes a concebirse como protagonistas en la situación presentada. Invítelos a reflexionar sobre el modo en que el cambio climático podría impactar sus vidas en el futuro; para ello, puede pedir que expresen sus reflexiones mediante recursos acordes a sus intereses y aptitudes, como pueden ser la redacción de textos (ensayos o cuentos), la elaboración de videos, cómics, podcasts, etcétera; al final, invítelos a compartir sus opiniones con sus compañeros.",
+      "Desarrollo": "El texto enumera dos tipos de medidas contra el cambio climático, que se describen brevemente. Las medidas de mitigación se centran principalmente en el uso de las fuentes de energía. Para que los estudiantes comprendan mejor las recomendaciones, organice una sesión de lluvia de ideas para que recuperen sus conocimientos sobre los mecanismos de producción de energía eléctrica (que es la energía más utilizada) y las consecuencias ambientales de cada mecanismo, así como su eficiencia y la extensión de su uso; esto les recordará que para producir electricidad se suelen quemar combustibles fósiles, lo que libera gases de efecto invernadero a la atmósfera. Pida que enlisten también las fuentes de energía renovables e identifiquen las fuentes de energía limpia. Así quedará claro que reducir el consumo de energía eléctrica puede implicar reducir la emisión de gases de efecto invernadero. Por ejemplo, en el caso de la carne, puede mostrarles datos sobre la producción de metano y recordarles que este gas tiene un potencial mayor al del dióxido de carbono como precursor del efecto invernadero, de modo que disminuir el consumo de carne llevaría a la reducción en la producción ganadera y, por ende, a la reducción de las emisiones de metano. En el caso de otros productos, como los tecnológicos, puede solicitarles que investiguen cómo se producen y en dónde, pues su transporte a través de grandes distancias también implica la quema de combustibles fósiles; en cuyo caso la reducción del consumismo también es favorable. Las medidas de adaptación presentadas se describen muy brevemente, pero cada una de ellas puede ser comentada extensamente y ejemplificada con casos. Procure utilizar recursos audiovisuales que muestren la forma en que estas medidas han sido implementadas en algunos lugares del mundo e invítelos a investigar si se usan o planean usar en el futuro inmediato en su localidad.",
+      "Cierre": "El propósito es que los alumnos consoliden lo que aprendieron en esta lección y que lo apliquen en la resolución de situaciones de la vida cotidiana en su propia comunidad. La ficha 20 del Cuaderno de evidencias es útil para practicar cálculos relacionados con la transferencia de calor y relacionarlos con el aumento de temperatura del planeta.",
+      "EjesArticuladores": "Inclusión.",
+      "EvaluacionFormativa": [
+        "Conoce las medidas de mitigación y adaptación contra el cambio climático. ",
+        "Explica la utilidad de las medidas de mitigación y adaptación contra el cambio climático."
+      ],
+      "Evidencias": [
+        "F20"
+      ],
+      "Actividades": [
+        "23"
+      ],
+      "Proyectos": [
+        "Ambiente"
+      ],
+      "LibroSep": "Saberes y pensamiento científico 217-221 y 258-260",
+      "LibroMcMillan": "Física Imagina  224-227",
+      "Vinculacion": "\\textbf{Matemáticas: } Recolecta, registra, lee y comunica información mediante histogramas, gráficas poligonales y de línea.",
+      "Worklist": [
+        "L13. Cuidado del ambiente",
+        "A.23. ¿Soy sustentable?",
+        "F20. Los guardianes del clima",
+        "Ambiente"
+      ],
+      "Libros": [
+        "Saberes y pensamiento científico 217-221 y 258-260",
+        "Física Imagina  224-227"
+      ],
+      "ActPro": [
+        "23",
+        "F20",
+        "Ambiente"
+      ]
+    }
+  ]
+}

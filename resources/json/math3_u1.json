@@ -1,0 +1,488 @@
+{
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Matemáticas III",
+    "Grado": "3°",
+    "Nivel": "Secundaria",
+    "Unidad": "1",
+    "NombreDeLaUnidad": "Números enteros, números negativos, factorización, leyes de los exponentes y sucesiones aritméticas",
+    "DuracionEnSemanas": 10,
+    "HorasPorSemana": 5,
+    "HorasTotales": 50,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2025-08-24",
+    "FechaDeActualizacion": "2025-08-24",
+    "FechaInicial": "2025-09-01",
+    "FechaFinal": "2025-11-07",
+    "Words":"Con la emoción de quien alcanza a ver la cumbre que persigue, les doy la bienvenida a este ciclo, su tercer y último año en la travesía de su educación básica. Han caminado un largo sendero para llegar hasta aquí. Una vez más, tengo el privilegio de ser su guía en esta etapa final, la más reveladora de todas: el mundo de Matemáticas III. \\\\[1em] \\qquad Recuerden el camino andado. En el primer año, aprendieron las palabras, los números y símbolos que son el alfabeto del universo. En el segundo, comenzaron a construir frases, a conectar ideas y a ver las relaciones que forman la gramática de la lógica. Ahora, en este tercer año, no aprenderemos un nuevo lenguaje. Aprenderemos a leer la poesía y a comprender la filosofía que se escribe con él. \\\\[1em] \\qquad Este año es el año de la gran síntesis. Es el momento en que los senderos que parecían separados, el de la geometría y el del álgebra, se encuentran y revelan que siempre fueron uno solo, ascendiendo por distintas laderas de la misma montaña. \\\\[1em] \\qquad Exploraremos también la música secreta de los triángulos: la trigonometría. Descubriremos la profunda y mística armonía que existe entre los ángulos y los lados de una simple figura. Y nos daremos cuenta de que esta armonía no vive solo en el papel, sino que resuena en todo el cosmos. Es la misma relación que describe las vibraciones del sonido de una campana y el movimiento circular de los planetas. En la esquina de un humilde triángulo, encontraremos el eco del universo. \\\\[1em] \\qquad La mente que se requiere para este viaje no es una mente apresurada, sino una mente espaciosa y paciente. Los problemas que encontraremos no se resolverán con fuerza bruta, sino con observación serena. Deberán sentarse con ellos, como quien contempla un jardín de rocas, hasta que su estructura interna y su simple belleza se revelen por sí mismas. La respuesta no se \"calcula\", se \"descubre\". \\\\[1em] \\qquad El verdadero propósito de Matemáticas III no es prepararlos para un examen, sino obsequiarles una nueva forma de ver. Es el don de la visión abstracta: la capacidad de mirar un conjunto de símbolos y ver en su mente una curva elegante; de mirar un puente o una montaña y sentir las fuerzas invisibles que los sostienen. \\\\[1em] \\qquad Este es nuestro último viaje juntos en esta escuela. Que el conocimiento que adquieran aquí no sea una carga para la memoria, sino una luz para el entendimiento. Que la claridad y el orden del pensamiento matemático se conviertan en una herramienta para navegar no solo los problemas en el papel, sino los desafíos de la vida que les espera al bajar de esta montaña. \\\\[1em] \\qquad Con el más profundo respeto por el camino que han recorrido y una serena emoción por el que nos falta, les doy la bienvenida a la culminación de nuestra aventura.",
+    "Nociones": [
+      "A1. Suma de números",
+      "A2. Resta de números",
+      "A3. Multiplicación de números",
+      "A4. División de números",
+      "A5. Resolución de problemas",
+      "A6. Ubicación en la recta numérica",
+      "A7. Comparación de negativos",
+      "A8. Suma y resta con negativos",
+      "A9. Multiplicación y división con negativos",
+      "A10. Jerarquía de operaciones",
+      "A11. Término común",
+      "A12. Diferencia de cuadrados",
+      "A13. Trinomio cuadrado perfecto",
+      "A14. Trinomios de la forma $x^2+bx+c$",
+      "A15. Trinomios de la forma $ax^2+bx+c$",
+      "A16. Suma de exponentes",
+      "A17. Resta de exponentes",
+      "A18. Multiplicación de exponentes",
+      "A19. División de exponentes",
+      "A20. Exponentes negativos",
+      "A21. Completando la sucesión",
+      "A22. Diferencia de una sucesión",
+      "A23. Término general",
+      "A24. Término enésimo",
+      "A25. Suma de una sucesión aritmética"
+    ],
+    "Nombres": [
+      "Luisa",
+      "Ximena",
+      "Regina",
+      "Iker",
+      "Mariola",
+      "Dariana",
+      "Eva Sofía",
+      "Mario",
+      "Alexander",
+      "Michelle",
+      "Rodrigo",
+      "Ricardo",
+      "Valeria",
+      "Matías",
+      "Joshua"
+    ],
+    "Alumnos": [
+      "Luisa Fernanda Altamirano Muñoz",
+      "Ximena Corona Vásquez",
+      "Regina Díaz Aldasoro",
+      "Iker Escobar Rivera",
+      "Mariola Fadul Espejo",
+      "Dariana Hernández Alomia",
+      "Eva Sofía Hernández Calera",
+      "Mario Santiago Hernández Morales",
+      "Alexander Isleño Rivera",
+      "Michelle Areli Muro Luna",
+      "Rodrigo Ochoa Castañeda",
+      "Ricardo de Jesús Peri Domínguez",
+      "María Valeria Salinas Almanza",
+      "Matías Treviño Uscanga",
+      "Joshua Velázquez Gómez"
+    ],
+    "fechasDeExamen": [
+      "2025-11-04"
+    ]
+  },
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-01",
+      "FechaDeCierre": "2025-09-05",
+      "SemanaEscolar": 1,
+      "Contenido": "Operaciones básicas con números enteros.",
+      "Aprendizaje": "Resolver problemas que impliquen la suma, resta, la multiplicación y la división de números enteros, aplicando las reglas correspondientes.",
+      "Tema": "Cálculos numéricos",
+      "Leccion": "Suma de números\nResta de números.\nMultiplicación de números\nDivisión de números.",
+      "Inicio": "Se comienza con una actividad de reflexión en la que los alumnos recuerden las reglas básicas de la suma y resta con números enteros positivos, mediante preguntas dirigidas y ejemplos cotidianos (como calcular la diferencia entre el dinero que tienen y lo que necesitan para comprar algo). Se utilizará la pizarra para visualizar estas ideas y para conectar con el conocimiento previo. Se realizará una lluvia de ideas sobre situaciones diarias en las que usan estas operaciones. Luego, se introducen conceptos de multiplicación y división con números enteros mediante ejemplos simples, como la idea de repetición en la multiplicación y la partición en la división. Se utilizan ejemplos visuales para ilustrar los conceptos, como bloques o dibujos en la pizarra.",
+      "Desarrollo": "Se introducen los conceptos formales de la suma y resta de números enteros, usando una recta numérica para visualizar los movimientos a la derecha (suma) y a la izquierda (resta). Se realizan ejemplos guiados, y luego se invita a los estudiantes a resolver ejercicios en parejas, promoviendo la colaboración y la autoevaluación entre compañeros. Se presentan problemas contextualizados para reforzar la aplicación práctica de estos conceptos, como calcular el saldo bancario tras varias transacciones. Los alumnos trabajan con ejemplos progresivamente más complejos explicando cómo las reglas cambian dependiendo del signo de los números involucrados. Se utilizan ejercicios interactivos y retos en grupo para fomentar la participación activa y el trabajo en equipo. Se presentan problemas aplicados, como cálculos de áreas en contextos reales, y se trabaja con escenarios donde se requiere dividir objetos o cantidades en partes iguales.",
+      "Cierre": "Los alumnos presentan sus soluciones a algunos problemas en el pizarrón, explicando su razonamiento. Se hace una recapitulación conjunta de las reglas aprendidas y se clarifican dudas. Finalmente, se deja una tarea práctica para reforzar los aprendizajes, consistente en problemas de la vida diaria que impliquen suma y resta de enteros. Se da un breve adelanto de la próxima clase para mantener el interés.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación durante la práctica, resolución de ejercicios en clase, participación en discusiones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve problemas de cinemática calculando la distancia total recorrida (suma), el desplazamiento (resta) o la rapidez promedio (división) de un objeto en movimiento.",
+      "Worklist": [
+        "A.1.  Suma de números",
+        "A.2.  Resta de números",
+        "A.3.  Multiplicación de números",
+        "A.4.  División de números",
+        "A.5.  Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-08",
+      "FechaDeCierre": "2025-09-12",
+      "SemanaEscolar": 2,
+      "Contenido": "Conceptos básicos de números negativos y su representación en la recta numérica.",
+      "Aprendizaje": "Identificar y ubicar números negativos en una recta numérica, comparando su magnitud.",
+      "Tema": "Números negativos.",
+      "Leccion": "Ubicación en la recta numérica.",
+      "Inicio": "La clase comienza con una introducción a los números negativos a través de ejemplos de la vida diaria, como temperaturas bajo cero o deudas. Se muestra una recta numérica grande en la pizarra y se pide a los alumnos que ubiquen diferentes números en ella, primero con enteros positivos y luego con negativos. Se hace hincapié en la continuidad de los números y la noción de opuestos. Se inicia la siguiente clase con un repaso de la recta numérica, enfatizando la posición relativa de los números negativos respecto a los positivos y el cero. Se presentan ejemplos de la vida real para conectar estos conceptos con situaciones prácticas. Los alumnos son invitados a pensar en otros contextos donde se aplican los números negativos y a discutir sus ideas en grupos pequeños.",
+      "Desarrollo": "Se explica formalmente cómo se ubican los números negativos en la recta numérica, destacando la importancia del cero como punto de referencia. Los estudiantes practican la ubicación de números negativos y positivos en una recta dibujada en sus cuadernos y luego resuelven ejercicios de comparación entre estos números, utilizando símbolos de mayor que, menor que e igual a. Se discuten ejemplos donde los números negativos juegan un rol importante, como en altitudes bajo el nivel del mar o en contextos financieros. Se enseñan las reglas para sumar, restar, multiplicar y dividir números negativos mediante ejemplos claros y progresivos en la pizarra. Los alumnos practican primero con ejercicios básicos y luego con problemas más complejos que combinan varias operaciones. Se utilizan recursos visuales, como bloques o fichas, para ayudar a los alumnos a entender mejor cómo los signos afectan los resultados de las operaciones.",
+      "Cierre": "Los estudiantes se involucran en una actividad lúdica donde deben ubicar números en una recta numérica gigante hecha en el piso del salón, trabajando en equipos para posicionar correctamente números dados por el profesor. Se finaliza con una discusión en clase sobre la importancia de entender los números negativos y se asigna una tarea que incluye ejercicios de ubicación y comparación. Se motivan a los alumnos a reflexionar sobre situaciones cotidianas donde encuentran números negativos. Se realiza un juego de competencia en el que los alumnos responden preguntas rápidas sobre operaciones con números negativos para reforzar su comprensión. Se concluye la clase revisando los puntos clave de las reglas operativas y resolviendo dudas. La tarea asignada incluye problemas de aplicación y una breve reflexión escrita sobre las dificultades que encontraron y cómo las superaron. Se resalta la importancia de manejar correctamente estas operaciones en situaciones cotidianas.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Pruebas de ubicación en la recta, ejercicios de comparación, participación en actividades lúdicas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Compara temperaturas de diversas sustancias en grados Celsius, ubicándolas en una recta numérica para determinar cuál está más fría o cuál es el punto de congelación.",
+      "Worklist": [
+        "A.6.  Ubicación en la recta numérica",
+        "A.7.  Comparación de negativos",
+        "A.8.  Suma y resta con negativos",
+        "A.9.  Multiplicación y división con negativos",
+        "A.10. Jerarquía de operaciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "PeriodosLectivos": 3,
+      "FechaDeInicio": "2025-09-15",
+      "FechaDeCierre": "2025-09-19",
+      "SemanaEscolar": 3,
+      "Contenido": "Introducción a la factorización, términos comunes y diferencia de cuadrados.",
+      "Aprendizaje": "Identificar y factorizar expresiones algebraicas usando el término común y la diferencia de cuadrados.",
+      "Tema": "Factorización.",
+      "Leccion": "Término común. Diferencia de cuadrados.",
+      "Inicio": "La clase comienza con una introducción visual sobre la factorización, utilizando ejemplos simples y concretos, como la descomposición de números en sus factores primos. Se presenta la idea de encontrar términos comunes en expresiones algebraicas y se muestra cómo se puede simplificar una expresión mediante la factorización.",
+      "Desarrollo": "Los alumnos trabajan en ejercicios que les piden identificar el término común en diversas expresiones algebraicas y luego proceder a la factorización. Se introducen ejemplos de la diferencia de cuadrados y se explican las propiedades que permiten reconocer y factorizar estas expresiones. Los estudiantes trabajan en parejas para resolver problemas y discutir sus estrategias, utilizando cuadros de comparación para organizar sus resultados.",
+      "Cierre": "Se revisan los ejercicios en conjunto y se discuten los métodos más efectivos para la factorización. Comparten sus aprendizajes y se resuelven dudas. Se asigna una tarea con problemas de factorización, incluyendo una breve reflexión escrita sobre cómo la factorización puede simplificar la resolución de ecuaciones complejas en matemáticas.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Resolución de ejercicios, evaluación de la participación en actividades de grupo, pruebas escritas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "11",
+        "12"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Factoriza expresiones cinemáticas para identificar las condiciones iniciales o finales de un movimiento, como el tiempo en que un objeto vuelve a su punto de partida.",
+      "Worklist": [
+        "A.11. Término común",
+        "A.12. Diferencia de cuadrados"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-09-22",
+      "FechaDeCierre": "2025-09-26",
+      "SemanaEscolar": 4,
+      "Contenido": "Factorización de trinomios cuadrados perfectos y de la forma $x^2+bx+c$.",
+      "Aprendizaje": "Factorizar trinomios identificando cuadrados perfectos y aplicando métodos para trinomios simples.",
+      "Tema": "Factorización.",
+      "Leccion": "Trinomio cuadrado perfecto. Trinomios de la forma $x^2+bx+c$.",
+      "Inicio": "Se inicia con una revisión de la factorización básica y un breve repaso de la diferencia de cuadrados. Se presenta el concepto de un trinomio cuadrado perfecto y se muestran ejemplos visuales para ilustrar cómo se reconoce y se factoriza este tipo de expresión. Se introduce la forma general $x^2+bx+c$ y se discuten métodos para identificar los factores.",
+      "Desarrollo": "Los estudiantes realizan ejercicios para factorizar trinomios, comenzando con los cuadrados perfectos y luego avanzando a los trinomios de la forma $x^2+bx+c$. Se utilizan métodos como el descomponer el término medio o el método de agrupación, y los estudiantes practican en equipos para resolver problemas más complejos. Se discuten patrones y estrategias, y se utilizan herramientas digitales para visualizar los trinomios y sus factores.",
+      "Cierre": "La clase concluye con la presentación de los resultados de los ejercicios y una discusión sobre los métodos más efectivos para cada tipo de trinomio. Se hace un resumen de los pasos clave para la factorización y se asigna una tarea que incluye problemas de trinomios cuadráticos y una reflexión sobre la utilidad de la factorización en la simplificación de ecuaciones algebraicas.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Ejercicios en clase, participación en discusiones, evaluación escrita."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "13",
+        "14"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve ecuaciones de movimiento de un proyectil, factorizando el trinomio que describe su altura para encontrar el tiempo que tarda en alcanzar el suelo.",
+      "Worklist": [
+        "A.13. Trinomio cuadrado perfecto",
+        "A.14. Trinomios de la forma $x^2+bx+c$"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "13",
+        "14"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-29",
+      "FechaDeCierre": "2025-10-03",
+      "SemanaEscolar": 5,
+      "Contenido": "Factorización de trinomios de la forma $ax^2+bx+c$.",
+      "Aprendizaje": "Aplicar métodos de factorización para trinomios con coeficientes diferentes a uno en el término cuadrático.",
+      "Tema": "Factorización.",
+      "Leccion": "Trinomios de la forma $ax^2+bx+c$.",
+      "Inicio": "La clase comienza con un repaso de la factorización de trinomios simples y una introducción a los trinomios de la forma $ax^2+bx+c$. Se presenta la complejidad añadida por el coeficiente en el término cuadrático y se discuten estrategias para abordar este tipo de problemas, como la descomposición del término medio y el método de agrupación.",
+      "Desarrollo": "Los estudiantes trabajan en ejercicios que involucran la factorización de trinomios con coeficientes en el término cuadrático. Se les proporcionan guías paso a paso y se discuten diferentes enfoques para resolver estos problemas, comparando métodos y verificando la corrección de sus resultados. Se utilizan ejemplos prácticos y aplicaciones para mostrar cómo la factorización puede simplificar la resolución de ecuaciones en diversas áreas de las matemáticas.",
+      "Cierre": "Se cierra la clase con una revisión conjunta de los problemas resueltos y se discuten las estrategias que resultaron más eficaces. Los estudiantes reflexionan sobre sus aprendizajes y se hace un resumen de los métodos clave para la factorización de trinomios complejos. Se asigna una tarea que incluye problemas de factorización con trinomios variados y una sección de autoevaluación para que los estudiantes identifiquen sus áreas de mejora.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en clase, evaluación escrita, observación del proceso de factorización."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "15"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Determina los instantes de tiempo en que un objeto en movimiento acelerado alcanza una posición específica, factorizando la ecuación cuadrática general que modela su trayectoria.",
+      "Worklist": [
+        "A.15. Trinomios de la forma $ax^2+bx+c$"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "15"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-06",
+      "FechaDeCierre": "2025-10-10",
+      "SemanaEscolar": 6,
+      "Contenido": "Leyes de los exponentes: suma y resta de exponentes.",
+      "Aprendizaje": "Aplicar las leyes de los exponentes para simplificar expresiones algebraicas y resolver problemas que involucren exponentes.",
+      "Tema": "Leyes de los exponentes.",
+      "Leccion": "Suma de exponentes. Resta de exponentes.",
+      "Inicio": "La clase comienza con una introducción sobre los exponentes y su uso en matemáticas para representar multiplicaciones repetidas. Se discuten las leyes básicas de los exponentes, comenzando con la suma y la resta, y se presentan ejemplos sencillos para ilustrar cada ley. Los estudiantes participan en un breve cuestionario para evaluar su comprensión inicial.",
+      "Desarrollo": "Los estudiantes trabajan en parejas para resolver ejercicios que implican la suma y resta de exponentes, aplicando las leyes aprendidas para simplificar expresiones algebraicas. Se fomenta la discusión sobre los errores comunes y se presentan técnicas para verificar las soluciones. Se utiliza software matemático para visualizar cómo las operaciones con exponentes afectan las funciones y las gráficas.",
+      "Cierre": "La clase concluye con una actividad de presentación donde los estudiantes explican cómo aplicaron las leyes de los exponentes en un problema específico. Se realiza un resumen de las leyes discutidas y se asigna una tarea que incluye problemas aplicados y una breve reflexión escrita sobre la importancia de comprender y aplicar correctamente las leyes de los exponentes en la simplificación de expresiones matemáticas.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Ejercicios prácticos, evaluación de la participación en actividades grupales, pruebas escritas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "16",
+        "17"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Química: }  Aplica las leyes de los exponentes para simplificar cálculos con notación científica al multiplicar o dividir cantidades muy grandes o pequeñas.",
+      "Worklist": [
+        "A.16. Suma de exponentes",
+        "A.17. Resta de exponentes"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-13",
+      "FechaDeCierre": "2025-10-17",
+      "SemanaEscolar": 7,
+      "Contenido": "Leyes de los exponentes: multiplicación y división de exponentes.",
+      "Aprendizaje": "Aplicar las leyes de multiplicación y división de exponentes para resolver y simplificar expresiones algebraicas complejas.",
+      "Tema": "Leyes de los exponentes.",
+      "Leccion": "Multiplicación de exponentes. División de exponentes.",
+      "Inicio": "La clase comienza con una revisión rápida de las leyes de los exponentes vistas anteriormente y una introducción a las leyes de multiplicación y división. Se muestran ejemplos concretos de cómo estas leyes pueden simplificar la resolución de problemas, especialmente en expresiones algebraicas largas. Los estudiantes realizan un ejercicio rápido para practicar la aplicación inicial de estas leyes.",
+      "Desarrollo": "Los estudiantes trabajan en actividades prácticas que incluyen la multiplicación y división de exponentes. Se utilizan recursos digitales para visualizar cómo cambian las expresiones al aplicar estas leyes. Los alumnos trabajan en grupos pequeños para resolver problemas más complejos y discuten sus estrategias. Se fomenta la comparación de métodos y la verificación de respuestas mediante cálculos manuales y con tecnología.",
+      "Cierre": "Se concluye la clase con una sesión de retroalimentación en la que los alumnos presentan sus soluciones a los problemas trabajados y comparten las dificultades encontradas. Se revisan las leyes clave y se hace hincapié en la importancia de la multiplicación y división correcta de exponentes para mantener la precisión en las soluciones. Se asigna una tarea con problemas aplicados y se incluye una reflexión escrita sobre cómo los exponentes se utilizan en otros campos, como la ciencia y la ingeniería.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Resolución de problemas, evaluación continua, observación en clase."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "18",
+        "19",
+        "20"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Manipula las variables en la Ley de Gravitación Universal ($F=G\\\\dfrac{m\\_1 m\\_2}{r^2}$  ), aplicando las leyes de los exponentes para analizar cómo cambia la fuerza si la distancia se duplica.",
+      "Worklist": [
+        "A.18. Multiplicación de exponentes",
+        "A.19. División de exponentes",
+        "A.20. Exponentes negativos"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-20",
+      "FechaDeCierre": "2025-10-24",
+      "SemanaEscolar": 8,
+      "Contenido": "Sucesiones aritméticas: completando la sucesión, diferencia común y cálculo del término general.",
+      "Aprendizaje": "Identificar y completar sucesiones aritméticas, calcular la diferencia común y formular el término general.",
+      "Tema": "Sucesiones aritméticas.",
+      "Leccion": "Completando la sucesión. Diferencia de una sucesión. Término general.",
+      "Inicio": "La clase comienza con una introducción a las sucesiones aritméticas, utilizando ejemplos sencillos como la progresión de los días de la semana o la suma de cantidades regulares. Se discute la diferencia común y cómo identificarla, y los estudiantes practican completando sucesiones simples.",
+      "Desarrollo": "Los estudiantes trabajan en ejercicios que incluyen la identificación de la diferencia común y la formulación del término general de una sucesión aritmética. Se utilizan ejemplos prácticos y se anima a los estudiantes a encontrar patrones en las sucesiones. Los estudiantes trabajan en grupos pequeños para resolver problemas y discutir sus estrategias, utilizando recursos digitales para visualizar las sucesiones y sus características.",
+      "Cierre": "La clase concluye con una sesión de presentación donde los estudiantes explican cómo identificaron la diferencia común y formularon el término general. Se realiza un resumen de los conceptos clave y se asigna una tarea con problemas aplicados que incluyen la identificación y formulación de sucesiones aritméticas en contextos reales.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Ejercicios en clase, participación en actividades grupales, pruebas escritas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Modela la posición de un objeto con velocidad constante como una sucesión aritmética, donde la diferencia común es la distancia recorrida en cada segundo.",
+      "Worklist": [
+        "A.21. Completando la sucesión",
+        "A.22. Diferencia de una sucesión",
+        "A.23. Término general",
+        "A.24. Término enésimo",
+        "A.25. Suma de una sucesión aritmética"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-10-27",
+      "FechaDeCierre": "2025-10-31",
+      "SemanaEscolar": 9,
+      "Contenido": "Recapitulación e integración de los conocimientos y aprendizajes.",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Preparación a la evaluación",
+      "Leccion": "Revisión grupal de los saberes acumulados en el período de evaluación",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-11-03",
+      "FechaDeCierre": "2025-11-07",
+      "SemanaEscolar": 10,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Evaluación de la unidad",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Se realizará a través de la observación directa del desempeño del alumno al resolver los ejercicios.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos en MeXmáticas",
+      "Vinculacion": "",
+      "Worklist": [
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

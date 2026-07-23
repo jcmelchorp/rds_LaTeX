@@ -1,0 +1,178 @@
+\ProvidesPackage{mytcolorboxes}
+\@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
+
+\tcbset{
+  %sharp corners,
+  enhanced,
+  colback = white,
+  fonttitle=\bfseries,
+  %before skip = 1mm,    % add extra space before the box
+  %after skip = 1mm      % add extra space after the box
+}                           % setting global options for tcolorbox
+\newtcolorbox{warncard}[1][]{%
+  skin=enhanced,fonttitle=\bfseries,boxrule=1mm,
+  frame style={draw=colorrds!80!white,fill=colorrds!10!white},
+  drop fuzzy shadow,
+  interior style={draw=colorrds!80!white},%,top color=colorrds!1!white,bottom color=colorrds!10!white},
+  segmentation style={draw=colorrds!50!black,solid,decorate,
+      decoration={aspect=5,segment length=\linewidth}},
+  coltitle=black,
+  center title,
+  #1
+}
+\newtcbox{\wordpill}[1][]{on line,top=2pt,right=2pt,left=2pt,bottom=2pt,
+  colback=olive!5!white,colframe=olive!75!black,width=1cm,
+  boxrule=1pt,boxsep=1pt, fontupper=\sffamily, hyphenationfix,
+  fuzzy shadow={0.3mm}{-0.3mm}{0mm}{0.3mm}{black},  #1
+}
+
+\newtcolorbox{sectionbox}[2][]{%
+  empty,title={#2},attach boxed title to top left,
+  boxed title style={empty,size=minimal,toprule=2pt,top=4pt,
+      overlay={\draw[SectionMainColor,line width=2pt]
+          ([yshift=-1pt]frame.north west)--([yshift=-1pt]frame.north east);}},
+  coltitle=SectionMainColor,fonttitle=\Large\bfseries,
+  before=\par\medskip\noindent,parbox=false,boxsep=0pt,left=0pt,right=3mm,top=4pt,
+  breakable,pad at break*=0mm,vfill before first,
+  overlay unbroken={\draw[SectionMainColor,line width=1pt]
+      ([yshift=-1pt]title.north east)--([xshift=-0.5pt,yshift=-1pt]title.north-|frame.east)
+      --([xshift=-0.5pt]frame.south east)--(frame.south west); },
+  overlay first={\draw[SectionMainColor,line width=1pt]
+      ([yshift=-1pt]title.north east)--([xshift=-0.5pt,yshift=-1pt]title.north-|frame.east)
+      --([xshift=-0.5pt]frame.south east); },
+  overlay middle={\draw[SectionMainColor,line width=1pt] ([xshift=-0.5pt]frame.north east)
+      --([xshift=-0.5pt]frame.south east); },
+  overlay last={\draw[SectionMainColor,line width=1pt] ([xshift=-0.5pt]frame.north east)
+      --([xshift=-0.5pt]frame.south east)--(frame.south west);},#1,%
+}
+
+\newtcbox{\autocontrol}[1][]{%
+  boxsep=1mm,
+  colback=white,
+  colframe=red!70!black,
+  frame style={opacity=0.5},
+  interior style={opacity=1},
+  nobeforeafter,
+  tcbox raise base,
+  shrink tight,
+  rotate=3,
+  extrude by=1mm,
+  enhanced,
+  fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1
+}
+
+
+\newenvironment{ejemplos}{%
+  \begin{tcbitemize}[
+      sharpish corners,
+      raster columns=1, raster equal height=rows,
+      colframe=Goldenrod!35!white,colbacktitle=Goldenrod!20!white,
+      fonttitle=\color{DarkOliveGreen}\sffamily\comfortaa,
+      title={Ejemplo \thetcbrasternum \hfill {}},
+      %before skip=6pt,after skip=6pt,
+      %borderline west={3mm}{0pt}{red}
+    ]}{\end{tcbitemize}}
+\newcommand\ejemplo[1][]{
+  \tcbitem[#1] \printanswers
+}
+
+\newtcolorbox{pregunta}[1][]{%
+  colframe=PreguntaCard,
+  colbacktitle=white,
+  fonttitle=\color{PreguntaTitle}\bfseries\sffamily\comfortaa,
+  #1
+}
+
+\newtcolorbox{porejemplo}[1][]{%
+  colframe=ExampleCard,
+  colbacktitle=ExampleCard!10!white,
+  coltitle=ExampleTitle,
+  fonttitle=\comfortaa,
+  #1
+}
+
+\newtcolorbox{infocard}[2][]{%
+  colbacktitle=colorrds!25!white,
+  %colback=colorrds!2!white,
+  colframe=colorrds!25!white,
+  coltitle=black!90!white,
+  center title,  %size=small,
+  after skip=0pt,
+  before skip=0pt,
+  adjusted title={#2},
+  #1
+}
+
+\newtcolorbox{notecard}[2][]{%
+  left=0mm,right=0mm,
+  top=0mm,bottom=0mm,
+  boxsep=0mm,
+  colbacktitle=white,
+  colback=MainColor!2!white,
+  colframe=MainColor!50!white,
+  coltitle=black!80!white,
+  center title,% size=small,
+  %before skip=0pt,
+  toptitle=4pt,bottomtitle=4pt,
+  title={#2},
+  #1
+}
+
+
+
+
+\newtcolorbox{defcard}[1][Vocabulario]{%
+  colback=orange!5!white,
+  colframe=orange!35!white,
+  coltitle=black,
+  center title, %size=small,
+  adjusted title={#1},
+}
+
+\newtcolorbox{openbox}{
+  sharpish corners, % better drop shadow
+  boxrule = 0pt,
+  toprule = 4.5pt, % top rule weight
+  colframe = rdsdark,
+  fuzzy shadow = {0mm}{-4pt}{-2pt}{1pt}{black!60!white}, % {xshift}{yshift}{offset}{step}{options} 
+}
+
+\newtcolorbox{closebox}{
+  sharpish corners, % better drop shadow
+  boxrule = 0pt,
+  bottomrule = 4.5pt, % top rule weight
+  colframe = rdsdark,
+  fuzzy shadow = {0mm}{-4pt}{-2pt}{1pt}{black!60!white}, % {xshift}{yshift}{offset}{step}{options} 
+}
+
+
+\newcommand{\dashedbox}[1]{%
+  \tikz[baseline]\node[anchor=base, draw=gray, dash pattern=on 2pt off 1pt, outer sep=0pt, inner sep=3pt] {#1};%
+}
+
+\newenvironment{startInfo}[4][Inicio]{
+  \begin{openbox}
+    \begin{minipage}{0.25\textwidth}
+      \begin{figure}[H]
+        \centering
+        \includegraphics[width=.8\linewidth]{#3}
+        \caption{#4}
+        \label{fig:masabody}
+      \end{figure}
+    \end{minipage}\hfill
+    \begin{minipage}{0.7\textwidth}
+      \begin{center}
+        \color{rdsdark}\textbf{#1}
+      \end{center}
+      #2
+    \end{minipage}
+    }{\end{openbox}}
+
+\makeatletter
+\newcommand{\DrawLine}[1][\linewidth]{%
+  \begin{tikzpicture}
+    \path[use as bounding box] (0,0) -- (#1,0);
+    \draw[color=colorrds,dashed,dash phase=2pt] (0-\kvtcb@boxsep,0)--(#1-\kvtcb@rightlower+\kvtcb@boxsep,0);
+  \end{tikzpicture}%
+}
+\makeatother

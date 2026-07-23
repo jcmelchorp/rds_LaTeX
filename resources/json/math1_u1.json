@@ -1,0 +1,507 @@
+{
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Matemáticas I",
+    "Grado": "1°",
+    "Nivel": "Secundaria",
+    "Unidad": "1",
+    "NombreDeLaUnidad": "Números y operaciones",
+    "DuracionEnSemanas": 10,
+    "HorasPorSemana": 5,
+    "HorasTotales": 50,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaInicial": "2025-09-01",
+    "FechaFinal": "2025-11-07",
+    "FechaDeCreacion": "2025-08-24",
+    "FechaDeActualizacion": "2025-08-24",
+    "Words":"Reciban la más cálida bienvenida a este nuevo capítulo de su vida, el ciclo 2025-2026, en la Escuela Rafael Díaz Serdán. Soy Julio, y tendré el honor de acompañarlos mientras exploramos el vasto océano de las Matemáticas. \\\\[1em] \\qquad Han llegado a una edad maravillosa, un momento en que la mente se expande como un jardín. Al nacer, se nos entrega esta tierra fértil, y cada pensamiento es una semilla. Las matemáticas son una de las herramientas más poderosas para cultivar este jardín. Cada fórmula que aprendan, cada problema que resuelvan, es como el agua y el sol que nutren su capacidad de razonar, de encontrar orden en el caos y de tomar decisiones con sabiduría. \\\\[1em] \\qquad No les pediré que sean perfectos, solo que sean pacientes y compasivos con ustedes mismos. El aprendizaje no es una carrera, es el arte de caminar con atención. Si un concepto parece una montaña alta, no se preocupen. Juntos aprenderemos a escalarla paso a paso, disfrutando la vista desde cada nueva altura alcanzada. Nuestra aula será un refugio para la curiosidad. Un lugar donde todas las voces son valiosas y donde descubriremos que, trabajando juntos, la montaña más alta se sienta como una pequeña colina. Vengan con la mente abierta y el corazón dispuesto, y les aseguro que descubrirán una fuerza y una claridad en su interior que no sabían que poseían. \\\\[1em] \\qquad Mi propósito este año es simple: sembrar semillas en el jardín. Cada tema que exploremos será una nueva semilla, una nueva puerta a un misterio del mundo real. \\\\[1em] \\qquad La paciencia y la perseverancia son la fuerza silenciosa que abre todas las semillas. Y recuerden, en nuestro salón, nadie florece solo. Nos apoyaremos mutuamente, compartiremos nuestros descubrimientos y celebraremos cada semilla que logremos abrir como un triunfo de todos. \\\\[1em] \\qquad Que su curiosidad sea la brújula que los guíe. Hagan preguntas, exploren, duden y busquen sus propias respuestas. Este año, más que estudiar matemáticas, aprenderemos a ser jardineros de nuestro propio entendimiento. \\\\[1em] \\qquad Estoy muy feliz de comenzar a cultivar con ustedes.",
+    "Nociones": [
+      "A.1.  Suma de números",
+      "A.2.  Resta de números",
+      "A.3.  Multiplicación de números",
+      "A.4.  División de números",
+      "A.5.  Resolución de problemas",
+      "A.6.  Clasificación de fracciones",
+      "A.7.  Representación de fracciones",
+      "A.8.  Nombre de fracciones",
+      "A.9.  Fracciones en la recta numérica",
+      "A.10. Conversión de fracciones",
+      "A.11. Comparación de fracciones",
+      "A.12. Fracciones equivalentes",
+      "A.13. M.C.D y M.C.M",
+      "A.14. Simplificación de fracciones",
+      "A.15. Resolución de problemas",
+      "A.16. Ubicación en la recta numérica",
+      "A.17. Porcentajes a decimal",
+      "A.18. Operaciones con múltiplos de 10",
+      "A.19. Conversión de fracciones a decimales",
+      "A.20. Conversión de decimales a fracciones",
+      "A.21. Ubicación en la recta numérica",
+      "A.22. Comparación de negativos",
+      "A.23. Determina el signo",
+      "A.24. Suma y resta con negativos 1",
+      "A.25. Suma y resta con negativos 2",
+      "A.26. Comparación de negativos",
+      "A.27. Suma y resta con negativos",
+      "A.28. Multiplicación y división con negativos",
+      "A.29. Potencias con numeros negativos",
+      "A.30. Jerarquía de operaciones"
+    ],
+    "Nombres": [
+      "Alana",
+      "Emil",
+      "Emilio",
+      "Mateo",
+      "Jinghua",
+      "Pablo",
+      "Said",
+      "Luis",
+      "Cristian",
+      "Gilberto",
+      "Christopher",
+      "Benjamín",
+      "Guillermo",
+      "Yerko",
+      "Ricardo",
+      "Fernando"
+    ],
+    "Alumnos": [
+      "Alana Álvarez Medina",
+      "Emil Bello Aldana",
+      "Emilio Casamayor Avendaño",
+      "Mateo Castillo Álvarez",
+      "Jinghua (Noe) Feng ",
+      "Pablo Guerrero Escutia",
+      "Said Loyo Morales",
+      "Luis Leonardo Miranda Mena",
+      "Cristian Emmanuel Monroy Loftus",
+      "Gilberto Montiel Díaz",
+      "Christopher Sánchez Ambrosio",
+      "Benjamín Sangeado Gerónimo",
+      "Guillermo Calixto Alberto Sierra González",
+      "Yerko Alan Solís Gutiérrez",
+      "Ricardo Solís Victoria",
+      "Fernando Tronco Muñoz"
+    ],
+    "fechasDeExamen": [
+      "2025-11-03"
+    ]
+  },
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-01",
+      "FechaDeCierre": "2025-09-05",
+      "SemanaEscolar": 1,
+      "Contenido": "Operaciones básicas con números enteros y decimales (suma y resta).",
+      "Aprendizaje": "Comprenderán y realizarán sumas y restas con números enteros y decimales, aplicando los procedimientos correctos.",
+      "Tema": "Cálculos numéricos",
+      "Leccion": "Uso de las operaciones de suma y resta en situaciones cotidianas.",
+      "Inicio": "La clase comenzará con una discusión sobre la importancia de resolver problemas en la vida diaria. Se motivará a los estudiantes compartiendo ejemplos de situaciones cotidianas donde las operaciones matemáticas son esenciales, como planificar un evento con un presupuesto, comprar en una tienda o repartir recursos equitativamente. Para activar sus conocimientos previos, se realizará un juego rápido de preguntas y respuestas sobre sumas y restas. A continuación, se introducirá la multiplicación y la división como herramientas para simplificar operaciones repetitivas (sumar el mismo número varias veces) y para repartir cantidades en partes iguales, conectando todos los conceptos con sus aplicaciones prácticas para generar interés desde el primer momento.",
+      "Desarrollo": "Durante el desarrollo de la clase, se explicarán detalladamente los algoritmos de las cuatro operaciones básicas: suma, resta, multiplicación y división, tanto con números enteros como decimales. Se utilizarán apoyos visuales en la pizarra, como la correcta colocación de números en columnas para sumas y restas, diagramas de área para la multiplicación y esquemas de reparto para la división. La actividad principal se centrará en enseñar a los estudiantes a analizar y resolver problemas matemáticos. Aprenderán a leer enunciados, subrayar información clave y determinar qué operación es necesaria en cada caso. Trabajando en pequeños grupos colaborativos, resolverán una serie de hojas de trabajo con problemas prácticos y contextualizados que aumentarán gradualmente en dificultad, mezclando las cuatro operaciones. Se fomentará el uso de calculadoras para la autoverificación de resultados y la discusión de diferentes estrategias de resolución dentro de los equipos.",
+      "Cierre": "Para concluir, los grupos resolverán un desafío final que combine las cuatro operaciones en un problema práctico, como ajustar un presupuesto o calcular los recursos necesarios para un proyecto. Posteriormente, se realizará una retroalimentación grupal donde cada equipo presentará su solución y explicará el proceso que siguió, destacando las estrategias más efectivas y los desafíos encontrados. Se reforzará la idea de que todas las operaciones básicas están interconectadas. Finalmente, se asignará una tarea con una variedad de problemas mixtos para consolidar lo aprendido, animando a los estudiantes a aplicar estas habilidades en situaciones de su vida cotidiana.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación de la participación en discusiones, corrección de ejercicios en clase, y tarea de problemas mixtos de suma y resta."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Resuelve problemas sobre dinámica de poblaciones, utilizando la suma para calcular el total de individuos tras nacimientos o inmigraciones, y la resta para determinar la población restante después de muertes o emigraciones.",
+      "Worklist": [
+        "A.1.  Suma de números",
+        "A.2.  Resta de números",
+        "A.3.  Multiplicación de números",
+        "A.4.  División de números",
+        "A.5.  Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-08",
+      "FechaDeCierre": "2025-09-12",
+      "SemanaEscolar": 2,
+      "Contenido": "Clasificación y representación de fracciones. Nombres de fracciones y su representación en la recta numérica.",
+      "Aprendizaje": "El alumno identificará y clasificará diferentes tipos de fracciones (propias, impropias y mixtas) y las representará de manera gráfica. El alumno nombrará fracciones y las ubicará correctamente en la recta numérica.",
+      "Tema": "Fracciones.",
+      "Leccion": "Clasificación y representación. Nombres y ubicación en la recta numérica.",
+      "Inicio": "La clase comenzará con una actividad de exploración en la que se presentarán ejemplos de fracciones en objetos cotidianos, como rebanadas de pizza o piezas de chocolate. Se les preguntará a los estudiantes si saben cómo expresar estas partes como fracciones y qué significan. Esta introducción ayudará a que los alumnos comprendan la importancia de las fracciones y se familiaricen con el concepto de una parte de un todo. Se comenzará la clase con una lluvia de ideas sobre lo que los estudiantes saben acerca de las fracciones. Se hará una breve explicación del concepto de fracción, su historia y aplicaciones en la vida cotidiana. Se preguntará a los estudiantes si pueden dar ejemplos de fracciones que utilizan en su vida diaria para activar conocimientos previos.",
+      "Desarrollo": "Se explicará la clasificación de fracciones en propias, impropias y mixtas, utilizando representaciones visuales como diagramas y gráficos. Los estudiantes participarán en una actividad práctica donde deberán clasificar diferentes fracciones y representarlas en la pizarra. Además, se explicará cómo simplificar fracciones y convertir fracciones impropias en mixtas. Se entregarán ejercicios para que practiquen la clasificación y representación de fracciones, y se fomentará la discusión en grupo sobre las diferencias y similitudes entre los tipos de fracciones. El docente explicará la clasificación de fracciones en propias, impropias y mixtas, utilizando ejemplos visuales y manipulativos como círculos y rectángulos divididos en partes iguales. Los estudiantes participarán activamente al clasificar ejemplos proporcionados por el profesor y al representar fracciones gráficamente en sus cuadernos. Se fomentará la discusión en grupo para analizar la diferencia entre los tipos de fracciones y cómo representarlas en una gráfica.",
+      "Cierre": "Para cerrar, los estudiantes realizarán una actividad en parejas donde deberán crear un póster con ejemplos de fracciones propias, impropias y mixtas, y explicarán a la clase cómo identificarlas. Se hará una reflexión grupal sobre la utilidad de clasificar fracciones y cómo estas clasificaciones facilitan la resolución de problemas. Se asignará una tarea que incluya ejercicios de clasificación y representación para reforzar el aprendizaje. Se realizará un breve repaso de lo aprendido y se dará a los estudiantes un pequeño ejercicio para resolver en equipo sobre la clasificación de fracciones y su representación gráfica. Se hará una retroalimentación grupal, resaltando los errores comunes y las estrategias correctas. Se asignará una tarea de refuerzo para casa donde los estudiantes practiquen la clasificación y representación de nuevas fracciones.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Evaluación mediante ejercicios de clasificación y representación, participación en discusiones grupales, y un póster de fracciones como proyecto."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Convierte los resultados de cruzas genéticas mendelianas  a fracciones y las compara con otras probabilidades genéticas para determinar qué rasgo es más probable que aparezca.",
+      "Worklist": [
+        "A.6.  Clasificación de fracciones",
+        "A.7.  Representación de fracciones",
+        "A.8.  Nombre de fracciones",
+        "A.9.  Fracciones en la recta numérica",
+        "A.10. Conversión de fracciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "PeriodosLectivos": 3,
+      "FechaDeInicio": "2025-09-15",
+      "FechaDeCierre": "2025-09-19",
+      "SemanaEscolar": 3,
+      "Contenido": "Conversión y comparación de fracciones utilizando M.C.D y M.C.M.",
+      "Aprendizaje": "El alumno convertirá fracciones y las comparará utilizando el M.C.D y M.C.M.",
+      "Tema": "Fracciones MCD y MCM",
+      "Leccion": "Conversión y comparación.",
+      "Inicio": "Se iniciará la clase con una introducción al concepto de Mínimo Común Múltiplo (M.C.M) y Máximo Común Divisor (M.C.D), y su importancia en la comparación y simplificación de fracciones. Compartirán sus conocimientos previos y se hará una breve actividad de repaso con números enteros antes de aplicar estos conceptos a fracciones.",
+      "Desarrollo": "El profesor demostrará cómo utilizar el M.C.D para simplificar fracciones y cómo usar el M.C.M para convertir fracciones a denominadores comunes. Los alumnos resolverán ejercicios prácticos en equipos, donde tendrán que encontrar el M.C.M y M.C.D de varios conjuntos de fracciones, compararlas y ordenarlas de menor a mayor. Se utilizarán juegos interactivos en línea (si es posible) para reforzar la práctica.",
+      "Cierre": "Se realizará una actividad de cierre donde los estudiantes tendrán que explicar el proceso de conversión y comparación usando M.C.M y M.C.D a sus compañeros en una especie de mini-presentación. Esto ayudará a consolidar su comprensión y a desarrollar habilidades comunicativas. El docente proporcionará retroalimentación específica y asignará una serie de problemas para resolver en casa.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Ejercicios de conversión y comparación en grupo, quiz individual."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "11",
+        "12"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Aplica operaciones con fracciones para calcular la porción de un terreno que se reforestará. ",
+      "Worklist": [
+        "A.11. Comparación de fracciones",
+        "A.12. Fracciones equivalentes"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-09-22",
+      "FechaDeCierre": "2025-09-26",
+      "SemanaEscolar": 4,
+      "Contenido": "Simplificación de fracciones y resolución de problemas.",
+      "Aprendizaje": "El alumno simplificará fracciones y aplicará sus conocimientos para resolver problemas contextualizados.",
+      "Tema": "Fracciones MCD y MCM",
+      "Leccion": "Simplificación y aplicación.",
+      "Inicio": "La clase comenzará con un repaso rápido sobre simplificación de fracciones usando el M.C.D. El profesor planteará preguntas abiertas para que los alumnos discutan la importancia de simplificar fracciones en la vida diaria, como al dividir cantidades de comida o materiales.",
+      "Desarrollo": "Se presentarán problemas prácticos donde la simplificación de fracciones sea necesaria para encontrar la respuesta, como en recetas o divisiones de terrenos. Los alumnos trabajarán en parejas para resolver estos problemas, mientras el profesor pasa entre los grupos para guiar y corregir errores comunes. Se introducirá la idea de la simplificación como una herramienta para facilitar cálculos posteriores.",
+      "Cierre": "Para finalizar, se realizará una discusión grupal sobre las estrategias utilizadas para simplificar y resolver los problemas planteados. Se asignará una actividad donde los estudiantes deberán crear su propio problema contextualizado que involucre fracciones y su simplificación, el cual compartirán con la clase en la siguiente sesión.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Resolución de problemas en parejas, evaluación con rubrica."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "13",
+        "14",
+        "15"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Aplica operaciones con fracciones para calcular la porción de un terreno que se reforestará. ",
+      "Worklist": [
+        "A.13. M.C.D y M.C.M",
+        "A.14. Simplificación de fracciones",
+        "A.15. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "13",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-09-29",
+      "FechaDeCierre": "2025-10-03",
+      "SemanaEscolar": 5,
+      "Contenido": "Ubicación de números decimales en la recta numérica y conversión de porcentajes a decimales.",
+      "Aprendizaje": "El alumno ubicará números decimales en la recta numérica y convertirá porcentajes a decimales.",
+      "Tema": "Números Decimales",
+      "Leccion": "Decimales y porcentajes.",
+      "Inicio": "Se iniciará la clase con una breve revisión de cómo se representan fracciones en la recta numérica y se conectará esta idea a los decimales. El profesor mostrará ejemplos de cómo los decimales pueden ser ubicados en una recta numérica, haciendo una conexión visual entre fracciones y decimales.",
+      "Desarrollo": "Los alumnos participarán en una actividad práctica donde convertirán porcentajes a decimales y luego los ubicarán en la recta numérica. Se utilizarán ejercicios de escritura y manipulación con tarjetas para que los alumnos puedan comparar y ordenar estos números. El profesor resaltará patrones y relaciones clave entre los números representados.",
+      "Cierre": "Los estudiantes realizarán ejercicios adicionales en su cuaderno donde convertirán una lista de porcentajes a decimales y los ubicarán en una recta numérica. Se realizará una retroalimentación grupal para revisar respuestas correctas y corregir errores comunes, concluyendo con un breve cuestionario para evaluar su comprensión.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Ejercicios de conversión y ubicación en la recta numérica."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "16",
+        "17"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Calcula el Índice de Masa Corporal (IMC) de una persona utilizando la fórmula que involucra números decimales",
+      "Worklist": [
+        "A.16. Ubicación en la recta numérica",
+        "A.17. Porcentajes a decimal"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "16",
+        "17"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-06",
+      "FechaDeCierre": "2025-10-10",
+      "SemanaEscolar": 6,
+      "Contenido": "Operaciones con múltiplos de 10 y conversión de fracciones a decimales.",
+      "Aprendizaje": "El alumno realizará operaciones con múltiplos de 10 y convertirá fracciones a decimales.",
+      "Tema": "Números Decimales",
+      "Leccion": "Operaciones y conversión.",
+      "Inicio": "El inicio se centrará en revisar los conceptos básicos de múltiplos de 10 y su importancia en el sistema numérico. Se mostrarán ejemplos de cómo estas operaciones simplifican cálculos y se realizarán ejercicios rápidos para practicar multiplicaciones y divisiones con múltiplos de 10.",
+      "Desarrollo": "El docente explicará el proceso de convertir fracciones a decimales, mostrando ejemplos y permitiendo que los estudiantes practiquen con calculadoras. Se introducirán actividades donde los alumnos deben realizar ambas tareas, combinar operaciones con múltiplos de 10 y convertir fracciones a decimales, para mostrar la aplicabilidad de estos conceptos en situaciones cotidianas como cálculos de dinero.",
+      "Cierre": "La clase finalizará con un pequeño juego de grupo donde los alumnos deben convertir fracciones a decimales y ubicarlas correctamente en una serie de operaciones con múltiplos de 10. Se discutirá en grupo cómo estas habilidades pueden ser útiles y se asignará una hoja de trabajo para reforzar los conceptos aprendidos.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Observación directa, ejercicios prácticos y quiz de conversión."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "18",
+        "19",
+        "20"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Utiliza operaciones con decimales para calcular el crecimiento total o promedio a lo largo del tiempo.",
+      "Worklist": [
+        "A.18. Operaciones con múltiplos de 10",
+        "A.19. Conversión de fracciones a decimales",
+        "A.20. Conversión de decimales a fracciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "18",
+        "19",
+        "20"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-13",
+      "FechaDeCierre": "2025-10-17",
+      "SemanaEscolar": 7,
+      "Contenido": "Suma y resta de números negativos.",
+      "Aprendizaje": "El alumno sumará y restará números negativos correctamente.",
+      "Tema": "Números negativos.",
+      "Leccion": "Suma y resta.",
+      "Inicio": "La clase comenzará con una revisión de la ubicación y comparación de números negativos en la recta numérica. Se planteará una pregunta inicial para discutir qué sucede cuando se suman o restan números negativos, estimulando la participación de los alumnos para activar conocimientos previos.",
+      "Desarrollo": "El docente explicará las reglas de la suma y resta de números negativos utilizando ejemplos visuales en la pizarra y ejercicios prácticos. Los estudiantes participarán en un juego de mesa donde deben mover fichas en una recta numérica gigante, sumando y restando números negativos según las tarjetas que tomen. Esta actividad permitirá una comprensión kinestésica del concepto.",
+      "Cierre": "Para concluir, se realizará un repaso con ejercicios escritos donde los alumnos aplicarán las reglas aprendidas. Se corregirán errores comunes y se darán recomendaciones sobre cómo evitar confusiones al sumar y restar números negativos. Se entregará una hoja de ejercicios adicionales como tarea para casa.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Ejercicios de cálculo y juegos interactivos."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Interpreta los números negativos para describir temperaturas bajo cero (°C) en ecosistemas",
+      "Worklist": [
+        "A.21. Ubicación en la recta numérica",
+        "A.22. Comparación de negativos",
+        "A.23. Determina el signo",
+        "A.24. Suma y resta con negativos 1",
+        "A.25. Suma y resta con negativos 2"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-10-20",
+      "FechaDeCierre": "2025-10-24",
+      "SemanaEscolar": 8,
+      "Contenido": "Multiplicación, división y potencias con números negativos.",
+      "Aprendizaje": "El alumno multiplicará, dividirá y calculará potencias de números negativos siguiendo las reglas correspondientes.",
+      "Tema": "Números negativos.",
+      "Leccion": "Multiplicación y división",
+      "Inicio": "La clase iniciará con un repaso de la suma y resta de números negativos, seguido de una introducción a la multiplicación y división de números negativos, explicando las reglas y por qué se cumplen matemáticamente. Los estudiantes discutirán en parejas las reglas básicas y sus aplicaciones. Continuará con un breve repaso sobre la conversión de fracciones a decimales y se introducirá la idea inversa: convertir decimales a fracciones. Compartirán sus ideas iniciales y se discutirá la utilidad de esta habilidad.",
+      "Desarrollo": "El docente demostrará cómo multiplicar y dividir números negativos, utilizando ejemplos concretos y ejercicios dirigidos. Se explorarán las potencias de números negativos y las reglas para calcularlas correctamente. Los alumnos realizarán ejercicios en grupos pequeños para reforzar estas habilidades, utilizando recursos visuales y manipulativos. El profesor demostrará cómo convertir decimales a fracciones mediante ejemplos paso a paso, y los alumnos practicarán con ejercicios dirigidos. Se mostrará la recta numérica y se explicará cómo se pueden comparar números negativos, utilizando actividades visuales y manipulativas para reforzar el concepto.",
+      "Cierre": "Para cerrar la unidad, los alumnos participarán en un juego interactivo de desafíos matemáticos donde aplicarán todas las operaciones vistas con números negativos. Se realizará una evaluación sumativa para medir el aprendizaje y se discutirá en grupo cómo estas habilidades se aplican en situaciones reales, cerrando con una reflexión sobre los aprendizajes alcanzados y su utilidad en la vida cotidiana. Los alumnos resolverán una serie de problemas que requieran tanto la conversión de decimales a fracciones como la comparación de números negativos en la recta numérica. Se realizará una discusión final para aclarar dudas y consolidar los aprendizajes, y se asignará un ejercicio de práctica para casa.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Evaluación sumativa con ejercicios de multiplicación, división y potencias."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: } Resuelve problemas sumando y restando números negativos para calcular el cambio neto en la población de una especie a lo largo de varias temporadas.",
+      "Worklist": [
+        "A.26. Comparación de negativos",
+        "A.27. Suma y resta con negativos",
+        "A.28. Multiplicación y división con negativos",
+        "A.29. Potencias con numeros negativos",
+        "A.30. Jerarquía de operaciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "PeriodosLectivos": 4,
+      "FechaDeInicio": "2025-10-27",
+      "FechaDeCierre": "2025-10-31",
+      "SemanaEscolar": 9,
+      "Contenido": "Recapitulación e integración de los conocimientos y aprendizajes.",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Preparación a la evaluación",
+      "Leccion": "Revisión grupal de los saberes acumulados en el período de evaluación",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "2025-11-03",
+      "FechaDeCierre": "2025-11-07",
+      "SemanaEscolar": 10,
+      "Contenido": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Tema": "Semana de evaluación",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se da la bienvenida a los estudiantes a la semana de evaluación, estableciendo como objetivo principal no solo medir el conocimiento a través de un examen, sino también reflexionar sobre el proceso de aprendizaje del trimestre. Se establece un ambiente de concentración y se fomenta una actitud proactiva, explicando que cada actividad está diseñada para consolidar sus saberes. La primera parte de la semana se dedica a un período lectivo de repaso y preparación final, donde, a través de una competencia lúdica con preguntas clave y la resolución de un examen de simulación, los alumnos identifican sus fortalezas y áreas de oportunidad antes de la prueba sumativa.",
+      "Desarrollo": "El núcleo de la semana se centra en la aplicación de la evaluación y la retroalimentación del proceso, distribuido en los siguientes períodos lectivos clave. La primera sesión se dedica a la resolución individual del examen. Se generan las condiciones óptimas de silencio y concentración, dando indicaciones claras y precisas. El docente supervisa el proceso, asegurando la equidad y el cumplimiento de las normas para una evaluación objetiva del aprendizaje alcanzado. Una vez calificados, se entregan los exámenes a los alumnos. En lugar de solo informar una nota, se realiza una revisión grupal de los reactivos con mayor índice de error. Se explica el razonamiento detrás de las respuestas correctas, convirtiendo la evaluación en una oportunidad de aprendizaje tangible y permitiendo que los alumnos comprendan el origen de sus equivocaciones. Los alumnos entregan su portafolio de evidencias junto con un formato de Autocontrol, donde verifican haber completado todos los trabajos y actividades del trimestre. Esta entrega complementa la calificación del examen, valorando también el esfuerzo, la organización y la constancia demostrada durante el período.",
+      "Cierre": "Se dedica la última sesión a cerrar formalmente el trimestre. Se da una retroalimentación general al grupo sobre su desempeño y se presenta de manera atractiva y motivadora el proyecto o los temas centrales que se abordarán en el siguiente periodo. Se puede realizar una actividad breve y creativa de arranque para generar curiosidad e interés por lo que está por venir.",
+      "EjesArticuladores": "Pensamiento Crítico",
+      "EvaluacionFormativa": [
+        "Revisión diaria del avance en la preparación de los conocimientos hacia la Evaluación de la Unidad.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos en MeXmáticas",
+      "Vinculacion": "",
+      "Worklist": [
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "weeks": [
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "23 mar",
+      "FechaDeCierre": "27 mar",
+      "SemanaEscolar": 27,
+      "Tema": "Sucesiones cuadráticas",
+      "Aprendizaje": "Reconocer patrones y regularidades en sucesiones cuadráticas, y calcular términos específicos.",
+      "Contenido": "Sucesiones cuadráticas y geométricas",
+      "Leccion": "Sucesión cuadrática, completando la sucesión cuadrática y término general",
+      "Inicio": "Comenzar la semana introduciendo el concepto de sucesiones cuadráticas. Explicar cómo estas sucesiones difieren de las aritméticas y geométricas en términos de crecimiento y patrones. Utilizar ejemplos visuales y gráficos para ilustrar las diferencias y características de las sucesiones cuadráticas. Realizar una actividad inicial que involucre la identificación de patrones en sucesiones cuadráticas sencillas. Es importante que los estudiantes comprendan que las sucesiones cuadráticas crecen de manera no lineal y que su diferencia segunda es constante.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan identificar y completar sucesiones cuadráticas, así como calcular el término general. Un error común es confundir las fórmulas de sucesiones cuadráticas con las de aritméticas o geométricas. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de gráficos y tablas para visualizar las sucesiones cuadráticas y sus términos. Introducir problemas de la vida real que requieran el uso de sucesiones cuadráticas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de sucesiones cuadráticas en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender las sucesiones cuadráticas en situaciones cotidianas, como la modelación de fenómenos naturales y el análisis de datos científicos. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo identificar y completar sucesiones cuadráticas, así como calcular el término general.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "51",
+        "52",
+        "53"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Modela la distancia que recorre un objeto en caída libre en intervalos de tiempo consecutivos como una sucesión cuadrática, y encuentra la regla general.",
+      "Worklist": [
+        "A.51. Sucesión cuadrática",
+        "A.52. Completando la sucesión cuadrática",
+        "A.53. Término general"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "51",
+        "52",
+        "53"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "13 abr",
+      "FechaDeCierre": "17 abr",
+      "SemanaEscolar": 28,
+      "Tema": "Sucesiones geométricas",
+      "Aprendizaje": "Identificar patrones y regularidades en sucesiones geométricas, y calcular la razón de cambio.",
+      "Contenido": "Sucesiones cuadráticas y geométricas",
+      "Leccion": "Sucesión geométrica y razón de cambio",
+      "Inicio": "Iniciar la semana explicando el concepto de sucesiones geométricas y la importancia de la razón de cambio. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes identifiquen patrones en sucesiones geométricas sencillas y calculen la razón de cambio. Es crucial que los estudiantes comprendan cómo se forma una sucesión geométrica y la importancia de la razón de cambio en su crecimiento.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan identificar y completar sucesiones geométricas, así como calcular la razón de cambio. Un error común es no identificar correctamente la razón de cambio, lo que lleva a errores en la continuación de la sucesión. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de gráficos y tablas para visualizar las sucesiones geométricas y sus términos. Introducir problemas de la vida real que requieran el uso de sucesiones geométricas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de sucesiones geométricas en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender las sucesiones geométricas en situaciones cotidianas, como el crecimiento exponencial y la progresión de inversiones. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo identificar y completar sucesiones geométricas, así como calcular la razón de cambio.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "54",
+        "55"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Utiliza productos notables como el cuadrado de un binomio para simplificar expresiones al calcular la energía cinética o potencial en sistemas mecánicos.",
+      "Worklist": [
+        "A.54. Sucesión geométrica",
+        "A.55. Razón de una sucesión geométrica"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "54",
+        "55"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "20 abr",
+      "FechaDeCierre": "24 abr",
+      "SemanaEscolar": 29,
+      "Tema": "Productos notables",
+      "Aprendizaje": "Aplicar y desarrollar productos notables en la resolución de expresiones algebraicas.",
+      "Contenido": "Productos notables",
+      "Leccion": "Binomios conjugados, binomios con término común, binomio al cuadrado y binomio al cubo",
+      "Inicio": "Comenzar la semana introduciendo los conceptos de productos notables y su importancia en la simplificación de expresiones algebraicas. Explicar los diferentes tipos de productos notables, como binomios conjugados, binomios con término común, binomio al cuadrado, binomios de la forma (mx+a)(nx+b) y binomio al cubo. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes identifiquen y resuelvan ejemplos sencillos de productos notables.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la aplicación de productos notables en la simplificación y resolución de expresiones algebraicas. Un error común es aplicar incorrectamente las fórmulas de productos notables, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de gráficos y tablas para visualizar las expresiones algebraicas y los productos notables. Introducir problemas de la vida real que requieran el uso de productos notables para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de productos notables en la simplificación y resolución de expresiones algebraicas complejas. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender los productos notables en situaciones cotidianas, como el diseño de estructuras y la modelación matemática. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo aplicar y desarrollar productos notables en la resolución de expresiones algebraicas.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Usa el discriminante de una ecuación de trayectoria para determinar si un proyectil alcanzará una altura determinada (si hay 1, 2 o ninguna solución real).",
+      "Worklist": [
+        "A.56. Binomios conjugados",
+        "A.57. Binomios con término común",
+        "A.58. Binomio al cuadrado",
+        "A.59. Binomios de la forma $(mx+a)(nx+b)$",
+        "A.60. Binomio al cubo"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "56",
+        "57",
+        "58",
+        "59",
+        "60"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "27 abr",
+      "FechaDeCierre": "1 may",
+      "SemanaEscolar": 30,
+      "Tema": "Ecuaciones cuadráticas",
+      "Aprendizaje": "Clasificar ecuaciones cuadráticas y determinar la naturaleza de sus soluciones utilizando el discriminante.",
+      "Contenido": "Ecuaciones cuadráticas",
+      "Leccion": "Clasificación de ecuaciones cuadráticas: Discriminante",
+      "Inicio": "Iniciar la semana explicando el concepto de ecuaciones cuadráticas y la importancia del discriminante en su clasificación. Utilizar ejemplos visuales y prácticos para ilustrar cómo el discriminante determina la naturaleza de las soluciones de una ecuación cuadrática (reales y distintas, reales e iguales, o complejas). Realizar una actividad inicial donde los estudiantes identifiquen y clasifiquen ecuaciones cuadráticas utilizando el discriminante.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la clasificación de ecuaciones cuadráticas y la determinación de la naturaleza de sus soluciones utilizando el discriminante. Un error común es calcular incorrectamente el discriminante, lo que lleva a una clasificación errónea de las soluciones. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de gráficos y tablas para visualizar las ecuaciones cuadráticas y sus soluciones. Introducir problemas de la vida real que requieran la clasificación de ecuaciones cuadráticas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen los conceptos de discriminante en la clasificación de ecuaciones cuadráticas y la determinación de la naturaleza de sus soluciones. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender las ecuaciones cuadráticas y el discriminante en situaciones cotidianas, como la física y la ingeniería. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver sistemas de ecuaciones utilizando el discriminante.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "61",
+        "62"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Resuelve la ecuación cuadrática completa del movimiento parabólico para encontrar el tiempo de vuelo o el alcance máximo de un proyectil.",
+      "Worklist": [
+        "A.61. Clasificación de ecuaciones cuadráticas",
+        "A.62. Discriminante"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "61",
+        "62"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "4 may",
+      "FechaDeCierre": "8 may",
+      "SemanaEscolar": 31,
+      "Tema": "Ecuaciones cuadráticas",
+      "Aprendizaje": "Resolver ecuaciones cuadráticas completas e incompletas y aplicar estos conocimientos en la resolución de problemas.",
+      "Contenido": "Ecuaciones cuadráticas",
+      "Leccion": "Ecuaciones cuadráticas completas e incompletas",
+      "Inicio": "Iniciar la semana explicando la diferencia entre ecuaciones cuadráticas completas e incompletas. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos y mostrar cómo se resuelven. Realizar una actividad inicial donde los estudiantes identifiquen y clasifiquen ejemplos de ecuaciones cuadráticas completas e incompletas. Es crucial que los estudiantes comprendan cómo se identifican y resuelven ambos tipos de ecuaciones.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan practicar la resolución de ecuaciones cuadráticas completas e incompletas. Un error común es confundir las técnicas de resolución para cada tipo de ecuación, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de gráficos y tablas para visualizar las ecuaciones cuadráticas y sus soluciones. Introducir problemas de la vida real que requieran la resolución de ecuaciones cuadráticas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando ecuaciones cuadráticas completas e incompletas. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de entender y resolver ecuaciones cuadráticas en situaciones cotidianas, como la física y la ingeniería. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver ecuaciones cuadráticas completas e incompletas y aplicar estos conocimientos en la resolución de problemas.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "63",
+        "64",
+        "65"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Identifica la hipotenusa como la magnitud de un vector resultante (ej. desplazamiento) y los catetos como sus componentes rectangulares (horizontal y vertical).",
+      "Worklist": [
+        "A.63. Ecuaciones cuadráticas incompletas",
+        "A.64. Ecuaciones cuadráticas completas 1",
+        "A.65. Ecuaciones cuadráticas completas 2"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "63",
+        "64",
+        "65"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "11 may",
+      "FechaDeCierre": "15 may",
+      "SemanaEscolar": 32,
+      "Tema": "Teorema de Pitágoras.",
+      "Aprendizaje": "Identificar los lados de un triángulo rectángulo y comprender las relaciones entre ellos utilizando el Teorema de Pitágoras.",
+      "Contenido": "Teorema de Pitágoras.",
+      "Leccion": "Identificación de lados.",
+      "Inicio": "Iniciar la semana explicando el Teorema de Pitágoras y la importancia de identificar correctamente los lados de un triángulo rectángulo (hipotenusa y catetos). Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes identifiquen los lados de diversos triángulos rectángulos y apliquen el Teorema de Pitágoras.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan identificar y clasificar los lados de un triángulo rectángulo, así como aplicar el Teorema de Pitágoras para calcular longitudes desconocidas. Un error común es confundir la hipotenusa con los catetos, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las relaciones entre sus lados. Introducir problemas de la vida real que requieran la aplicación del Teorema de Pitágoras para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la identificación de lados y el uso del Teorema de Pitágoras en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia del Teorema de Pitágoras en situaciones cotidianas, como la construcción y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo identificar los lados de un triángulo rectángulo y aplicar el Teorema de Pitágoras.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "66"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Calcula la magnitud del desplazamiento total de un móvil que viajó primero al norte y luego al este, usando sus desplazamientos como catetos.",
+      "Worklist": [
+        "A.66. Identificación de lados"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "66"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "18 may",
+      "FechaDeCierre": "22 may",
+      "SemanaEscolar": 33,
+      "Tema": "Teorema de Pitágoras",
+      "Aprendizaje": "Aplicar el Teorema de Pitágoras para hallar la longitud de la hipotenusa y los catetos en triángulos rectángulos.",
+      "Contenido": "Teorema de Pitágoras",
+      "Leccion": "Hallando la hipotenusa y catetos",
+      "Inicio": "Iniciar la semana revisando los conceptos del Teorema de Pitágoras y la identificación de los lados de un triángulo rectángulo. Explicar cómo se puede utilizar el Teorema de Pitágoras para hallar la longitud de la hipotenusa y los catetos. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes resuelvan problemas sencillos utilizando el Teorema de Pitágoras para hallar longitudes desconocidas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan aplicar el Teorema de Pitágoras para hallar la longitud de la hipotenusa y los catetos en diversos triángulos rectángulos. Un error común es no aplicar correctamente la fórmula del Teorema de Pitágoras, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las relaciones entre sus lados. Introducir problemas de la vida real que requieran la aplicación del Teorema de Pitágoras para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando el Teorema de Pitágoras. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia del Teorema de Pitágoras en situaciones cotidianas, como la construcción y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo hallar la longitud de la hipotenusa y los catetos utilizando el Teorema de Pitágoras.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "67",
+        "68"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Biología: }  Calcula la distancia real (diagonal) que un animal recorre a través de un campo rectangular y la compara con la distancia que caminaría por el borde (perímetro).",
+      "Worklist": [
+        "A.67. Hallando la hipotenusa",
+        "A.68. Hallando el cateto"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "67",
+        "68"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "25 may",
+      "FechaDeCierre": "29 may",
+      "SemanaEscolar": 34,
+      "Tema": "Teorema de Pitágoras",
+      "Aprendizaje": "Aplicar el Teorema de Pitágoras para calcular áreas y perímetros de triángulos rectángulos.",
+      "Contenido": "Teorema de Pitágoras",
+      "Leccion": "Áreas y perímetros",
+      "Inicio": "Iniciar la semana revisando los conceptos del Teorema de Pitágoras y la identificación de los lados de un triángulo rectángulo. Explicar cómo se puede utilizar el Teorema de Pitágoras para calcular áreas y perímetros de triángulos rectángulos. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes resuelvan problemas sencillos utilizando el Teorema de Pitágoras para calcular áreas y perímetros.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan aplicar el Teorema de Pitágoras para calcular áreas y perímetros de diversos triángulos rectángulos. Un error común es no aplicar correctamente las fórmulas del Teorema de Pitágoras, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las relaciones entre sus lados. Introducir problemas de la vida real que requieran la aplicación del Teorema de Pitágoras para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando el Teorema de Pitágoras. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia del Teorema de Pitágoras en situaciones cotidianas, como la construcción y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo calcular áreas y perímetros utilizando el Teorema de Pitágoras.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "69"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Encuentra la magnitud de la fuerza resultante de la suma de varios vectores, calculando primero la suma de sus componentes y aplicando después el teorema.",
+      "Worklist": [
+        "A.69. Áreas y perímetros"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "69"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "1 jun",
+      "FechaDeCierre": "5 jun",
+      "SemanaEscolar": 35,
+      "Tema": "Teorema de Pitágoras",
+      "Aprendizaje": "Aplicar el Teorema de Pitágoras en la resolución de problemas complejos.",
+      "Contenido": "Teorema de Pitágoras",
+      "Leccion": "Resolución de problemas",
+      "Inicio": "Iniciar la semana revisando los conceptos del Teorema de Pitágoras y la identificación de los lados de un triángulo rectángulo. Explicar cómo se puede utilizar el Teorema de Pitágoras para resolver problemas complejos. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes resuelvan problemas sencillos utilizando el Teorema de Pitágoras.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan aplicar el Teorema de Pitágoras en la resolución de problemas complejos. Un error común es no aplicar correctamente las fórmulas del Teorema de Pitágoras, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las relaciones entre sus lados. Introducir problemas de la vida real que requieran la aplicación del Teorema de Pitágoras para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando el Teorema de Pitágoras. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia del Teorema de Pitágoras en situaciones cotidianas, como la construcción y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo resolver problemas complejos utilizando el Teorema de Pitágoras.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "70"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Encuentra la magnitud de la fuerza resultante de la suma de varios vectores, calculando primero la suma de sus componentes y aplicando después el teorema.",
+      "Worklist": [
+        "A.70. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "70"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "8 jun",
+      "FechaDeCierre": "12 jun",
+      "SemanaEscolar": 36,
+      "Tema": "Trigonometría.",
+      "Aprendizaje": "Identificar los lados de un triángulo rectángulo y las funciones trigonométricas básicas.",
+      "Contenido": "Trigonometría.",
+      "Leccion": "Identificando lados y funciones.",
+      "Inicio": "Iniciar la semana introduciendo los conceptos básicos de la trigonometría y la importancia de identificar correctamente los lados de un triángulo rectángulo (hipotenusa, catetos). Explicar las funciones trigonométricas básicas (seno, coseno, tangente) y cómo se relacionan con los lados del triángulo. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes identifiquen los lados de diversos triángulos rectángulos y apliquen las funciones trigonométricas básicas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan identificar los lados de un triángulo rectángulo y aplicar las funciones trigonométricas básicas para calcular razones trigonométricas. Un error común es confundir las funciones trigonométricas y sus correspondientes lados del triángulo, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las funciones trigonométricas. Introducir problemas de la vida real que requieran la aplicación de las funciones trigonométricas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la identificación de lados y el uso de las funciones trigonométricas básicas en la resolución de problemas prácticos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de la trigonometría en situaciones cotidianas, como la ingeniería y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo identificar los lados de un triángulo rectángulo y aplicar las funciones trigonométricas básicas.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "71",
+        "72"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Identifica los catetos opuesto y adyacente a un ángulo para descomponer un vector de fuerza en sus componentes horizontal y vertical.",
+      "Worklist": [
+        "A.71. Identificando lados",
+        "A.72. Identificando funciones"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "71",
+        "72"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "15 jun",
+      "FechaDeCierre": "19 jun",
+      "SemanaEscolar": 37,
+      "Tema": "Trigonometría.",
+      "Aprendizaje": "Aplicar las funciones trigonométricas para hallar la longitud de los lados de un triángulo rectángulo.",
+      "Contenido": "Trigonometría.",
+      "Leccion": "Encontrando lados.",
+      "Inicio": "Iniciar la semana revisando los conceptos básicos de la trigonometría y las funciones trigonométricas. Explicar cómo se pueden utilizar las funciones trigonométricas (seno, coseno, tangente) para hallar la longitud de los lados de un triángulo rectángulo. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes resuelvan problemas sencillos utilizando las funciones trigonométricas para hallar longitudes desconocidas.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan aplicar las funciones trigonométricas para hallar la longitud de los lados de diversos triángulos rectángulos. Un error común es confundir las funciones trigonométricas y sus correspondientes lados del triángulo, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las funciones trigonométricas. Introducir problemas de la vida real que requieran la aplicación de las funciones trigonométricas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando las funciones trigonométricas. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de la trigonometría en situaciones cotidianas, como la ingeniería y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo hallar la longitud de los lados de un triángulo rectángulo utilizando las funciones trigonométricas.",
+      "EjesArticuladores": "Interculturalidad crítica. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "73"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Calcula las componentes $x$ e $y$ de un vector de velocidad, usando el coseno y el seno del ángulo de su dirección.",
+      "Worklist": [
+        "A.73. Encontrando lados"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "73"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "22 jun",
+      "FechaDeCierre": "26 jun",
+      "SemanaEscolar": 38,
+      "Tema": "Trigonometría",
+      "Aprendizaje": "Aplicar las funciones trigonométricas para hallar la medida de los ángulos de un triángulo rectángulo.",
+      "Contenido": "Trigonometría",
+      "Leccion": "Encontrando ángulos",
+      "Inicio": "Iniciar la semana revisando los conceptos básicos de la trigonometría y las funciones trigonométricas. Explicar cómo se pueden utilizar las funciones trigonométricas (seno, coseno, tangente) para hallar la medida de los ángulos de un triángulo rectángulo. Utilizar ejemplos visuales y prácticos para ilustrar estos conceptos. Realizar una actividad inicial donde los estudiantes resuelvan problemas sencillos utilizando las funciones trigonométricas para hallar ángulos desconocidos.",
+      "Desarrollo": "Durante el desarrollo, los estudiantes trabajarán en ejercicios que les permitan aplicar las funciones trigonométricas para hallar la medida de los ángulos de diversos triángulos rectángulos. Un error común es confundir las funciones trigonométricas y sus correspondientes ángulos del triángulo, lo que lleva a errores en los cálculos. Para superar este error, es útil realizar múltiples prácticas y usar ejemplos contextuales. Fomentar el uso de diagramas y gráficos para visualizar los triángulos rectángulos y las funciones trigonométricas. Introducir problemas de la vida real que requieran la aplicación de las funciones trigonométricas para mantener el interés de los estudiantes y mostrar la relevancia práctica de estos conceptos. Trabajar en equipos pequeños y fomentar la discusión para que los estudiantes puedan intercambiar ideas y aprender unos de otros.",
+      "Cierre": "Para finalizar la semana, realizar una actividad de evaluación donde los estudiantes apliquen lo aprendido en la resolución de problemas prácticos utilizando las funciones trigonométricas para hallar ángulos. Utilizar ejercicios de MeXmáticas para evaluar su comprensión. Reflexionar sobre la importancia de la trigonometría en situaciones cotidianas, como la ingeniería y la navegación. Terminar con una sesión de preguntas y respuestas y un repaso de los conceptos clave. Utilizar quizzes interactivos y juegos educativos para reforzar los conceptos aprendidos. Asegurarse de que todos los estudiantes han comprendido cómo hallar la medida de los ángulos de un triángulo rectángulo utilizando las funciones trigonométricas.",
+      "EjesArticuladores": "Inclusión, Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Actividades en MeXmáticas."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "74",
+        "75"
+      ],
+      "Proyectos": [],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "\\textbf{Física: }  Determina la dirección (ángulo) de un proyectil o una fuerza resultante, utilizando la función arcotangente con las componentes del vector.",
+      "Worklist": [
+        "A.74. Encontrando ángulos",
+        "A.75. Resolución de problemas"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "74",
+        "75"
+      ]
+    },
+    {
+      "PeriodosLectivos": 5,
+      "FechaDeInicio": "29 jun",
+      "FechaDeCierre": "3 jul",
+      "SemanaEscolar": 39,
+      "Tema": "Semana de evaluación trimestral",
+      "Aprendizaje": "Fortalecer y verificar la comprensión de los procedimientos y conceptos matemáticos estudiados durante el trimestre, para aplicarlos en la resolución de problemas y tener éxito en la evaluación",
+      "Contenido": "Evaluación de la unidad",
+      "Leccion": "Examen de Unidad",
+      "Inicio": "Se presenta el objetivo de la semana: prepararse de manera efectiva para el examen trimestral. Se explica la dinámica: se trabajará sobre un documento llamado \"Repaso de Examen\" que contiene ejercicios clave, muy similares a los que encontrarán en la prueba real. Se realiza una \"lluvia de ideas\" rápida en el pizarrón sobre los temas más importantes o los que generaron más dudas durante el trimestre. Esto activa el conocimiento previo y permite al docente identificar focos de atención.",
+      "Desarrollo": "Los alumnos comienzan a resolver el documento \"Repaso de Examen\" de forma individual. El docente monitorea activamente el trabajo en el aula, acercándose a los alumnos para resolver dudas puntuales. Este es el momento clave para ofrecer retroalimentación personalizada. Se fomenta que los alumnos marquen los ejercicios donde tengan mayor dificultad. Al final de cada sección temática del repaso (o cada cierto número de ejercicios), se detiene el trabajo individual. El docente o alumnos voluntarios pasan al pizarrón a resolver los problemas que la mayoría marcó como difíciles. Se promueve el diálogo y la comparación de resultados entre compañeros, fomentando el aprendizaje colaborativo. Se pregunta: \"¿Alguien lo resolvió de otra manera?\" para validar diferentes estrategias.",
+      "Cierre": "Se dedica un espacio final para resolver las últimas preguntas sobre cualquier ejercicio del repaso o tema del trimestre. El \"Repaso de Examen\" debe estar completamente resuelto. Se hace un resumen grupal de los errores más comunes detectados durante la semana y se enfatizan las estrategias para evitarlos. El docente comparte recomendaciones prácticas para el día del examen: leer con atención cada pregunta, administrar el tiempo, revisar las respuestas y, sobre todo, confiar en el conocimiento adquirido. Se ofrece un mensaje de aliento para reducir la ansiedad y motivar a los estudiantes a dar su mejor esfuerzo.",
+      "EjesArticuladores": "Apropiación de las culturas. Pensamiento crítico",
+      "EvaluacionFormativa": [
+        "Se realizará a través de la observación directa del desempeño del alumno al resolver los ejercicios.",
+        "La participación en las puestas en común y la claridad al explicar sus dudas o soluciones."
+      ],
+      "Evidencias": [],
+      "Actividades": [
+        "Repaso de Unidad"
+      ],
+      "Proyectos": [
+        "Examen de Unidad"
+      ],
+      "LibroSep": "MeXmáticas",
+      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
+      "Vinculacion": "",
+      "Worklist": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ],
+      "Libros": [
+        "MeXmáticas",
+        "Apuntes de clase"
+      ],
+      "ActPro": [
+        "Repaso de Unidad",
+        "Examen de Unidad"
+      ]
+    }
+  ]
+}

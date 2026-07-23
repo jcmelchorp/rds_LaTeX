@@ -1,0 +1,164 @@
+
+\ProvidesPackage{cicloescolar}
+\NeedsTeXFormat{LaTeX2e}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{xcolor} % For defining colors
+\RequirePackage{xifthen}
+\RequirePackage{pgffor}
+\RequirePackage{tikz}
+\usetikzlibrary{babel}
+\usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
+\usetikzlibrary{shadows,shadows.blur}
+\usetikzlibrary{shapes,shapes.symbols}
+\usetikzlibrary{patterns,patterns.meta}
+% \RequirePackage{babel}
+% \PreviewEnvironment{tikzpicture}
+% \setlength\PreviewBorder{5pt}%
+\definecolor{rdsColor}{HTML}{0060A0} % Custom colour
+\definecolor{mathColor}{HTML}{E3A857}
+\definecolor{physColor}{HTML}{228B22}
+\definecolor{chemColor}{HTML}{228B22}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
+\RequirePackage[calc,es-ES,spanish]{datetime2}
+% Define short month names for Spanish
+\newcommand{\DTMspanishshortMonthname}[1]{%
+  \ifcase#1
+  \or Ene \or Feb \or Mar \or Abr \or May \or Jun \or Jul \or Ago \or Sep \or Oct \or Nov \or Dic.\fi
+}
+% Redefine the month name command to use the short version
+\renewcommand{\DTMspanishmonthname}[1]{%
+  \DTMspanishshortMonthname{#1}%
+}
+\DTMnewdatestyle{fechacorta}{%
+\renewcommand{\DTMdisplaydate}[4]{%
+ \DTMtwodigits{##3} \DTMspanishmonthname{##2}}%-\number##1 }%
+\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+\def\currentyear{2025}
+\def\nextyear{2026}
+
+\newcommand{\calrow}[1]{\node[anchor=base east,xshift=0.5em](lun){L};
+\node[base right=of lun](mar){M}; \node[base right=of mar](mie){X};
+\node[base right=of mie](jue){J}; \node[base right=of jue](vie){V};
+\node[base right=of vie](sab){S}; \node[base right=of sab](dom){D};
+\node[rdsColor,above=of jue]{#1};}
+
+\newcounter{ABCD}
+\newcounter{spur}
+\newcommand{\calperiod}[2]{\calendar[dates=#1 to #2, month yshift=0pt]
+    if (equals=2025-11-05) [red] 
+    if (Monday){
+        \pgfmathtruncatemacro{\itest}{\pgfcalendarcurrentday}
+        \pgfmathtruncatemacro{\iABCD}{\value{spur}} 
+        \setcounter{ABCD}{\iABCD}
+        \ifnum\itest<8
+            \ifnum\itest>1
+                \node[
+                anchor=base east,
+                shape=rounded rectangle,
+                draw=white,
+                text=white,
+                rounded rectangle east arc=concave,
+                text=black!80,fill=white,
+                xshift=-0.6em,yshift=-2pt,
+                fill=rdsColor!50!white,
+                %inner xsep=0pt,
+                % inner ysep=5pt,
+                % scale=1,
+                % drop shadow={opacity=0.4,shadow xshift=2.5pt,shadow yshift=-1pt},
+                ] (char) {\color{white}\scshape\bfseries\arabic{ABCD}};
+            \fi
+        \fi
+        \stepcounter{spur}
+        \pgfmathtruncatemacro{\iABCD}{\value{spur}} 
+        \setcounter{ABCD}{\iABCD}
+            \node[%
+            anchor=base east,
+            shape=rounded rectangle,
+            draw=white,
+            text=white,
+            rounded rectangle east arc=concave,
+            text=black!80,fill=white,
+            xshift=-0.6em,yshift=-2pt,
+            fill=rdsColor!50!white,
+            %inner xsep=0pt,
+            % inner ysep=5pt,
+            % scale=1,
+            % drop shadow={opacity=0.4,shadow xshift=2.5pt,shadow yshift=-1pt},
+            ] (char) {\color{white}\scshape\bfseries\arabic{ABCD}};    }
+    if(Sunday,Saturday) [gray!50] \examday\holidays\ctedays;
+}
+
+\def\holidays{% holidays
+if (equals=2025-09-16) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+if (equals=2025-11-17) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-02-02) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-03-16) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-05-01) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-05-05) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-05-15) {\fill[pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (0,0.04) circle (0.75em);}
+}
+
+\def\ctedays{% CTE days
+if (equals=2025-09-26) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2025-10-31) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2025-11-28) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-01-30) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-02-27) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-03-27) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-05-29) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-06-26) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+if (equals=2026-07-31) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (0,0.04) circle (0.75em);}
+}
+
+\def\examday{%
+if (equals=2025-11-05) {\draw (0.0,0.04) circle (0.7em);} 
+% if (equals=2025-09-11) {\draw[sharp corners] (-0.25,-0.25) rectangle (0.25, 0.25);}  % misa de inicio
+if (equals=2025-09-24) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-10-15) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-11-12) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-12-03) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2026-01-14) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-02-18) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-03-11) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-04-22) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-05-13) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-06-17) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+if (equals=2025-07-01) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangle (0.25, 0.3);} %Escuela para padres
+}
+% \def\birthdays{% CTE days
+% if (equals=2025-09-08) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2025-09-11) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2025-10-11) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2025-10-17) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2025-12-19) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-01-01) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-02-16) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-02-27) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-04-20) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-04-23) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-05-15) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-06-03) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-06-08) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% if (equals=2026-06-15) {\fill[pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=yellow,sharp corners] (-0.3,-0.3) rectangle (0.3,0.3);}
+% }
+
+% Comando para mostrar el string asociado y su estilo
+\newcommand{\classtitle}[1]{%
+  \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{\textbf{Matemáticas 1}}}{}%
+  \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{\textbf{Matemáticas 2}}}{}%
+  \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{\textbf{Matemáticas 3}}}{}%
+  \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{\textbf{Química}}}{}%
+  \ifthenelse{\equal{#1}{phys2}}{\textcolor{physColor}{\textbf{Física}}}{}%
+  \ifthenelse{\equal{#1}{test0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+}
+
+\newcommand{\leveltitle}[1]{%
+  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+  \ifthenelse{\equal{#1}{1}}{\textcolor{sec1Color}{\textbf{1° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{2}}{\textcolor{sec2Color}{\textbf{2° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{3}}{\textcolor{sec3Color}{\textbf{3° de Secundaria}}}{}%
+}

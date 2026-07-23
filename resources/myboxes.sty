@@ -1,0 +1,264 @@
+\ProvidesPackage{myboxes}
+\RequirePackage[framemethod=tikz]{mdframed}
+\@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
+% \@ifpackageloaded{varwidth}{}{\RequirePackage{varwidth}}
+% \usepackage{mathspec} 			    % for FONTS
+% \usepackage{setspace}               % for LINE SPACING
+% \setmainfont{Noto Sans}[
+%     Kerning = On,
+%     Mapping = tex-text,
+%     Numbers = Uppercase,
+%     BoldFont = Noto Sans SemiBold
+% ]                           % setting the font as Noto Sans
+% \setlength\parindent{1cm}   % killing indentation for all the text
+% \setstretch{1.3}            % setting line spacing to 1.3
+% \setlength\columnsep{0.25in} % setting length of column separator
+% \pagestyle{empty}           % setting pagestyle to be empty
+
+% \tcbset{
+%     sharp corners,
+%     colback = white,
+%     before skip = 0.1cm,    % add extra space before the box
+%     after skip = 0.1cm      % add extra space after the box
+% }                           % setting global options for tcolorbox
+
+
+
+\newtcolorbox{criticobox}{
+  %fontupper = \color{rdsdark},
+  rounded corners,
+  arc = 6pt,
+  colback = colorrds!30,
+  colframe = rdsdark!50,
+  boxrule = 0pt,
+  bottomrule = 4.5pt
+}
+
+\newtcolorbox{importantbox}{
+  enhanced,
+  colback = colorrds!10,
+  colframe = rdsdark,
+  boxrule = 0pt,
+  leftrule = 6pt % left rule weight
+}
+
+\newtcolorbox{practicabox}{
+  colback = DarkGoldenrod!10,
+  enhanced,
+  boxrule = 1.5pt,
+  colframe = white, % making the base for dash line
+  borderline = {1.5pt}{0pt}{OliveDrab, dashed} % add "dashed" for dashed line
+}
+
+
+\newtcolorbox{bA}{
+  %sharpish corners, % b
+  enhanced,
+  %colback = colorrds!30, % background color
+  boxrule = 0.2pt,  % no borders
+  %borderline = {1pt}{1pt}{black!35}, % add "dashed" for dashed line
+  fontupper = \sffamily, % font color
+  %colframe = rdsdark % frame color
+  rounded corners,
+  %arc = 5pt,   % corners roundness
+  fuzzy shadow = {2pt}{-4pt}{-1pt}{1pt}{black!35}, % {xshift}{yshift}{offset}{step}{options} 
+  %toprule = 3pt, % top rule weight
+  %bottomrule = 3pt % bottom rule weight
+}
+% You can copy any following box you like to your code.
+\newtcolorbox{boxA}{
+  fontupper = \bf,
+  boxrule = 1.5pt,
+  colframe = black % frame color
+}
+
+\newtcolorbox{boxB}{
+  fontupper = \bf\color{rdsdark}, % font color
+  boxrule = 1.5pt,
+  colframe = rdsdark,
+  rounded corners,
+  arc = 5pt   % corners roundness
+}
+
+\newtcolorbox{boxC}{
+  colback = colorrds!30, % background color
+  boxrule = 0pt  % no borders
+}
+
+\newtcolorbox{boxD}{
+  colback = colorrds!30,
+  colframe = rdsdark,
+  boxrule = 0pt,
+  toprule = 3pt, % top rule weight
+  bottomrule = 3pt % bottom rule weight
+}
+
+\newtcolorbox{boxE}{
+  enhanced, % for a fancier setting,
+  boxrule = 0pt, % clearing the default rule
+  borderline = {0.75pt}{0pt}{rdsdark}, % outer line
+  borderline = {0.75pt}{2pt}{colorrds!30} % inner line
+}
+
+
+
+\newtcolorbox{boxG}{
+  enhanced,
+  boxrule = 0pt,
+  %colback = colorrds!20,
+  borderline west = {2pt}{0pt}{rdsdark},
+  borderline west = {2pt}{2pt}{rdsdark},
+  borderline east = {2pt}{0pt}{rdsdark},
+  borderline east = {0.75pt}{2pt}{rdsdark},
+  fuzzy shadow = {0mm}{-4pt}{-2pt}{1pt}{black!60!white}, % {xshift}{yshift}{offset}{step}{options} 
+}
+
+
+
+\newtcolorbox{boxI}{
+  colback = colorrds!30,
+  colframe = rdsdark,
+  boxrule = 0pt,
+  toprule = 6pt % top rule weight
+}
+
+\newtcolorbox{boxJ}{
+  sharpish corners, % better drop shadow
+  colback = colorrds!30,
+  colframe = rdsdark,
+  boxrule = 0pt,
+  toprule = 4.5pt, % top rule weight
+  enhanced,
+  fuzzy shadow = {0pt}{-2pt}{-0.5pt}{0.5pt}{black!35} % {xshift}{yshift}{offset}{step}{options} 
+}
+
+\newtcolorbox{boxF}{
+  colback = colorrds!30,
+  enhanced,
+  boxrule = 1.5pt,
+  colframe = white, % making the base for dash line
+  borderline = {1.5pt}{0pt}{colorrds, dashed} % add "dashed" for dashed line
+}
+
+
+
+\newtcolorbox{boxH}{
+  colback = colorrds!10,
+  colframe = colorrds,
+  boxrule = 0pt,
+  leftrule = 6pt % left rule weight
+}
+
+
+\newtcolorbox{boxK}{
+  sharpish corners, % better drop shadow
+  boxrule = 0pt,
+  toprule = 4.5pt, % top rule weight
+  enhanced,
+  fuzzy shadow = {0pt}{-4pt}{-1pt}{1pt}{black!35} % {xshift}{yshift}{offset}{step}{options} 
+}
+
+\newtcolorbox{boxL}{
+  fontupper = \color{colorrds},
+  rounded corners,
+  arc = 6pt,
+  colback = colorrds!30,
+  colframe = colorrds!50,
+  boxrule = 0pt,
+  bottomrule = 4.5pt
+}
+
+\newtcolorbox{boxM}{
+  fontupper = \color{white},
+  rounded corners,
+  arc = 6pt,
+  colback = colorrds!80,
+  colframe = colorrds,
+  boxrule = 0pt,
+  bottomrule = 4.5pt,
+  enhanced,
+  fuzzy shadow = {0pt}{-3pt}{-0.5pt}{0.5pt}{black!35}
+}
+
+%%%% APRENDISAJES TEXTBOX
+\tikzset{
+  abstractbox/.style={
+      draw=darkgray, fill=white, rectangle,
+      inner sep=15pt, style=rounded corners,
+      drop  shadow={fill=gray, opacity=0.7}
+    },
+  abstracttitle/.style={
+      fill=white,
+      style=rounded corners,
+      % drop shadow,
+    }
+}
+
+\newcommand{\boxabstract}[3][fill=white]{
+  \begin{tikzpicture}
+    \node [abstractbox, #1] (box)
+    {\begin{minipage}{.92\textwidth}
+        \setlength{\parindent}{0mm} % Indentar.
+        \normalfont \sffamily #3
+      \end{minipage}};
+    \node[abstracttitle,right=5pt,#1] at (box.north west) {\bfseries \sffamily \large #2};
+    \node[draw=none, fit=(box)] {};
+  \end{tikzpicture}
+}%
+
+\newenvironment{opening}[2][Inicio]{
+  \begin{openbox}
+    \begin{center}
+      \color{rdsdark}\textbf{#1}
+    \end{center}
+    #2
+    }{ \end{openbox}}
+\newenvironment{closing}[2][Cierre]{
+  \begin{closebox}
+    \begin{center}\color{rdsdark}\textbf{#1}\end{center}
+    #2
+    }{ \end{closebox}}
+\newenvironment{problemas}[1]{
+  \begin{practicabox}
+    \begin{center}\color{DarkOliveGreen}\fontsize{18}{18}\selectfont\bbfamily Problemas\end{center}
+    #1
+    }{ \end{practicabox}}
+\newenvironment{critico}[2][Piensa y se cr\'itico]{
+  \begin{criticobox}
+    \begin{center}\color{OliveDrab}\textbf{#1}\end{center}
+    #2
+    }{ \end{criticobox}}
+\newenvironment{important}[3][\textwidth]{
+  \noindent\begin{minipage}{#1}
+    \begin{importantbox}
+      \parbox{7mm}{\raisebox{2mm}{
+          \includegraphics[width=7mm]{keys.png}
+        }}
+      {\fontsize{16}{18}\selectfont\alterfont\bfseries\color{rdsdark} #2}\\
+      #3
+      }{
+    \end{importantbox}% 
+  \end{minipage}%
+}
+
+\usepackage[framemethod=tikz]{mdframed}
+
+\definecolor{mybrown}{RGB}{128,64,0}
+
+\mdfdefinestyle{mystyle}{%
+  linecolor=colorrds,outerlinewidth=1pt,%
+  frametitlerule=true,frametitlefont=\sffamily\bfseries\color{white},%
+  frametitlerulewidth=1pt,frametitlerulecolor=colorrds,%
+  frametitlebackgroundcolor=colorrds,
+  backgroundcolor=colorrds!05,
+  innertopmargin=\topskip,
+  roundcorner=5pt
+}
+\mdtheorem[style=mystyle]{multipletcolorbox}{Multipletcolorbox}
+
+\gdef\Sepline{%
+  \par\noindent\makebox[\linewidth][l]{%
+    \hspace*{-\mdflength{innerleftmargin}}%
+    \tikz\draw[thick,dashed,gray!60] (0,0) --%
+    (\textwidth+\the\mdflength{innerleftmargin}+\the\mdflength{innerrightmargin},0);
+  }\par\nobreak}
