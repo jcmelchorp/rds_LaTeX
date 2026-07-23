@@ -1,0 +1,323 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[most]{tcolorbox}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage[landscape, margin=0.5in]{geometry}
+\usepackage{ragged2e}
+\usepackage{multicol,multirow}
+\usepackage{jsonparse} % Load the json package
+\usepackage{anyfontsize}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{xifthen}
+\usepackage{enumitem} % for custom \item
+\usepackage{pgffor}
+\usepackage{tikz}
+\usetikzlibrary{shapes, positioning,shadows}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes.symbols}
+\usepackage{xparse} %for NewDocumentCommand
+\usepackage{etoolbox}
+\usepackage{l3sys-query} %for query JSON files
+\usepackage{lipsum}
+
+\pagestyle{empty}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\renewcommand{\arraystretch}{1}
+\setlength{\columnsep}{2pt}
+\setlength{\arrayrulewidth}{0.1pt}
+
+%%% DEFINITIONS
+\definecolor{rdsColor}{HTML}{0060A0} % Custom colour
+\definecolor{mathColor}{HTML}{E3A857}
+\definecolor{physColor}{HTML}{228B22}
+\definecolor{chemColor}{HTML}{228B22}
+\definecolor{geogColor}{HTML}{8B4513}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
+\def\notasbox{%
+    \begin{tcolorbox}[%
+        enhanced,
+        breakable,
+        colback=white,
+        colframe=rdsColor,
+        boxrule=0.4pt,
+        fontupper=\color{rdsColor}\sffamily,
+        underlay unbroken and first={%
+            \ifnumequal{\tcbsegmentstate}{1}{
+                \begin{tcbclipinterior}
+                \draw[help lines,rdsColor!60!white, ystep=\baselineskip, xstep=\linewidth] (segmentation.west) grid (frame.south east);
+                \end{tcbclipinterior}
+            }{} 
+        },
+        underlay middle and last={%
+            \ifnumequal{\tcbsegmentstate}{1}{
+                \begin{tcbclipinterior}\color{rdsColor}
+                \draw[help lines,rdsColor!40!white, ystep=\baselineskip, xstep=\linewidth] (segmentation.west) grid (frame.south east);
+                \end{tcbclipinterior}
+            }{\ifnumequal{\tcbsegmentstate}{2}{
+                \begin{tcbclipinterior}\color{rdsColor}
+                \draw[help lines,rdsColor!40!white, ystep=\baselineskip, xstep=\linewidth] (frame.north west) grid (frame.south east);
+                \end{tcbclipinterior}
+                }{} 
+            }
+        }]
+            Notas: 
+            \tcblower
+             \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill \\ \hfill 
+    \end{tcolorbox}
+}
+\tcbset{
+    titlebox/.style={
+        colbacktitle=white,
+        colback=rdsColor!0.5!white,
+        colframe=rdsColor,
+        coltitle=black,
+        boxrule=0.4pt,
+        boxsep=0pt,
+        left=10pt,
+        right=0pt,
+        top=2pt,
+        bottom=5pt,
+        subtitle style={
+            fontupper=\sffamily\small,
+            boxrule=0.2pt,
+            boxsep=2mm,
+            top=0mm,
+            bottom=0mm,
+            colback=rdsColor!10,
+            colupper=green!30!black,
+        }
+    },
+    infobox/.style={
+        coltitle=green!30!black,
+        colframe=rdsColor,
+        colback=rdsColor!1!white,
+        colbacktitle=rdsColor!10,
+        boxrule=0.4pt,
+        frame style={rdsColor},
+        left=1mm,right=1mm,top=1mm,bottom=1mm,
+    }
+}
+
+\def\LOGO{%
+    \begin{picture}(0,0)\unitlength=2cm
+        \put (-0.1,-0.50) {\includegraphics[width=1.85cm]{logo_shadow.png}}
+        \put (-0.105,-0.49) {\includegraphics[width=1.85cm]{logo.png}}
+    \end{picture}
+}
+\def\itembox{%
+    \tcbox[enhanced,drop fuzzy shadow=black,size=fbox,on line,colback=orange!10!white]{\JSONParseArrayValue}
+}
+\def\itemitemize{%
+    \item \JSONParseArrayValue
+}
+
+\newtcolorbox{activitybox}[2][]{%
+  attach boxed title to top center = {yshift=-\tcboxedtitleheight/2},
+  top=5pt,
+  bottom=3pt,
+  left=3pt,
+  right=3pt,
+  colback      = white,
+  colframe     = rdsColor,
+  fonttitle    = \sffamily,
+  colbacktitle = rdsColor!45!white,
+  boxrule=0.4pt,
+  halign=center,
+  boxsep=0mm,
+  title        = \large\textbf{#2},#1,
+  on line,
+  enhanced,
+}
+
+\newtcolorbox{subsectionbox}[1][]{%
+    size=fbox,
+    top=0pt,%boxsep=2mm,
+    bottom=0pt,
+    width=\linewidth/8,
+    grow to left by=7mm,
+    colback = rdsColor!45!white,
+    colframe     = rdsColor,
+    leftrule=2mm, 
+    drop fuzzy shadow=black,
+    fontupper=\color{white}\bfseries\sffamily\RaggedLeft,
+    #1,
+    on line,
+    enhanced,
+}
+
+\newcommand{\rangofecha}[2]{
+    \begin{tikzpicture}[baseline]
+        \node (box) [rdsColor,
+            draw,                   % Dibuja el borde
+            fill=white,
+            anchor=base,baseline,
+            rounded corners=4pt,    % Redondea las esquinas
+            minimum width=3cm,      % Ancho total
+            minimum height=1.5em,    % Alto total
+            yshift=0.3em,
+            blur shadow={
+                shadow opacity=50,
+                shadow blur steps=5,
+                shadow blur extra rounding=5pt
+            },
+        ] {}; % El nodo no lleva texto dentro, solo define la forma.
+        \draw[rdsColor] ([xshift=-1mm]box.north) -- ([xshift=1mm]box.center) -- ([xshift=-1mm]box.south);
+        \node at ([xshift=-0.8cm]box.center) {\large #1};
+        \node at ([xshift=0.8cm]box.center) {\large #2};
+    \end{tikzpicture}%
+}
+
+% Comando para mostrar el string asociado y su estilo
+\newcommand{\classtitle}[1]{%
+  \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{\textbf{Matemáticas 1}}}{}%
+  \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{\textbf{Matemáticas 2}}}{}%
+  \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{\textbf{Matemáticas 3}}}{}%
+  \ifthenelse{\equal{#1}{geog1}}{\textcolor{geogColor}{\textbf{Geografía}}}{}%
+  \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{\textbf{Química}}}{}%
+  \ifthenelse{\equal{#1}{phys2}}{\textcolor{physColor}{\textbf{Física}}}{}%
+  \ifthenelse{\equal{#1}{test0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+}
+
+\newcommand{\leveltitle}[1]{%
+  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+  \ifthenelse{\equal{#1}{1}}{\textcolor{sec1Color}{\textbf{1° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{2}}{\textcolor{sec2Color}{\textbf{2° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{3}}{\textcolor{sec3Color}{\textbf{3° de Secundaria}}}{}%
+}
+
+\newcommand{\planner}[3]{%
+    \def\schoolinfo{\RaggedRight%
+        {\color{rdsColor}\fontsize{14}{12}\selectfont Escuela Rafael Díaz Serdán}\\[-0.5em]
+        {\color{gray!40!black}\fontsize{6}{6}\selectfont \sffamily 30PES0329R \hfill turno matutino \hspace{2pt}}\\[0.2em]
+        {\color{green!20!black} \fontsize{12}{12}\selectfont \sffamily Planeación didáctica semanal}\\
+        {\color{black!90}{\sffamily Profesor:} Julio César Melchor Pinto}\\
+        {\sffamily Disciplina:} \classtitle{#2#1} \\
+        {\sffamily Grado y grupo:}  \leveltitle{#1}\\
+    }
+    \def\unitinfo{\RaggedRight%
+        \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
+    }
+    \JSONParseFromFile{\weekdata}{../resources/json/#2#1_u#3.json}
+    %\QueryFiles[reverse]{*.json}{\JSONParseFromFile{\weekdata}{##1}}
+}
+
+
+\newcommand{\arrayitemize}[2]{%
+\JSONParseArrayMapFunction[
+    code before={\begin{itemize}[label=$\circ$,leftmargin=5pt,itemsep=0pt,itemindent=0em]},
+    code after={\end{itemize}}
+]{\weekdata}{weeks[#1].#2}{\itemitemize}
+}
+
+% Comando para el diseño del encabezado
+\newcommand{\planTitle}[8]{\small%
+    \begin{minipage}{0.07\textwidth}
+        \LOGO
+    \end{minipage}%
+    \begin{minipage}{0.23\textwidth}
+        \schoolinfo
+    \end{minipage}%
+    \begin{tabularx}{0.7\textwidth}{rYr}
+        {\sffamily Campo formativo:} & Saberes y Pensamiento Científico  &  \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2025-2026} \unitinfo  \\ 
+        {\sffamily Tema:}  & \multirow[t]{2}{\linewidth}{#3} & \tcbox[colback=yellow!20!white,colframe=rdsColor,size=fbox,on line]{ {\large\sffamily Semana} {\Large #6}} \tcbox[colframe=rdsColor,size=fbox,on line]{ {\Large #5} \begin{minipage}[b]{0.9cm}\sffamily\tiny Períodos\\lectivos\end{minipage}} \\
+        & & \rangofecha{#7}{#8}  \\
+        {\sffamily Contenido:}  &  \multicolumn{2}{l}{#2}\\
+        {\sffamily Ejes articuladores:} &   \multicolumn{2}{l}{#1}\\
+        {\sffamily Lección:} &   \multicolumn{2}{l}{#4}\\ 
+    \end{tabularx}
+}
+
+\newcommand{\weekbottom}[2]{%
+\begin{multicols}{3}\centering
+    \begin{tcolorbox}[infobox, title={\sffamily \large Proceso de desarrollo de aprendizaje (PDA):}]
+    \tcboxfit[colback=white,colframe=white,top=0mm,bottom=0mm,left=0mm,right=0mm,height=1.5cm, fit basedim=11pt]{#1}
+    \end{tcolorbox}
+
+    \columnbreak%
+
+    \begin{tabularx}{0.95\linewidth}{c|c}
+        \multicolumn{1}{p{0.45\linewidth}}{\centering \sffamily Elabora:}  & \multicolumn{1}{p{0.45\linewidth}}{\centering \sffamily Autoriza:}                \\
+        \hline
+        \footnotesize \sffamily Nombre y firma & \footnotesize \sffamily Nombre y firma \\
+        \begin{minipage}[b][1.5cm][b]{0.45\linewidth}\includegraphics[width=\linewidth]{null.png}\end{minipage} & {} \\
+    \end{tabularx} \\
+    {\centering \fontsize{6}{4}\selectfont  \color{black!60} Última revisión del documento:  \today}%
+
+    \columnbreak%
+
+    \begin{tcolorbox}[infobox, title={\sffamily \large Evaluación formativa:}]
+        \tcboxfit[colback=white,colframe=white,top=0mm,bottom=0mm,left=0mm,right=0mm,height=1.5cm, fit basedim=11pt]{#2}
+    \end{tcolorbox}%
+\end{multicols}
+}
+
+\NewDocumentCommand{\badges}{ m m }{
+    \begin{tcolorbox}[infobox,size=normal,boxrule=0.4pt,left=1mm,right=1mm,top=1mm,bottom=1mm,title={\sffamily  Referencias:}]%
+        \tcboxfit[colback=white,colframe=white,top=0mm,bottom=0mm,left=0mm,right=0mm,height=1.5cm]{#2}
+    \end{tcolorbox}
+    \begin{tcolorbox}[infobox,size=normal,boxrule=0.4pt,left=1mm,right=1mm,top=1mm,bottom=1mm, title={\sffamily  Vinculación del campo formativo:}]
+        \tcboxfit[colback=white,colframe=white,top=0mm,bottom=0mm,left=0mm,right=0mm,height=1.5cm]{#1}
+    \end{tcolorbox}
+}
+
+\NewDocumentCommand{\weekcontents}{ m m m }{%
+%\newcommand{\weekcontents}[8]{%
+\begin{minipage}[t][12.5cm][b]{0.72\linewidth}
+    \tcboxfit[colback=white,colframe=white,top=1mm,bottom=0mm,left=0mm,right=5pt,height=12.5cm]{%
+    \begin{subsectionbox} INICIO: \end{subsectionbox}%
+    \quad #1 \\ \\
+    \begin{subsectionbox} DESARROLLO: \end{subsectionbox}%
+    \quad #2 \\ \\
+    \begin{subsectionbox} CIERRE: \end{subsectionbox}%
+    \quad #3
+    }
+\end{minipage}%
+}
+
+\begin{document}
+% \planner{0}{test}{1}%%
+% \planner{1}{math}{1}%
+% \planner{2}{math}{1}%
+% \planner{3}{math}{1}%
+% \planner{3}{chem}{1}%
+\planner{1}{geog}{1}%
+\JSONParseArrayMapInline{\weekdata}{weeks}{%
+    \begin{tcolorbox}[titlebox,title=\planTitle
+            {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
+            {\JSONParseValue{\weekdata}{weeks[#1].Contenido}}
+            {\JSONParseValue{\weekdata}{weeks[#1].Tema}}
+            {\JSONParseValue{\weekdata}{weeks[#1].Leccion}}
+            {\JSONParseValue{\weekdata}{weeks[#1].PeriodosLectivos}}
+            {\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}}
+            {\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio}}
+            {\JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}}
+        ]
+        \weekcontents{%
+            \JSONParseValue{\weekdata}{weeks[#1].Inicio}
+        }%
+        {%
+            \JSONParseValue{\weekdata}{weeks[#1].Desarrollo}
+        }%
+        {%
+            \JSONParseValue{\weekdata}{weeks[#1].Cierre}
+        }\hfill%
+        \begin{minipage}[t][12.5cm][b]{0.29\linewidth}
+            \JSONParseArrayMapFunction[
+                code before={\begin{activitybox}{Actividades}},
+                            code after={\end{activitybox}}
+            ]{\weekdata}{weeks[#1].ActPro}{\itembox}
+            \notasbox\vfill
+            \badges{\JSONParseValue{\weekdata}{weeks[#1].Vinculacion}}{\arrayitemize{#1}{Libros}}
+        \end{minipage}
+    \end{tcolorbox}
+    \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}
+}
+\end{document}

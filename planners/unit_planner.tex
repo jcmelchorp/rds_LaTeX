@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,raster,breakable} % Load the breakable library
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{adjustbox}
+\usepackage{graphicx} % for \scalebox
+\usepackage{xcolor} % For defining colors
+\usepackage{colortbl} % For coloring table elements
+\usepackage{ifthen}
+\usepackage{xifthen}
+\usepackage{enumitem} % for custom \item
+\usepackage{pgffor}
+
+\pagestyle{empty}
+\newcolumntype{Y}{>{\RaggedLeft\arraybackslash}X}
+\renewcommand{\arraystretch}{1.2}
+
+\arrayrulecolor{rdsColor}
+\setlength{\columnsep}{10pt}
+\setlength{\arrayrulewidth}{0.1pt}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
+
+\tcbset{
+    unitbox/.style={
+        colbacktitle=white,
+        right=0pt
+    }
+}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt,fill=white,drop shadow] (char) {#1};}}
+
+\def\LOGO{%
+    \begin{picture}(0,0)\unitlength=2cm
+        \put (0.05,-0.45) {\includegraphics[width=1.6cm]{logo_shadow.png}}
+        \put (0.045,-0.44) {\includegraphics[width=1.6cm]{logo.png}}
+    \end{picture}
+}
+\def\itembox{%
+    \def\disciplina{\classtitle{#2#1}}
+    \def\gradogrupo{\leveltitle{#1}}
+    \def\schoolinfounit{\RaggedRight%
+        {\color{rdsColor}\Large Escuela Rafael Díaz Serdán}\\[-0.5em]
+        {\color{gray!40!black}\scriptsize\sffamily 30PES0329R \hspace{10em} turno matutino  }\\
+        {\color{green!20!black}\large\sffamily Autocontrol del alumno}\\
+        {\sffamily Profesor:} Julio César Melchor Pinto
+        %Saberes y pensamiento científico
+    \end{tikzpicture}%
+}
+
+
+
+
+
+
+
+\newcommand{\arrayitemtable}[2]{%
+\JSONParseArrayMapFunction[
+    code before={\begin{tabularx}{\linewidth}{rl}},
+\newcommand{\periodoslectivos}[1]{%
+   \tcbox[,on line,size=fbox,arc=1.5pt,colback=yellow!20!white,colframe=rdsColor!50,sharp corners=southeast]{%
+        {#1}\ %
+        \begin{minipage}[b]{0.8cm}\color{black!75}\sffamily\tiny Períodos\\[-0.2em] lectivos \end{minipage}%
+    }%
+}
+% \newtcbox{\headerbox}{}
+\newcommand{\tableta}[1]{%
+\JSONParseArrayMapFunction[%
+    code before={%
+    \begin{tcolorbox}[
+        before app={Semana \circled{\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}}\\[0.5em]},
+        after app={},
+        enhanced,
+        drop fuzzy shadow=black!75,
+        tabulars={@{\extracolsep{\fill}\hspace{1mm}}lr@{\hspace{2pt}}},
+        arc=2pt,boxrule=0.1pt,left=0mm,right=0mm,top=0mm,bottom=2pt,
+        coltitle=rdsColor!30!black,
+        colbacktitle=rdsColor!10!white,
+        colback=white,
+        colframe=rdsColor,
+        toptitle=0mm,
+        bottomtitle=0mm,
+        width=0.8\linewidth,
+        title={\coolTitle{#1}}]%
+        {\footnotesize\sffamily\qquad Actividad} & {\footnotesize\sffamily Fecha \ \! C  \! \ L \! \ O \! Pr \! Pu Tot.} \\\hline\hline%
+        },
+    code after={\end{tcolorbox}}
+]{\weekdata}{weeks[#1].Worklist}{\listableta}
+}
+
+\def\fillingradebox{\raisebox{-0.35em}{\LARGE$\Box$}}
+
+\def\listableta{%
+\adjustbox{max width=0.58\linewidth}{\JSONParseArrayValue} & {\fbox{\phantom{oooo}} \color{gray}\fillingradebox\fillingradebox\fillingradebox\fillingradebox\fillingradebox{\color{rdsColor}\fillingradebox}}\\ \hline
+}
+
+\newcommand{\coolTitle}[1]{% %
+\tcbox[on line,size=fbox,arc=1.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners=southwest]{\large\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio} \textbf{<} \JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}} \ %
+\JSONParseValue{\weekdata}{weeks[#1].Tema} \hfill
+  \periodoslectivos{\JSONParseValue{\weekdata}{weeks[#1].PeriodosLectivos}}%
+}
+
+    \begin{minipage}{0.1\textwidth}
+        \LOGO
+    \end{minipage}%
+    \begin{minipage}{0.38\textwidth}
+        \schoolinfounit
+    \end{minipage}%
+    \begin{tabularx}{0.52\textwidth}{rYr}%
+          & \large\disciplina &  \large\unitinfo  \\ 
+          & \large\gradogrupo &  \large\cicloescolar \\ 
+         \cline{2-3}
+         {\large\sffamily Alumno:} &  \multicolumn{2}{|r|}{}\\
+         \cline{2-3}
+    \end{tabularx}
+}
+
+\begin{document}
+%%  \planner{grado}{materia}{unidad}
+  \plannerof{0}{test}{1}%%
+%   \plannerof{1}{math}{1}%
+%   \plannerof{2}{math}{1}%
+%   \plannerof{3}{math}{1}%
+%   \plannerof{3}{chem}{1}%   
+%   \plannerof{2}{phys}{1}%
+\begin{tcolorbox}[unitbox,title=\unitboxtitle,breakable,halign=center]
+    \JSONParseArrayMapInline{\weekdata}{weeks}{\tableta{#1}}
+
+
+\end{tcolorbox}
+\end{document}

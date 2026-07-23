@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% \usepackage[spanish]{babel}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,raster,breakable} % Load the breakable library
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{ragged2e}
+\usepackage{multicol,multirow}
+\usepackage{jsonparse} % Load the json package
+\usepackage{anyfontsize}
+\usepackage{adjustbox}
+\usepackage{graphicx} % for \scalebox
+\usepackage{xcolor} % For defining colors
+\usepackage{colortbl} % For coloring table elements
+\usepackage{ifthen}
+\usepackage{xifthen}
+\usepackage{enumitem} % for custom \item
+\usepackage{pgffor}
+% \usepackage{pgf-pie}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
+\usetikzlibrary{shadows,shadows.blur}
+\usetikzlibrary{shapes,shapes.symbols}
+\usetikzlibrary{patterns,patterns.meta}
+\usepackage{cicloescolar}
+\usepackage{xparse} %for NewDocumentCommand
+\usepackage{calligra}
+\usepackage{frcursive}
+\usepackage{bbold}
+\usepackage{wela}
+\newcommand{\setfont}[2]{{\fontfamily{#1}\selectfont #2}}
+% \usepackage{fontspec}
+% \newfontfamily\AngelfaceFont{Angelface}
+\usepackage{shadowtext}
+\shadowoffset{0.4pt}
+\shadowcolor{black}
+\DTMsetdatestyle{fechacorta}
+\pagestyle{empty}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\renewcommand{\arraystretch}{1.2}
+\arrayrulecolor{rdsColor}
+\setlength{\columnsep}{10pt}
+\setlength{\arrayrulewidth}{0.1pt}
+\usepackage{lscape} % for landscape mode
+
+
+\tcbset{
+    unitbox/.style={
+        colbacktitle=white,
+        colback=rdsColor!0.5!white,
+         colframe=rdsColor,
+       % colframe=white,
+        coltitle=black,
+        boxrule=1pt,
+        % toprule=0.5pt,
+        boxsep=5pt,
+        toptitle=10pt,
+        bottomtitle=5pt,
+        arc=5pt,
+        boxsep=0pt,
+        left=10pt,
+        right=10pt,
+        top=10pt,
+        bottom=10pt,
+        subtitle style={
+            fontupper=\sffamily,
+            boxrule=0.2pt,
+            boxsep=2mm,
+            top=0mm,
+            bottom=0mm,
+            colback=rdsColor!10,
+            colupper=green!30!black,
+        }
+    }
+}
+
+
+\def\LOGO{%
+    \begin{picture}(0,0)\unitlength=2cm
+        \put (0.05,-0.45) {\includegraphics[width=1.6cm]{logo_shadow.png}}
+        \put (0.045,-0.44) {\includegraphics[width=1.6cm]{logo.png}}
+    \end{picture}
+}
+
+\newcommand{\plannerof}[3]{%
+    \def\disciplina{\classtitle{#2#1}}
+    \def\gradogrupo{\leveltitle{#1}}
+    \def\schoolinfounit{\RaggedRight%
+        {\color{rdsColor}\Large Escuela Rafael Díaz Serdán}\\[-0.5em]
+        {\color{gray!40!black}\scriptsize\sffamily 30PES0329R \hspace{10em} turno matutino  }\\
+        {\color{green!20!black}\large\sffamily Binvenida al ciclo escolar}\\
+        {\sffamily Profesor:} Julio César Melchor Pinto
+        %Saberes y pensamiento científico
+    }
+    \def\unitinfo{%
+        \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
+    }
+    \def\cicloescolar{%
+        \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
+    }
+    \JSONParseFromFile{\weekdata}{../resources/json/#2#1_u#3.json}
+    %\QueryFiles[reverse]{*.json}{\JSONParseFromFile{\weekdata}{##1}}
+    % \def\unitcalendar{
+        % \unitcalendarselector{#3}
+    % }
+}
+% Comando para el diseño del encabezado
+\def\unitboxtitle{%
+    \begin{minipage}{0.12\textwidth}
+        \LOGO
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+        \schoolinfounit
+    \end{minipage}%
+    \begin{tabularx}{0.43\textwidth}{Yr}%
+        & \large\shadowtext{\disciplina}\\ 
+        & \large\shadowtext{\gradogrupo} \\ 
+        & \cicloescolar\\
+    \end{tabularx}
+}
+
+
+
+\begin{document}
+%%  \planner{grado}{materia}{unidad}
+% \plannerof{0}{test}{1}%%
+% \plannerof{1}{math}{1}%
+%   \plannerof{2}{math}{1}%
+%   \plannerof{3}{math}{1}%
+%   \plannerof{3}{chem}{1}%   
+  \plannerof{2}{phys}{1}%
+\begin{tcolorbox}[unitbox,title=\unitboxtitle,before upper={\parindent=15pt}]
+    % \setfont{wela}{\JSONParseValue{\weekdata}{general.Words}} \\
+    \JSONParseValue{\weekdata}{general.Words} \\[-1cm]
+    \includegraphics[scale=0.35]{null.png}
+\end{tcolorbox}
+% \end{landscape}
+\end{document}
