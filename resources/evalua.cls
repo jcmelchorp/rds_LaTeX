@@ -247,8 +247,8 @@
         \arrayrulecolor{colorrds!30}%
         \ifnum\numquestions>7%
             {
-            \ifnum\numquestions>15%
-                {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            \ifnum\numquestions<15%
+                {\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
                 \else%
                 {\multirowgradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
             \fi%
@@ -257,7 +257,7 @@
         \fi%
         %}%
         };
-        \node[gradetableboxtitle,xshift=-200pt,yshift=4pt] at (box.north east) {\bfseries \LARGE \comfortaa \color{Sepia} #2};
+        \node[gradetableboxtitle,xshift=50pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
 }
 \newcommand{\instructionbox}[3][fill=white]{%
@@ -295,7 +295,7 @@
 \extraheadheight[2cm]{0.5cm}
 \firstpageheader{}{
 {\LARGE\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\LOGO\\
-{\bfseries\large\color{MainColor}\thegrado \ (\thecicloescolar)}\\
+{\bfseries\large\color{MainColor}\thegrado }\\
 {\bfseries\large\color{SubjectColor}\themateria} \\
 {\@title \ \theunidad}\\
 {\small \@author}
@@ -315,14 +315,17 @@
 \vspace{0.2cm}
 
 \begin{minipage}{\textwidth}
-    \makebox[0.73\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9cm]}
-    \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.6cm]}
+    \makebox[0.7\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[8.1cm]}
+    \makebox[0.28\linewidth]{\textbf{ \comfortaa \color{Sepia} Ciclo escolar: } \ \DrawLine[2.9cm]}
 \end{minipage}
-\vspace*{0.1cm}
+
+\vspace*{0.2cm}
 
 \begin{minipage}{\textwidth}
-    \makebox[\linewidth]{\textbf{\comfortaa \color{Sepia} Evaluador: } \DrawLine[15.5cm]}
+    \makebox[0.7\linewidth]{\textbf{\comfortaa \color{Sepia} Evaluador: } \DrawLine[9.8cm]}
+    \makebox[0.28\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[4.2cm]}
 \end{minipage}
+
 
 \vspace{0.2cm}
 
@@ -345,19 +348,25 @@
 \vspace{0.2cm}
 
 \begin{minipage}{\textwidth}
-    \begin{minipage}[t][][b]{.55\textwidth}
-        \objetivobox{Aprendizajes a evaluar:}{%\small%
-            \theaprendizajes
-        }
-    \end{minipage}\hfill%
-    \begin{minipage}[t][][b]{.4\textwidth}
-        \adjustbox{
-            min size={0.05\textwidth}{50pt},
-            max size={0.9\textwidth+3pt}{400pt}
+    % \begin{minipage}[t][][b]{.55\textwidth}
+    %    % \objetivobox{Aprendizajes a evaluar:}{%\small%
+    %    %     \theaprendizajes
+    %    % }
+    % \end{minipage}\hfill%
+    % \begin{minipage}[t][][b]{.4\textwidth}
+    %     \adjustbox{
+    %         min size={0.05\textwidth}{50pt},
+    %         max size={0.9\textwidth+3pt}{400pt}
+    %         }{%
+    %         \gradesbox{Calificación:}%
+    %         }%
+    % \end{minipage}
+     \adjustbox{
+            min size={0.98\textwidth}{50pt},
+            max size={0.98\textwidth+3pt}{200pt}
             }{%
             \gradesbox{Calificación:}%
             }%
-    \end{minipage}
-\end{minipage}%
+    \end{minipage}%
 }
 \makeatother
