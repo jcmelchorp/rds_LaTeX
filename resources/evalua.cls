@@ -116,16 +116,16 @@
     \fillin[#1][1cm]%
 }
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
-        \node[shape=circle, draw, fill=Goldenrod!10, minimum size=1.8em, inner sep=0pt, thick] (char) {#1};}}
+        \node[shape=circle, draw, fill=Goldenrod!5, minimum size=1.8em, inner sep=0pt, thick] (char) {#1};}}
 
 \renewcommand\choicelabel{{\color{DarkOliveGreen}\bfseries\thechoice}.}
 % \qformat{\color{BrickRed}\circled{\thequestion}}
-\renewcommand\questionlabel{\color{BrickRed!65!black}\circled{\thequestion}}
+\renewcommand\questionlabel{\color{Goldenrod!30!black}\circled{\thequestion}}
 \renewcommand{\thepartno}{\alph{partno}}
-\renewcommand{\partlabel}{\color{SubjectColor}\normalsize\circled{{{\color{BrickRed!65!black}\thequestion}\thepartno}}}
+\renewcommand{\partlabel}{\color{Goldenrod!30!black}(\thepartno)}
 \renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\par\noindent}
 \checkboxchar{\faIcon[regular]{square}}
-\CorrectChoiceEmphasis{\color{red!50!gray}\bf}
+\CorrectChoiceEmphasis{\color{red!50!gray}}
 \checkedchar{\faIcon[regular]{check-square}}
 % \pointsinmargin
 %\pointformat{}
@@ -138,6 +138,10 @@
 \newcommand{\materia}[1]{\renewcommand{\themateria}{#1}}
 \newcommand{\thegrado}{1}
 \newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
+\newcommand{\thenivel}{1}
+\newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
+\newcommand{\thecampoformativo}{1}
+\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
 \newcommand{\theguia}{1}
 \newcommand{\guia}[1]{\renewcommand{\theguia}{#1}}
 \newcommand{\thecicloescolar}{1}
@@ -204,18 +208,27 @@
     instructiontitle/.style={
             fill=white,
             style=rounded corners},
-    gradesbox/.style={anchor=north east,xshift=-.21\textwidth-1pt,
-            yshift=-2cm,
-            draw=none,%=colorrds, dashed,
-            fill=white, rectangle,
-            inner sep=5pt, style=rounded corners,
-            %drop  shadow={fill=lightgray, opacity=0.7}
+    gradesbox/.style={
+        % anchor=north east,xshift=-.21\textwidth-1pt,
+        %     yshift=-2cm,
+        %     draw=none,%=colorrds, dashed,
+        %     fill=white, rectangle,
+        %     inner sep=5pt, style=rounded corners,
+        %     %drop  shadow={fill=lightgray, opacity=0.7}
+         draw=colorrds,fill=white, rectangle,
+            inner sep=10pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }
         },
     gradetableboxtitle/.style={
             fill=white,
-            inner xsep=2pt,inner ysep=2pt,
-            style=rounded corners,
-            % drop shadow,
+            style=rounded corners
         },
     objetivobox/.style={
             anchor=north,
@@ -242,16 +255,17 @@
 }
 \newcommand{\gradesbox}[2][fill=white]{%
     \begin{tikzpicture}%
-        \node[gradesbox, #1] (box) {%
+        \node [instructionbox, #1] (box)
+        {%
         \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
         \arrayrulecolor{colorrds!30}%
-        \ifnum\numquestions>7%
+        \ifnum\numquestions>20%
             {
-            \ifnum\numquestions<15%
-                {\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                \else%
-                {\multirowgradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            \fi%
+            %\ifnum\numquestions<15%
+             %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %    \else%
+                {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %\fi%
             }%
             \else{\gradetable[h][questions]}%
         \fi%
@@ -295,10 +309,11 @@
 \extraheadheight[2cm]{0.5cm}
 \firstpageheader{}{
 {\LARGE\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\LOGO\\
-{\bfseries\large\color{MainColor}\thegrado }\\
-{\bfseries\large\color{SubjectColor}\themateria} \\
-{\@title \ \theunidad}\\
-{\small \@author}
+{\large \thecampoformativo} \\
+{\bfseries\large{\color{SubjectColor}\themateria} } 
+{\bfseries\large{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
+{\Large\vspace{1mm}\@title \ \theunidad}\\
+%{\small \@author}
 \thecontrol[yshift=-4cm,xshift=-0.6\textwidth,scale=1.5]
 }{}
 \firstpagefooter{}{
@@ -362,8 +377,8 @@
     %         }%
     % \end{minipage}
      \adjustbox{
-            min size={0.98\textwidth}{50pt},
-            max size={0.98\textwidth+3pt}{200pt}
+            min size={0.98\textwidth}{150pt},
+            max size={\textwidth}{600pt}
             }{%
             \gradesbox{Calificación:}%
             }%
