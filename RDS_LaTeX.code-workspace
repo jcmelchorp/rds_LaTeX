@@ -18,8 +18,8 @@
 		"latex-workshop.latex.texDirs": [
 			"%WORKSPACE_FOLDER%/resources/",
 			"%WORKSPACE_FOLDER%/aux/",
-			//"%DIR%/base",
-			//"%DIR%/images",
+			"%DIR%/base",
+			"%DIR%/images",
 			//"%DIR%/base/pgf-periodictable",
 		],
 		"latex-workshop.latex.tools": [
