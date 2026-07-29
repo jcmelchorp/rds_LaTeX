@@ -455,13 +455,28 @@
 % \renewcommand{\partlabel}{\colorbox{red} {\large{\textbf{\color{white}(\thepartno)}}}}
 %%%% STYLES
 \tikzset{
+    instructionbox/.style={%dashed,
+            draw=colorrds,fill=white, rectangle,
+            inner sep=10pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }
+        },
+    instructiontitle/.style={
+            fill=white,
+            style=rounded corners},
     nombrebox/.style={xshift=-.7\textwidth-3pt,
             yshift=-0.5cm,
             draw=none, fill=white, rectangle,
             inner xsep=2pt, style=rounded corners,
             %drop  shadow={fill=lightgray, opacity=0.7}
         },
-    aprendizajebox/.style={anchor=north,xshift=-.9\textwidth-3pt,
+    aprendizajebox/.style={anchor=north east,xshift=-.32\textwidth+3pt,
             yshift=-1.2cm,
             draw=none,%=colorrds, dashed,
             fill=white, rectangle,
@@ -474,19 +489,28 @@
             style=rounded corners,
             % drop shadow,
         },
-    gradetablebox/.style={anchor=north east,xshift=-.21\textwidth-1pt,
-            yshift=-1.2cm,
-            draw=none,%=colorrds, dashed,
-            fill=white, rectangle,
-            inner sep=5pt, style=rounded corners,
-            %drop  shadow={fill=lightgray, opacity=0.7}
+    gradesbox/.style={
+        % anchor=north east,xshift=-.21\textwidth-1pt,
+        %     yshift=-2cm,
+        %     draw=none,%=colorrds, dashed,
+        %     fill=white, rectangle,
+        %     inner sep=5pt, style=rounded corners,
+        %     %drop  shadow={fill=lightgray, opacity=0.7}       
+         draw=colorrds,fill=white, rectangle,
+            inner sep=3pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }
         },
     gradetableboxtitle/.style={
             fill=white,
-            inner xsep=2pt,inner ysep=2pt,
-            style=rounded corners,
-            % drop shadow,
-        }
+            style=rounded corners
+        },
 }
 %%%% COMMAND
 \newcommand\fracquestion[2]{%
@@ -531,6 +555,27 @@
     \def\hiff{\calc{\giff+\const}}%
     \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
 }
+\newcommand{\gradesbox}[2][fill=white]{%
+    \begin{tikzpicture}%
+        \node [gradesbox, #1] (box)
+        {%
+        \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
+        \arrayrulecolor{colorrds!30}%
+        \ifnum\numquestions>20%
+            {
+            %\ifnum\numquestions<15%
+             %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %    \else%
+                {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %\fi%
+            }%
+            \else{\gradetable[h][questions]}%
+        \fi%
+        %}%
+        };
+        \node[gradetableboxtitle,xshift=10pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
+    \end{tikzpicture}%
+}
 \newcommand{\INFO}{%
     \begin{tikzpicture}[remember picture]
         \draw[colorrds,thin,xshift=-1.2\textwidth-5pt ,yshift=0.5cm,
@@ -564,32 +609,40 @@
             \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.6cm]}
         };
         %%%% APRENDIZAJES
-        \node[aprendizajebox] (box) {\adjustbox{minipage=0.58\textwidth}{\theaprendizajes}};
-        \node[aprendizajetitle,xshift=127pt,yshift=4pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
-        %%%% GRADESTABLE
-        \node[gradetablebox] (box)
-        {%
-        \adjustbox{
-        min size={0.05\textwidth}{50pt},
-        max size={0.38\textwidth+3pt}{130pt}
-        }{%
-        \cellwidth{0.4em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Obtenidos}\vtword{Total}%
-        \arrayrulecolor{colorrds!30}%
-        \ifnum\numquestions>7%
-            {
-            \ifnum\numquestions>20%
-                %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                {\multirowgradetable{4}[questions]}
-                \else%
-                {\multicolumngradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            \fi%
+        \node[aprendizajebox] (box) {\adjustbox{minipage=0.85\textwidth}{\theaprendizajes}};
+        \node[aprendizajetitle,xshift=120pt,yshift=4pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
+        % %%%% GRADESTABLE
+        % \node[gradetablebox] (box)
+        % {%
+        % \adjustbox{
+        % min size={\textwidth}{50pt},
+        % max size={\textwidth+3pt}{130pt}
+        % }{%
+        % \cellwidth{0.4em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Obtenidos}\vtword{Total}%
+        % \arrayrulecolor{colorrds!30}%
+        % \ifnum\numquestions>7%
+        %     {
+        %     \ifnum\numquestions>20%
+        %         %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+        %         {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}
+        %         \else%
+        %         {\multicolumngradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+        %     \fi%
+        %     }%
+        %     \else{\gradetable[h][questions]}%
+        %    \fi%
+        % }%
+        % };
+        % \node[gradetableboxtitle,xshift=-112pt,yshift=4pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Puntuación:};
+    \end{tikzpicture}\\
+    \begin{minipage}{\textwidth}\centering
+     \adjustbox{
+            min size={0.2\textwidth}{150pt},
+            max size={\textwidth}{600pt}
+            }{%
+            \gradesbox{Calificación:}%
             }%
-            \else{\gradetable[h][questions]}%
-           \fi%
-        }%
-        };
-        \node[gradetableboxtitle,xshift=-112pt,yshift=4pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Puntuación:};
-    \end{tikzpicture}%
+ \end{minipage}%
     \begin{tikzpicture}[remember picture, overlay,shift=(current page.north west)]
         %%%% LOGO
         \node[yshift=-3.5cm,xshift=-2.5cm]{\LOGO};
