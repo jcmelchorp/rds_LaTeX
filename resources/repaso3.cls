@@ -1,7 +1,7 @@
 % \def\fileversion{2.0}
 % \def\filedate{2025/09/14}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{repaso}%[\filedate\space Plantilla Repaso RDS Version \fileversion\space by J.Melchor]
+\ProvidesClass{repaso3}%[\filedate\space Plantilla Repaso RDS Version \fileversion\space by J.Melchor]
 \LoadClass{exam}
 \DeclareOption{addpoints}{\addpoints}
 \DeclareOption{answers}{\printanswers}

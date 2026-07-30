@@ -1,7 +1,7 @@
 \def\fileversion{1.0}
 \def\filedate{2023/06/05}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{evaluasep}[2023/01/20 Plantilla Evaluación RDS]
+\ProvidesClass{evalua3}[2023/01/20 Plantilla Evaluación RDS]
 \LoadClass{exam}
 \DeclareOption{addpoints}{\addpoints}
 \DeclareOption{answers}{\printanswers}
@@ -96,11 +96,11 @@
 \RequirePackage{import}
 \RequirePackage{subfiles} % Best loaded last in the preamble
 \RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\fontsize{10}{5}\bfseries\color{darkgray}}{}{0pt}{}
-\titlespacing*{\section}{-20pt}{1em}{0.5em}
+\titleformat{\section}{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0em}{0.3em}
 \titleformat{\subsection}
-{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{\thesubsection}{0.5em}{}
-\titlespacing*{\subsection}{-20pt}{0.5em}{0.5em}
+{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \renewcommand{\arraystretch}{1.4}
 \AtBeginEnvironment{choices}{\vspace{0.1\baselineskip}}
 \AtEndEnvironment{choices}{\vspace{0.1\baselineskip}}
@@ -138,6 +138,10 @@
 \newcommand{\materia}[1]{\renewcommand{\themateria}{#1}}
 \newcommand{\thegrado}{1}
 \newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
+\newcommand{\thenivel}{1}
+\newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
+\newcommand{\thecampoformativo}{1}
+\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
 \newcommand{\theguia}{1}
 \newcommand{\guia}[1]{\renewcommand{\theguia}{#1}}
 \newcommand{\thecicloescolar}{1}
@@ -246,14 +250,14 @@
         \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
         \arrayrulecolor{colorrds!30}%
         \ifnum\numquestions>7%
-            {
-            \ifnum\numquestions>15%
-                {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                \else%
-                {\multirowgradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            \fi%
-            }%
-            \else{\gradetable[h][questions]}%
+           % {
+           % \ifnum\numquestions>15%
+           %     {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+           %     \else%
+                {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %\fi%
+            %}%
+            \else{\multirowgradetable{1}[questions]}%
         \fi%
         %}%
         };
@@ -295,10 +299,11 @@
 \extraheadheight[2cm]{0.5cm}
 \firstpageheader{}{
 {\LARGE\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\LOGO\\
-{\bfseries\large\color{MainColor}\thegrado \ (\thecicloescolar)}\\
-{\bfseries\large\color{SubjectColor}\themateria} \\
-{\@title \ \theunidad}\\
-{\small \@author}
+{\large \thecampoformativo} \\
+{\bfseries\large{\color{SubjectColor}\themateria} } 
+{\bfseries\large{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
+{\Large\vspace{1mm}\@title \ \theunidad}\\
+%{\small \@author}
 \thecontrol[yshift=-4cm,xshift=-0.6\textwidth,scale=1.5]
 }{}
 \firstpagefooter{}{
@@ -326,24 +331,32 @@
 
 \vspace{0.2cm}
 
-% \begin{minipage}{\textwidth}
-%     \hspace{0.1cm}\begin{minipage}[t][][b]{.33\textwidth}
-%         \instructionbox{Instrucciones:}{%\large%
-%             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
-%             Desarrolla tus respuestas en el espacio determinado para cada solución.
-%             De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
-%             completo, el n\'umero del problema y la soluci\'on propuesta.
-%         }%
-%     \end{minipage}\hspace{0.9cm}%
-%     \begin{minipage}[t][][b]{.58\textwidth}
-%         \instructionbox{Reglas:}{%
-%             \thereglas
-%         }
-%     \end{minipage}
-% \end{minipage}
+\begin{minipage}{\textwidth}
+    \hspace{0.1cm}\begin{minipage}[t][][b]{.33\textwidth}
+        \instructionbox{Instrucciones:}{%\large%
+            Lee con atenci\'on cada pregunta y realiza lo que se te pide.
+            Desarrolla tus respuestas en el espacio determinado para cada solución.
+            De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
+            completo, el n\'umero del problema y la soluci\'on propuesta.
+        }%
+    \end{minipage}\hspace{0.9cm}%
+    \begin{minipage}[t][][b]{.58\textwidth}
+        \instructionbox{Reglas:}{%
+            \thereglas
+        }
+    \end{minipage}
+\end{minipage}
 
-% \vspace{0.2cm}
+\vspace{0.2cm}
 
+    \begin{minipage}{\textwidth}\centering
+     \adjustbox{
+            min size={0.2\textwidth}{150pt},
+            max size={\textwidth}{600pt}
+            }{%
+            \gradesbox{Calificación:}%
+            }%
+ \end{minipage}%
 % \begin{minipage}{\textwidth}
 %     \begin{minipage}[t][][b]{.55\textwidth}
 %         \objetivobox{Aprendizajes a evaluar:}{%\small%

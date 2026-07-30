@@ -1,7 +1,7 @@
 \def\fileversion{1.0}
 \def\filedate{2023/06/05}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{evaluasep}[2023/01/20 Plantilla Evaluación RDS]
+\ProvidesClass{evalua1}[2023/01/20 Plantilla Evaluación RDS]
 \LoadClass{exam}
 \DeclareOption{addpoints}{\addpoints}
 \DeclareOption{answers}{\printanswers}
@@ -23,9 +23,9 @@
 \RequirePackage{calculator}
 \RequirePackage{xfrac,xlop,xparse,xpatch,xstring}
 \RequirePackage{mathtools}
-\ExplSyntaxOn
-\cs_new_eq:NN \calc \fp_eval:n
-\ExplSyntaxOff
+% \ExplSyntaxOn
+% \cs_new_eq:NN \calc \fp_eval:n
+% \ExplSyntaxOff
 \RequirePackage{cancel}
 \RequirePackage{bohr,physics,chemfig}
 \RequirePackage[version=4]{mhchem}
@@ -96,11 +96,11 @@
 \RequirePackage{import}
 \RequirePackage{subfiles} % Best loaded last in the preamble
 \RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\fontsize{10}{5}\bfseries\color{darkgray}}{}{0pt}{}
-\titlespacing*{\section}{-20pt}{1em}{0.5em}
+\titleformat{\section}{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0em}{0.3em}
 \titleformat{\subsection}
-{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{\thesubsection}{0.5em}{}
-\titlespacing*{\subsection}{-20pt}{0.5em}{0.5em}
+{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \renewcommand{\arraystretch}{1.4}
 \AtBeginEnvironment{choices}{\vspace{0.1\baselineskip}}
 \AtEndEnvironment{choices}{\vspace{0.1\baselineskip}}
@@ -116,16 +116,16 @@
     \fillin[#1][1cm]%
 }
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
-        \node[shape=circle, draw, fill=Goldenrod!10, minimum size=1.8em, inner sep=0pt, thick] (char) {#1};}}
+        \node[shape=circle, draw, fill=Goldenrod!5, minimum size=1.8em, inner sep=0pt, thick] (char) {#1};}}
 
 \renewcommand\choicelabel{{\color{DarkOliveGreen}\bfseries\thechoice}.}
 % \qformat{\color{BrickRed}\circled{\thequestion}}
-\renewcommand\questionlabel{\color{BrickRed!65!black}\circled{\thequestion}}
+\renewcommand\questionlabel{\color{Goldenrod!30!black}\circled{\thequestion}}
 \renewcommand{\thepartno}{\alph{partno}}
-\renewcommand{\partlabel}{\color{SubjectColor}\normalsize\circled{{{\color{BrickRed!65!black}\thequestion}\thepartno}}}
+\renewcommand{\partlabel}{\color{Goldenrod!30!black}(\thepartno)}
 \renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\par\noindent}
 \checkboxchar{\faIcon[regular]{square}}
-\CorrectChoiceEmphasis{\color{red!50!gray}\bf}
+\CorrectChoiceEmphasis{\color{red!50!gray}}
 \checkedchar{\faIcon[regular]{check-square}}
 % \pointsinmargin
 %\pointformat{}
@@ -138,6 +138,10 @@
 \newcommand{\materia}[1]{\renewcommand{\themateria}{#1}}
 \newcommand{\thegrado}{1}
 \newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
+\newcommand{\thenivel}{1}
+\newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
+\newcommand{\thecampoformativo}{1}
+\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
 \newcommand{\theguia}{1}
 \newcommand{\guia}[1]{\renewcommand{\theguia}{#1}}
 \newcommand{\thecicloescolar}{1}
@@ -204,18 +208,27 @@
     instructiontitle/.style={
             fill=white,
             style=rounded corners},
-    gradesbox/.style={anchor=north east,xshift=-.21\textwidth-1pt,
-            yshift=-2cm,
-            draw=none,%=colorrds, dashed,
-            fill=white, rectangle,
-            inner sep=5pt, style=rounded corners,
-            %drop  shadow={fill=lightgray, opacity=0.7}
+    gradesbox/.style={
+        % anchor=north east,xshift=-.21\textwidth-1pt,
+        %     yshift=-2cm,
+        %     draw=none,%=colorrds, dashed,
+        %     fill=white, rectangle,
+        %     inner sep=5pt, style=rounded corners,
+        %     %drop  shadow={fill=lightgray, opacity=0.7}
+         draw=colorrds,fill=white, rectangle,
+            inner sep=10pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }
         },
     gradetableboxtitle/.style={
             fill=white,
-            inner xsep=2pt,inner ysep=2pt,
-            style=rounded corners,
-            % drop shadow,
+            style=rounded corners
         },
     objetivobox/.style={
             anchor=north,
@@ -242,22 +255,23 @@
 }
 \newcommand{\gradesbox}[2][fill=white]{%
     \begin{tikzpicture}%
-        \node[gradesbox, #1] (box) {%
+        \node [instructionbox, #1] (box)
+        {%
         \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
         \arrayrulecolor{colorrds!30}%
-        \ifnum\numquestions>7%
+        \ifnum\numquestions>20%
             {
-            \ifnum\numquestions>15%
-                {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                \else%
-                {\multirowgradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            \fi%
+            %\ifnum\numquestions<15%
+             %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %    \else%
+                {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            %\fi%
             }%
             \else{\gradetable[h][questions]}%
         \fi%
         %}%
         };
-        \node[gradetableboxtitle,xshift=-200pt,yshift=4pt] at (box.north east) {\bfseries \LARGE \comfortaa \color{Sepia} #2};
+        \node[gradetableboxtitle,xshift=50pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
 }
 \newcommand{\instructionbox}[3][fill=white]{%
@@ -295,10 +309,11 @@
 \extraheadheight[2cm]{0.5cm}
 \firstpageheader{}{
 {\LARGE\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\LOGO\\
-{\bfseries\large\color{MainColor}\thegrado \ (\thecicloescolar)}\\
-{\bfseries\large\color{SubjectColor}\themateria} \\
-{\@title \ \theunidad}\\
-{\small \@author}
+{\large \thecampoformativo} \\
+{\bfseries\large{\color{SubjectColor}\themateria} } 
+{\bfseries\large{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
+{\Large\vspace{1mm}\@title \ \theunidad}\\
+%{\small \@author}
 \thecontrol[yshift=-4cm,xshift=-0.6\textwidth,scale=1.5]
 }{}
 \firstpagefooter{}{
@@ -315,49 +330,58 @@
 \vspace{0.2cm}
 
 \begin{minipage}{\textwidth}
-    \makebox[0.73\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9cm]}
-    \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.6cm]}
+    \makebox[0.7\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[8.1cm]}
+    \makebox[0.28\linewidth]{\textbf{ \comfortaa \color{Sepia} Ciclo escolar: } \ \DrawLine[2.9cm]}
 \end{minipage}
-\vspace*{0.1cm}
+
+\vspace*{0.2cm}
 
 \begin{minipage}{\textwidth}
-    \makebox[\linewidth]{\textbf{\comfortaa \color{Sepia} Evaluador: } \DrawLine[15.5cm]}
+    \makebox[0.7\linewidth]{\textbf{\comfortaa \color{Sepia} Evaluador: } \DrawLine[9.8cm]}
+    \makebox[0.28\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[4.2cm]}
+\end{minipage}
+
+
+\vspace{0.2cm}
+
+\begin{minipage}{\textwidth}
+    \hspace{0.1cm}\begin{minipage}[t][][b]{.33\textwidth}
+        \instructionbox{Instrucciones:}{%\large%
+            Lee con atenci\'on cada pregunta y realiza lo que se te pide.
+            Desarrolla tus respuestas en el espacio determinado para cada solución.
+            De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
+            completo, el n\'umero del problema y la soluci\'on propuesta.
+        }%
+    \end{minipage}\hspace{0.9cm}%
+    \begin{minipage}[t][][b]{.58\textwidth}
+        \instructionbox{Reglas:}{%
+            \thereglas
+        }
+    \end{minipage}
 \end{minipage}
 
 \vspace{0.2cm}
 
-% \begin{minipage}{\textwidth}
-%     \hspace{0.1cm}\begin{minipage}[t][][b]{.33\textwidth}
-%         \instructionbox{Instrucciones:}{%\large%
-%             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
-%             Desarrolla tus respuestas en el espacio determinado para cada solución.
-%             De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
-%             completo, el n\'umero del problema y la soluci\'on propuesta.
-%         }%
-%     \end{minipage}\hspace{0.9cm}%
-%     \begin{minipage}[t][][b]{.58\textwidth}
-%         \instructionbox{Reglas:}{%
-%             \thereglas
-%         }
-%     \end{minipage}
-% \end{minipage}
-
-% \vspace{0.2cm}
-
-% \begin{minipage}{\textwidth}
-%     \begin{minipage}[t][][b]{.55\textwidth}
-%         \objetivobox{Aprendizajes a evaluar:}{%\small%
-%             \theaprendizajes
-%         }
-%     \end{minipage}\hfill%
-%     \begin{minipage}[t][][b]{.4\textwidth}
-%         \adjustbox{
-%             min size={0.05\textwidth}{50pt},
-%             max size={0.9\textwidth+3pt}{400pt}
-%             }{%
-%             \gradesbox{Calificación:}%
-%             }%
-%     \end{minipage}
-% \end{minipage}%
+\begin{minipage}{\textwidth}
+    % \begin{minipage}[t][][b]{.55\textwidth}
+    %    % \objetivobox{Aprendizajes a evaluar:}{%\small%
+    %    %     \theaprendizajes
+    %    % }
+    % \end{minipage}\hfill%
+    % \begin{minipage}[t][][b]{.4\textwidth}
+    %     \adjustbox{
+    %         min size={0.05\textwidth}{50pt},
+    %         max size={0.9\textwidth+3pt}{400pt}
+    %         }{%
+    %         \gradesbox{Calificación:}%
+    %         }%
+    % \end{minipage}
+     \adjustbox{
+            min size={0.98\textwidth}{150pt},
+            max size={\textwidth}{600pt}
+            }{%
+            \gradesbox{Calificación:}%
+            }%
+    \end{minipage}%
 }
 \makeatother
