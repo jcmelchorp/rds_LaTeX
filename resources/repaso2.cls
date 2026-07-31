@@ -301,16 +301,20 @@
 \graphicspath{{../images}} %Setting the graphicspath
 \RequirePackage{calc}
 \RequirePackage{mathtools}
-% \RequirePackage{xparse}
-% \ExplSyntaxOn
-% \cs_new_eq:NN \calc \fp_eval:n
-% \ExplSyntaxOff
-\RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{}{0pt}{}
-\titlespacing*{\section}{0pt}{0em}{0.3em}
+\RequirePackage{xparse}
+\ExplSyntaxOn
+\cs_new_eq:NN \calc \fp_eval:n
+\ExplSyntaxOff
+\RequirePackage{titlesec} %% Customize section and subs title on main text
+\titleformat{\section}
+{\normalfont\fontsize{10}{5}\bfseries\color{darkgray}}{\thesection}{0.5em}{}
+\titlespacing*{\section}{0pt}{0.5em}{0.3em}
 \titleformat{\subsection}
-{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsection}{0.5em}{}
+{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{\thesubsection}{0.5em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
         \node[shape=circle, draw,  minimum size=1.2em, inner sep=0pt, thick] (char) {#1};}}
@@ -477,7 +481,7 @@
             %drop  shadow={fill=lightgray, opacity=0.7}
         },
     aprendizajebox/.style={anchor=north east,xshift=-.32\textwidth+3pt,
-            yshift=-1.2cm,
+            yshift=-1.5cm,
             draw=none,%=colorrds, dashed,
             fill=white, rectangle,
             inner sep=10pt, style=rounded corners,
@@ -513,48 +517,48 @@
         },
 }
 %%%% COMMAND
-\newcommand\fracquestion[2]{%
-    \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
-}
-\newcount\segmentsleft
-\tikzset{pics/.cd,
-    circle fraction/.style args={#1/#2}{code={%
-                    \segmentsleft=#1\relax
-                    \pgfmathloop
-                    \ifnum\segmentsleft<1\else
-                    \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
-                    \begin{scope}[shift={(\pgfmathcounter,0)}]
-                        \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
-                        \fill[fill=lightgray] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
-                        \draw circle [radius=3/8];
-                        \ifnum#2>1
-                            \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
-                            \draw (0,0) -- (90+\a:3/8);
-                        \fi
-                    \end{scope}
-                    \advance\segmentsleft by-#2
-                    \repeatpgfmathloop
-                }}
-}
-\newcommand{\circlefraction}[2]{
-    \adjustbox{
-        stack,
-        min size={0.2\textwidth}{80pt},
-        max size={0.5\textwidth}{180pt}
-    }{
-        \begin{tikzpicture}
-            \pic  at (0, 0) {circle fraction={#1/#2}};
-        \end{tikzpicture} }%
-}
-\newcommand\quadraticseries[3]{%
-    \def\diff{\calc{#2-#1}}%
-    \def\siff{\calc{#3-#2}}%
-    \def\const{\calc{\siff-\diff}}%
-    \def\fiff{\calc{\siff+\const}}%
-    \def\giff{\calc{\fiff+\const}}%
-    \def\hiff{\calc{\giff+\const}}%
-    \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
-}
+% \newcommand\fracquestion[2]{%
+%     \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
+% }
+% \newcount\segmentsleft
+% \tikzset{pics/.cd,
+%     circle fraction/.style args={#1/#2}{code={%
+%                     \segmentsleft=#1\relax
+%                     \pgfmathloop
+%                     \ifnum\segmentsleft<1\else
+%                     \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
+%                     \begin{scope}[shift={(\pgfmathcounter,0)}]
+%                         \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
+%                         \fill[fill=lightgray] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
+%                         \draw circle [radius=3/8];
+%                         \ifnum#2>1
+%                             \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
+%                             \draw (0,0) -- (90+\a:3/8);
+%                         \fi
+%                     \end{scope}
+%                     \advance\segmentsleft by-#2
+%                     \repeatpgfmathloop
+%                 }}
+% }
+% \newcommand{\circlefraction}[2]{
+%     \adjustbox{
+%         stack,
+%         min size={0.2\textwidth}{80pt},
+%         max size={0.5\textwidth}{180pt}
+%     }{
+%         \begin{tikzpicture}
+%             \pic  at (0, 0) {circle fraction={#1/#2}};
+%         \end{tikzpicture} }%
+% }
+% \newcommand\quadraticseries[3]{%
+%     \def\diff{\calc{#2-#1}}%
+%     \def\siff{\calc{#3-#2}}%
+%     \def\const{\calc{\siff-\diff}}%
+%     \def\fiff{\calc{\siff+\const}}%
+%     \def\giff{\calc{\fiff+\const}}%
+%     \def\hiff{\calc{\giff+\const}}%
+%     \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
+% }
 \newcommand{\gradesbox}[2][fill=white]{%
     \begin{tikzpicture}%
         \node [gradesbox, #1] (box)
@@ -571,9 +575,8 @@
             }%
             \else{\gradetable[h][questions]}%
         \fi%
-        %}%
         };
-        \node[gradetableboxtitle,xshift=10pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
+        \node[gradetableboxtitle,xshift=0pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
 }
 \newcommand{\INFO}{%
@@ -604,13 +607,16 @@
                 \color{MainColor} \@title \ \theunidad
             }%
         };
-        \node[nombrebox] (box) {
+        \node[nombrebox] (box) {\par\noindent
             \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9.4cm]}
-            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.6cm]}
-        };
+            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Ciclo escolar: } \ \DrawLine[2.6cm]}\\[0.5em]
+            \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del evaluador: } \DrawLine[8.9cm]}
+            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.8cm]}
+            };
+
         %%%% APRENDIZAJES
         \node[aprendizajebox] (box) {\adjustbox{minipage=0.85\textwidth}{\theaprendizajes}};
-        \node[aprendizajetitle,xshift=120pt,yshift=4pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
+        \node[aprendizajetitle,xshift=122pt,yshift=1pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
         % %%%% GRADESTABLE
         % \node[gradetablebox] (box)
         % {%

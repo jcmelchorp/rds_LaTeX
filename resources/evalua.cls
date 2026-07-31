@@ -22,10 +22,9 @@
 \RequirePackage{calc}
 \RequirePackage{calculator}
 \RequirePackage{xfrac,xlop,xparse,xpatch,xstring}
+\RequirePackage{fp,xfp}% http://ctan.org/pkg/fp
+\RequirePackage{ifthen}
 \RequirePackage{mathtools}
-\ExplSyntaxOn
-\cs_new_eq:NN \calc \fp_eval:n
-\ExplSyntaxOff
 \RequirePackage{cancel}
 \RequirePackage{bohr,physics,chemfig}
 \RequirePackage[version=4]{mhchem}
@@ -101,7 +100,9 @@
 \titleformat{\subsection}
 {\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsection}{0.5em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
-
+\titleformat{\subsubsection}
+{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \renewcommand{\arraystretch}{1.4}
 \AtBeginEnvironment{choices}{\vspace{0.1\baselineskip}}
 \AtEndEnvironment{choices}{\vspace{0.1\baselineskip}}
@@ -125,9 +126,9 @@
 \renewcommand{\thepartno}{\alph{partno}}
 \renewcommand{\partlabel}{\color{SubjectColor}\normalsize\circled{{{\color{BrickRed!65!black}\thequestion}\thepartno}}}
 \renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\par\noindent}
-\checkboxchar{\faIcon[regular]{square}}
+\checkboxchar{$\square$}
 \CorrectChoiceEmphasis{\color{red!50!gray}\bf}
-\checkedchar{\faIcon[regular]{check-square}}
+\checkedchar{$\checkmark$}
 % \pointsinmargin
 %\pointformat{}
 \pointformat{\color{SubjectColor}{\scalebox{0.6}[1.0]{[\hspace*{0.3em}\sffamily\rule[-1mm]{3mm}{0.2pt} de \thepoints]}}}
@@ -177,9 +178,16 @@
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north east)]%
             \node[#1]{\autocontrol{\color{red}\alterfont\shadowtext{Soluciones propuestas}}};
         \end{tikzpicture}}%
-    \else{}%
     \fi%
 }
+\makeatletter
+\let\latexl@section\l@section
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+% \let\latexl@subsection\l@subsection
+% \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
+% \let\latexl@subsubsection\l@subsubsection
+% \def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
+\makeatother
 %%%% COMMAND
 \newcommand\fracquestion[2]{%
     \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
@@ -250,17 +258,16 @@
         \node[gradesbox, #1] (box) {%
         \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
         \arrayrulecolor{colorrds!30}%
-        \ifnum\numquestions>7%
-            {
-            \ifnum\numquestions>15%
-                {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                \else%
-                {\multirowgradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+            \ifnum\numquestions>20%
+                %{
+                %\ifnum\numquestions<15%
+                 %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+                %    \else%
+                    \multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+                %\fi%
+               % }%
+                \else{\gradetable[h][questions]}%
             \fi%
-            }%
-            \else{\gradetable[h][questions]}%
-        \fi%
-        %}%
         };
         \node[gradetableboxtitle,xshift=-200pt,yshift=4pt] at (box.north east) {\bfseries \LARGE \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
@@ -276,7 +283,6 @@
         \node[instructiontitle, right=10pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
 }
-
 %%%% LOGO
 \def\LOGO{%
     \begin{picture}(0,0)\unitlength=1cm
@@ -298,7 +304,6 @@
 {\bfseries\large{\color{SubjectColor}\themateria} } 
 {\bfseries\large{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
 {\Large\vspace{1mm}\@title \ \theunidad}\\
-%{\small \@author}
 \thecontrol[yshift=-4cm,xshift=-0.6\textwidth,scale=1.5]
 }{}
 \firstpagefooter{}{
@@ -345,19 +350,12 @@
 \vspace{0.2cm}
 
 \begin{minipage}{\textwidth}
-    \begin{minipage}[t][][b]{.55\textwidth}
-        \objetivobox{Aprendizajes a evaluar:}{%\small%
-            \theaprendizajes
-        }
-    \end{minipage}\hfill%
-    \begin{minipage}[t][][b]{.4\textwidth}
-        \adjustbox{
-            min size={0.05\textwidth}{50pt},
-            max size={0.9\textwidth+3pt}{400pt}
+     \adjustbox{
+            min size={0.98\textwidth}{150pt},
+            max size={\textwidth}{600pt}
             }{%
             \gradesbox{Calificación:}%
             }%
-    \end{minipage}
-\end{minipage}%
+    \end{minipage}%
 }
 \makeatother
