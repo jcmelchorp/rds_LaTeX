@@ -257,19 +257,14 @@
     \begin{tikzpicture}%
         \node[gradesbox, #1] (box) {%
         \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
-        \arrayrulecolor{colorrds!30}%
+        \arrayrulecolor{colorrds!30}
             \ifnum\numquestions>20%
-                %{
-                %\ifnum\numquestions<15%
-                 %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                %    \else%
-                    \multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                %\fi%
-               % }%
-                \else{\gradetable[h][questions]}%
-            \fi%
+                    {\multirowgradetable{4}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+                \else
+                {\multirowgradetable{1}[questions]}
+            \fi
         };
-        \node[gradetableboxtitle,xshift=-200pt,yshift=4pt] at (box.north east) {\bfseries \LARGE \comfortaa \color{Sepia} #2};
+        \node[gradetableboxtitle,right=10pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
 }
 \newcommand{\instructionbox}[3][fill=white]{%
@@ -316,18 +311,17 @@
 \fi
 \runningfooter{}{  \color{colorrds}\thepage \ de \numpages}{}
 \runningheadrule
-
-\vspace{0.2cm}
-
-\begin{minipage}{\textwidth}
-    \makebox[0.73\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9cm]}
-    \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.6cm]}
+\begin{minipage}{\textwidth}\par\noindent
+            \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9cm]}
+            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Ciclo escolar: } \ \DrawLine[2.6cm]}\\[0.5em]
+            \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del evaluador: } \DrawLine[8.5cm]}
+            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.8cm]}
 \end{minipage}
-\vspace*{0.1cm}
+% \vspace*{0.1cm}
 
-\begin{minipage}{\textwidth}
-    \makebox[\linewidth]{\textbf{\comfortaa \color{Sepia} Evaluador: } \DrawLine[15.5cm]}
-\end{minipage}
+% \begin{minipage}{\textwidth}
+%     \makebox[\linewidth]{\textbf{\comfortaa \color{Sepia} Evaluador: } \DrawLine[15.5cm]}
+% \end{minipage}
 
 \vspace{0.2cm}
 
@@ -349,9 +343,9 @@
 
 \vspace{0.2cm}
 
-\begin{minipage}{\textwidth}
+\begin{minipage}{\textwidth}\centering
      \adjustbox{
-            min size={0.98\textwidth}{150pt},
+            min size={0.2\textwidth}{150pt},
             max size={\textwidth}{600pt}
             }{%
             \gradesbox{Calificación:}%

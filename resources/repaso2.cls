@@ -570,10 +570,10 @@
             %\ifnum\numquestions<15%
              %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
             %    \else%
-                {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+                {\multirowgradetable{4}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
             %\fi%
             }%
-            \else{\gradetable[h][questions]}%
+            \else{\multirowgradetable{1}[questions]}%
         \fi%
         };
         \node[gradetableboxtitle,xshift=0pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
