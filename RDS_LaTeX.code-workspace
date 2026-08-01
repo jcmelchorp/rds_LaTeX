@@ -17,8 +17,8 @@
 		"latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/out",
 		"latex-workshop.latex.texDirs": [
 			"%WORKSPACE_FOLDER%/resources",
-			"%DIR%/base",
-			"%DIR%/images",
+			//"%DIR%/base",
+			//"%DIR%/images",
 			//"%DIR%/base/pgf-periodictable",
 		],
 		"latex-workshop.latex.tools": [

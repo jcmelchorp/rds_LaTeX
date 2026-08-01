@@ -437,6 +437,8 @@
 \newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
 \newcommand{\thenivel}{1}
 \newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
+\newcommand{\thecampoformativo}{1}
+\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
 \newcommand{\thecicloescolar}{1}
 \newcommand{\cicloescolar}[1]{\renewcommand{\thecicloescolar}{#1}}
 \newcommand{\theunidad}{1}
@@ -585,7 +587,7 @@
             rounded corners=5pt] (0,0)
         rectangle
         (\textwidth-1pt,2cm);
-        \node[xshift=-.95\textwidth , yshift=20pt] { \adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
+        \node[xshift=-.95\textwidth , yshift=18pt] { \qquad\adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
         %%%% TITULO
         \node[xshift=-.68\textwidth, yshift=20pt,
             rectangle,
@@ -657,9 +659,9 @@
             rounded corners=2pt,inner xsep=20pt,inner ysep=0pt]
         {
             \hspace{-1.5em}\begin{minipage}{0.87\textwidth}
-                {\textbf{\color{colorrds}\fontsize{18}{14}\selectfont \comfortaa Escuela Rafael D\'iaz Serd\'an}}\\[0.1em]
-               {\fontsize{14}{14}\selectfont {\color{SubjectColor}\themateria}  \hfill {\color{MainColor}\thegrado$^\circ$ de \thenivel} }\\[-0.2em]
-               {\@author \large \hfill\scshape   \thecicloescolar}
+                {\textbf{\color{colorrds}\fontsize{18}{14}\selectfont \comfortaa Escuela Rafael D\'iaz Serd\'an}  }\\[0.1em]
+               {\fontsize{14}{7}\selectfont \thecampoformativo  \hfill {\fontsize{16}{10}\selectfont\color{MainColor}\thegrado$^\circ$ de \thenivel} }\\[-0.2em]
+               {\@author \large \hfill {\fontsize{16}{10}\selectfont\color{SubjectColor}\themateria}}
             \end{minipage}
         };
     \end{tikzpicture}%

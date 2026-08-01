@@ -82,7 +82,7 @@
       --([xshift=-0.5pt]frame.south east)--(frame.south west);},#1,%
 }
 
-\newtcbox{\autocontrol}[1][]{%
+\newtcbox{\autocontroltcbox}[1][]{%
   boxsep=1mm,
   colback=white,
   colframe=red!70!black,
@@ -433,6 +433,8 @@
 \newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
 \newcommand{\thenivel}{1}
 \newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
+\newcommand{\thecampoformativo}{1}
+\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
 \newcommand{\thecicloescolar}{1}
 \newcommand{\cicloescolar}[1]{\renewcommand{\thecicloescolar}{#1}}
 \newcommand{\theunidad}{1}
@@ -446,7 +448,7 @@
 \newcommand\thecontrol[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north east)]%
-            \node[#1]{\autocontrol{\color{red}\alterfont\shadowtext{Soluciones propuestas}}};
+            \node[#1]{\autocontroltcbox{\color{red}\alterfont\shadowtext{Soluciones propuestas}}};
         \end{tikzpicture}}%
     \else{}%
     \fi%
@@ -462,7 +464,7 @@
             %drop  shadow={fill=lightgray, opacity=0.7}
         },
     aprendizajebox/.style={anchor=north,xshift=-.9\textwidth-3pt,
-            yshift=-1.2cm,
+            yshift=-1.6cm,
             draw=none,%=colorrds, dashed,
             fill=white, rectangle,
             inner sep=10pt, style=rounded corners,
@@ -475,7 +477,7 @@
             % drop shadow,
         },
     gradetablebox/.style={anchor=north east,xshift=-.21\textwidth-1pt,
-            yshift=-1.2cm,
+            yshift=-1.6cm,
             draw=none,%=colorrds, dashed,
             fill=white, rectangle,
             inner sep=5pt, style=rounded corners,
@@ -537,7 +539,6 @@
             rounded corners=5pt] (0,0)
         rectangle
         (\textwidth-1pt,2cm);
-        \node[xshift=-.95\textwidth , yshift=20pt] { \adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
         %%%% TITULO
         \node[xshift=-.68\textwidth, yshift=20pt,
             rectangle,
@@ -559,13 +560,16 @@
                 \color{MainColor} \@title \ \theunidad
             }%
         };
-        \node[nombrebox] (box) {
-            \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9.4cm]}
-            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.6cm]}
-        };
+        \node[nombrebox] (box) {\par\noindent
+            \makebox[0.72\linewidth]{\bf\comfortaa \color{Sepia} Nombre del alumno:  \DrawLine[9.4cm]}
+            \makebox[0.25\linewidth]{\bf \comfortaa \color{Sepia} Ciclo escolar:  \ \DrawLine[2.6cm]}\\[0.5em]
+            \makebox[0.72\linewidth]{\bf\comfortaa \color{Sepia} Nombre del evaluador:  \DrawLine[8.9cm]}
+            \makebox[0.25\linewidth]{\bf \comfortaa \color{Sepia} Fecha:  \ \DrawLine[3.8cm]}
+            };
+        \node[xshift=-.95\textwidth , yshift=20pt] {\quad\adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
         %%%% APRENDIZAJES
         \node[aprendizajebox] (box) {\adjustbox{minipage=0.58\textwidth}{\theaprendizajes}};
-        \node[aprendizajetitle,xshift=127pt,yshift=4pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
+        \node[aprendizajetitle,xshift=128pt,yshift=4pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
         %%%% GRADESTABLE
         \node[gradetablebox] (box)
         {%
@@ -588,7 +592,7 @@
            \fi%
         }%
         };
-        \node[gradetableboxtitle,xshift=-112pt,yshift=4pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Puntuación:};
+        \node[gradetableboxtitle,xshift=-112pt,yshift=6pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Calificación};
     \end{tikzpicture}%
     \begin{tikzpicture}[remember picture, overlay,shift=(current page.north west)]
         %%%% LOGO
@@ -598,9 +602,9 @@
             rounded corners=2pt,inner xsep=20pt,inner ysep=0pt]
         {
             \hspace{-1.5em}\begin{minipage}{0.87\textwidth}
-                {\textbf{\color{colorrds}\fontsize{18}{14}\selectfont \comfortaa Escuela Rafael D\'iaz Serd\'an}}\\[0.1em]
-               {\fontsize{14}{14}\selectfont {\color{SubjectColor}\themateria}  \hfill {\color{MainColor}\thegrado$^\circ$ de \thenivel} }\\[-0.2em]
-               {\@author \large \hfill\scshape   \thecicloescolar}
+                {\bf\color{colorrds}\fontsize{18}{18}\selectfont\comfortaa Escuela Rafael D\'iaz Serd\'an  }\\[0.2em]
+               {\fontsize{16}{10}\selectfont\thecampoformativo\hfill\color{MainColor}\thegrado$^\circ$ de \thenivel }\\[-0.2em]
+               {{\fontsize{10}{5}\selectfont\scshape\@author}\hfill{\fontsize{14}{10}\selectfont\color{SubjectColor}\themateria}}
             \end{minipage}
         };
     \end{tikzpicture}%
@@ -632,6 +636,7 @@
     \fi
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
+    \INFO
 }
 %%%% CAPTIONS
 \RequirePackage{caption,subcaption,capt-of}
