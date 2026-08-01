@@ -307,13 +307,13 @@
 \ExplSyntaxOff
 \RequirePackage{titlesec} %% Customize section and subs title on main text
 \titleformat{\section}
-{\normalfont\fontsize{10}{5}\bfseries\color{darkgray}}{\thesection}{0.5em}{}
+{\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
 \titleformat{\subsection}
-{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{\thesubsection}{0.5em}{}
+{\normalfont\fontsize{12}{5}\bfseries\scshape\color{gray!50!black}}{\thesubsection}{0.5em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \titleformat{\subsubsection}
-{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsubsection}{0.5em}{}
+{\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
@@ -685,9 +685,9 @@
     \firstpageheader{}{}{}
     \firstpagefooter{}{  \color{colorrds}\thepage \ de \numpages}{}
     \ifprintanswers
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \theunidad \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \thesection \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
     \else
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \theunidad }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \  \thesection }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
     \fi
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
