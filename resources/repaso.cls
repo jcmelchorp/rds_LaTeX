@@ -305,17 +305,21 @@
 % \ExplSyntaxOn
 % \cs_new_eq:NN \calc \fp_eval:n
 % \ExplSyntaxOff
-\RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\fontsize{10}{5}\bfseries\color{gray}}{}{0pt}{}
-\titlespacing*{\section}{0pt}{0em}{0.3em}
-\titleformat{\subsection}
-{\normalfont\fontsize{10}{5}\bfseries\color{lightgray}}{\thesubsection}{0.5em}{}
-\titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
         \node[shape=circle, draw,  minimum size=1.2em, inner sep=0pt, thick] (char) {#1};}}
 \renewcommand\choicelabel{\circled{\thechoice}}
 \setlength\linefillheight{.2in}
+\RequirePackage{titlesec} %% Customize section and subs title on main text
+\titleformat{\section}
+{\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
+\titlespacing*{\section}{0pt}{0.5em}{0.3em}
+\titleformat{\subsection}
+{\normalfont\fontsize{12}{5}\bfseries\scshape\color{gray!50!black}}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \AtBeginEnvironment{align}{\setcounter{equation}{0}}
 \AtBeginEnvironment{eqnaray}{\setcounter{equation}{0}}
 \AtBeginEnvironment{solutionbox}{\vspace{-0.1\baselineskip}}
@@ -353,7 +357,6 @@
     \noprintanswers
     \egroup
 }
-
 %%%% Custom question command %%%%%
 \newcounter{preguntanum}
 \setcounter{preguntanum}{0}
@@ -491,48 +494,48 @@
         }
 }
 %%%% COMMAND
-\newcommand\fracquestion[2]{%
-    \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
-}
-\newcount\segmentsleft
-\tikzset{pics/.cd,
-    circle fraction/.style args={#1/#2}{code={%
-                    \segmentsleft=#1\relax
-                    \pgfmathloop
-                    \ifnum\segmentsleft<1\else
-                    \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
-                    \begin{scope}[shift={(\pgfmathcounter,0)}]
-                        \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
-                        \fill[fill=lightgray] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
-                        \draw circle [radius=3/8];
-                        \ifnum#2>1
-                            \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
-                            \draw (0,0) -- (90+\a:3/8);
-                        \fi
-                    \end{scope}
-                    \advance\segmentsleft by-#2
-                    \repeatpgfmathloop
-                }}
-}
-\newcommand{\circlefraction}[2]{
-    \adjustbox{
-        stack,
-        min size={0.2\textwidth}{80pt},
-        max size={0.5\textwidth}{180pt}
-    }{
-        \begin{tikzpicture}
-            \pic  at (0, 0) {circle fraction={#1/#2}};
-        \end{tikzpicture} }%
-}
-\newcommand\quadraticseries[3]{%
-    \def\diff{\calc{#2-#1}}%
-    \def\siff{\calc{#3-#2}}%
-    \def\const{\calc{\siff-\diff}}%
-    \def\fiff{\calc{\siff+\const}}%
-    \def\giff{\calc{\fiff+\const}}%
-    \def\hiff{\calc{\giff+\const}}%
-    \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
-}
+% \newcommand\fracquestion[2]{%
+%     \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
+% }
+% \newcount\segmentsleft
+% \tikzset{pics/.cd,
+%     circle fraction/.style args={#1/#2}{code={%
+%                     \segmentsleft=#1\relax
+%                     \pgfmathloop
+%                     \ifnum\segmentsleft<1\else
+%                     \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
+%                     \begin{scope}[shift={(\pgfmathcounter,0)}]
+%                         \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
+%                         \fill[fill=lightgray] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
+%                         \draw circle [radius=3/8];
+%                         \ifnum#2>1
+%                             \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
+%                             \draw (0,0) -- (90+\a:3/8);
+%                         \fi
+%                     \end{scope}
+%                     \advance\segmentsleft by-#2
+%                     \repeatpgfmathloop
+%                 }}
+% }
+% \newcommand{\circlefraction}[2]{
+%     \adjustbox{
+%         stack,
+%         min size={0.2\textwidth}{80pt},
+%         max size={0.5\textwidth}{180pt}
+%     }{
+%         \begin{tikzpicture}
+%             \pic  at (0, 0) {circle fraction={#1/#2}};
+%         \end{tikzpicture} }%
+% }
+% \newcommand\quadraticseries[3]{%
+%     \def\diff{\calc{#2-#1}}%
+%     \def\siff{\calc{#3-#2}}%
+%     \def\const{\calc{\siff-\diff}}%
+%     \def\fiff{\calc{\siff+\const}}%
+%     \def\giff{\calc{\fiff+\const}}%
+%     \def\hiff{\calc{\giff+\const}}%
+%     \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
+% }
 \newcommand{\INFO}{%
     \begin{tikzpicture}[remember picture]
         \draw[colorrds,thin,xshift=-1.2\textwidth-5pt ,yshift=0.5cm,
@@ -579,17 +582,12 @@
         }{%
         \cellwidth{0.4em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Obtenidos}\vtword{Total}%
         \arrayrulecolor{colorrds!30}%
-        \ifnum\numquestions>7%
-            {
-            \ifnum\numquestions>20%
+            \ifnum\numexpr\numquestions\relax>20%
                 %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                {\multirowgradetable{4}[questions]}
+                \multirowgradetable{\the\numexpr\numquestions/6\relax}[questions]%
                 \else%
-                {\multicolumngradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+                \multicolumngradetable{2}[questions]%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
             \fi%
-            }%
-            \else{\gradetable[h][questions]}%
-           \fi%
         }%
         };
         \node[gradetableboxtitle,xshift=-112pt,yshift=6pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Calificación};

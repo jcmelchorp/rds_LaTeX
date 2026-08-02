@@ -206,10 +206,10 @@
 \makeatletter
 \let\latexl@section\l@section
 \def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
-\let\latexl@subsection\l@subsection
-\def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
-\let\latexl@subsubsection\l@subsubsection
-\def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
+% \let\latexl@subsection\l@subsection
+% \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
+% \let\latexl@subsubsection\l@subsubsection
+% \def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
 \newcommand{\DrawLine}[1][\linewidth]{%
   \begin{tikzpicture}
     \path[use as bounding box] (0,0) -- (#1,0);
@@ -301,10 +301,15 @@
 \graphicspath{{../images}} %Setting the graphicspath
 \RequirePackage{calc}
 \RequirePackage{mathtools}
-\RequirePackage{xparse}
-\ExplSyntaxOn
-\cs_new_eq:NN \calc \fp_eval:n
-\ExplSyntaxOff
+% \RequirePackage{xparse}
+% \ExplSyntaxOn
+% \cs_new_eq:NN \calc \fp_eval:n
+% \ExplSyntaxOff
+\RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+        \node[shape=circle, draw,  minimum size=1.2em, inner sep=0pt, thick] (char) {#1};}}
+\renewcommand\choicelabel{\circled{\thechoice}}
+\setlength\linefillheight{.2in}
 \RequirePackage{titlesec} %% Customize section and subs title on main text
 \titleformat{\section}
 {\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
@@ -315,11 +320,6 @@
 \titleformat{\subsubsection}
 {\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
-\RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
-        \node[shape=circle, draw,  minimum size=1.2em, inner sep=0pt, thick] (char) {#1};}}
-\renewcommand\choicelabel{\circled{\thechoice}}
-\setlength\linefillheight{.2in}
 \AtBeginEnvironment{align}{\setcounter{equation}{0}}
 \AtBeginEnvironment{eqnaray}{\setcounter{equation}{0}}
 \AtBeginEnvironment{solutionbox}{\vspace{-0.1\baselineskip}}
@@ -357,7 +357,6 @@
     \noprintanswers
     \egroup
 }
-
 %%%% Custom question command %%%%%
 \newcounter{preguntanum}
 \setcounter{preguntanum}{0}
@@ -563,22 +562,23 @@
 % }
 \newcommand{\gradesbox}[2][fill=white]{%
     \begin{tikzpicture}%
-        \node [gradesbox, #1] (box)
-        {%
+        \node [draw=colorrds,fill=white, rectangle,
+            inner sep=3pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }, #1] (box) {%
         \cellwidth{0.5em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%
         \arrayrulecolor{colorrds!30}%
-        \ifnum\numquestions>20%
-            {
-            %\ifnum\numquestions<15%
-             %   {\ifthenelse{\isodd{\numquestions}}{\multicolumngradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            %    \else%
-                {\multirowgradetable{4}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            %\fi%
-            }%
-            \else{\multirowgradetable{1}[questions]}%
-        \fi%
+                        %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+                \multirowgradetable{\the\numexpr\numquestions/20\relax}[questions]%
         };
-        \node[gradetableboxtitle,xshift=0pt,yshift=4pt] at (box.north west) {\bfseries  \comfortaa \color{Sepia} #2};
+        \node[fill=white,
+            style=rounded corners,xshift=48pt,yshift=4pt] at (box.north west) {\bfseries \large  \comfortaa \color{Sepia} #2};
     \end{tikzpicture}%
 }
 \newcommand{\INFO}{%
@@ -610,15 +610,25 @@
             }%
         };
         \node[nombrebox] (box) {\par\noindent
-            \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del alumno: } \DrawLine[9.4cm]}
-            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Ciclo escolar: } \ \DrawLine[2.6cm]}\\[0.5em]
-            \makebox[0.72\linewidth]{\textbf{\comfortaa \color{Sepia} Nombre del evaluador: } \DrawLine[8.9cm]}
-            \makebox[0.25\linewidth]{\textbf{ \comfortaa \color{Sepia} Fecha: } \ \DrawLine[3.8cm]}
+            \makebox[0.72\linewidth]{\textbf{\comfortaa\color{Sepia} Nombre del alumno: } \DrawLine[9.4cm]}
+            \makebox[0.25\linewidth]{\textbf{\comfortaa\color{Sepia} Ciclo escolar: } \ \DrawLine[2.6cm]}\\[0.5em]
+            \makebox[0.72\linewidth]{\textbf{\comfortaa\color{Sepia} Nombre del evaluador: } \DrawLine[8.9cm]}
+            \makebox[0.25\linewidth]{\textbf{\comfortaa\color{Sepia} Fecha: } \ \DrawLine[3.8cm]}
             };
 
         %%%% APRENDIZAJES
-        \node[aprendizajebox] (box) {\adjustbox{minipage=0.85\textwidth}{\theaprendizajes}};
-        \node[aprendizajetitle,xshift=122pt,yshift=1pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
+        \node[anchor=north east,xshift=-.32\textwidth+3pt,
+            yshift=-1.5cm,
+            draw=none,%=colorrds, dashed,
+            fill=white, rectangle,
+            inner sep=10pt, style=rounded corners,
+            %drop  shadow={fill=lightgray, opacity=0.7}
+            ] (box) {\adjustbox{minipage=0.85\textwidth}{\theaprendizajes}};
+        \node[ fill=white,
+            inner xsep=2pt,inner ysep=2pt,
+            style=rounded corners,
+            % drop shadow,
+            xshift=122pt,yshift=1pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
         % %%%% GRADESTABLE
         % \node[gradetablebox] (box)
         % {%
@@ -648,7 +658,7 @@
             min size={0.2\textwidth}{150pt},
             max size={\textwidth}{600pt}
             }{%
-            \gradesbox{Calificación:}%
+            \gradesbox{Calificación}%
             }%
  \end{minipage}%
     \begin{tikzpicture}[remember picture, overlay,shift=(current page.north west)]
@@ -693,6 +703,7 @@
     \fi
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
+    \INFO%
 }
 %%%% CAPTIONS
 \RequirePackage{caption,subcaption,capt-of}
