@@ -82,7 +82,7 @@
       --([xshift=-0.5pt]frame.south east)--(frame.south west);},#1,%
 }
 
-\newtcbox{\autocontroltcbox}[1][]{%
+\newtcbox{\autocontrol}[1][]{%
   boxsep=1mm,
   colback=white,
   colframe=red!70!black,
@@ -206,10 +206,10 @@
 \makeatletter
 \let\latexl@section\l@section
 \def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
-\let\latexl@subsection\l@subsection
-\def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
-\let\latexl@subsubsection\l@subsubsection
-\def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
+% \let\latexl@subsection\l@subsection
+% \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
+% \let\latexl@subsubsection\l@subsubsection
+% \def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
 \newcommand{\DrawLine}[1][\linewidth]{%
   \begin{tikzpicture}
     \path[use as bounding box] (0,0) -- (#1,0);
@@ -451,23 +451,39 @@
 \newcommand\thecontrol[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north east)]%
-            \node[#1]{\autocontroltcbox{\color{red}\alterfont\shadowtext{Soluciones propuestas}}};
+            \node[#1]{\autocontrol{\color{red}\alterfont\shadowtext{Soluciones propuestas}}};
         \end{tikzpicture}}%
-    \else{}%
+    \else%
     \fi%
 }
+\makeatother
 % \renewcommand{\questionlabel}{\colorbox{red} {\huge{\textbf{\color{white}~\thequestion.}}}}
 % \renewcommand{\partlabel}{\colorbox{red} {\large{\textbf{\color{white}(\thepartno)}}}}
 %%%% STYLES
 \tikzset{
+    instructionbox/.style={%dashed,
+            draw=colorrds,fill=white, rectangle,
+            inner sep=10pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }
+        },
+    instructiontitle/.style={
+            fill=white,
+            style=rounded corners},
     nombrebox/.style={xshift=-.7\textwidth-3pt,
-            yshift=-0.5cm,
+            yshift=-2em,
             draw=none, fill=white, rectangle,
             inner xsep=2pt, style=rounded corners,
             %drop  shadow={fill=lightgray, opacity=0.7}
         },
-    aprendizajebox/.style={anchor=north,xshift=-.9\textwidth-3pt,
-            yshift=-1.6cm,
+    aprendizajebox/.style={anchor=north east,xshift=-.32\textwidth+3pt,
+            yshift=-1.5cm,
             draw=none,%=colorrds, dashed,
             fill=white, rectangle,
             inner sep=10pt, style=rounded corners,
@@ -479,19 +495,28 @@
             style=rounded corners,
             % drop shadow,
         },
-    gradetablebox/.style={anchor=north east,xshift=-.21\textwidth-1pt,
-            yshift=-1.6cm,
-            draw=none,%=colorrds, dashed,
-            fill=white, rectangle,
-            inner sep=5pt, style=rounded corners,
-            %drop  shadow={fill=lightgray, opacity=0.7}
+    gradesbox/.style={
+        % anchor=north east,xshift=-.21\textwidth-1pt,
+        %     yshift=-2cm,
+        %     draw=none,%=colorrds, dashed,
+        %     fill=white, rectangle,
+        %     inner sep=5pt, style=rounded corners,
+        %     %drop  shadow={fill=lightgray, opacity=0.7}       
+         draw=colorrds,fill=white, rectangle,
+            inner sep=3pt, style=rounded corners,
+            %drop shadow={fill=black, opacity=1}
+            blur shadow={
+                    shadow opacity=40,
+                    shadow yshift=-1mm,
+                    shadow xshift=-1mm,
+                    %shadow blur steps=30,
+                    %shadow blur extra rounding=5pt
+                }
         },
     gradetableboxtitle/.style={
             fill=white,
-            inner xsep=2pt,inner ysep=2pt,
-            style=rounded corners,
-            % drop shadow,
-        }
+            style=rounded corners
+        },
 }
 %%%% COMMAND
 % \newcommand\fracquestion[2]{%
@@ -536,16 +561,49 @@
 %     \def\hiff{\calc{\giff+\const}}%
 %     \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
 % }
+\makeatletter
+\newcommand{\gradesbox}{%
+\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
+        \arrayrulecolor{colorrds!20}\arrayrulewidth=0.1pt\relax%
+        \begin{tikzpicture}%
+        \node [draw=colorrds,thin,fill=white, rectangle,
+            inner sep=2pt, style=rounded corners] (box) {
+                \adjustbox{
+            min size={0.2\textwidth}{250pt},
+            max size={.99\textwidth}{600pt}
+            }{\multirowgradetable{\the\numexpr\numquestions/15\relax}[questions]}%
+            };
+        \node[anchor=north west,fill=white,
+            style=rounded corners,yshift=20pt] at (box.north west) {\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Calificación};
+    \end{tikzpicture}%
+}
+\newcommand{\pdasbox}{%
+\begin{tikzpicture}%
+        \node[%anchor=north east,xshift=-.32\textwidth+3pt,
+            yshift=-1.5cm,
+            draw=none,%=colorrds, dashed,
+            fill=white, rectangle,
+            inner sep=10pt, style=rounded corners,
+            %drop  shadow={fill=lightgray, opacity=0.7}
+            ] (box) {\adjustbox{minipage=0.85\textwidth}{\theaprendizajes}};
+        \node[ fill=white,
+            inner xsep=2pt,inner ysep=2pt,
+            style=rounded corners,
+            % drop shadow,
+            xshift=120pt,yshift=1pt] at (box.north west) {\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Procesos de Desarrollo de Aprendizaje (PDA)};    
+    \end{tikzpicture}%
+            }
 \newcommand{\INFO}{%
     \begin{tikzpicture}[remember picture]
         \draw[colorrds,thin,xshift=-1.2\textwidth-5pt ,yshift=0.5cm,
             rounded corners=5pt] (0,0)
         rectangle
         (\textwidth-1pt,2cm);
+        \node[xshift=-.95\textwidth , yshift=18pt] { \qquad\adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
         %%%% TITULO
-        \node[xshift=-.68\textwidth, yshift=20pt,
+        \node[xshift=-.65\textwidth, yshift=23pt,
             rectangle,
-            rounded corners=2pt,inner xsep=10pt,inner ysep=5pt,
+            rounded corners=2pt,inner xsep=5pt,inner ysep=2pt,
             blur shadow={
                     shadow opacity=50,
                     shadow yshift=-1mm,
@@ -556,42 +614,45 @@
             \adjustbox{
                 stack,
                 color=MainColor,
-                min size={0.4\textwidth}{10pt},
-                max size={0.65\textwidth}{20pt}
+                min size={0.25\textwidth}{13pt},
+                max size={0.6\textwidth}{30pt}
             }{
                 \centering \comfortaa %\sffamily \bfseries 
                 \color{MainColor} \@title \ \theunidad
             }%
         };
-        \node[nombrebox] (box) {\par\noindent
-            \makebox[0.72\linewidth]{\bf\comfortaa \color{Sepia} Nombre del alumno:  \DrawLine[9.4cm]}
-            \makebox[0.25\linewidth]{\bf \comfortaa \color{Sepia} Ciclo escolar:  \ \DrawLine[2.6cm]}\\[0.5em]
-            \makebox[0.72\linewidth]{\bf\comfortaa \color{Sepia} Nombre del evaluador:  \DrawLine[8.9cm]}
-            \makebox[0.25\linewidth]{\bf \comfortaa \color{Sepia} Fecha:  \ \DrawLine[3.8cm]}
+        \node[nombrebox] (box) {%
+            \hspace{-1em}\makebox[0.72\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Nombre del alumno: \ \DrawLine[8.6cm]}
+            \makebox[0.25\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Ciclo escolar: \ \DrawLine[2.2cm]}\\[1em]
+            \hspace{-1em}\makebox[0.72\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Nombre del evaluador: \ \DrawLine[8cm]}
+            \makebox[0.25\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Fecha: \ \DrawLine[3.6cm]}
             };
-        \node[xshift=-.95\textwidth , yshift=20pt] {\quad\adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
-        %%%% APRENDIZAJES
-        \node[aprendizajebox] (box) {\adjustbox{minipage=0.58\textwidth}{\theaprendizajes}};
-        \node[aprendizajetitle,xshift=128pt,yshift=4pt] at (box.north west) {\bfseries \comfortaa \color{Sepia} Procesos de Desarrollo de Aprendizaje (PDA):};
-        %%%% GRADESTABLE
-        \node[gradetablebox] (box)
-        {%
-        \adjustbox{
-        min size={0.05\textwidth}{50pt},
-        max size={0.38\textwidth+3pt}{130pt}
-        }{%
-        \cellwidth{0.4em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Obtenidos}\vtword{Total}%
-        \arrayrulecolor{colorrds!30}%
-            \ifnum\numexpr\numquestions\relax>20%
-                %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-                \multirowgradetable{\the\numexpr\numquestions/6\relax}[questions]%
-                \else%
-                \multicolumngradetable{2}[questions]%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-            \fi%
-        }%
-        };
-        \node[gradetableboxtitle,xshift=-112pt,yshift=6pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Calificación};
-    \end{tikzpicture}%
+        % %%%% GRADESTABLE
+        % \node[gradetablebox] (box)
+        % {%
+        % \adjustbox{
+        % min size={\textwidth}{50pt},
+        % max size={\textwidth+3pt}{130pt}
+        % }{%
+        % \cellwidth{0.4em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Obtenidos}\vtword{Total}%
+        % \arrayrulecolor{colorrds!30}%
+        % \ifnum\numquestions>7%
+        %     {
+        %     \ifnum\numquestions>20%
+        %         %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+        %         {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}
+        %         \else%
+        %         {\multicolumngradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
+        %     \fi%
+        %     }%
+        %     \else{\gradetable[h][questions]}%
+        %    \fi%
+        % }%
+        % };
+        % \node[gradetableboxtitle,xshift=-112pt,yshift=4pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Puntuación:};
+    \end{tikzpicture}\\[0.5em]
+    \gradesbox\\[1em]
+    \pdasbox\\[0.5em]
     \begin{tikzpicture}[remember picture, overlay,shift=(current page.north west)]
         %%%% LOGO
         \node[yshift=-3.5cm,xshift=-2.5cm]{\LOGO};
@@ -600,16 +661,16 @@
             rounded corners=2pt,inner xsep=20pt,inner ysep=0pt]
         {
             \hspace{-1.5em}\begin{minipage}{0.87\textwidth}
-                {\bf\color{colorrds}\fontsize{18}{18}\selectfont\comfortaa Escuela Rafael D\'iaz Serd\'an  }\\[0.2em]
-               {\fontsize{16}{10}\selectfont\thecampoformativo\hfill\color{MainColor}\thegrado$^\circ$ de \thenivel }\\[-0.2em]
-               {{\fontsize{10}{5}\selectfont\scshape\@author}\hfill{\fontsize{14}{10}\selectfont\color{SubjectColor}\themateria}}
+                {\textbf{\color{colorrds}\fontsize{18}{14}\selectfont \comfortaa Escuela Rafael D\'iaz Serd\'an}  }\\[0.1em]
+               {\fontsize{14}{7}\selectfont \thecampoformativo  \hfill {\fontsize{16}{10}\selectfont\color{MainColor}\thegrado$^\circ$ de \thenivel} }\\[-0.2em]
+               {\@author \large \hfill {\fontsize{16}{10}\selectfont\color{SubjectColor}\themateria}}
             \end{minipage}
         };
     \end{tikzpicture}%
-    \thecontrol[yshift=-3.2cm,xshift=-0.55\textwidth,scale=1.4]
+    \thecontrol[yshift=-4.8cm,xshift=-0.6\textwidth,scale=1.4]
 }
 \newenvironment{mybox}[3][]{%
-    \begin{tikzpicture}[#1]%
+    \begin{tikzpicture}[#1]
         \def\myboxname{#3}%
         % good options: minimum height, minimum width
         \node [draw, inner sep=0ex,  align=justify, draw=none]
@@ -628,13 +689,13 @@
     \firstpageheader{}{}{}
     \firstpagefooter{}{  \color{colorrds}\thepage \ de \numpages}{}
     \ifprintanswers
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \theunidad \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \thesection \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
     \else
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \theunidad }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \  \thesection }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
     \fi
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
-    \INFO
+    \INFO%
 }
 %%%% CAPTIONS
 \RequirePackage{caption,subcaption,capt-of}
