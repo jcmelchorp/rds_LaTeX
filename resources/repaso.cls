@@ -562,7 +562,7 @@
 %     \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
 % }
 \makeatletter
-\newcommand{\gradesbox}{%
+\newcommand{\gradesbox}[1][1]{%
 \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
         \arrayrulecolor{colorrds!20}\arrayrulewidth=0.1pt\relax%
         \begin{tikzpicture}%
@@ -571,7 +571,7 @@
                 \adjustbox{
             min size={0.2\textwidth}{250pt},
             max size={.99\textwidth}{600pt}
-            }{\multirowgradetable{\the\numexpr\numquestions/15\relax}[questions]}%
+            }{\multirowgradetable{#1}[questions]}%
             };
         \node[anchor=north west,fill=white,
             style=rounded corners,yshift=20pt] at (box.north west) {\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Calificación};
@@ -593,13 +593,37 @@
             xshift=120pt,yshift=1pt] at (box.north west) {\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Procesos de Desarrollo de Aprendizaje (PDA)};    
     \end{tikzpicture}%
             }
-\newcommand{\INFO}{%
+\newenvironment{mybox}[3][]{%
+    \begin{tikzpicture}[#1]
+        \def\myboxname{#3}%
+        % good options: minimum height, minimum width
+        \node [draw, inner sep=0ex,  align=justify, draw=none]
+        (BOXCONTENT) \bgroup\rule{0ex}{0ex}\ignorespaces
+        }{%
+        \egroup;
+        \node [right, inner sep=3pt, outer sep=0pt,
+            text height=2ex] (BOXNAME)
+        at ([shift={(-1em,5pt)}]BOXCONTENT.north west) {\myboxname};
+    \end{tikzpicture}%
+}
+\AtBeginDocument{
+    % These commands set up the running header on the top of the exam pages
+    \pagestyle{headandfoot}
+    \firstpageheader{}{}{}
+    \firstpagefooter{}{  \color{colorrds}\thepage \ de \numpages}{}
+    \ifprintanswers
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \thesection \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
+    \else
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \  \thesection }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
+    \fi
+    \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
+    \runningheadrule
     \begin{tikzpicture}[remember picture]
         \draw[colorrds,thin,xshift=-1.2\textwidth-5pt ,yshift=0.5cm,
             rounded corners=5pt] (0,0)
         rectangle
         (\textwidth-1pt,2cm);
-        \node[xshift=-.95\textwidth , yshift=18pt] { \qquad\adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última revisión: \today} };
+        \node[xshift=-.95\textwidth , yshift=18pt] {\quad\adjustbox{minipage=0.30\textwidth}{\fontsize{5}{1}\selectfont \comfortaa  \color{black!60} Última rev.: \today} };
         %%%% TITULO
         \node[xshift=-.65\textwidth, yshift=23pt,
             rectangle,
@@ -615,7 +639,7 @@
                 stack,
                 color=MainColor,
                 min size={0.25\textwidth}{13pt},
-                max size={0.6\textwidth}{30pt}
+                max size={0.5\textwidth}{25pt}
             }{
                 \centering \comfortaa %\sffamily \bfseries 
                 \color{MainColor} \@title \ \theunidad
@@ -627,31 +651,8 @@
             \hspace{-1em}\makebox[0.72\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Nombre del evaluador: \ \DrawLine[8cm]}
             \makebox[0.25\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Fecha: \ \DrawLine[3.6cm]}
             };
-        % %%%% GRADESTABLE
-        % \node[gradetablebox] (box)
-        % {%
-        % \adjustbox{
-        % min size={\textwidth}{50pt},
-        % max size={\textwidth+3pt}{130pt}
-        % }{%
-        % \cellwidth{0.4em}\hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Obtenidos}\vtword{Total}%
-        % \arrayrulecolor{colorrds!30}%
-        % \ifnum\numquestions>7%
-        %     {
-        %     \ifnum\numquestions>20%
-        %         %{\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-        %         {\multirowgradetable{\fpeval{trunc(\numquestions/20)+1}}[questions]}
-        %         \else%
-        %         {\multicolumngradetable{2}[questions]}%\ifthenelse{\isodd{\numquestions}}{\multirowgradetable{2}[questions]}{\multicolumngradetable{2}[questions]}}
-        %     \fi%
-        %     }%
-        %     \else{\gradetable[h][questions]}%
-        %    \fi%
-        % }%
-        % };
-        % \node[gradetableboxtitle,xshift=-112pt,yshift=4pt] at (box.north east) {\bfseries \comfortaa \color{Sepia} Puntuación:};
     \end{tikzpicture}\\[0.5em]
-    \gradesbox\\[1em]
+    \gradesbox[\the\numexpr\numquestions/16\relax]\\[1em]
     \pdasbox\\[0.5em]
     \begin{tikzpicture}[remember picture, overlay,shift=(current page.north west)]
         %%%% LOGO
@@ -669,34 +670,7 @@
     \end{tikzpicture}%
     \thecontrol[yshift=-4.8cm,xshift=-0.6\textwidth,scale=1.4]
 }
-\newenvironment{mybox}[3][]{%
-    \begin{tikzpicture}[#1]
-        \def\myboxname{#3}%
-        % good options: minimum height, minimum width
-        \node [draw, inner sep=0ex,  align=justify, draw=none]
-        (BOXCONTENT) \bgroup\rule{0ex}{0ex}\ignorespaces
-        }{%
-        \egroup;
-        \node [right, inner sep=3pt, outer sep=0pt,
-            text height=2ex] (BOXNAME)
-        at ([shift={(-1em,5pt)}]BOXCONTENT.north west) {\myboxname};
-    \end{tikzpicture}%
-}
 \makeatother
-\AtBeginDocument{
-    % These commands set up the running header on the top of the exam pages
-    \pagestyle{headandfoot}
-    \firstpageheader{}{}{}
-    \firstpagefooter{}{  \color{colorrds}\thepage \ de \numpages}{}
-    \ifprintanswers
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \thesection \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
-    \else
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \  \thesection }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
-    \fi
-    \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
-    \runningheadrule
-    \INFO%
-}
 %%%% CAPTIONS
 \RequirePackage{caption,subcaption,capt-of}
 %%%% LINKS
