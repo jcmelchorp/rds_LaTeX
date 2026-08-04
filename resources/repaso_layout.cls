@@ -2,18 +2,34 @@
 \def\filedate{2026/08/02}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{repaso_layout}[\filedate\space Plantilla Repaso RDS Version \fileversion\space by J.Melchor]
-\LoadClass{exam}
-\DeclareOption{addpoints}{\addpoints}
-\DeclareOption{answers}{\printanswers}
+% Create a toggle flag for a custom draft layout
+\newif\if@condensed
+\@condensedfalse % standard default state
+
+% Declare explicit custom options
+\DeclareOption{condensed}{\@condensedtrue}
+
+\DeclareOption{blueheadings}{\AtEndOfClass{\RequirePackage{xcolor}\color{blue}}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{exam}}
 \ProcessOptions\relax
+\LoadClass{exam}
+% \DeclareOption{addpoints}{\addpoints}
+% \DeclareOption{answers}{\printanswers}
+% Execute design changes based on chosen options
+\if@condensed
+  \AtEndOfClass{
+    \RequirePackage{background}
+    \backgroundsetup{contents=DRAFT, color=red!30}
+  }
+\fi
+
 \RequirePackage{tikz}
 \usetikzlibrary{shadows.blur,positioning}
 \RequirePackage{adjustbox}
 \@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
 \RequirePackage{parskip} % Removes indent, adds vertical spacing
 \RequirePackage[
-    %showframe=true,
+    showframe=true,
     letterpaper,
     includehead,
     left=15mm,
@@ -24,16 +40,10 @@
 ]{geometry} % Custom margins
 \RequirePackage{xfp}
 \usepackage{lipsum}
-
+\usepackage{dashrule}
 \newcounter{numberofrows}
 \newcounter{numberofcolumns}
-
-\newcommand{\DrawLine}[1][\linewidth]{%
-  \begin{tikzpicture}
-    \path[use as bounding box] (0,0) -- (#1,0);
-    \draw[color=blue,dashed,dash phase=2pt] (0-\kvtcb@boxsep,0)--(#1-\kvtcb@rightlower+\kvtcb@boxsep,0);
-  \end{tikzpicture}%
-}
+\newcommand{\dashfill}{\leavevmode\leaders\hbox{\hdashrule[0pt]{4pt}{0.5pt}{2pt}}\hfill\kern0pt}
 \AtBeginDocument{%
   \if!\ifnum9<1\numquestions!\fi%
      \setcounter{numberofrows}{\fpeval{ceil(\numquestions/20)}}%
@@ -106,15 +116,15 @@
             \adjustbox{stack,color=blue!20,min size={0.3\textwidth}{10pt},max size={0.5\textwidth}{25pt}}%
             {\sffamily\bfseries \lipsum[1][12]}%
         };
-        \node[text width=\textwidth-0.45cm,align=center,
+        \node[text width=\textwidth,align=center,
             inner sep=0pt,below=25pt of node1] (node3) {%%
             \begin{minipage}{0.75\textwidth}
-                Nombre del alumno: \ \DrawLine[10.4cm]\\[.5em]
-                Nombre del evaluador: \ \DrawLine[10cm]
+                Nombre del alumno: \dashfill \\[.5em]
+                Nombre del evaluador: \dashfill
             \end{minipage}\hfill
             \begin{minipage}{0.25\textwidth}
-                Ciclo escolar: \ \DrawLine[2.2cm]\\[.5em]
-                Fecha: \ \DrawLine[3.2cm]
+                Ciclo escolar: \dashfill \\[.5em]
+                Fecha: \dashfill
             \end{minipage}
         };
          \node[text width=\textwidth-0.45cm,align=center,inner sep=0pt,
@@ -155,40 +165,78 @@
             style=rounded corners,yshift=18pt] at (node7.north west) {%
             \Large\lipsum[1][3]%
         };
-        \node[text width=\textwidth,align=center,
-            below=25pt of node7] (node17) {%
-                \begin{tikzpicture}[remember picture]
-                    \node[draw, 
-                    rectangle,  
-                    text width=0.48\textwidth,align=center,
-                    rounded corners=2pt,fill=white] (node6) {%
-                         \begin{minipage}{\textwidth}
-                            \begin{enumerate}
-                                \item \lipsum[1][1-5] % First sentence of paragraph 1
-                                \item \lipsum[1][2] % Second sentence of paragraph 1
-                                \item \lipsum[1][3-4] % Third sentence of paragraph 1
-                                \item \lipsum[1][11-14] % Third sentence of paragraph 1
-                            \end{enumerate}\vfill
-                        \end{minipage}%
-                    };
-                    \node[anchor=north west,
-                        style=rounded corners,yshift=18pt] at (node6.north west) {%
-                        \Large\lipsum[1][3]%
-                    };
-                    \node[right=5pt of node6] (node8) {%
-                    \adjustbox{
-                    min size={0.2\textwidth}{50pt},
-                    max size={0.5\textwidth}{200pt}
-                    }{%
-                    % \multigradetable{\fpeval{\thenumberofcolumns}}[questions]%
-                    \multicolumngradetable{\fpeval{\thenumberofcolumns}}[questions]%
-                    }%
-                    };
-                    \node[anchor=north west,
-                        style=rounded corners,yshift=18pt] at (node8.north west) {%
-                        \Large\lipsum[1][5]%
-                    };
-                \end{tikzpicture}
-        };
-    \end{tikzpicture}\\
+    \end{tikzpicture}
+
+    % \begin{tikzpicture}[remember picture,
+    %     node_ancho/.style={
+    %     draw, 
+    %     rectangle,  
+    %     text width=\textwidth-0.45cm,align=center,
+    %     rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,
+    %     blur shadow={
+    %                 shadow opacity=50,
+    %                 shadow yshift=-1mm,
+    %                 shadow blur steps=5,
+    %                 shadow blur extra rounding=5pt
+    %             }
+    % },
+    % node_titulo/.style={
+    %     draw, 
+    %     rectangle,  
+    %     align=center,
+    %     rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,
+    %     blur shadow={
+    %                 shadow opacity=50,
+    %                 shadow yshift=-1mm,
+    %                 shadow blur steps=5,
+    %                 shadow blur extra rounding=5pt
+    %             }
+    % },
+    % node_columns/.style={
+    %     draw, 
+    %     rectangle,  
+    %     text width=0.5\textwidth,
+    %     rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,
+    %     blur shadow={
+    %                 shadow opacity=50,
+    %                 shadow yshift=-1mm,
+    %                 shadow blur steps=5,
+    %                 shadow blur extra rounding=5pt
+    %             }
+    % }]
+    %     \node[text width=\textwidth,align=center] (node17) {%
+    %             \begin{tikzpicture}[remember picture]
+    %                 \node[draw, 
+    %                 rectangle,  
+    %                 text width=0.48\textwidth,align=center,
+    %                 rounded corners=2pt,fill=white] (node6) {%
+    %                      \begin{minipage}{\textwidth}
+    %                         \begin{enumerate}
+    %                             \item \lipsum[1][1-5] % First sentence of paragraph 1
+    %                             \item \lipsum[1][2] % Second sentence of paragraph 1
+    %                             \item \lipsum[1][3-4] % Third sentence of paragraph 1
+    %                             \item \lipsum[1][11-14] % Third sentence of paragraph 1
+    %                         \end{enumerate}\vfill
+    %                     \end{minipage}%
+    %                 };
+    %                 \node[anchor=north west,
+    %                     style=rounded corners,yshift=18pt] at (node6.north west) {%
+    %                     \Large\lipsum[1][3]%
+    %                 };
+    %                 \node[right=5pt of node6] (node8) {%
+    %                 \adjustbox{
+    %                 min size={0.2\textwidth}{50pt},
+    %                 max size={0.5\textwidth}{200pt}
+    %                 }{%
+    %                 % \multigradetable{\fpeval{\thenumberofcolumns}}[questions]%
+    %                 \multicolumngradetable{\fpeval{\thenumberofcolumns}}[questions]%
+    %                 }%
+    %                 };
+    %                 \node[anchor=north west,
+    %                     style=rounded corners,yshift=18pt] at (node8.north west) {%
+    %                     \Large\lipsum[1][5]%
+    %                 };
+    %             \end{tikzpicture}
+    %     };
+    % \end{tikzpicture}\\
 }
