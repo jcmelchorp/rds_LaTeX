@@ -22,6 +22,7 @@
 \RequirePackage{xfrac}
 \RequirePackage{xlop}
 \RequirePackage{calculator}
+\RequirePackage{multicol,multirow}
 \RequirePackage{cancel}
 \RequirePackage{bohr}
 \RequirePackage{chemfig}
@@ -203,24 +204,10 @@
       #2
     \end{minipage}
     }{\end{openbox}}
-\makeatletter
-\let\latexl@section\l@section
-\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
-% \let\latexl@subsection\l@subsection
-% \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
-% \let\latexl@subsubsection\l@subsubsection
-% \def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
-\newcommand{\DrawLine}[1][\linewidth]{%
-  \begin{tikzpicture}
-    \path[use as bounding box] (0,0) -- (#1,0);
-    \draw[color=colorrds,dashed,dash phase=2pt] (0-\kvtcb@boxsep,0)--(#1-\kvtcb@rightlower+\kvtcb@boxsep,0);
-  \end{tikzpicture}%
-}
-\makeatother
 \RequirePackage{forest}
 \RequirePackage{tikz}
 \RequirePackage[all]{xy}
-\usepackage{physics}
+\RequirePackage{physics}
 \renewcommand{\div}{\divisionsymbol}
 \RequirePackage{tkz-euclide}
 \RequirePackage{longdivision}
@@ -230,7 +217,7 @@
 \tikzset{vector/.style={>=stealth,->}}
 \tikzset{every text node part/.style={align=center}}
 \RequirePackage{pgfplots}
-% \pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.18}
 \RequirePackage{lscape}
 \RequirePackage{amssymb,amsmath}
 \input{insbox}
@@ -295,13 +282,14 @@
 ]{geometry} % Custom margins
 \RequirePackage{anyfontsize}
 \RequirePackage{ragged2e}
-\RequirePackage{fp}% http://ctan.org/pkg/fp
+\RequirePackage{xfp}% http://ctan.org/pkg/fp
 \newcommand{\HUGE}{\fontsize{50}{60}}
 \RequirePackage{graphicx}
 \graphicspath{{../images}} %Setting the graphicspath
 \RequirePackage{calc}
 \RequirePackage{mathtools}
-% \RequirePackage{xparse}
+\RequirePackage{etoolbox}
+ \RequirePackage{xparse}
 % \ExplSyntaxOn
 % \cs_new_eq:NN \calc \fp_eval:n
 % \ExplSyntaxOff
@@ -309,6 +297,7 @@
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
         \node[shape=circle, draw,  minimum size=1.2em, inner sep=0pt, thick] (char) {#1};}}
 \renewcommand\choicelabel{\circled{\thechoice}}
+\providecommand{\numquestion}{1}
 \setlength\linefillheight{.2in}
 \RequirePackage{titlesec} %% Customize section and subs title on main text
 \titleformat{\section}
@@ -422,6 +411,18 @@
 % }
 %%%% INFO
 \makeatletter
+\let\latexl@section\l@section
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+% \let\latexl@subsection\l@subsection
+% \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
+% \let\latexl@subsubsection\l@subsubsection
+% \def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
+\newcommand{\DrawLine}[1][\linewidth]{%
+  \begin{tikzpicture}
+    \path[use as bounding box] (0,0) -- (#1,0);
+    \draw[color=colorrds,dashed,dash phase=2pt] (0-\kvtcb@boxsep,0)--(#1-\kvtcb@rightlower+\kvtcb@boxsep,0);
+  \end{tikzpicture}%
+}
 %%%% LOGO
 \def\LOGO{%
     \begin{picture}(0,0)\unitlength=1cm
@@ -519,48 +520,48 @@
         },
 }
 %%%% COMMAND
-% \newcommand\fracquestion[2]{%
-%     \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
-% }
-% \newcount\segmentsleft
-% \tikzset{pics/.cd,
-%     circle fraction/.style args={#1/#2}{code={%
-%                     \segmentsleft=#1\relax
-%                     \pgfmathloop
-%                     \ifnum\segmentsleft<1\else
-%                     \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
-%                     \begin{scope}[shift={(\pgfmathcounter,0)}]
-%                         \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
-%                         \fill[fill=lightgray] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
-%                         \draw circle [radius=3/8];
-%                         \ifnum#2>1
-%                             \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
-%                             \draw (0,0) -- (90+\a:3/8);
-%                         \fi
-%                     \end{scope}
-%                     \advance\segmentsleft by-#2
-%                     \repeatpgfmathloop
-%                 }}
-% }
-% \newcommand{\circlefraction}[2]{
-%     \adjustbox{
-%         stack,
-%         min size={0.2\textwidth}{80pt},
-%         max size={0.5\textwidth}{180pt}
-%     }{
-%         \begin{tikzpicture}
-%             \pic  at (0, 0) {circle fraction={#1/#2}};
-%         \end{tikzpicture} }%
-% }
-% \newcommand\quadraticseries[3]{%
-%     \def\diff{\calc{#2-#1}}%
-%     \def\siff{\calc{#3-#2}}%
-%     \def\const{\calc{\siff-\diff}}%
-%     \def\fiff{\calc{\siff+\const}}%
-%     \def\giff{\calc{\fiff+\const}}%
-%     \def\hiff{\calc{\giff+\const}}%
-%     \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
-% }
+\newcommand\fracquestion[2]{%
+    \begin{minipage}[c][][t]{0.8cm}\begin{solutionbox}{1.3cm}\large\fillin[#1][0in]\end{solutionbox} \end{minipage}\hfill\begin{minipage}[c][][t]{0.7\linewidth} #2 \end{minipage}%
+}
+\newcount\segmentsleft
+\tikzset{pics/.cd,
+    circle fraction/.style args={#1/#2}{code={%
+                    \segmentsleft=#1\relax
+                    \pgfmathloop
+                    \ifnum\segmentsleft<1\else
+                    \ifnum\segmentsleft<#2 \edef\n{\the\segmentsleft}\else\def\n{#2}\fi
+                    \begin{scope}[shift={(\pgfmathcounter,0)}]
+                        \foreach \i [evaluate={\a=360/#2*(\i-1)+90;}] in {1,...,\n}
+                        \fill[fill=lightgray] (0,0) -- (\a:3/8) arc (\a:\a+360/#2:3/8) -- cycle;
+                        \draw circle [radius=3/8];
+                        \ifnum#2>1
+                            \foreach \i [evaluate={\a=360/#2*(\i-1);}] in {1,...,#2}
+                            \draw (0,0) -- (90+\a:3/8);
+                        \fi
+                    \end{scope}
+                    \advance\segmentsleft by-#2
+                    \repeatpgfmathloop
+                }}
+}
+\newcommand{\circlefraction}[2]{
+    \adjustbox{
+        stack,
+        min size={0.2\textwidth}{80pt},
+        max size={0.5\textwidth}{180pt}
+    }{
+        \begin{tikzpicture}
+            \pic  at (0, 0) {circle fraction={#1/#2}};
+        \end{tikzpicture} }%
+}
+\newcommand\quadraticseries[3]{%
+    \def\diff{\calc{#2-#1}}%
+    \def\siff{\calc{#3-#2}}%
+    \def\const{\calc{\siff-\diff}}%
+    \def\fiff{\calc{\siff+\const}}%
+    \def\giff{\calc{\fiff+\const}}%
+    \def\hiff{\calc{\giff+\const}}%
+    \[ \lefteqn{\underbrace{\phantom{{#1},{#2}}}_{\diff}}{#1}, \overbrace{{#2},\lefteqn{\color{red}\underbrace{\phantom{{#3},\calc{#3+\fiff}}}_{\fiff}}{#3}}^{\siff}, \color{red}\overbrace{\calc{#3+\fiff},\lefteqn{\underbrace{\phantom{\calc{#3+\fiff}, \calc{#3+\fiff+\giff}}}_{\hiff}}\calc{#3+\fiff+\giff}}^{\giff}, \calc{#3+\fiff+\giff+\hiff}\]
+}
 \makeatletter
 \newcommand{\gradesbox}[1][1]{%
 \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
@@ -606,16 +607,18 @@
         at ([shift={(-1em,5pt)}]BOXCONTENT.north west) {\myboxname};
     \end{tikzpicture}%
 }
+ \newcommand{\numberofrows}[1][]{\fpeval{\providecommand{\numquestions}{10}/16}}%
+   % \fpeval{\numquestions/16}%
 \AtBeginDocument{
     % These commands set up the running header on the top of the exam pages
     \pagestyle{headandfoot}
     \firstpageheader{}{}{}
     \firstpagefooter{}{  \color{colorrds}\thepage \ de \numpages}{}
-    \ifprintanswers
+    \ifprintanswers%
         \runningheader{{\color{SubjectColor}\themateria} }{Unidad \ \thesection \quad {\thecontrol[yshift=-1.2cm,xshift=-0.42\textwidth,scale=0.75]}}{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
-    \else
-        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \  \thesection }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}
-    \fi
+    \else%
+        \runningheader{{\color{SubjectColor}\themateria} }{Unidad \  \thesection }{\color{MainColor}\thegrado$^\circ$ de \thenivel \ (\thecicloescolar)}%
+    \fi%
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
     \begin{tikzpicture}[remember picture]
@@ -652,7 +655,7 @@
             \makebox[0.25\textwidth]{\fontsize{12}{10}\selectfont\bf\comfortaa\color{Sepia}Fecha: \ \DrawLine[3.6cm]}
             };
     \end{tikzpicture}\\[0.5em]
-    \gradesbox[\the\numexpr\numquestions/16\relax]\\[1em]
+    \gradesbox[\numberofrows[\numquestions]]\\[1em]
     \pdasbox\\[0.5em]
     \begin{tikzpicture}[remember picture, overlay,shift=(current page.north west)]
         %%%% LOGO
@@ -680,7 +683,6 @@
 \RequirePackage{bookmark,booktabs}
 \RequirePackage{xstring}
 \RequirePackage{wrapfig}
-\RequirePackage{multicol,multirow}
 %%%% MATH
 \decimalpoint
 \RequirePackage{adjustbox}
