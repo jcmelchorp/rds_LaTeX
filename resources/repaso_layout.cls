@@ -327,7 +327,7 @@ node_wide/.style={
             \large Instrucciones%
         };
     \end{tikzpicture}\hfill
-    \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
+    \begin{tikzpicture}[remember picture]%% REGLAS %%%%%
         \node[node_half_width,text width=0.65\textwidth] (node6) {%
               \thereglas
         };
