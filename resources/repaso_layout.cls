@@ -20,7 +20,10 @@
 \addpoints
 \RequirePackage[spanish]{babel}
 \RequirePackage{multicol}
-\RequirePackage{amssymb}
+%%%%%%% TOC AND SPACE TITLE %%%%%%%%%%%%%%
+\RequirePackage{tocloft}
+\setlength\cftparskip{-5pt} 
+%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{titlesec}
 \titleformat{\section}
 {\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
@@ -33,6 +36,7 @@
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \let\latexl@section\l@section
 \def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{tikz}
 \usetikzlibrary{shadows.blur,positioning}
 \tikzset{%
@@ -104,7 +108,11 @@ node_wide/.style={
     \geometry{showframe=true}
   }%
 \fi
-\RequirePackage{xfp}
+\RequirePackage{xfp,xfrac}
+\RequirePackage{amssymb}
+\RequirePackage{physics}
+\renewcommand{\div}{\divisionsymbol}
+\RequirePackage{longdivision}
 \usepackage{lipsum}
 \RequirePackage{dashrule}
 \newcommand{\dashfill}{\leavevmode\leaders\hbox{\hdashrule[-2pt]{4pt}{0.5pt}{2pt}}\hfill\kern0pt}
@@ -129,7 +137,7 @@ node_wide/.style={
 \newcommand{\theunidad}{1}
 \newcommand{\unidad}[1]{\renewcommand{\theunidad}{#1}}
 
-\usepackage{enumitem}
+\RequirePackage{enumitem}
 \newcommand{\theaprendizajes}{1}
 \newcommand{\aprendizajes}[1]{\renewcommand{\theaprendizajes}{
         \begin{itemize}[leftmargin=*,label=\small$\square$,itemsep=0pt,itemindent=0em]%
