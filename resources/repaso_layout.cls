@@ -20,75 +20,9 @@
 \addpoints
 \RequirePackage[spanish]{babel}
 \RequirePackage{multicol}
-%%%%%%% TOC AND SPACE TITLE %%%%%%%%%%%%%%
-\RequirePackage{tocloft}
-\setlength\cftparskip{-5pt} 
-%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{titlesec}
-\titleformat{\section}
-{\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
-\titlespacing*{\section}{0pt}{0.5em}{0.3em}
-\titleformat{\subsection}
-{\normalfont\fontsize{12}{5}\bfseries\scshape\color{gray!50!black}}{}{0.5em}{}
-\titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
-\titleformat{\subsubsection}
-{\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
-\titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
-\let\latexl@section\l@section
-\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{tikz}
-\usetikzlibrary{shadows.blur,positioning}
-\tikzset{%
-node_wide/.style={
-        draw, 
-        rectangle,  
-        text width=\textwidth-0.45cm,align=center,
-        rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,
-    },
-    node_custom_width/.style={
-        draw, 
-        rectangle,  
-        align=center,
-        rounded corners=2pt,inner xsep=3pt,inner ysep=3pt,fill=white,
-        blur shadow={
-                    shadow opacity=50,
-                    shadow yshift=-1mm,
-                    shadow blur steps=5,
-                    shadow blur extra rounding=5pt
-                }
-    },
-    node_half_width/.style={
-        draw, 
-        rectangle,  
-        text width=0.48\textwidth-0.2cm,
-        rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,
-        blur shadow={
-                    shadow opacity=50,
-                    shadow yshift=-1mm,
-                    shadow blur steps=5,
-                    shadow blur extra rounding=5pt
-                }
-    },
-}
-\RequirePackage{adjustbox}
-\@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
-\newtcbox{\autocontrol}[1][]{%
-  boxsep=1mm,
-  colback=white,
-  colframe=red!70!black,
-  frame style={opacity=0.5},
-  interior style={opacity=1},
-  nobeforeafter,
-  tcbox raise base,
-  shrink tight,
-  rotate=3,
-  extrude by=1mm,
-  enhanced,
-  fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1
-}
-
+\RequirePackage{etoolbox}
 \RequirePackage{parskip} % Removes indent, adds vertical spacing
+% \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
 \RequirePackage{geometry} % Custom margins
 \geometry{%
         letterpaper,
@@ -113,6 +47,142 @@ node_wide/.style={
 \RequirePackage{physics}
 \renewcommand{\div}{\divisionsymbol}
 \RequirePackage{longdivision}
+%%%%%%% TOC AND SPACE TITLE %%%%%%%%%%%%%%
+\RequirePackage{tocloft}
+\setlength\cftparskip{-5pt} 
+%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{titlesec}
+\titleformat{\section}
+{\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
+\titlespacing*{\section}{0pt}{0.5em}{0.3em}
+\titleformat{\subsection}
+{\normalfont\fontsize{12}{5}\bfseries\scshape\color{gray!50!black}}{}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
+\titleformat{\subsubsection}
+{\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
+\let\latexl@section\l@section
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+%%%%%%%%%%%%%%%%% Boxes %%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{adjustbox}
+\RequirePackage{tikz}
+\usetikzlibrary{shadows.blur,positioning}
+\tikzset{%
+node_wide/.style={draw, rectangle,  text width=\textwidth-0.45cm,align=center,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white},
+node_custom_width/.style={draw, rectangle,  align=center,rounded corners=2pt,inner xsep=3pt,inner ysep=3pt,fill=white,blur shadow={shadow opacity=50,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,blur shadow={shadow opacity=50,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+}
+\@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
+\tcbuselibrary{skins}
+\tcbset{
+  %sharp corners,
+  enhanced,
+  colback = white,
+  fonttitle=\bfseries,
+  %before skip = 1mm,    % add extra space before the box
+  %after skip = 1mm      % add extra space after the box
+}  
+\newtcbox{\autocontrol}[1][]{boxsep=2mm,colback=white,colframe=red!70!black,frame style={opacity=1},interior style={opacity=1},nobeforeafter,tcbox raise base,shrink tight,rotate=3,extrude by=1mm,enhanced,fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1}
+\newtcolorbox{pregunta}[1][]{%
+  colframe=green,
+  colbacktitle=white,
+  fonttitle=\color{green!40!black}\bfseries\sffamily,
+  #1
+}
+\newtcolorbox{porejemplo}[1][]{%
+  colframe=yellow,
+  colbacktitle=yellow!10!white,
+  coltitle=yellow!50!black,
+  %fonttitle=\comfortaa,
+  #1
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%% Questions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginEnvironment{choices}{\vspace{0.1\baselineskip}}
+\AtEndEnvironment{choices}{\vspace{0.1\baselineskip}}
+%\AtBeginEnvironment{oneparchoices}{\vspace{0.3\baselineskip}}
+%\AtEndEnvironment{oneparchoices}{\vspace{-0.8\baselineskip}}
+\AtBeginEnvironment{checkboxes}{\vspace{0.1\baselineskip}}
+\AtEndEnvironment{checkboxes}{\vspace{0.1\baselineskip}}
+\AtBeginEnvironment{oneparcheckboxes}{\vspace{0.1\baselineskip}}
+\AtEndEnvironment{oneparcheckboxes}{\vspace{0.1\baselineskip}}
+\newcommand\comillas[1]{``#1''}
+\newcommand{\midmatch}{\hspace{0.75in}\underline{\hspace{0.5in}     }}
+\newcommand{\tf}[1][{}]{%
+    \fillin[#1][1cm]%
+}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+        \node[shape=circle, draw, fill=yellow!10, minimum size=1.8em, inner sep=0pt, thick] (char) {#1};}}
+
+\renewcommand\choicelabel{{\color{green}\bfseries\thechoice}.}
+% \qformat{\color{BrickRed}\circled{\thequestion}}
+\renewcommand{\thepartno}{\alph{partno}}
+\renewcommand{\partlabel}{\color{yellow}\normalsize\circled{{{\color{brown}\thequestion}\thepartno}}}
+\renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\par\noindent}
+\checkboxchar{$\square$}
+\CorrectChoiceEmphasis{\color{red!50!gray}\bf}
+\checkedchar{$\checkmark$}
+\pointpoints{pt}{pts}
+% \newcounter{ejemplonum}
+% \setcounter{ejemplonum}{0}
+
+\if@examen
+    \renewcommand\questionlabel{\color{brown!50!black}\circled{\thequestion}}
+    \pointformat{\color{yellow!40!black}{\scalebox{0.6}[1.0]{\sffamily\rule[-1mm]{5mm}{0.2pt} de \thepoints}}}
+    \newcommand\ejemplosboxed[2][0]{%
+        % \refstepcounter{numquestions}%
+        % \stepcounter{ejemplonum}
+        %\setcounter{numquestions}{\theejemplonum}
+        \question[#1]{#2}%
+    }%
+\fi
+
+\if@repaso
+\renewcommand\questionlabel{}
+\pointsinmargin
+\pointformat{}
+\newcounter{preguntanum}
+\setcounter{preguntanum}{0}
+\newcommand\questionboxed[2][0]{%
+    \question[#1]\begin{pregunta}[adjusted title={ Ejercicio \thequestion} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+        #2%
+    \end{pregunta}
+}%
+\newcommand\ejemplosboxed[2][0]{%
+    %\refstepcounter{question}%
+    % \stepcounter{question}
+    \question[#1]\begin{porejemplo}[adjusted title={Ejemplo \thequestion} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+        \printanswers #2%
+    \end{porejemplo}
+}%
+%%%%%%%%%% HOOKS (questions, parts and choices)
+\renewcommand{\questionshook}{%
+    \setlength{\topsep}{-20mm}%
+    \setlength{\leftmargin}{0pt}%
+    \labelwidth\leftmargin\advance\labelwidth+\labelsep%
+}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \usepackage{lipsum}
 \RequirePackage{dashrule}
 \newcommand{\dashfill}{\leavevmode\leaders\hbox{\hdashrule[-2pt]{4pt}{0.5pt}{2pt}}\hfill\kern0pt}
@@ -147,7 +217,7 @@ node_wide/.style={
 \newcommand{\thecontrol}[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north)]%
-             \node[#1]{%
+             \node[#1,fill=white]{%
                 \autocontrol{%
                 % \alterfont%
                 % \shadowtext{%
@@ -245,15 +315,11 @@ node_wide/.style={
         \end{tikzpicture}\\
     \fi
     \firstpagefooter{}{\thepage \ de \numpages}{}
-    \ifprintanswers%
-        \runningheader{LEFT SIDE}{CENTER}{RIGHT SIDE}
-    \else%
-        \runningheader{LEFT SIDE}{CENTER}{RIGHT SIDE}
-    \fi%
+    \runningheader{\themateria}{\@title \ \thecontrol[yshift=-1.1cm,xshift=4cm,fill=white]}{\thegrado$^\circ$ de \thenivel}
     \runningfooter{}{\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
-    \thecontrol[yshift=-5cm,scale=1.5]
+    \thecontrol[yshift=-5.5cm,scale=1.5,fill=white]
 
     \begin{tikzpicture}[remember picture]%% NAMES %%%%%%%%%%%%%%%%%%
         \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {%%
@@ -271,8 +337,8 @@ node_wide/.style={
     \begin{tikzpicture}[remember picture]%% GRADES %%%%%%%%%%%%%%%%%
          \node[node_wide,draw=none] (node5) {
                     \adjustbox{
-                    min size={0.4\textwidth}{50pt},
-                    max size={\textwidth}{300pt}
+                    min size={0.2\textwidth}{50pt},
+                    max size={\textwidth}{200pt}
                     }{%
                     \multirowgradetable{\thenumberofrows}[questions]%
                     }%
