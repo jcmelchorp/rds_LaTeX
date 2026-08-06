@@ -155,16 +155,15 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
     \setcounter{ejemplonum}{0}
     \newcommand\questionboxed[2][0]{%
     \refstepcounter{ejemplonum}
-    \question[#1]{%
-    \begin{pregunta}[adjusted title={ Ejercicio \theejemplonum} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
-        #2%
-    \end{pregunta}%
+   % \question[#1]{%
+   % \begin{pregunta}[adjusted title={ Ejercicio \theejemplonum} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+   %     #2%
+   % \end{pregunta}%
     %\addtocounter{question}{-1}
     % \addtocounter{numquestions}{-1}
-    }%
+    %}%
 }%
 \fi
-
 \if@repaso
 \renewcommand\questionlabel{}
 \pointsinmargin
@@ -177,20 +176,20 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
     \begin{pregunta}[adjusted title={ Ejercicio \theejemplonum} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
         #2%
     \end{pregunta}%
+    %\addtocounter{question}{0}
+    %\addtocounter{numquestions}{0}
     }%
 }%
-    \newcounter{preguntanum}
-    \setcounter{preguntanum}{0}
-    \newcommand\ejemplosboxed[2][0]{%
+\newcounter{preguntanum}
+\setcounter{preguntanum}{0}
+\newcommand\ejemplosboxed[2][0]{%
     \refstepcounter{preguntanum}%
-    % \stepcounter{question}
-    \question[#1]{%
-    \begin{porejemplo}[adjusted title={Ejemplo \thepreguntanum}]% \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+    % \question[#1]{%
+    \begin{porejemplo}[adjusted title={Ejemplo \thepreguntanum}]% \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de #1 \ \points}]%
         \printanswers #2%
     \end{porejemplo}%
-    \addtocounter{question}{-1}
-    \addtocounter{numquestions}{-1}
-    }
+    % }
+    %\addtocounter{numquestions}{-1}
 }%
 %%%%%%%%%% HOOKS (questions, parts and choices)
 \renewcommand{\questionshook}{%
