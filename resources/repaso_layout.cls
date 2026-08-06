@@ -31,7 +31,7 @@
         right=15mm,
         top=5mm,
         bottom=25mm,
-        headheight=10mm
+        headheight=15mm
     }
 % Execute design changes based on chosen options
 \if@draft
@@ -217,7 +217,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 \newcommand{\thecontrol}[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north)]%
-             \node[#1,fill=white]{%
+             \node[#1,yshift=-15mm,xshift=100pt]{%
                 \autocontrol{%
                 % \alterfont%
                 % \shadowtext{%
@@ -293,7 +293,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
                     \LOGO
                 \end{minipage}
             };
-        \end{tikzpicture}
+        \end{tikzpicture}\\
     \fi
     \if@repaso
         \begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
@@ -315,20 +315,20 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
         \end{tikzpicture}\\
     \fi
     \firstpagefooter{}{\thepage \ de \numpages}{}
-    \runningheader{\themateria}{\@title \ \thecontrol[yshift=-1.1cm,xshift=4cm,fill=white]}{\thegrado$^\circ$ de \thenivel}
+    \runningheader{\themateria}{\@title \ \thecontrol}{\thegrado$^\circ$ de \thenivel}
     \runningfooter{}{\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
-    \thecontrol[yshift=-5.5cm,scale=1.5,fill=white]
+    \thecontrol[scale=1.5]
 
     \begin{tikzpicture}[remember picture]%% NAMES %%%%%%%%%%%%%%%%%%
         \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {%%
             \begin{minipage}{0.7\textwidth}
-                Nombre del alumno: \dashfill \\[.5em]
+                Nombre del alumno: \dashfill \\[0.75em]
                 Nombre del evaluador: \dashfill
             \end{minipage}\hfill
             \begin{minipage}{0.3\textwidth}
-                Ciclo escolar: \dashfill \\[.5em]
+                Ciclo escolar: \dashfill \\[0.75em]
                 Fecha: \dashfill
             \end{minipage}
         };
