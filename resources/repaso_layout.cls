@@ -21,7 +21,10 @@
 \RequirePackage[spanish]{babel}
 \RequirePackage{multicol}
 \RequirePackage{etoolbox}
-\RequirePackage{parskip} % Removes indent, adds vertical spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\setlength{\columnsep}{20pt}
+\RequirePackage{parskip}
 % \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
 \RequirePackage{geometry} % Custom margins
 \geometry{%
@@ -42,14 +45,15 @@
     \geometry{showframe=true}
   }%
 \fi
-\RequirePackage{xfp,xfrac}
+\RequirePackage{xfp,xfrac,xlop}
 \RequirePackage{amssymb}
 \RequirePackage{physics}
 \renewcommand{\div}{\divisionsymbol}
 \RequirePackage{longdivision}
 %%%%%%% TOC AND SPACE TITLE %%%%%%%%%%%%%%
 \RequirePackage{tocloft}
-\setlength\cftparskip{-5pt} 
+\setlength\cftparskip{0pt}
+\setlength\linefillheight{.2in}
 %%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{titlesec}
 \titleformat{\section}
@@ -102,7 +106,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 
 
 %%%%%%%%%%%%%%%%% Questions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\AtBeginEnvironment{choices}{\vspace{0.1\baselineskip}}
+\AtBeginEnvironment{choices}{\vspace{0.5\baselineskip}}
 \AtEndEnvironment{choices}{\vspace{0.1\baselineskip}}
 %\AtBeginEnvironment{oneparchoices}{\vspace{0.3\baselineskip}}
 %\AtEndEnvironment{oneparchoices}{\vspace{-0.8\baselineskip}}
@@ -118,11 +122,12 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
         \node[shape=circle, draw, fill=yellow!10, minimum size=1.8em, inner sep=0pt, thick] (char) {#1};}}
 
-\renewcommand\choicelabel{{\color{green}\bfseries\thechoice}.}
+%\renewcommand\choicelabel{\circled{\thechoice}}
 % \qformat{\color{BrickRed}\circled{\thequestion}}
+% \renewcommand{\solutiontitle}{\noindent\hspace{-0.2cm}}
 \renewcommand{\thepartno}{\alph{partno}}
-\renewcommand{\partlabel}{\color{yellow}\normalsize\circled{{{\color{brown}\thequestion}\thepartno}}}
-\renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\par\noindent}
+\renewcommand{\partlabel}{\sffamily\thepartno .}
+\renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\quad}
 \checkboxchar{$\square$}
 \CorrectChoiceEmphasis{\color{red!50!gray}\bf}
 \checkedchar{$\checkmark$}
@@ -249,7 +254,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 \newcommand{\thecontrol}[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north)]%
-             \node[#1,yshift=-15mm,xshift=100pt]{%
+             \node[#1,yshift=-15mm,xshift=118pt]{%
                 \autocontrol{%
                 % \alterfont%
                 % \shadowtext{%
