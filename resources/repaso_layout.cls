@@ -126,13 +126,13 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 \checkboxchar{$\square$}
 \CorrectChoiceEmphasis{\color{red!50!gray}\bf}
 \checkedchar{$\checkmark$}
-\pointpoints{pt}{pts}
+\pointpoints{pt}{pts.}
 % \newcounter{ejemplonum}
 % \setcounter{ejemplonum}{0}
 
 \if@examen
     \renewcommand\questionlabel{\color{brown!50!black}\circled{\thequestion}}
-    \pointformat{\color{yellow!40!black}{\scalebox{0.6}[1.0]{\sffamily\rule[-1mm]{5mm}{0.2pt} de \thepoints}}}
+    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,top=3pt,bottom=3pt,right=5pt,left=3pt,colframe=yellow!70!black]{\color{white}M} \scalebox{0.6}[1]{de \thepoints\quad}}
     \newcommand\ejemplosboxed[2][0]{%
         % \refstepcounter{numquestions}%
         % \stepcounter{ejemplonum}
