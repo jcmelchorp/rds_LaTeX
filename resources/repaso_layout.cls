@@ -126,38 +126,71 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 \checkboxchar{$\square$}
 \CorrectChoiceEmphasis{\color{red!50!gray}\bf}
 \checkedchar{$\checkmark$}
-\pointpoints{pt}{pts.}
+\pointpoints{pt}{pts}
 % \newcounter{ejemplonum}
 % \setcounter{ejemplonum}{0}
 
 \if@examen
     \renewcommand\questionlabel{\color{brown!50!black}\circled{\thequestion}}
-    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,top=3pt,bottom=3pt,right=5pt,left=3pt,colframe=yellow!70!black]{\color{white}M} \scalebox{0.6}[1]{de \thepoints\quad}}
+    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,top=5pt,bottom=5pt,right=5pt,left=3pt,colframe=yellow!70!black,
+    overlay={
+    \node[
+      anchor=north east,
+      inner sep=2pt,
+     % draw=red!75!black,
+     % fill=red!20,
+      font=\sffamily\scriptsize
+    ] at (frame.north east) {\textbf{\totalpoints} \points};
+  }]{\color{white}M}%
+  }
+    \newcounter{preguntanum}
+    \setcounter{preguntanum}{0}
     \newcommand\ejemplosboxed[2][0]{%
-        % \refstepcounter{numquestions}%
+         \refstepcounter{preguntanum}%
         % \stepcounter{ejemplonum}
         %\setcounter{numquestions}{\theejemplonum}
         \question[#1]{#2}%
     }%
+    \newcounter{ejemplonum}
+    \setcounter{ejemplonum}{0}
+    \newcommand\questionboxed[2][0]{%
+    \refstepcounter{ejemplonum}
+    \question[#1]{%
+    \begin{pregunta}[adjusted title={ Ejercicio \theejemplonum} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+        #2%
+    \end{pregunta}%
+    %\addtocounter{question}{-1}
+    % \addtocounter{numquestions}{-1}
+    }%
+}%
 \fi
 
 \if@repaso
 \renewcommand\questionlabel{}
 \pointsinmargin
 \pointformat{}
-\newcounter{preguntanum}
-\setcounter{preguntanum}{0}
+\newcounter{ejemplonum}
+\setcounter{ejemplonum}{0}
 \newcommand\questionboxed[2][0]{%
-    \question[#1]\begin{pregunta}[adjusted title={ Ejercicio \thequestion} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+\refstepcounter{ejemplonum}
+    \question[#1]{%
+    \begin{pregunta}[adjusted title={ Ejercicio \theejemplonum} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
         #2%
-    \end{pregunta}
+    \end{pregunta}%
+    }%
 }%
-\newcommand\ejemplosboxed[2][0]{%
-    %\refstepcounter{question}%
+    \newcounter{preguntanum}
+    \setcounter{preguntanum}{0}
+    \newcommand\ejemplosboxed[2][0]{%
+    \refstepcounter{preguntanum}%
     % \stepcounter{question}
-    \question[#1]\begin{porejemplo}[adjusted title={Ejemplo \thequestion} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+    \question[#1]{%
+    \begin{porejemplo}[adjusted title={Ejemplo \thepreguntanum}]% \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
         \printanswers #2%
-    \end{porejemplo}
+    \end{porejemplo}%
+    \addtocounter{question}{-1}
+    \addtocounter{numquestions}{-1}
+    }
 }%
 %%%%%%%%%% HOOKS (questions, parts and choices)
 \renewcommand{\questionshook}{%
