@@ -1,4 +1,4 @@
-\documentclass[12pt,repaso,answers]{repaso_layout}
+\documentclass[12pt,examen,answers]{repaso_layout}
 \campoformativo{Saberes y Pensamiento Científico}
 \grado{2}
 \nivel{Secundaria}
@@ -22,10 +22,10 @@
 \section{Sección 1}
 \subsection{Subsección 1}
 \ejemplosboxed[10]{Hola}
-
-\questionboxed[10]{Hola}
-\questionboxed[10]{Hola}
-
+\makeatletter
+\if@repaso\questionboxed[10]{Hola}\fi
+\if@repaso\questionboxed[20]{Hola}\fi
+\makeatother
 \subsection{Subsección 2}
 \ejemplosboxed[10]{Hola}
 \section{Sección 2}
@@ -33,8 +33,9 @@
 \ejemplosboxed[10]{Hola}
 \subsection{Subsección 1}
 \ejemplosboxed[10]{Hola}
-\questionboxed[10]{Hola}
-
+\makeatletter
+\if@repaso\questionboxed[30]{Hola}\fi
+\makeatother
 % \subsection{Subsección 2}
 % \ejemplosboxed[10]{Hola}
 % \subsection{Subsección 3}
