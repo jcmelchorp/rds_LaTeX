@@ -356,11 +356,11 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
             \node[node_wide,draw=none] {%
             \hspace*{2cm}
             \begin{minipage}[b][][b]{0.75\textwidth}\centering
-                {\Large\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\\[0.1em]
+                {\Large\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\\
                 {\thecampoformativo}\\[0.1em]
                 {\bfseries\large{\color{SubjectColor}\themateria} }\\
-                {\bfseries{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
-                {\comfortaa \large Examen \@title \ \theunidad}\\
+                {\color{MainColor}\thegrado$^\circ$ de \thenivel} \\[0.1em]
+                {\large Examen \@title \ \theunidad}\\
             \end{minipage}%
             \begin{minipage}[b][][b]{0.118\textwidth}
                     \LOGO
@@ -446,7 +446,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
     \if@examen
     \begin{minipage}{\textwidth}
-    \begin{minipage}[t][][b]{.29\textwidth}
+    \begin{minipage}[t][][b]{.28\textwidth}
         \instructionbox{Instrucciones:}{%
             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
             Desarrolla tus respuestas en el espacio determinado para cada solución.

@@ -36,7 +36,7 @@
 				],
 				"env": {
 					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
-					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources:%DIR%/base/:%DIR%/../base:%DIR%/../images:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources:%DIR%/../images:"
 				}
 			},
 			{
