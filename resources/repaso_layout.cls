@@ -19,7 +19,8 @@
 \LoadClass{exam}
 \addpoints
 \RequirePackage[spanish]{babel}
-\RequirePackage{ragged2e} %%% for justifying/right/left text
+\RequirePackage{comfortaa}
+% \RequirePackage{ragged2e} %%% for justifying/right/left text
 %%%%%%%% COLOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{color, colortbl}
 \RequirePackage[xcdraw,svgnames,x11names,usenames,dvipsnames,table]{xcolor} % Required for custom color
@@ -99,11 +100,11 @@
 \RequirePackage{tikz}       %%% Full custom drawing package
 \usetikzlibrary{shadows.blur,positioning}
 \tikzset{%
-node_wide/.style={draw=colorrds, rectangle,  text width=\textwidth-0.45cm,align=center,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white},
+node_wide/.style={draw=colorrds, rectangle,  text width=\textwidth-0.45cm,align=center,rounded corners=2pt,inner sep=5pt,fill=white},
 node_custom_width/.style={draw=colorrds, rectangle,  align=center,rounded corners=2pt,inner xsep=3pt,inner ysep=3pt,fill=white,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
 node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
 instructionbox/.style={draw=colorrds,fill=white, rectangle,inner sep=10pt, style=rounded corners,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
-instructiontitle/.style={fill=white,style=rounded corners}
+instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshift=12pt,xshift=6pt}
 }
 \@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
 \tcbuselibrary{skins}
@@ -318,7 +319,7 @@ instructiontitle/.style={fill=white,style=rounded corners}
                 \normalfont #3
             }%
         };
-        \node[instructiontitle, right=10pt] at (box.north west) {\bfseries \color{Sepia} #2};
+        \node[instructiontitle] at (box.north west) {\comfortaa\bfseries\color{Sepia} #2};
     \end{tikzpicture}%
 }
 
@@ -359,7 +360,7 @@ instructiontitle/.style={fill=white,style=rounded corners}
                 {\thecampoformativo}\\[0.1em]
                 {\bfseries\large{\color{SubjectColor}\themateria} }\\
                 {\bfseries{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
-                {\large Examen \@title \ \theunidad}\\
+                {\comfortaa \large Examen \@title \ \theunidad}\\
             \end{minipage}%
             \begin{minipage}[b][][b]{0.118\textwidth}
                     \LOGO
@@ -374,18 +375,15 @@ instructiontitle/.style={fill=white,style=rounded corners}
                     \LOGO
                 \end{minipage}\hfill
                 \begin{minipage}[b][][b]{0.9\textwidth}
-                    {\hspace*{-1pt}\Large\color{colorrds}Escuela Rafael D\'iaz Serd\'an}\\
-                    {\thecampoformativo\hfill{\bfseries\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
+                    {\hspace*{-1pt}\Large\comfortaa\color{colorrds}Escuela Rafael D\'iaz Serd\'an}\\
+                    {\thecampoformativo\hfill{\large\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
                     {{\hspace*{-1pt}\footnotesize\scshape\@author}\hfill{\bfseries{\color{SubjectColor}\themateria}}}\\[-0.5em]
                     {\adjustbox{minipage=.25\textwidth}{\color{gray}\sffamily\fontsize{5}{5}\selectfont Rev: \today}}
-                    
-                    
-                    {\color{black!60}\tiny  }
                 \end{minipage}
             };
             \node[node_custom_width,below=-10pt of node1]  {%
                 \adjustbox{stack,min size={0.4\textwidth}{20pt},max size={0.65\textwidth}{15pt}}%
-                {\color{colorrds}\sffamily Repaso \@title \ \theunidad}%
+                {\comfortaa\color{colorrds} Repaso \@title \ \theunidad}%
             };
         \end{tikzpicture}\\
     \fi
@@ -398,11 +396,11 @@ instructiontitle/.style={fill=white,style=rounded corners}
 
     \begin{tikzpicture}[remember picture]%% NAMES %%%%%%%%%%%%%%%%%%
         \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {%%
-            \begin{minipage}{0.7\textwidth}
+            \begin{minipage}{0.7\textwidth}\comfortaa\small
                 Nombre del alumno: \dashfill \\[0.75em]
                 Nombre del evaluador: \dashfill
             \end{minipage}\hfill
-            \begin{minipage}{0.3\textwidth}
+            \begin{minipage}{0.3\textwidth}\comfortaa\small
                 Ciclo escolar: \dashfill \\[0.75em]
                 Fecha: \dashfill
             \end{minipage}
@@ -410,7 +408,7 @@ instructiontitle/.style={fill=white,style=rounded corners}
     \end{tikzpicture}
 
     \begin{tikzpicture}[remember picture]%% GRADES %%%%%%%%%%%%%%%%%
-         \node[node_wide,draw=colorrds,inner sep=2pt] (node5) {
+         \node[node_wide,draw=colorrds!20,inner sep=1pt] (node5) {
                     \adjustbox{
                     min size={0.2\textwidth}{50pt},
                     max size={\textwidth}{200pt}
@@ -420,9 +418,7 @@ instructiontitle/.style={fill=white,style=rounded corners}
                     \multirowgradetable{\thenumberofrows}[questions]%
                     }%
          };
-         \node[anchor=north west,instructiontitle, 
-            style=rounded corners,yshift=10pt,xshift=10pt] at (node5.north west) {%
-            \bfseries \color{Sepia} Calificación:%
+         \node[instructiontitle] at (node5.north west) {\comfortaa\bfseries\color{Sepia} Calificación:%
         };
     \end{tikzpicture}
 
@@ -431,15 +427,9 @@ instructiontitle/.style={fill=white,style=rounded corners}
     \tableofcontents
     \end{multicols}
 
-        \begin{tikzpicture}[remember picture]%%%%%% PDAS %%%%%
-            \node[node_wide] (node7) {%
-                 \theaprendizajes
-            };
-            \node[anchor=north west,instructiontitle,
-                style=rounded corners,yshift=10pt,xshift=10pt] at (node7.north west) {%
-                \bfseries \color{Sepia} Procesos de Desarrollo del Aprendizaje:%
-            };
-        \end{tikzpicture}
+    \begin{minipage}{\textwidth}
+        \instructionbox{Procesos de Desarrollo del Aprendizaje:}{\theaprendizajes}
+    \end{minipage}
     \newpage
     \fi
     %  \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
@@ -457,7 +447,7 @@ instructiontitle/.style={fill=white,style=rounded corners}
     \if@examen
     \begin{minipage}{\textwidth}
     \begin{minipage}[t][][b]{.29\textwidth}
-        \instructionbox{Instrucciones:}{%\large%
+        \instructionbox{Instrucciones:}{%
             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
             Desarrolla tus respuestas en el espacio determinado para cada solución.
             De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
@@ -465,9 +455,7 @@ instructiontitle/.style={fill=white,style=rounded corners}
         }%
     \end{minipage}\hspace{0.8cm}%
     \begin{minipage}[t][][b]{.62\textwidth}
-        \instructionbox{Reglas:}{%
-            \thereglas
-        }
+        \instructionbox{Reglas:}{\thereglas}
     \end{minipage}
 \end{minipage}
     % \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
