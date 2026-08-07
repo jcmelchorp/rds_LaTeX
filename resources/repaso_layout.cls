@@ -19,7 +19,32 @@
 \LoadClass{exam}
 \addpoints
 \RequirePackage[spanish]{babel}
-\RequirePackage{multicol}
+\RequirePackage{ragged2e} %%% for justifying/right/left text
+%%%%%%%% COLOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{color, colortbl}
+\RequirePackage[xcdraw,svgnames,x11names,usenames,dvipsnames,table]{xcolor} % Required for custom color
+\definecolor{colorrds}{HTML}{0060A0} % Custom colour
+\definecolor{rdsdark}{HTML}{003050}
+\definecolor{almond}{rgb}{0.94, 0.87, 0.8}
+\definecolor{brickred}{rgb}{0.8, 0.25, 0.33}
+\definecolor{corn}{rgb}{0.98, 0.93, 0.36}
+\definecolor{darkpastelred}{rgb}{0.76, 0.23, 0.13}
+\definecolor{MainColor}{HTML}{4C8BA7}
+\definecolor{SubjectColor}{HTML}{98780F}
+\definecolor{ExampleTitle}{HTML}{3F2906}
+\definecolor{ExampleCard}{HTML}{275819}
+\definecolor{PreguntaTitle}{HTML}{3F2906}
+\definecolor{PreguntaCard}{HTML}{C2A224}
+\definecolor{Guia}{HTML}{FFDDDD}
+\definecolor{ChapterMainColor}{named}{RawSienna}
+\definecolor{ChapterSecColor}{named}{DarkGoldenrod}
+\definecolor{SectionMainColor}{named}{OliveDrab}
+\definecolor{SectionSecColor}{named}{DarkGoldenrod}
+\definecolor{SubsectionMainColor}{named}{OliveDrab}
+\definecolor{SubsectionSecColor}{named}{FireBrick}
+\definecolor{SubsubsectionMainColor}{named}{DarkGoldenrod}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{multicol} %% suport multicolumn grades table
 \RequirePackage{etoolbox}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
@@ -30,8 +55,8 @@
 \geometry{%
         letterpaper,
         includehead,
-        left=15mm,
-        right=15mm,
+        left=20mm,
+        right=20mm,
         top=5mm,
         bottom=25mm,
         headheight=15mm
@@ -45,36 +70,40 @@
     \geometry{showframe=true}
   }%
 \fi
-\RequirePackage{xfp,xfrac,xlop}
-\RequirePackage{amssymb}
-\RequirePackage{physics}
-\renewcommand{\div}{\divisionsymbol}
-\RequirePackage{longdivision}
-%%%%%%% TOC AND SPACE TITLE %%%%%%%%%%%%%%
-\RequirePackage{tocloft}
-\setlength\cftparskip{0pt}
-\setlength\linefillheight{.2in}
-%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{titlesec}
-\titleformat{\section}
+\RequirePackage{xfp} %%% Evaluate numerical aritmethic expresions
+\RequirePackage{xfrac} %%% Fraction customatization
+\RequirePackage{xlop} %%% for math aritmethic operations
+\RequirePackage{amssymb}  %%% for math symbols
+\RequirePackage{physics}  %%% math and physics units, variables and expresions
+\renewcommand{\div}{\divisionsymbol} %%% reescribimos el símbolo de división para reescribir el com,ando \div
+\RequirePackage{longdivision} %%% math methods for long division algoriythm
+%%%%%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{titlesec}    %%% customize section label on the document
+\titleformat{\section}       %%% section
 {\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
-\titleformat{\subsection}
+\titleformat{\subsection}    %%% subsection
 {\normalfont\fontsize{12}{5}\bfseries\scshape\color{gray!50!black}}{}{0.5em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
-\titleformat{\subsubsection}
+\titleformat{\subsubsection} %%% subsubsection
 {\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
+%%%%%%%%%% This 2 lines calls to omit the prefix number of sections in TOC 
 \let\latexl@section\l@section
 \def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+\RequirePackage{tocloft} %%% customatize \tableofcontents
+\setlength\cftparskip{0pt} %%% Title height from first line of TOC
+\setlength\linefillheight{0.5cm} %%% Line height of TOC
 %%%%%%%%%%%%%%%%% Boxes %%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{adjustbox}
-\RequirePackage{tikz}
+\RequirePackage{adjustbox}  %%% Scalable boxes
+\RequirePackage{tikz}       %%% Full custom drawing package
 \usetikzlibrary{shadows.blur,positioning}
 \tikzset{%
-node_wide/.style={draw, rectangle,  text width=\textwidth-0.45cm,align=center,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white},
-node_custom_width/.style={draw, rectangle,  align=center,rounded corners=2pt,inner xsep=3pt,inner ysep=3pt,fill=white,blur shadow={shadow opacity=50,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
-node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,blur shadow={shadow opacity=50,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+node_wide/.style={draw=colorrds, rectangle,  text width=\textwidth-0.45cm,align=center,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white},
+node_custom_width/.style={draw=colorrds, rectangle,  align=center,rounded corners=2pt,inner xsep=3pt,inner ysep=3pt,fill=white,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+instructionbox/.style={draw=colorrds,fill=white, rectangle,inner sep=10pt, style=rounded corners,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+instructiontitle/.style={fill=white,style=rounded corners}
 }
 \@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
 \tcbuselibrary{skins}
@@ -100,12 +129,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
   %fonttitle=\comfortaa,
   #1
 }
-
-
-
-
-
-%%%%%%%%%%%%%%%%% Questions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% QUESTIONS, PARTS AND CHOICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \AtBeginEnvironment{choices}{\vspace{0.5\baselineskip}}
 \AtEndEnvironment{choices}{\vspace{0.1\baselineskip}}
 %\AtBeginEnvironment{oneparchoices}{\vspace{0.3\baselineskip}}
@@ -137,16 +161,17 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 
 \if@examen
     \renewcommand\questionlabel{\color{brown!50!black}\circled{\thequestion}}
-    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,top=5pt,bottom=5pt,right=5pt,left=3pt,colframe=yellow!70!black,
+    \pointsinmargin
+    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,boxsep=1pt,boxrule = 1pt,top=10pt,bottom=5pt,right=5pt,left=5pt,colframe=yellow!70!black,
     overlay={
     \node[
-      anchor=north east,
-      inner sep=2pt,
+      anchor=north,
+      inner sep=3pt,
      % draw=red!75!black,
      % fill=red!20,
       font=\sffamily\scriptsize
-    ] at (frame.north east) {\textbf{\totalpoints} \points};
-  }]{\color{white}M}%
+    ] at (frame.north) {\textbf{\color{colorrds}\totalpoints} \points };
+  }]{\color{white}pp}
   }
     \newcounter{preguntanum}
     \setcounter{preguntanum}{0}
@@ -269,7 +294,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 \newcommand{\thereglas}{1}
 \newcommand{\reglas}[1]{\renewcommand{\thereglas}{%
         \small Al comenzar este examen, aceptas las siguientes reglas:
-        \begin{itemize}[topsep=1.5pt, partopsep=0pt,itemsep=1pt,parsep=0pt,label=\color{red!70!black}$\times$]%
+        \begin{itemize}[leftmargin=*,topsep=1.5pt, partopsep=0pt,itemsep=1pt,itemindent=0em,parsep=0pt,label=\color{red!70!black}$\times$]%
             #1
         \end{itemize}
         Si no consideraste alguna de estas reglas,
@@ -277,7 +302,7 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
     }}
 \reglas{
     \item No se permite \textbf{salir} del sal\'on de clases. %\faToiletPaperSlash
-    \item No se permite \textbf{intercambiar o prestar} ningún tipo de material.
+    \item No se permite intercambiar o \textbf{prestar} ningún tipo de material.
     \item No se permite el uso de \textbf{celular} o cualquier \textbf{otro dispositivo}.
     \item No se permite el uso de \textbf{apuntes}, \textbf{libros}, notas o formularios.
     \item No se permite \textbf{mirar} el examen de otros alumnos.
@@ -285,7 +310,17 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
 }
 
 
-
+\newcommand{\instructionbox}[3][fill=white]{%
+    \begin{tikzpicture}%
+        \node [instructionbox, #1] (box)
+        {%
+            \adjustbox{minipage=.98\linewidth}{%
+                \normalfont #3
+            }%
+        };
+        \node[instructiontitle, right=10pt] at (box.north west) {\bfseries \color{Sepia} #2};
+    \end{tikzpicture}%
+}
 
 
 
@@ -320,11 +355,11 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
             \node[node_wide,draw=none] {%
             \hspace*{2cm}
             \begin{minipage}[b][][b]{0.75\textwidth}\centering
-                Escuela Rafael Díaz Serdán\\
-                \thecampoformativo \\
-                \themateria \\ 
-                \thegrado$^\circ$ de \thenivel \\
-                Examen \@title \ \theunidad
+                {\Large\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\\[0.1em]
+                {\thecampoformativo}\\[0.1em]
+                {\bfseries\large{\color{SubjectColor}\themateria} }\\
+                {\bfseries{{\color{MainColor}\thegrado$^\circ$ de \thenivel}}} \\
+                {\large Examen \@title \ \theunidad}\\
             \end{minipage}%
             \begin{minipage}[b][][b]{0.118\textwidth}
                     \LOGO
@@ -339,21 +374,24 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
                     \LOGO
                 \end{minipage}\hfill
                 \begin{minipage}[b][][b]{0.9\textwidth}
-                    {Escuela Rafael D\'iaz Serd\'an}\\
-                    {\thecampoformativo   \hfill \thegrado$^\circ$ de \thenivel}\\
-                    {\@author  \hfill \themateria}\\
-                    {que onda  \hfill Adios}
+                    {\hspace*{-1pt}\Large\color{colorrds}Escuela Rafael D\'iaz Serd\'an}\\
+                    {\thecampoformativo\hfill{\bfseries\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
+                    {{\hspace*{-1pt}\footnotesize\scshape\@author}\hfill{\bfseries{\color{SubjectColor}\themateria}}}\\[-0.5em]
+                    {\adjustbox{minipage=.25\textwidth}{\color{gray}\sffamily\fontsize{5}{5}\selectfont Rev: \today}}
+                    
+                    
+                    {\color{black!60}\tiny  }
                 \end{minipage}
             };
-            \node[node_custom_width,below=-18pt of node1]  {%
-                \adjustbox{stack,min size={0.4\textwidth}{15pt},max size={0.65\textwidth}{20pt}}%
-                {\sffamily Repaso \@title \ \theunidad}%
+            \node[node_custom_width,below=-10pt of node1]  {%
+                \adjustbox{stack,min size={0.4\textwidth}{20pt},max size={0.65\textwidth}{15pt}}%
+                {\color{colorrds}\sffamily Repaso \@title \ \theunidad}%
             };
         \end{tikzpicture}\\
     \fi
-    \firstpagefooter{}{\thepage \ de \numpages}{}
-    \runningheader{\themateria}{\@title \ \thecontrol}{\thegrado$^\circ$ de \thenivel}
-    \runningfooter{}{\thepage \ de \numpages}{}
+    \firstpagefooter{}{\color{colorrds}\thepage \ de \numpages}{}
+    \runningheader{\color{SubjectColor}\themateria}{Examen \@title \ \theunidad \ \thecontrol}{\color{MainColor}\thegrado$^\circ$ de \thenivel}
+    \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
     \thecontrol[scale=1.5]
@@ -372,37 +410,36 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
     \end{tikzpicture}
 
     \begin{tikzpicture}[remember picture]%% GRADES %%%%%%%%%%%%%%%%%
-         \node[node_wide,draw=none] (node5) {
+         \node[node_wide,draw=colorrds,inner sep=2pt] (node5) {
                     \adjustbox{
                     min size={0.2\textwidth}{50pt},
                     max size={\textwidth}{200pt}
                     }{%
+                    \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
+        \arrayrulecolor{colorrds!20}\arrayrulewidth=0.1pt\relax%
                     \multirowgradetable{\thenumberofrows}[questions]%
                     }%
          };
-         \node[anchor=north west,
-            style=rounded corners,yshift=18pt] at (node5.north west) {%
-            \large Calificación%
+         \node[anchor=north west,instructiontitle, 
+            style=rounded corners,yshift=10pt,xshift=10pt] at (node5.north west) {%
+            \bfseries \color{Sepia} Calificación:%
         };
     \end{tikzpicture}
 
     \if@repaso
-    \begin{multicols}{2}
+    \begin{multicols}{2}\footnotesize
     \tableofcontents
     \end{multicols}
-    \vfill
-    {
-        \centering
-        \begin{tikzpicture}[remember picture]%% ENUMERATED LIST %%%%%
+
+        \begin{tikzpicture}[remember picture]%%%%%% PDAS %%%%%
             \node[node_wide] (node7) {%
                  \theaprendizajes
             };
-            \node[anchor=north west,
-                style=rounded corners,yshift=18pt] at (node7.north west) {%
-                \large Procesos de Desarrollo del Aprendizaje%
+            \node[anchor=north west,instructiontitle,
+                style=rounded corners,yshift=10pt,xshift=10pt] at (node7.north west) {%
+                \bfseries \color{Sepia} Procesos de Desarrollo del Aprendizaje:%
             };
         \end{tikzpicture}
-    }
     \newpage
     \fi
     %  \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
@@ -418,28 +455,45 @@ node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounde
     % \end{tikzpicture}
 
     \if@examen
-    \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
-        \node[node_half_width,text width=0.3\textwidth] (node8) {%
+    \begin{minipage}{\textwidth}
+    \begin{minipage}[t][][b]{.29\textwidth}
+        \instructionbox{Instrucciones:}{%\large%
             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
             Desarrolla tus respuestas en el espacio determinado para cada solución.
             De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
             completo, el n\'umero del problema y la soluci\'on propuesta.
-        };
-        \node[anchor=north west,
-            style=rounded corners,yshift=18pt] at (node8.north west) {%
-            \large Instrucciones%
-        };
-    \end{tikzpicture}\hfill
-    \begin{tikzpicture}[remember picture]%% REGLAS %%%%%
-        \node[node_half_width,text width=0.65\textwidth] (node6) {%
-              \thereglas
-        };
-        \node[anchor=north west,
-            style=rounded corners,yshift=18pt] at (node6.north west) {%
-            \large Reglas%
-        };
-    \end{tikzpicture}
+        }%
+    \end{minipage}\hspace{0.8cm}%
+    \begin{minipage}[t][][b]{.62\textwidth}
+        \instructionbox{Reglas:}{%
+            \thereglas
+        }
+    \end{minipage}
+\end{minipage}
+    % \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
+    %     \node[node_half_width,text width=0.29\textwidth,draw=colorrds] (node8) {%
+    %         \justify Lee con atenci\'on cada pregunta y realiza lo que se te pide.
+    %         Desarrolla tus respuestas en el espacio determinado para cada solución.
+    %         De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
+    %         completo, el n\'umero del problema y la soluci\'on propuesta.
+    %     };
+    %     \node[anchor=north west,
+    %         style=rounded corners,yshift=18pt] at (node8.north west) {%
+    %         \large Instrucciones%
+    %     };
+    % \end{tikzpicture}
+    % \begin{tikzpicture}[remember picture]%% REGLAS %%%%%
+    %     \node[node_half_width,text width=0.65\textwidth,draw=colorrds] (node6) {%
+    %           \thereglas
+    %     };
+    %     \node[anchor=north west,
+    %         style=rounded corners,yshift=18pt] at (node6.north west) {%
+    %         \large Reglas%
+    %     };
+    % \end{tikzpicture}
     \fi
+
+
 
     % \if@examen
     % \begin{tikzpicture}[remember picture]%% INSTRUCTIONS and RULES %%%%%%%%%
