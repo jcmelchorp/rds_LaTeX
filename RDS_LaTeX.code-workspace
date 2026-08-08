@@ -168,5 +168,16 @@
 				"env": {}
 			}
 		],
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"**/mytest.aux": true,
+			"**/mytest.log": true,
+			"**/mytest.gz": true,
+			"**/mytest.out": true
+		},
 	}
 }
