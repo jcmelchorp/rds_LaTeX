@@ -11,14 +11,13 @@
 		"latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
 		"latex-workshop.linting.chktex.enabled": true,
 		"latex-workshop.showContextMenu": true,
-		"latex-workshop.formatting.latex": "tex-fmt",
 		"latex-workshop.latex.autoBuild.run": "onSave",
 		"latex-workshop.check.duplicatedLabels.enabled": false,
 		"latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/out",
 		"latex-workshop.latex.texDirs": [
 			"%WORKSPACE_FOLDER%/resources",
-			//"%DIR%/base",
-			//"%DIR%/images",
+			"%DIR%../base",
+			"%DIR%../images",
 			//"%DIR%/base/pgf-periodictable",
 		],
 		"latex-workshop.latex.tools": [
@@ -36,7 +35,7 @@
 				],
 				"env": {
 					//"TEXINPUTS": "%WORKSPACE_FOLDER%/resources/:%DIR%/base/:%DIR%/base/pgf-periodictable/:%DIR%/../base/:%DIR%/../base/pgf-periodictable/:"
-					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources:%DIR%/../images:"
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources:%DIR%/../images:%DIR%/../base:"
 				}
 			},
 			{
@@ -177,7 +176,11 @@
 			"**/mytest.aux": true,
 			"**/mytest.log": true,
 			"**/mytest.gz": true,
-			"**/mytest.out": true
+			"**/mytest.out": true,
+			"**/evaluaM2E1.aux": true,
+			"**/evaluaM2E1.log": true,
+			"**/evaluaM2E1.gz": true,
+			"**/evaluaM2E1.out": true
 		},
 	}
 }

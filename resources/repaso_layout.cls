@@ -146,8 +146,8 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 }
 \newcommand{\circled}[1]{%
   \tikz[baseline=(char.base)]{%
-    \node[magnetic tape,magnetic tape tail extend=0.75cm, magnetic tape tail=0.2, draw, inner sep=2pt] (char) {#1};
-    \node [anchor=south west,cloud, cloud puffs=7,fill=white, aspect=2,inner sep=0pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-2pt,yshift=2pt,drop shadow={fill=colorrds, opacity=0.75, shadow yshift=-1.5pt,shadow xshift=1.5pt}] at (char.north east) {\tiny\sffamily\color{rdsdark}+\totalpoints};
+    \node[magnetic tape,magnetic tape tail extend=0.6cm, magnetic tape tail=0.2, draw, inner sep=2pt] (char) {#1};
+    \node [anchor=south west,cloud, cloud puffs=7,fill=white, aspect=2,inner sep=0pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-2pt,yshift=2pt,blur shadow={shadow opacity=75, shadow yshift=-2pt,shadow xshift=1.5pt}] at (char.north east) {\tiny\sffamily\color{rdsdark}+\totalpoints};
     %\node [anchor=south west,cloud, cloud puffs=11,fill=white, aspect=2,inner sep=0.5pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-4pt,yshift=3pt,blur shadow={shadow opacity=80,shadow yshift=-0.8pt,shadow xshift=0.8pt,shadow blur steps=5,shadow blur extra rounding=0.1pt}] at (char.north east) {\tiny\sffamily\color{colorrds}+\totalpoints};
    % \node [anchor=north,tape,draw,text=black!75, tape bend top=in and out, tape bend bottom=in and out, tape bend height=2pt,minimum width=1cm,inner sep=0pt,fill=white,yshift=-2pt] at (char.south east) {\tiny\sffamily{\color{white}\bfseries\totalpoints} \ \points};
     %\node[anchor=west,rounded rectangle,draw=yellow!50!black,rounded rectangle west arc=concave,rotate=45,fill=yellow!20, inner sep=1pt,xshift=-4pt,yshift=5pt, rounded rectangle arc length=90] at (char.east) {\tiny\sffamily {\color{colorrds}\totalpoints} \points};
@@ -171,7 +171,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \renewcommand\questionlabel{\color{brown!50!black}\circled{\thequestion}}
     \pointsinmargin
     \pointformat{}
-%    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,boxsep=1pt,boxrule = 1pt,top=10pt,bottom=5pt,right=5pt,left=5pt,colframe=yellow!70!black,
+%    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,boxsep=1pt,boxrule = 1pt,top=10pt,bottom=5,right=5pt,left=5pt,colframe=yellow!70!black,
 %    overlay={
 %    \node[
 %      anchor=north,
@@ -222,7 +222,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \newcounter{preguntanum}
 \setcounter{preguntanum}{0}
 \newcommand\ejemplosboxed[2][0]{%
-    \refstepcounter{preguntanum}%
+    \refstepcounter{preguntanum}%pt
     % \question[#1]{%
     \begin{porejemplo}[adjusted title={Ejemplo \thepreguntanum}]% \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de #1 \ \points}]%
         \printanswers #2%
