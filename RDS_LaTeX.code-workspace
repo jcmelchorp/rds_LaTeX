@@ -20,6 +20,35 @@
 			"%DIR%../images",
 			//"%DIR%/base/pgf-periodictable",
 		],
+		"latex-workshop.latex.recipes": [
+			{
+				"name": "latexmk",
+				"tools": [
+					"latexmk"
+				]
+			},
+			{
+				"name": "tectonic",
+				"tools": [
+					"tectonic"
+				]
+			},
+			{
+				"name": "texify",
+				"tools": [
+					"texify"
+				]
+			},
+			{
+				"name": "pdflatex -> bibtex -> pdflatex * 2",
+				"tools": [
+					"pdflatex",
+					"bibtex",
+					"pdflatex",
+					"pdflatex"
+				]
+			}
+		],
 		"latex-workshop.latex.tools": [
 			{
 				"name": "latexmk",
@@ -150,9 +179,12 @@
 				"args": [
 					"--synctex",
 					"--keep-logs",
+					"--print",
 					"%DOC%.tex"
 				],
-				"env": {}
+				"env": {
+					"TEXINPUTS": "%WORKSPACE_FOLDER%/resources:%DIR%/../images:%DIR%/../base:"
+				}
 			},
 			{
 				"name": "texify",
@@ -173,14 +205,10 @@
 			"**/.hg": true,
 			"**/.DS_Store": true,
 			"**/Thumbs.db": true,
-			"**/mytest.aux": true,
-			"**/mytest.log": true,
-			"**/mytest.gz": true,
-			"**/mytest.out": true,
-			"**/evaluaM2E1.aux": true,
-			"**/evaluaM2E1.log": true,
-			"**/evaluaM2E1.gz": true,
-			"**/evaluaM2E1.out": true
-		},
+			"**/repasoM2E1.aux": true,
+			"**/repasoM2E1.log": true,
+			"**/repasoM2E1.gz": true,
+			"**/repasoM2E1.out": true
+		}
 	}
 }

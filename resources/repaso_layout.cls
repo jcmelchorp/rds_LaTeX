@@ -74,12 +74,13 @@
 \RequirePackage{xfp} %%% Evaluate numerical aritmethic expresions
 \RequirePackage{xfrac} %%% Fraction customatization
 \RequirePackage{xlop} %%% for math aritmethic operations
-\RequirePackage{amssymb}  %%% for math symbols
+\RequirePackage{amssymb,amsmath}  %%% for math symbols
+\decimalpoint
 \RequirePackage{physics}  %%% math and physics units, variables and expresions
 \renewcommand{\div}{\divisionsymbol} %%% reescribimos el símbolo de división para reescribir el com,ando \div
 \RequirePackage{longdivision} %%% math methods for long division algoriythm
 %%%%%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{titlesec}    %%% customize section label on the document
+\RequirePackage{titlesec,tocloft}    %%% customize section label on the document
 \titleformat{\section}       %%% section
 {\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
@@ -92,7 +93,6 @@
 %%%%%%%%%% This 2 lines calls to omit the prefix number of sections in TOC 
 \let\latexl@section\l@section
 \def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
-\RequirePackage{tocloft} %%% customatize \tableofcontents
 \setlength\cftparskip{0pt} %%% Title height from first line of TOC
 \setlength\linefillheight{0.5cm} %%% Line height of TOC
 %%%%%%%%%%%%%%%%% Boxes %%%%%%%%%%%%%%%%%%%%%%%%
@@ -379,12 +379,12 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \if@repaso
         \begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
             \node[node_wide] (node1) {%
-                \begin{minipage}[b][][b]{0.09\textwidth}
+                \begin{minipage}[b][][b]{0.08\textwidth}
                     \LOGO
                 \end{minipage}\hfill
                 \begin{minipage}[b][][b]{0.9\textwidth}
                     {\hspace*{-1pt}\Large\comfortaa\color{colorrds}Escuela Rafael D\'iaz Serd\'an}\\
-                    {\thecampoformativo\hfill{\large\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
+                    {\thecampoformativo\hfill{\Large\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
                     {{\hspace*{-1pt}\footnotesize\scshape\@author}\hfill{\bfseries{\color{SubjectColor}\themateria}}}\\[-0.5em]
                     {\adjustbox{minipage=.25\textwidth}{\color{gray}\sffamily\fontsize{5}{5}\selectfont Rev: \today}}
                 \end{minipage}
