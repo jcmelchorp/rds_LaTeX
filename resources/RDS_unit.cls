@@ -1,7 +1,7 @@
 \def\fileversion{2.0}
 \def\filedate{2026/08/02}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{repaso_layout}[\filedate\space Plantilla Repaso RDS Version \fileversion\space by J.Melchor]
+\ProvidesClass{RDS_unit}[\filedate\space Plantilla Repaso RDS Version \fileversion\space by J.Melchor]
 % Create a toggle flag for a custom draft layout
 \newif\if@draft
 \newif\if@repaso
@@ -19,7 +19,6 @@
 \LoadClass{exam}
 \addpoints
 \RequirePackage[spanish]{babel}
-\RequirePackage{comfortaa}
 % \RequirePackage{ragged2e} %%% for justifying/right/left text
 %%%%%%%% COLOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{color, colortbl}
@@ -52,6 +51,14 @@
 \setlength{\columnsep}{20pt}
 \RequirePackage{parskip}
 % \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
+\RequirePackage{anyfontsize}
+\RequirePackage{shadowtext}
+\shadowoffsetx{0.75pt}
+\shadowoffsety{0.5pt}
+\shadowrgb{0.3, 0.3, 0.3}
+\RequirePackage{comfortaa}
+\RequirePackage[utf8]{inputenc}
+\newcommand*\alterfont{\fontfamily{lmtt}\selectfont}%% se usa en la palabra repaso \alterfont [typewriting]
 \RequirePackage{geometry} % Custom margins
 \geometry{%
         letterpaper,
@@ -80,21 +87,37 @@
 \renewcommand{\div}{\divisionsymbol} %%% reescribimos el símbolo de división para reescribir el com,ando \div
 \RequirePackage{longdivision} %%% math methods for long division algoriythm
 %%%%%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\RequirePackage{titlesec,tocloft}    %%% customize section label on the document
+\RequirePackage{titlesec}    %%% customize section label on the document
 \titleformat{\section}       %%% section
-{\normalfont\fontsize{14}{5}\bfseries\scshape\color{darkgray!50!black}}{}{0.5em}{}
+{\normalfont\fontsize{14}{5}\bfseries\color{darkgray!50!black}}{}{0.5em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
 \titleformat{\subsection}    %%% subsection
-{\normalfont\fontsize{12}{5}\bfseries\scshape\color{gray!50!black}}{}{0.5em}{}
+{\normalfont\fontsize{12}{5}\bfseries\color{gray!50!black}}{}{0.5em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \titleformat{\subsubsection} %%% subsubsection
-{\normalfont\fontsize{10}{5}\bfseries\scshape\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
+{\normalfont\fontsize{10}{5}\bfseries\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
+\if@examen
+\setcounter{secnumdepth}{1}
+\fi
+\if@repaso
+\setcounter{secnumdepth}{3}
+\fi
 %%%%%%%%%% This 2 lines calls to omit the prefix number of sections in TOC 
+\RequirePackage{tocloft}
 \let\latexl@section\l@section
-\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{\large #1}{}\endgroup}
+\let\latexl@subsection\l@subsection
+\def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{}\endgroup}
 \setlength\cftparskip{0pt} %%% Title height from first line of TOC
-\setlength\linefillheight{0.5cm} %%% Line height of TOC
+\cftsetindents{section}{0em}{2em}
+\cftsetindents{subsection}{2em}{0em}
+\cftsetindents{subsubsection}{0em}{2em}
+%\renewcommand\cfttoctitlefont{}
+\renewcommand\cftaftertoctitle{\hfill\mbox{}}
+% Empty out the text string used for the TOC title
+\addto\captionsspanish{\renewcommand{\contentsname}{}}
+\renewcommand{\thesubsubsection}{\arabic{subsection}.\arabic{subsubsection}}
 %%%%%%%%%%%%%%%%% Boxes %%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{adjustbox}  %%% Scalable boxes
 \RequirePackage{tikz}       %%% Full custom drawing package
@@ -232,7 +255,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 }%
 %%%%%%%%%% HOOKS (questions, parts and choices)
 \renewcommand{\questionshook}{%
-    \setlength{\topsep}{-20mm}%
+    \setlength{\topsep}{0mm}%
     \setlength{\leftmargin}{0pt}%
     \labelwidth\leftmargin\advance\labelwidth+\labelsep%
 }
@@ -289,14 +312,12 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north)]%
              \node[#1,yshift=-15mm,xshift=118pt]{%
-                \autocontrol{%
-                % \alterfont%
-                % \shadowtext{%
-                Soluciones propuestas%
-                % } %
+                \autocontrol{\color{red}
+                 \alterfont
+                 \shadowtext{Soluciones propuestas} %
                 }
             };
-        \end{tikzpicture}}%
+        \end{tikzpicture}}
     \else%
     \fi%
 }
@@ -323,11 +344,11 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \begin{tikzpicture}%
         \node [instructionbox, #1] (box)
         {%
-            \adjustbox{minipage=.98\linewidth}{%
+            \adjustbox{minipage=.95\linewidth}{%
                 \normalfont #3
             }%
         };
-        \node[instructiontitle] at (box.north west) {\comfortaa\bfseries\color{Sepia} #2};
+        \node[instructiontitle] at (box.north west) {\fontsize{12}{10}\selectfont\comfortaa\bfseries\color{Sepia} #2};
     \end{tikzpicture}%
 }
 
@@ -351,7 +372,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
 \AtBeginDocument{%
   \if!\ifnum9<1\numquestions!\fi%
-     \setcounter{numberofrows}{\fpeval{ceil(\numquestions/20)}}%
+     \setcounter{numberofrows}{\fpeval{ceil(\numquestions/25)}}%
      \setcounter{numberofcolumns}{\fpeval{ceil(\numquestions/12)}}%
   \else\setcounter{numberofrows}{1}\setcounter{numberofcolumns}{1}%
   \fi
@@ -404,40 +425,45 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
     \begin{tikzpicture}[remember picture]%% NAMES %%%%%%%%%%%%%%%%%%
         \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {%%
-            \begin{minipage}{0.7\textwidth}\comfortaa\small
+            \begin{minipage}{0.7\textwidth}\comfortaa\color{Sepia}
                 Nombre del alumno: \dashfill \\[0.75em]
                 Nombre del evaluador: \dashfill
             \end{minipage}\hfill
-            \begin{minipage}{0.3\textwidth}\comfortaa\small
+            \begin{minipage}{0.3\textwidth}\comfortaa\color{Sepia}
                 Ciclo escolar: \dashfill \\[0.75em]
                 Fecha: \dashfill
             \end{minipage}
         };
     \end{tikzpicture}
 
-    \begin{tikzpicture}[remember picture]%% GRADES %%%%%%%%%%%%%%%%%
-         \node[node_wide,draw=colorrds!20,inner sep=1pt] (node5) {
-                    \adjustbox{
-                    min size={0.2\textwidth}{50pt},
-                    max size={\textwidth}{200pt}
-                    }{%
-                    \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
-        \arrayrulecolor{colorrds!20}\arrayrulewidth=0.1pt\relax%
-                    \multirowgradetable{\thenumberofrows}[questions]%
-                    }%
-         };
-         \node[instructiontitle] at (node5.north west) {\comfortaa\bfseries\color{Sepia} Calificación:%
-        };
-    \end{tikzpicture}
+  %  \begin{tikzpicture}[remember picture,align=center]%% GRADES %%%%%%%%%%%%%%%%%
+  %       \node[node_wide,inner sep=1pt] (node5) {
+  %                  \adjustbox{ min size={0.2\textwidth}{50pt}, max size={\textwidth}{300pt}}{%
+  %                  \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
+  %                  %\cellwidth{1em}
+  %                  \arrayrulecolor{colorrds!20}\arrayrulewidth=0.1pt\relax%
+  %                  \multirowgradetable{\thenumberofrows}[questions]%
+  %                  }
+  %       };
+  %       \node[instructiontitle] at (node5.north west) {\fontsize{12}{5}\selectfont\comfortaa\bfseries\color{Sepia} Calificación:%
+  %      };
+  %  \end{tikzpicture}
+
+        \instructionbox{Calificación:}{%
+        \adjustbox{ min size={\textwidth}{75pt}, max size={\textwidth}{300pt}}{
+        \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
+        \arrayrulecolor{colorrds!20}\arrayrulewidth=0.2pt\relax%
+        \multirowgradetable{\thenumberofrows}[questions]%
+        }%
+        }
+
 
     \if@repaso
-    \begin{multicols}{2}\footnotesize
-    \tableofcontents
-    \end{multicols}
-
-    \begin{minipage}{\textwidth}
-        \instructionbox{Procesos de Desarrollo del Aprendizaje:}{\theaprendizajes}
-    \end{minipage}
+    
+    \instructionbox{Procesos de Desarrollo del Aprendizaje:}{\theaprendizajes}
+    
+    \instructionbox{Contenido:}{\begin{multicols}{2}\tableofcontents\end{multicols}}
+    
     \newpage
     \fi
     %  \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
