@@ -53,9 +53,9 @@
 % \RequirePackage[colorlinks = true,urlcolor=colorrds, linkcolor = colorrds]{hyperref}
 \RequirePackage{anyfontsize}
 \RequirePackage{shadowtext}
-\shadowoffsetx{0.75pt}
+\shadowoffsetx{0.5pt}
 \shadowoffsety{0.5pt}
-\shadowrgb{0.3, 0.3, 0.3}
+\shadowrgb{0.5, 0.5, 0.5}
 \RequirePackage{comfortaa}
 \RequirePackage[utf8]{inputenc}
 \newcommand*\alterfont{\fontfamily{lmtt}\selectfont}%% se usa en la palabra repaso \alterfont [typewriting]
@@ -89,13 +89,13 @@
 %%%%%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{titlesec}    %%% customize section label on the document
 \titleformat{\section}       %%% section
-{\normalfont\fontsize{14}{5}\bfseries\color{darkgray!50!black}}{}{0.5em}{}
+{\fontsize{14}{12}\selectfont\bfseries\color{darkgray!50!black}}{}{0em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
 \titleformat{\subsection}    %%% subsection
-{\normalfont\fontsize{12}{5}\bfseries\color{gray!50!black}}{}{0.5em}{}
+{\fontsize{12}{10}\selectfont\bfseries\color{gray!50!black}}{}{0em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \titleformat{\subsubsection} %%% subsubsection
-{\normalfont\fontsize{10}{5}\bfseries\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
+{\fontsize{10}{8}\selectfont\bfseries\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \if@examen
 \setcounter{secnumdepth}{1}
@@ -106,7 +106,7 @@
 %%%%%%%%%% This 2 lines calls to omit the prefix number of sections in TOC 
 \RequirePackage{tocloft}
 \let\latexl@section\l@section
-\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{\large #1}{}\endgroup}
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{}\endgroup}
 \let\latexl@subsection\l@subsection
 \def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{}\endgroup}
 \setlength\cftparskip{0pt} %%% Title height from first line of TOC
@@ -169,8 +169,8 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 }
 \newcommand{\circled}[1]{%
   \tikz[baseline=(char.base)]{%
-    \node[magnetic tape,magnetic tape tail extend=0.6cm, magnetic tape tail=0.2, draw, inner sep=2pt] (char) {#1};
-    \node [anchor=south west,cloud, cloud puffs=7,fill=white, aspect=2,inner sep=0pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-2pt,yshift=2pt,blur shadow={shadow opacity=75, shadow yshift=-2pt,shadow xshift=1.5pt}] at (char.north east) {\tiny\sffamily\color{rdsdark}+\totalpoints};
+    \node[magnetic tape,magnetic tape tail extend=0.3cm, magnetic tape tail=0.15, draw, inner sep=2pt] (char) {#1};
+    \node[anchor=south west,cloud, cloud puffs=8,fill=white, aspect=2,inner sep=0pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-3pt,yshift=2pt,blur shadow={shadow opacity=40, shadow yshift=-1.5pt,shadow xshift=1.5pt}] at (char.north east) {\tiny\scshape\color{DarkGreen}+\totalpoints};
     %\node [anchor=south west,cloud, cloud puffs=11,fill=white, aspect=2,inner sep=0.5pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-4pt,yshift=3pt,blur shadow={shadow opacity=80,shadow yshift=-0.8pt,shadow xshift=0.8pt,shadow blur steps=5,shadow blur extra rounding=0.1pt}] at (char.north east) {\tiny\sffamily\color{colorrds}+\totalpoints};
    % \node [anchor=north,tape,draw,text=black!75, tape bend top=in and out, tape bend bottom=in and out, tape bend height=2pt,minimum width=1cm,inner sep=0pt,fill=white,yshift=-2pt] at (char.south east) {\tiny\sffamily{\color{white}\bfseries\totalpoints} \ \points};
     %\node[anchor=west,rounded rectangle,draw=yellow!50!black,rounded rectangle west arc=concave,rotate=45,fill=yellow!20, inner sep=1pt,xshift=-4pt,yshift=5pt, rounded rectangle arc length=90] at (char.east) {\tiny\sffamily {\color{colorrds}\totalpoints} \points};
@@ -181,18 +181,18 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 % \qformat{\color{BrickRed}\circled{\thequestion}}
 % \renewcommand{\solutiontitle}{\noindent\hspace{-0.2cm}}
 \renewcommand{\thepartno}{\alph{partno}}
-\renewcommand{\partlabel}{\sffamily\thepartno .}
+\renewcommand{\partlabel}{\color{SubjectColor}\thepartno )}
 \renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\quad}
 \checkboxchar{$\square$}
 \CorrectChoiceEmphasis{\color{red!50!gray}\bf}
 \checkedchar{$\checkmark$}
 \pointpoints{pt}{pts}
+    \pointsinmargin
 % \newcounter{ejemplonum}
 % \setcounter{ejemplonum}{0}
 
 \if@examen
-    \renewcommand\questionlabel{\color{brown!50!black}\circled{\thequestion}}
-    \pointsinmargin
+    \renewcommand\questionlabel{\color{SubjectColor}\circled{\thequestion}}
     \pointformat{}
 %    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,boxsep=1pt,boxrule = 1pt,top=10pt,bottom=5,right=5pt,left=5pt,colframe=yellow!70!black,
 %    overlay={
@@ -228,7 +228,6 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \fi
 \if@repaso
 \renewcommand\questionlabel{}
-\pointsinmargin
 \pointformat{}
 \newcounter{ejemplonum}
 \setcounter{ejemplonum}{0}
@@ -348,7 +347,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
                 \normalfont #3
             }%
         };
-        \node[instructiontitle] at (box.north west) {\fontsize{12}{10}\selectfont\comfortaa\bfseries\color{Sepia} #2};
+        \node[instructiontitle] at (box.north west) {\fontsize{12}{10}\selectfont\comfortaa\bfseries\color{SubjectColor} #2};
     \end{tikzpicture}%
 }
 
@@ -385,11 +384,11 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
             \node[node_wide,draw=none] {%
             \hspace*{2cm}
             \begin{minipage}[b][][b]{0.75\textwidth}\centering
-                {\Large\color{colorrds}  Escuela Rafael D\'iaz Serd\'an}\\
+                {\Large\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\
                 {\thecampoformativo}\\[0.1em]
-                {\bfseries\large{\color{SubjectColor}\themateria} }\\
-                {\color{MainColor}\thegrado$^\circ$ de \thenivel} \\[0.1em]
-                {\large Examen \@title \ \theunidad}\\
+                {\bfseries\large{\color{SubjectColor}\themateria} \large{\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[0.5em]
+                {\Large\scshape Examen \@title \ \theunidad}\\[-0.2em]
+                {\adjustbox{minipage=.2\textwidth}{\color{gray}\sffamily\fontsize{4}{4}\selectfont Rev: \today}}
             \end{minipage}%
             \begin{minipage}[b][][b]{0.118\textwidth}
                     \LOGO
@@ -404,7 +403,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
                     \LOGO
                 \end{minipage}\hfill
                 \begin{minipage}[b][][b]{0.9\textwidth}
-                    {\hspace*{-1pt}\LARGE\comfortaa\color{colorrds}Escuela Rafael D\'iaz Serd\'an}\\
+                    {\hspace*{-5pt}\LARGE\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\[0.2em]
                     {\large\thecampoformativo\hfill{\Large\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
                     {{\hspace*{-1pt}\footnotesize\scshape\@author}\hfill{\bfseries{\color{SubjectColor}\large\themateria}}}\\[-0.5em]
                     {\adjustbox{minipage=.25\textwidth}{\color{gray}\sffamily\fontsize{5}{5}\selectfont Rev: \today}}
@@ -412,7 +411,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
             };
             \node[node_custom_width,below=-10pt of node1]  {%
                 \adjustbox{stack,min size={0.4\textwidth}{20pt},max size={0.65\textwidth}{15pt}}%
-                {\comfortaa\color{colorrds} Repaso \@title \ \theunidad}%
+                {\comfortaa\color{MainColor} Repaso \@title \ \theunidad}%
             };
         \end{tikzpicture}\\
     \fi
@@ -424,12 +423,12 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \thecontrol[scale=1.5]
 
     \begin{tikzpicture}[remember picture]%% NAMES %%%%%%%%%%%%%%%%%%
-        \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {%%
-            \begin{minipage}{0.7\textwidth}\comfortaa\color{Sepia}
+        \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {\bfseries\comfortaa\color{SubjectColor}%%
+            \begin{minipage}{0.7\textwidth}
                 Nombre del alumno: \dashfill \\[0.75em]
                 Nombre del evaluador: \dashfill
             \end{minipage}\hfill
-            \begin{minipage}{0.3\textwidth}\comfortaa\color{Sepia}
+            \begin{minipage}{0.3\textwidth}
                 Ciclo escolar: \dashfill \\[0.75em]
                 Fecha: \dashfill
             \end{minipage}
@@ -462,7 +461,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     
     \instructionbox{Procesos de Desarrollo del Aprendizaje:}{\theaprendizajes}
     
-    \instructionbox{Contenido:}{\begin{multicols}{2}\tableofcontents\end{multicols}}
+    \instructionbox{Contenido:}{\begin{multicols}{2}\footnotesize\tableofcontents\end{multicols}}
     
     \newpage
     \fi
@@ -480,7 +479,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
     \if@examen
     \begin{minipage}{\textwidth}
-    \begin{minipage}[t][][b]{.28\textwidth}
+    \begin{minipage}[t][][b]{.32\textwidth}
         \instructionbox{Instrucciones:}{%
             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
             Desarrolla tus respuestas en el espacio determinado para cada solución.
@@ -488,10 +487,10 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
             completo, el n\'umero del problema y la soluci\'on propuesta.
         }%
     \end{minipage}\hspace{0.8cm}%
-    \begin{minipage}[t][][b]{.62\textwidth}
+    \begin{minipage}[t][][b]{.61\textwidth}
         \instructionbox{Reglas:}{\thereglas}
     \end{minipage}
-\end{minipage}
+\end{minipage}\\
     % \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
     %     \node[node_half_width,text width=0.29\textwidth,draw=colorrds] (node8) {%
     %         \justify Lee con atenci\'on cada pregunta y realiza lo que se te pide.
