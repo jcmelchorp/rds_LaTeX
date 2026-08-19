@@ -309,7 +309,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \newcommand{\thecontrol}[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north)]%
-             \node[#1,yshift=-30pt,xshift=118pt]{%
+             \node[#1,yshift=-48pt,inner sep=5pt]{%
                 \autocontrol{\color{red}
                  \alterfont
                  \shadowtext{Soluciones propuestas} %
@@ -412,9 +412,9 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
-    \thecontrol[scale=1.5]
-\instructionbox[text width=\textwidth-20pt]{}{\bfseries\comfortaa%%
-    \begin{minipage}{0.7\textwidth}
+
+    \instructionbox[text width=\textwidth-20pt]{}{\bfseries\comfortaa%%
+            \begin{minipage}{0.7\textwidth}
                 {\color{SubjectColor}Nombre del alumno:} \dashfill \\[0.75em]
                 {\color{SubjectColor}Nombre del evaluador:} \dashfill
             \end{minipage}\hfill
@@ -423,14 +423,15 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
                 {\color{SubjectColor}Fecha:} \dashfill
             \end{minipage}
     }
+    \thecontrol[scale=1.5,yshift=-60pt,xshift=-15pt]    
 
-        \instructionbox[text width=\textwidth-20pt]{Calificación:}{%%%% GRADES %%%%%%%%
+    \instructionbox[text width=\textwidth-20pt]{Calificación:}{%%%% GRADES %%%%%%%%
         \adjustbox{ min size={\textwidth}{75pt}, max size={\textwidth}{300pt}}{
         \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
-        \arrayrulecolor{colorrds}\arrayrulewidth=1pt\relax%
+        \arrayrulecolor{colorrds}\arrayrulewidth=0.5pt\relax%
         \multirowgradetable{\thenumberofrows}[questions]%
         }%
-        }
+    }
 
 
     \if@repaso
