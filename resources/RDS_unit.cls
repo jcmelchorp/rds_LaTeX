@@ -168,15 +168,37 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \fillin[#1][1cm]%
 }
 \newcommand{\circled}[1]{%
-  \tikz[baseline=(char.base)]{%
-    \node[shape=circle, draw, fill=white, minimum size=1.2em, inner sep=2pt, thick] (char) {#1};   
-   \node[anchor=east, draw, thin,inner sep=0pt,minimum width=1.5em, minimum height=0.5em,rounded rectangle,rounded rectangle east arc=concave,rounded rectangle arc length=60,xshift=1pt] at (char.west) {\tiny\sffamily{\color{DarkGreen}+\totalpoints} \points};
+% \begin{tikzpicture}[stone/.style={drop shadow={shadow xshift=0.03, shadow yshift=-0.05}},
+%         black-stone/.style={black!80},
+%         black-highlight/.style={outer color=black!80, inner color=black!30},
+%         black-number/.style={white}]
+%      \begin{scope}
+%         \fill[stone,black-stone] (0,0) circle (0.45);
+%         \clip (0,0) circle (0.45);
+%         \shade[black-highlight] (-0.15+0,0.5+0) circle (0.7);
+%     \end{scope}
+%     \node[black-number] at (char) {\sffamily\bfseries{#1}};
+% \end{tikzpicture}
+  \begin{tikzpicture}[baseline=(char.base),
+        stone/.style={drop shadow={shadow xshift=0.03, shadow yshift=-0.02,fill=gray, path fading={circle with fuzzy edge 15 percent}}},
+        black-stone/.style={SubjectColor!60},
+        black-highlight/.style={outer color=SubjectColor!20, inner color=SubjectColor!1}
+        ]
+         \begin{scope}
+        \fill[stone,black-stone] (0,0) circle (0.26);
+        \clip (0,0) circle (0.26);
+        \shade[black-highlight] (-0.18,0.18) circle (0.5);
+    \end{scope}
+    \node[minimum size=2em, inner sep=3pt] (char) {\large #1};
+    %\node[draw,thick,fill=white] (char) {#1}
+    \node[anchor=east, draw, thin,inner sep=1pt,minimum width=1.5em, minimum height=0.5em,rounded rectangle,rounded rectangle east arc=concave,rounded rectangle arc length=36] at (-0.24,0) {\tiny\sffamily{\color{DarkGreen}+\totalpoints} \points};
     %\node [anchor=north east,tape,draw,text=black!75, tape bend top=in and out, tape bend bottom=in and out, tape bend height=2pt,minimum width=1cm,inner sep=0pt,fill=white,yshift=-2pt] at (char.mid east) {\tiny\sffamily\points};
    % \node[magnetic tape,magnetic tape tail extend=0.25cm, magnetic tape tail=0.15, draw, inner sep=2pt] (char) {#1};
   %  \node[anchor=south east,draw=none,rectangle,rounded corners=2pt,fill=white, inner sep=0pt,minimum width=1em, minimum height=0.6em,xshift=3pt,yshift=1pt,blur shadow={shadow opacity=50, shadow yshift=-1pt,shadow xshift=1pt}] at (char.north west) {\tiny\scshape\color{DarkGreen}+\totalpoints};    %\node [anchor=south west,cloud, cloud puffs=11,fill=white, aspect=2,inner sep=0.5pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-4pt,yshift=3pt,blur shadow={shadow opacity=80,shadow yshift=-0.8pt,shadow xshift=0.8pt,shadow blur steps=5,shadow blur extra rounding=0.1pt}] at (char.north east) {\tiny\sffamily\color{colorrds}+\totalpoints};
    % \node[anchor=south west,cloud, cloud puffs=7,fill=white, aspect=2,inner sep=0pt,minimum width=0.5em, minimum height=1em,xshift=-3pt,yshift=1pt,blur shadow={shadow opacity=50, shadow yshift=-1pt,shadow xshift=1pt}] at (char.north east) {\tiny\scshape\color{DarkGreen}+\totalpoints};    %\node [anchor=south west,cloud, cloud puffs=11,fill=white, aspect=2,inner sep=0.5pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-4pt,yshift=3pt,blur shadow={shadow opacity=80,shadow yshift=-0.8pt,shadow xshift=0.8pt,shadow blur steps=5,shadow blur extra rounding=0.1pt}] at (char.north east) {\tiny\sffamily\color{colorrds}+\totalpoints};
   %\node[magnetic tape,magnetic tape tail extend=0.3cm, magnetic tape tail=0.15, draw, inner sep=2pt] (char) {#1};
-  }%
+  \end{tikzpicture}
+
 }
 
 %\renewcommand\choicelabel{\circled{\thechoice}}
@@ -376,14 +398,14 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \if@examen%
 \begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
             \node[node_wide,draw=none] (node1) {%
-             \begin{minipage}[b][][b]{0.75\textwidth}\centering
+             \begin{minipage}[b][][b]{0.88\textwidth}\centering
                 {\Large\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\
                 {\thecampoformativo}\\[0.1em]
-                {\bfseries\large{\color{SubjectColor}\themateria} \large{\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[0.5em]
+                {\bfseries\large{\color{SubjectColor}\themateria} \large{\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[0.75em]
                 {\Large\scshape Examen \@title \ \theunidad}\\[-0.2em]
-                {\adjustbox{minipage=.2\textwidth}{\color{gray}\sffamily\fontsize{4}{4}\selectfont Rev: \today}}
+                {\adjustbox{minipage=.2\textwidth}{\color{gray}\sffamily\fontsize{6}{4}\selectfont Rev: \today}}
             \end{minipage}%
-            \begin{minipage}[b][][b]{0.118\textwidth}
+            \begin{minipage}[b][][b]{0.12\textwidth}
                     \LOGO
             \end{minipage}
             };
