@@ -63,9 +63,9 @@
 \geometry{%
         letterpaper,
         includehead,
-        left=20mm,
-        right=20mm,
-        top=5mm,
+        left=15mm,
+        right=15mm,
+        top=0mm,
         bottom=25mm,
         headheight=15mm
     }
@@ -126,7 +126,7 @@
 node_wide/.style={draw=colorrds, rectangle,  text width=\textwidth-0.45cm,align=center,rounded corners=2pt,inner sep=5pt,fill=white},
 node_custom_width/.style={draw=colorrds, rectangle,  align=center,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
 node_half_width/.style={draw, rectangle,  text width=0.48\textwidth-0.2cm,rounded corners=2pt,inner xsep=5pt,inner ysep=5pt,fill=white,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
-instructionbox/.style={draw=colorrds,fill=white, rectangle,inner sep=10pt, style=rounded corners,blur shadow={shadow opacity=30,shadow yshift=-1mm,shadow blur steps=5,shadow blur extra rounding=5pt}},
+instructionbox/.style={draw=none,fill=white, rectangle,inner sep=10pt, style=rounded corners,blur shadow={shadow opacity=40,shadow yshift=-1pt,shadow xshift=1pt,shadow blur steps=5,shadow blur extra rounding=5pt}},
 instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshift=12pt,xshift=6pt}
 }
 \@ifpackageloaded{tcolorbox}{}{\RequirePackage[most]{tcolorbox}}
@@ -276,7 +276,6 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
 
 
-\usepackage{lipsum}
 \RequirePackage{dashrule}
 \newcommand{\dashfill}{\leavevmode\leaders\hbox{\hdashrule[-2pt]{4pt}{0.5pt}{2pt}}\hfill\kern0pt}
 
@@ -310,7 +309,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \newcommand{\thecontrol}[1][]{%
     \ifprintanswers%
         {\begin{tikzpicture}[remember picture, overlay,shift=(current page.north)]%
-             \node[#1,yshift=-15mm,xshift=118pt]{%
+             \node[#1,yshift=-30pt,xshift=118pt]{%
                 \autocontrol{\color{red}
                  \alterfont
                  \shadowtext{Soluciones propuestas} %
@@ -347,20 +346,48 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
                 \normalfont #3
             }%
         };
-        \node[instructiontitle] at (box.north west) {\fontsize{12}{10}\selectfont\comfortaa\bfseries\color{SubjectColor} #2};
+        \node[instructiontitle] at (box.north west) {\comfortaa\bfseries\color{SubjectColor} #2};
     \end{tikzpicture}%
 }
 
 
-
-
-
-
-
-
-
-
-
+\newcommand{\titledoc}{%    
+\if@repaso%
+\begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
+            \node[node_wide] (node1) {%
+                \begin{minipage}[b][][b]{0.08\textwidth}
+                    \LOGO
+                \end{minipage}\hfill
+                \begin{minipage}[b][][b]{0.9\textwidth}
+                    {\hspace*{-5pt}\LARGE\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\[0.2em]
+                    {\large\thecampoformativo\hfill{\Large\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
+                    {{\hspace*{-1pt}\footnotesize\scshape\@author}\hfill{\bfseries{\color{SubjectColor}\large\themateria}}}\\[-0.5em]
+                    {\adjustbox{minipage=.25\textwidth}{\color{gray}\sffamily\fontsize{5}{5}\selectfont Rev: \today}}
+                \end{minipage}
+            };
+            \node[node_custom_width,below=-10pt of node1]  {%
+                \adjustbox{stack,min size={0.4\textwidth}{20pt},max size={0.65\textwidth}{15pt}}%
+                {\comfortaa\color{MainColor} Repaso \@title \ \theunidad}%
+            };
+\end{tikzpicture}
+\fi% 
+\if@examen%
+\begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
+            \node[node_wide,draw=none] (node1) {%
+             \begin{minipage}[b][][b]{0.75\textwidth}\centering
+                {\Large\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\
+                {\thecampoformativo}\\[0.1em]
+                {\bfseries\large{\color{SubjectColor}\themateria} \large{\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[0.5em]
+                {\Large\scshape Examen \@title \ \theunidad}\\[-0.2em]
+                {\adjustbox{minipage=.2\textwidth}{\color{gray}\sffamily\fontsize{4}{4}\selectfont Rev: \today}}
+            \end{minipage}%
+            \begin{minipage}[b][][b]{0.118\textwidth}
+                    \LOGO
+            \end{minipage}
+            };
+\end{tikzpicture}
+\fi
+}
 
 
 
@@ -379,79 +406,28 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% HEADER AND FOOTER ZONE %%%%%%%
     \pagestyle{headandfoot}
     \firstpageheader{}{}{}
-    \if@examen
-        \begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
-            \node[node_wide,draw=none] {%
-            \hspace*{2cm}
-            \begin{minipage}[b][][b]{0.75\textwidth}\centering
-                {\Large\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\
-                {\thecampoformativo}\\[0.1em]
-                {\bfseries\large{\color{SubjectColor}\themateria} \large{\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[0.5em]
-                {\Large\scshape Examen \@title \ \theunidad}\\[-0.2em]
-                {\adjustbox{minipage=.2\textwidth}{\color{gray}\sffamily\fontsize{4}{4}\selectfont Rev: \today}}
-            \end{minipage}%
-            \begin{minipage}[b][][b]{0.118\textwidth}
-                    \LOGO
-                \end{minipage}
-            };
-        \end{tikzpicture}\\
-    \fi
-    \if@repaso
-        \begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
-            \node[node_wide] (node1) {%
-                \begin{minipage}[b][][b]{0.08\textwidth}
-                    \LOGO
-                \end{minipage}\hfill
-                \begin{minipage}[b][][b]{0.9\textwidth}
-                    {\hspace*{-5pt}\LARGE\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\[0.2em]
-                    {\large\thecampoformativo\hfill{\Large\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[-0.2em]
-                    {{\hspace*{-1pt}\footnotesize\scshape\@author}\hfill{\bfseries{\color{SubjectColor}\large\themateria}}}\\[-0.5em]
-                    {\adjustbox{minipage=.25\textwidth}{\color{gray}\sffamily\fontsize{5}{5}\selectfont Rev: \today}}
-                \end{minipage}
-            };
-            \node[node_custom_width,below=-10pt of node1]  {%
-                \adjustbox{stack,min size={0.4\textwidth}{20pt},max size={0.65\textwidth}{15pt}}%
-                {\comfortaa\color{MainColor} Repaso \@title \ \theunidad}%
-            };
-        \end{tikzpicture}\\
-    \fi
+    \titledoc
     \firstpagefooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheader{\color{SubjectColor}\themateria}{Examen \@title \ \theunidad \ \thecontrol}{\color{MainColor}\thegrado$^\circ$ de \thenivel}
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
     \thecontrol[scale=1.5]
-
-    \begin{tikzpicture}[remember picture]%% NAMES %%%%%%%%%%%%%%%%%%
-        \node[text width=\textwidth-0.15cm,inner sep=0pt] (node3) {\bfseries\comfortaa\color{SubjectColor}%%
-            \begin{minipage}{0.7\textwidth}
-                Nombre del alumno: \dashfill \\[0.75em]
-                Nombre del evaluador: \dashfill
+\instructionbox[text width=\textwidth-20pt]{}{\bfseries\comfortaa%%
+    \begin{minipage}{0.7\textwidth}
+                {\color{SubjectColor}Nombre del alumno:} \dashfill \\[0.75em]
+                {\color{SubjectColor}Nombre del evaluador:} \dashfill
             \end{minipage}\hfill
             \begin{minipage}{0.3\textwidth}
-                Ciclo escolar: \dashfill \\[0.75em]
-                Fecha: \dashfill
+                {\color{SubjectColor}Ciclo escolar:} \dashfill \\[0.75em]
+                {\color{SubjectColor}Fecha:} \dashfill
             \end{minipage}
-        };
-    \end{tikzpicture}
+    }
 
-  %  \begin{tikzpicture}[remember picture,align=center]%% GRADES %%%%%%%%%%%%%%%%%
-  %       \node[node_wide,inner sep=1pt] (node5) {
-  %                  \adjustbox{ min size={0.2\textwidth}{50pt}, max size={\textwidth}{300pt}}{%
-  %                  \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
-  %                  %\cellwidth{1em}
-  %                  \arrayrulecolor{colorrds!20}\arrayrulewidth=0.1pt\relax%
-  %                  \multirowgradetable{\thenumberofrows}[questions]%
-  %                  }
-  %       };
-  %       \node[instructiontitle] at (node5.north west) {\fontsize{12}{5}\selectfont\comfortaa\bfseries\color{Sepia} Calificación:%
-  %      };
-  %  \end{tikzpicture}
-
-        \instructionbox{Calificación:}{%
+        \instructionbox[text width=\textwidth-20pt]{Calificación:}{%%%% GRADES %%%%%%%%
         \adjustbox{ min size={\textwidth}{75pt}, max size={\textwidth}{300pt}}{
         \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
-        \arrayrulecolor{colorrds!20}\arrayrulewidth=0.2pt\relax%
+        \arrayrulecolor{colorrds}\arrayrulewidth=1pt\relax%
         \multirowgradetable{\thenumberofrows}[questions]%
         }%
         }
@@ -459,9 +435,9 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
     \if@repaso
     
-    \instructionbox{Procesos de Desarrollo del Aprendizaje:}{\theaprendizajes}
+    \instructionbox[text width=\textwidth-20pt]{Procesos de Desarrollo del Aprendizaje:}{\theaprendizajes}
     
-    \instructionbox{Contenido:}{\begin{multicols}{2}\footnotesize\tableofcontents\end{multicols}}
+    \instructionbox[text width=\textwidth-20pt]{Contenido:}{\begin{multicols}{2}\tableofcontents\end{multicols}}
     
     \newpage
     \fi
@@ -478,16 +454,16 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     % \end{tikzpicture}
 
     \if@examen
-    \begin{minipage}{\textwidth}
-    \begin{minipage}[t][][b]{.32\textwidth}
+     \begin{minipage}{.993\textwidth}
+    \begin{minipage}[b][][b]{.34\textwidth}
         \instructionbox{Instrucciones:}{%
             Lee con atenci\'on cada pregunta y realiza lo que se te pide.
             Desarrolla tus respuestas en el espacio determinado para cada solución.
             De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
             completo, el n\'umero del problema y la soluci\'on propuesta.
-        }%
-    \end{minipage}\hspace{0.8cm}%
-    \begin{minipage}[t][][b]{.61\textwidth}
+        }
+    \end{minipage}\hfill%\hspace{20pt}
+    \begin{minipage}[b][][b]{.62\textwidth}
         \instructionbox{Reglas:}{\thereglas}
     \end{minipage}
 \end{minipage}\\
