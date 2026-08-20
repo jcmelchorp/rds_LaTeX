@@ -436,27 +436,26 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
-
+    
     \instructionbox[text width=\textwidth-20pt]{}{\bfseries\comfortaa%%
-            \begin{minipage}{0.7\textwidth}
+            \begin{minipage}{0.7\linewidth}
                 {\color{SubjectColor}Nombre del alumno:} \dashfill \\[0.75em]
                 {\color{SubjectColor}Nombre del evaluador:} \dashfill
             \end{minipage}\hfill
-            \begin{minipage}{0.3\textwidth}
+            \begin{minipage}{0.3\linewidth}
                 {\color{SubjectColor}Ciclo escolar:} \dashfill \\[0.75em]
                 {\color{SubjectColor}Fecha:} \dashfill
             \end{minipage}
-    }
+    }\\[-1.5em]
     \thecontrol[scale=1.5,yshift=-60pt,xshift=-15pt]    
-
+    
     \instructionbox[text width=\textwidth-20pt]{Calificación:}{%%%% GRADES %%%%%%%%
         \adjustbox{ min size={\textwidth}{75pt}, max size={\textwidth}{300pt}}{
         \hqword{Pregunta}\hpgword{Página}\hpword{Puntos}\hsword{Obtenidos}\htword{Total}\vqword{Pregunta}\vpgword{P\'gina}\vpword{Puntos}\vsword{Ganados}\vtword{Total}%\cellwidth{0.5em}%
         \arrayrulecolor{colorrds}\arrayrulewidth=0.5pt\relax%
         \multirowgradetable{\thenumberofrows}[questions]%
         }%
-    }
-
+    }\\[-0.5em]
 
     \if@repaso
     
