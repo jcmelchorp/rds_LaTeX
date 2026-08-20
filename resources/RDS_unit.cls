@@ -64,7 +64,7 @@
         letterpaper,
         includehead,
         left=15mm,
-        right=15mm,
+        right=20mm,
         top=0mm,
         bottom=25mm,
         headheight=15mm
@@ -89,13 +89,13 @@
 %%%%%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{titlesec}    %%% customize section label on the document
 \titleformat{\section}       %%% section
-{\fontsize{14}{12}\selectfont\bfseries\color{darkgray!50!black}}{}{0em}{}
+{\fontsize{14}{12}\selectfont\bfseries\color{SubjectColor}}{}{0em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
 \titleformat{\subsection}    %%% subsection
-{\fontsize{12}{10}\selectfont\bfseries\color{gray!50!black}}{}{0em}{}
+{\fontsize{12}{10}\selectfont\bfseries\color{SubjectColor!60!white}}{}{0em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \titleformat{\subsubsection} %%% subsubsection
-{\fontsize{10}{8}\selectfont\bfseries\color{lightgray!50!black}}{\thesubsubsection}{0.5em}{}
+{\fontsize{10}{8}\selectfont\bfseries\color{SubjectColor!80!white}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \if@examen
 \setcounter{secnumdepth}{1}
@@ -206,12 +206,12 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 % \renewcommand{\solutiontitle}{\noindent\hspace{-0.2cm}}
 \renewcommand{\thepartno}{\alph{partno}}
 \renewcommand{\partlabel}{\color{SubjectColor}\thepartno )}
-\renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:}\quad}
+\renewcommand{\solutiontitle}{\noindent\textbf{Soluci\'on:} \ }
 \checkboxchar{$\square$}
 \CorrectChoiceEmphasis{\color{red!50!gray}\bf}
 \checkedchar{$\checkmark$}
 \pointpoints{pt}{pts}
-    \pointsinmargin
+\pointsinmargin
 % \newcounter{ejemplonum}
 % \setcounter{ejemplonum}{0}
 
@@ -283,6 +283,10 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \labelwidth\leftmargin\advance\labelwidth+\labelsep%
 }
 \fi
+\renewcommand{\partshook}{%
+  \setlength{\leftmargin}{1em}%
+  %\setlength{\labelwidth}{1.5em}%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -366,7 +370,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \begin{tikzpicture}%
         \node [instructionbox, #1] (box)
         {%
-            \adjustbox{minipage=.95\linewidth}{%
+            \adjustbox{minipage=\linewidth}{%
                 \normalfont #3
             }%
         };
@@ -398,14 +402,14 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \if@examen%
 \begin{tikzpicture}[remember picture]%% GENERAL TITLE %%%%
             \node[node_wide,draw=none] (node1) {%
-             \begin{minipage}[b][][b]{0.88\textwidth}\centering
-                {\Large\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\
+             \begin{minipage}[b][][b]{\textwidth}\centering
+                {\LARGE\color{colorrds}\shadowtext{Escuela Rafael D\'iaz Serd\'an}}\\
                 {\thecampoformativo}\\[0.1em]
                 {\bfseries\large{\color{SubjectColor}\themateria} \large{\color{MainColor}\thegrado$^\circ$ de \thenivel}}\\[0.75em]
                 {\Large\scshape Examen \@title \ \theunidad}\\[-0.2em]
                 {\adjustbox{minipage=.2\textwidth}{\color{gray}\sffamily\fontsize{6}{4}\selectfont Rev: \today}}
             \end{minipage}%
-            \begin{minipage}[b][][b]{0.12\textwidth}
+            \hspace*{-2cm}\begin{minipage}[b][][b]{0.12\textwidth}
                     \LOGO
             \end{minipage}
             };
@@ -437,6 +441,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
     
+    \vspace{-0.6cm}
     \instructionbox[text width=\textwidth-20pt]{}{\bfseries\comfortaa%%
             \begin{minipage}{0.7\linewidth}
                 {\color{SubjectColor}Nombre del alumno:} \dashfill \\[0.75em]
@@ -447,7 +452,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
                 {\color{SubjectColor}Fecha:} \dashfill
             \end{minipage}
     }\\[-1.5em]
-    \thecontrol[scale=1.5,yshift=-60pt,xshift=-15pt]    
+    \thecontrol[scale=1.5,yshift=-50pt]    
     
     \instructionbox[text width=\textwidth-20pt]{Calificación:}{%%%% GRADES %%%%%%%%
         \adjustbox{ min size={\textwidth}{75pt}, max size={\textwidth}{300pt}}{
@@ -478,19 +483,20 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     % \end{tikzpicture}
 
     \if@examen
-     \begin{minipage}{.993\textwidth}
-    \begin{minipage}[b][][b]{.34\textwidth}
-        \instructionbox{Instrucciones:}{%
-            Lee con atenci\'on cada pregunta y realiza lo que se te pide.
+    % \begin{minipage}{.993\textwidth}
+    \begin{minipage}[t][][t]{.34\textwidth}
+        \instructionbox{Instrucciones:}{\setlength{\parindent}{2em}%
+    \indent Lee con atenci\'on cada pregunta y realiza lo que se te pide.
             Desarrolla tus respuestas en el espacio determinado para cada solución.
             De ser necesario, utiliza una hoja en blanco por separado, anotando en ella tu nombre
             completo, el n\'umero del problema y la soluci\'on propuesta.
         }
-    \end{minipage}\hfill%\hspace{20pt}
-    \begin{minipage}[b][][b]{.62\textwidth}
+    \end{minipage}\hspace{33pt}
+    \begin{minipage}[t][][t]{.55\textwidth}
         \instructionbox{Reglas:}{\thereglas}
     \end{minipage}
-\end{minipage}\\
+%\end{minipage}\\
+
     % \begin{tikzpicture}[remember picture]%% INSTRUCTIONS %%%%%
     %     \node[node_half_width,text width=0.29\textwidth,draw=colorrds] (node8) {%
     %         \justify Lee con atenci\'on cada pregunta y realiza lo que se te pide.
