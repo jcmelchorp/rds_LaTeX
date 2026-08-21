@@ -141,15 +141,37 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 }  
 \newtcbox{\autocontrol}[1][]{boxsep=2mm,colback=white,colframe=red!70!black,frame style={opacity=1},interior style={opacity=1},nobeforeafter,tcbox raise base,shrink tight,rotate=3,extrude by=1mm,enhanced,fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1}
 \newtcolorbox{pregunta}[1][]{%
-  colframe=green,
+  colframe=colorrds,
   colbacktitle=white,
-  fonttitle=\color{green!40!black}\bfseries\sffamily,
+  opacityframe=0.4,
+  opacityback=1,
+  fonttitle=\color{colorrds!40!black}\bfseries\sffamily,
   #1
 }
 \newtcolorbox{porejemplo}[1][]{%
-  colframe=yellow,
-  colbacktitle=yellow!10!white,
-  coltitle=yellow!50!black,
+     % Width and alignment
+    width=\textwidth,
+    grow to left by=0mm,
+    grow to right by=0mm,
+    %
+    % Frame and transparency
+    colframe=colorrds!50!black,
+    colback=white,
+    colbacktitle=colorrds,
+    coltitle=colorrds!50!white,
+    fonttitle=\bfseries\sffamily,
+    opacityframe=0.4,       % Sets frame translucency (0 = transparent, 1 = opaque)
+    opacityback=1,        % Sets background translucency
+    %
+    % Shadow and border styling
+    enhanced,               % Required for shadows and opacity
+    drop fuzzy shadow=black!30!white, % Adds a soft, slight shadow
+    boxrule=0.5pt,            % Frame thickness
+    arc=2mm,                % Rounded corners
+    %
+    % Internal spacing
+    boxsep=5pt,
+    %left=0mm, right=0mm, top=0mm, bottom=0mm,
   %fonttitle=\comfortaa,
   #1
 }
