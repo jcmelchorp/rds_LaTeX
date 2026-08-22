@@ -89,13 +89,13 @@
 %%%%%%%%%%%%%%%%%% SECCIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{titlesec}    %%% customize section label on the document
 \titleformat{\section}       %%% section
-{\fontsize{14}{12}\selectfont\bfseries\color{SubjectColor}}{}{0em}{}
+{\fontsize{14}{12}\selectfont\bfseries\color{black!90!colorrds}}{}{0em}{}
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
 \titleformat{\subsection}    %%% subsection
-{\fontsize{12}{10}\selectfont\bfseries\color{SubjectColor!60!white}}{}{0em}{}
+{\fontsize{12}{10}\selectfont\bfseries\color{black!50!colorrds}}{}{0em}{}
 \titlespacing*{\subsection}{0pt}{0.5em}{0.3em}
 \titleformat{\subsubsection} %%% subsubsection
-{\fontsize{10}{8}\selectfont\bfseries\color{SubjectColor!80!white}}{\thesubsubsection}{0.5em}{}
+{\fontsize{10}{8}\selectfont\bfseries\color{black!10!colorrds}}{\thesubsubsection}{0.5em}{}
 \titlespacing*{\subsubsection}{0pt}{0.5em}{0.3em}
 \if@examen
 \setcounter{secnumdepth}{1}
@@ -140,37 +140,40 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
   %after skip = 1mm      % add extra space after the box
 }  
 \newtcbox{\autocontrol}[1][]{boxsep=2mm,colback=white,colframe=red!70!black,frame style={opacity=1},interior style={opacity=1},nobeforeafter,tcbox raise base,shrink tight,rotate=3,extrude by=1mm,enhanced,fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1}
-\newtcolorbox{pregunta}[1][]{%
-  colframe=colorrds,
+\newtcolorbox{porejemplo}[1][]{%
+  colframe=Goldenrod,
   colbacktitle=white,
-  opacityframe=0.4,
+  %opacityframe=0.4,
   opacityback=1,
-  fonttitle=\color{colorrds!40!black}\bfseries\sffamily,
+  % Shadow and border styling
+  enhanced,               % Required for shadows and opacity
+  %drop fuzzy shadow=black!50!white, % Adds a soft, slight shadow
+  fuzzy shadow={1pt}{-1pt}{0pt}{0.4pt}{black!80!white}, %%fuzzy shadow={xshift}{yshift}{oset}{step}{options}
+  boxrule=0.8pt,            % Frame thickness
+  boxsep=5pt,
+  arc=2mm,                % Rounded corners
+  fonttitle=\color{Goldenrod!50!black}\bfseries,
   #1
 }
-\newtcolorbox{porejemplo}[1][]{%
+\newtcolorbox{pregunta}[1][]{%
      % Width and alignment
     width=\textwidth,
-    grow to left by=0mm,
-    grow to right by=0mm,
+   % grow to left by=0mm,
+   % grow to right by=0mm,
     %
     % Frame and transparency
-    colframe=colorrds!50!black,
+    colframe=DarkGreen,
     colback=white,
-    colbacktitle=colorrds,
-    coltitle=colorrds!50!white,
-    fonttitle=\bfseries\sffamily,
+    colbacktitle=white,
+    coltitle=colorrds,
+    fonttitle=\color{DarkGreen!80!black}\bfseries,
     opacityframe=0.4,       % Sets frame translucency (0 = transparent, 1 = opaque)
     opacityback=1,        % Sets background translucency
-    %
-    % Shadow and border styling
-    enhanced,               % Required for shadows and opacity
-    drop fuzzy shadow=black!30!white, % Adds a soft, slight shadow
-    boxrule=0.5pt,            % Frame thickness
+    boxrule=0.8pt,            % Frame thickness
+    boxsep=5pt,
     arc=2mm,                % Rounded corners
     %
     % Internal spacing
-    boxsep=5pt,
     %left=0mm, right=0mm, top=0mm, bottom=0mm,
   %fonttitle=\comfortaa,
   #1
@@ -220,7 +223,6 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
    % \node[anchor=south west,cloud, cloud puffs=7,fill=white, aspect=2,inner sep=0pt,minimum width=0.5em, minimum height=1em,xshift=-3pt,yshift=1pt,blur shadow={shadow opacity=50, shadow yshift=-1pt,shadow xshift=1pt}] at (char.north east) {\tiny\scshape\color{DarkGreen}+\totalpoints};    %\node [anchor=south west,cloud, cloud puffs=11,fill=white, aspect=2,inner sep=0.5pt,minimum width=0.1pt, minimum height=0.1pt,xshift=-4pt,yshift=3pt,blur shadow={shadow opacity=80,shadow yshift=-0.8pt,shadow xshift=0.8pt,shadow blur steps=5,shadow blur extra rounding=0.1pt}] at (char.north east) {\tiny\sffamily\color{colorrds}+\totalpoints};
   %\node[magnetic tape,magnetic tape tail extend=0.3cm, magnetic tape tail=0.15, draw, inner sep=2pt] (char) {#1};
   \end{tikzpicture}
-
 }
 
 %\renewcommand\choicelabel{\circled{\thechoice}}
@@ -280,7 +282,15 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \newcommand\questionboxed[2][0]{%
 \refstepcounter{ejemplonum}
     \question[#1]{%
-    \begin{pregunta}[adjusted title={ Ejercicio \theejemplonum} \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de \totalpoints \ \points}]%
+    \begin{pregunta}[%
+        adjusted title={ Ejercicio \theejemplonum},
+         overlay={%
+   % \node[anchor=east, fill=SubjectColor!75!black, text=white, font=\sffamily\bfseries, 
+    %      rounded corners, inner sep=3pt] 
+    %      at ([xshift=0mm]frame.north west) {+ #1 \points};
+          \node[anchor=north east,cloud, cloud puffs=11,fill=white, aspect=2,rotate=15,inner sep=0pt,minimum width=0.5em, minimum height=0.8em,blur shadow={shadow opacity=50, shadow yshift=-1pt,shadow xshift=1pt}] at ([xshift=2mm]frame.north west) {\scriptsize\sffamily\color{DarkGreen}+\totalpoints \ \points};    
+  },
+  ]%
         #2%
     \end{pregunta}%
     %\addtocounter{question}{0}
@@ -292,7 +302,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \newcommand\ejemplosboxed[2][0]{%
     \refstepcounter{preguntanum}%pt
     % \question[#1]{%
-    \begin{porejemplo}[adjusted title={Ejemplo \thepreguntanum}]% \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de #1 \ \points}]%
+    \begin{porejemplo}[adjusted title={Ejemplo \thepreguntanum}]%{\tiny\sffamily{\color{DarkGreen}+\totalpoints} \points}% \hfill {\color{blue}\rule[-1mm]{0.7cm}{0.2mm} de #1 \ \points}]%
         \printanswers #2%
     \end{porejemplo}%
     % }
