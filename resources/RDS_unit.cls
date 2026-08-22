@@ -240,7 +240,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 % \setcounter{ejemplonum}{0}
 
 \if@examen
-    \renewcommand\questionlabel{\color{SubjectColor}\circled{\thequestion}}
+    \renewcommand\questionlabel{}
     \pointformat{}
 %    \pointformat{\color{yellow!50!black}\tcbox[on line,enhanced,boxsep=1pt,boxrule = 1pt,top=10pt,bottom=5,right=5pt,left=5pt,colframe=yellow!70!black,
 %    overlay={
@@ -259,8 +259,13 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
          \refstepcounter{preguntanum}%
         % \stepcounter{ejemplonum}
         %\setcounter{numquestions}{\theejemplonum}
-        \question[#1]{#2}%
+        \question[#1]{%
+        \begin{pregunta}[boxsep=0mm,enlarge left by=-6mm,colframe=gray,
+    ]%
+    \circled{\thequestion} #2%
+    \end{pregunta}%
     }%
+    }
     \newcounter{ejemplonum}
     \setcounter{ejemplonum}{0}
     \newcommand\questionboxed[2][0]{%
