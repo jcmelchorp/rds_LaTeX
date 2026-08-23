@@ -43,8 +43,45 @@
 \definecolor{SubsectionMainColor}{named}{OliveDrab}
 \definecolor{SubsectionSecColor}{named}{FireBrick}
 \definecolor{SubsubsectionMainColor}{named}{DarkGoldenrod}
+\definecolor{mathColor}{HTML}{98780F}
+\definecolor{physColor}{HTML}{228B22}
+\definecolor{chemColor}{HTML}{AD2AE8}
+\definecolor{geogColor}{HTML}{677353}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
+%%%% INPUTS
+\newcommand{\theclave}{1}
+\newcommand{\clave}[1]{\renewcommand{\theclave}{#1}}
+\newcommand{\themateria}{1}
+\newcommand{\materia}[1]{\renewcommand{\themateria}{#1}}
+\newcommand{\thegrado}{1}
+\newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
+\newcommand{\thenivel}{1}
+\newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
+\newcommand{\thecampoformativo}{1}
+\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
+\newcommand{\thecicloescolar}{1}
+\newcommand{\cicloescolar}[1]{\renewcommand{\thecicloescolar}{#1}}
+\newcommand{\theunidad}{1}
+\newcommand{\unidad}[1]{\renewcommand{\theunidad}{#1}}
+%%% Asigna colores de acuerdo a la materia
+\RequirePackage{ifthen}
+\newcommand{\setSubjectColor}[1]{%
+  \ifthenelse{\equal{#1}{math}}{\definecolor{SubjectColor}{named}{mathColor}\campoformativo{Saberes y Pensamiento Cient\'ifico}\materia{Matem\'aticas}}{}%
+  \ifthenelse{\equal{#1}{phys}}{\definecolor{SubjectColor}{named}{physColor}\campoformativo{Saberes y Pensamiento Cient\'ifico}\materia{Ciencias y Tecnolog\'ia: F\'isica}}{}%
+  \ifthenelse{\equal{#1}{geog}}{\definecolor{SubjectColor}{named}{geogColor}\campoformativo{\'Etica, Naturaleza y Sociedad}\materia{Geograf\'ia}}{}%
+  \ifthenelse{\equal{#1}{chem}}{\definecolor{SubjectColor}{named}{darkpastelred}\campoformativo{Saberes y Pensamiento Cient\'ifico}\materia{Ciencias y Tecnolog\'ia: Qu\'imica}}{}%
+}
+\newcommand{\setMainColor}[1]{%
+  \ifthenelse{\equal{#1}{1}}{\definecolor{MainColor}{named}{sec1Color}}{}%
+  \ifthenelse{\equal{#1}{2}}{\definecolor{MainColor}{named}{sec2Color}}{}%
+  \ifthenelse{\equal{#1}{3}}{\definecolor{MainColor}{named}{sec3Color}}{}%
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{multicol} %% suport multicolumn grades table
+\RequirePackage{float} %%% for \begin{figure}[H]
+\RequirePackage{cancel} %% for cancel math numbers, terms or expresions 
 \RequirePackage{etoolbox}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
@@ -81,7 +118,8 @@
 \RequirePackage{xfp} %%% Evaluate numerical aritmethic expresions
 \RequirePackage{xfrac} %%% Fraction customatization
 \RequirePackage{xlop} %%% for math aritmethic operations
-\RequirePackage{amssymb,amsmath}  %%% for math symbols
+\RequirePackage{amssymb}  %%% for math symbols
+\RequirePackage{amsmath}
 \decimalpoint
 \RequirePackage{physics}  %%% math and physics units, variables and expresions
 \renewcommand{\div}{\divisionsymbol} %%% reescribimos el símbolo de división para reescribir el com,ando \div
@@ -138,7 +176,26 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
   fonttitle=\bfseries,
   %before skip = 1mm,    % add extra space before the box
   %after skip = 1mm      % add extra space after the box
-}  
+}
+\newtcolorbox{bA}{
+  %sharpish corners, % b
+  enhanced,
+  %colback = colorrds!30, % background color
+  boxrule = 0.2pt,  % no borders
+  %borderline = {1pt}{1pt}{black!35}, % add "dashed" for dashed line
+  fontupper = \sffamily, % font color
+  %colframe = rdsdark % frame color
+  rounded corners,
+  %arc = 5pt,   % corners roundness
+  fuzzy shadow = {2pt}{-4pt}{-1pt}{1pt}{black!35}, % {xshift}{yshift}{offset}{step}{options} 
+  %toprule = 3pt, % top rule weight
+  %bottomrule = 3pt % bottom rule weight
+}
+\newtcbox{\wordpill}[1][]{on line,top=2pt,right=2pt,left=2pt,bottom=2pt,
+  colback=olive!5!white,colframe=olive!75!black,width=1cm,
+  boxrule=1pt,boxsep=1pt, fontupper=\sffamily, hyphenationfix,
+  fuzzy shadow={0.3mm}{-0.3mm}{0mm}{0.3mm}{black},  #1
+}
 \newtcbox{\autocontrol}[1][]{boxsep=2mm,colback=white,colframe=red!70!black,frame style={opacity=1},interior style={opacity=1},nobeforeafter,tcbox raise base,shrink tight,rotate=3,extrude by=1mm,enhanced,fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1}
 \newtcolorbox{porejemplo}[1][]{%
   colframe=Goldenrod,
@@ -350,19 +407,9 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
         \put (0.0,-0.0) {\includegraphics[width=\linewidth]{logo.png}}
     \end{picture}
 }
-%%%% INPUTS
-\newcommand{\themateria}{1}
-\newcommand{\materia}[1]{\renewcommand{\themateria}{#1}}
-\newcommand{\thegrado}{1}
-\newcommand{\grado}[1]{\renewcommand{\thegrado}{#1}}
-\newcommand{\thenivel}{1}
-\newcommand{\nivel}[1]{\renewcommand{\thenivel}{#1}}
-\newcommand{\thecampoformativo}{1}
-\newcommand{\campoformativo}[1]{\renewcommand{\thecampoformativo}{#1}}
-\newcommand{\thecicloescolar}{1}
-\newcommand{\cicloescolar}[1]{\renewcommand{\thecicloescolar}{#1}}
-\newcommand{\theunidad}{1}
-\newcommand{\unidad}[1]{\renewcommand{\theunidad}{#1}}
+
+
+
 
 \RequirePackage{enumitem}
 \newcommand{\theaprendizajes}{1}
@@ -462,6 +509,8 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 \newcounter{numberofcolumns}
 
 \AtBeginDocument{%
+\setSubjectColor{\theclave}
+\setMainColor{\thegrado}
   \if!\ifnum9<1\numquestions!\fi%
      \setcounter{numberofrows}{\fpeval{ceil(\numquestions/25)}}%
      \setcounter{numberofcolumns}{\fpeval{ceil(\numquestions/12)}}%

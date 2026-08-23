@@ -208,7 +208,11 @@
 			"**/repasoM2E1.aux": true,
 			"**/repasoM2E1.log": true,
 			"**/repasoM2E1.gz": true,
-			"**/repasoM2E1.out": true
+			"**/repasoM2E1.out": true,
+			"**/F2U1.aux": true,
+			"**/F2U1.log": true,
+			"**/F2U1.gz": true,
+			"**/F2U1.out": true
 		}
 	}
 }
