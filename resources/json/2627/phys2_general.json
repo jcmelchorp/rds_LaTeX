@@ -4,20 +4,51 @@
     "Asignatura": "Física",
     "Grado": "2º",
     "Nivel": "Secundaria",
-    "Unidad": "1",
-    "NombreDeLaUnidad": "",
-    "DuracionEnSemanas": 0,
-    "HorasPorSemana": 0,
+    "Unidades": [
+      {
+        "Unidad": "1",
+        "NombreDeLaUnidad": "",
+        "DuracionEnSemanas": 0
+      },
+      {
+        "Unidad": "2",
+        "NombreDeLaUnidad": "",
+        "DuracionEnSemanas": 0
+      },
+      {
+        "Unidad": "3",
+        "NombreDeLaUnidad": "",
+        "DuracionEnSemanas": 0
+      }
+    ],
+    "HorasPorSemana": 6,
     "HorasTotales": 0,
     "Docente": "Julio César Melchor Pinto",
-    "FechaDeCreacion": "",
-    "FechaDeActualizacion": "yyyy-mm-dd",
-    "FechaInicial": "",
-    "FechaFinal": "",
+      "FechaDeCreacion": "2026-08-24",
+    "FechaDeActualizacion": "2026-08-24",
+   "FechaInicial": "2026-08-31",
+    "FechaFinal": "2027-07-09",
     "Words":"Con una sincera alegría les doy la más serena bienvenida a este nuevo ciclo de descubrimiento. Mi nombre es Julio, y este año tendré el privilegio de ser su guía en una disciplina que no es una simple materia, sino el arte de formular las preguntas que abren el universo. \\\\[-0.5em] \\par Hasta ahora, ustedes han habitado el mundo. A partir de hoy, comenzarán a comprender su danza invisible. ¿Alguna vez se han detenido a contemplar una hoja que cae de un árbol? No se precipita con prisa, sino que traza una espiral en el aire, en un diálogo silencioso entre su peso y la caricia del viento veracruzano. ¿Han observado cómo un rayo de sol atraviesa una ventana, revelando un universo de polvo danzante en su interior? Estas observaciones no son cosas ordinarias. Son poemas escritos en el lenguaje del movimiento, la energía y la materia. La Física es la gramática de esa poesía. El universo no hace alarde de sus secretos más profundos, sino que los revela en lo simple y lo cotidiano de nuestras vidas. \\\\[-0.5em] \\par No necesitaremos telescopios gigantescos ni viajar al espacio para encontrar maravillas; aprenderemos a ver lo extraordinario en una pelota que rebota en el patio, en el vapor que se eleva de una taza caliente o en el simple acto de encender una luz en su habitación. Descubriremos, con asombro, que las mismas leyes físicas que gobiernan el majestuoso viaje de los planetas son exactamente las mismas que dictan la trayectoria de una canica rodando por el suelo de nuestra escuela. Antes de abrir el libro de texto, aprenderemos a abrir bien los ojos y los oídos al mundo que nos rodea. En nuestra clase, un experimento no será una receta aburrida a seguir paso a paso. Será una pregunta que le hacemos a la naturaleza con nuestras propias manos. El resultado de ese experimento, sea cual sea, no es un \\emph{exito} o un \\emph{fracaso}, sino la respuesta honesta que el universo nos devuelve. Nuestra única tarea es aprender a escucharla con humildad científica. \\\\[-0.5em] \\par Comprenderemos que absolutamente nada en la existencia ocurre de forma aislada. Que cada acción, como una piedra arrojada a las aguas del Golfo, genera ondas que se expanden y provocan una reacción en cadena. Veremos que la energía no se crea ni se destruye, solo se transforma en una danza eterna, conectando la luz del sol con la fuerza que ahora mismo les permite leer estas palabras. No teman a las fórmulas que encontraremos. Una fórmula matemática en Física no es una jaula para atrapar la mente, sino una pincelada, un intento humilde y preciso de describir una verdad inmensa con un símbolo. La fórmula es el mapa, pero no es el territorio. Nosotros, en este salón, nos dedicaremos a explorar el territorio real. \\\\[-0.5em] \\par Les invito a entrar a esta aula con la mente de un principiante: vacía de prejuicios y llena de asombro. Hagan preguntas. Cuestionen lo que ven a diario. Duden de lo que creen saber firmemente. Pues solo aquel que reconoce que no sabe, está verdaderamente listo para aprender. \\\\[-0.5em] \\par Bienvenidos al arte de la observación. Bienvenidos a Física.",
     "Nociones": [],
     "Nombres": [],
-    "Alumnos": [],
+        "Alumnos": [
+      "Alana Álvarez Medina",
+      "Emil Bello Aldana",
+      "Emilio Casamayor Avendaño",
+      "Mateo Castillo Álvarez",
+      "Jinghua (Noe) Feng ",
+      "Pablo Guerrero Escutia",
+      "Said Loyo Morales",
+      "Luis Leonardo Miranda Mena",
+      "Cristian Emmanuel Monroy Loftus",
+      "Gilberto Montiel Díaz",
+      "Christopher Sánchez Ambrosio",
+      "Benjamín Sangeado Gerónimo",
+      "Guillermo Calixto Alberto Sierra González",
+      "Yerko Alan Solís Gutiérrez",
+      "Ricardo Solís Victoria",
+      "Fernando Tronco Muñoz"
+    ],
     "fechasDeExamen": [
       ""
     ]

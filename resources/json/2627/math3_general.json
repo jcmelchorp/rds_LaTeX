@@ -1,26 +1,56 @@
 {
-    "general": {
+  "general": {
     "CampoFormativo": "Saberes y Pensamiento Científico",
     "Asignatura": "Matematicas",
     "Grado": "3º",
     "Nivel": "Secundaria",
-    "Unidad": "1",
-    "NombreDeLaUnidad": "",
-    "DuracionEnSemanas": 0,
-    "HorasPorSemana": 0,
+    "Unidades": [
+      {
+        "Unidad": "1",
+        "NombreDeLaUnidad": "",
+        "DuracionEnSemanas": 0
+      },
+      {
+        "Unidad": "2",
+        "NombreDeLaUnidad": "",
+        "DuracionEnSemanas": 0
+      },
+      {
+        "Unidad": "3",
+        "NombreDeLaUnidad": "",
+        "DuracionEnSemanas": 0
+      }
+    ],
+    "HorasPorSemana": 5,
     "HorasTotales": 0,
     "Docente": "Julio César Melchor Pinto",
-    "FechaDeCreacion": "",
-    "FechaDeActualizacion": "yyyy-mm-dd",
-    "FechaInicial": "",
-    "FechaFinal": "",
-    "Words":"Bienvenidos a su último año en la secundaria Rafael Díaz Serdán. Con la firmeza de quien ha caminado un largo trecho y la emoción de quien está a punto de descubrir un nuevo horizonte, los recibo en este ciclo escolar que marcará su transición hacia el futuro. Mi nombre es Julio y seré su profesor de Matemáticas. Ya no son los mismos estudiantes que cruzaron esa puerta hace dos años; su mente es más aguda, su perspectiva más amplia. Por ello, este año no nos conformaremos con lo superficial. Dejaremos atrás la simple aritmética para adentrarnos en la arquitectura invisible del mundo: exploraremos la elegancia de la trigonometría, la precisión de la geometría analítica y el poder de abstracción del álgebra avanzada.\\\\[-0.5em] \\par A menudo, el mundo nos hace creer que las Matemáticas son una prisión de números y reglas memorizadas sin sentido. Hoy les propongo cambiar esa visión. Las Matemáticas son, en realidad, el lenguaje en el que está escrito el universo. Es la misma proporción que dicta cómo se forma una ola en el Golfo de México, la misma lógica que sostiene los puentes de nuestra ciudad, y el mismo código que permite que la tecnología en sus bolsillos funcione.\\\\[-0.5em] \\par En este tercer año, mi objetivo no es convertirlos en calculadoras humanas —las máquinas ya hacen eso muy bien—. Mi verdadero propósito es forjarlos como pensadores críticos. Busco que aprendan a observar un problema complejo, desarmarlo en partes manejables y construir una solución lógica. Ese es un súper poder que les servirá no solo en un examen, sino en cada decisión importante de su vida adulta. Nuestro salón será un gimnasio para el intelecto. Habrá retos que parecerán muros infranqueables al principio. Habrá momentos de frustración. Pero quiero que sepan que en esta clase, equivocarse es un requisito para el éxito. El error no es una derrota, es información valiosa; es el cincel con el que pulimos nuestro entendimiento hasta llegar a la verdad.\\\\[-0.5em] \\par Les pido que traigan a esta clase su valentía intelectual. Duden, cuestionen, propongan caminos distintos a los míos. Atrévanse a pensar por ustedes mismos y a defender su razonamiento con lógica. Están a punto de cerrar una etapa fundamental de sus vidas. Hagamos que este último año cuente, que sus mentes se expandan y que descubran la inmensa belleza que existe en el orden, la simetría y la razón.\\\\[-0.5em] \\par Bienvenidos a la madurez del pensamiento. Bienvenidos a Matemáticas de tercer grado.",
+    "FechaDeCreacion": "2026-08-24",
+    "FechaDeActualizacion": "2026-08-24",
+    "FechaInicial": "2026-08-31",
+    "FechaFinal": "2027-07-09",
+    "Words": "Bienvenidos a su último año en la secundaria Rafael Díaz Serdán. Con la firmeza de quien ha caminado un largo trecho y la emoción de quien está a punto de descubrir un nuevo horizonte, los recibo en este ciclo escolar que marcará su transición hacia el futuro. Mi nombre es Julio y seré su profesor de Matemáticas. Ya no son los mismos estudiantes que cruzaron esa puerta hace dos años; su mente es más aguda, su perspectiva más amplia. Por ello, este año no nos conformaremos con lo superficial. Dejaremos atrás la simple aritmética para adentrarnos en la arquitectura invisible del mundo: exploraremos la elegancia de la trigonometría, la precisión de la geometría analítica y el poder de abstracción del álgebra avanzada.\\\\[-0.5em] \\par A menudo, el mundo nos hace creer que las Matemáticas son una prisión de números y reglas memorizadas sin sentido. Hoy les propongo cambiar esa visión. Las Matemáticas son, en realidad, el lenguaje en el que está escrito el universo. Es la misma proporción que dicta cómo se forma una ola en el Golfo de México, la misma lógica que sostiene los puentes de nuestra ciudad, y el mismo código que permite que la tecnología en sus bolsillos funcione.\\\\[-0.5em] \\par En este tercer año, mi objetivo no es convertirlos en calculadoras humanas —las máquinas ya hacen eso muy bien—. Mi verdadero propósito es forjarlos como pensadores críticos. Busco que aprendan a observar un problema complejo, desarmarlo en partes manejables y construir una solución lógica. Ese es un súper poder que les servirá no solo en un examen, sino en cada decisión importante de su vida adulta. Nuestro salón será un gimnasio para el intelecto. Habrá retos que parecerán muros infranqueables al principio. Habrá momentos de frustración. Pero quiero que sepan que en esta clase, equivocarse es un requisito para el éxito. El error no es una derrota, es información valiosa; es el cincel con el que pulimos nuestro entendimiento hasta llegar a la verdad.\\\\[-0.5em] \\par Les pido que traigan a esta clase su valentía intelectual. Duden, cuestionen, propongan caminos distintos a los míos. Atrévanse a pensar por ustedes mismos y a defender su razonamiento con lógica. Están a punto de cerrar una etapa fundamental de sus vidas. Hagamos que este último año cuente, que sus mentes se expandan y que descubran la inmensa belleza que existe en el orden, la simetría y la razón.\\\\[-0.5em] \\par Bienvenidos a la madurez del pensamiento. Bienvenidos a Matemáticas de tercer grado.",
     "Nociones": [],
     "Nombres": [],
-    "Alumnos": [],
-    "fechasDeExamen": [
-      ""
-    ]
+    "Alumnos": [
+      "Bruno Aimone Bisio Lara",
+      "Cristel Castro Bulnes",
+      "Sebastián Cobos Franzoni",
+      "Fabrizzio Colonna Figueroa",
+      "Ángel Leonel Flores Pérez",
+      "Juan Pablo Fuentes Navas",
+      "Suad Alana Guerra Pitalúa",
+      "Layla Gabriela Mata Guzmán",
+      "Acteón Eliud Mendoza Martínez",
+      "María Fernanda Montes Ramírez",
+      "Antonio Montiel Díaz",
+      "Matías Harim Murrieta Zúñiga",
+      "Ehécatl Pérez Castrejón",
+      "Mateo Rendón Torrez",
+      "Pedro Antonio Rivera Rojas",
+      "Miguel Ángel Rodríguez Aguilar",
+      "Mateo Sosa Álvarez",
+      "María José Utrera González"
+    ],
+    "fechasDeExamen": [""]
   }
 }
- 
