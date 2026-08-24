@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+% \usepackage{emerald}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 % \usepackage[spanish]{babel}
@@ -46,7 +47,6 @@
 \setlength{\arrayrulewidth}{0.1pt}
 \usepackage{lscape} % for landscape mode
 
-
 \tcbset{
     unitbox/.style={
         colbacktitle=white,
@@ -85,27 +85,31 @@
     \end{picture}
 }
 
-\newcommand{\plannerof}[3]{%
+\newcommand{\plannerof}[2]{%
     \def\disciplina{\classtitle{#2#1}}
     \def\gradogrupo{\leveltitle{#1}}
     \def\schoolinfounit{\RaggedRight%
         {\color{rdsColor}\Large Escuela Rafael Díaz Serdán}\\[-0.5em]
         {\color{gray!40!black}\scriptsize\sffamily 30PES0329R \hspace{10em} turno matutino  }\\
-        {\color{green!20!black}\large\sffamily Binvenida al ciclo escolar}\\
+        {\color{green!20!black}\large\sffamily Bienvenida al ciclo escolar}\\
         {\sffamily Profesor:} Julio César Melchor Pinto
         %Saberes y pensamiento científico
     }
-    \def\unitinfo{%
-        \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
-    }
+    % \def\unitinfo{%
+    %     \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
+    % }
     \def\cicloescolar{%
         \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
     }
-    \JSONParseFromFile{\weekdata}{../resources/json/#2#1_u#3.json}
+    \JSONParseFromFile{\weekdata}{../resources/json/2627/#2#1_general.json}
     %\QueryFiles[reverse]{*.json}{\JSONParseFromFile{\weekdata}{##1}}
     % \def\unitcalendar{
         % \unitcalendarselector{#3}
     % }
+    \begin{tcolorbox}[unitbox,title=\unitboxtitle,before upper={\parindent=15pt}]
+   \JSONParseValue{\weekdata}{general.Words} \\[-1cm] 
+    \includegraphics[scale=0.35]{null.png}
+\end{tcolorbox}
 }
 % Comando para el diseño del encabezado
 \def\unitboxtitle{%
@@ -125,17 +129,13 @@
 
 
 \begin{document}
-%%  \planner{grado}{materia}{unidad}
-% \plannerof{0}{test}{1}%%
-% \plannerof{1}{math}{1}%
-%   \plannerof{2}{math}{1}%
-%   \plannerof{3}{math}{1}%
-%   \plannerof{3}{chem}{1}%   
-  \plannerof{2}{phys}{1}%
-\begin{tcolorbox}[unitbox,title=\unitboxtitle,before upper={\parindent=15pt}]
-    % \setfont{wela}{\JSONParseValue{\weekdata}{general.Words}} \\
-    \JSONParseValue{\weekdata}{general.Words} \\[-1cm]
-    \includegraphics[scale=0.35]{null.png}
-\end{tcolorbox}
+%%  \planner{grado}{materia}
+% \plannerof{0}{test}%%
+% \plannerof{1}{math}%
+%   \plannerof{2}{math}%
+%   \plannerof{3}{math}%
+%   \plannerof{1}{geog}%   
+  \plannerof{2}{phys}%
+
 % \end{landscape}
 \end{document}

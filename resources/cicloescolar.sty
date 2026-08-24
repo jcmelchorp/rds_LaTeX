@@ -19,6 +19,7 @@
 \definecolor{mathColor}{HTML}{E3A857}
 \definecolor{physColor}{HTML}{228B22}
 \definecolor{chemColor}{HTML}{228B22}
+\definecolor{geogColor}{HTML}{A94939}
 \definecolor{sec1Color}{HTML}{86608E}
 \definecolor{sec2Color}{HTML}{4C8BA7}
 \definecolor{sec3Color}{HTML}{A94939}
@@ -149,6 +150,7 @@ if (equals=2025-07-01) {\draw[black!75,thin,sharp corners] (-0.25,-0.2) rectangl
 % Comando para mostrar el string asociado y su estilo
 \newcommand{\classtitle}[1]{%
   \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{\textbf{Matemáticas 1}}}{}%
+  \ifthenelse{\equal{#1}{geog1}}{\textcolor{geogColor}{\textbf{Geografia}}}{}%
   \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{\textbf{Matemáticas 2}}}{}%
   \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{\textbf{Matemáticas 3}}}{}%
   \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{\textbf{Química}}}{}%
