@@ -1,0 +1,59 @@
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+
+\definecolor{colorrds}{HTML}{0060A1} % corrected the RGB values to represent royal purple more accurately
+\newcommand{\mediumsize}{\fontsize{15pt}{16pt}\selectfont}
+
+\begin{document}
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture,overlay]
+        \draw[line width=10 pt, color=colorrds]
+            ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+            ($(current page.south east) + (-0.30in,0.30in)$);
+    \end{tikzpicture}
+
+%     \begin{minipage}[t]{0.95\textwidth}
+%         \hfill
+%         \raggedleft
+%         \textbf{ Jane Doe} \\
+%         New York, NY \\
+%         \today\\
+%         \href{mailto:jane.doe@email.com}{jane.doe@email.com} \\
+%         +1 436-823-9879 \\
+%         \url{http://jane-doe.com} \\
+%         \url{http://linkedin.com/in/jane-doe}
+%     \end{minipage}
+
+% \raggedright \textbf{Maria Winter, Ph.D.} \\ Department of Political Science \\ Harvard University \\ Cambridge, MA 02138, USA \\ \href{mailto:maria.winter@harvard.edu}{maria.winter@harvard.edu}\\
+
+\vspace{0.7em}
+
+\raggedright Estimados alumnos de primer grado:\\
+
+Bienvenidos a su último año en la secundaria Rafael Díaz Serdán. Con la firmeza de quien ha caminado un largo trecho y la emoción de quien está a punto de descubrir un nuevo horizonte, los recibo en este ciclo escolar que marcará su transición hacia el futuro. Mi nombre es Julio y seré su profesor de Matemáticas. Ya no son los mismos estudiantes que cruzaron esa puerta hace dos años; su mente es más aguda, su perspectiva más amplia. Por ello, este año no nos conformaremos con lo superficial. Dejaremos atrás la simple aritmética para adentrarnos en la arquitectura invisible del mundo: exploraremos la elegancia de la trigonometría, la precisión de la geometría analítica y el poder de abstracción del álgebra avanzada.
+
+\vspace{0.7em}
+
+A menudo, el mundo nos hace creer que las Matemáticas son una prisión de números y reglas memorizadas sin sentido. Hoy les propongo cambiar esa visión. Las Matemáticas son, en realidad, el lenguaje en el que está escrito el universo. Es la misma proporción que dicta cómo se forma una ola en el Golfo de México, la misma lógica que sostiene los puentes de nuestra ciudad, y el mismo código que permite que la tecnología en sus bolsillos funcione.
+
+\vspace{0.7em}
+
+En este tercer año, mi objetivo no es convertirlos en calculadoras humanas —las máquinas ya hacen eso muy bien—. Mi verdadero propósito es forjarlos como pensadores críticos. Busco que aprendan a observar un problema complejo, desarmarlo en partes manejables y construir una solución lógica. Ese es un súper poder que les servirá no solo en un examen, sino en cada decisión importante de su vida adulta. Nuestro salón será un gimnasio para el intelecto. Habrá retos que parecerán muros infranqueables al principio. Habrá momentos de frustración. Pero quiero que sepan que en esta clase, equivocarse es un requisito para el éxito. El error no es una derrota, es información valiosa; es el cincel con el que pulimos nuestro entendimiento hasta llegar a la verdad.
+
+\vspace{0.7em}
+
+Les pido que traigan a esta clase su valentía intelectual. Duden, cuestionen, propongan caminos distintos a los míos. Atrévanse a pensar por ustedes mismos y a defender su razonamiento con lógica. Están a punto de cerrar una etapa fundamental de sus vidas. Hagamos que este último año cuente, que sus mentes se expandan y que descubran la inmensa belleza que existe en el orden, la simetría y la razón.
+Bienvenidos a la madurez del pensamiento. Bienvenidos a Matemáticas de tercer grado.
+
+\vspace{0.7em}
+
+\raggedright Atentamente,\\
+\textbf{Julio Melchor}
+
+\end{titlepage}
+\end{document}

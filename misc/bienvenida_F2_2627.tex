@@ -1,0 +1,66 @@
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+
+\definecolor{colorrds}{HTML}{0060A1} % corrected the RGB values to represent royal purple more accurately
+\newcommand{\mediumsize}{\fontsize{15pt}{16pt}\selectfont}
+
+\begin{document}
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture,overlay]
+        \draw[line width=10 pt, color=colorrds]
+            ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+            ($(current page.south east) + (-0.30in,0.30in)$);
+    \end{tikzpicture}
+
+%     \begin{minipage}[t]{0.95\textwidth}
+%         \hfill
+%         \raggedleft
+%         \textbf{ Jane Doe} \\
+%         New York, NY \\
+%         \today\\
+%         \href{mailto:jane.doe@email.com}{jane.doe@email.com} \\
+%         +1 436-823-9879 \\
+%         \url{http://jane-doe.com} \\
+%         \url{http://linkedin.com/in/jane-doe}
+%     \end{minipage}
+
+% \raggedright \textbf{Maria Winter, Ph.D.} \\ Department of Political Science \\ Harvard University \\ Cambridge, MA 02138, USA \\ \href{mailto:maria.winter@harvard.edu}{maria.winter@harvard.edu}\\
+
+\vspace{0.7em}
+
+\raggedright Estimados alumnos de segundo grado:\\
+
+Con una sincera alegría les doy la más serena bienvenida a este nuevo ciclo de descubrimiento. Mi nombre es Julio, y este año tendré el privilegio de ser su guía en una disciplina que no es una simple materia, sino el arte de formular las preguntas que abren el universo.
+
+\vspace{0.7em}
+
+Hasta ahora, ustedes han habitado el mundo. A partir de hoy, comenzarán a comprender su danza invisible. ¿Alguna vez se han detenido a contemplar una hoja que cae de un árbol? No se precipita con prisa, sino que traza una espiral en el aire, en un diálogo silencioso entre su peso y la caricia del viento veracruzano. ¿Han observado cómo un rayo de sol atraviesa una ventana, revelando un universo de polvo danzante en su interior? Estas observaciones no son cosas ordinarias. Son poemas escritos en el lenguaje del movimiento, la energía y la materia. La Física es la gramática de esa poesía. El universo no hace alarde de sus secretos más profundos, sino que los revela en lo simple y lo cotidiano de nuestras vidas.
+
+\vspace{0.7em}
+
+No necesitaremos telescopios gigantescos ni viajar al espacio para encontrar maravillas; aprenderemos a ver lo extraordinario en una pelota que rebota en el patio, en el vapor que se eleva de una taza caliente o en el simple acto de encender una luz en su habitación. Descubriremos, con asombro, que las mismas leyes físicas que gobiernan el majestuoso viaje de los planetas son exactamente las mismas que dictan la trayectoria de una canica rodando por el suelo de nuestra escuela. Antes de abrir el libro de texto, aprenderemos a abrir bien los ojos y los oídos al mundo que nos rodea. En nuestra clase, un experimento no será una receta aburrida a seguir paso a paso. Será una pregunta que le hacemos a la naturaleza con nuestras propias manos. El resultado de ese experimento, sea cual sea, no es un "éxito" o un "fracaso", sino la respuesta honesta que el universo nos devuelve. Nuestra única tarea es aprender a escucharla con humildad científica.
+
+\vspace{0.7em}
+
+Comprenderemos que absolutamente nada en la existencia ocurre de forma aislada. Que cada acción, como una piedra arrojada a las aguas del Golfo, genera ondas que se expanden y provocan una reacción en cadena. Veremos que la energía no se crea ni se destruye, solo se transforma en una danza eterna, conectando la luz del sol con la fuerza que ahora mismo les permite leer estas palabras. No teman a las fórmulas que encontraremos. Una fórmula matemática en Física no es una jaula para atrapar la mente, sino una pincelada, un intento humilde y preciso de describir una verdad inmensa con un símbolo. La fórmula es el mapa, pero no es el territorio. Nosotros, en este salón, nos dedicaremos a explorar el territorio real.
+
+\vspace{0.7em}
+
+Les invito a entrar a esta aula con la mente de un principiante: vacía de prejuicios y llena de asombro. Hagan preguntas. Cuestionen lo que ven a diario. Duden de lo que creen saber firmemente. Pues solo aquel que reconoce que no sabe, está verdaderamente listo para aprender.
+
+\vspace{0.7em}
+
+Bienvenidos al arte de la observación. Bienvenidos a Física.
+
+\vspace{0.7em}
+
+\raggedright Atentamente,\\
+\textbf{Julio Melchor}
+
+\end{titlepage}
+\end{document}

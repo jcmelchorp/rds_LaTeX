@@ -1,0 +1,62 @@
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+
+\definecolor{colorrds}{HTML}{0060A1} % corrected the RGB values to represent royal purple more accurately
+\newcommand{\mediumsize}{\fontsize{15pt}{16pt}\selectfont}
+
+\begin{document}
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture,overlay]
+        \draw[line width=10 pt, color=colorrds]
+            ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+            ($(current page.south east) + (-0.30in,0.30in)$);
+    \end{tikzpicture}
+
+%     \begin{minipage}[t]{0.95\textwidth}
+%         \hfill
+%         \raggedleft
+%         \textbf{ Jane Doe} \\
+%         New York, NY \\
+%         \today\\
+%         \href{mailto:jane.doe@email.com}{jane.doe@email.com} \\
+%         +1 436-823-9879 \\
+%         \url{http://jane-doe.com} \\
+%         \url{http://linkedin.com/in/jane-doe}
+%     \end{minipage}
+
+% \raggedright \textbf{Maria Winter, Ph.D.} \\ Department of Political Science \\ Harvard University \\ Cambridge, MA 02138, USA \\ \href{mailto:maria.winter@harvard.edu}{maria.winter@harvard.edu}\\
+
+\vspace{0.7em}
+
+\raggedright Estimados alumnos de primer grado:\\
+
+Mi nombre es Julio y, durante los próximos meses, tendré el honor de acompañarlos en su camino a través de las Matemáticas. Sé muy bien que, para muchos, escuchar el nombre de esta materia evoca un sentimiento de inquietud, como si estuviéramos a punto de entrar a un cuarto oscuro lleno de reglas arbitrarias, cálculos monótonos y ecuaciones sin sentido. Hoy, mi primer gran objetivo es derribar ese muro. Les pido que dejen atrás el miedo y los prejuicios escolares, porque las Matemáticas no son un castigo para la memoria, sino la poesía lógica con la que está escrita nuestra realidad.
+
+\vspace{0.7em}
+
+A lo largo de los años, se nos ha hecho creer que los números viven atrapados en las pizarras, en las calculadoras y en los exámenes. Sin embargo, si aprendemos a afinar nuestra mirada, descubriremos que las Matemáticas son el andamiaje invisible que sostiene absolutamente todo lo que nos rodea. Están presentes en la simetría perfecta de las hojas de los árboles bajo los que descansamos, en la espiral de las caracolas que acaricia el mar en nuestras costas veracruzanas y en el ritmo exacto de las canciones que escuchan todos los días. Cuando un músico compone una melodía que nos conmueve, cuando un ingeniero levanta un puente que desafía la gravedad, o cuando la naturaleza distribuye los pétalos de un girasol para capturar la luz, todos están hablando el mismo idioma universal: el de la proporción, el patrón y la armonía.
+
+\vspace{0.7em}
+
+Durante este ciclo escolar, nuestra aula dejará de ser un espacio de repetición para transformarse en un auténtico taller de pensamiento. No nos limitaremos a memorizar fórmulas vacías ni a resolver operaciones como si fuéramos máquinas. Una fórmula matemática, al igual que una palabra dentro de un poema, solo tiene verdadero valor cuando logramos comprender su significado profundo. Nos dedicaremos a entrenar la mente, a construir puentes analíticos y a desarrollar un pensamiento crítico que les permita enfrentar y desarmar los problemas que el mundo real les ponga enfrente. Las Matemáticas nos enseñan a fragmentar la inmensa complejidad de la vida en piezas lógicas y manejables. Nos enseñan, sobre todo, la virtud de la perseverancia y la valentía de equivocarnos; aquí aprenderemos que un error jamás es un fracaso, sino una herramienta indispensable en la brújula que nos guía hacia la verdad.
+
+\vspace{0.7em}
+
+Quiero que crucen la puerta de este salón con la audacia de un explorador que está a punto de descifrar un código ancestral. No acepten las cosas solo porque están escritas en un libro. Duden, pregunten, exijan explicaciones y no se conformen con la primera respuesta. Pronto descubrirán que la satisfacción más grande no proviene de simplemente anotar un resultado al final de una hoja, sino de experimentar ese destello luminoso en el que la mente hace clic, comprende un concepto nuevo y el caos, de repente, adquiere un orden perfecto. Ese es el verdadero poder de esta disciplina: otorgarles la claridad para entender el mundo y la libertad intelectual para transformarlo.
+
+\vspace{0.7em}
+
+Con un profundo respeto por la capacidad infinita de sus mentes y un entusiasmo inquebrantable por lo que construiremos juntos, los invito a descubrir la belleza oculta en la lógica. Bienvenidos a este viaje de pensamiento puro. Bienvenidos a Matemáticas.
+
+\vspace{0.7em}
+
+\raggedright Atentamente,\\
+\textbf{Julio Melchor}
+
+\end{titlepage}
+\end{document}

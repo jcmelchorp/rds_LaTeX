@@ -1,0 +1,62 @@
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+
+\definecolor{colorrds}{HTML}{0060A1} % corrected the RGB values to represent royal purple more accurately
+\newcommand{\mediumsize}{\fontsize{15pt}{16pt}\selectfont}
+
+\begin{document}
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture,overlay]
+        \draw[line width=10 pt, color=colorrds]
+            ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+            ($(current page.south east) + (-0.30in,0.30in)$);
+    \end{tikzpicture}
+
+%     \begin{minipage}[t]{0.95\textwidth}
+%         \hfill
+%         \raggedleft
+%         \textbf{ Jane Doe} \\
+%         New York, NY \\
+%         \today\\
+%         \href{mailto:jane.doe@email.com}{jane.doe@email.com} \\
+%         +1 436-823-9879 \\
+%         \url{http://jane-doe.com} \\
+%         \url{http://linkedin.com/in/jane-doe}
+%     \end{minipage}
+
+% \raggedright \textbf{Maria Winter, Ph.D.} \\ Department of Political Science \\ Harvard University \\ Cambridge, MA 02138, USA \\ \href{mailto:maria.winter@harvard.edu}{maria.winter@harvard.edu}\\
+
+\vspace{0.7em}
+
+\raggedright Estimados alumnos de primer grado:\\
+
+Con la firmeza de la tierra que pisamos y la inmensidad del horizonte que nos rodea, les doy la más sincera bienvenida al ciclo escolar 2026-2027 en la escuela secundaria Rafael Díaz Serdán. Mi nombre es Julio y, durante los próximos meses, seré su profesor de Geografía. Quiero invitarles, desde este primer instante, a desaprender lo que creen saber sobre esta materia. Históricamente se nos ha enseñado a ver la Geografía como un inventario exhaustivo y silencioso: un cementerio de capitales lejanas, fronteras dibujadas con regla y nombres de ríos que se deben repetir hasta el cansancio. Hoy les propongo cambiar esa mirada de raíz. La Geografía no es un archivo inerte, sino la crónica viva y palpitante de nuestro hogar; es el gran escenario donde la naturaleza y la humanidad han entrelazado sus destinos desde el principio de los tiempos.
+
+\vspace{0.7em}
+
+Si prestamos la suficiente atención, descubriremos que el paisaje que habitamos es un libro abierto que nos cuenta en silencio quiénes somos. Cada montaña, cada llanura, cada costa y cada playa son el resultado de fuerzas colosales y pacientes que han modelado nuestro entorno durante millones de años. Pero este lienzo físico no está vacío ni es estático. Sobre él, los seres humanos hemos trazado nuestra propia historia, intentando domesticar la geografía y siendo, al mismo tiempo, moldeados por ella. Las ciudades que habitamos no nacieron por azar. Si un puerto bulle de vida frente al mar, si las calles están trazadas para aprovechar la brisa o si los techos de las casas tienen una inclinación particular para resistir las lluvias, es porque nuestros antepasados tuvieron un diálogo directo con el territorio. La Geografía nos enseña a comprender por qué las civilizaciones se abrazan a los ríos, por qué los mercados huelen a los frutos de la tierra local y de qué manera la topografía dicta, incluso, las rutas por las que ustedes han caminado esta mañana para llegar a nuestra escuela.
+
+\vspace{0.7em}
+
+Descubriremos cómo el polvo que se levanta en un desierto distante puede cruzar los océanos empujado por el viento para fertilizar una selva en otro continente. Analizaremos cómo un fenómeno meteorológico que se gesta en medio del océano tiene el poder absoluto de alterar nuestra cotidianidad, detener la economía y recordarnos nuestra profunda vulnerabilidad ante la fuerza de la naturaleza. Aprenderemos a rastrear la historia de los objetos cotidianos, comprendiendo que la ropa que vestimos o la tecnología que utilizamos son el resultado de una red invisible de rutas comerciales, recursos naturales y trabajo humano que conecta rincones opuestos del planeta. 
+
+\vspace{0.7em}
+
+Mi propósito en esta clase no es llenar sus cuadernos con datos que podrían encontrar en un segundo en internet. Mi verdadera intención es transformar la manera en la que observan su entorno, dotarlos de una mirada crítica para que dejen de ser simples espectadores del mundo y comprendan su papel fundamental dentro de él. Les pido que traigan a esta aula su capacidad de asombro intacta, su voluntad para cuestionar las fronteras visibles e invisibles, y su deseo ardiente de entender el origen de su propia realidad.
+
+\vspace{0.7em}
+
+Bienvenidos a este viaje de comprensión profunda. Bienvenidos a Geografía.
+
+\vspace{0.7em}
+
+\raggedright Atentamente,\\
+\textbf{Julio Melchor}
+
+\end{titlepage}
+\end{document}
