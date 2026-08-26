@@ -205,7 +205,7 @@
     \def\unitinfo{\RaggedRight%
         \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
     }
-    \JSONParseFromFile{\weekdata}{../resources/json/2526/#2#1_u#3.json}
+    \JSONParseFromFile{\weekdata}{../resources/json/2627/#2#1_u#3.json}
     %\QueryFiles[reverse]{*.json}{\JSONParseFromFile{\weekdata}{##1}}
 }
 
@@ -284,11 +284,11 @@
 
 \begin{document}
 % \planner{0}{test}{1}%%
-% \planner{1}{math}{1}%
+\planner{1}{math}{1}%
 % \planner{2}{math}{1}%
 % \planner{3}{math}{1}%
-% \planner{3}{chem}{1}%
-\planner{1}{geog}{1}%
+% % \planner{3}{chem}{1}%
+% \planner{1}{geog}{1}%
 \JSONParseArrayMapInline{\weekdata}{weeks}{%
     \begin{tcolorbox}[titlebox,title=\planTitle
             {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
@@ -318,6 +318,6 @@
             \badges{\JSONParseValue{\weekdata}{weeks[#1].Vinculacion}}{\arrayitemize{#1}{Libros}}
         \end{minipage}
     \end{tcolorbox}
-    \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}
+    \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}%
 }
 \end{document}

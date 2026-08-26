@@ -9,17 +9,39 @@
 \usetikzlibrary{patterns.meta}
 \usetikzlibrary{shadows.blur}
 \usetikzlibrary{shapes.symbols}
+\usetikzlibrary{patterns,fadings}
 % \usepackage{babel}
 \PreviewEnvironment{tikzpicture}
 \setlength\PreviewBorder{5pt}%
 \definecolor{rdsColor}{HTML}{0060A0} % Custom colour
 \def\currentyear{2025}
 \def\nextyear{2026}
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=1pt,fill=white,circular glow={fill=rdsColor!40!white},thin] (char) {#1};}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base),% Define an interesting style
+button/.style={
+% First preaction: Fuzzy shadow
+preaction={fill=black,path fading=circle with fuzzy edge 20 percent,
+opacity=.5,transform canvas={xshift=1mm,yshift=-1mm}},
+% Second preaction: Background pattern
+preaction={pattern=#1,
+path fading=circle with fuzzy edge 15 percent},
+% Third preaction: Make background shiny
+preaction={top color=white,
+bottom color=black!50,
+shading angle=45,
+path fading=circle with fuzzy edge 15 percent,
+opacity=0.2},
+% Fourth preaction: Make edge especially shiny
+preaction={path fading=fuzzy ring 15 percent,
+top color=black!5,
+bottom color=black!80,
+shading angle=45},
+inner sep=2ex
+}]{
+	
+            \node[button] at (char.base) {#1};}}
 		
 \newcommand{\calrow}[1]{\node[anchor=base east,xshift=0.5em](lun){L};
-\node[base right=of lun](mar){M}; \node[base right=of mar](mie){X};
+\node[base right=of lun](mar){M}; \node[base right=of mar](mie){\circled[X]};
 \node[base right=of mie](jue){J}; \node[base right=of jue](vie){V};
 \node[base right=of vie](sab){S}; \node[base right=of sab](dom){D};
 \node[rdsColor,above=of jue]{#1};}

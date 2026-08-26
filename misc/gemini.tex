@@ -37,7 +37,7 @@
 \end{tikzpicture}
 
 
-\begin{tikzpicture}[tdplot_main_coords] % Use tdplot_main_coords for 3D perspective
+\begin{tikzpicture}[] % Use tdplot_main_coords for 3D perspective
     % Define coordinates for the cube's vertices
     \coordinate (A) at (0,0,0);
     \coordinate (B) at (2,0,0);
@@ -57,9 +57,9 @@
     \draw (D) -- (H);
 
     % Draw the hidden edges (optional, can be dashed)
-    % \draw[dashed] (A) -- (D);
-    % \draw[dashed] (A) -- (E);
-    % \draw[dashed] (D) -- (H);
+    \draw[dashed] (A) -- (D);
+    \draw[dashed] (A) -- (E);
+    \draw[dashed] (D) -- (H);
 
 \end{tikzpicture}
 \end{document}

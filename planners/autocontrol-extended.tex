@@ -35,7 +35,7 @@
         {\sffamily Disciplina:} \classtitle{#2#1} \\
         {\sffamily Grado y grupo:}  \leveltitle{#1}\\
     }
-    \JSONParseFromFile{\weekdata}{../resources/json/#2#1_u1.json}
+    \JSONParseFromFile{\weekdata}{../resources/json/2627/#2#1_u1.json}
 }
 % Comando para mostrar el string asociado y su estilo
 \newcommand{\classtitle}[1]{%
@@ -87,7 +87,7 @@
 }
 
 \begin{document}
-\activities{0}{test}
+\activities{1}{math}
 \JSONParseArrayMapInline{\weekdata}{uno}{%
 \rangofecha
 {\JSONParseValue{\weekdata}{uno[#1].fechaDeInicio}}

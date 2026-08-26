@@ -195,9 +195,9 @@ $\square$ & \JSONParseArrayValue  \\
         \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
     }
     \def\cicloescolar{%
-        \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
+        \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2025-2026}
     }
-    \JSONParseFromFile{\weekdata}{../resources/json/#2#1_u#3.json}
+    \JSONParseFromFile{\weekdata}{../resources/json/2627/#2#1_u#3.json}
     %\QueryFiles[reverse]{*.json}{\JSONParseFromFile{\weekdata}{##1}}
 }
 
@@ -274,8 +274,13 @@ $\square$ & \JSONParseArrayValue  \\
 \adjustbox{max width=0.59\linewidth}{\JSONParseArrayValue} & \fbox{\phantom{ooo}} $\square$ $\square$ $\square$ $\square$ \fbox{\phantom{oo}}\\\hline
 }
 
+\newcommand{\rangofechas}[2]{%
+    \tcbox[on line,size=fbox,arc=1.5pt,boxrule=0.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners,rounded corners=west]{% sharp corners=southeast,
+    \large\textsc{\DTMdate{#1}< \DTMdate{#2}}%
+    }%
+}
 \newcommand{\coolTitle}[1]{%
-\tcbox[on line,size=fbox,arc=1.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners=southwest]{\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio} {\bfseries$<$} \JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}} \ %
+\tcbox[on line,size=fbox,arc=1.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners=southwest]{\rangofechas{\fechainicio}{\fechacierre}} \ %
  \JSONParseValue{\weekdata}{weeks[#1].Tema} \hfill
   \periodoslectivos{\JSONParseValue{\weekdata}{weeks[#1].PeriodosLectivos}}%
 }
@@ -302,7 +307,7 @@ $\square$ & \JSONParseArrayValue  \\
 \begin{document}
 %%  \planner{grado}{materia}{unidad}
 %   \plannerof{0}{test}{1}%%
-  \plannerof{1}{math}{2}%
+  \plannerof{1}{math}{1}%
 %   \plannerof{2}{math}{3}%
 %   \plannerof{3}{math}{3}%
 %   \plannerof{3}{chem}{3}%   
