@@ -212,7 +212,11 @@
 			"**/F2U1.aux": true,
 			"**/F2U1.log": true,
 			"**/F2U1.gz": true,
-			"**/F2U1.out": true
+			"**/F2U1.out": true,
+			"**/autocontrol-extended.aux": true,
+			"**/autocontrol-extended.log": true,
+			"**/autocontrol-extended.gz": true,
+			"**/autocontrol-extended.out": true
 		}
 	}
 }
