@@ -3,91 +3,11 @@
 \begin{document}
 %%  \planner{grado}{materia}{unidad}
 % \loadunit{0}{test}{1}%%
-\loadunit{0}{test}{1}%
+\loadunit{1}{math}{1}%
+% \loadunit{1}{geog}{1}%
 %   \loadunit{2}{math}{1}%
 %   \loadunit{3}{math}{1}%
 %   \loadunit{3}{chem}{1}%   
 %   \loadunit{2}{phys}{2}%
-% \begin{tcolorbox}[unitbox,title=\unitboxtitle,breakable,halign=right]
-	% \begin{center}\scshape\large\color{rdsColor}
-	% 	\shadowtext{Datos generales}
-	% \end{center}
-	% \campoformativo \\
-	% \disciplina \\
-	% \grado \\
-	% \nivel \\
-	% \unidad \\
-	% \nombreunidad \\
-	% \duracion \\
-	% \horasporsemana \\
-	% \horastotales \\
-	% \docente \\
-	% \fechainicial \\
-	% \fechafinal \\
-	% \fechacreacion \\
-	% \fechaupdate 
-	
-	%   \JSONParseArrayMapInline{\weekdata}{general.Alumnos}{\JSONParseArrayValue}
-   \begin{minipage}{0.2\textwidth}
-        \includegraphics[width=4cm]{logo45.png}\\
-        {\huge\cicloescolar\\\unitinfo}\\ \vfill
-        \rotatebox{90}{\Huge{\shadowtext{\campoformativo}}} \ %
-         \rotatebox{90}{\fontsize{42}{24}\selectfont\shadowtext{\gradogrupo}} \ %
-         \rotatebox{90}{\fontsize{42}{24}\selectfont\shadowtext{\disciplina}} 
-    \end{minipage}%
-    \begin{minipage}{0.75\textwidth}\RaggedLeft%
-        \begin{center}
-            \scshape\huge \color{rdsColor}\shadowtext{Alumnos}
-        \end{center}
-          \JSONParseArrayMapFunction[
-                    code before={},
-                    code after={}
-                ]{\weekdata}{general.Alumnos}{\itemboxes}
-    \end{minipage}
-    
-  
-% \end{tcolorbox}
-% \newpage\noindent
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\ 
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\boxesline\\
-% \newpage\noindent
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\ 
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-% \boxesline\boxesline\boxesline\boxesline\\
-\newpage\noindent
-\JSONParseArrayMapFunction[
-    code before={},
-    code after={}
-]{\weekdata}{general.Nociones}{\columnbox}
+  \boardlist
 \end{document}

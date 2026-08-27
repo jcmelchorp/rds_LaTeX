@@ -1,0 +1,72 @@
+\documentclass[11pt,landscape]{article}
+\usepackage[a4paper,margin=1cm]{geometry}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usetikzlibrary{calendar}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+% Define a custom tcolorbox style for a single day entry
+\tcbset{
+    daybox/.style={
+        enhanced,
+        colback=white,
+        colframe=blue!70!black,
+        coltitle=white,
+        fonttitle=\bfseries\sffamily\small,
+        center title,
+        height=14cm, % Adjust based on layout needs
+        valign=top,
+        arc=2mm,
+        drop shadow
+    },
+    weekendbox/.style={
+        daybox,
+        colback=gray!5,
+        colframe=red!60!black
+    }
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    {\LARGE\bfseries\sffamily Weekly Planner --- October 2026}\\[0.5cm]
+\end{center}
+
+% Create a 7-column raster layout for the days of the week
+\begin{tcbraster}[raster columns=7, raster column skip=2mm]
+    % Monday
+    \begin{tcolorbox}[daybox, title={Mon \\ Oct 26}]
+        \footnotesize
+        \begin{itemize}
+            \item[$\square$] Morning meeting
+            \item[$\square$] Gym session
+        \end{itemize}
+    \end{tcolorbox}
+    % Tuesday
+    \begin{tcolorbox}[daybox, title={Tue \\ Oct 27}]
+        \footnotesize
+        \begin{itemize}
+            \item[$\square$] Project Review
+        \end{itemize}
+    \end{tcolorbox}
+    % Wednesday
+    \begin{tcolorbox}[daybox, title={Wed \\ Oct 28}]
+        % Empty for writing notes
+    \end{tcolorbox}
+    % Thursday
+    \begin{tcolorbox}[daybox, title={Thu \\ Oct 29}]
+    \end{tcolorbox}
+    % Friday
+    \begin{tcolorbox}[daybox, title={Fri \\ Oct 30}]
+    \end{tcolorbox}
+    % Saturday (Uses weekendbox style)
+    \begin{tcolorbox}[weekendbox, title={Sat \\ Oct 31}]
+    \end{tcolorbox}
+    % Sunday (Uses weekendbox style)
+    \begin{tcolorbox}[weekendbox, title={Sun \\ Nov 1}]
+    \end{tcolorbox}
+\end{tcbraster}
+
+\end{document}

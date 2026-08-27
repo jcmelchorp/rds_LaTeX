@@ -19,6 +19,7 @@
 \RequirePackage{jsonparse} % Load the json package
 \RequirePackage{anyfontsize}
 \RequirePackage{adjustbox}
+%%\RequirePackage{planner}
 \RequirePackage{graphicx} % for \scalebox
 \RequirePackage{xcolor} % For defining colors
 \RequirePackage{colortbl} % For coloring table elements
@@ -261,31 +262,31 @@
    
 \newcommand{\rangofechas}[2]{%
     \tcbox[on line,size=fbox,arc=1.5pt,boxrule=0.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners,rounded corners=west]{% sharp corners=southeast,
-   \DTMdate{#1} < \DTMdate{#2}%
+   \DTMdate#1 < \DTMdate#2%
     }%
 }
 
-\newcommand{\rangofecha}[2]{
-    \begin{tikzpicture}[baseline]
-        \node (box) [rdsColor,
-            draw,                   % Dibuja el borde
-            fill=white,
-            anchor=base,baseline,
-            rounded corners=4pt,    % Redondea las esquinas
-            minimum width=3cm,      % Ancho total
-            minimum height=1.5em,    % Alto total
-            yshift=0.3em,
-            blur shadow={
-                shadow opacity=50,
-                shadow blur steps=5,
-                shadow blur extra rounding=5pt
-            },
-        ] {}; % El nodo no lleva texto dentro, solo define la forma.
-        \draw[rdsColor] ([xshift=-1mm]box.north) -- ([xshift=1mm]box.center) -- ([xshift=-1mm]box.south);
-        \node at ([xshift=-0.8cm]box.center) {#1};
-        \node at ([xshift=0.8cm]box.center) {#2};
-    \end{tikzpicture}%
-}
+% \newcommand{\rangofecha}[2]{
+%     \begin{tikzpicture}[baseline]
+%         \node (box) [rdsColor,
+%             draw,                   % Dibuja el borde
+%             fill=white,
+%             anchor=base,baseline,
+%             rounded corners=4pt,    % Redondea las esquinas
+%             minimum width=3cm,      % Ancho total
+%             minimum height=1.5em,    % Alto total
+%             yshift=0.3em,
+%             blur shadow={
+%                 shadow opacity=50,
+%                 shadow blur steps=5,
+%                 shadow blur extra rounding=5pt
+%             },
+%         ] {}; % El nodo no lleva texto dentro, solo define la forma.
+%         \draw[rdsColor] ([xshift=-1mm]box.north) -- ([xshift=1mm]box.center) -- ([xshift=-1mm]box.south);
+%         \node at ([xshift=-0.8cm]box.center) {#1};
+%         \node at ([xshift=0.8cm]box.center) {#2};
+%     \end{tikzpicture}%
+% }
 
 
 
@@ -294,7 +295,7 @@
 
 \newcommand{\boxesline}{%
 \begin{tikzpicture}[yshift=-0.2em]
-    \foreach \x in {0,...,2} {
+    \foreach \x in {0,...,0} {
  \begin{scope}[shift={(\x*1.0,0)}]
             % Dibujamos las 3 caras visibles del cubo
             % Todas tienen borde negro (por defecto) y relleno blanco
@@ -323,7 +324,7 @@
 }
 
 \def\itemboxes{%
-    \tcbox[enhanced,on line,drop fuzzy shadow=black,size=fbox,colback=orange!10!white]{\fontsize{20}{8}\selectfont\JSONParseArrayValue}\quad\raisebox{-0.75em}{\boxesline}\\
+    \tcbox[enhanced,on line,drop fuzzy shadow=black,size=fbox,colback=orange!10!white]{\fontsize{20}{8}\selectfont\JSONParseArrayValue}\\[1em]%\raisebox{-0.75em}{\boxesline}\\
 }
 \def\itembox{%
     \tcbox[enhanced,drop fuzzy shadow=black,size=fbox,on line,colback=orange!10!white]{\JSONParseArrayValue}
@@ -408,3 +409,29 @@
     }
 \end{minipage}%
 }
+
+
+\newcommand{\boardlist}{%
+     \begin{minipage}{0.2\textwidth}
+        \includegraphics[width=3.2cm]{logo45.png}\\
+        {\LARGE\cicloescolar\\\unitinfo}\\ \vfill
+        \rotatebox{90}{\Huge{\shadowtext{\campoformativo}}} \ %
+         \rotatebox{90}{\fontsize{42}{24}\selectfont\shadowtext{\gradogrupo}} \ %
+         \rotatebox{90}{\fontsize{42}{24}\selectfont\shadowtext{\disciplina}} 
+    \end{minipage}%
+    \begin{minipage}{0.75\textwidth}\RaggedLeft%
+        \begin{center}
+            \scshape\huge \color{rdsColor}\shadowtext{Alumnos}
+        \end{center}
+          \JSONParseArrayMapFunction[
+                    code before={},
+                    code after={}
+                ]{\weekdata}{general.Alumnos}{\itemboxes}
+    \end{minipage}
+    \newpage\noindent
+\JSONParseArrayMapFunction[
+    code before={},
+    code after={}
+]{\weekdata}{general.Nociones}{\columnbox}
+}
+

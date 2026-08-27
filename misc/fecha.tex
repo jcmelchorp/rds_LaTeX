@@ -8,7 +8,7 @@
 \usetikzlibrary {calendar,shapes.misc}
 \usepackage{array}
 \usepackage{multicol}
-% \usepackage{colortbl}
+\usepackage{tabularx}
 \usepackage[table]{xcolor}
 \setlength{\arrayrulewidth}{0.1pt}
 \renewcommand{\arraystretch}{1.0}
@@ -30,14 +30,26 @@
 
 \begin{document}
 %----------------------------------------------------------
-\section{Colored boxes}
 
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=August 2026]
+  \centering
+  \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|}
+    \hline
+    \textbf{Mon} & \textbf{Tue} & \textbf{Wed} & \textbf{Thu} & \textbf{Fri} & \textbf{Sat} & \textbf{Sun} \\ \hline
+    - & - & - & - & - & 1 & 2 \\ \hline
+    3 & 4 & 5 & 6 & 7 & 8 & 9 \\ \hline
+    10 & 11 & 12 & 13 & 14 & 15 & 16 \\ \hline
+    17 & 18 & 19 & 20 & 21 & 22 & 23 \\ \hline
+    24 & 25 & 26 & 27 & 28 & 29 & 30 \\ \hline
+    31 & - & - & - & - & - & - \\ \hline
+  \end{tabularx}
+\end{tcolorbox}
 
 
 
 \tikz[every day/.style={anchor=mid}]
 %  \foreach \b in {1,...,13} {
-  \calendar [dates=2025-11-03+-4 to 2025-11-07+4,
+  \calendar [dates=2026-08-31+-1 to 2026-09-04,
              week list,month label above centered,
              month text=\texttt{\%mt \%y0}]
              if (Sunday,Saturday)            [gray]
@@ -119,6 +131,7 @@ $\Large\square$ Blue  & \fbox{\phantom{oooooooo}}\quad \fbox{\phantom{oooooooo}}
   % Content that is long enough to span multiple pages
   \lipsum[1-2] % Example content using the lipsum package
 \end{tcolorbox}
+
 \begin{tcolorbox}[
 enhanced,
 drop fuzzy shadow=black,
