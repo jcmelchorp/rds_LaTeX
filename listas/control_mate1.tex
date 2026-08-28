@@ -21,7 +21,6 @@
 \seq_new:N \studentlist_seq
 \seq_new:N \studentlist_temp_seq
 \tl_new:N \studentlist_header
-\renewcommand{\arraystretch}{1}
 \cs_new_protected:Nn \studentlist:n
 {
   \seq_clear:N \studentlist_seq
@@ -66,11 +65,17 @@
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.Potencias~con~numeros~negativos}} &
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.Jerarquía~de~operaciones}} 
     \\ \hline
+ & &
+     \multicolumn{5}{|c|}{Semana~1} &
+    \multicolumn{5}{|c|}{Semana~2} &
+    \multicolumn{5}{|c|}{Semana~3} &
+    \multicolumn{5}{|c|}{Semana~4} &
+    \multicolumn{5}{|c|}{Semana~5} \\ \hline
   }
   \tl_set:Nn \studentlist_header_udos
   {
     \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
-    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Suma~de~decimales}} &
+  \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Suma~de~decimales}} &
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Resta~de~decimales}} &
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Multiplicación~de~decimales}} &
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~División~de~decimales}} &
@@ -96,6 +101,12 @@
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Unidades~de~área~y~volumen}} &
     \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Unidades~de~capacidad~2}} 
     \\ \hline
+& &
+    \multicolumn{5}{|c|}{Semana~1} &
+    \multicolumn{5}{|c|}{Semana~2} &
+    \multicolumn{5}{|c|}{Semana~3} &
+    \multicolumn{5}{|c|}{Semana~4} &
+    \multicolumn{5}{|c|}{Semana~5} \\ \hline
   }
   \tl_set:Nn \studentlist_header_utres
   {

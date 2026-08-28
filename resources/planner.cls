@@ -468,10 +468,6 @@
     code before={},
     code after={}
 ]{\weekdata}{general.Nociones}{\columnbox}
-\JSONParseArrayMapFunction[
-    code before={},
-    code after={}
-]{\weekdata}{general.Contenido}{\columnbox}
 }
 
 \newcommand{\tableta}[1]{%
