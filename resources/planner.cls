@@ -7,12 +7,19 @@
 \ProcessOptions\relax\ProcessOptions\relax
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[spanish]{babel}
 \RequirePackage{cicloescolar}
 \RequirePackage[most]{tcolorbox}
-\tcbuselibrary{skins,raster,breakable} % Load the breakable library
+\tcbuselibrary{skins,raster,breakable,listings} % Load the breakable library
+\RequirePackage{tikz}
+\usetikzlibrary{babel}
+\usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
+\usetikzlibrary{shadows,shadows.blur}
+\usetikzlibrary{shapes,shapes.symbols}
+\usetikzlibrary{patterns,patterns.meta}
 \RequirePackage{amssymb}
 \RequirePackage{tabularx}
-\RequirePackage[margin=0.4in]{geometry}
+\RequirePackage[margin=0.6in]{geometry}
 \RequirePackage{pdflscape} % Permite rotar una sola página de forma correcta en el PDF
 \RequirePackage{ragged2e}
 \RequirePackage{multicol,multirow}
@@ -22,20 +29,46 @@
 %%\RequirePackage{planner}
 \RequirePackage{graphicx} % for \scalebox
 \RequirePackage{xcolor} % For defining colors
+\definecolor{rdsColor}{HTML}{0060A0} % Custom colour
+\definecolor{mathColor}{HTML}{E3A857}
+\definecolor{physColor}{HTML}{228B22}
+\definecolor{chemColor}{HTML}{228B22}
+\definecolor{geogColor}{HTML}{A94939}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
 \RequirePackage{colortbl} % For coloring table elements
 \RequirePackage{ifthen}
 \RequirePackage{xifthen}
 \RequirePackage{enumitem} % for custom \item
 \RequirePackage{xparse} %for NewDocumentCommand
 \RequirePackage{etoolbox}
-\RequirePackage{datetime2}
 % \RequirePackage{l3sys-query} %for query JSON files
 % \RequirePackage{lipsum}
 \RequirePackage{shadowtext}
 \shadowoffset{0.4pt}
 \shadowcolor{black}
+\RequirePackage[calc,es-ES,spanish]{datetime2}
+% Define short month names for Spanish
+\newcommand{\DTMspanishshortMonthname}[1]{%
+  \ifcase#1
+  \or Ene.\or Feb.\or Mar.\or Abr.\or May.\or Jun.\or Jul.\or Ago.\or Sep.\or Oct.\or Nov.\or Dic.%
+  \fi
+}
+% Redefine the month name command to use the short version
+\renewcommand{\DTMspanishmonthname}[1]{%
+  \DTMspanishshortMonthname{#1}%
+}
+\DTMnewdatestyle{dashdate}{%
+\renewcommand{\DTMdisplaydate}[4]{%
+ \DTMtwodigits{##3} \DTMspanishmonthname{##2}}%-\number##1 }%
+\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+\DTMsetdatestyle{dashdate}
 
-\DTMsetdatestyle{fechacorta}
+\def\currentyear{2026}
+\def\nextyear{2027}
+
 \pagestyle{empty}
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \renewcommand{\arraystretch}{1.2}
@@ -259,12 +292,12 @@
         {\color{green!20!black} \fontsize{10}{10}\selectfont \sffamily Planeación didáctica semanal}\\
         {\color{black!90}{\sffamily Profesor:} Julio César Melchor Pinto}\\
         {\sffamily Disciplina:} \shadowtext{\disciplina} \\
-        {\sffamily Grado y grupo:}  \shadowtext{\gradogrupo}\\
+        {\sffamily Grado y grupo:}  \shadowtext{\gradogrupo}
     }
    
 \newcommand{\rangofechas}[2]{%
     \tcbox[on line,size=fbox,arc=1.5pt,boxrule=0.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners,rounded corners=west]{% sharp corners=southeast,
-    \large\textsc{\DTMdate{#1}< \DTMdate{#2}}%
+    \DTMdate{#1} < \DTMdate{#2}%
     }%
 }
 
@@ -356,7 +389,7 @@
     \begin{tabularx}{0.7\textwidth}{rYr}
         {\sffamily Campo formativo:} & Saberes y Pensamiento Científico  &  \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2025-2026} \unitinfo  \\ 
         {\sffamily Tema:}  & \multirow[t]{2}{\linewidth}{#3} & \tcbox[colback=yellow!20!white,colframe=rdsColor,size=fbox,on line]{ {\large\sffamily Semana} {\Large #6}} \tcbox[colframe=rdsColor,size=fbox,on line]{ {\Large #5} \begin{minipage}[b]{0.9cm}\sffamily\tiny Períodos\\lectivos\end{minipage}} \\
-        & & \rangofechas{#7}{#8}  \\
+        & & \rangofecha{#7}{#8}  \\
         {\sffamily Contenido:}  &  \multicolumn{2}{l}{#2}\\
         {\sffamily Ejes articuladores:} &   \multicolumn{2}{l}{#1}\\
         {\sffamily Lección:} &   \multicolumn{2}{l}{#4}\\ 
@@ -435,10 +468,14 @@
     code before={},
     code after={}
 ]{\weekdata}{general.Nociones}{\columnbox}
+\JSONParseArrayMapFunction[
+    code before={},
+    code after={}
+]{\weekdata}{general.Contenido}{\columnbox}
 }
 
 \newcommand{\tableta}[1]{%
-
+\JSONParseValue[store in=\fechainicio]{\weekdata}{weeks[#1].FechaDeInicio}
 \JSONParseValue[store in=\fechacierre]{\weekdata}{weeks[#1].FechaDeCierre}
 \JSONParseArrayMapFunction[%
     code before={%
@@ -472,5 +509,23 @@
 
 \newcommand{\coolTitle}[1]{% %
 \booknode{\color{white}\large\scshape\bfseries\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}} \ \JSONParseValue{\weekdata}{weeks[#1].Tema} \hfill
-\rangofechas{\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio}}{\JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}}\raisebox{-0.3pt}{\periodoslectivos{#1}}%  
+\rangofechas{\fechainicio}{\fechacierre}\raisebox{-0.3pt}{\periodoslectivos{#1}}%  
+}
+
+% Comando para mostrar el string asociado y su estilo
+\newcommand{\classtitle}[1]{%
+  \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{\textbf{Matemáticas 1}}}{}%
+  \ifthenelse{\equal{#1}{geog1}}{\textcolor{geogColor}{\textbf{Geografia}}}{}%
+  \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{\textbf{Matemáticas 2}}}{}%
+  \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{\textbf{Matemáticas 3}}}{}%
+  \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{\textbf{Química}}}{}%
+  \ifthenelse{\equal{#1}{phys2}}{\textcolor{physColor}{\textbf{Física}}}{}%
+  \ifthenelse{\equal{#1}{test0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+}
+
+\newcommand{\leveltitle}[1]{%
+  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+  \ifthenelse{\equal{#1}{1}}{\textcolor{sec1Color}{\textbf{1° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{2}}{\textcolor{sec2Color}{\textbf{2° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{3}}{\textcolor{sec3Color}{\textbf{3° de Secundaria}}}{}%
 }

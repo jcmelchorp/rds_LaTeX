@@ -1,58 +1,12 @@
-\documentclass[12pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-% \usepackage[spanish]{babel}
-\usepackage[most]{tcolorbox}
-\tcbuselibrary{skins,raster,breakable} % Load the breakable library
-\usepackage{amssymb}
-\usepackage{tabularx}
-\usepackage[margin=0.5in]{geometry}
-\usepackage{ragged2e}
-\usepackage{multicol,multirow}
-\usepackage{jsonparse} % Load the json package
-\usepackage{anyfontsize}
-\usepackage{adjustbox}
-\usepackage{graphicx} % for \scalebox
-\usepackage{xcolor} % For defining colors
-\usepackage{colortbl} % For coloring table elements
-\usepackage{ifthen}
-\usepackage{xifthen}
-\usepackage{enumitem} % for custom \item
+\documentclass[12pt]{planner}
 \usepackage{pgffor}
-% \usepackage{pgf-pie}
-\usepackage{tikz}
-\usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
-\usetikzlibrary{shadows,shadows.blur}
-\usetikzlibrary{shapes,shapes.symbols}
-\usetikzlibrary{patterns,patterns.meta}
 \usepackage{cicloescolar}
-\usepackage
-\usepackage{xparse} %for NewDocumentCommand
-\usepackage{etoolbox}
-% \usepackage{l3sys-query} %for query JSON files
-% \usepackage{lipsum}
-\usepackage{shadowtext}
-\shadowoffset{0.4pt}
-\shadowcolor{black}
-\DTMsetdatestyle{fechacorta}
-\pagestyle{empty}
-\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
-\renewcommand{\arraystretch}{1.2}
-\arrayrulecolor{rdsColor}
-\setlength{\columnsep}{10pt}
-\setlength{\arrayrulewidth}{0.1pt}
-\renewcommand\fbox{\fcolorbox{white}{rdsColor!5!white}}
-
-\tikzset{
-    hyperlink node/.style={
-        alias=@hyper,
-        append after command={
-            let \p1 = (@hyper.north west),
-                \p2 = (@hyper.south east),
-                \n1 = {\x2-\x1}, \n2 = {\y1-\y2} in
-            node [inner sep=+0pt, outer sep=+0pt, anchor=center, at=(@hyper)] {\hyperlink{ref-#1}{\XeTeXLinkBox{\phantom{\rule{\n1}{\n2}}}}}
-        }
-    }}
+% \usepackage{pgf-pie}
+% \usepackage{tikz}
+% \usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
+% \usetikzlibrary{shadows,shadows.blur}
+% \usetikzlibrary{shapes,shapes.symbols}
+% \usetikzlibrary{patterns,patterns.meta}
 \tcbset{
     unitbox/.style={
         colbacktitle=white,
@@ -90,34 +44,34 @@
     }
 }
 
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=2pt,fill=white,circular glow={fill=rdsColor!40!white}] (char) {#1};}}
-\newcommand*\cte[1]{\tikz[baseline=(char.base)]{
-			\node[shape=circle,inner sep=2pt,pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (char) {#1};}}
-\newcommand*\free[1]{\tikz[baseline=(char.base)]{
-			\node[shape=circle,inner sep=2pt,pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (char) {#1};}}
-\newcommand*\exam[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=2pt,fill=white] (char) {#1};}}
-\newcommand*\padres[1]{\tikz[baseline=(char.base)]{
-            \node[shape=rectangle,draw=black!75,fill=white] (char) {#1};}}
-\newcommand*\booknode[1]{\tikz[baseline=(char.base)]{
-            \node[shape=rounded rectangle,line width=0.5pt,draw=rdsColor!50,
-            rounded rectangle east arc=concave,xshift=-0.35em,
-            inner xsep=0pt,inner ysep=4pt,
-            % pattern={Lines[distance=0.5pt, angle=0, line width=0.1pt]},pattern color=green!50!black,
-            fill=rdsColor!50!white,
-            scale=1,overlay] (char) {#1};
-            % \begin{scope}[on background layer]
-            %     \fill[white,hape=rounded rectangle,rounded rectangle east arc=concave,xshift=-0.4em,] (-.8,-.8) rectangle (.8,.8);
-            %   \end{scope}
-            }}
+% \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+%             \node[shape=circle,draw,inner sep=2pt,fill=white,circular glow={fill=rdsColor!40!white}] (char) {#1};}}
+% \newcommand*\cte[1]{\tikz[baseline=(char.base)]{
+% 			\node[shape=circle,inner sep=2pt,pattern={Lines[distance=2pt, angle=45, line width=0.1pt]},pattern color=green!50!black] (char) {#1};}}
+% \newcommand*\free[1]{\tikz[baseline=(char.base)]{
+% 			\node[shape=circle,inner sep=2pt,pattern={Lines[distance=2pt, angle=-45, line width=0.1pt]},pattern color=red!50!black] (char) {#1};}}
+% \newcommand*\exam[1]{\tikz[baseline=(char.base)]{
+%             \node[shape=circle,draw,inner sep=2pt,fill=white] (char) {#1};}}
+% \newcommand*\padres[1]{\tikz[baseline=(char.base)]{
+%             \node[shape=rectangle,draw=black!75,fill=white] (char) {#1};}}
+% \newcommand*\booknode[1]{\tikz[baseline=(char.base)]{
+%             \node[shape=rounded rectangle,line width=0.5pt,draw=rdsColor!50,
+%             rounded rectangle east arc=concave,xshift=-0.35em,
+%             inner xsep=0pt,inner ysep=4pt,
+%             % pattern={Lines[distance=0.5pt, angle=0, line width=0.1pt]},pattern color=green!50!black,
+%             fill=rdsColor!50!white,
+%             scale=1,overlay] (char) {#1};
+%             % \begin{scope}[on background layer]
+%             %     \fill[white,hape=rounded rectangle,rounded rectangle east arc=concave,xshift=-0.4em,] (-.8,-.8) rectangle (.8,.8);
+%             %   \end{scope}
+%             }}
 
-\def\LOGO{%
-    \begin{picture}(0,0)\unitlength=2cm
-        % \put (0.05,-0.45) {\includegraphics[width=1.6cm]{logo_shadow.png}}
-        \put (0.045,-0.44) {\includegraphics[width=1.6cm]{logo45.png}}
-    \end{picture}
-}
+% \def\LOGO{%
+%     \begin{picture}(0,0)\unitlength=2cm
+%         % \put (0.05,-0.45) {\includegraphics[width=1.6cm]{logo_shadow.png}}
+%         \put (0.045,-0.44) {\includegraphics[width=1.6cm]{logo45.png}}
+%     \end{picture}
+% }
 
 \newcommand{\plannerof}[3]{%
     \def\disciplina{\classtitle{#2#1}}
@@ -158,27 +112,27 @@
     \end{tabularx}
 }
 
-\newtcolorbox{subsectionbox}[1][]{%
-    % size=small,
-    top=2pt,
-    % % boxsep=1mm,
-    bottom=1pt,
-    width=\linewidth,
-    grow to right by=5pt,
-    grow to left by=5pt,
-    colback = rdsColor!10!white,
-    colframe     = rdsColor,
-    leftrule=0.1pt, 
-    toprule=0.1pt,
-    bottomrule=0pt,
-    rightrule=2mm,
-    drop fuzzy shadow=black,
-    sharp corners=south,
-    fontupper=\color{gray!50}\bfseries\scshape,%\RaggedLeft,
-    #1,
-    % on line,
-    enhanced,
-}
+% \newtcolorbox{subsectionbox}[1][]{%
+%     % size=small,
+%     top=2pt,
+%     % % boxsep=1mm,
+%     bottom=1pt,
+%     width=\linewidth,
+%     grow to right by=5pt,
+%     grow to left by=5pt,
+%     colback = rdsColor!10!white,
+%     colframe     = rdsColor,
+%     leftrule=0.1pt, 
+%     toprule=0.1pt,
+%     bottomrule=0pt,
+%     rightrule=2mm,
+%     drop fuzzy shadow=black,
+%     sharp corners=south,
+%     fontupper=\color{gray!50}\bfseries\scshape,%\RaggedLeft,
+%     #1,
+%     % on line,
+%     enhanced,
+% }
 % \def\rowitemtable{$\square$ & \JSONParseArrayValue  \\}
 
 % \newcommand{\arrayitemtable}[2]{%
@@ -188,7 +142,7 @@
 % ]{\weekdata}{weeks[#1].#2}{\rowitemtable}
 % }
 
-\newcommand{\rangofechas}[2]{%
+\newcommand{\rangoofechas}[2]{%
     \tcbox[on line,size=fbox,arc=1.5pt,boxrule=0.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners,rounded corners=west]{% sharp corners=southeast,
     \large\textsc{\DTMdate{#1}< \DTMdate{#2}}%
     }%
@@ -196,7 +150,7 @@
 
 
 % \newtcbox{\headerbox}{}
-\newcommand{\tableta}[1]{%
+\newcommand{\sem}[1]{%
 \JSONParseValue[store in=\fechainicio]{\weekdata}{weeks[#1].FechaDeInicio}
 \JSONParseValue[store in=\fechacierre]{\weekdata}{weeks[#1].FechaDeCierre}
 \JSONParseArrayMapFunction[%
@@ -216,7 +170,7 @@
         bottomtitle=0pt,
         lefttitle=2mm,
         width=\linewidth,
-        title={\coolTitle{#1}},
+        title={\awesomeTitle{#1}},
         ]
         {\footnotesize\scshape\color{black!70}\qquad Noción} & {\scriptsize\scshape\color{black!70} Fecha \ Cont. Letra Orto. Pres. Punt. Total} \\\hline\hline%
         },
@@ -236,12 +190,12 @@
 }
 
 % \def\fillingradebox{\resizebox{1cm}{1em}{\raisebox{-0.16em}{$\Box$}}}
-\newcommand{\fillingradebox}[1][]{\tikz[baseline]{\draw[black!75,thin,rounded corners=1,#1] (0,-0.125) rectangle (0.94, 0.345);}}
-\def\listableta{\adjustbox{max width=0.95\linewidth}{\JSONParseArrayValue} & {\fbox{\phantom{oooo}}\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[rdsColor]}\\\hline }
+\newcommand{\fillgradebox}[1][]{\tikz[baseline]{\draw[black!75,thin,rounded corners=1,#1] (0,-0.125) rectangle (0.94, 0.345);}}
+\def\listableta{\adjustbox{max width=0.95\linewidth}{\JSONParseArrayValue} & {\fbox{\phantom{oooo}}\;\fillgradebox[dotted]\;\fillgradebox[dotted]\;\fillgradebox[dotted]\;\fillgradebox[dotted]\;\fillgradebox[dotted]\;\fillgradebox[rdsColor]}\\\hline }
 
-\newcommand{\coolTitle}[1]{% %
+\newcommand{\awesomeTitle}[1]{% %
 \booknode{\color{white}\large\scshape\bfseries\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}} \ \JSONParseValue{\weekdata}{weeks[#1].Tema} \hfill
-\rangofechas{\fechainicio}{\fechacierre}\raisebox{-0.3pt}{\periodoslectivos{#1}}%  
+\rangoofechas{\fechainicio}{\fechacierre}\raisebox{-0.3pt}{\periodoslectivos{#1}}%  
 }
 
 
@@ -251,10 +205,10 @@
 \begin{document}
 %%  \planner{grado}{materia}{unidad}
 % \plannerof{0}{test}{1}%%
-% \plannerof{1}{math}{1}%
+\plannerof{1}{math}{1}%
 %   \plannerof{2}{math}{2}%
 %   \plannerof{3}{math}{2}%
-  \plannerof{1}{geog}{1}%   
+%   \plannerof{1}{geog}{1}%   
 %   \plannerof{2}{phys}{1}%
 \begin{tcolorbox}[unitbox,title=\unitboxtitle,breakable,halign=center]
 	%   \begin{multicols}{3}
@@ -314,6 +268,6 @@
 	\begin{center}\scshape\large\color{rdsColor}
 		\shadowtext{Rúbrica semanal}
 	\end{center}
-	\JSONParseArrayMapInline{\weekdata}{weeks}{\tableta{#1}}
+	\JSONParseArrayMapInline{\weekdata}{weeks}{\sem{#1}}
 \end{tcolorbox}
 \end{document}
