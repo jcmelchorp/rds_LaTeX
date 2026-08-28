@@ -4,10 +4,11 @@
 % \loadunit{1}{math}{1}%
 % \loadunit{2}{math}{1}%
 % \loadunit{3}{math}{1}%
-% % \loadunit{3}{chem}{1}%
+% % \loadunit{1}{geog}{1}%
 % \loadunit{1}{geog}{1}%
 \boardlist
 \begin{landscape}
+%\JSONParseArrayMapInline{\weekdata}{weeks}{\tableta{#1}}
 \JSONParseArrayMapInline{\weekdata}{weeks}{%
     \begin{tcolorbox}[titlebox,title=\planTitle
             {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
@@ -36,8 +37,8 @@
             \notasbox\vfill
             \badges{\JSONParseValue{\weekdata}{weeks[#1].Vinculacion}}{\arrayitemize{#1}{Libros}}
         \end{minipage}
-    \end{tcolorbox}
-    \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}%
+    \end{tcolorbox}%
+    \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}
 }
 \end{landscape}
 \end{document}

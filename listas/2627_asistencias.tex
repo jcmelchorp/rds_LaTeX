@@ -1,0 +1,557 @@
+\documentclass[landscape]{article}
+\usepackage[letterpaper,left=0.65in,right=0.65in,bottom=1in,top=1in]{geometry} % make room
+\usepackage{xparse,array}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames,table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{anyfontsize}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{xifthen}
+\usepackage[calc,es-ES,spanish]{datetime2}
+\usepackage[most]{tcolorbox}
+\usepackage{ragged2e}
+\usepackage{shadowtext}
+\usepackage{tikz}
+\usetikzlibrary {calendar,shapes.misc}
+\shadowoffset{0.4pt}
+\shadowcolor{black}
+\arrayrulecolor{rdsColor}
+\setlength{\arrayrulewidth}{0.1pt}
+\renewcommand{\arraystretch}{1.5}
+\def\cicloescolar{%
+        \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
+    }
+\definecolor{rdsColor}{HTML}{0060A0} % Custom colour\
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
+ \newcommand{\leveltitle}[1]{%
+  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+  \ifthenelse{\equal{#1}{1 de Secundaria}}{\color{sec1Color}\bfseries{\shadowtext{1° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{2 de Secundaria}}{\color{sec2Color}\bfseries{\shadowtext{2° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{3 de Secundaria}}{\color{sec3Color}\bfseries{\shadowtext{3° de Secundaria}}}{}%
+}
+
+% Define short month names for Spanish
+\newcommand{\DTMspanishshortMonthname}[1]{%
+  \ifcase#1
+  \or Ene.\or Feb.\or Mar.\or Abr.\or May.\or Jun.\or Jul.\or Ago.\or Sep.\or Oct.\or Nov.\or Dic.\fi
+}
+% Redefine the month name command to use the short version
+\renewcommand{\DTMspanishmonthname}[1]{%
+  \DTMspanishshortMonthname{#1}%
+}
+\DTMnewdatestyle{dashdate}{%
+\renewcommand{\DTMdisplaydate}[4]{%
+ \DTMtwodigits{##3} }%\DTMspanishmonthname{##2}}%\number##1 }%
+\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+\DTMsetdatestyle{dashdate}
+
+\def\LOGO{%
+    \begin{picture}(0,0)\unitlength=2cm
+        \put (0.2,-0.5) {\includegraphics[width=2cm]{logo45.png}}
+       % \put (0.045,-0.6) {\includegraphics[width=3cm]{logo.png}}
+    \end{picture}
+}
+\newcommand{\listaTitle}{%
+\begin{minipage}{0.11\textwidth}
+        \LOGO
+    \end{minipage}%
+    \begin{minipage}{0.6\textwidth}
+      \RaggedRight%
+        {\hspace{-5pt}\shadowtext{\color{rdsColor}\Huge Escuela Rafael Díaz Serdán}}\\[-0.2em]
+        {\color{gray!40!black}\sffamily 30PES0329R \hspace{15em} turno matutino}\\[0.5em]
+        {\color{green!20!black}\huge\sffamily Lista de asistencia \hspace{1em} \cicloescolar}\\
+    \end{minipage}%  
+}
+\tcbset{listabox/.style={
+  toptitle=20pt,bottomtitle=5pt,title={\listaTitle},enhanced,boxsep=0pt,halign=center,
+arc=2mm, colframe=rdsColor,boxrule=0.5pt,left=0mm,right=0mm,top=0mm,bottom=0mm,
+coltitle=rdsColor!20!black,colbacktitle=white,colback=white
+}}
+\pagestyle{empty}
+\ExplSyntaxOn
+\NewDocumentCommand{\studentlist}{m}
+{% #1 = file name
+  \studentlist:n { #1 }
+}
+% 
+\ior_new:N \studentlist_stream
+\seq_new:N \studentlist_seq
+\seq_new:N \studentlist_temp_seq
+\tl_new:N \studentlist_header
+\cs_new_protected:Nn \studentlist:n
+{
+  \seq_clear:N \studentlist_seq
+  \ior_open:Nn \studentlist_stream { #1 }
+  \int_zero:N \l_tmpa_int
+  % populate the sequence
+  \ior_map_inline:Nn \studentlist_stream
+  {
+    \int_incr:N \l_tmpa_int
+    \seq_put_right:Nx \studentlist_seq
+    {
+      \int_to_arabic:n { \l_tmpa_int } & \exp_not:n { ##1 } &
+    }
+  }
+  % build the header
+  \tl_set:Nn \studentlist_header_sep
+  {
+    \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+    \multicolumn{1}{|c|}{\cellcolor{Goldenrod!50}\fontsize{10}{8}\selectfont \bfseries A.}  & 
+    \multicolumn{22}{|c|}{\cellcolor{RoyalBlue!50}\fontsize{14}{12}\selectfont \bfseries Septiembre}  & 
+    \multicolumn{2}{|c|}{\cellcolor{ForestGreen!50}\fontsize{10}{8}\selectfont \bfseries Oct.} \\
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~1} &
+    \multicolumn{5}{|c|}{Semana~2} &
+    \multicolumn{5}{|c|}{Semana~3} &
+    \multicolumn{5}{|c|}{Semana~4} &
+    \multicolumn{5}{|c|}{Semana~5}
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+\rotatebox{0}{\DTMdate{2026-08-31}} &
+\rotatebox{0}{\DTMdate{2026-09-01}} &
+\rotatebox{0}{\DTMdate{2026-09-02}} &
+\rotatebox{0}{\DTMdate{2026-09-03}} &
+\rotatebox{0}{\DTMdate{2026-09-04}} &
+\rotatebox{0}{\DTMdate{2026-09-07}} &
+\rotatebox{0}{\DTMdate{2026-09-08}} &
+\rotatebox{0}{\DTMdate{2026-09-09}} &
+\rotatebox{0}{\DTMdate{2026-09-10}} &
+\rotatebox{0}{\DTMdate{2026-09-11}} &
+\rotatebox{0}{\DTMdate{2026-09-14}} &
+\rotatebox{0}{\DTMdate{2026-09-15}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2026-09-16}} &
+\rotatebox{0}{\DTMdate{2026-09-17}} &
+\rotatebox{0}{\DTMdate{2026-09-18}} &
+\rotatebox{0}{\DTMdate{2026-09-21}} &
+\rotatebox{0}{\DTMdate{2026-09-22}} &
+\rotatebox{0}{\DTMdate{2026-09-23}} &
+\rotatebox{0}{\DTMdate{2026-09-24}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2026-09-25}} &
+\rotatebox{0}{\DTMdate{2026-09-28}} &
+\rotatebox{0}{\DTMdate{2026-09-29}} &
+\rotatebox{0}{\DTMdate{2026-09-30}} &
+\rotatebox{0}{\DTMdate{2026-10-01}} &
+\rotatebox{0}{\DTMdate{2026-10-02}} 
+\\ \hline
+  }
+  \tl_set:Nn \studentlist_header_oct
+  {
+    \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &    \multicolumn{20}{c}{\cellcolor{ForestGreen!50}\fontsize{14}{12}\selectfont \bfseries Octubre} & 
+     \multicolumn{5}{|c|}{\cellcolor{Brown!50}\fontsize{12}{10}\selectfont \bfseries Noviembre} \\
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~6} &
+    \multicolumn{5}{|c|}{Semana~7} &
+    \multicolumn{5}{|c|}{Semana~8} &
+    \multicolumn{5}{|c|}{Semana~9} &
+    \multicolumn{5}{|c|}{Semana~10}
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+   \rotatebox{0}{\DTMdate{2026-10-05}} &
+\rotatebox{0}{\DTMdate{2026-10-06}} &
+\rotatebox{0}{\DTMdate{2026-10-07}} &
+\rotatebox{0}{\DTMdate{2026-10-08}} &
+\rotatebox{0}{\DTMdate{2026-10-09}} &
+\rotatebox{0}{\DTMdate{2026-10-12}} &
+\rotatebox{0}{\DTMdate{2026-10-13}} &
+\rotatebox{0}{\DTMdate{2026-10-14}} &
+\rotatebox{0}{\DTMdate{2026-10-15}} &
+\rotatebox{0}{\DTMdate{2026-10-16}} &
+\rotatebox{0}{\DTMdate{2026-10-19}} &
+\rotatebox{0}{\DTMdate{2026-10-20}} &
+\rotatebox{0}{\DTMdate{2026-10-21}} &
+\rotatebox{0}{\DTMdate{2026-10-22}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2026-10-23}} &
+\rotatebox{0}{\DTMdate{2026-10-26}} &
+\rotatebox{0}{\DTMdate{2026-10-27}} &
+\rotatebox{0}{\DTMdate{2026-10-28}} &
+\rotatebox{0}{\DTMdate{2026-10-29}} &
+\rotatebox{0}{\DTMdate{2026-10-30}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2026-11-02}} &
+\rotatebox{0}{\DTMdate{2026-11-03}} &
+\rotatebox{0}{\DTMdate{2026-11-04}} &
+\rotatebox{0}{\DTMdate{2026-11-05}} &
+\rotatebox{0}{\DTMdate{2026-11-06}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_nov
+  {
+    \multicolumn{2}{r|}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &    \multicolumn{16}{c}{\cellcolor{Brown!50}\fontsize{16}{18}\selectfont \bfseries Noviembre} &
+     \multicolumn{9}{c}{\cellcolor{Goldenrod!50}\fontsize{16}{18}\selectfont \bfseries Diciembre} \\
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~11} &
+    \multicolumn{5}{|c|}{Semana~12} &
+    \multicolumn{5}{|c|}{Semana~13} &
+    \multicolumn{5}{|c|}{Semana~14} &
+    \multicolumn{5}{|c|}{Semana~15}
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+   \rotatebox{0}{\DTMdate{2026-11-09}} &
+\rotatebox{0}{\DTMdate{2026-11-10}} &
+\rotatebox{0}{\DTMdate{2026-11-11}} &
+\rotatebox{0}{\DTMdate{2026-11-12}} &
+\rotatebox{0}{\DTMdate{2026-11-13}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2026-11-16}} &
+\rotatebox{0}{\DTMdate{2026-11-17}} &
+\rotatebox{0}{\DTMdate{2026-11-18}} &
+\rotatebox{0}{\DTMdate{2026-11-19}} &
+\rotatebox{0}{\DTMdate{2026-11-20}} &
+\rotatebox{0}{\DTMdate{2026-11-23}} &
+\rotatebox{0}{\DTMdate{2026-11-24}} &
+\rotatebox{0}{\DTMdate{2026-11-25}} &
+\rotatebox{0}{\DTMdate{2026-11-26}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2026-11-27}} &
+\rotatebox{0}{\DTMdate{2026-11-30}} &
+\rotatebox{0}{\DTMdate{2026-12-01}} &
+\rotatebox{0}{\DTMdate{2026-12-02}} &
+\rotatebox{0}{\DTMdate{2026-12-03}} &
+\rotatebox{0}{\DTMdate{2026-12-04}} &
+\rotatebox{0}{\DTMdate{2026-12-07}} &
+\rotatebox{0}{\DTMdate{2026-12-08}} &
+\rotatebox{0}{\DTMdate{2026-12-09}} &
+\rotatebox{0}{\DTMdate{2026-12-10}} &
+\rotatebox{0}{\DTMdate{2026-12-11}} 
+    \\ \hline
+  }
+
+  \tl_set:Nn \studentlist_header_ene
+  {
+     \multicolumn{2}{r|}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+    \multicolumn{5}{c}{\cellcolor{Goldenrod!50}\fontsize{12}{10}\selectfont \bfseries Diciembre} & 
+     \multicolumn{20}{c}{\cellcolor{NavyBlue!50}\fontsize{12}{10}\selectfont \bfseries Enero} \\
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~16} &
+    \multicolumn{5}{|c|}{Semana~17} &
+    \multicolumn{5}{|c|}{Semana~18} &
+    \multicolumn{5}{|c|}{Semana~19} &
+    \multicolumn{5}{|c|}{Semana~20} 
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+    \rotatebox{0}{\DTMdate{2026-12-14}} &
+\rotatebox{0}{\DTMdate{2026-12-15}} &
+\rotatebox{0}{\DTMdate{2026-12-16}} &
+\rotatebox{0}{\DTMdate{2026-12-17}} &
+\rotatebox{0}{\DTMdate{2026-12-18}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-01-04}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-01-05}} &
+\rotatebox{0}{\DTMdate{2027-01-06}} &
+\rotatebox{0}{\DTMdate{2027-01-07}} &
+\rotatebox{0}{\DTMdate{2027-01-08}} &
+\rotatebox{0}{\DTMdate{2027-01-11}} &
+\rotatebox{0}{\DTMdate{2027-01-12}} &
+\rotatebox{0}{\DTMdate{2027-01-13}} &
+\rotatebox{0}{\DTMdate{2027-01-14}} &
+\rotatebox{0}{\DTMdate{2027-01-15}} &
+\rotatebox{0}{\DTMdate{2027-01-18}} &
+\rotatebox{0}{\DTMdate{2027-01-19}} &
+\rotatebox{0}{\DTMdate{2027-01-20}} &
+\rotatebox{0}{\DTMdate{2027-01-21}} &
+\rotatebox{0}{\DTMdate{2027-01-22}} &
+\rotatebox{0}{\DTMdate{2027-01-25}} &
+\rotatebox{0}{\DTMdate{2027-01-26}} &
+\rotatebox{0}{\DTMdate{2027-01-27}} &
+\rotatebox{0}{\DTMdate{2027-01-28}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-01-29}} 
+    \\ \hline
+  }
+
+  \tl_set:Nn \studentlist_header_feb
+  {
+    
+    \multicolumn{2}{r|}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+        \multicolumn{20}{c}{\cellcolor{Orange!50}\fontsize{12}{10}\selectfont \bfseries Febrero} & 
+     \multicolumn{5}{c}{\cellcolor{Periwinkle!50}\fontsize{12}{10}\selectfont \bfseries Marzo}\\
+         &
+    &
+    \multicolumn{5}{|c|}{Semana~21} &
+    \multicolumn{5}{|c|}{Semana~22} &
+    \multicolumn{5}{|c|}{Semana~23} &
+    \multicolumn{5}{|c|}{Semana~24} &
+    \multicolumn{5}{|c|}{Semana~25} 
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+   
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-02-01}} &
+\rotatebox{0}{\DTMdate{2027-02-02}} &
+\rotatebox{0}{\DTMdate{2027-02-03}} &
+\rotatebox{0}{\DTMdate{2027-02-04}} &
+\rotatebox{0}{\DTMdate{2027-02-05}} &
+\rotatebox{0}{\DTMdate{2027-02-08}} &
+\rotatebox{0}{\DTMdate{2027-02-09}} &
+\rotatebox{0}{\DTMdate{2027-02-10}} &
+\rotatebox{0}{\DTMdate{2027-02-11}} &
+\rotatebox{0}{\DTMdate{2027-02-12}} &
+\rotatebox{0}{\DTMdate{2027-02-15}} &
+\rotatebox{0}{\DTMdate{2027-02-16}} &
+\rotatebox{0}{\DTMdate{2027-02-17}} &
+\rotatebox{0}{\DTMdate{2027-02-18}} &
+\rotatebox{0}{\DTMdate{2027-02-19}} &
+\rotatebox{0}{\DTMdate{2027-02-22}} &
+\rotatebox{0}{\DTMdate{2027-02-23}} &
+\rotatebox{0}{\DTMdate{2027-02-24}} &
+\rotatebox{0}{\DTMdate{2027-02-25}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-02-26}} &
+\rotatebox{0}{\DTMdate{2027-03-01}} &
+\rotatebox{0}{\DTMdate{2027-03-02}} &
+\rotatebox{0}{\DTMdate{2027-03-03}} &
+\rotatebox{0}{\DTMdate{2027-03-04}} &
+\rotatebox{0}{\DTMdate{2027-03-05}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_mar
+  {
+      \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+    \multicolumn{10}{c}{\cellcolor{Periwinkle!50}\fontsize{14}{12}\selectfont \bfseries Marzo} & 
+    \multicolumn{15}{c}{\cellcolor{SkyBlue!50}\fontsize{14}{12}\selectfont \bfseries Abril} \\
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~26} &
+    \multicolumn{5}{|c|}{Semana~27} &
+    \multicolumn{5}{|c|}{Semana~28} &
+    \multicolumn{5}{|c|}{Semana~29} &
+    \multicolumn{5}{|c|}{Semana~30}
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+  
+\rotatebox{0}{\DTMdate{2027-03-08}} &
+\rotatebox{0}{\DTMdate{2027-03-09}} &
+\rotatebox{0}{\DTMdate{2027-03-10}} &
+\rotatebox{0}{\DTMdate{2027-03-11}} &
+\rotatebox{0}{\DTMdate{2027-03-12}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-03-15}} &
+\rotatebox{0}{\DTMdate{2027-03-16}} &
+\rotatebox{0}{\DTMdate{2027-03-17}} &
+\rotatebox{0}{\DTMdate{2027-03-18}} &
+\rotatebox{0}{\DTMdate{2027-03-19}} &
+\rotatebox{0}{\DTMdate{2027-04-05}} &
+\rotatebox{0}{\DTMdate{2027-04-06}} &
+\rotatebox{0}{\DTMdate{2027-04-07}} &
+\rotatebox{0}{\DTMdate{2027-04-08}} &
+\rotatebox{0}{\DTMdate{2027-04-09}} &
+\rotatebox{0}{\DTMdate{2027-04-12}} &
+\rotatebox{0}{\DTMdate{2027-04-13}} &
+\rotatebox{0}{\DTMdate{2027-04-14}} &
+\rotatebox{0}{\DTMdate{2027-04-15}} &
+\rotatebox{0}{\DTMdate{2027-04-16}} &
+\rotatebox{0}{\DTMdate{2027-04-19}} &
+\rotatebox{0}{\DTMdate{2027-04-20}} &
+\rotatebox{0}{\DTMdate{2027-04-21}} &
+\rotatebox{0}{\DTMdate{2027-04-22}} &
+\rotatebox{0}{\DTMdate{2027-04-23}}
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_may
+  {
+    \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+    \multicolumn{5}{c}{\cellcolor{SkyBlue!50}\fontsize{14}{12}\selectfont \bfseries Abril} &
+    \multicolumn{20}{c}{\cellcolor{Maroon!50}\fontsize{14}{12}\selectfont \bfseries Mayo}   \\
+     %\cline{3-27}
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~31} &
+    \multicolumn{5}{|c|}{Semana~32} &
+    \multicolumn{5}{|c|}{Semana~33} &
+    \multicolumn{5}{|c|}{Semana~34} &
+    \multicolumn{5}{|c|}{Semana~35}
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+\rotatebox{0}{\DTMdate{2027-04-26}} &
+\rotatebox{0}{\DTMdate{2027-04-27}} &
+\rotatebox{0}{\DTMdate{2027-04-28}} &
+\rotatebox{0}{\DTMdate{2027-04-29}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-04-30}} &
+\rotatebox{0}{\DTMdate{2027-05-03}} &
+\rotatebox{0}{\DTMdate{2027-05-04}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-05-05}} &
+\rotatebox{0}{\DTMdate{2027-05-06}} &
+\rotatebox{0}{\DTMdate{2027-05-07}} &
+\rotatebox{0}{\DTMdate{2027-05-10}} &
+\rotatebox{0}{\DTMdate{2027-05-11}} &
+\rotatebox{0}{\DTMdate{2027-05-12}} &
+\rotatebox{0}{\DTMdate{2027-05-13}} &
+\rotatebox{0}{\DTMdate{2027-05-14}} &
+\rotatebox{0}{\DTMdate{2027-05-17}} &
+\rotatebox{0}{\DTMdate{2027-05-18}} &
+\rotatebox{0}{\DTMdate{2027-05-19}} &
+\rotatebox{0}{\DTMdate{2027-05-20}} &
+\rotatebox{0}{\DTMdate{2027-05-21}} &
+\rotatebox{0}{\DTMdate{2027-05-24}} &
+\rotatebox{0}{\DTMdate{2027-05-25}} &
+\rotatebox{0}{\DTMdate{2027-05-26}} &
+\rotatebox{0}{\DTMdate{2027-05-27}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-05-28}}
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_jun
+  {
+        \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+    \multicolumn{1}{c}{\cellcolor{Maroon!50}\fontsize{10}{8}\selectfont \bfseries M} &
+        \multicolumn{22}{c}{\cellcolor{LimeGreen!50}\fontsize{14}{12}\selectfont \bfseries Junio} & 
+    \multicolumn{2}{c}{\cellcolor{Melon!50}\fontsize{12}{10}\selectfont \bfseries Julio}  \\
+     %\cline{3-27}
+    &
+    &
+    \multicolumn{5}{|c|}{Semana~36} &
+    \multicolumn{5}{|c|}{Semana~37} &
+    \multicolumn{5}{|c|}{Semana~38} &
+    \multicolumn{5}{|c|}{Semana~39} &
+    \multicolumn{5}{|c|}{Semana~40}
+    \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} &
+ 
+\rotatebox{0}{\DTMdate{2027-05-31}} &
+\rotatebox{0}{\DTMdate{2027-06-01}} &
+\rotatebox{0}{\DTMdate{2027-06-02}} &
+\rotatebox{0}{\DTMdate{2027-06-03}} &
+\rotatebox{0}{\DTMdate{2027-06-04}} &
+\rotatebox{0}{\DTMdate{2027-06-07}} &
+\rotatebox{0}{\DTMdate{2027-06-08}} &
+\rotatebox{0}{\DTMdate{2027-06-09}} &
+\rotatebox{0}{\DTMdate{2027-06-10}} &
+\rotatebox{0}{\DTMdate{2027-06-11}} &
+\rotatebox{0}{\DTMdate{2027-06-14}} &
+\rotatebox{0}{\DTMdate{2027-06-15}} &
+\rotatebox{0}{\DTMdate{2027-06-16}} &
+\rotatebox{0}{\DTMdate{2027-06-17}} &
+\rotatebox{0}{\DTMdate{2027-06-18}} &
+\rotatebox{0}{\DTMdate{2027-06-21}} &
+\rotatebox{0}{\DTMdate{2027-06-22}} &
+\rotatebox{0}{\DTMdate{2027-06-23}} &
+\rotatebox{0}{\DTMdate{2027-06-24}} &
+\rotatebox{0}{{\cellcolor{Red!50}}\DTMdate{2027-06-25}} &
+\rotatebox{0}{\DTMdate{2027-06-28}} &
+\rotatebox{0}{\DTMdate{2027-06-29}} &
+\rotatebox{0}{\DTMdate{2027-06-30}} &
+\rotatebox{0}{\DTMdate{2027-07-01}} &
+\rotatebox{0}{\DTMdate{2027-07-02}} 
+    \\ \hline
+  }
+  % check the number
+  \int_compare:nT { \seq_count:N \studentlist_seq > 25 }
+  {
+    \__studentlist_halve:
+  }
+  % make the table
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_sep
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_oct
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_nov
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_ene
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_feb
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+    \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_mar
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_may
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+  \newpage
+  \par\noindent
+\begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_jun
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+
+}
+
+\cs_new_protected:Nn \__studentlist_halve:
+{
+  % make it even
+  \int_if_odd:nT { \seq_count:N \studentlist_seq }
+  {
+    \seq_put_right:Nn \studentlist_seq { \multicolumn{25}{c}{} }
+  }
+  % split in half
+  \seq_clear:N \studentlist_temp_seq
+  \int_step_inline:nn { \seq_count:N \studentlist_seq / 2 }
+  {
+    \seq_put_right:Nx \studentlist_temp_seq
+    {
+      \seq_item:Nn \studentlist_seq { ##1 } &
+      \seq_item:Nn \studentlist_seq { ##1 + \seq_count:N
+        \studentlist_seq / 2 }
+    }
+  }
+  % replace the sequence
+  \seq_set_eq:NN \studentlist_seq \studentlist_temp_seq
+  % double the header
+  \tl_put_right:Nx \studentlist_header
+  {
+    & \exp_not:V \studentlist_header
+  }
+}
+
+\cs_new_protected:Nn \__studentlist_row:n
+{
+  #1 & & & & & & & & & & & & & & & & & & & & & & & & \\ \hline
+}
+
+\ExplSyntaxOff
+\begin{document}
+\studentlist{1 de Secundaria}
+\newpage
+\studentlist{2 de Secundaria}
+\newpage
+\studentlist{3 de Secundaria}
+\end{document}

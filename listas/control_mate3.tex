@@ -1,0 +1,191 @@
+\documentclass[landscape]{article}
+\usepackage[letterpaper,left=0.5in,right=0.5in,bottom=0.5in,top=0.5in]{geometry} % make room
+\usepackage{xparse,array}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames,table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{anyfontsize}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\pagestyle{empty}
+\ExplSyntaxOn
+\NewDocumentCommand{\studentlist}{m}
+{% #1 = file name
+  \studentlist:n { #1 }
+}
+
+\ior_new:N \studentlist_stream
+\seq_new:N \studentlist_seq
+\seq_new:N \studentlist_temp_seq
+\tl_new:N \studentlist_header
+\renewcommand{\arraystretch}{1}
+\cs_new_protected:Nn \studentlist:n
+{
+  \seq_clear:N \studentlist_seq
+  \ior_open:Nn \studentlist_stream { #1 }
+  \int_zero:N \l_tmpa_int
+  % populate the sequence
+  \ior_map_inline:Nn \studentlist_stream
+  {
+    \int_incr:N \l_tmpa_int
+    \seq_put_right:Nx \studentlist_seq
+    {
+      \int_to_arabic:n { \l_tmpa_int } & \exp_not:n {\fontsize{10}{8}\selectfont ##1 } &
+    }
+  }
+  % build the header
+  \tl_set:Nn \studentlist_header_uuno
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Suma~de~números}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Resta~de~números}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Multiplicación~de~números}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~División~de~números}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Resolución~de~problemas}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Término~común}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Diferencia~de~cuadrados}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Trinomio~cuadrado~perfecto}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Trinomios~de~la~forma~$x^2+bx+c$}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Trinomios~de~la~forma~$ax^2+bx+c$}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Suma~de~exponentes}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Resta~de~exponentes}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Multiplicación~de~exponentes}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~División~de~exponentes}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Exponentes~negativos}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Ubicación~en~la~recta~numérica}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Comparación~de~negativos}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Suma~y~resta~con~negativos}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Multiplicación~y~división~con~negativos}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Jerarquía~de~operaciones}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Completando~la~sucesión}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Diferencia~de~una~sucesión}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Término~general}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Término~enésimo}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Suma~de~una~sucesión~aritmética}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_udos
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Mediana~y~moda}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Promedio}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Desviación~media}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Eventos~mutuamente~excluyentes}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Eventos~dependientes~e~independientes}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Perímetro}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Área}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Área~lateral~y~total}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Volumen}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Resolución~de~problemas}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Ubicación~en~el~plano~cartesiano}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Cuadrantes~en~el~plano~cartesiano}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Pendiente~y~ordenada}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Pendiente~dados~dos~puntos}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Ecuación~de~una~recta}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Lenguaje~algebraico}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Ecuaciones~lineales~1}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Ecuaciones~lineales~2}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Ecuaciones~lineales~con~fracciones}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Resolución~de~problemas}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Método~de~eliminación}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Método~de~sustitución~e~igualación}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Sistema~de~ecuaciones~3x3}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Sistema~de~ecuaciones~con~fracciones}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Resolución~de~problemas}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_utres
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Sucesión~cuadrática}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Completando~la~sucesión~cuadrática}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Término~general}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Sucesión~geométrica}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Razón~de~una~sucesión~geométrica}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Binomios~conjugados}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Binomios~con~término~común}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Binomio~al~cuadrado}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Binomios~de~la~forma~$(mx+a)(nx+b)$}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Binomio~al~cubo}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Clasificación~de~ecuaciones~cuadráticas}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Discriminante}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Ecuaciones~cuadráticas~incompletas}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Ecuaciones~cuadráticas~completas~1}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Ecuaciones~cuadráticas~completas~2}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Identificación~de~lados}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Hallando~la~hipotenusa}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Hallando~el~cateto}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Áreas~y~perímetros}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Resolución~de~problemas}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{1.~Identificando~lados}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{2.~Identificando~funciones}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{3.~Encontrando~lados}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{4.~Encontrando~ángulos}} &
+    \multicolumn{1}{w{l}{0.7em}}{\rotatebox{90}{5.~Resolución~de~problemas}} 
+    \\ \hline
+  }
+  % check the number
+  \int_compare:nT { \seq_count:N \studentlist_seq > 25 }
+  {
+    \__studentlist_halve:
+  }
+  % make the table
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.7em}|}}
+    \tl_use:N \studentlist_header_uuno
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.7em}|}}
+    \tl_use:N \studentlist_header_udos
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.7em}|}}
+    \tl_use:N \studentlist_header_utres
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+}
+
+\cs_new_protected:Nn \__studentlist_halve:
+{
+  % make it even
+  \int_if_odd:nT { \seq_count:N \studentlist_seq }
+  {
+    \seq_put_right:Nn \studentlist_seq { \multicolumn{25}{|c|}{} }
+  }
+  % split in half
+  \seq_clear:N \studentlist_temp_seq
+  \int_step_inline:nn { \seq_count:N \studentlist_seq / 2 }
+  {
+    \seq_put_right:Nx \studentlist_temp_seq
+    {
+      \seq_item:Nn \studentlist_seq { ##1 } &
+      \seq_item:Nn \studentlist_seq { ##1 + \seq_count:N
+        \studentlist_seq / 2 }
+    }
+  }
+  % replace the sequence
+  \seq_set_eq:NN \studentlist_seq \studentlist_temp_seq
+  % double the header
+  \tl_put_right:Nx \studentlist_header
+  {
+    & \exp_not:V \studentlist_header
+  }
+}
+
+\cs_new_protected:Nn \__studentlist_row:n
+{
+  #1 & & & & & & & & & & & & & & & & & & & & & & & & \\ \hline
+}
+
+\ExplSyntaxOff
+\begin{document}
+\renewcommand{\arraystretch}{1.2}
+\studentlist{3° de Secundaria}
+\end{document}

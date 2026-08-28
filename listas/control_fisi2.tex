@@ -1,0 +1,342 @@
+\documentclass[landscape]{article}
+\usepackage[left=0.5in,right=0.5in,bottom=0.5in,top=0.5in,width=8.5in, height=14in]{geometry}
+\usepackage{xparse,array}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames,table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{anyfontsize}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\pagestyle{empty}
+\ExplSyntaxOn
+\NewDocumentCommand{\studentlist}{m}
+{% #1 = file name
+  \studentlist:n { #1 }
+}
+
+\ior_new:N \studentlist_stream
+\seq_new:N \studentlist_seq
+\seq_new:N \studentlist_temp_seq
+\tl_new:N \studentlist_header
+\renewcommand{\arraystretch}{1}
+\cs_new_protected:Nn \studentlist:n
+{
+  \seq_clear:N \studentlist_seq
+  \ior_open:Nn \studentlist_stream { #1 }
+  \int_zero:N \l_tmpa_int
+  % populate the sequence
+  \ior_map_inline:Nn \studentlist_stream
+  {
+    \int_incr:N \l_tmpa_int
+    \seq_put_right:Nx \studentlist_seq
+    {
+      \int_to_arabic:n { \l_tmpa_int } & \exp_not:n {\fontsize{10}{8}\selectfont ##1 } &
+    }
+  }
+  % build the header
+  \tl_set:Nn \studentlist_header_unoA
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{Me preparo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{1.	Conocimiento empírico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.1.	Conocimiento empírico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.2.	Tipos de conocimientos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.3.	Otras formas de conocimiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{2.	El conocimiento científico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.4.	¿Qué es la ciencia?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.5.	Método científico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F1.	Siete razones para dedicarse a la ciencia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{3.	Física y sociedad}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.6.	¿Qué es la Física?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.7.	División de la Física}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F2.	Ciencia para todos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Tecnologia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{4.	Mediciones}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.8.	Mediciones}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Tiempo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{5.	Unidades fundamentales y derivadas de medida}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.9.	Unidades fundamentales}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{6.	Múltiplos y submúltiplos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.10.	Múltiplos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{7.	Instrumentos de medición}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.11.	Es momento de medir}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F3.	Contaminantes del aire}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_unoB
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{8.	Materiales y sus propiedades}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.12.	Propiedades de la materia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.13.	¿Qué es la materia?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F4.	Litio, el oro blanco del siglo XXI}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F5.	La isla de plástico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Densidad}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{9.	Origen de las teorías sobre la estructura de la materia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.14.	Un modelo para la materia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{10.	La teoría atómica}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.15.	Construyendo un modelo para el átomo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.16.	¿Thomson, Rutherford o Bohr?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.17.	La estructura interna de la materia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F6.	Invierno nuclear}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{11.	Estados de agregación de la materia y modelo cinético}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.18.	¿Cómo se organiza la materia?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.19.	Las facetas de la materia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.20.	La materia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{12.	Temperatura y equilibrio térmico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.21.	Conversaciones entre escalas de temperatura}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.22.	¿Cómo se mide la temperatura?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Temperatura}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{¿Qué aprendí?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{Examen de Unidad 1}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{Calificaciones de la Unidad 1}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_dosA
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{Me preparo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{1.	Movimiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.1.	¿Trayectoria o desplazamiento?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.2.	Cambios en el movimiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.3.	¡Qué onda!}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.4.	¿Cómo se mueven las ondas?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F7.	A ruidos necios, oídos sordos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Desplazamiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{2.	Velocidad y rapidez}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.5.	¿Quién fue el más rápido?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.6.	Explicaciones gráficas de velocidad}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.7.	¿Cómo se describe el movimiento?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.8.	¿Cómo se ven la velocidad y el reposo?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.9.	Propagación de ondas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F8.	Alternativas del transporte urbano}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Reposo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{3.	Movimiento acelerado}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.10.	¿Cuándo es rapidez y cuándo es velocidad?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.11.	¿Cómo cambia su rapidez?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.12.	¿Es aceleración o es velocidad?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.13.	¿Se mueve o está quieto?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Aceleracion}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{4.	Fuerzas e interacciones}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.14.	Contacto y distancia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.15.	La medición de la fuerza}} 
+        \\ \hline
+  }
+    \tl_set:Nn \studentlist_header_dosB
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.16.	¿Cómo se representan las fuerzas?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Fuerza}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{5.	Suma de fuerzas y equilibrio}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.17.	¿Cómo se suman las fuerzas?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{6.	Fuerza de fricción}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.18.	Fricción en el movimiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F9.	La cuarta revolución industrial}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{7.	Máquinas simples: palanca y rueda}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.19.	¿Qué máquinas son?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{8.	Otras máquinas simples}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.20.	Máquinas ¿simples o compuestas?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.21.	Las ventajas de utilizar una polea}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Masa Fuerza}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{9.	Leyes de Newton}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.22.	La medida de la inercia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.23.	Masa e inercia en el movimiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.24.	Relación entre fuerza y aceleración}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.25.	Acción y reacción}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.26.	Tres ideas fundamentales sobre las fuerzas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F10.	¡Abróchense los cinturones!}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Movimiento Cuerpos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{10.	Ley de la Gravitación Universal}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.27.	Importancia de las aportaciones de Newton}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.28.	¡A hombros de gigantes!}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.29.	El peso en el Universo}} 
+        \\ \hline
+  }
+    \tl_set:Nn \studentlist_header_dosC
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{11.	Principio de Pascal}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.30.	El barril de Pascal}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F11.	La prensa hidráulica}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Pascal}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{12.	Principio de Arquímedes}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.31.	Es momento de flotar}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.32.	¿Cómo se representa la fuerza de flotación?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Presion}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{13.	Energía Mecánica}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.33.	¡Ponle energía!}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.34.	¿Cómo se conserva la energía mecánica?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Energia Mecanica}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{14.	Calor como transferencia de energía.}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.35.	Mecanismos de transferencia de calor}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.36.	Energía térmica}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{15.	Máquinas térmicas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.37.	¿Cómo funcionan las máquinas térmicas?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.38.	Eficiencia ideal}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.39.	Transformación de energía calorífica}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F12.	Fuentes de energía y su impacto ambiental}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Maquina Vapor}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{16.	Energías renovables}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.40.	Energía eléctrica y fuentes de energía}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F13.	Biomímesis}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Eolico}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{17.	Energía solar}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.41.	Aprovechamiento de la energía y consumo sustentable}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.42.	Aprovechemos la energía solar}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F14.	¿Por qué usar un calentador solar?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Energia}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{¿Qué aprendí?}} 
+        \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_tresA
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{Me preparo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{1.	Electricidad}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.1.	Cargas en movimiento}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F15.	Energía eléctrica y medio ambiente}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Electrostaticos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{2.	Electricidad, cuidados y precauciones }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.2.	Cuidados con el uso de la electricidad}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F16.	¡Cuidado con la electricidad!}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Conductores}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{3.	Electricidad y magnetismo }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.3.	¿Qué sabes sobre el magnetismo?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.4.	Relación entre electricidad y magnetismo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Induccion}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{4.	Luz visible }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.5.	¡Qué onda con la luz!}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F17.	Luces deslumbrantes}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Descomposicion}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{5.	Ondas electromagnéticas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.6.	Características del espectro electromagnético}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.7.	Los efectos de la radiación electromagnética}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F18.	Me mantengo alerta}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Ondas Electromagneticas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{6.	El Universo }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.8.	Las galaxias}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.9.	Grupos de galaxias}} 
+    \\ \hline
+  }
+  \tl_set:Nn \studentlist_header_tresB
+  {
+    \# & \multicolumn{1}{w{l}{16em}}{\textbf{Nombre~del~alumno}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{7.	Origen y evolución del Universo }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.10.	Expansión del universo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.11.	Mecanismos de las estrellas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.12.	Los cuerpos cósmicos}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.13.	Evolución del Universo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Universo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{8.	Descubrimiento del Universo}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.14.	El Universo a simple vista}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.15.	El telescopio y paralaje}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.16.	Exploración de cuerpos celestes por medio de ondas electromagnéticas}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{9.	Sistema Solar }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.17.	El Sol}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.18.	Estructura del Sol}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.19.	El Sistema Solar}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Telescopio}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{10.	Efecto invernadero, causas y consecuencias }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.20.	El efecto invernadero}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{11.	Gases de efecto invernadero }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.21.	Gases naturales}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{12.	Aumento de la temperatura del planeta }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.22.	Cambio Climático}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F19.	¿Calentamiento global o cambio climático?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{13.	Cuidado del ambiente }} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{AI.23.	¿Soy sustentable?}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{F20.	Los guardianes del clima}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{P.	Ambiente}} &
+    \multicolumn{1}{w{l}{0.5em}}{\rotatebox{60}{¿Qué aprendí?}} 
+    \\ \hline
+  }
+  % check the number
+  \int_compare:nT { \seq_count:N \studentlist_seq > 25 }
+  {
+    \__studentlist_halve:
+  }
+  % make the table
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_unoA
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_unoB
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_dosA
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+    \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_dosB
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+    \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{31}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_dosC
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{25}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_tresA
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+  \newpage
+  \par\noindent
+  \begin{tabular}{rw{l}{16em}|*{27}{w{l}{0.5em}|}}
+    \tl_use:N \studentlist_header_tresB
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n
+  \end{tabular}
+}
+
+\cs_new_protected:Nn \__studentlist_halve:
+{
+  % make it even
+  \int_if_odd:nT { \seq_count:N \studentlist_seq }
+  {
+    \seq_put_right:Nn \studentlist_seq { \multicolumn{25}{|c|}{} }
+  }
+  % split in half
+  \seq_clear:N \studentlist_temp_seq
+  \int_step_inline:nn { \seq_count:N \studentlist_seq / 2 }
+  {
+    \seq_put_right:Nx \studentlist_temp_seq
+    {
+      \seq_item:Nn \studentlist_seq { ##1 } &
+      \seq_item:Nn \studentlist_seq { ##1 + \seq_count:N
+        \studentlist_seq / 2 }
+    }
+  }
+  % replace the sequence
+  \seq_set_eq:NN \studentlist_seq \studentlist_temp_seq
+  % double the header
+  \tl_put_right:Nx \studentlist_header
+  {
+    & \exp_not:V \studentlist_header
+  }
+}
+
+\cs_new_protected:Nn \__studentlist_row:n
+{
+  #1 & & & & & & & & & & & & & & & & & & & & & & & & \\ \hline
+}
+
+\ExplSyntaxOff
+\begin{document}
+\renewcommand{\arraystretch}{1.2}
+\studentlist{2° de Secundaria}
+\end{document}

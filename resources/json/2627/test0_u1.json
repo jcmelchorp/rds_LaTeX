@@ -119,67 +119,6 @@
       ],
       "Libros": ["MeXmáticas", "Apuntes de clase"],
       "ActPro": ["1", "2"]
-    },
-    {
-      "PeriodosLectivos": 5,
-      "FechaDeInicio": "2025-09-08",
-      "FechaDeCierre": "2025-09-12",
-      "SemanaEscolar": 2,
-      "Contenido": "Clasificación y representación de fracciones. Nombres de fracciones y su representación en la recta numérica.",
-      "Aprendizaje": "El alumno identificará y clasificará diferentes tipos de fracciones (propias, impropias y mixtas) y las representará de manera gráfica. El alumno nombrará fracciones y las ubicará correctamente en la recta numérica.",
-      "Tema": "Fracciones.",
-      "Leccion": "Clasificación y representación. Nombres y ubicación en la recta numérica.",
-      "Inicio": "La clase comenzará con una actividad de exploración en la que se presentarán ejemplos de fracciones en objetos cotidianos, como rebanadas de pizza o piezas de chocolate. Se les preguntará a los estudiantes si saben cómo expresar estas partes como fracciones y qué significan. Esta introducción ayudará a que los alumnos comprendan la importancia de las fracciones y se familiaricen con el concepto de una parte de un todo. Se comenzará la clase con una lluvia de ideas sobre lo que los estudiantes saben acerca de las fracciones. Se hará una breve explicación del concepto de fracción, su historia y aplicaciones en la vida cotidiana. Se preguntará a los estudiantes si pueden dar ejemplos de fracciones que utilizan en su vida diaria para activar conocimientos previos.",
-      "Desarrollo": "Se explicará la clasificación de fracciones en propias, impropias y mixtas, utilizando representaciones visuales como diagramas y gráficos. Los estudiantes participarán en una actividad práctica donde deberán clasificar diferentes fracciones y representarlas en la pizarra. Además, se explicará cómo simplificar fracciones y convertir fracciones impropias en mixtas. Se entregarán ejercicios para que practiquen la clasificación y representación de fracciones, y se fomentará la discusión en grupo sobre las diferencias y similitudes entre los tipos de fracciones. El docente explicará la clasificación de fracciones en propias, impropias y mixtas, utilizando ejemplos visuales y manipulativos como círculos y rectángulos divididos en partes iguales. Los estudiantes participarán activamente al clasificar ejemplos proporcionados por el profesor y al representar fracciones gráficamente en sus cuadernos. Se fomentará la discusión en grupo para analizar la diferencia entre los tipos de fracciones y cómo representarlas en una gráfica.",
-      "Cierre": "Para cerrar, los estudiantes realizarán una actividad en parejas donde deberán crear un póster con ejemplos de fracciones propias, impropias y mixtas, y explicarán a la clase cómo identificarlas. Se hará una reflexión grupal sobre la utilidad de clasificar fracciones y cómo estas clasificaciones facilitan la resolución de problemas. Se asignará una tarea que incluya ejercicios de clasificación y representación para reforzar el aprendizaje. Se realizará un breve repaso de lo aprendido y se dará a los estudiantes un pequeño ejercicio para resolver en equipo sobre la clasificación de fracciones y su representación gráfica. Se hará una retroalimentación grupal, resaltando los errores comunes y las estrategias correctas. Se asignará una tarea de refuerzo para casa donde los estudiantes practiquen la clasificación y representación de nuevas fracciones.",
-      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
-      "EvaluacionFormativa": [
-        "Evaluación mediante ejercicios de clasificación y representación, participación en discusiones grupales, y un póster de fracciones como proyecto."
-      ],
-      "Evidencias": [],
-      "Actividades": ["6", "7", "8", "9", "10"],
-      "Proyectos": [],
-      "LibroSep": "MeXmáticas",
-      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
-      "Vinculacion": "\\textbf{Biología: }  Convierte los resultados de cruzas genéticas mendelianas  a fracciones y las compara con otras probabilidades genéticas para determinar qué rasgo es más probable que aparezca.",
-      "Worklist": [
-        "A.6.  Clasificación de fracciones",
-        "A.7.  Representación de fracciones",
-        "A.8.  Nombre de fracciones",
-        "A.9.  Fracciones en la recta numérica",
-        "A.10. Conversión de fracciones"
-      ],
-      "Libros": ["MeXmáticas", "Apuntes de clase"],
-      "ActPro": ["6", "7", "8", "9", "10"]
-    },
-    {
-      "PeriodosLectivos": 3,
-      "FechaDeInicio": "2025-09-15",
-      "FechaDeCierre": "2025-09-19",
-      "SemanaEscolar": 3,
-      "Contenido": "Conversión y comparación de fracciones utilizando M.C.D y M.C.M.",
-      "Aprendizaje": "El alumno convertirá fracciones y las comparará utilizando el M.C.D y M.C.M.",
-      "Tema": "Fracciones MCD y MCM",
-      "Leccion": "Conversión y comparación.",
-      "Inicio": "Se iniciará la clase con una introducción al concepto de Mínimo Común Múltiplo (M.C.M) y Máximo Común Divisor (M.C.D), y su importancia en la comparación y simplificación de fracciones. Compartirán sus conocimientos previos y se hará una breve actividad de repaso con números enteros antes de aplicar estos conceptos a fracciones.",
-      "Desarrollo": "El profesor demostrará cómo utilizar el M.C.D para simplificar fracciones y cómo usar el M.C.M para convertir fracciones a denominadores comunes. Los alumnos resolverán ejercicios prácticos en equipos, donde tendrán que encontrar el M.C.M y M.C.D de varios conjuntos de fracciones, compararlas y ordenarlas de menor a mayor. Se utilizarán juegos interactivos en línea (si es posible) para reforzar la práctica.",
-      "Cierre": "Se realizará una actividad de cierre donde los estudiantes tendrán que explicar el proceso de conversión y comparación usando M.C.M y M.C.D a sus compañeros en una especie de mini-presentación. Esto ayudará a consolidar su comprensión y a desarrollar habilidades comunicativas. El docente proporcionará retroalimentación específica y asignará una serie de problemas para resolver en casa.",
-      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
-      "EvaluacionFormativa": [
-        "Ejercicios de conversión y comparación en grupo, quiz individual."
-      ],
-      "Evidencias": [],
-      "Actividades": ["11", "12"],
-      "Proyectos": [],
-      "LibroSep": "MeXmáticas",
-      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
-      "Vinculacion": "\\textbf{Biología: }  Aplica operaciones con fracciones para calcular la porción de un terreno que se reforestará. ",
-      "Worklist": [
-        "A.11. Comparación de fracciones",
-        "A.12. Fracciones equivalentes"
-      ],
-      "Libros": ["MeXmáticas", "Apuntes de clase"],
-      "ActPro": ["11", "12"]
     }
   ]
 }

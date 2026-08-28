@@ -1,0 +1,106 @@
+\documentclass[landscape,twocolumn,12pt]{article}
+\usepackage[letterpaper,left=0.5in,right=0.5in,bottom=0.5in,top=0.5in]{geometry} % make room
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames,table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{xparse,array}
+\usepackage{anyfontsize}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{multirow,multicol}
+\renewcommand{\arraystretch}{1}
+\setlength{\arrayrulewidth}{0.1pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\ExplSyntaxOn
+\NewDocumentCommand{\dailylist}{m}
+{% #1 = file name
+  \dailylist:n { #1 }
+}
+\ior_new:N \dailylist_stream
+\seq_new:N \dailylist_seq
+\seq_new:N \dailylist_temp_seq
+\tl_new:N \dailylist_header
+\cs_new_protected:Nn \dailylist:n
+{
+  \seq_clear:N \dailylist_seq
+  \ior_open:Nn \dailylist_stream { #1 }
+  \int_zero:N \l_tmpa_int
+  % populate the sequence
+  \ior_map_inline:Nn \dailylist_stream
+  {
+    \int_incr:N \l_tmpa_int
+    \seq_put_right:Nx \dailylist_seq
+    {
+     % \int_to_arabic:n { \l_tmpa_int } & \exp_not:n {\fontsize{8}{8}\selectfont ##1 } &
+       & \exp_not:n {\fontsize{8}{8}\selectfont ##1 } &
+      }
+  }
+  % build the header
+  \tl_set:Nn \dailylist_header_uuno
+  {
+    \multicolumn{2}{c}{\fontsize{14}{12}\selectfont \bfseries #1} &
+    \multicolumn{2}{c}{\cellcolor{RoyalBlue!50}\fontsize{8}{8}\selectfont \bfseries S}  & 
+    \multicolumn{3}{c}{\cellcolor{ForestGreen!50}\fontsize{8}{8}\selectfont \bfseries O} \\
+    &
+    &
+    \multicolumn{5}{c|}{\bfseries Semana~1} 
+    \\ \cline{3-7}
+     & \textbf{Actividad} &
+    \rotatebox{60}{lun,~1~} &
+    \rotatebox{60}{mar,~2~} &
+    \rotatebox{60}{mié,~3~} &
+    \rotatebox{60}{jue,~4~} &
+    \rotatebox{60}{vie,~5~} 
+    \\ \hline
+  }
+  % check the number
+  \int_compare:nT { \seq_count:N \dailylist_seq > 181 }
+  {
+    \__dailylist_halve:
+  }
+  % make the table
+  \par\noindent
+  %\begin{table*}[!ht]
+  \begin{tabular}{rw{l}{16em}|*{5}{w{l}{0.8em}|}}
+    \tl_use:N \dailylist_header_uuno
+    \seq_map_function:NN \dailylist_seq \__dailylist_row:n
+  \end{tabular}
+  %\end{table*}
+}
+\cs_new_protected:Nn \__dailylist_halve:
+{
+  % make it even
+  \int_if_odd:nT { \seq_count:N \dailylist_seq }
+  {
+    \seq_put_right:Nn \dailylist_seq { \multicolumn{5}{c}{} }
+  }
+  % split in half
+  \seq_clear:N \dailylist_temp_seq
+  \int_step_inline:nn { \seq_count:N \dailylist_seq / 2 }
+  {
+    \seq_put_right:Nx \dailylist_temp_seq
+    {
+      \seq_item:Nn \dailylist_seq { ##1 } &
+      \seq_item:Nn \dailylist_seq { ##1 + \seq_count:N
+        \dailylist_seq / 2 }
+    }
+  }
+  % replace the sequence
+  \seq_set_eq:NN \dailylist_seq \dailylist_temp_seq
+  % double the header
+  \tl_put_right:Nx \dailylist_header
+  {
+    & \exp_not:V \dailylist_header
+  }
+}
+\cs_new_protected:Nn \__dailylist_row:n
+{
+  #1 & & &  &  \\ \cline{3-7}
+}
+\ExplSyntaxOff
+\begin{document}
+\dailylist{math11}
+\dailylist{math12}
+\dailylist{math13}
+\end{document}

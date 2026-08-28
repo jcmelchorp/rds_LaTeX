@@ -216,7 +216,11 @@
 			"**/autocontrol-extended.aux": true,
 			"**/autocontrol-extended.log": true,
 			"**/autocontrol-extended.gz": true,
-			"**/autocontrol-extended.out": true
+			"**/autocontrol-extended.out": true,
+			"**/M2F1.aux": true,
+			"**/M2F1.log": true,
+			"**/M2F1.gz": true,
+			"**/M2F1.out": true
 		}
 	}
 }

@@ -24,9 +24,11 @@
 \RequirePackage{xcolor} % For defining colors
 \RequirePackage{colortbl} % For coloring table elements
 \RequirePackage{ifthen}
+\RequirePackage{xifthen}
 \RequirePackage{enumitem} % for custom \item
 \RequirePackage{xparse} %for NewDocumentCommand
 \RequirePackage{etoolbox}
+\RequirePackage{datetime2}
 % \RequirePackage{l3sys-query} %for query JSON files
 % \RequirePackage{lipsum}
 \RequirePackage{shadowtext}
@@ -262,36 +264,36 @@
    
 \newcommand{\rangofechas}[2]{%
     \tcbox[on line,size=fbox,arc=1.5pt,boxrule=0.5pt,colback=orange!10!white,colframe=rdsColor!50,sharp corners,rounded corners=west]{% sharp corners=southeast,
-   \DTMdate#1 < \DTMdate#2%
+    \large\textsc{\DTMdate{#1}< \DTMdate{#2}}%
     }%
 }
 
-% \newcommand{\rangofecha}[2]{
-%     \begin{tikzpicture}[baseline]
-%         \node (box) [rdsColor,
-%             draw,                   % Dibuja el borde
-%             fill=white,
-%             anchor=base,baseline,
-%             rounded corners=4pt,    % Redondea las esquinas
-%             minimum width=3cm,      % Ancho total
-%             minimum height=1.5em,    % Alto total
-%             yshift=0.3em,
-%             blur shadow={
-%                 shadow opacity=50,
-%                 shadow blur steps=5,
-%                 shadow blur extra rounding=5pt
-%             },
-%         ] {}; % El nodo no lleva texto dentro, solo define la forma.
-%         \draw[rdsColor] ([xshift=-1mm]box.north) -- ([xshift=1mm]box.center) -- ([xshift=-1mm]box.south);
-%         \node at ([xshift=-0.8cm]box.center) {#1};
-%         \node at ([xshift=0.8cm]box.center) {#2};
-%     \end{tikzpicture}%
-% }
+\newcommand{\rangofecha}[2]{
+    \begin{tikzpicture}[baseline]
+        \node (box) [rdsColor,
+            draw,                   % Dibuja el borde
+            fill=white,
+            anchor=base,baseline,
+            rounded corners=4pt,    % Redondea las esquinas
+            minimum width=3cm,      % Ancho total
+            minimum height=1.5em,    % Alto total
+            yshift=0.3em,
+            blur shadow={
+                shadow opacity=50,
+                shadow blur steps=5,
+                shadow blur extra rounding=5pt
+            },
+        ] {}; % El nodo no lleva texto dentro, solo define la forma.
+        \draw[rdsColor] ([xshift=-1mm]box.north) -- ([xshift=1mm]box.center) -- ([xshift=-1mm]box.south);
+        \node at ([xshift=-0.8cm]box.center) {#1};
+        \node at ([xshift=0.8cm]box.center) {#2};
+    \end{tikzpicture}%
+}
 
 
 
 % \def\fillingradebox{\resizebox{1cm}{1em}{\raisebox{-0.16em}{$\Box$}}}
-\newcommand{\fillingradebox}[1][]{\tikz[overlay]{\draw[black!75,thin,rounded corners=1,#1] (0,0) rectangle (1, 1);}}
+%\newcommand{\fillingradebox}[1][]{\tikz[overlay]{\draw[black!75,thin,rounded corners=1,#1] (0,0) rectangle (1, 1);}}
 
 \newcommand{\boxesline}{%
 \begin{tikzpicture}[yshift=-0.2em]
@@ -354,7 +356,7 @@
     \begin{tabularx}{0.7\textwidth}{rYr}
         {\sffamily Campo formativo:} & Saberes y Pensamiento Científico  &  \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2025-2026} \unitinfo  \\ 
         {\sffamily Tema:}  & \multirow[t]{2}{\linewidth}{#3} & \tcbox[colback=yellow!20!white,colframe=rdsColor,size=fbox,on line]{ {\large\sffamily Semana} {\Large #6}} \tcbox[colframe=rdsColor,size=fbox,on line]{ {\Large #5} \begin{minipage}[b]{0.9cm}\sffamily\tiny Períodos\\lectivos\end{minipage}} \\
-        & & \rangofecha{#7}{#8}  \\
+        & & \rangofechas{#7}{#8}  \\
         {\sffamily Contenido:}  &  \multicolumn{2}{l}{#2}\\
         {\sffamily Ejes articuladores:} &   \multicolumn{2}{l}{#1}\\
         {\sffamily Lección:} &   \multicolumn{2}{l}{#4}\\ 
@@ -435,3 +437,40 @@
 ]{\weekdata}{general.Nociones}{\columnbox}
 }
 
+\newcommand{\tableta}[1]{%
+
+\JSONParseValue[store in=\fechacierre]{\weekdata}{weeks[#1].FechaDeCierre}
+\JSONParseArrayMapFunction[%
+    code before={%
+    \begin{tcolorbox}[
+        enhanced,
+        drop fuzzy shadow=black!75,
+        tabulars={@{\extracolsep{\fill}\hspace{1mm}}lr@{\hspace{2pt}}},
+        arc=2pt,boxrule=0.1pt,titlerule=0.5pt,
+        left=0mm,right=0mm,top=0mm,bottom=2pt,
+        coltitle=rdsColor!50!black,
+        colbacktitle=rdsColor!5!white,
+        colback=white,
+        colframe=rdsColor!50,
+        toptitle=-0.6pt,
+        toprule=0.5pt,
+        bottomtitle=0pt,
+        lefttitle=2mm,
+        width=\linewidth,
+        title={\coolTitle{#1}},
+        ]
+        {\footnotesize\scshape\color{black!70}\qquad Noción} & {\scriptsize\scshape\color{black!70} Fecha \ Cont. Letra Orto. Pres. Punt. Total} \\\hline\hline%
+        },
+    code after={%
+    \end{tcolorbox}
+    }
+]{\weekdata}{weeks[#1].Worklist}{\listableta}
+}
+
+\newcommand{\fillingradebox}[1][]{\tikz[baseline]{\draw[black!75,thin,rounded corners=1,#1] (0,-0.125) rectangle (0.94, 0.345);}}
+\def\listableta{\adjustbox{max width=0.95\linewidth}{\JSONParseArrayValue} & {\fbox{\phantom{oooo}}\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[dotted]\;\fillingradebox[rdsColor]}\\\hline }
+
+\newcommand{\coolTitle}[1]{% %
+\booknode{\color{white}\large\scshape\bfseries\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}} \ \JSONParseValue{\weekdata}{weeks[#1].Tema} \hfill
+\rangofechas{\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio}}{\JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}}\raisebox{-0.3pt}{\periodoslectivos{#1}}%  
+}
