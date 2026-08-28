@@ -77,11 +77,10 @@
     }
 }
 
-
 \def\LOGO{%
     \begin{picture}(0,0)\unitlength=2cm
-        \put (0.05,-0.45) {\includegraphics[width=1.6cm]{logo_shadow.png}}
-        \put (0.045,-0.44) {\includegraphics[width=1.6cm]{logo.png}}
+        \put (0,-0.55) {\includegraphics[width=2cm]{logo45.png}}
+       % \put (0.045,-0.6) {\includegraphics[width=3cm]{logo.png}}
     \end{picture}
 }
 
@@ -89,9 +88,9 @@
     \def\disciplina{\classtitle{#2#1}}
     \def\gradogrupo{\leveltitle{#1}}
     \def\schoolinfounit{\RaggedRight%
-        {\color{rdsColor}\Large Escuela Rafael Díaz Serdán}\\[-0.5em]
-        {\color{gray!40!black}\scriptsize\sffamily 30PES0329R \hspace{10em} turno matutino  }\\
-        {\color{green!20!black}\large\sffamily Bienvenida al ciclo escolar}\\
+        {\hspace{-5pt}\color{rdsColor}\LARGE\shadowtext{Escuela Rafael Díaz Serdán}}\\[-0.2em]
+        {\color{gray!40!black}\sffamily\small 30PES0329R \hspace{9em} turno matutino  }\\[-0.8em]
+        {\color{green!20!black}\Large\sffamily Bienvenida al ciclo escolar}\\
         {\sffamily Profesor:} Julio César Melchor Pinto
         %Saberes y pensamiento científico
     }
@@ -99,7 +98,7 @@
     %     \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
     % }
     \def\cicloescolar{%
-        \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
+        \tcbox[colback=rdsColor!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
     }
     \JSONParseFromFile{\weekdata}{../resources/json/2627/#2#1_general.json}
     %\QueryFiles[reverse]{*.json}{\JSONParseFromFile{\weekdata}{##1}}
@@ -121,8 +120,8 @@
     \end{minipage}%
     \begin{tabularx}{0.43\textwidth}{Yr}%
         & \large\shadowtext{\disciplina}\\ 
-        & \large\shadowtext{\gradogrupo} \\ 
-        & \cicloescolar\\
+        & \Large\shadowtext{\gradogrupo} \\ 
+        & \Large\cicloescolar\\
     \end{tabularx}
 }
 
@@ -133,7 +132,7 @@
 % \plannerof{0}{test}%%
 % \plannerof{1}{math}%
 %   \plannerof{2}{math}%
-%   \plannerof{3}{math}%
+    % \plannerof{3}{math}%
 %   \plannerof{1}{geog}%   
   \plannerof{2}{phys}%
 

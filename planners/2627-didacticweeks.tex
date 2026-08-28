@@ -1,14 +1,14 @@
 \documentclass{planner}
 \begin{document}
-\loadunit{0}{test}{1}%%
+% \loadunit{0}{test}{1}%%
 % \loadunit{1}{math}{1}%
 % \loadunit{2}{math}{1}%
-% \loadunit{3}{math}{1}%
+\loadunit{3}{math}{1}%
 % % \loadunit{1}{geog}{1}%
 % \loadunit{1}{geog}{1}%
 \boardlist
 \begin{landscape}
-%\JSONParseArrayMapInline{\weekdata}{weeks}{\tableta{#1}}
+%\JSONParseArrayMapInline{\weekdata}{wee-ks}{\tableta{#1}}
 \JSONParseArrayMapInline{\weekdata}{weeks}{%
     \begin{tcolorbox}[titlebox,title=\planTitle
             {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}

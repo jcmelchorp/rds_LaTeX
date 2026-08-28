@@ -1,4 +1,137 @@
 {
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Física",
+    "Grado": "2",
+    "Nivel": "Secundaria",
+    "Unidad": "2",
+    "NombreDeLaUnidad": "Unidad 2",
+    "DuracionEnSemanas": 16,
+    "HorasPorSemana": 6,
+    "HorasTotales": 36,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2026-07-26",
+    "FechaDeActualizacion": "2026-07-26",
+    "FechaInicial": "2026-08-31",
+    "FechaFinal": "2026-11-13",
+    "Nociones": [
+      "Me preparo",
+      "L.1. Movimiento",
+      "A.1. ¿Trayectoria o desplazamiento?",
+      "A.2. Cambios en el movimiento",
+      "A.3. ¡Qué onda!",
+      "A.4. ¿Cómo se mueven las ondas?",
+      "F.7. A ruidos necios, oídos sordos",
+      "P. Desplazamiento",
+      "L.2. Velocidad y rapidez",
+      "A.5. ¿Quién fue el más rápido?",
+      "A.6. Explicaciones gráficas de velocidad",
+      "A.7. ¿Cómo se describe el movimiento?",
+      "A.8. ¿Cómo se ven la velocidad y el reposo?",
+      "A.9. Propagación de ondas",
+      "F.8. Alternativas del transporte urbano",
+      "P. Reposo",
+      "L.3. Movimiento acelerado",
+      "A.10. ¿Cuándo es rapidez y cuándo es velocidad?",
+      "A.11. ¿Cómo cambia su rapidez?",
+      "A.12. ¿Es aceleración o es velocidad?",
+      "A.13. ¿Se mueve o está quieto?",
+      "P. Aceleracion",
+      "L.4. Fuerzas e interacciones",
+      "A.14. Contacto y distancia",
+      "A.15. La medición de la fuerza",
+      "A.16. ¿Cómo se representan las fuerzas?",
+      "P. Fuerza",
+      "L.5. Suma de fuerzas y equilibrio",
+      "A.17. ¿Cómo se suman las fuerzas?",
+      "L.6. Fuerza de fricción",
+      "A.18. Fricción en el movimiento",
+      "F.9. La cuarta revolución industrial",
+      "L.7. Máquinas simples: palanca y rueda",
+      "A.19. ¿Qué máquinas son?",
+      "L.8. Otras máquinas simples",
+      "A.20. Máquinas ¿simples o compuestas?",
+      "A.21. Las ventajas de utilizar una polea",
+      "P. Masa Fuerza",
+      "L.9. Leyes de Newton",
+      "A.22. La medida de la inercia",
+      "A.23. Masa e inercia en el movimiento",
+      "A.24. Relación entre fuerza y aceleración",
+      "A.25. Acción y reacción",
+      "A.26. Tres ideas fundamentales sobre las fuerzas",
+      "F.10. ¡Abróchense los cinturones!",
+      "P. Movimiento Cuerpos",
+      "L.10. Ley de la Gravitación Universal",
+      "A.27. Importancia de las aportaciones de Newton",
+      "A.28. ¡A hombros de gigantes!",
+      "A.29. El peso en el Universo",
+      "L.11. Principio de Pascal",
+      "A.30. El barril de Pascal",
+      "F.11. La prensa hidráulica",
+      "P. Pascal",
+      "L.12. Principio de Arquímedes",
+      "A.31. Es momento de flotar",
+      "A.32. ¿Cómo se representa la fuerza de flotación?",
+      "P. Presion",
+      "L.13. Energía Mecánica",
+      "A.33. ¡Ponle energía!",
+      "A.34. ¿Cómo se conserva la energía mecánica?",
+      "P. Energia Mecanica",
+      "L.14. Calor como transferencia de energía.",
+      "A.35. Mecanismos de transferencia de calor",
+      "A.36. Energía térmica",
+      "L.15. Máquinas térmicas",
+      "A.37. ¿Cómo funcionan las máquinas térmicas?",
+      "A.38. Eficiencia ideal",
+      "A.39. Transformación de energía calorífica",
+      "F.12. Fuentes de energía y su impacto ambiental",
+      "P. Maquina Vapor",
+      "L.16. Energías renovables",
+      "A.40. Energía eléctrica y fuentes de energía",
+      "F.13. Biomímesis",
+      "P. Eolico",
+      "L.17. Energía solar",
+      "A.41. Aprovechamiento de la energía y consumo sustentable",
+      "A.42. Aprovechemos la energía solar",
+      "F.14. ¿Por qué usar un calentador solar?",
+      "P. Energia",
+      "¿Qué aprendí?"
+    ],
+    "Nombres": [
+      "Bruno",
+      "Cristel",
+      "Fabrizzio",
+      "Ángel",
+      "Juan",
+      "Alana",
+      "Layla",
+      "Acteón",
+      "Antonio",
+      "Matías",
+      "Ehécatl",
+      "Mateo",
+      "Pedro",
+      "Miguel Á",
+      "Mateo",
+      "MaJo"
+    ],
+    "Alumnos": [
+      "Alana Álvarez Medina",
+      "Said Fernando Barragán Elvira",
+      "Emil Bello Aldana",
+      "Mateo Castillo Álvarez",
+      "Bárbara Cisneros Mendoza",
+      "Said Loyo Morales",
+      "Cristian Emmanuel Monroy Loftus",
+      "Gilberto Montiel Díaz",
+      "Christopher Sánchez Ambrosio",
+      "Benjamín Sangeado Gerónimo",
+      "Yerko Alan Solís Gutiérrez",
+      "Ricardo Solís Victoria",
+      "Fernando Tronco Muñoz"
+    ],
+    "fechasDeExamen": ["2026-11-05"]
+  },
   "weeks": [
     {
       "PeriodosLectivos": 6,
@@ -18,22 +151,14 @@
         "Comprende el movimiento ondulatorio como efecto de la propagación de una perturbación en el medio."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "Me preparo"
-      ],
+      "Actividades": ["Me preparo"],
       "Proyectos": [],
       "LibroSep": "",
       "LibroMcMillan": "Física Imagina  76-77",
       "Vinculacion": "",
-      "Worklist": [
-        "Me preparo"
-      ],
-      "Libros": [
-        "Física Imagina  76-77"
-      ],
-      "ActPro": [
-        "Me preparo"
-      ]
+      "Worklist": ["Me preparo"],
+      "Libros": ["Física Imagina  76-77"],
+      "ActPro": ["Me preparo"]
     },
     {
       "PeriodosLectivos": 6,
@@ -52,18 +177,9 @@
         "Comprende los conceptos de velocidad, rapidez, velocidad y rapidez media, velocidad y rapidez instantánea, rapidez de propagación de las ondas. ",
         "Relaciona la rapidez de un objeto con la pendiente de la gráfica distancia-tiempo correspondiente."
       ],
-      "Evidencias": [
-        "F7"
-      ],
-      "Actividades": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "Proyectos": [
-        "Desplazamiento"
-      ],
+      "Evidencias": ["F7"],
+      "Actividades": ["1", "2", "3", "4"],
+      "Proyectos": ["Desplazamiento"],
       "LibroSep": "Saberes y pensamiento científico 127-129",
       "LibroMcMillan": "Física Imagina  78-83",
       "Vinculacion": "\\textbf{Matemáticas: } Utiliza planos cartesianos para trazar trayectorias y distancias.",
@@ -79,14 +195,7 @@
         "Saberes y pensamiento científico 127-129",
         "Física Imagina  78-83"
       ],
-      "ActPro": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "F7",
-        "Desplazamiento"
-      ]
+      "ActPro": ["1", "2", "3", "4", "F7", "Desplazamiento"]
     },
     {
       "PeriodosLectivos": 6,
@@ -105,19 +214,9 @@
         "Comprende el concepto de aceleración como cambio de la velocidad en el tiempo, reconociendo que este cambio puede ser en la magnitud, en la dirección o |en el sentido. ",
         "Comprende que la caída libre corresponde a un tipo de movimiento uniformemente acelerado."
       ],
-      "Evidencias": [
-        "F8"
-      ],
-      "Actividades": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
-      "Proyectos": [
-        "Reposo"
-      ],
+      "Evidencias": ["F8"],
+      "Actividades": ["5", "6", "7", "8", "9"],
+      "Proyectos": ["Reposo"],
       "LibroSep": "Saberes y pensamiento científico 127-129",
       "LibroMcMillan": "Física Imagina  84-89",
       "Vinculacion": "\\textbf{Matemáticas: } Modela diversas situaciones que se resuelven con ecuaciones lineales.",
@@ -133,15 +232,7 @@
         "Saberes y pensamiento científico 127-129",
         "Física Imagina  84-89"
       ],
-      "ActPro": [
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "F8",
-        "Reposo"
-      ]
+      "ActPro": ["5", "6", "7", "8", "9", "F8", "Reposo"]
     },
     {
       "PeriodosLectivos": 6,
@@ -161,15 +252,8 @@
         "Identifica y describe la presencia de fuerzas en interacciones cotidianas."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "10",
-        "11",
-        "12",
-        "13"
-      ],
-      "Proyectos": [
-        "Aceleracion"
-      ],
+      "Actividades": ["10", "11", "12", "13"],
+      "Proyectos": ["Aceleracion"],
       "LibroSep": "Saberes y pensamiento científico 130-131",
       "LibroMcMillan": "Física Imagina  90-95",
       "Vinculacion": "\\textbf{Matemáticas: } Reconoce e interpreta relaciones proporcionales y no proporcionales a partir de su representación tabular, gráfica y algebraica.",
@@ -184,13 +268,7 @@
         "Saberes y pensamiento científico 130-131",
         "Física Imagina  90-95"
       ],
-      "ActPro": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "Aceleracion"
-      ]
+      "ActPro": ["10", "11", "12", "13", "Aceleracion"]
     },
     {
       "PeriodosLectivos": 6,
@@ -211,19 +289,9 @@
         "Comprende el concepto de fuerza de fricción.",
         "Identifica la fuerza de fricción en situaciones cotidianas."
       ],
-      "Evidencias": [
-        "F9"
-      ],
-      "Actividades": [
-        "14",
-        "15",
-        "16",
-        "17",
-        "18"
-      ],
-      "Proyectos": [
-        "Fuerza"
-      ],
+      "Evidencias": ["F9"],
+      "Actividades": ["14", "15", "16", "17", "18"],
+      "Proyectos": ["Fuerza"],
       "LibroSep": "Saberes y pensamiento científico 279-281 y 191-194",
       "LibroMcMillan": "Física Imagina  96-105",
       "Vinculacion": "\\textbf{Biología: } Identifica la importancia de tener un proyecto de vida saludable haciendo deporte, para evitar enfermedades relacionadas con el sedentarismo.\\\\ \\textbf{Matemáticas: } Traza e identifica ángulos para representar las fuerzas.\\\\ \\textbf{Biología: } Reconoce el funcionamiento del cuerpo humano y como se relaciona con la fuerza de fricción.",
@@ -239,15 +307,7 @@
         "Saberes y pensamiento científico 279-281 y 191-194",
         "Física Imagina  96-105"
       ],
-      "ActPro": [
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "F9",
-        "Fuerza"
-      ]
+      "ActPro": ["14", "15", "16", "17", "18", "F9", "Fuerza"]
     },
     {
       "PeriodosLectivos": 6,
@@ -269,14 +329,8 @@
         "Calcula las variables involucradas en las ecuaciones de las máquinas simples y las aplica en situaciones concretas."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "19",
-        "20",
-        "21"
-      ],
-      "Proyectos": [
-        "Masa Fuerza"
-      ],
+      "Actividades": ["19", "20", "21"],
+      "Proyectos": ["Masa Fuerza"],
       "LibroSep": "",
       "LibroMcMillan": "Física Imagina  106-113",
       "Vinculacion": "\\textbf{Biología: } Reconoce el funcionamiento del cuerpo humano, especialmente el sistema locomotor.\\\\ \\textbf{Matemáticas: } Modela diversas situaciones que se resuelven con ecuaciones lineales.",
@@ -287,15 +341,8 @@
         "A.21. Las ventajas de utilizar una polea",
         "F9. La cuarta revolución industrial"
       ],
-      "Libros": [
-        "Física Imagina  106-113"
-      ],
-      "ActPro": [
-        "19",
-        "20",
-        "21",
-        "Masa Fuerza"
-      ]
+      "Libros": ["Física Imagina  106-113"],
+      "ActPro": ["19", "20", "21", "Masa Fuerza"]
     },
     {
       "PeriodosLectivos": 6,
@@ -315,19 +362,9 @@
         "Comprende la relación entre la masa, la fuerza aplicada y la aceleración de un objeto.",
         "Comprende la ley de acción y reacción."
       ],
-      "Evidencias": [
-        "F10"
-      ],
-      "Actividades": [
-        "22",
-        "23",
-        "24",
-        "25",
-        "26"
-      ],
-      "Proyectos": [
-        "Movimiento Cuerpos"
-      ],
+      "Evidencias": ["F10"],
+      "Actividades": ["22", "23", "24", "25", "26"],
+      "Proyectos": ["Movimiento Cuerpos"],
       "LibroSep": "Saberes y pensamiento científico 287-289",
       "LibroMcMillan": "Física Imagina  114-119",
       "Vinculacion": "\\textbf{Matemáticas: } Utiliza correctamente las distintas unidades de medida del SI.",
@@ -343,15 +380,7 @@
         "Saberes y pensamiento científico 287-289",
         "Física Imagina  114-119"
       ],
-      "ActPro": [
-        "22",
-        "23",
-        "24",
-        "25",
-        "26",
-        "F10",
-        "Movimiento Cuerpos"
-      ]
+      "ActPro": ["22", "23", "24", "25", "26", "F10", "Movimiento Cuerpos"]
     },
     {
       "PeriodosLectivos": 6,
@@ -371,11 +400,7 @@
         "Comprende y explica la diferencia entre masa y peso."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "27",
-        "28",
-        "29"
-      ],
+      "Actividades": ["27", "28", "29"],
       "Proyectos": [],
       "LibroSep": "Saberes y pensamiento científico 163-168",
       "LibroMcMillan": "Física Imagina  120-125",
@@ -391,11 +416,7 @@
         "Saberes y pensamiento científico 163-168",
         "Física Imagina  120-125"
       ],
-      "ActPro": [
-        "27",
-        "28",
-        "29"
-      ]
+      "ActPro": ["27", "28", "29"]
     },
     {
       "PeriodosLectivos": 6,
@@ -414,15 +435,9 @@
         "Comprende el concepto de presión, su expresión matemática y la relación entre sus variables. ",
         "Entiende el Principio de Pascal y es capaz de resolver problemas de aplicación."
       ],
-      "Evidencias": [
-        "F11"
-      ],
-      "Actividades": [
-        "30"
-      ],
-      "Proyectos": [
-        "Pascal"
-      ],
+      "Evidencias": ["F11"],
+      "Actividades": ["30"],
+      "Proyectos": ["Pascal"],
       "LibroSep": "Saberes y pensamiento científico 291-295; 116-118",
       "LibroMcMillan": "Física Imagina  126-131",
       "Vinculacion": "\\textbf{Matemáticas: } Reconoce e interpreta relaciones proporcionales y no proporcionales a partir de su representación tabular, gráfica y algebraica.",
@@ -435,11 +450,7 @@
         "Saberes y pensamiento científico 291-295; 116-118",
         "Física Imagina  126-131"
       ],
-      "ActPro": [
-        "30",
-        "F11",
-        "Pascal"
-      ]
+      "ActPro": ["30", "F11", "Pascal"]
     },
     {
       "PeriodosLectivos": 6,
@@ -459,13 +470,8 @@
         "Entiende el papel de la densidad para determinar si un objeto flota o se hunde en un líquido."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "31",
-        "32"
-      ],
-      "Proyectos": [
-        "Presion"
-      ],
+      "Actividades": ["31", "32"],
+      "Proyectos": ["Presion"],
       "LibroSep": "Saberes y pensamiento científico 295-299 y 119-120",
       "LibroMcMillan": "Física Imagina  132-135",
       "Vinculacion": "\\textbf{Matemáticas: } Modela diversas situaciones que se resuelven con ecuaciones lineales.",
@@ -478,11 +484,7 @@
         "Saberes y pensamiento científico 295-299 y 119-120",
         "Física Imagina  132-135"
       ],
-      "ActPro": [
-        "31",
-        "32",
-        "Presion"
-      ]
+      "ActPro": ["31", "32", "Presion"]
     },
     {
       "PeriodosLectivos": 6,
@@ -502,13 +504,8 @@
         "Comprende el concepto de conservación de la energía mecánica."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "33",
-        "34"
-      ],
-      "Proyectos": [
-        "Energia Mecanica"
-      ],
+      "Actividades": ["33", "34"],
+      "Proyectos": ["Energia Mecanica"],
       "LibroSep": "Saberes y pensamiento científico 133 y 135-139",
       "LibroMcMillan": "Física Imagina  136-139",
       "Vinculacion": "\\textbf{Biología: } Identifica la cantidad de energía que proporcionan los alimentos para prevenir enfermedades relacionadas con la alimentación.",
@@ -521,11 +518,7 @@
         "Saberes y pensamiento científico 133 y 135-139",
         "Física Imagina  136-139"
       ],
-      "ActPro": [
-        "33",
-        "34",
-        "Energia Mecanica"
-      ]
+      "ActPro": ["33", "34", "Energia Mecanica"]
     },
     {
       "PeriodosLectivos": 6,
@@ -546,19 +539,9 @@
         "Comprende qué es una máquina térmica y las transformaciones energéticas que involucra.",
         "Entiende y aplica las ecuaciones para el cálculo de la eficiencia térmica."
       ],
-      "Evidencias": [
-        "F12"
-      ],
-      "Actividades": [
-        "35",
-        "36",
-        "37",
-        "38",
-        "39"
-      ],
-      "Proyectos": [
-        "Maquina Vapor"
-      ],
+      "Evidencias": ["F12"],
+      "Actividades": ["35", "36", "37", "38", "39"],
+      "Proyectos": ["Maquina Vapor"],
       "LibroSep": "Saberes y pensamiento científico 185-189",
       "LibroMcMillan": "Física Imagina  140-147",
       "Vinculacion": "\\textbf{Biología: } Analiza las prácticas de consumo que han alterado los ciclos biogeoquímicos del carbono y nitrógeno, sus efectos asociados al calentamiento global y sus impactos en el medio ambiente y la salud.",
@@ -570,20 +553,12 @@
         "A.37. ¿Cómo funcionan las máquinas térmicas?",
         "A.38. Eficiencia ideal",
         "A.39. Transformación de energía calorífica"
-            ],
+      ],
       "Libros": [
         "Saberes y pensamiento científico 185-189",
         "Física Imagina  140-147"
       ],
-      "ActPro": [
-        "35",
-        "36",
-        "37",
-        "38",
-        "39",
-        "F12",
-        "Maquina Vapor"
-      ]
+      "ActPro": ["35", "36", "37", "38", "39", "F12", "Maquina Vapor"]
     },
     {
       "PeriodosLectivos": 6,
@@ -602,15 +577,9 @@
         "Reconoce la diferencia entre efecto invernadero y cambio climático.  ",
         "Comprende que el cambio climático es una consecuencia del efecto invernadero."
       ],
-      "Evidencias": [
-        "F13"
-      ],
-      "Actividades": [
-        "40"
-      ],
-      "Proyectos": [
-        "Eolico"
-      ],
+      "Evidencias": ["F13"],
+      "Actividades": ["40"],
+      "Proyectos": ["Eolico"],
       "LibroSep": "Saberes y pensamiento científico 217-221 ,Nuestro libro de proyectos 206-212",
       "LibroMcMillan": "Física Imagina  148-151",
       "Vinculacion": "\\textbf{Biología: } Analiza los efectos asociados al calentamiento global y sus impactos en el medio ambiente.",
@@ -624,11 +593,7 @@
         "Nuestro libro de proyectos 206-212",
         "Física Imagina  148-151"
       ],
-      "ActPro": [
-        "40",
-        "F13",
-        "Eolico"
-      ]
+      "ActPro": ["40", "F13", "Eolico"]
     },
     {
       "PeriodosLectivos": 6,
@@ -647,16 +612,9 @@
         "Comprende qué es la energía solar y cómo se produce. ",
         "Reconoce la energía solar como fuente de energía limpia y renovable."
       ],
-      "Evidencias": [
-        "F14"
-      ],
-      "Actividades": [
-        "41",
-        "42"
-      ],
-      "Proyectos": [
-        "Energia"
-      ],
+      "Evidencias": ["F14"],
+      "Actividades": ["41", "42"],
+      "Proyectos": ["Energia"],
       "LibroSep": "Saberes y pensamiento científico 217-221,Nuestro libro de proyectos 206-212",
       "LibroMcMillan": "Física Imagina  152-157",
       "Vinculacion": "\\textbf{Biología: } Explica por qué los saberes de los pueblos originarios han aportado al aprovechamiento de los recursos naturales y el desarrollo sustentable en el ecosistema local.",
@@ -671,12 +629,7 @@
         "Nuestro libro de proyectos 206-212",
         "Física Imagina  152-157"
       ],
-      "ActPro": [
-        "41",
-        "42",
-        "F14",
-        "Energia"
-      ]
+      "ActPro": ["41", "42", "F14", "Energia"]
     }
   ]
 }

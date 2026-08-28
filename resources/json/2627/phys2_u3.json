@@ -1,4 +1,108 @@
 {
+  "general": {
+    "CampoFormativo": "Saberes y pensamiento científico",
+    "Asignatura": "Física",
+    "Grado": "2",
+    "Nivel": "Secundaria",
+    "Unidad": "3",
+    "NombreDeLaUnidad": "Unidad 3",
+    "DuracionEnSemanas": 10,
+    "HorasPorSemana": 6,
+    "HorasTotales": 60,
+    "Docente": "Julio César Melchor Pinto",
+    "FechaDeCreacion": "2026-08-26",
+    "FechaDeActualizacion": "2026-08-26",
+    "FechaInicial": "2026-05-31",
+    "FechaFinal": "2026-07-09",
+    "Nociones": [
+      "Me preparo",
+      "L.1. Electricidad",
+      "A.1. Cargas en movimiento",
+      "F.15. Energía eléctrica y medio ambiente",
+      "P. Electrostaticos",
+      "L.2. Electricidad, cuidados y precauciones ",
+      "A.2. Cuidados con el uso de la electricidad",
+      "F.16. ¡Cuidado con la electricidad!",
+      "P. Conductores",
+      "L.3. Electricidad y magnetismo ",
+      "A.3. ¿Qué sabes sobre el magnetismo?",
+      "A.4. Relación entre electricidad y magnetismo",
+      "P. Induccion",
+      "L.4. Luz visible ",
+      "A.5. ¡Qué onda con la luz!",
+      "F.17. Luces deslumbrantes",
+      "P. Descomposicion",
+      "L.5. Ondas electromagnéticas",
+      "A.6. Características del espectro electromagnético",
+      "A.7. Los efectos de la radiación electromagnética",
+      "F.18. Me mantengo alerta",
+      "P. Ondas Electromagneticas",
+      "L.6. El Universo ",
+      "A.8. Las galaxias",
+      "A.9. Grupos de galaxias",
+      "L.7. Origen y evolución del Universo ",
+      "A.10. Expansión del universo",
+      "A.11. Mecanismos de las estrellas",
+      "A.12. Los cuerpos cósmicos",
+      "A.13. Evolución del Universo",
+      "P. Universo",
+      "L.8. Descubrimiento del Universo",
+      "A.14. El Universo a simple vista",
+      "A.15. El telescopio y paralaje",
+      "A.16. Exploración de cuerpos celestes por medio de ondas electromagnéticas",
+      "L.9. Sistema Solar ",
+      "A.17. El Sol",
+      "A.18. Estructura del Sol",
+      "A.19. El Sistema Solar",
+      "P. Telescopio",
+      "L.10. Efecto invernadero, causas y consecuencias ",
+      "A.20. El efecto invernadero",
+      "L.11. Gases de efecto invernadero ",
+      "A.21. Gases naturales",
+      "L.12. Aumento de la temperatura del planeta ",
+      "A.22. Cambio Climático",
+      "F.19. ¿Calentamiento global o cambio climático?",
+      "L.13. Cuidado del ambiente ",
+      "A.23. ¿Soy sustentable?",
+      "F.20. Los guardianes del clima",
+      "P. Ambiente",
+      "¿Qué aprendí?"
+    ],
+    "Nombres": [
+      "Bruno",
+      "Cristel",
+      "Fabrizzio",
+      "Ángel",
+      "Juan",
+      "Alana",
+      "Layla",
+      "Acteón",
+      "Antonio",
+      "Matías",
+      "Ehécatl",
+      "Mateo",
+      "Pedro",
+      "Miguel Á",
+      "Mateo",
+      "MaJo"
+    ],
+    "Alumnos": [
+      "Alana Álvarez Medina",
+      "Said Fernando Barragán Elvira",
+      "Emil Bello Aldana",
+      "Mateo Castillo Álvarez",
+      "Bárbara Cisneros Mendoza",
+      "Said Loyo Morales",
+      "Cristian Emmanuel Monroy Loftus",
+      "Gilberto Montiel Díaz",
+      "Christopher Sánchez Ambrosio",
+      "Benjamín Sangeado Gerónimo",
+      "Yerko Alan Solís Gutiérrez",
+      "Ricardo Solís Victoria",
+      "Fernando Tronco Muñoz"
+    ],
+    "fechasDeExamen": ["2026-11-05"]
+  },
   "weeks": [
     {
       "PeriodosLectivos": 6,
@@ -17,15 +121,9 @@
         "Identifica el movimiento de los electrones como causa de la electricidad. ",
         "Comprende y aplica la Ley de Coulomb."
       ],
-      "Evidencias": [
-        "F15"
-      ],
-      "Actividades": [
-        "1"
-      ],
-      "Proyectos": [
-        "Electrostaticos"
-      ],
+      "Evidencias": ["F15"],
+      "Actividades": ["1"],
+      "Proyectos": ["Electrostaticos"],
       "LibroSep": "Saberes y pensamiento científico 301-307",
       "LibroMcMillan": "Física Imagina  160-167",
       "Vinculacion": "\\textbf{Matemáticas: } Calcula potencias con exponente entero y la raíz cuadrada. Usa la notación científica.",
@@ -33,16 +131,12 @@
         "L1. Electricidad",
         "A.1. Cargas en movimiento",
         "F15. Energía eléctrica y medio ambiente"
-            ],
+      ],
       "Libros": [
         "Saberes y pensamiento científico 301-307",
         "Física Imagina  160-167"
       ],
-      "ActPro": [
-        "1",
-        "F15",
-        "Electrostaticos"
-      ]
+      "ActPro": ["1", "F15", "Electrostaticos"]
     },
     {
       "PeriodosLectivos": 6,
@@ -61,15 +155,9 @@
         "Explica los efectos de la corriente eléctrica en el cuerpo humano. ",
         "Conoce las normas de protección ante riesgos de choque eléctrico en el hogar, la escuela y en lugares abiertos."
       ],
-      "Evidencias": [
-        "F16"
-      ],
-      "Actividades": [
-        "2"
-      ],
-      "Proyectos": [
-        "Conductores"
-      ],
+      "Evidencias": ["F16"],
+      "Actividades": ["2"],
+      "Proyectos": ["Conductores"],
       "LibroSep": "Saberes y pensamiento científico 312-315",
       "LibroMcMillan": "Física Imagina  168-171",
       "Vinculacion": "\\textbf{Biología: } Explica la participación del sistema nervioso en la coordinación de las funciones del cuerpo humano.",
@@ -82,11 +170,7 @@
         "Saberes y pensamiento científico 312-315",
         "Física Imagina  168-171"
       ],
-      "ActPro": [
-        "2",
-        "F16",
-        "Conductores"
-      ]
+      "ActPro": ["2", "F16", "Conductores"]
     },
     {
       "PeriodosLectivos": 6,
@@ -106,13 +190,8 @@
         "Explica el funcionamiento básico de dispositivos electromagnéticos simples."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "3",
-        "4"
-      ],
-      "Proyectos": [
-        "Induccion"
-      ],
+      "Actividades": ["3", "4"],
+      "Proyectos": ["Induccion"],
       "LibroSep": "Saberes y pensamiento científico 234-236",
       "LibroMcMillan": "Física Imagina  172-177",
       "Vinculacion": "\\textbf{Matemáticas: } Encuentra la distancia de un punto a una recta y la distancia entre dos rectas paralelas.",
@@ -125,11 +204,7 @@
         "Saberes y pensamiento científico 234-236",
         "Física Imagina  172-177"
       ],
-      "ActPro": [
-        "3",
-        "4",
-        "Induccion"
-      ]
+      "ActPro": ["3", "4", "Induccion"]
     },
     {
       "PeriodosLectivos": 6,
@@ -148,15 +223,9 @@
         "Comprende los conceptos de reflexión, refracción y descomposición de la luz. ",
         "Identifica la reflexión y la refracción de la luz en fenómenos y dispositivos ópticos simples."
       ],
-      "Evidencias": [
-        "F17"
-      ],
-      "Actividades": [
-        "5"
-      ],
-      "Proyectos": [
-        "Descomposicion"
-      ],
+      "Evidencias": ["F17"],
+      "Actividades": ["5"],
+      "Proyectos": ["Descomposicion"],
       "LibroSep": "Saberes y pensamiento científico 323-325",
       "LibroMcMillan": "Física Imagina  178-183",
       "Vinculacion": "\\textbf{Matemáticas: } Encuentra y calcula los ángulos que se forman al intersecar dos segmentos.",
@@ -169,11 +238,7 @@
         "Saberes y pensamiento científico 323-325",
         "Física Imagina  178-183"
       ],
-      "ActPro": [
-        "5",
-        "F17",
-        "Descomposicion"
-      ]
+      "ActPro": ["5", "F17", "Descomposicion"]
     },
     {
       "PeriodosLectivos": 6,
@@ -192,16 +257,9 @@
         "Comprende qué es el espectro electromagnético y cómo se clasifica. ",
         "Explica los principios básicos del funcionamiento de la telefonía celular y el GPS."
       ],
-      "Evidencias": [
-        "F18"
-      ],
-      "Actividades": [
-        "6",
-        "7"
-      ],
-      "Proyectos": [
-        "Ondas Electromagneticas"
-      ],
+      "Evidencias": ["F18"],
+      "Actividades": ["6", "7"],
+      "Proyectos": ["Ondas Electromagneticas"],
       "LibroSep": "Saberes y pensamiento científico 318-323",
       "LibroMcMillan": "Física Imagina  184-189",
       "Vinculacion": "\\textbf{Matemáticas: } Usa la notación científica al realizar cálculos con cantidades muy grandes o muy pequeñas.",
@@ -215,12 +273,7 @@
         "Saberes y pensamiento científico 318-323",
         "Física Imagina  184-189"
       ],
-      "ActPro": [
-        "6",
-        "7",
-        "F18",
-        "Ondas Electromagneticas"
-      ]
+      "ActPro": ["6", "7", "F18", "Ondas Electromagneticas"]
     },
     {
       "PeriodosLectivos": 6,
@@ -240,10 +293,7 @@
         "Relaciona la gravedad con la estructura y evolución del Universo."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "8",
-        "9"
-      ],
+      "Actividades": ["8", "9"],
       "Proyectos": [],
       "LibroSep": "Saberes y pensamiento científico 262-264",
       "LibroMcMillan": "Física Imagina  190-195",
@@ -257,10 +307,7 @@
         "Saberes y pensamiento científico 262-264",
         "Física Imagina  190-195"
       ],
-      "ActPro": [
-        "8",
-        "9"
-      ]
+      "ActPro": ["8", "9"]
     },
     {
       "PeriodosLectivos": 6,
@@ -279,15 +326,8 @@
         "Comprende que el Big Bang es el modelo más actual sobre el origen del Universo y que está aún en desarrollo."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "10",
-        "11",
-        "12",
-        "13"
-      ],
-      "Proyectos": [
-        "Universo"
-      ],
+      "Actividades": ["10", "11", "12", "13"],
+      "Proyectos": ["Universo"],
       "LibroSep": "Saberes y pensamiento científico 262-264",
       "LibroMcMillan": "Física Imagina  196-201",
       "Vinculacion": "\\textbf{Matemáticas: } Identifica tendencias en los datos centrándose en sus valores representativos y sus variaciones.",
@@ -303,13 +343,7 @@
         "Saberes y pensamiento científico 262-264",
         "Física Imagina  196-201"
       ],
-      "ActPro": [
-        "10",
-        "11",
-        "12",
-        "13",
-        "Universo"
-      ]
+      "ActPro": ["10", "11", "12", "13", "Universo"]
     },
     {
       "PeriodosLectivos": 6,
@@ -324,15 +358,9 @@
       "Desarrollo": "Esta parte de la lección presenta de manera gradual la forma en que el conocimiento del Universo ha ido mejorando gracias a observaciones cada vez más sofisticadas. Se comienza con observaciones simples y cotidianas, que proporcionan información valiosa sobre la disposición de los objetos a la distancia. Fomente la habilidad matemática de los estudiantes pidiendo que lean el documento sugerido en el texto, donde se explica el método geométrico usado por Eratóstenes. Solicite que lo expliquen con sus propias palabras y luego realicen los retos propuestos en el mismo documento. Si la motivación en los estudiantes es la suficiente, puede compartir con ellos algunos de los métodos usados por Aristarco para llegar a las ecuaciones que se presentan en la Práctica de la página 204. Los principales razonamientos requieren solamente de geometría y algo de álgebra. Invite a los estudiantes a realizar la actividad experimental de la página 204. Sugiérales tomar notas y registrar todo lo que llame su atención, como el paso de estrellas fugaces o fenómenos meteorológicos, para posteriormente comentarlos en grupo. Puede aprovechar para hablarles un poco de arqueoastronomía, mencionando, por ejemplo, los logros de los astrónomos mayas. La idea clave de la última parte del Desarrollo es que actualmente la Astronomía es, esencialmente, una ciencia computacional, en la que cada día cobra más importancia el uso de la inteligencia artificial.",
       "Cierre": "Se espera que los alumnos reflexionen de nuevo sobre la analogía de Herschel para explicar los métodos usados por los científicos para conocer el Universo.",
       "EjesArticuladores": "Igualdad de género.",
-      "EvaluacionFormativa": [
-        "Comprende la relación solar-estelar."
-      ],
+      "EvaluacionFormativa": ["Comprende la relación solar-estelar."],
       "Evidencias": [],
-      "Actividades": [
-        "14",
-        "15",
-        "16"
-      ],
+      "Actividades": ["14", "15", "16"],
       "Proyectos": [],
       "LibroSep": "Saberes y pensamiento científico 231",
       "LibroMcMillan": "Física Imagina  202-207",
@@ -347,11 +375,7 @@
         "Saberes y pensamiento científico 231",
         "Física Imagina  202-207"
       ],
-      "ActPro": [
-        "14",
-        "15",
-        "16"
-      ]
+      "ActPro": ["14", "15", "16"]
     },
     {
       "PeriodosLectivos": 6,
@@ -370,14 +394,8 @@
         "Explica los efectos de la fuerza de gravedad en el Sistema Solar y en los procesos nucleares en el Sol y las estrellas."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "17",
-        "18",
-        "19"
-      ],
-      "Proyectos": [
-        "Telescopio"
-      ],
+      "Actividades": ["17", "18", "19"],
+      "Proyectos": ["Telescopio"],
       "LibroSep": "",
       "LibroMcMillan": "Física Imagina  208-211",
       "Vinculacion": "\\textbf{Matemáticas: } Investiga figuras relacionadas con círculos y propiedades de los círculos.",
@@ -388,15 +406,8 @@
         "A.19. El Sistema Solar",
         "Telescopio"
       ],
-      "Libros": [
-        "Física Imagina  208-211"
-      ],
-      "ActPro": [
-        "17",
-        "18",
-        "19",
-        "Telescopio"
-      ]
+      "Libros": ["Física Imagina  208-211"],
+      "ActPro": ["17", "18", "19", "Telescopio"]
     },
     {
       "PeriodosLectivos": 6,
@@ -415,9 +426,7 @@
         "Relaciona el efecto invernadero con el calentamiento global, y éste con el cambio climático."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "20"
-      ],
+      "Actividades": ["20"],
       "Proyectos": [],
       "LibroSep": "Saberes y pensamiento científico 175-176",
       "LibroMcMillan": "Física Imagina  212-215",
@@ -430,9 +439,7 @@
         "Saberes y pensamiento científico 175-176",
         "Física Imagina  212-215"
       ],
-      "ActPro": [
-        "20"
-      ]
+      "ActPro": ["20"]
     },
     {
       "PeriodosLectivos": 6,
@@ -451,25 +458,18 @@
         "Explica el mecanismo del efecto invernadero en términos de la interacción de la luz con los gases de la atmósfera."
       ],
       "Evidencias": [],
-      "Actividades": [
-        "21"
-      ],
+      "Actividades": ["21"],
       "Proyectos": [],
       "LibroSep": "Saberes y pensamiento científico 222-225,Nuestro libro de proyectos 114-119",
       "LibroMcMillan": "Física Imagina  216-219",
       "Vinculacion": "\\textbf{Biología: } Analiza las prácticas de consumo que han alterado los ciclos biogeoquímicos del carbono y el nitrógeno, sus efectos asociados al calentamiento global y sus impactos en el medio ambiente y la salud.",
-      "Worklist": [
-        "L11. Gases de efecto invernadero",
-        "A.21. Gases naturales"
-      ],
+      "Worklist": ["L11. Gases de efecto invernadero", "A.21. Gases naturales"],
       "Libros": [
         "Saberes y pensamiento científico 222-225",
         "Nuestro libro de proyectos 114-119",
         "Física Imagina  216-219"
       ],
-      "ActPro": [
-        "21"
-      ]
+      "ActPro": ["21"]
     },
     {
       "PeriodosLectivos": 6,
@@ -488,12 +488,8 @@
         "Comprende que las actividades humanas agravan el efecto invernadero. ",
         "Reconoce las consecuencias ambientales del cambio climático."
       ],
-      "Evidencias": [
-        "F19"
-      ],
-      "Actividades": [
-        "22"
-      ],
+      "Evidencias": ["F19"],
+      "Actividades": ["22"],
       "Proyectos": [],
       "LibroSep": "Saberes y pensamiento científico 260",
       "LibroMcMillan": "Física Imagina  220-223",
@@ -507,10 +503,7 @@
         "Saberes y pensamiento científico 260",
         "Física Imagina  220-223"
       ],
-      "ActPro": [
-        "22",
-        "F19"
-      ]
+      "ActPro": ["22", "F19"]
     },
     {
       "PeriodosLectivos": 6,
@@ -529,15 +522,9 @@
         "Conoce las medidas de mitigación y adaptación contra el cambio climático. ",
         "Explica la utilidad de las medidas de mitigación y adaptación contra el cambio climático."
       ],
-      "Evidencias": [
-        "F20"
-      ],
-      "Actividades": [
-        "23"
-      ],
-      "Proyectos": [
-        "Ambiente"
-      ],
+      "Evidencias": ["F20"],
+      "Actividades": ["23"],
+      "Proyectos": ["Ambiente"],
       "LibroSep": "Saberes y pensamiento científico 217-221 y 258-260",
       "LibroMcMillan": "Física Imagina  224-227",
       "Vinculacion": "\\textbf{Matemáticas: } Recolecta, registra, lee y comunica información mediante histogramas, gráficas poligonales y de línea.",
@@ -551,11 +538,7 @@
         "Saberes y pensamiento científico 217-221 y 258-260",
         "Física Imagina  224-227"
       ],
-      "ActPro": [
-        "23",
-        "F20",
-        "Ambiente"
-      ]
+      "ActPro": ["23", "F20", "Ambiente"]
     }
   ]
 }
