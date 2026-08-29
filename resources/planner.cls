@@ -23,7 +23,7 @@
 \RequirePackage{pdflscape} % Permite rotar una sola página de forma correcta en el PDF
 \RequirePackage{ragged2e}
 \RequirePackage{multicol,multirow}
-\RequirePackage{jsonparse} % Load the json package
+\RequirePackage[debug]{jsonparse} % Load the json package
 \RequirePackage{anyfontsize}
 \RequirePackage{adjustbox}
 %%\RequirePackage{planner}

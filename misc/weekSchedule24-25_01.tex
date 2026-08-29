@@ -1,0 +1,79 @@
+\documentclass[landscape]{article}
+\usepackage[letterpaper,includehead,left=0.5in,right=0.5in,bottom=0.5in,top=0.5
+    in]{geometry} % make room
+\usepackage{horario}
+\usepackage[spanish]{babel}
+\usepackage{xparse,array}
+\usepackage{graphicx}
+%\usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+% \usepackage[svgnames,x11names,usenames]{xcolor} % Required for custom color% http://ctan.org/pkg/xcolor
+%\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{anyfontsize}
+\usepackage{fancyhdr}
+\usepackage[default]{comfortaa}
+
+\usepackage{fontawesome5}
+\usepackage{array}
+\definecolor{goldenrod}{rgb}{0.85, 0.65, 0.13}
+\definecolor{bostonuniversityred}{rgb}{0.8, 0.0, 0.0}
+\definecolor{flashwhite}{rgb}{0.95, 0.95, 0.96}
+\definecolor{oceanboatblue}{rgb}{0.0, 0.47, 0.75}
+\definecolor{lapislazuli}{rgb}{0.15, 0.38, 0.61}
+\definecolor{cadmiumorange}{rgb}{0.93, 0.53, 0.18}
+\definecolor{darkolivegreen}{rgb}{0.33, 0.42, 0.18}
+\definecolor{gold}{rgb}{0.83, 0.69, 0.22}
+\definecolor{peridot}{rgb}{0.9, 0.89, 0.0}
+
+\definecolor{ferngreen}{rgb}{0.31, 0.47, 0.26}
+\definecolor{gainsboro}{rgb}{0.86, 0.86, 0.86}
+\definecolor{lava}{rgb}{0.81, 0.06, 0.13}
+\definecolor{myrtle}{rgb}{0.13, 0.26, 0.12}
+\definecolor{mediumelectricblue}{rgb}{0.01, 0.31, 0.59}
+\definecolor{grullo}{rgb}{0.66, 0.6, 0.53}
+\setlength\headheight{32pt}
+\begin{document}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=2cm]{logo}}
+\chead{}
+\rhead{Julio César Melchor Pinto}
+\CellHeight{0.75in}
+\CellWidth{1.8in}
+\TimeRange{7:00-15:00}
+\SubUnits{5}
+\BeginOn{Lunes}
+\TextSize{\centering\Large\bfseries}
+\FiveDay
+% \TwelveHour
+\NewAppointment{receso}  {flashwhite!15!}    {lava!30!black}
+\NewAppointment{mateuno} {goldenrod!15!}     {goldenrod!80!black}
+\NewAppointment{matedos} {goldenrod!15!}     {lapislazuli!80!black}
+\NewAppointment{matetres}{goldenrod!15!}     {darkolivegreen!80!black}
+\NewAppointment{quimica} {darkolivegreen!15!}{darkolivegreen!80!black}
+\NewAppointment{fisica}  {lapislazuli!15!}   {lapislazuli!80!black}
+\NewAppointment{geoart}  {orange!15!}   {gray!80!black}
+
+\begin{schedule}[Ciclo escolar 2024-2025]
+    \receso  {Receso}	  { }{M,T,W,Th,F}{08:40-09:05}
+    \receso  {Receso}	  { }{M,T,W,Th,F}{10:50-11:20}
+    \geoart  {Geometría}  {3}{M}{07:00-07:50}
+    \geoart  {Geometría}  {2}{Th}{13:55-14:45}
+    \mateuno {Matemáticas}{1}{M,T,W,F}{09:10-10:00}
+    \mateuno {Matemáticas}{1}{Th}{07:00-07:50}
+    \mateuno {Matemáticas}{1}{W}{13:55-14:45}
+    \matetres{Matemáticas}{3}{M,T,W,Th}{10:00-10:50}
+    \matetres{Matemáticas}{3}{T}{13:55-14:45}
+    \matetres{Matemáticas}{3}{F}{13:05-13:55}
+    \matedos {Matemáticas}{2}{F}{07:00-07:50}
+    \matedos {Matemáticas}{2}{Th,F}{07:50-08:40}
+    \matedos {Matemáticas}{2}{W}{07:00-07:50}
+    \matedos {Matemáticas}{2}{M}{13:55-14:45}
+    \quimica {Química}	  {3}{M}{13:05-13:55}
+    \quimica {Química}	  {3}{M,T,W,Th,F}{11:25-12:15}
+    \fisica  {Física}	  {2}{M,T,W,Th,F}{12:15-13:05}
+    \fisica  {Física}	  {2}{W}{13:05-13:55}
+\end{schedule}
+
+\end{document}
