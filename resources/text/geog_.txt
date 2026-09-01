@@ -1,75 +1,75 @@
 
-Contenido			Lección				Recurso interactivo 			Título 													Página
-					Me preparo			        Me preparo     																			14
+Contenido            Lección                Recurso interactivo             Título                                                     Página
+                    Me preparo                    Me preparo                                                                        14
                                         L1.     El espacio geográfico: interrelaciones sociedad-naturaleza
-						1				A.1.    ¿Mi espacio?     																	16
-						1				A.2.    El componente que sobresale     													17
-						1				A.3.    Saberes ancestrales     															19
-                                        F1.      Los pueblos indígenas y su relación con la naturaleza						
-                                        L2.     Categorías de análisis del espacio geográfico						
-						2				A.4.    ¿Qué categoría de análisis usarías? 												24
-                                        L3.     El estudio del espacio geográfico						
-						3				A.5.    ¿Cuáles son las características del espacio geográfico?								26
-                                        L4.     Representaciones cartográficas						
-						4				A.6.    ¿Croquis, planos o mapas?     														31
-						4				A.7.    Fotografía aérea     																32
+                        1               A.1.    ¿Mi espacio?                                                                        16
+                        1               A.2.    El componente que sobresale                                                         17
+                        1               A.3.    Saberes ancestrales                                                                 19
+                                        F1.      Los pueblos indígenas y su relación con la naturaleza                        
+                                        L2.     Categorías de análisis del espacio geográfico                        
+                        2               A.4.    ¿Qué categoría de análisis usarías?                                                 24
+                                        L3.     El estudio del espacio geográfico                        
+                        3               A.5.    ¿Cuáles son las características del espacio geográfico?                             26
+                                        L4.     Representaciones cartográficas                        
+                        4               A.6.    ¿Croquis, planos o mapas?                                                           31
+                        4               A.7.    Fotografía aérea                                                                    32
                                         L5.     Interpretación y representación de la Información geográfica
-						5				A.8.    Representando la realidad     														34
-						5				A.9.    ¿Para qué nos sirven los mapas? 													34
-                                        F2.     ¿Qué muestran los mapas?						
-                                        L6.     Tecnologías de la información geográfica						
-						6				A.10.   ¿GPS O SIG?     															        40
-						6				A.11.   ¿A qué sistema pertenece?     														40
-						6				A.12.   ¿Cómo funciona un SIG?     															41
-						6				A.13.   Aprendamos a leer el espacio geográfico 											43
+                        5               A.8.    Representando la realidad                                                           34
+                        5               A.9.    ¿Para qué nos sirven los mapas?                                                     34
+                                        F2.     ¿Qué muestran los mapas?                        
+                                        L6.     Tecnologías de la información geográfica                        
+                        6               A.10.   ¿GPS O SIG?                                                                         40
+                        6               A.11.   ¿A qué sistema pertenece?                                                           40
+                        6               A.12.   ¿Cómo funciona un SIG?                                                              41
+                        6               A.13.   Aprendamos a leer el espacio geográfico                                             43
                                         L7.     Las placas tectónicas y su relación con la sismicidad y el vulcanismo
-						7				A.14.   ¡Viva! La Tierra viva     															45
-						7				A.15.   Sismicidad y vulcanismo     														48
-						7				A.16.   México se mueve y erupciona     													48
-                                        F3.     Un paso adelante, menos	     															
-                                        L8.     Las placas tectónicas y su relación con el relieve						
-						8				A.17.   De las montañas a las depresiones 													51
-						8				A.18.   Relieves mexicanos     																54
-						8				A.19.   Procesos externos de la Tierra 														55
-                                        L9.     El suelo y su importancia						                                     
-						9				A.20.   Exploremos el suelo     															58
-                                        L10.    Aguas continentales en México y el mundo						
-                                        F4.     Planta sobre planta, caminemos						                               
-						10				A.21.   Agua que has de tener 																65 
+                        7               A.14.   ¡Viva! La Tierra viva                                                               45
+                        7               A.15.   Sismicidad y vulcanismo                                                             48
+                        7               A.16.   México se mueve y erupciona                                                         48
+                                        F3.     Un paso adelante, menos                                                                     
+                                        L8.     Las placas tectónicas y su relación con el relieve                        
+                        8               A.17.   De las montañas a las depresiones                                                   51
+                        8               A.18.   Relieves mexicanos                                                                  54
+                        8               A.19.   Procesos externos de la Tierra                                                      55
+                                        L9.     El suelo y su importancia                                                             
+                        9               A.20.   Exploremos el suelo                                                                 58
+                                        L10.    Aguas continentales en México y el mundo                        
+                                        F4.     Planta sobre planta, caminemos                                                       
+                        10              A.21.   Agua que has de tener                                                               65 
                                         F5.     Cuencas y disponibilidad de agua limpia                                      
                                         L11.    Las cuencas hidrográficas y el desarrollo económico en México
-						11				A.22.   Cuando el río suena, agua lleva 											 		68  
-						11				A.23.   Cuencas hídricas en el mundo 														68 
-						11				A.24.   Cuencas hídricas y economía 														71 	 
-                                        F6.     Océanos en peligro ¡Paremos lacontaminación!						             
-                                        L12.    Aguas oceánicas y la importancia de los litorales de México					   	
-						12				A.25.   Agua va, agua viene 																74 
-						12				A.26.   Tomemos conciencia 																	79 
-						Qué aprendí			    Qué aprendí				 												        	80
-										A.	¿Qué conforma el clima?     													88
-										A.	Hace calor en la costa y frío en las montañas 									89
-										A.	Los climas de la Tierra     													90
-										A.	La geografía favorece la biodiversidad 											91
-										A.	El clima y la biodiversidad     												92
-										A.	Una gran biodiversidad     														93
-										A.	El reto del cambio climático     												95
-										A.	Consecuencias del cambio climático 												97
-										A.	Regiones bioculturales     														101
-										A.	Países bioculturales     														105
-										A.	Riesgos del agua y del cielo en la Tierra 										108
-										A.	Desastres en el ambiente: un riesgo para la humanidad 							110
-										A.	Sociedad y desastres     														116
-										A.	La prevención de desastres una ardua tarea 										117
-										A.	La población se multiplica     													121
-										A.	Composición de la población     												122
-										A.	¿Qué ocurre cuando la población aumenta? 										123
-										A.	Los citadinos del mundo     													126
-										A.	La población se dispersa     													127
-										A.	Sociedad y contaminación     													129
-										A.	¿Por qué migran las personas? 													131
-										A.	La migración del campo a la ciudad 												133
-										A.	Los migrantes llegaron     														134
-										A.	El dinero se mueve    															135
+                        11              A.22.   Cuando el río suena, agua lleva                                                     68  
+                        11              A.23.   Cuencas hídricas en el mundo                                                        68 
+                        11              A.24.   Cuencas hídricas y economía                                                         71      
+                                        F6.     Océanos en peligro ¡Paremos lacontaminación!                                     
+                                        L12.    Aguas oceánicas y la importancia de los litorales de México                           
+                        12              A.25.   Agua va, agua viene                                                                 74 
+                        12              A.26.   Tomemos conciencia                                                                  79 
+                        Qué aprendí     Qué aprendí                                                                                 80
+                                        A.    ¿Qué conforma el clima?                                                         88
+                                        A.    Hace calor en la costa y frío en las montañas                                     89
+                                        A.    Los climas de la Tierra                                                         90
+                                        A.    La geografía favorece la biodiversidad                                             91
+                                        A.    El clima y la biodiversidad                                                     92
+                                        A.    Una gran biodiversidad                                                             93
+                                        A.    El reto del cambio climático                                                     95
+                                        A.    Consecuencias del cambio climático                                                 97
+                                        A.    Regiones bioculturales                                                             101
+                                        A.    Países bioculturales                                                             105
+                                        A.    Riesgos del agua y del cielo en la Tierra                                         108
+                                        A.    Desastres en el ambiente: un riesgo para la humanidad                             110
+                                        A.    Sociedad y desastres                                                             116
+                                        A.    La prevención de desastres una ardua tarea                                         117
+                                        A.    La población se multiplica                                                         121
+                                        A.    Composición de la población                                                     122
+                                        A.    ¿Qué ocurre cuando la población aumenta?                                         123
+                                        A.    Los citadinos del mundo                                                         126
+                                        A.    La población se dispersa                                                         127
+                                        A.    Sociedad y contaminación                                                         129
+                                        A.    ¿Por qué migran las personas?                                                     131
+                                        A.    La migración del campo a la ciudad                                                 133
+                                        A.    Los migrantes llegaron                                                             134
+                                        A.    El dinero se mueve                                                                135
 
 
 
@@ -88,8 +88,8 @@ Desarrollo sustentable.
 Valora el manejo sustentable de recursos naturales basado en prácticas ancestrales ligadas a la herencia cultural de los pueblos indígenas.
 Historia. Busca, localiza y estudia con sus pares fuentes que den cuenta de mitos fundacionales de pueblos antiguos.
 Formula preguntas, recopila información y comparte sus hallazgos en torno a los pueblos originarios de México: ¿Cuántos pueblos son? ¿Dónde están? ¿De dónde llegaron? ¿Cómo vivían antes? ¿Cómo viven ahora? ¿Qué permanece? ¿Qué cambió? ¿Se reconoce en él?
-	•	Comprende que el espacio geográfico se conforma por las interacciones entre sociedad y Naturaleza.
-	•	Reconoce que los pueblos indígenas tienen una percepción particular del espacio geográfico.
+    •    Comprende que el espacio geográfico se conforma por las interacciones entre sociedad y Naturaleza.
+    •    Reconoce que los pueblos indígenas tienen una percepción particular del espacio geográfico.
 
 2 Las categorías de análisis espacial y representaciones del espacio geográfico.
 Comprende las categorías de análisis espacial para explicar las características del espacio geográfico: lugar, región, paisaje y territorio.
@@ -97,8 +97,8 @@ Comprende las categorías de análisis espacial para explicar las característic
 
 Ciudadanía. Comprende la importancia de que, sin importar los límites territoriales, los seres humanos sean capaces de establecer una convivencia pacífica y solidaria.
 Formación Cívica y Ética. Comprende la influencia que tiene la cultura de la paz en la convivencia escolar, familiar y comunitaria, para favorecer ambientes libres de discriminación y racismo. 
-	•	Explica las características del espacio geográfico, utilizandolas categorías de análisis espacial.
-	•	Identifica ejemplos de las categorías de análisis espacial.
+    •    Explica las características del espacio geográfico, utilizandolas categorías de análisis espacial.
+    •    Identifica ejemplos de las categorías de análisis espacial.
 
 
 
@@ -108,8 +108,8 @@ Utiliza los conceptos de localización, distribución, diversidad, temporalidad 
 3. El estudio del espacio geográfico
 Artes y experiencias estéticas. Identifica el valor estético y urbanístico de un espacio geográfico planificado y con perspectiva de desarrollo sostenible.
 Historia. Reflexiona acerca de la importancia de las fuentes históricas para la interpretación de hechos y procesos. 
-	•	Comprende en qué consiste cada una de las características del espacio geográfico.
-	•	Aplica las características del espacio geográfico para estudiar su localidad.
+    •    Comprende en qué consiste cada una de las características del espacio geográfico.
+    •    Aplica las características del espacio geográfico para estudiar su localidad.
 
 
 
@@ -123,8 +123,8 @@ Interpreta representaciones cartográficas para obtener información de diversos
 4. Representaciones cartográficas
 Desarrollo sustentable. Identifica el uso de las representaciones cartográficas en programas de desarrollo sustentable. 
 Historia. Emplea alguno de estos sistemas para ubicar en el espacio y en el tiempo aspectos de la vida cotidiana de los pueblos antiguos que surgieron en Mésoamérica, Aridoamérica y Oasisamérica.  
-	•	Distingue las principales representaciones cartográficas del espacio geográfico: croquis, planos, mapas y globos terráqueos.
-	•	Reconoce cómo se obtienen las fotografías aéreas y cuál es su utilidad.
+    •    Distingue las principales representaciones cartográficas del espacio geográfico: croquis, planos, mapas y globos terráqueos.
+    •    Reconoce cómo se obtienen las fotografías aéreas y cuál es su utilidad.
 
 5
 
@@ -132,8 +132,8 @@ Historia. Emplea alguno de estos sistemas para ubicar en el espacio y en el tiem
 5. Interpretación y representación de la información geográfica
 Ciudadanía. Comprende que el acceso a la información es un derecho que ayuda a conformar una sociedad informada, equitativa y próspera. 
 Historia. Emplea alguno de estos sistemas para ubicar en el espacio y en el tiempo aspectos de la vida cotidiana de los pueblos antiguos que surgieron en Mésoamérica, Aridoamérica y Oasisamérica.
-	•	Identifica cómo se representa la información de los mapas mediante el uso de la leyenda o simbología.
-	•	Interpreta mapas de diferentes temas y escalas de análisis.
+    •    Identifica cómo se representa la información de los mapas mediante el uso de la leyenda o simbología.
+    •    Interpreta mapas de diferentes temas y escalas de análisis.
 
 6
 Las tecnologías de la información geográfica 
@@ -141,8 +141,8 @@ Emplea recursos tecnológicos para obtener y representar información geográfic
 6. Tecnologías de la información geográfica.  
 Desarrollo sustentable. Valora el uso de las tecnologías de la información geográfica en el cuidado y preservación de la biodiversidad. 
 Formación Cívica y Ética. Reflexiona éticamente acerca de la relación de las comunidades con su contexto socionatural para impulsar acciones que promuevan el desarrollo sustentable, así como actitudes de cuidado y respeto a otros seres vivos.
-	•	Examina los principales usos que tienen las tecnologías de la información geográfica.
-	•	Utiliza los Sistemas de Información Geográfica para representar y analizar el espacio geográfico.
+    •    Examina los principales usos que tienen las tecnologías de la información geográfica.
+    •    Utiliza los Sistemas de Información Geográfica para representar y analizar el espacio geográfico.
 
 7
 
@@ -158,11 +158,11 @@ Argumenta la relación entre las placas tectónicas con las regiones sísmicas y
 
 Ciudadanía. Reflexiona sobre la importancia que tiene la cultura de la prevención para construir una sociedad más resiliente. 
 Historia. Identifica representaciones asumidas de los pueblos indígenas y afromexicanos sobre el nacimiento, la vida, la muerte, la tierra, la naturaleza. El agua, el territorio en su comunidad.
-	•	Define lo que son las placas
+    •    Define lo que son las placas
 tectónicas, sus principales
 características y su dinámica.
-	•	Comprende la relación entre las placas tectónicas y las regiones sísmicas y volcánicas de México y el mundo.
-	•	Reconoce la necesidad de fomentar una cultura de prevención de desastres en México.
+    •    Comprende la relación entre las placas tectónicas y las regiones sísmicas y volcánicas de México y el mundo.
+    •    Reconoce la necesidad de fomentar una cultura de prevención de desastres en México.
 8
 
 Relaciona los movimientos de las placas tectónicas con la distribución del relieve de la superficie terrestre y reconoce otros agentes que lo modelan.
@@ -170,9 +170,9 @@ Relaciona los movimientos de las placas tectónicas con la distribución del rel
 
 Valores y educación socioemocional. Identifica que el respeto es un valor que también debe aplicarse a la naturaleza. 
 Historia. Identifica representaciones asumidas de los pueblos indígenas y afromexicanos sobre el nacimiento, la vida, la muerte, la tierra, la naturaleza. El agua, el territorio en su comunidad.
-	•	Relaciona los movimientos de las placas tectónicas con la formación del relieve continental y oceánico.
-	•	Reconoce la distribución del relieve continental y oceánico en el mundo y en México.
-	•	Explica cómo los procesos externos de intemperismo y erosión modelan el relieve.
+    •    Relaciona los movimientos de las placas tectónicas con la formación del relieve continental y oceánico.
+    •    Reconoce la distribución del relieve continental y oceánico en el mundo y en México.
+    •    Explica cómo los procesos externos de intemperismo y erosión modelan el relieve.
 9
 El suelo, recurso estratégico para la seguridad alimentaria y la vida en el planeta.
 Indaga sobre el origen, los usos y los problemas del suelo en la localidad.
@@ -180,8 +180,8 @@ Indaga sobre el origen, los usos y los problemas del suelo en la localidad.
 
 Desarrollo sustentable. Identifica que el suelo es un recurso de vital importancia por lo que se debe hacer un manejo sustentable de éste.   
 Historia. Reconoce desde la perspectiva histórica las condiciones naturales que permitieron el desarrollo de la agricultura en nuestro territorio.
-	•	Comprende algunos servicios ambientales o ecosistémicos que aportan los suelos y su importancia para la vida en la Tierra.
-	•	Comprende el proceso de formación del suelo.
+    •    Comprende algunos servicios ambientales o ecosistémicos que aportan los suelos y su importancia para la vida en la Tierra.
+    •    Comprende el proceso de formación del suelo.
 
 10
 La distribución y dinámica de las aguas continentales y oceánicas en la Tierra.
@@ -191,8 +191,8 @@ Analiza la distribución de las aguas continentales en México y el mundo: princ
 Valores y educación socioemocional. Reconoce la importancia de la solidaridad con respecto al uso de un recurso vital como el agua en la vida de todos los seres vivos.
 
 Historia. Identifica representaciones asumidas de los pueblos indígenas y afromexicanos sobre el nacimiento, la vida, la muerte, la tierra, la naturaleza. El agua, el territorio en su comunidad. 
-	•	Comprende qué son las aguas continentales y sus principales características.
-	•	Localiza las principales aguas continentales en mapas.
+    •    Comprende qué son las aguas continentales y sus principales características.
+    •    Localiza las principales aguas continentales en mapas.
 
 11
 
@@ -202,8 +202,8 @@ Reconoce la importancia de las cuencas hidrográficas como un sistema para el de
 
 Desarrollo sustentable. Adopta una visión integral con respeto al manejo de un recurso compartido como lo es el agua que escurre en la cuenca.
 Historia. Reconoce desde la perspectiva histórica las condiciones naturales que permitieron el desarrollo de la agricultura en nuestro territorio.
-	•	Comprende qué son las cuencas hidrográficas y sus principales características.
-	•	Reconoce la importancia de las cuencas hídricas para el desarrollo económico en México.
+    •    Comprende qué son las cuencas hidrográficas y sus principales características.
+    •    Reconoce la importancia de las cuencas hídricas para el desarrollo económico en México.
 
 
 
@@ -217,6 +217,6 @@ Valora el mar territorial, la zona económica exclusiva de México y sus litoral
 
 Desarrollo sustentable. Sugiere estrategias para la conservación o aprovechamiento racional de los recursos presentes en nuestros litorales.
 Historia. Identifica representaciones asumidas de los pueblos indígenas y afromexicanos sobre el nacimiento, la vida, la muerte, la tierra, la naturaleza. El agua, el territorio en su comunidad.
-	•	Conoce la importancia y la dinámica de las aguas oceánicas.
-	•	Comprende qué es el mar territorial y la ZEE, sus límites y extensión.
-	•	Valora el mar territorial, la ZEE de México y sus litorales, como regiones de donde se obtienen recursos que contribuyen al desarrollo de México.
+    •    Conoce la importancia y la dinámica de las aguas oceánicas.
+    •    Comprende qué es el mar territorial y la ZEE, sus límites y extensión.
+    •    Valora el mar territorial, la ZEE de México y sus litorales, como regiones de donde se obtienen recursos que contribuyen al desarrollo de México.

@@ -1,54 +1,54 @@
 \documentclass{planner}
 \begin{document}
-\loadunit{0}{test}{1}%%
+% \loadunit{0}{test}{1}%%
 % \loadunit{1}{math}{1}%
 % \loadunit{2}{math}{1}%
 % \loadunit{3}{math}{1}%
 % \loadunit{2}{phys}{1}%
-% \loadunit{1}{geog}{1}%
+\loadunit{1}{geog}{1}%
 % \boardlist
 \begin{landscape}
 %\JSONParseArrayMapInline{\weekdata}{weeks}{\tableta{#1}}
 
-\JSONParseValue[ store in=\fechainicio]{\weekdata}{weeks[#1].FechaDeInicio}
-\JSONParseValue[store in=\fechacierre]{\weekdata}{weeks[#1].FechaDeCierre}
- \JSONParseArrayMapFunction[
-                    code before={},
-                    code after={}
-                ]{\weekdata}{weeks}{%
-                    \JSONParseArrayValue
-}
-
-% \JSONParseArrayMapInline{\weekdata}{weeks}{%
-%     \begin{tcolorbox}[titlebox,title=\planTitle%
-%             {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].Contenido}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].Tema}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].Leccion}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].PeriodosLectivos}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio}}
-%             {\JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}}
-%         ]
-%         \weekcontents{%
-%             \JSONParseValue{\weekdata}{weeks[#1].Inicio}
-%         }%
-%         {%
-%             \JSONParseValue{\weekdata}{weeks[#1].Desarrollo}
-%         }%
-%         {%
-%             \JSONParseValue{\weekdata}{weeks[#1].Cierre}
-%         }\hfill%
-%         \begin{minipage}[t][12.5cm][b]{0.29\linewidth}
-%             \JSONParseArrayMapFunction[
-%                 code before={\begin{activitybox}{Actividades}},
-%                             code after={\end{activitybox}}
-%             ]{\weekdata}{weeks[#1].ActPro}{\itembox}
-%             \notasbox\vfill
-%             \badges{\JSONParseValue{\weekdata}{weeks[#1].Vinculacion}}{\arrayitemize{#1}{Libros}}
-%         \end{minipage}
-%     \end{tcolorbox}%
-%     \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}%
+% \JSONParseValue[ store in=\fechainicio]{\weekdata}{weeks[#1].FechaDeInicio}
+% \JSONParseValue[store in=\fechacierre]{\weekdata}{weeks[#1].FechaDeCierre}
+%  \JSONParseArrayMapFunction[
+%                     code before={},
+%                     code after={}
+%                 ]{\weekdata}{weeks}{%
+%                     \JSONParseArrayValue
 % }
+
+\JSONParseArrayMapInline{\weekdata}{weeks}{%
+    \begin{tcolorbox}[titlebox,title=\planTitle%
+            {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
+            {\JSONParseValue{\weekdata}{weeks[#1].Contenido}}
+            {\JSONParseValue{\weekdata}{weeks[#1].Tema}}
+            {\JSONParseValue{\weekdata}{weeks[#1].Leccion}}
+            {\JSONParseValue{\weekdata}{weeks[#1].PeriodosLectivos}}
+            {\JSONParseValue{\weekdata}{weeks[#1].SemanaEscolar}}
+            {\JSONParseValue{\weekdata}{weeks[#1].FechaDeInicio}}
+            {\JSONParseValue{\weekdata}{weeks[#1].FechaDeCierre}}
+        ]
+        \weekcontents{%
+            \JSONParseValue{\weekdata}{weeks[#1].Inicio}
+        }%
+        {%
+            \JSONParseValue{\weekdata}{weeks[#1].Desarrollo}
+        }%
+        {%
+            \JSONParseValue{\weekdata}{weeks[#1].Cierre}
+        }\hfill%
+        \begin{minipage}[t][12.5cm][b]{0.29\linewidth}
+            \JSONParseArrayMapFunction[
+                code before={\begin{activitybox}{Actividades}},
+                            code after={\end{activitybox}}
+            ]{\weekdata}{weeks[#1].ActPro}{\itembox}
+            \notasbox\vfill
+            \badges{\JSONParseValue{\weekdata}{weeks[#1].Vinculacion}}{\arrayitemize{#1}{Libros}}
+        \end{minipage}
+    \end{tcolorbox}%
+    \weekbottom{\JSONParseValue{\weekdata}{weeks[#1].Aprendizaje}}{\arrayitemize{#1}{EvaluacionFormativa}}%
+}
 \end{landscape}
 \end{document}
