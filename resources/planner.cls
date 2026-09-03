@@ -387,7 +387,7 @@
         \schoolinfo
     \end{minipage}%
     \begin{tabularx}{0.7\textwidth}{rYr}
-        {\sffamily Campo formativo:} & Saberes y Pensamiento Científico  &  \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2025-2026} \unitinfo  \\ 
+        {\sffamily Campo formativo:} & Saberes y Pensamiento Científico  &  \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{\currentyear-\nextyear} \unitinfo  \\ 
         {\sffamily Tema:}  & \multirow[t]{2}{\linewidth}{#3} & \tcbox[colback=yellow!20!white,colframe=rdsColor,size=fbox,on line]{ {\large\sffamily Semana} {\Large #6}} \tcbox[colframe=rdsColor,size=fbox,on line]{ {\Large #5} \begin{minipage}[b]{0.9cm}\sffamily\tiny Períodos\\lectivos\end{minipage}} \\
         & & \rangofecha{#7}{#8}  \\
         {\sffamily Contenido:}  &  \multicolumn{2}{l}{#2}\\

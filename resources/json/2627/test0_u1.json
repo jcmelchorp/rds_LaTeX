@@ -88,37 +88,42 @@
     "fechasDeExamen": ["2025-11-03"]
   },
   "weeks": [
-    {
-      "PeriodosLectivos": 5,
-      "FechaDeInicio": "2025-09-01",
-      "FechaDeCierre": "2025-09-05",
-      "SemanaEscolar": 1,
-      "Contenido": "Operaciones básicas con números enteros y decimales (suma y resta).",
-      "Aprendizaje": "Comprenderán y realizarán sumas y restas con números enteros y decimales, aplicando los procedimientos correctos.",
-      "Tema": "Cálculos numéricos",
-      "Leccion": "Uso de las operaciones de suma y resta en situaciones cotidianas.",
-      "Inicio": "La clase comenzará con .",
-      "Desarrollo": "Durante el desarrollo.",
-      "Cierre": "Para concluir.",
-      "EjesArticuladores": "Inclusión, Pensamiento crítico, Interculturalidad crítica.",
+ {
+      "PeriodosLectivos": 6,
+      "FechaDeInicio": "2026-11-23",
+      "FechaDeCierre": "2026-11-27",
+      "SemanaEscolar": 15,
+      "Tema": "Velocidad y rapidez",
+      "Aprendizaje": "Identifica los elementos y los diferentes tipos de movimiento relacionados con la velocidad y aceleración y realiza experimentos sencillos.",
+      "Contenido": "Interacciones en fenómenos relacionados con la fuerza y el movimiento.",
+      "Leccion": "L2. Velocidad y rapidez",
+      "Inicio": "El propósito de la actividad de inicio es relacionar la actividad física con el tema de la salud y con los conceptos físicos de velocidad y rapidez. Invite a sus alumnos a que mencionen distintos deportes olímpicos en los que intervenga la velocidad; por ejemplo, las carreras de pista, como las de 100, 200 y 400 metros planos, 100 m con vallas, 400 m con obstáculos, carrera de relevos; las carreras de fondo: 800, 1 500 y 3 000 metros, y las carreras de larga distancia: marcha de 20 y 50 kilómetros, carrera de 5 000, 10 000 metros, medio maratón y maratón. Además, pueden incluir las competencias de natación en sus distintos estilos y distancias, y las pruebas de ciclismo. En los juegos olímpicos de invierno están las carreras de patinaje y trineo. Hágales notar que en estas competencias se califican los menores tiempos de los atletas en las distancias establecidas, para que descubran y relacionen las variables de distancia y tiempo que definen los conceptos de velocidad y rapidez. Relacione estas disciplinas con el esfuerzo físico, la alimentación y la disciplina que requieren para alcanzar estos logros deportivos, resaltando las ventajas para la salud, como el mejoramiento del sistema muscular y esquelético, el sistema cardiovascular y la disminución del sobrepeso y la obesidad. Pida a sus alumnos que mencionen distintos deportes o atletas olímpicos que admiren, y motívelos a realizar alguna práctica deportiva o a integrarse a algún equipo deportivo, ya sea escolar o externo.",
+      "Desarrollo": "El texto y la actividad de la página 85 tienen como objetivo que los alumnos formalicen el concepto de rapidez. Los estudiantes tienen una idea intuitiva de la rapidez que relacionan con los conceptos de distancia y tiempo; entienden que, a mayor distancia recorrida en un lapso fijo, la rapidez es mayor, y que, a menor tiempo de recorrido en una distancia establecida, también la rapidez es mayor. Utilice estas conclusiones para mostrar que la rapidez es proporcional a la distancia e inversamente proporcional al tiempo, relación que se expresa con la ecuación r = d/t. Apóyelos con las herramientas matemáticas para despejar las variables de la ecuación y obtener distancia y tiempo a partir de ella: $d = rt$ y $t = d/r$. Las unidades de la rapidez y la velocidad en el SI son los metros entre segundo, pero pueden expresarse en km/h, mi/h, m/min, etcétera. Muestre a Cómo hacer esas conversiones. La gráfica distancia-tiempo exhibe la relación entre estas variables, haga notar a los alumnos que en el caso de la rapidez constante esta relación se representa mediante una línea recta, cuya pendiente corresponde a la magnitud de la rapidez. Sugerimos que proponga una actividad experimental donde los alumnos midan la distancia y el tiempo de recorrido de un móvil a rapidez constante, como un carrito de pilas o la caída de un pañuelo desechable, que recopilen los datos y los grafiquen, y que calculen la rapidez en distintos intervalos para mostrar que se trata de rapidez constante. Controle los errores de medición. Para el caso de la velocidad instantánea, explíqueles la importancia de la dirección del objeto en movimiento; por ejemplo, en un objeto que tiene un movimiento circular su velocidad instantánea cambia en cada momento al cambiar la dirección en la que se mueve.",
+      "Cierre": "Para el caso de la velocidad de propagación de las ondas, resalte los elementos análogos con los de la rapidez en objetos no ondulatorios: la distancia con la longitud de onda, y el tiempo con el periodo o la frecuencia. Recuerde a los alumnos que el sonido es una onda mecánica longitudinal que se propaga en un medio elástico y que la definición de sonido está estrechamente relacionada con la capacidad sensorial del oído humano. Invítelos a investigar sobre los \"sonidos\" que no podemos percibir los seres humanos. El propósito es que los alumnos consoliden lo que aprendieron en esta secuencia y que lo apliquen en la resolución de situaciones de la vida cotidiana.",
+      "EjesArticuladores": "Vida saludable.",
       "EvaluacionFormativa": [
-        "Observación de la participación en discusiones, corrección de ejercicios en clase, y tarea de problemas mixtos de suma y resta."
+        "Comprende el concepto de aceleración como cambio de la velocidad en el tiempo, reconociendo que este cambio puede ser en la magnitud, en la dirección o |en el sentido. ",
+        "Comprende que la caída libre corresponde a un tipo de movimiento uniformemente acelerado."
       ],
-      "Evidencias": [],
-      "Actividades": ["A.1", "A.2", "A.3", "A.4", "A.5"],
-      "Proyectos": [],
-      "LibroSep": "MeXmáticas",
-      "LibroMcMillan": "Apuntes de clase y ejercicios propuestos",
-      "Vinculacion": "\\textbf{Biología: } Resuelve problemas sobre dinámica de poblaciones, utilizando la suma para calcular el total de individuos tras nacimientos o inmigraciones, y la resta para determinar la población restante después de muertes o emigraciones.",
+      "Evidencias": ["F8"],
+      "Actividades": ["5", "6", "7", "8", "9"],
+      "Proyectos": ["Reposo"],
+      "LibroSep": "Saberes y pensamiento científico 127-129",
+      "LibroMcMillan": "Física Imagina  84-89",
+      "Vinculacion": "\\textbf{Matemáticas: } Modela diversas situaciones que se resuelven con ecuaciones lineales.",
       "Worklist": [
-        "A.1.  Suma de números",
-        "A.2.  Resta de números",
-        "A.3.  Multiplicación de números",
-        "A.4.  División de números",
-        "A.5.  Resolución de problemas"
+        "L2. Velocidad y rapidez",
+        "A.5. ¿Quién fue el más rápido?",
+        "A.6. Explicaciones gráficas de velocidad",
+        "A.7. ¿Cómo se describe el movimiento?",
+        "A.8. ¿Cómo se ven la velocidad y el reposo?",
+        "A.9. Propagación de ondas"
       ],
-      "Libros": ["MeXmáticas", "Apuntes de clase"],
-      "ActPro": ["1", "2"]
+      "Libros": [
+        "Saberes y pensamiento científico 127-129",
+        "Física Imagina  84-89"
+      ],
+      "ActPro": ["5", "6", "7", "8", "9", "F8", "Reposo"]
     }
   ]
 }

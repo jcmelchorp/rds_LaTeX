@@ -19,7 +19,7 @@
 %                     \JSONParseArrayValue
 % }
 
-\JSONParseArrayMapInline{\weekdata}{weeks}{%
+\JSONParseArrayMapInline[rescan=false]{\weekdata}{weeks}{%
     \begin{tcolorbox}[titlebox,title=\planTitle%
             {\JSONParseValue{\weekdata}{weeks[#1].EjesArticuladores}}
             {\JSONParseValue{\weekdata}{weeks[#1].Contenido}}
