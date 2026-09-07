@@ -1,0 +1,73 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1cm}
+\usepackage{datatool}
+\usepackage{tcolorbox}
+\usepackage{helvet}
+\usepackage{pgffor}
+\usepackage{ifthen}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Load the data from the CSV file
+\DTLloaddb{activities}{math1u1.csv}
+
+% Command to print the activities for a specific day and week
+\newcommand{\printday}[2]{%
+  \begin{tcolorbox}[title={\Large\textbf{#1}}, colback=white, colframe=teal!70!black, height=4.25cm, boxrule=1pt, arc=4pt]
+    % Iterate through the database and filter by week and day
+    \DTLforeach{activities}{\MyWeek=Week,\MyDay=Day,\MyTime=Time,\MyActivity=Activity}{%
+      \ifthenelse{\equal{\MyWeek}{#2} \and \equal{\MyDay}{#1}}{%
+        \noindent{\color{teal!80!black}\textbullet}\hspace{0.1cm}\textbf{\MyTime}\\[0.05cm]
+        \MyActivity \\[0.3cm]
+      }{}%
+    }%
+  \end{tcolorbox}
+}
+
+\begin{document}
+
+% Loop 10 times to generate 10 weeks
+\foreach \w in {1,2,3,4,5,6,7,8,9,10} {%
+    \begin{center}
+      {\Huge\textbf{Weekly Activity Planner - Week \w}}\\[0.5cm]
+    \end{center}
+
+    \noindent
+    \begin{minipage}{0.15\textwidth}
+      \printday{Monday}{\w}
+    \end{minipage}\hfill
+    \begin{minipage}{0.15\textwidth}
+      \printday{Tuesday}{\w}
+    \end{minipage}\hfill
+    \begin{minipage}{0.15\textwidth}
+      \printday{Wednesday}{\w}
+    \end{minipage}\hfill
+    \begin{minipage}{0.15\textwidth}
+      \printday{Thursday}{\w}
+    \end{minipage}\hfill
+    \begin{minipage}{0.15\textwidth}
+      \printday{Friday}{\w}
+    \end{minipage}
+    % \begin{minipage}{0.24\textwidth}
+    %   \printday{Saturday}{\w}
+    % \end{minipage}\hfill
+    % \begin{minipage}{0.24\textwidth}
+    %   \printday{Sunday}{\w}
+    % \end{minipage}\hfill
+    % \begin{minipage}{0.24\textwidth}
+    %   % Notes section for extra space
+    %   \begin{tcolorbox}[title={\Large\textbf{Notes}}, colback=white, colframe=gray!70!black, height=4.25cm, boxrule=1pt, arc=4pt]
+    %     \vspace{1cm}
+    %     \hrulefill\\[1cm]
+    %     \hrulefill\\[1cm]
+    %     \hrulefill\\[1cm]
+    %     \hrulefill
+    %   \end{tcolorbox}
+    % \end{minipage}
+    
+    % Break to a new page for the next week
+    % \newpage
+}
+
+\end{document}

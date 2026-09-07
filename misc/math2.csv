@@ -1,0 +1,196 @@
+Week,Day,           Time,      Activity
+1,   Lunes,         10:00 AM,  A.1.  Suma de números  
+1,   Martes,        10:00 AM,  A.2.  Resta de números      
+1,   Miércoles,     10:00 AM,  A.3.  Multiplicación de números   
+1,   Jueves,        10:00 AM,  A.4.  División de números      
+1,   Viernes,       10:00 AM,  A.5.  Resolución de problemas     
+2,   Lunes,         10:00 AM,  A.6.  Suma y resta con denominadores iguales  
+2,   Martes,        10:00 AM,  A.7.  Suma y resta denominadores diferentes      
+2,   Miércoles,     10:00 AM,  A.8.  Multiplicación de fracciones   
+2,   Jueves,        10:00 AM,  A.9.  División de fracciones      
+2,   Viernes,       10:00 AM,  A.10. Resolución de problemas.    
+3,   Lunes,         10:00 AM,  A.11. Ubicación en la recta numérica. 
+3,   Martes,        10:00 AM,  A.12. Comparación de negativos.    
+3,   Miércoles,     10:00 AM,   
+3,   Jueves,        10:00 AM,  A.13. Oraciones con números negativos    
+3,   Viernes,       10:00 AM,  A.14. Determina el signo con sumas y restas   
+4,   Lunes,         10:00 AM,  A.15. Determina el signo con multiplicaciones y divisiones
+4,   Martes,        10:00 AM,  A.16. Comparación de negativos    
+4,   Miércoles,     10:00 AM,  A.17. Suma y resta con negativos
+4,   Jueves,        10:00 AM,  A.18. Multiplicación y división con negativos   
+4,   Viernes,       10:00 AM,  CTE   
+5,   Lunes,         10:00 AM,  A.19. Potencias con números negativos
+5,   Martes,        10:00 AM,  A.20. Jerarquía de operaciones    
+5,   Miércoles,     10:00 AM,  A.21. Porcentajes a decimal 
+5,   Jueves,        10:00 AM,  A.22. Decimal a porcentaje    
+5,   Viernes,       10:00 AM,  A.23. Porcentaje de cantidades 1   
+6,   Lunes,         10:00 AM,  A.24. Porcentaje de cantidades 2
+6,   Martes,        10:00 AM,  A.25. Resolución de problemas   
+6,   Miércoles,     10:00 AM,  A.26. Suma de exponentes 
+6,   Jueves,        10:00 AM,  A.27. Resta de exponentes    
+6,   Viernes,       10:00 AM,  A.28. Multiplicación de exponentes   
+7,   Lunes,         10:00 AM,  A.29. Notación científica 1
+7,   Martes,        10:00 AM,  A.30. Notación científica 2    
+7,   Miércoles,     10:00 AM,  A.31. Ubicación en el plano cartesiano 
+7,   Jueves,        10:00 AM,  A.32. Cuadrantes en el plano cartesiano    
+7,   Viernes,       10:00 AM,  A.33. Pendiente de una recta   
+8,   Lunes,         10:00 AM,  A.34. Pendiente y ordenada
+8,   Martes,        10:00 AM,  A.35. Ecuación de una recta    
+8,   Miércoles,     10:00 AM,  REPASO
+8,   Jueves,        10:00 AM,  REPASO   
+8,   Viernes,       10:00 AM,  REPASO  
+9,   Lunes,         10:00 AM,  REPASO
+9,   Martes,        10:00 AM,  REPASO   
+9,   Miércoles,     10:00 AM,  REPASO
+9,   Jueves,        10:00 AM,  REPASO   
+9,   Viernes,       10:00 AM,  CTE  
+10,  Lunes,         10:00 AM,  REPASO
+10,  Martes,        10:00 AM,  REPASO   
+10,  Miércoles,     10:00 AM,  REPASO
+10,  Jueves,        10:00 AM,  REPASO   
+10,  Viernes,       10:00 AM,  EXAMEN  
+11,  Lunes,         10:00 AM,   
+11,  Martes,        10:00 AM,      
+11,  Miércoles,     10:00 AM,   
+11,  Jueves,        10:00 AM,      
+11,  Viernes,       10:00 AM,     
+12,  Lunes,         10:00 AM,   
+12,  Martes,        10:00 AM,      
+12,  Miércoles,     10:00 AM,   
+12,  Jueves,        10:00 AM,      
+12,  Viernes,       10:00 AM,     
+13,  Lunes,         10:00 AM,   
+13,  Martes,        10:00 AM,      
+13,  Miércoles,     10:00 AM,   
+13,  Jueves,        10:00 AM,      
+13,  Viernes,       10:00 AM,     
+14,  Lunes,         10:00 AM,
+14,  Martes,        10:00 AM,      
+14,  Miércoles,     10:00 AM,   
+14,  Jueves,        10:00 AM,      
+14,  Viernes,       10:00 AM,     
+15,  Lunes,         10:00 AM,
+15,  Martes,        10:00 AM,      
+15,  Miércoles,     10:00 AM,   
+15,  Jueves,        10:00 AM,      
+15,  Viernes,       10:00 AM,     
+16,  Lunes,         10:00 AM,
+16,  Martes,        10:00 AM,      
+16,  Miércoles,     10:00 AM,   
+16,  Jueves,        10:00 AM,      
+16,  Viernes,       10:00 AM,     
+19,  Lunes,         10:00 AM,
+19,  Martes,        10:00 AM,      
+19,  Miércoles,     10:00 AM,   
+19,  Jueves,        10:00 AM,      
+19,  Viernes,       10:00 AM,     
+20,  Lunes,         10:00 AM,
+20,  Martes,        10:00 AM,      
+20,  Miércoles,     10:00 AM,   
+20,  Jueves,        10:00 AM,      
+20,  Viernes,       10:00 AM,     
+21,  Lunes,         10:00 AM,
+21,  Martes,        10:00 AM,      
+21,  Miércoles,     10:00 AM,   
+21,  Jueves,        10:00 AM,      
+21,  Viernes,       10:00 AM,     
+22,  Lunes,         10:00 AM,
+22,  Martes,        10:00 AM,      
+22,  Miércoles,     10:00 AM,   
+22,  Jueves,        10:00 AM,      
+22,  Viernes,       10:00 AM,     
+23,  Lunes,         10:00 AM,
+23,  Martes,        10:00 AM,      
+23,  Miércoles,     10:00 AM,   
+23,  Jueves,        10:00 AM,      
+23,  Viernes,       10:00 AM,     
+24,  Lunes,         10:00 AM,
+24,  Martes,        10:00 AM,      
+24,  Miércoles,     10:00 AM,   
+24,  Jueves,        10:00 AM,      
+24,  Viernes,       10:00 AM,     
+25,  Lunes,         10:00 AM,
+25,  Martes,        10:00 AM,      
+25,  Miércoles,     10:00 AM,   
+25,  Jueves,        10:00 AM,      
+25,  Viernes,       10:00 AM,     
+26,  Lunes,         10:00 AM,
+26,  Martes,        10:00 AM,      
+26,  Miércoles,     10:00 AM,   
+26,  Jueves,        10:00 AM,      
+26,  Viernes,       10:00 AM,     
+27,  Lunes,         10:00 AM,
+27,  Martes,        10:00 AM,      
+27,  Miércoles,     10:00 AM,   
+27,  Jueves,        10:00 AM,      
+27,  Viernes,       10:00 AM,     
+28,  Lunes,         10:00 AM,
+28,  Martes,        10:00 AM,      
+28,  Miércoles,     10:00 AM,   
+28,  Jueves,        10:00 AM,      
+28,  Viernes,       10:00 AM,     
+29,  Lunes,         10:00 AM,
+29,  Martes,        10:00 AM,      
+29,  Miércoles,     10:00 AM,   
+29,  Jueves,        10:00 AM,      
+29,  Viernes,       10:00 AM,     
+32,  Lunes,         10:00 AM,
+32,  Martes,        10:00 AM,      
+32,  Miércoles,     10:00 AM,   
+32,  Jueves,        10:00 AM,      
+32,  Viernes,       10:00 AM,     
+33,  Lunes,         10:00 AM,
+33,  Martes,        10:00 AM,      
+33,  Miércoles,     10:00 AM,   
+33,  Jueves,        10:00 AM,      
+33,  Viernes,       10:00 AM,   
+34,  Lunes,         10:00 AM,
+34,  Martes,        10:00 AM,      
+34,  Miércoles,     10:00 AM,   
+34,  Jueves,        10:00 AM,      
+34,  Viernes,       10:00 AM,     
+35,  Lunes,         10:00 AM,
+35,  Martes,        10:00 AM,      
+35,  Miércoles,     10:00 AM,   
+35,  Jueves,        10:00 AM,      
+35,  Viernes,       10:00 AM,     
+36,  Lunes,         10:00 AM,
+36,  Martes,        10:00 AM,      
+36,  Miércoles,     10:00 AM,   
+36,  Jueves,        10:00 AM,      
+36,  Viernes,       10:00 AM,     
+37,  Lunes,         10:00 AM,
+37,  Martes,        10:00 AM,      
+37,  Miércoles,     10:00 AM,   
+37,  Jueves,        10:00 AM,      
+37,  Viernes,       10:00 AM,     
+38,  Lunes,         10:00 AM,
+38,  Martes,        10:00 AM,      
+38,  Miércoles,     10:00 AM,   
+38,  Jueves,        10:00 AM,      
+38,  Viernes,       10:00 AM,     
+39,  Lunes,         10:00 AM,
+39,  Martes,        10:00 AM,      
+39,  Miércoles,     10:00 AM,   
+39,  Jueves,        10:00 AM,      
+39,  Viernes,       10:00 AM,     
+40,  Lunes,         10:00 AM,
+40,  Martes,        10:00 AM,      
+40,  Miércoles,     10:00 AM,   
+40,  Jueves,        10:00 AM,      
+40,  Viernes,       10:00 AM,     
+41,  Lunes,         10:00 AM,
+41,  Martes,        10:00 AM,      
+41,  Miércoles,     10:00 AM,   
+41,  Jueves,        10:00 AM,      
+41,  Viernes,       10:00 AM,     
+42,  Lunes,         10:00 AM,
+42,  Martes,        10:00 AM,      
+42,  Miércoles,     10:00 AM,   
+42,  Jueves,        10:00 AM,      
+42,  Viernes,       10:00 AM,     
+43,  Lunes,         10:00 AM,
+43,  Martes,        10:00 AM,      
+43,  Miércoles,     10:00 AM,   
+43,  Jueves,        10:00 AM,      
+43,  Viernes,       10:00 AM,   

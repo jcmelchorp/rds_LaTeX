@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{booktabs} % Makes tables look clean and professional
+\usepackage{pgfplotstable} % The package that reads the file
+
+% Tell the package to use a comma to find separate columns
+\pgfplotstableset{col sep=comma} 
+
+\begin{document}
+
+\section*{My Automatically Loaded Table}
+
+% This single command reads the file and outputs the table
+\pgfplotstabletypeset[
+    % Add beautiful horizontal lines using booktabs
+    every head row/.style={before row=\toprule, after row=\midrule},
+    every last row/.style={after row=\bottomrule},
+    % Clean up column names (if they are different in your text file)
+    columns/Name/.style={column name=\textbf{Student Name}, string type},
+    columns/Age/.style={column name=\textbf{Age}},
+    columns/{Favorite Food}/.style={column name=\textbf{Preferred Meal}, string type},
+]{table.txt}
+
+\end{document}

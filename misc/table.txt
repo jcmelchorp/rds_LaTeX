@@ -1,0 +1,4 @@
+Name, Age, Favorite Food
+Alex, 10, Pizza
+Sam, 9, Tacos
+Charlie, 11, Burgers

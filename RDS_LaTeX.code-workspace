@@ -220,7 +220,11 @@
 			"**/M2F1.aux": true,
 			"**/M2F1.log": true,
 			"**/M2F1.gz": true,
-			"**/M2F1.out": true
+			"**/M2F1.out": true,
+			"**/gemini-code-1788721932415.aux": true,
+			"**/gemini-code-1788721932415.log": true,
+			"**/gemini-code-1788721932415.gz": true,
+			"**/gemini-code-1788721932415.out": true
 		}
 	}
 }
