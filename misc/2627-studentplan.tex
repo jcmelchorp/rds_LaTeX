@@ -83,7 +83,7 @@
     \def\cicloescolar{%
         \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{\currentyear-\nextyear}
     }
-    \DTLloaddb{activities}{math#1.csv}
+    \DTLloaddb{activities}{#2#1.csv}
 }
 % \renewcommand{\familydefault}{\sfdefault}
 
@@ -210,7 +210,7 @@ left=1pt, right=1pt, top=3pt, bottom=1pt,toptitle=1pt,
 
 
 \begin{document}
-\loaddatafile{3}{math}{1}
+\loaddatafile{2}{phys}{1}
 \thispagestyle{empty}
 % Bucle de 10 iteraciones para 10 semanas
 \newcounter{semana}

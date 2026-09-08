@@ -1,64 +1,63 @@
 Week,Day,           Time,      Activity
-1,    Lunes,         12:15 PM,
-1,    Lunes,         13:55 PM,
-1,    Martes,        12:15 PM,
-1,    Miércoles,     12:15 PM,
-1,    Miércoles,     13:55 PM,
-1,    Viernes,       13:55 PM,
-2,    Lunes,         12:15 PM,
-2,    Lunes,         13:55 PM,
-2,    Martes,        12:15 PM,
-2,    Miércoles,     12:15 PM,
-2,    Miércoles,     13:55 PM,
-2,    Viernes,       13:55 PM,
-3,    Lunes,         12:15 PM,
-3,    Lunes,         13:55 PM,
-3,    Martes,        12:15 PM,
+1,    Lunes,         12:15 PM,  Me preparo
+1,    Lunes,         13:55 PM,  L.1. Conocimiento empírico
+1,    Martes,        12:15 PM,  A.1. Conocimiento empírico
+1,    Miércoles,     12:15 PM,  A.2. Tipos de conocimientos
+1,    Miércoles,     13:55 PM,  A.3. Otras formas de conocimiento
+1,    Viernes,       13:55 PM,  L.2. El conocimiento científico
+2,    Lunes,         12:15 PM,  A.4. ¿Qué es la ciencia?
+2,    Lunes,         13:55 PM,  A.5. Método científico
+2,    Martes,        12:15 PM,  F.1. Siete razones para dedicarse a la ciencia
+2,    Miércoles,     12:15 PM,  L.3. Física y sociedad
+2,    Miércoles,     13:55 PM,  A.6. ¿Qué es la Física?
+2,    Viernes,       13:55 PM,  A.7. División de la Física
+3,    Lunes,         12:15 PM,  F.2. Ciencia para todos
+3,    Lunes,         13:55 PM,  L.4. Mediciones
+3,    Martes,        12:15 PM,  A.8. Mediciones
 3,    Miércoles,     12:15 PM,  No hay clases
 3,    Miércoles,     13:55 PM,  No hay clases
-3,    Viernes,       13:55 PM,
-4,    Lunes,         12:15 PM,
-4,    Lunes,         13:55 PM,
-4,    Martes,        12:15 PM,
-4,    Miércoles,     12:15 PM,
-4,    Miércoles,     13:55 PM,
+3,    Viernes,       13:55 PM,  L.5. Unidades fundamentales y derivadas
+4,    Lunes,         12:15 PM,  A.9. Unidades fundamentales
+4,    Lunes,         13:55 PM,  L.6. Múltiplos y submúltiplos
+4,    Martes,        12:15 PM,  A.10. Múltiplos
+4,    Miércoles,     12:15 PM,  L.7. Instrumentos de medición
+4,    Miércoles,     13:55 PM,  A.11. Es momento de medir
 4,    Viernes,       13:55 PM,  CTE
-5,    Lunes,         12:15 PM,
-5,    Lunes,         13:55 PM,
-5,    Martes,        12:15 PM,
-5,    Miércoles,     12:15 PM,
-5,    Miércoles,     13:55 PM,
-5,    Viernes,       13:55 PM,
-6,    Lunes,         12:15 PM,
-6,    Lunes,         13:55 PM,
-6,    Martes,        12:15 PM,
-6,    Miércoles,     12:15 PM,
-6,    Miércoles,     13:55 PM,
-6,    Viernes,       13:55 PM,
-7,    Lunes,         12:15 PM,
-7,    Lunes,         13:55 PM,
-7,    Martes,        12:15 PM,
-7,    Miércoles,     12:15 PM,
-7,    Miércoles,     13:55 PM,
-7,    Viernes,       13:55 PM,
-8,    Lunes,         12:15 PM,
-8,    Lunes,         13:55 PM,
-8,    Martes,        12:15 PM,
-8,    Miércoles,     12:15 PM,
-8,    Miércoles,     13:55 PM,
-8,    Viernes,       13:55 PM,
-9,    Lunes,         12:15 PM,
-9,    Lunes,         13:55 PM,
-9,    Martes,        12:15 PM,
-9,    Miércoles,     12:15 PM,
-9,    Miércoles,     13:55 PM,
+5,    Lunes,         12:15 PM,  F.3. Contaminantes del aire
+5,    Lunes,         13:55 PM,  L.8. Materiales y sus propiedades
+5,    Martes,        12:15 PM,  A.12. Propiedades de la materia
+5,    Miércoles,     12:15 PM,  A.13. ¿Qué es la materia?
+5,    Miércoles,     13:55 PM,  F.4. Litio: el oro blanco del siglo XXI
+5,    Viernes,       13:55 PM,  F.5. La isla de plástico
+6,    Lunes,         12:15 PM,  L.9. Origen de las teorías sobre la estructura de la materia
+6,    Lunes,         13:55 PM,  A.14. Un modelo para la materia
+6,    Martes,        12:15 PM,  L.10. La teoría atómica
+6,    Miércoles,     12:15 PM,  A.15. Construyendo un modelo para el átomo
+6,    Miércoles,     13:55 PM,  A.16. ¿Thomson Rutherford o Bohr?
+6,    Viernes,       13:55 PM,  A.17. La estructura interna de la materia
+7,    Lunes,         12:15 PM,  F.6. Invierno nuclear
+7,    Lunes,         13:55 PM,  L.11. Estados de agregación de la materia
+7,    Martes,        12:15 PM,  A.18. ¿Cómo se organiza la materia?
+7,    Miércoles,     12:15 PM,  A.19. Las facetas de la materia
+7,    Miércoles,     13:55 PM,  A.20. La materia
+7,    Viernes,       13:55 PM,  L.12. Temperatura y equilibrio térmico
+8,    Lunes,         12:15 PM,  A.21. Conversaciones de temperatura
+8,    Lunes,         13:55 PM,  A.22. ¿Cómo se mide la temperatura?
+8,    Martes,        12:15 PM,  ¿Qué aprendí?
+8,    Miércoles,     12:15 PM,  REPASO
+8,    Miércoles,     13:55 PM,  REPASO   
+8,    Viernes,       13:55 PM,  REPASO
+9,    Lunes,         12:15 PM,  REPASO   
+9,    Lunes,         13:55 PM,  REPASO
+9,    Martes,        12:15 PM,  REPASO
+9,    Miércoles,     12:15 PM,  REPASO
+9,    Miércoles,     13:55 PM,  REPASO
 9,    Viernes,       13:55 PM,  CTE
 10,   Lunes,         12:15 PM,  No hay clases
 10,   Lunes,         13:55 PM,  No hay clases
-10,   Martes,        12:15 PM,
-10,   Miércoles,     12:15 PM,
-10,   Miércoles,     13:55 PM,
-10,   Viernes,       13:55 PM,
+10,   Martes,        12:15 PM,  
+10,   Miércoles,     12:15 PM,  EXAMEN
+10,   Viernes,       13:55 PM,  REVISIÓN DE EXAMEN
 11,   Lunes,         12:15 PM,
 11,   Lunes,         13:55 PM,
 11,   Martes,        12:15 PM,
