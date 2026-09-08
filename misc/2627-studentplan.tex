@@ -1,15 +1,91 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel} % Idioma español
 \usepackage{geometry}
 \geometry{margin=1.5cm}
 \usepackage{datatool}
-\usepackage{tcolorbox}
-\usepackage{helvet}
+\usepackage[many]{tcolorbox}
+\tcbsetforeverylayer{enhanced}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
+\usetikzlibrary{shadows,shadows.blur}
+\usetikzlibrary{shapes,shapes.symbols}
+\usetikzlibrary{patterns,patterns.meta}
 \usepackage{pgffor}
 \usepackage{ifthen}
 \usepackage{pgfcalendar} % Para cálculo de fechas
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage{anyfontsize}
+\usepackage{shadowtext}
+\shadowoffset{0.4pt}
+\shadowcolor{black}
+\usepackage{colortbl}
+\usepackage[xcdraw,svgnames,x11names,usenames,dvipsnames,table]{xcolor} % Required for custom color
+\definecolor{colorrds}{HTML}{0060A0} % Custom colour
+\definecolor{rdsdark}{HTML}{003050}
+\definecolor{almond}{rgb}{0.94, 0.87, 0.8}
+\definecolor{brickred}{rgb}{0.8, 0.25, 0.33}
+\definecolor{corn}{rgb}{0.98, 0.93, 0.36}
+\definecolor{darkpastelred}{rgb}{0.76, 0.23, 0.13}
+\definecolor{MainColor}{HTML}{4C8BA7}
+\definecolor{SubjectColor}{HTML}{98780F}
+\definecolor{ExampleTitle}{HTML}{3F2906}
+\definecolor{ExampleCard}{HTML}{275819}
+\definecolor{PreguntaTitle}{HTML}{3F2906}
+\definecolor{PreguntaCard}{HTML}{C2A224}
+\definecolor{Guia}{HTML}{FFDDDD}
+\definecolor{ChapterMainColor}{named}{RawSienna}
+\definecolor{ChapterSecColor}{named}{DarkGoldenrod}
+\definecolor{SectionMainColor}{named}{OliveDrab}
+\definecolor{SectionSecColor}{named}{DarkGoldenrod}
+\definecolor{SubsectionMainColor}{named}{OliveDrab}
+\definecolor{SubsectionSecColor}{named}{FireBrick}
+\definecolor{SubsubsectionMainColor}{named}{DarkGoldenrod}
+\definecolor{mathColor}{HTML}{98780F}
+\definecolor{physColor}{HTML}{228B22}
+\definecolor{chemColor}{HTML}{AD2AE8}
+\definecolor{geogColor}{HTML}{677353}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
+% Comando para mostrar el string asociado y su estilo
+\newcommand{\classtitle}[1]{%
+  \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{\textbf{Matemáticas I}}}{}%
+  \ifthenelse{\equal{#1}{geog1}}{\textcolor{geogColor}{\textbf{Geografia}}}{}%
+  \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{\textbf{Matemáticas II}}}{}%
+  \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{\textbf{Matemáticas III}}}{}%
+  \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{\textbf{Química}}}{}%
+  \ifthenelse{\equal{#1}{phys2}}{\textcolor{physColor}{\textbf{Física}}}{}%
+  \ifthenelse{\equal{#1}{test0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+}
+
+\newcommand{\leveltitle}[1]{%
+  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+  \ifthenelse{\equal{#1}{1}}{\textcolor{sec1Color}{\textbf{1° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{2}}{\textcolor{sec2Color}{\textbf{2° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{3}}{\textcolor{sec3Color}{\textbf{3° de Secundaria}}}{}%
+}
+
+\newcommand{\boxeslineletters}[1]{%
+  \ifthenelse{\equal{#1}{1}}{Cont.}{}%
+  \ifthenelse{\equal{#1}{2}}{Orto.}{}%
+  \ifthenelse{\equal{#1}{3}}{Punt.}{}%
+  \ifthenelse{\equal{#1}{4}}{Pres.}{}%
+  \ifthenelse{\equal{#1}{5}}{Total}{}%
+
+}
+\newcommand{\loaddatafile}[3]{%
+\def\disciplina{\classtitle{#2#1}}
+    \def\gradogrupo{\leveltitle{#1}}
+    \def\unitinfo{%
+        \tcbox[colback=rdsColor!5!white,colframe=rdsColor,size=fbox,on line]{ {\sffamily Unidad} #3}
+    }
+    \def\cicloescolar{%
+        \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{\currentyear-\nextyear}
+    }
+    \DTLloaddb{activities}{math#1.csv}
+}
+% \renewcommand{\familydefault}{\sfdefault}
 
 % Función para traducir el número del mes a texto en español
 \newcommand{\mesespanol}[1]{%
@@ -24,7 +100,6 @@
 \pgfcalendardatetojulian{2026-08-31}{\startdate} 
 
 % Cargar los datos del archivo CSV
-\DTLloaddb{activities}{math3.csv}
 
 % ==========================================
 % LÓGICA DE DÍAS FERIADOS Y VACACIONES (MÉXICO)
@@ -57,6 +132,8 @@
   
   % Asuetos móviles y CTE (Con formato 01, 02 para evitar fallos de lectura)
   \ifthenelse{\equal{#1}{11} \and \equal{#2}{16}}{\setboolean{isholiday}{true}\def\holidayname{Revolución (Asueto)}}{}%
+  \ifthenelse{\equal{#1}{02} \and \equal{#2}{01}}{\setboolean{isholiday}{true}\def\holidayname{Día de la Constitución (Asueto)}}{}%
+  \ifthenelse{\equal{#1}{03} \and \equal{#2}{15}}{\setboolean{isholiday}{true}\def\holidayname{Día del natalicio de Benito Juárez (Asueto)}}{}%
   \ifthenelse{\equal{#1}{09} \and \equal{#2}{25}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
   \ifthenelse{\equal{#1}{10} \and \equal{#2}{30}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
   \ifthenelse{\equal{#1}{11} \and \equal{#2}{27}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
@@ -73,7 +150,6 @@
   % #2 = Número de semana (\w)
   % #3 = Desplazamiento de días (0=Lunes, 1=Martes, etc.)
   % #4 = Nombre del día en tu archivo CSV (ej. Lunes o Monday)
-  
   % Calcular la fecha exacta sumando semanas y días a la fecha de inicio
   \newcount\currentdate
   \newcount\weekoffset
@@ -84,15 +160,13 @@
   \currentdate=\startdate
   \advance\currentdate by \weekoffset
   \pgfcalendarjuliantodate{\currentdate}{\myyear}{\mymonth}{\myday}%
-  
-  \begin{tcolorbox}[title={\textbf{#1 \myday} \footnotesize \mesespanol{\mymonth}}, halign title=center, colback=white, colframe=teal!70!white, height=3.8cm, boxrule=1pt, arc=2pt]
+  \begin{tcolorbox}[myone,title={\footnotesize\textbf{#1 \myday}  \mesespanol{\mymonth}}]
     
     % Revisar si la fecha calculada es un día feriado o vacacional
     \checkholiday{\mymonth}{\myday}%
     
     \ifthenelse{\boolean{isholiday}}{%
       % --- SI ES FERIADO/VACACIONES: Imprimir cartel y omitir actividades ---
-      \vspace{0.3cm}
       \begin{center}
         \textcolor{gray!80!black}{\textbf{\holidayname}}\\[0.1cm]
         \textcolor{gray!80!black}{\textit{(Sin clases)}}
@@ -101,40 +175,75 @@
       % --- SI NO ES FERIADO: Iterar por la base de datos y filtrar ---
       \DTLforeach{activities}{\MyWeek=Week,\MyDay=Day,\MyTime=Time,\MyActivity=Activity}{%
         \ifthenelse{\equal{\MyWeek}{#2} \and \equal{\MyDay}{#4}}{%
-          \small\textbf{\MyTime} \MyActivity \\[0.3cm]
+         \scriptsize {\tiny\textbf{\MyTime}} \\[0.5em] {\fontsize{10}{2}\selectfont\MyActivity} \\[0.2em] 
+            {\boxesline}
         }{}%
       }%
     }%
   \end{tcolorbox}%
 }
+\footnotesize
+\tcbset{myone/.style={%
+width=\textwidth/5, valign=bottom,
+halign title=center, colback=white, coltitle=colorrds, colbacktitle=white, colframe=colorrds, boxrule=0.8pt, boxsep=1pt, arc=3pt,
+left=1pt, right=1pt, top=3pt, bottom=1pt,toptitle=1pt,
+}}
+
+\newcommand{\boxesline}{%
+\begin{tikzpicture}
+    \foreach \x in {1,...,5} {
+ \begin{scope}[shift={(\x*0.64,0)}]
+            % Dibujamos las 3 caras visibles del cubo
+            % Todas tienen borde negro (por defecto) y relleno blanco
+            % \draw[fill=white] (0.2,0.2) rectangle (1.7,1.7);
+            % \draw[fill=white] (0,0) -- ++(0.2,-0.2) -- ++(1.2,0) -- ++(-0.2,0.2) -- cycle; % Cara superior
+            %  \draw[fill=white] (1.2,0) -- ++(0.2,-0.2) -- ++(0,1.2) -- ++(-0.2,0.2) -- cycle;; % Cara lateral derecha
+            \draw[colorrds,fill=white,drop shadow=colorrds,rounded corners=1pt,]  (0,0) rectangle (0.5,0.5);                                     % Cara frontal
+            \node[anchor=north west] at (-0.05,0) {%
+                        \fontsize{4}{4}\selectfont\boxeslineletters{\x}
+                    };           
+        \end{scope}
+    }
+\end{tikzpicture}%
+}
+
+
 
 \begin{document}
+\loaddatafile{3}{math}{1}
 \thispagestyle{empty}
 % Bucle de 10 iteraciones para 10 semanas
 \newcounter{semana}
 \setcounter{semana}{0}
 \foreach \w in {1,...,10}{%%16,19,20,21,22,23,24,25,26,27,28,29.32,33,34,35,36,37,38,39,40,41,42,43} {%
 \stepcounter{semana}
-    \begin{center}
-      {\Large\textbf{Semana escolar \thesemana}}\\[0.5cm]
-    \end{center}
-    
-    \noindent
-    \begin{minipage}{0.20\textwidth}
-      \printday{Lun.}{\w}{0}{Lunes}
-    \end{minipage}\hfill
-    \begin{minipage}{0.20\textwidth}
-      \printday{Mar.}{\w}{1}{Martes}
-    \end{minipage}\hfill
-    \begin{minipage}{0.20\textwidth}
-      \printday{Mié.}{\w}{2}{Miércoles}
-    \end{minipage}\hfill
-    \begin{minipage}{0.20\textwidth}
-      \printday{Jue.}{\w}{3}{Jueves}
-    \end{minipage}\hfill
-    \begin{minipage}{0.20\textwidth}
+\begin{tcolorbox}[
+    before skip = 0mm,    % add extra space before the box
+    after skip = 0mm,      % add extra space after the box
+    colback=white,
+    colframe=white,
+    arc=0pt,
+    top=5pt,
+    bottom=5pt,
+    boxsep=0mm,
+    borderline={0.2mm}{0mm}{gray,dashed}
+]
+\noindent
+    {\large  \shadowtext{\disciplina} \hfill \shadowtext{\gradogrupo} \hfill Semana \thesemana }
+\begin{tcbraster}[%
+    raster width=\linewidth,
+    raster columns=5, 
+    % Forces same height in all columns on same row
+    raster equal height=rows,
+    raster every box/.style={valign=top}, 
+    ]
+    \printday{Lun.}{\w}{0}{Lunes}%
+      \printday{Mar.}{\w}{1}{Martes}%
+      \printday{Mié.}{\w}{2}{Miércoles}%
+      \printday{Jue.}{\w}{3}{Jueves}%
       \printday{Vie.}{\w}{4}{Viernes}
-    \end{minipage}\\[1em]
+      \end{tcbraster}
+\end{tcolorbox}
 }
 
 \end{document}

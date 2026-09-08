@@ -224,7 +224,11 @@
 			"**/gemini-code-1788721932415.aux": true,
 			"**/gemini-code-1788721932415.log": true,
 			"**/gemini-code-1788721932415.gz": true,
-			"**/gemini-code-1788721932415.out": true
+			"**/gemini-code-1788721932415.out": true,
+			"**/2627-studentplan.aux": true,
+			"**/2627-studentplan.log": true,
+			"**/2627-studentplan.gz": true,
+			"**/2627-studentplan.out": true
 		}
 	}
 }
