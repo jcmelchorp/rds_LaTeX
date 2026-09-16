@@ -228,7 +228,11 @@
 			"**/2627-studentplan.aux": true,
 			"**/2627-studentplan.log": true,
 			"**/2627-studentplan.gz": true,
-			"**/2627-studentplan.out": true
+			"**/2627-studentplan.out": true,
+			"**/test0.aux": true,
+			"**/test0.log": true,
+			"**/test0.gz": true,
+			"**/test0.out": true
 		}
 	}
 }

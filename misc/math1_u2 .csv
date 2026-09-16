@@ -1,0 +1,76 @@
+Unit,  Week,Day,           Time, Key,     Activity,                                          Section
+2,     13,  Martes,11:20 AM,        A.31, Ubicación en la recta numérica,
+2,     13,  Miércoles,11:20 AM,     A.32, Porcentajes a decimal,
+2,     13,  Jueves,11:20 AM,        A.33, Operaciones con múltiplos de 10,
+2,     13,  Viernes,7:50 AM,        CTE, CTE, CTE
+2,     13,  Viernes,11:20 AM,       CTE, CTE, CTE
+2,     14,  Martes,11:20 AM,        A.34, Conversión de fracciones a decimales,
+2,     14,  Miércoles,11:20 AM,     A.35, Conversión de decimales a fracciones,
+2,     14,  Jueves,11:20 AM,        A.36, Suma de decimales,
+2,     14,  Viernes,7:50 AM,        A.37, Resta de decimales,
+2,     14,  Viernes,11:20 AM,       A.38, Multiplicación de decimales,
+2,     15,  Martes,11:20 AM,        A.39, División de decimales,
+2,     15,  Miércoles,11:20 AM,     A.40, Resolución de problemas,
+2,     15,  Jueves,11:20 AM,        A.41, Porcentajes a decimal,
+2,     15,  Viernes,7:50 AM,        A.42, Decimal a porcentaje,
+2,     15,  Viernes,11:20 AM,       
+2,     16,  Martes,11:20 AM,        A.43, Porcentaje de cantidades 1,
+2,     16,  Miércoles,11:20 AM,     A.44, Porcentaje de cantidades 2,
+2,     16,  Jueves,11:20 AM,        A.45, Resolución de problemas,
+2,     16,  Viernes,7:50 AM,        A.46, Potenciación 1,
+2,     16,  Viernes,11:20 AM,       A.47, Potenciación 2,
+2,     19,  Martes,11:20 AM,        A.48, Notación científica 1,
+2,     19,  Miércoles,11:20 AM,     A.49, Notación científica 2,
+2,     19,  Jueves,11:20 AM,        A.50, Raíces,
+2,     19,  Viernes,7:50 AM,        A.51, Unidades de longitud,
+2,     19,  Viernes,11:20 AM,       A.52, Unidades de masa,
+2,     20,  Martes,11:20 AM,        A.53, Unidades de capacidad,
+2,     20,  Miércoles,11:20 AM,     A.54, Unidades de área y volumen,
+2,     20,  Jueves,11:20 AM,        A.55, Unidades de capacidad 2,
+2,     20,  Viernes,7:50 AM,        REPASO, REPASO, REPASO
+2,     20,  Viernes,11:20 AM,       REPASO, REPASO, REPASO
+2,     21,  Martes,11:20 AM,        REPASO, REPASO, REPASO
+2,     21,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO  
+2,     21,  Jueves,11:20 AM,        REPASO, REPASO, REPASO  
+2,     21,  Viernes,7:50 AM,        REPASO, REPASO, REPASO  
+2,     21,  Viernes,11:20 AM,       REPASO, REPASO, REPASO  
+2,     22,  Martes,11:20 AM,        REPASO, REPASO, REPASO  
+2,     22,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO  
+2,     22,  Jueves,11:20 AM,        REPASO, REPASO, REPASO  
+2,     22,  Viernes,7:50 AM,         CTE, CTE, CTE
+2,     22,  Viernes,11:20 AM,        CTE, CTE, CTE
+2,     23,  Martes,11:20 AM,         REPASO, REPASO, REPASO
+2,     23,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
+2,     23,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
+2,     23,  Viernes,7:50 AM,         REPASO, REPASO, REPASO
+2,     23,  Viernes,11:20 AM,        REPASO, REPASO, REPASO
+2,     24,  Martes,11:20 AM,         REPASO, REPASO, REPASO
+2,     24,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
+2,     24,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
+2,     24,  Viernes,7:50 AM,         REPASO, REPASO, REPASO
+2,     24,  Viernes,11:20 AM,        REPASO, REPASO, REPASO
+2,     25,  Martes,11:20 AM,         REPASO, REPASO, REPASO
+2,     25,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
+2,     25,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
+2,     25,  Viernes,7:50 AM,         REPASO, REPASO, REPASO
+2,     25,  Viernes,11:20 AM,        REPASO, REPASO, REPASO
+2,     26,  Martes,11:20 AM,         REPASO, REPASO, REPASO
+2,     26,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
+2,     26,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
+2,     26,  Viernes,7:50 AM,         CTE, CTE, CTE 
+2,     26,  Viernes,11:20 AM,        CTE, CTE, CTE  
+2,     27,  Martes,11:20 AM,        REPASO, REPASO, REPASO      
+2,     27,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO      
+2,     27,  Jueves,11:20 AM,        REPASO, REPASO, REPASO      
+2,     27,  Viernes,7:50 AM,        EXAMEN, EXAMEN, EXAMEN      
+2,     27,  Viernes,11:20 AM,       EXAMEN, EXAMEN, EXAMEN      
+2,     28,  Martes,11:20 AM,           
+2,     28,  Miércoles,11:20 AM,        
+2,     28,  Jueves,11:20 AM,           
+2,     28,  Viernes,7:50 AM,           
+2,     28,  Viernes,11:20 AM,          
+2,     29,  Martes,11:20 AM,           
+2,     29,  Miércoles,11:20 AM,        
+2,     29,  Jueves,11:20 AM,           
+2,     29,  Viernes,7:50 AM,           
+2,     29,  Viernes,11:20 AM,   
