@@ -1,303 +1,232 @@
 \documentclass[landscape]{article}
+\usepackage[letterpaper,left=0.65in,right=0.65in,bottom=1in,top=1in]{geometry}
+\usepackage{xparse,array}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel} % Idioma español
-\usepackage{geometry}
-\geometry{margin=1.5cm}
-\usepackage{datatool}
-\usepackage[many]{tcolorbox}
-\tcbsetforeverylayer{enhanced}
-\tcbuselibrary{skins}
-\usepackage{tikz}
-\usetikzlibrary{babel}
-\usetikzlibrary{backgrounds,calc, positioning,calendar,decorations.markings}
-\usetikzlibrary{shadows,shadows.blur}
-\usetikzlibrary{shapes,shapes.symbols}
-\usetikzlibrary{patterns,patterns.meta}
-\usepackage{pgffor}
-\usepackage{ifthen}
- \usepackage{multicol}
- \usepackage{adjustbox}
-\usepackage{pgfcalendar} % Para cálculo de fechas
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tabularx}
 \usepackage{anyfontsize}
-\usepackage{lmodern}
-\newcommand*\alterfont{\fontfamily{lmtt}\selectfont}%% se usa en la palabra repaso \alterfont [typewriting]
-%  \renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
-\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{xifthen}
+\usepackage[calc,es-ES,spanish]{datetime2}
+\usepackage[most]{tcolorbox}
+\usepackage{ragged2e}
 \usepackage{shadowtext}
+\usepackage{tikz}
+\usepackage{datatool} % <-- Paquete requerido para \DTLforeach
+\usetikzlibrary{calendar,shapes.misc}
+
 \shadowoffset{0.4pt}
 \shadowcolor{black}
-\usepackage{colortbl}
-\setlength{\columnsep}{0pt}
-% \usepackage{parskip}
-% \setlength{\parindent}{0pt}
-% \setlength{\parskip}{2em}
-\linespread{0.5}
-\usepackage[xcdraw,svgnames,x11names,usenames,dvipsnames,table]{xcolor} % Required for custom color
-\definecolor{colorrds}{HTML}{0060A0} % Custom colour
-\definecolor{rdsdark}{HTML}{003050}
-\definecolor{almond}{rgb}{0.94, 0.87, 0.8}
-\definecolor{brickred}{rgb}{0.8, 0.25, 0.33}
-\definecolor{corn}{rgb}{0.98, 0.93, 0.36}
-\definecolor{darkpastelred}{rgb}{0.76, 0.23, 0.13}
-\definecolor{MainColor}{HTML}{4C8BA7}
-\definecolor{SubjectColor}{HTML}{98780F}
-\definecolor{ExampleTitle}{HTML}{3F2906}
-\definecolor{ExampleCard}{HTML}{275819}
-\definecolor{PreguntaTitle}{HTML}{3F2906}
-\definecolor{PreguntaCard}{HTML}{C2A224}
-\definecolor{Guia}{HTML}{FFDDDD}
-\definecolor{ChapterMainColor}{named}{RawSienna}
-\definecolor{ChapterSecColor}{named}{DarkGoldenrod}
-\definecolor{SectionMainColor}{named}{OliveDrab}
-\definecolor{SectionSecColor}{named}{DarkGoldenrod}
-\definecolor{SubsectionMainColor}{named}{OliveDrab}
-\definecolor{SubsectionSecColor}{named}{FireBrick}
-\definecolor{SubsubsectionMainColor}{named}{DarkGoldenrod}
-\definecolor{mathColor}{HTML}{b28d13}
-\definecolor{physColor}{HTML}{1c6a73}
-\definecolor{chemColor}{HTML}{631313}
-\definecolor{geogColor}{HTML}{086f57}
-\definecolor{sec1Color}{HTML}{7c2c8d}
-\definecolor{sec2Color}{HTML}{173ca0}
-\definecolor{sec3Color}{HTML}{d3290b}
-% Comando para mostrar el string asociado y su estilo
-\newcommand{\classtitle}[1]{%
-  \ifthenelse{\equal{#1}{math1}}{\textcolor{mathColor}{Matemáticas I}}{}%
-  \ifthenelse{\equal{#1}{geog1}}{\textcolor{geogColor}{Geografia}}{}%
-  \ifthenelse{\equal{#1}{math2}}{\textcolor{mathColor}{Matemáticas II}}{}%
-  \ifthenelse{\equal{#1}{math3}}{\textcolor{mathColor}{Matemáticas III}}{}%
-  \ifthenelse{\equal{#1}{chem3}}{\textcolor{chemColor}{Química}}{}%
-  \ifthenelse{\equal{#1}{phys2}}{\textcolor{physColor}{Física}}{}%
-  \ifthenelse{\equal{#1}{test0}}{\textcolor{chemColor}{Mi materia}}{}%
+\arrayrulecolor{rdsColor}
+\setlength{\arrayrulewidth}{0.1pt}
+\renewcommand{\arraystretch}{1.5}
+
+\def\cicloescolar{%
+    \tcbox[colback=red!10!white,colframe=rdsColor,size=fbox,on line]{2026-2027}
 }
+\definecolor{rdsColor}{HTML}{0060A0}
+\definecolor{sec1Color}{HTML}{86608E}
+\definecolor{sec2Color}{HTML}{4C8BA7}
+\definecolor{sec3Color}{HTML}{A94939}
 
 \newcommand{\leveltitle}[1]{%
-  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{0° de Secundaria}}{}%
-  \ifthenelse{\equal{#1}{1}}{\textcolor{sec1Color}{1° de Secundaria}}{}%
-  \ifthenelse{\equal{#1}{2}}{\textcolor{sec2Color}{2° de Secundaria}}{}%
-  \ifthenelse{\equal{#1}{3}}{\textcolor{sec3Color}{3° de Secundaria}}{}%
+  \ifthenelse{\equal{#1}{0}}{\textcolor{red}{\textbf{TESTING}}}{}%
+  \ifthenelse{\equal{#1}{1 de Secundaria}}{\color{sec1Color}\bfseries{\shadowtext{1° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{2 de Secundaria}}{\color{sec2Color}\bfseries{\shadowtext{2° de Secundaria}}}{}%
+  \ifthenelse{\equal{#1}{3 de Secundaria}}{\color{sec3Color}\bfseries{\shadowtext{3° de Secundaria}}}{}%
 }
-\tcbset{daybox/.style={%
-valign=bottom,width=\linewidth,fontupper=\alterfont,
-halign title=center, colback=white, coltitle=colorrds!30!black, colbacktitle=white, colframe=colorrds, boxrule=0.8pt, boxsep=0pt, arc=3pt,
-left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
-}}
-\newtcbox{\keypill}[1][]{on line,boxrule=0.5pt,colback=white,colframe=red!70!black,frame style={opacity=1},interior style={opacity=1},nobeforeafter,tcbox raise base,shrink tight,rotate=0,extrude by=1mm,enhanced,fuzzy shadow={0.15mm}{-0.25mm}{0mm}{0.1mm}{black},  #1}
-\newtcbox{\timepill}[1][]{on line,top=1pt,right=1pt,left=1pt,bottom=1pt,
-  colback=olive!5!white,colframe=olive!75!black,width=1cm,
-  boxrule=0.5pt,boxsep=1pt, fontupper=\alterfont, hyphenationfix,
-  fuzzy shadow={0.3mm}{-0.3mm}{0mm}{0.3mm}{black},  #1
-}
-\newtcbox{\dashedbox}[1][]{
-  width=\textwidth,
-    before skip = 0mm,    % add extra space before the box
-    after skip = 0mm,      % add extra space after the box
-    colback=white,
-    colframe=white,
-    arc=0pt,
-    top=3pt,
-    bottom=3pt,
-    right=3pt,
-    left=3pt,
-    boxsep=0mm,
-    fontupper=,
-    borderline={0.2mm}{0mm}{gray,dashed},#1%
-    }
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=2pt,fill=white] (char) {#1};}}
 
-\newcommand{\boxeslineletters}[1]{%
-  \ifthenelse{\equal{#1}{1}}{Cont.}{}%
-  \ifthenelse{\equal{#1}{2}}{Orto.}{}%
-  \ifthenelse{\equal{#1}{3}}{Punt.}{}%
-  \ifthenelse{\equal{#1}{4}}{Pres.}{}%
-  \ifthenelse{\equal{#1}{5}}{Total}{}%
-}
-\newcommand{\loaddatafile}[3]{%
-\def\disciplina{\classtitle{#2#1}}
-    \def\gradogrupo{\leveltitle{#1}}
-    
-    \renewcommand\unitinfo{%
-        \tcbox[on line,colback=colorrds!5!white,colframe=colorrds,size=fbox,on line]{ Unidad #3}
-    }
-    \DTLloaddb{activities}{#2#1_u#3.csv}
-}
-% \renewcommand{\familydefault}{\sfdefault}
-
-% Función para traducir el número del mes a texto en español
-\newcommand{\mesespanol}[1]{%
-  \ifcase\number#1 
-  \or Ene.\or Feb.\or Mar.\or Abr.\or May.\or Jun.\or Jul.\or Ago.\or Sep.\or Oct.\or Nov.\or Dic.%
-  \fi
-}
-\usepackage[calc,es-ES,spanish]{datetime2}
-% Define short month names for Spanish
 \newcommand{\DTMspanishshortMonthname}[1]{%
   \ifcase#1
-  \or Ene.\or Feb.\or Mar.\or Abr.\or May.\or Jun.\or Jul.\or Ago.\or Sep.\or Oct.\or Nov.\or Dic.%
-  \fi
+  \or ene.\or feb.\or mar.\or abr.\or may.\or jun.\or jul.\or ago.\or sep.\or oct.\or nov.\or dic.\fi
 }
-% Redefine the month name command to use the short version
-\renewcommand{\DTMspanishmonthname}[1]{%
-  \DTMspanishshortMonthname{#1}%
+\newcommand{\DTMspanishshortweekdayname}[1]{%
+  \ifcase#1 lun.\or mar.\or mié.\or jue.\or vie.\or sáb.\or dom.\fi
 }
+
+\renewcommand{\DTMspanishmonthname}[1]{\DTMspanishshortMonthname{#1}}
+
 \DTMnewdatestyle{dashdate}{%
 \renewcommand{\DTMdisplaydate}[4]{%
- \DTMtwodigits{##3} \DTMspanishmonthname{##2}}%-\number##1 }%
+ \DTMspanishshortweekdayname{##4}~##3~de~\DTMspanishshortMonthname{##2}}%
 \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
 }
 \DTMsetdatestyle{dashdate}
 
-\def\currentyear{2026}
-\def\nextyear{2027}
-\def\cicloescolar{%
-        \tcbox[on line,colback=red!10!white,colframe=colorrds,size=fbox,on line]{\currentyear-\nextyear}
+\def\LOGO{%
+    \begin{picture}(0,0)\unitlength=2cm
+        \put (0.2,-0.5) {\includegraphics[width=2cm]{logo45.png}}
+    \end{picture}
+}
+\newcommand{\listaTitle}{%
+\begin{minipage}{0.11\textwidth}
+        \LOGO
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+      \RaggedRight%
+        {\hspace{-5pt}\shadowtext{\color{rdsColor}\Huge Escuela Rafael Díaz Serdán}}\\[-0.2em]
+        {\color{gray!40!black}\sffamily 30PES0329R \hspace{15em} turno matutino}\\[0.5em]
+        {\color{green!20!black}\huge\sffamily Lista de asistencia \hspace{1em} \cicloescolar}\\
+    \end{minipage}%
+    \begin{minipage}{0.45\textwidth}
+     \includegraphics[width=\linewidth]{rds-building.png}
+    \end{minipage}
+}
+\tcbset{listabox/.style={
+  toptitle=20pt,bottomtitle=5pt,title={\listaTitle},enhanced,boxsep=0pt,halign=center,
+arc=2mm, colframe=rdsColor,boxrule=0.5pt,left=0mm,right=0mm,top=0mm,bottom=0mm,
+coltitle=rdsColor!20!black,colbacktitle=white,colback=white
+}}
+\pagestyle{empty}
+
+% Carga de bases de datos de fechas desde archivos CSV
+% Estos archivos deben contener dos columnas: Fecha, Color (ej. 2026-08-31, Red!50)
+\DTLloaddb{fechasSep}{fecha1.csv}
+\DTLloaddb{fechasOct}{fecha2.csv}
+\DTLloaddb{fechasNov}{fecha3.csv}
+\DTLloaddb{fechasEne}{fecha4.csv}
+\DTLloaddb{fechasFeb}{fecha5.csv}
+\DTLloaddb{fechasMar}{fecha6.csv}
+\DTLloaddb{fechasMay}{fecha7.csv}
+\DTLloaddb{fechasJun}{fecha8.csv}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\studentlist}{m}
+{%
+  \studentlist:n { #1 }
+}
+
+\ior_new:N \studentlist_stream
+\seq_new:N \studentlist_seq
+\seq_new:N \studentlist_temp_seq
+\tl_new:N \studentlist_header
+
+% Función auxiliar para iterar con \DTLforeach e inyectar fechas en la tabla
+\cs_new_protected:Nn \append_dates_from_db:Nn
+  {
+    % #1 = variable token list del header (ej. \studentlist_header_sep)
+    % #2 = nombre de la base de datos de datatool (ej. fechasSep)
+    \DTLforeach{#2}{\mydate=Fecha, \mycolor=Color}
+      {
+        \tl_put_right:Nx #1
+          {
+            & \exp_not:N \rotatebox{90}
+              {
+                \tl_if_blank:VF \mycolor { \exp_not:N \cellcolor{\mycolor} }
+                \exp_not:N \DTMdate{\mydate}
+              }
+          }
+      }
+    \tl_put_right:Nn #1 { \\ \hline }
+  }
+
+\cs_new_protected:Nn \studentlist:n
+{
+  \seq_clear:N \studentlist_seq
+  \ior_open:Nn \studentlist_stream { #1.csv } 
+  \int_zero:N \l_tmpa_int
+  
+  \ior_map_inline:Nn \studentlist_stream
+  {
+    \int_incr:N \l_tmpa_int
+    \seq_put_right:Nx \studentlist_seq
+    {
+      \int_to_arabic:n { \l_tmpa_int } & \exp_not:n { ##1 } &
     }
-% === CONFIGURACIÓN DE LA FECHA DE INICIO ===
-% Cambia esta fecha por el Lunes de tu "Semana 1" (Formato: AAAA-MM-DD)
-\newcount\startdate
-\pgfcalendardatetojulian{2026-08-31}{\startdate} 
+  }
 
-% Cargar los datos del archivo CSV
+  % =========================================================
+  % SEPTIEMBRE
+  % =========================================================
+  \tl_set:Nn \studentlist_header_sep
+  {
+    \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &
+    \multicolumn{1}{|c|}{\cellcolor{Goldenrod!50}\fontsize{10}{8}\selectfont \bfseries A.}  & 
+    \multicolumn{22}{|c|}{\cellcolor{RoyalBlue!50}\fontsize{14}{12}\selectfont \bfseries Septiembre}  & 
+    \multicolumn{2}{|c|}{\cellcolor{ForestGreen!50}\fontsize{10}{8}\selectfont \bfseries Oct.} \\
+    & & \multicolumn{5}{|c|}{Semana~1} & \multicolumn{5}{|c|}{Semana~2} & \multicolumn{5}{|c|}{Semana~3} &
+    \multicolumn{5}{|c|}{Semana~4} & \multicolumn{5}{|c|}{Semana~5} \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} 
+  }
+  % Genera las 25 columnas dinámicamente:
+  \append_dates_from_db:Nn \studentlist_header_sep { fechasSep }
 
-% ==========================================
-% LÓGICA DE DÍAS FERIADOS Y VACACIONES (MÉXICO)
-% ==========================================
-\newboolean{isholiday}
-\newcommand{\checkholiday}[2]{% #1 = mes (MM), #2 = día (DD)
-  \setboolean{isholiday}{false}%
-  \def\holidayname{}%
-  
-  % --- VACACIONES (Por Rangos) ---
-  % Vacaciones de Invierno (21 Dic - 6 Ene)
-  \ifthenelse{\number#1=12 \and \number#2>20}{\setboolean{isholiday}{true}\def\holidayname{Vacaciones de Invierno}}{}%
-  \ifthenelse{\number#1=1 \and \number#2<7}{\setboolean{isholiday}{true}\def\holidayname{Vacaciones de Invierno}}{}%
-  
-  % Vacaciones de Primavera (22 Mar - 2 Abr)
-  \ifthenelse{\number#1=3 \and \number#2>21}{\setboolean{isholiday}{true}\def\holidayname{Vacaciones de Primavera}}{}%
-  \ifthenelse{\number#1=4 \and \number#2<3}{\setboolean{isholiday}{true}\def\holidayname{Vacaciones de Primavera}}{}%
+  % =========================================================
+  % OCTUBRE
+  % =========================================================
+  \tl_set:Nn \studentlist_header_oct
+  {
+    \multicolumn{2}{r}{\fontsize{14}{8}\selectfont  \leveltitle{#1}} &    
+    \multicolumn{20}{c}{\cellcolor{ForestGreen!50}\fontsize{14}{12}\selectfont \bfseries Octubre} & 
+    \multicolumn{5}{|c|}{\cellcolor{Brown!50}\fontsize{12}{10}\selectfont \bfseries Noviembre} \\
+    & & \multicolumn{5}{|c|}{Semana~6} & \multicolumn{5}{|c|}{Semana~7} & \multicolumn{5}{|c|}{Semana~8} &
+    \multicolumn{5}{|c|}{Semana~9} & \multicolumn{5}{|c|}{Semana~10} \\ \cline{3-27}
+    \# & \textbf{Nombre~del~alumno} 
+  }
+  \append_dates_from_db:Nn \studentlist_header_oct { fechasOct }
 
-  % --- FERIADOS FIJOS Y CTE ---
-  % (Se colocan después para que sobreescriban el nombre genérico de "Vacaciones" 
-  % si coinciden exactamente en ese día, ej. Navidad y Año Nuevo)
+  % === SE OMITEN LOS DEMÁS MESES POR BREVEDAD, EL PATRÓN ES IDÉNTICO ===
+  % Sustituye el bloque \tl_set de Noviembre, Enero, etc. y añade su respectivo \append_dates_from_db:Nn 
+
+  % Revisión de partición
+  \int_compare:nT { \seq_count:N \studentlist_seq > 25 }
+  {
+    \__studentlist_halve:
+  }
   
-  \ifthenelse{\equal{#1}{01} \and \equal{#2}{01}}{\setboolean{isholiday}{true}\def\holidayname{Año Nuevo}}{}%
-  \ifthenelse{\equal{#1}{05} \and \equal{#2}{01}}{\setboolean{isholiday}{true}\def\holidayname{Día del Trabajo}}{}%
-  \ifthenelse{\equal{#1}{05} \and \equal{#2}{05}}{\setboolean{isholiday}{true}\def\holidayname{Batalla de Puebla}}{}%
-  \ifthenelse{\equal{#1}{09} \and \equal{#2}{16}}{\setboolean{isholiday}{true}\def\holidayname{Independencia}}{}%
-  \ifthenelse{\equal{#1}{11} \and \equal{#2}{02}}{\setboolean{isholiday}{true}\def\holidayname{Día de Muertos}}{}%
-  \ifthenelse{\equal{#1}{12} \and \equal{#2}{12}}{\setboolean{isholiday}{true}\def\holidayname{Día de la Virgen}}{}%
-  \ifthenelse{\equal{#1}{12} \and \equal{#2}{25}}{\setboolean{isholiday}{true}\def\holidayname{Navidad}}{}%
-  
-  % Asuetos móviles y CTE (Con formato 01, 02 para evitar fallos de lectura)
-  \ifthenelse{\equal{#1}{11} \and \equal{#2}{16}}{\setboolean{isholiday}{true}\def\holidayname{Revolución (Asueto)}}{}%
-  \ifthenelse{\equal{#1}{02} \and \equal{#2}{01}}{\setboolean{isholiday}{true}\def\holidayname{Día de la Constitución (Asueto)}}{}%
-  \ifthenelse{\equal{#1}{03} \and \equal{#2}{15}}{\setboolean{isholiday}{true}\def\holidayname{Día del natalicio de Benito Juárez (Asueto)}}{}%
-  \ifthenelse{\equal{#1}{09} \and \equal{#2}{25}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{10} \and \equal{#2}{30}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{11} \and \equal{#2}{27}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{01} \and \equal{#2}{29}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{02} \and \equal{#2}{26}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{04} \and \equal{#2}{30}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{05} \and \equal{#2}{28}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
-  \ifthenelse{\equal{#1}{06} \and \equal{#2}{25}}{\setboolean{isholiday}{true}\def\holidayname{CTE Consejo Técnico Escolar}}{}%
+  \par\noindent
+  \begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_sep
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+  \newpage
+
+  \par\noindent
+  \begin{tcolorbox}[listabox]
+  \begin{tabular}{rw{l}{16em}|*{25}{w{c}{0.8em}|}}
+    \tl_use:N \studentlist_header_oct
+    \seq_map_function:NN \studentlist_seq \__studentlist_row:n \\
+  \end{tabular}
+  \end{tcolorbox}
+  % Añadir las demás cajas (Nov, Ene...)
 }
 
-% Comando para imprimir las actividades de un día y semana específicos
-\newcommand{\printday}[4]{%
-  % #1 = Nombre del día a mostrar (ej. Lunes)
-  % #2 = Número de semana (\w)
-  % #3 = Desplazamiento de días (0=Lunes, 1=Martes, etc.)
-  % #4 = Nombre del día en tu archivo CSV (ej. Lunes o Monday)
-  % Calcular la fecha exacta sumando semanas y días a la fecha de inicio
-  \newcount\currentdate
-  \newcount\weekoffset
-  \weekoffset=#2\relax
-  \advance\weekoffset by -1\relax
-  \multiply\weekoffset by 7\relax
-  \advance\weekoffset by #3\relax
-  \currentdate=\startdate
-  \advance\currentdate by \weekoffset
-  \pgfcalendarjuliantodate{\currentdate}{\myyear}{\mymonth}{\myday}%
-  \begin{tcolorbox}[daybox,title={#1 \textbf{\myday \ \mesespanol{\mymonth}} }]
-    
-    % Revisar si la fecha calculada es un día feriado o vacacional
-    \checkholiday{\mymonth}{\myday}%
-    
-    \ifthenelse{\boolean{isholiday}}{%
-      % --- SI ES FERIADO/VACACIONES: Imprimir cartel y omitir actividades ---
-      \begin{center}
-        \textcolor{gray!80!black}{\textbf{\holidayname}}\\[0.1cm]
-        \textcolor{gray!80!black}{\textit{(Sin clases)}}
-      \end{center}
-    }{%
-      % --- SI NO ES FERIADO: Iterar por la base de datos y filtrar ---
-      \DTLforeach{activities}{\MyWeek=Week,\MyDay=Day,\MyTime=Time,\MyKey=Key,\MyActivity=Activity, \MySection=Section}{%
-        \ifthenelse{\equal{\MyWeek}{#2} \and \equal{\MyDay}{#4}}{\centering
-            \keypill{\small\MyKey} \hfill \timepill{\scriptsize\MyTime}\\[0.2em] 
-           \adjustbox{max width=\textwidth-2pt,max height=20pt}{\textcolor{OliveDrab}{\MySection}} \\[0.2em] 
-           {\fontsize{9}{2}\selectfont\MyActivity} \\[0.2em]
-            {\boxesline}\\
-        }{}%
-      }%
-    }%
-  \end{tcolorbox}%
-}
-
-\newcommand{\boxesline}{%
-\begin{tikzpicture}
-    \foreach \x in {1,...,5} {
- \begin{scope}[shift={(\x*0.66,0)}]
-            % Dibujamos las 3 caras visibles del cubo
-            % Todas tienen borde negro (por defecto) y relleno blanco
-            % \draw[fill=white] (0.2,0.2) rectangle (1.7,1.7);
-            % \draw[fill=white] (0,0) -- ++(0.2,-0.2) -- ++(1.2,0) -- ++(-0.2,0.2) -- cycle; % Cara superior
-            %  \draw[fill=white] (1.2,0) -- ++(0.2,-0.2) -- ++(0,1.2) -- ++(-0.2,0.2) -- cycle;; % Cara lateral derecha
-            \draw[gray,fill=white,drop shadow={
-    shadow xshift=1pt,    % Move further right
-    shadow yshift=-1pt,   % Move further down
-    fill=gray,          % Make the shadow red
-    opacity=0.6           % Make it more see-through
-  },rounded corners=1pt,]  (0,0) rectangle (0.6,0.6);                                     % Cara frontal
-            \node[anchor=south west] at (-0.08,-0.08) {%
-                        \fontsize{5}{10}\selectfont\boxeslineletters{\x}
-                    };           
-        \end{scope}
+\cs_new_protected:Nn \__studentlist_halve:
+{
+  \int_if_odd:nT { \seq_count:N \studentlist_seq }
+  {
+    \seq_put_right:Nn \studentlist_seq { \multicolumn{25}{c}{} }
+  }
+  \seq_clear:N \studentlist_temp_seq
+  \int_step_inline:nn { \seq_count:N \studentlist_seq / 2 }
+  {
+    \seq_put_right:Nx \studentlist_temp_seq
+    {
+      \seq_item:Nn \studentlist_seq { ##1 } &
+      \seq_item:Nn \studentlist_seq { ##1 + \seq_count:N \studentlist_seq / 2 }
     }
-\end{tikzpicture}%
+  }
+  \seq_set_eq:NN \studentlist_seq \studentlist_temp_seq
+  \tl_put_right:Nx \studentlist_header { & \exp_not:V \studentlist_header }
 }
 
+\cs_new_protected:Nn \__studentlist_row:n
+{
+  #1 & & & & & & & & & & & & & & & & & & & & & & & & \\ \hline
+}
 
+\ExplSyntaxOff
 
 \begin{document}
-\loaddatafile{1}{math}{1}
-\thispagestyle{empty}
-% Bucle de 10 iteraciones para 10 semanas
-\newcounter{semana}
-\setcounter{semana}{0}
-\begin{multicols}{5}
-\foreach \w in {1,...,10}{%{13,14,15,16,19,....,29}%%{32,...,45} {%
-\stepcounter{semana}
-\begin{tcbraster}[%
-    raster width=\textwidth,
-    raster columns=5, 
-    % Forces same height in all columns on same row
-    raster equal height=rows,
-    raster every box/.style={valign=top}, 
-    ]
-\dashedbox{%
-\begin{center}
-  \adjustbox{width=\textwidth}{\shadowtext{\disciplina} \qquad Semana \circled{\thesemana}} 
-  \gradogrupo\\[0.2em]
-\adjustbox{width=\textwidth}{\cicloescolar \unitinfo}
-\end{center}\vspace{-10pt}
-    \printday{Lun.}{\w}{0}{Lunes}%
-    \printday{Mar.}{\w}{1}{Martes}%
-    \printday{Mié.}{\w}{2}{Miércoles}%
-    \printday{Jue.}{\w}{3}{Jueves}%
-    \printday{Vie.}{\w}{4}{Viernes}
-}%
-\end{tcbraster}%
-}
-\end{multicols}
+\studentlist{1 de Secundaria}
+\newpage
+\studentlist{2 de Secundaria}
+\newpage
+\studentlist{3 de Secundaria}
 \end{document}
