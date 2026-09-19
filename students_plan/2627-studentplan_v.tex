@@ -120,7 +120,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
     \def\unitinfo{%
         \tcbox[on line,colback=colorrds!5!white,colframe=colorrds,size=fbox,on line]{ Unidad #3}
     }
-    \DTLloaddb{activities}{#2#1_u#3.csv}
+    \DTLloaddb{activities#3}{#2#1_u#3.csv}
 }
 % \renewcommand{\familydefault}{\sfdefault}
 
@@ -204,7 +204,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
 }
 
 % Comando para imprimir las actividades de un día y semana específicos
-\newcommand{\printday}[4]{%
+\newcommand{\printday}[5]{%
   % #1 = Nombre del día a mostrar (ej. Lunes)
   % #2 = Número de semana (\w)
   % #3 = Desplazamiento de días (0=Lunes, 1=Martes, etc.)
@@ -232,7 +232,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
       \end{center}
     }{%
       % --- SI NO ES FERIADO: Iterar por la base de datos y filtrar ---
-      \DTLforeach{activities}{\MyWeek=Week,\MyDay=Day,\MyTime=Time,\MyKey=Key,\MyActivity=Activity, \MySection=Section}{%
+      \DTLforeach{activities#5}{\MyWeek=Week,\MyDay=Day,\MyTime=Time,\MyKey=Key,\MyActivity=Activity, \MySection=Section}{%
         \ifthenelse{\equal{\MyWeek}{#2} \and \equal{\MyDay}{#4}}{\centering
             \keypill{\small\MyKey} \hfill \timepill{\scriptsize\MyTime}\\[0.2em] 
            \adjustbox{max width=\textwidth-2pt,max height=20pt}{\textcolor{OliveDrab}{\MySection}} \\[0.2em] 
@@ -270,12 +270,12 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
 
 
 \begin{document}
-\loaddatafile{1}{math}{1}
 \thispagestyle{empty}
 % Bucle de 10 iteraciones para 10 semanas
 \newcounter{semana}
 \setcounter{semana}{0}
 \begin{multicols}{5}
+\loaddatafile{1}{math}{1}
 \foreach \w in {1,...,10}{%{13,14,15,16,19,....,29}%%{32,...,45} {%
 \stepcounter{semana}
 \begin{tcbraster}[%
@@ -291,13 +291,64 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
   \gradogrupo\\[0.2em]
 \adjustbox{width=\textwidth}{\cicloescolar \unitinfo}
 \end{center}\vspace{-10pt}
-    \printday{Lun.}{\w}{0}{Lunes}%
-    \printday{Mar.}{\w}{1}{Martes}%
-    \printday{Mié.}{\w}{2}{Miércoles}%
-    \printday{Jue.}{\w}{3}{Jueves}%
-    \printday{Vie.}{\w}{4}{Viernes}
+    \printday{Lun.}{\w}{0}{Lunes}{1}%
+    \printday{Mar.}{\w}{1}{Martes}{1}%
+    \printday{Mié.}{\w}{2}{Miércoles}{1}%
+    \printday{Jue.}{\w}{3}{Jueves}{1}%
+    \printday{Vie.}{\w}{4}{Viernes}{1}
 }%
 \end{tcbraster}%
 }
+
+\loaddatafile{1}{math}{2}
+\foreach \w in {13,14,15,16,19,20,21,22,23,24,25,26,27,28,29}{%%{32,...,45} {%
+\stepcounter{semana}
+\begin{tcbraster}[%
+    raster width=\textwidth,
+    raster columns=5, 
+    % Forces same height in all columns on same row
+    raster equal height=rows,
+    raster every box/.style={valign=top}, 
+    ]
+\dashedbox{%
+\begin{center}
+  \adjustbox{width=\textwidth}{\shadowtext{\disciplina} \qquad Semana \circled{\thesemana}} 
+  \gradogrupo\\[0.2em]
+\adjustbox{width=\textwidth}{\cicloescolar \unitinfo}
+\end{center}\vspace{-10pt}
+    \printday{Lun.}{\w}{0}{Lunes}{2}
+    \printday{Mar.}{\w}{1}{Martes}{2}
+    \printday{Mié.}{\w}{2}{Miércoles}{2}
+    \printday{Jue.}{\w}{3}{Jueves}{2}
+    \printday{Vie.}{\w}{4}{Viernes}{2}
+}%
+\end{tcbraster}%
+}
+
+\loaddatafile{1}{math}{3}
+\foreach \w in {32,...,45}{%
+\stepcounter{semana}
+\begin{tcbraster}[%
+    raster width=\textwidth,
+    raster columns=5, 
+    % Forces same height in all columns on same row
+    raster equal height=rows,
+    raster every box/.style={valign=top}, 
+    ]
+\dashedbox{%
+\begin{center}
+  \adjustbox{width=\textwidth}{\shadowtext{\disciplina} \qquad Semana \circled{\thesemana}} 
+  \gradogrupo\\[0.2em]
+\adjustbox{width=\textwidth}{\cicloescolar \unitinfo}
+\end{center}\vspace{-10pt}
+    \printday{Lun.}{\w}{0}{Lunes}{3}
+    \printday{Mar.}{\w}{1}{Martes}{3}
+    \printday{Mié.}{\w}{2}{Miércoles}{3}
+    \printday{Jue.}{\w}{3}{Jueves}{3}%
+    \printday{Vie.}{\w}{4}{Viernes}{3}
+}%
+\end{tcbraster}%
+}
+
 \end{multicols}
 \end{document}
