@@ -59,13 +59,31 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 3, 43,  Miércoles,     10:00 AM,   
 3, 43,  Jueves,        10:00 AM,      
 3, 43,  Viernes,       10:00 AM,    CTE, CTE, CTE
-3, 44,  Lunes,         10:00 AM,
-3, 44,  Martes,        10:00 AM,      
-3, 44,  Miércoles,     10:00 AM,   
-3, 44,  Jueves,        10:00 AM,      
-3, 44,  Viernes,       10:00 AM,     
-3, 45,  Lunes,         10:00 AM,
-3, 45,  Martes,        10:00 AM,      
-3, 45,  Miércoles,     10:00 AM,   
-3, 45,  Jueves,        10:00 AM,      
-3, 45,  Viernes,       10:00 AM, 
+
+
+
+A.56, Mediana y moda,  Probabilidad y estadística
+A.57, Promedio,  Probabilidad y estadística
+A.58, Interpretación de gráficas,  Probabilidad y estadística
+A.59, Eventos mutuamente excluyentes,  Probabilidad y estadística
+A.60, Eventos dependientes e independientes,  Probabilidad y estadística
+A.61, Relaciones proporcionales, Razones y proporciones
+A.62, Constante de proporcionalidad, Razones y proporciones
+A.63, Regla de correspondencia, Razones y proporciones
+A.64, Proporción directa e inversa, Razones y proporciones
+A.65, Proporciones compuestas, Razones y proporciones
+A.66, Completando la sucesión,  Sucesiones aritméticas
+A.67, Diferencia de una sucesión,  Sucesiones aritméticas
+A.68, Término enésimo 1,  Sucesiones aritméticas
+A.69, Término general,  Sucesiones aritméticas
+A.70, Término enésimo 2,  Sucesiones aritméticas
+A.71, Lenguaje algebraico,  Ecuaciones lineales
+A.72, Sustitución de valores,  Ecuaciones lineales
+A.73, Ecuaciones de primer grado 1,  Ecuaciones lineales
+A.74, Ecuaciones de primer grado 2,  Ecuaciones lineales
+A.75, Resolución de problemas,  Ecuaciones lineales
+A.76, Método de eliminación,  Sistemas de ecuaciones
+A.77, Método de sustitución,  Sistemas de ecuaciones
+A.78, Método de igualación,  Sistemas de ecuaciones
+A.79, Sistema de ecuaciones 2x2,  Sistemas de ecuaciones
+A.80, Sistema de ecuaciones 3x3,  Sistemas de ecuaciones

@@ -1,5 +1,5 @@
 Unit,  Week,Day,           Time, Key,     Activity,                                          Section
-1,     1,    Lunes,         12:15 PM,     ,  Me preparo
+1,     1,    Lunes,         12:15 PM,  Me preparo
 1,     1,    Lunes,         13:55 PM,  L.1,  Conocimiento empírico
 1,     1,    Martes,        12:15 PM,  A.1,  Conocimiento empírico
 1,     1,    Miércoles,     12:15 PM,  A.2,  Tipos de conocimientos
@@ -43,7 +43,7 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 1,     7,    Viernes,       13:55 PM,  L.12,  Temperatura y equilibrio térmico
 1,     8,    Lunes,         12:15 PM,  A.21,  Conversaciones de temperatura
 1,     8,    Lunes,         13:55 PM,  A.22,  ¿Cómo se mide la temperatura?
-1,     8,    Martes,        12:15 PM,      ,  ¿Qué aprendí?
+1,     8,    Martes,        12:15 PM,  ¿Qué aprendí?
 1,     8,    Miércoles,     12:15 PM,  REPASO,REPASO,REPASO
 1,     8,    Miércoles,     13:55 PM,  REPASO,REPASO,REPASO   
 1,     8,    Viernes,       13:55 PM,  REPASO,REPASO,REPASO

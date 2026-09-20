@@ -16,12 +16,12 @@ A.12. Fracciones equivalentes
 A.13. M.C.D y M.C.M
 A.14. Simplificación de fracciones
 A.15. Resolución de problemas
-Números decimales
-A.16. Ubicación en la recta numérica
-A.17. Porcentajes a decimal
-A.18. Operaciones con múltiplos de 10
-A.19. Conversión de fracciones a decimales
-A.20. Conversión de decimales a fracciones
+Operaciones con fracciones
+A.16. Suma y resta con denominadores iguales
+A.17. Suma y resta denominadores diferentes
+A.18. Multiplicación de fracciones
+A.19. División de fracciones
+A.20. Resolución de problemas
 Números negativos 1
 A.21. Ubicación en la recta numérica
 A.22. Comparación de negativos
@@ -35,17 +35,17 @@ A.28. Multiplicación y división con negativos
 A.29. Potencias con numeros negativos
 A.30. Jerarquía de operaciones
 
+Números decimales
+A.31. Ubicación en la recta numérica
+A.32. Porcentajes a decimal
+A.33. Operaciones con múltiplos de 10
+A.34. Conversión de fracciones a decimales
+A.35. Conversión de decimales a fracciones
 Operaciones con decimales
-A.31. Suma de decimales
-A.32. Resta de decimales
-A.33. Multiplicación de decimales
-A.34. División de decimales
-A.35. Resolución de problemas
-Operaciones con fracciones
-A.36. Suma y resta con denominadores iguales
-A.37. Suma y resta denominadores diferentes
-A.38. Multiplicación de fracciones
-A.39. División de fracciones
+A.36. Suma de decimales
+A.37. Resta de decimales
+A.38. Multiplicación de decimales
+A.39. División de decimales
 A.40. Resolución de problemas
 Porcentajes
 A.41. Porcentajes a decimal

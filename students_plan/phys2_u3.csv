@@ -53,9 +53,9 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 3, 40,   Miércoles,     12:15 PM,  REPASO.REPASO,REPASO
 3, 40,   Miércoles,     13:55 PM,  REPASO.REPASO,REPASO
 3, 40,   Viernes,       13:55 PM,  REPASO.REPASO,REPASO
-3, 41,   Lunes,         12:15 PM,  Examen de Unidad 3
-3, 41,   Lunes,         13:55 PM,  Examen de Unidad 3
-3, 41,   Martes,        12:15 PM,  Calificaciones de la Unidad 3
+3, 41,   Lunes,         12:15 PM,  EXAMEN, EXAMEN, EXAMEN
+3, 41,   Lunes,         13:55 PM,  EXAMEN, EXAMEN, EXAMEN
+3, 41,   Martes,        12:15 PM,  
 3, 41,   Miércoles,     12:15 PM,
 3, 41,   Miércoles,     13:55 PM,
 3, 41,   Viernes,       13:55 PM,
@@ -71,15 +71,3 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 3, 43,   Miércoles,     12:15 PM,
 3, 43,   Miércoles,     13:55 PM,
 3, 43,   Viernes,       13:55 PM,  CTE ,  CTE,  CTE
-3, 44,   Lunes,         12:15 PM,
-3, 44,   Lunes,         13:55 PM,
-3, 44,   Martes,        12:15 PM,
-3, 44,   Miércoles,     12:15 PM,
-3, 44,   Miércoles,     13:55 PM,
-3, 44,   Viernes,       13:55 PM,
-3, 45,   Lunes,         12:15 PM,
-3, 45,   Lunes,         13:55 PM,
-3, 45,   Martes,        12:15 PM,
-3, 45,   Miércoles,     12:15 PM,
-3, 45,   Miércoles,     13:55 PM,
-3, 45,   Viernes,       13:55 PM,     

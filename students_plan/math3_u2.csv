@@ -1,76 +1,92 @@
-Unit,  Week,Day,           Time, Key,     Activity,                                          Section
-2, 13,  Lunes,          7:00 AM,
-2, 13,  Martes,        13:55 AM,      
-2, 13,  Miércoles,      9:10 AM,   
-2, 13,  Jueves,         9:10 AM,      
-2, 13,  Viernes,       13:05 AM,    CTE,   CTE,   CTE 
-2, 14,  Lunes,          7:00 AM,
-2, 14,  Martes,        13:55 AM,      
-2, 14,  Miércoles,      9:10 AM,   
-2, 14,  Jueves,         9:10 AM,      
-2, 14,  Viernes,       13:05 AM,     
-2, 15,  Lunes,          7:00 AM,
-2, 15,  Martes,        13:55 AM,      
-2, 15,  Miércoles,      9:10 AM,   
-2, 15,  Jueves,         9:10 AM,      
-2, 15,  Viernes,       13:05 AM,     
-2, 16,  Lunes,          7:00 AM,
-2, 16,  Martes,        13:55 AM,      
-2, 16,  Miércoles,      9:10 AM,   
-2, 16,  Jueves,         9:10 AM,      
-2, 16,  Viernes,       13:05 AM,     
-2, 19,  Lunes,          7:00 AM,    No hay clases
-2, 19,  Martes,        13:55 AM,    No hay clases      
-2, 19,  Miércoles,      9:10 AM,    No hay clases   
-2, 19,  Jueves,         9:10 AM,      
-2, 19,  Viernes,       13:05 AM,     
-2, 20,  Lunes,          7:00 AM,
-2, 20,  Martes,        13:55 AM,      
-2, 20,  Miércoles,      9:10 AM,   
-2, 20,  Jueves,         9:10 AM,      
-2, 20,  Viernes,       13:05 AM,     
-2, 21,  Lunes,          7:00 AM,
-2, 21,  Martes,        13:55 AM,      
-2, 21,  Miércoles,      9:10 AM,   
-2, 21,  Jueves,         9:10 AM,      
-2, 21,  Viernes,       13:05 AM,     
-2, 22,  Lunes,          7:00 AM,
-2, 22,  Martes,        13:55 AM,      
-2, 22,  Miércoles,      9:10 AM,   
-2, 22,  Jueves,         9:10 AM,      
+Unit,  Week,Day,           Time,   Key,     Activity,                                          Section
+2, 13,  Lunes,          7:00 AM,   A.36, Mediana y moda,  Probabilidad y estadística
+2, 13,  Martes,        13:55 AM,   A.37, Promedio,  Probabilidad y estadística      
+2, 13,  Miércoles,      9:10 AM,   A.38, Desviación media,  Probabilidad y estadística   
+2, 13,  Jueves,         9:10 AM,   A.39, Eventos mutuamente excluyentes,  Probabilidad y estadística      
+2, 13,  Viernes,       13:05 AM,   CTE,   CTE,   CTE 
+2, 14,  Lunes,          7:00 AM,   A.40, Eventos dependientes e independientes,  Probabilidad y estadística
+2, 14,  Martes,        13:55 AM,   A.41, Perímetro,  Figuras y cuerpos geométricos   
+2, 14,  Miércoles,      9:10 AM,   A.42, Área,  Figuras y cuerpos geométricos
+2, 14,  Jueves,         9:10 AM,   A.43, Área lateral y total,  Figuras y cuerpos geométricos   
+2, 14,  Viernes,       13:05 AM,   A.44, Volumen,  Figuras y cuerpos geométricos  
+2, 15,  Lunes,          7:00 AM,   A.45, Resolución de problemas,  Figuras y cuerpos geométricos
+2, 15,  Martes,        13:55 AM,   A.46, Ubicación en el plano cartesiano,  Plano cartesiano y recta   
+2, 15,  Miércoles,      9:10 AM,   A.47, Cuadrantes en el plano cartesiano,  Plano cartesiano y recta
+2, 15,  Jueves,         9:10 AM,   A.48, Pendiente y ordenada,  Plano cartesiano y recta   
+2, 15,  Viernes,       13:05 AM,   A.49, Pendiente dados dos puntos,  Plano cartesiano y recta  
+2, 16,  Lunes,          7:00 AM,   A.50, Ecuación de una recta,  Plano cartesiano y recta
+2, 16,  Martes,        13:55 AM,   A.51, Lenguaje algebraico,  Ecuación lineal   
+2, 16,  Miércoles,      9:10 AM,   A.52, Ecuaciones lineales 1,  Ecuación lineal
+2, 16,  Jueves,         9:10 AM,   A.53, Ecuaciones lineales 2,  Ecuación lineal   
+2, 16,  Viernes,       13:05 AM,   A.54, Ecuaciones lineales con fracciones,  Ecuación lineal  
+2, 19,  Lunes,          7:00 AM,   No hay clases
+2, 19,  Martes,        13:55 AM,   No hay clases      
+2, 19,  Miércoles,      9:10 AM,   No hay clases   
+2, 19,  Jueves,         9:10 AM,   A.55, Resolución de problemas,  Ecuación lineal           
+2, 19,  Viernes,       13:05 AM,   A.56, Método de eliminación,  Sistemas de ecuaciones         
+2, 20,  Lunes,          7:00 AM,   A.57, Método de sustitución e igualación,  Sistemas de ecuaciones
+2, 20,  Martes,        13:55 AM,   A.58, Sistema de ecuaciones 3x3,  Sistemas de ecuaciones           
+2, 20,  Miércoles,      9:10 AM,   A.59, Sistema de ecuaciones con fracciones,  Sistemas de ecuaciones     
+2, 20,  Jueves,         9:10 AM,   A.60, Resolución de problemas,  Sistemas de ecuaciones        
+2, 20,  Viernes,       13:05 AM,   REPASO, REPASO, REPASO     
+2, 21,  Lunes,          7:00 AM,   REPASO, REPASO, REPASO
+2, 21,  Martes,        13:55 AM,   REPASO, REPASO, REPASO      
+2, 21,  Miércoles,      9:10 AM,   REPASO, REPASO, REPASO   
+2, 21,  Jueves,         9:10 AM,   REPASO, REPASO, REPASO 
+2, 21,  Viernes,       13:05 AM,   REPASO, REPASO, REPASO 
+2, 22,  Lunes,          7:00 AM,   REPASO, REPASO, REPASO 
+2, 22,  Martes,        13:55 AM,   REPASO, REPASO, REPASO 
+2, 22,  Miércoles,      9:10 AM,   REPASO, REPASO, REPASO 
+2, 22,  Jueves,         9:10 AM,   REPASO, REPASO, REPASO 
 2, 22,  Viernes,       13:05 AM,    CTE,   CTE,   CTE   
 2, 23,  Lunes,          7:00 AM,    No hay clases
-2, 23,  Martes,        13:55 AM,      
-2, 23,  Miércoles,      9:10 AM,   
-2, 23,  Jueves,         9:10 AM,      
-2, 23,  Viernes,       13:05 AM,     
-2, 24,  Lunes,          7:00 AM,
-2, 24,  Martes,        13:55 AM,      
-2, 24,  Miércoles,      9:10 AM,   
-2, 24,  Jueves,         9:10 AM,      
-2, 24,  Viernes,       13:05 AM,     
-2, 25,  Lunes,          7:00 AM,
-2, 25,  Martes,        13:55 AM,      
-2, 25,  Miércoles,      9:10 AM,   
-2, 25,  Jueves,         9:10 AM,      
-2, 25,  Viernes,       13:05 AM,     
-2, 26,  Lunes,          7:00 AM,
-2, 26,  Martes,        13:55 AM,      
-2, 26,  Miércoles,      9:10 AM,   
-2, 26,  Jueves,         9:10 AM,      
+2, 23,  Martes,        13:55 AM,   REPASO, REPASO, REPASO   
+2, 23,  Miércoles,      9:10 AM,   REPASO, REPASO, REPASO
+2, 23,  Jueves,         9:10 AM,   REPASO, REPASO, REPASO   
+2, 23,  Viernes,       13:05 AM,   REPASO, REPASO, REPASO  
+2, 24,  Lunes,          7:00 AM,   REPASO, REPASO, REPASO
+2, 24,  Martes,        13:55 AM,   REPASO, REPASO, REPASO   
+2, 24,  Miércoles,      9:10 AM,   REPASO, REPASO, REPASO
+2, 24,  Jueves,         9:10 AM,   REPASO, REPASO, REPASO   
+2, 24,  Viernes,       13:05 AM,   REPASO, REPASO, REPASO  
+2, 25,  Lunes,          7:00 AM,   REPASO, REPASO, REPASO
+2, 25,  Martes,        13:55 AM,   REPASO, REPASO, REPASO   
+2, 25,  Miércoles,      9:10 AM,   REPASO, REPASO, REPASO
+2, 25,  Jueves,         9:10 AM,   REPASO, REPASO, REPASO   
+2, 25,  Viernes,       13:05 AM,   REPASO, REPASO, REPASO  
+2, 26,  Lunes,          7:00 AM,   REPASO, REPASO, REPASO
+2, 26,  Martes,        13:55 AM,   REPASO, REPASO, REPASO   
+2, 26,  Miércoles,      9:10 AM,   REPASO, REPASO, REPASO
+2, 26,  Jueves,         9:10 AM,   REPASO, REPASO, REPASO   
 2, 26,  Viernes,       13:05 AM,    CTE,   CTE,   CTE 
-2, 27,  Lunes,          7:00 AM,
-2, 27,  Martes,        13:55 AM,      
+2, 27,  Lunes,          7:00 AM,   REPASO, REPASO, REPASO
+2, 27,  Martes,        13:55 AM,   EXAMEN, EXAMEN, EXAMEN   
 2, 27,  Miércoles,      9:10 AM,   
 2, 27,  Jueves,         9:10 AM,      
 2, 27,  Viernes,       13:05 AM,     
-2, 28,  Lunes,          7:00 AM,
-2, 28,  Martes,        13:55 AM,      
-2, 28,  Miércoles,      9:10 AM,   
-2, 28,  Jueves,         9:10 AM,      
-2, 28,  Viernes,       13:05 AM,     
-2, 29,  Lunes,          7:00 AM,    No hay clases
-2, 29,  Martes,        13:55 AM,      
-2, 29,  Miércoles,      9:10 AM,   
-2, 29,  Jueves,         9:10 AM,      
-2, 29,  Viernes,       13:05 AM,     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

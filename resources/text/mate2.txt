@@ -4,12 +4,24 @@ A.2.  Resta de números
 A.3.  Multiplicación de números
 A.4.  División de números
 A.5.  Resolución de problemas
-Números negativos
+Operaciones con fracciones
+A.6,   Suma y resta con denominadores iguales  
+A.7,   Suma y resta denominadores diferentes      
+A.8,   Multiplicación de fracciones   
+A.9,   División de fracciones      
+A.10,  Resolución de problemas.    
+Conceptos básicos de números negativos
 A.6.  Ubicación en la recta numérica
 A.7.  Comparación de negativos
 A.8.  Suma y resta con negativos
 A.9.  Multiplicación y división con negativos
 A.10. Potencias con números negativos
+Operaciones con negativos
+A.16,  Comparación de negativos    
+A.17,  Suma y resta con negativos
+A.18,  Multiplicación y división con negativos   
+A.19,  Potencias con números negativos
+A.20,  Jerarquía de operaciones    
 Exponentes y notación científica
 A.11. Suma de exponentes
 A.12. Resta de exponentes

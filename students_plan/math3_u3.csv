@@ -59,13 +59,36 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 3, 43,  Miércoles,      9:10 AM,   
 3, 43,  Jueves,         9:10 AM,      
 3, 43,  Viernes,       13:05 AM,      CTE, CTE, CTE
-3, 44,  Lunes,          7:00 AM,
-3, 44,  Martes,        13:55 AM,      
-3, 44,  Miércoles,      9:10 AM,   
-3, 44,  Jueves,         9:10 AM,      
-3, 44,  Viernes,       13:05 AM,     
-3, 45,  Lunes,          7:00 AM,
-3, 45,  Martes,        13:55 AM,      
-3, 45,  Miércoles,      9:10 AM,   
-3, 45,  Jueves,         9:10 AM,      
-3, 45,  Viernes,       13:05 AM,  
+
+
+
+A.61, Sucesión cuadrática,  Sucesiones cuadráticas y geométricas
+A.62, Completando la sucesión cuadrática,  Sucesiones cuadráticas y geométricas
+A.63, Término general,  Sucesiones cuadráticas y geométricas
+A.64, Sucesión geométrica,  Sucesiones cuadráticas y geométricas
+A.65, Razón de una sucesión geométrica,  Sucesiones cuadráticas y geométricas
+A.66, Término común,Factorización
+A.67, Diferencia de cuadrados,Factorización
+A.68, Trinomio cuadrado perfecto,Factorización
+A.69, Trinomios de la forma $x^2+bx+c$,Factorización
+A.70, Trinomios de la forma $ax^2+bx+c$,Factorización
+A.71, Binomios conjugados,Productos notables
+A.72, Binomios con término común,Productos notables
+A.73, Binomio al cuadrado,Productos notables
+A.74, Binomios de la forma $(mx+a)(nx+b)$,Productos notables
+A.75, Binomio al cubo,Productos notables
+A.76, Clasificación de ecuaciones cuadráticas,  Ecuaciones cuadráticas
+A.77, Discriminante,  Ecuaciones cuadráticas
+A.78, Ecuaciones cuadráticas incompletas,  Ecuaciones cuadráticas
+A.79, Ecuaciones cuadráticas completas 1,  Ecuaciones cuadráticas
+A.80, Ecuaciones cuadráticas completas 2,  Ecuaciones cuadráticas
+A.81, Identificación de lados,Teorema de Pitágoras
+A.82, Hallando la hipotenusa,Teorema de Pitágoras
+A.83, Hallando el cateto,Teorema de Pitágoras
+A.84, Áreas y perímetros,Teorema de Pitágoras
+A.85, Resolución de problemas,Teorema de Pitágoras
+A.86, Identificando lados,Trigonometría
+A.87, Identificando funciones,Trigonometría
+A.88, Encontrando lados,Trigonometría
+A.89, Encontrando ángulos,Trigonometría
+A.90, Resolución de problemas,Trigonometría
