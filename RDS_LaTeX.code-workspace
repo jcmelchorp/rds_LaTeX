@@ -232,7 +232,11 @@
 			"**/test0.aux": true,
 			"**/test0.log": true,
 			"**/test0.gz": true,
-			"**/test0.out": true
+			"**/test0.out": true,
+			"**/2627-studentplan_v.aux": true,
+			"**/2627-studentplan_v.log": true,
+			"**/2627-studentplan_v.gz": true,
+			"**/2627-studentplan_v.out": true
 		}
 	}
 }
