@@ -3,64 +3,77 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 2,     13,  Miércoles,11:20 AM,     A.32, Porcentajes a decimal,  Números decimales
 2,     13,  Jueves,11:20 AM,        A.33, Operaciones con múltiplos de 10,  Números decimales
 2,     13,  Viernes,7:50 AM,        CTE, CTE, CTE
-2,     13,  Viernes,11:20 AM,       CTE, CTE, CTE
 2,     14,  Martes,11:20 AM,        A.34, Conversión de fracciones a decimales,  Números decimales
 2,     14,  Miércoles,11:20 AM,     A.35, Conversión de decimales a fracciones,  Números decimales
 2,     14,  Jueves,11:20 AM,        A.36, Suma de decimales,  Operaciones con decimales
 2,     14,  Viernes,7:50 AM,        A.37, Resta de decimales,  Operaciones con decimales
-2,     14,  Viernes,11:20 AM,       A.38, Multiplicación de decimales,  Operaciones con decimales
-2,     15,  Martes,11:20 AM,        A.39, División de decimales,  Operaciones con decimales
-2,     15,  Miércoles,11:20 AM,     A.40, Resolución de problemas,  Operaciones con decimales
-2,     15,  Jueves,11:20 AM,        A.41, Porcentajes a decimal,   Porcentajes
-2,     15,  Viernes,7:50 AM,        A.42, Decimal a porcentaje,  Porcentajes
-2,     15,  Viernes,11:20 AM,       
-2,     16,  Martes,11:20 AM,        A.43, Porcentaje de cantidades 1,  Porcentajes
-2,     16,  Miércoles,11:20 AM,     A.44, Porcentaje de cantidades 2,  Porcentajes
-2,     16,  Jueves,11:20 AM,        A.45, Resolución de problemas,  Porcentajes
-2,     16,  Viernes,7:50 AM,        A.46, Potenciación 1,  Potencias y raíces
-2,     16,  Viernes,11:20 AM,       A.47, Potenciación 2,  Potencias y raíces
-2,     19,  Martes,11:20 AM,        A.48, Notación científica 1,  Potencias y raíces
-2,     19,  Miércoles,11:20 AM,     A.49, Notación científica 2,  Potencias y raíces
-2,     19,  Jueves,11:20 AM,        A.50, Raíces,  Potencias y raíces
-2,     19,  Viernes,7:50 AM,        A.51, Unidades de longitud,  Sistema de unidades
-2,     19,  Viernes,11:20 AM,       A.52, Unidades de masa,  Sistema de unidades
-2,     20,  Martes,11:20 AM,        A.53, Unidades de capacidad,  Sistema de unidades
-2,     20,  Miércoles,11:20 AM,     A.54, Unidades de área y volumen,  Sistema de unidades
-2,     20,  Jueves,11:20 AM,        A.55, Unidades de capacidad 2,  Sistema de unidades
-2,     20,  Viernes,7:50 AM,        REPASO, REPASO, REPASO
-2,     20,  Viernes,11:20 AM,       REPASO, REPASO, REPASO
-2,     21,  Martes,11:20 AM,        REPASO, REPASO, REPASO
-2,     21,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO  
-2,     21,  Jueves,11:20 AM,        REPASO, REPASO, REPASO  
-2,     21,  Viernes,7:50 AM,        REPASO, REPASO, REPASO  
-2,     21,  Viernes,11:20 AM,       REPASO, REPASO, REPASO  
-2,     22,  Martes,11:20 AM,        REPASO, REPASO, REPASO  
-2,     22,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO  
-2,     22,  Jueves,11:20 AM,        REPASO, REPASO, REPASO  
+2,     15,  Martes,11:20 AM,        A.38, Multiplicación de decimales,  Operaciones con decimales
+2,     15,  Miércoles,11:20 AM,     A.39, División de decimales,  Operaciones con decimales
+2,     15,  Jueves,11:20 AM,        A.40, Resolución de problemas,  Operaciones con decimales
+2,     15,  Viernes,7:50 AM,        A.41, Porcentajes a decimal,   Porcentajes
+2,     16,  Martes,11:20 AM,        A.42, Decimal a porcentaje,  Porcentajes
+2,     16,  Miércoles,11:20 AM,     A.43, Porcentaje de cantidades 1,  Porcentajes
+2,     16,  Jueves,11:20 AM,        A.44, Porcentaje de cantidades 2,  Porcentajes
+2,     16,  Viernes,7:50 AM,        A.45, Resolución de problemas,  Porcentajes
+2,     19,  Martes,11:20 AM,        A.46, Potenciación 1,  Potencias y raíces
+2,     19,  Miércoles,11:20 AM,     A.47, Potenciación 2,  Potencias y raíces
+2,     19,  Jueves,11:20 AM,        A.48, Notación científica 1,  Potencias y raíces
+2,     19,  Viernes,7:50 AM,        A.49, Notación científica 2,  Potencias y raíces
+2,     20,  Martes,11:20 AM,        A.50, Raíces,  Potencias y raíces
+2,     20,  Miércoles,11:20 AM,     A.51, Unidades de longitud,  Sistema de unidades
+2,     20,  Jueves,11:20 AM,        A.52, Unidades de masa,  Sistema de unidades
+2,     20,  Viernes,7:50 AM,        A.53, Unidades de capacidad,  Sistema de unidades
+2,     21,  Martes,11:20 AM,        A.54, Unidades de área y volumen,  Sistema de unidades
+2,     21,  Miércoles,11:20 AM,     A.55, Unidades de capacidad 2,  Sistema de unidades
+2,     21,  Jueves,11:20 AM,        REPASO, REPASO, REPASO
+2,     21,  Viernes,7:50 AM,        REPASO, REPASO, REPASO
+2,     22,  Martes,11:20 AM,        REPASO, REPASO, REPASO
+2,     22,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO
+2,     22,  Jueves,11:20 AM,        REPASO, REPASO, REPASO
 2,     22,  Viernes,7:50 AM,         CTE, CTE, CTE
-2,     22,  Viernes,11:20 AM,        CTE, CTE, CTE
 2,     23,  Martes,11:20 AM,         REPASO, REPASO, REPASO
 2,     23,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
 2,     23,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
 2,     23,  Viernes,7:50 AM,         REPASO, REPASO, REPASO
-2,     23,  Viernes,11:20 AM,        REPASO, REPASO, REPASO
 2,     24,  Martes,11:20 AM,         REPASO, REPASO, REPASO
 2,     24,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
 2,     24,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
 2,     24,  Viernes,7:50 AM,         REPASO, REPASO, REPASO
-2,     24,  Viernes,11:20 AM,        REPASO, REPASO, REPASO
 2,     25,  Martes,11:20 AM,         REPASO, REPASO, REPASO
 2,     25,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
 2,     25,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
 2,     25,  Viernes,7:50 AM,         REPASO, REPASO, REPASO
-2,     25,  Viernes,11:20 AM,        REPASO, REPASO, REPASO
 2,     26,  Martes,11:20 AM,         REPASO, REPASO, REPASO
 2,     26,  Miércoles,11:20 AM,      REPASO, REPASO, REPASO
 2,     26,  Jueves,11:20 AM,         REPASO, REPASO, REPASO
 2,     26,  Viernes,7:50 AM,         CTE, CTE, CTE 
-2,     26,  Viernes,11:20 AM,        CTE, CTE, CTE  
 2,     27,  Martes,11:20 AM,        REPASO, REPASO, REPASO      
 2,     27,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO      
 2,     27,  Jueves,11:20 AM,        REPASO, REPASO, REPASO      
 2,     27,  Viernes,7:50 AM,        EXAMEN, EXAMEN, EXAMEN      
-2,     27,  Viernes,11:20 AM,       EXAMEN, EXAMEN, EXAMEN        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

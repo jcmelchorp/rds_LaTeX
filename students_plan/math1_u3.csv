@@ -1,61 +1,75 @@
 Unit,  Week,Day,           Time, Key,     Activity,                                          Section
-3,     32,  Martes,11:20 AM,        A.56, Completa la sucesión aritmética 1,   Sucesiones
-3,     32,  Miércoles,11:20 AM,     A.57, Completa la sucesión aritmética 2,   Sucesiones
-3,     32,  Jueves,11:20 AM,        A.58, Completa la sucesión geométrica,   Sucesiones
-3,     32,  Viernes,7:50 AM,        A.59, Diferencia de una sucesión,   Sucesiones
-3,     32,  Viernes,11:20 AM,       A.60, Término de una sucesión,     Sucesiones
-3,     33,  Martes,11:20 AM,        A.61, Razones y proporciones,     Proporcionalidad y estadística
-3,     33,  Miércoles,11:20 AM,     A.62, Variación directa e inversa,    Proporcionalidad y estadística 
-3,     33,  Jueves,11:20 AM,        A.63, Mediana y moda,   Proporcionalidad y estadística
-3,     33,  Viernes,7:50 AM,        A.64, Promedio,   Proporcionalidad y estadística
-3,     33,  Viernes,11:20 AM,       A.65, Interpretación de gráficas,   Proporcionalidad y estadística
-3,     34,  Martes,11:20 AM,        A.66, Diámetro de un círculo,Círculo
-3,     34,  Miércoles,11:20 AM,     A.67, Radio de un círculo,    Círculo
-3,     34,  Jueves,11:20 AM,        A.68, Perímetro,   Círculo
-3,     34,  Viernes,7:50 AM,        A.69, Área,   Círculo
-3,     34,  Viernes,11:20 AM,       A.70, Resolución de problemas,   Círculo
-3,     35,  Martes,11:20 AM,        A.71, Lenguaje algebraico,   Ecuaciones
-3,     35,  Miércoles,11:20 AM,     A.72, Ecuaciones $x+a=b$,   Ecuaciones
-3,     35,  Jueves,11:20 AM,        A.73, Ecuaciones $ax=b$,   Ecuaciones
+3,     32,  Martes,11:20 AM,       A.56, Completa la sucesión aritmética 1,   Sucesiones 
+3,     32,  Miércoles,11:20 AM,    A.57, Completa la sucesión aritmética 2,   Sucesiones 
+3,     32,  Jueves,11:20 AM,       A.58, Completa la sucesión geométrica,   Sucesiones 
+3,     32,  Viernes,7:50 AM,       A.59, Diferencia de una sucesión,   Sucesiones 
+3,     33,  Martes,11:20 AM,       A.60, Término de una sucesión,     Sucesiones 
+3,     33,  Miércoles,11:20 AM,    A.61, Razones y proporciones,     Proporcionalidad y estadística 
+3,     33,  Jueves,11:20 AM,       A.62, Variación directa e inversa,    Proporcionalidad y estadística  
+3,     33,  Viernes,7:50 AM,       A.63, Mediana y moda,   Proporcionalidad y estadística 
+3,     34,  Martes,11:20 AM,       A.64, Promedio,   Proporcionalidad y estadística 
+3,     34,  Miércoles,11:20 AM,    A.65, Interpretación de gráficas,   Proporcionalidad y estadística 
+3,     34,  Jueves,11:20 AM,       A.66, Diámetro de un círculo,Círculo 
+3,     34,  Viernes,7:50 AM,       A.67, Radio de un círculo,    Círculo 
+3,     35,  Martes,11:20 AM,       A.68, Perímetro,   Círculo 
+3,     35,  Miércoles,11:20 AM,    A.69, Área,   Círculo 
+3,     35,  Jueves,11:20 AM,       A.70, Resolución de problemas,   Círculo 
 3,     35,  Viernes,7:50 AM,        CTE, CTE, CTE   
-3,     35,  Viernes,11:20 AM,       CTE, CTE, CTE   
-3,     36,  Martes,11:20 AM,        A.74, Ecuaciones $ax+b=c$,   Ecuaciones
+3,     36,  Martes,11:20 AM,        A.71, Lenguaje algebraico,   Ecuaciones
 3,     36,  Miércoles,11:20 AM,     No hay clases
-3,     36,  Jueves,11:20 AM,        A.75, Resolución de problemas,   Ecuaciones
-3,     36,  Viernes,7:50 AM,        A.76, Perímetro,    Figuras y cuerpos geométricos
-3,     36,  Viernes,11:20 AM,       A.77, Área,  Figuras y cuerpos geométricos
-3,     37,  Martes,11:20 AM,        A.78, Área lateral y total,  Figuras y cuerpos geométricos
-3,     37,  Miércoles,11:20 AM,     A.79, Volumen,  Figuras y cuerpos geométricos
-3,     37,  Jueves,11:20 AM,        A.80, Resolución de problemas,    Figuras y cuerpos geométricos
-3,     37,  Viernes,7:50 AM,        REPASO, REPASO, REPASO
-3,     37,  Viernes,11:20 AM,       REPASO, REPASO, REPASO
-3,     38,  Martes,11:20 AM,        REPASO, REPASO, REPASO
-3,     38,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO
-3,     38,  Jueves,11:20 AM,        REPASO, REPASO, REPASO
+3,     36,  Jueves,11:20 AM,        A.72, Ecuaciones $x+a=b$,   Ecuaciones
+3,     36,  Viernes,7:50 AM,        A.73, Ecuaciones $ax=b$,   Ecuaciones
+3,     37,  Martes,11:20 AM,        A.74, Ecuaciones $ax+b=c$,   Ecuaciones
+3,     37,  Miércoles,11:20 AM,     A.75, Resolución de problemas,   Ecuaciones
+3,     37,  Jueves,11:20 AM,        A.76, Perímetro,    Figuras y cuerpos geométricos
+3,     37,  Viernes,7:50 AM,        A.77, Área,  Figuras y cuerpos geométricos
+3,     38,  Martes,11:20 AM,        A.78, Área lateral y total,  Figuras y cuerpos geométricos
+3,     38,  Miércoles,11:20 AM,     A.79, Volumen,  Figuras y cuerpos geométricos
+3,     38,  Jueves,11:20 AM,        A.80, Resolución de problemas,    Figuras y cuerpos geométricos
 3,     38,  Viernes,7:50 AM,        REPASO, REPASO, REPASO
-3,     38,  Viernes,11:20 AM,       REPASO, REPASO, REPASO
 3,     39,  Martes,11:20 AM,        REPASO, REPASO, REPASO
 3,     39,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO
 3,     39,  Jueves,11:20 AM,        REPASO, REPASO, REPASO
 3,     39,  Viernes,7:50 AM,        CTE, CTE, CTE
-3,     39,  Viernes,11:20 AM,       CTE, CTE, CTE
 3,     40,  Martes,11:20 AM,        REPASO, REPASO, REPASO       
 3,     40,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO       
 3,     40,  Jueves,11:20 AM,        REPASO, REPASO, REPASO       
-3,     40,  Viernes,7:50 AM,        EXAMEN, EXAMEN, EXAMEN       
-3,     40,  Viernes,11:20 AM,       EXAMEN, EXAMEN, EXAMEN       
-3,     41,  Martes,11:20 AM,         
-3,     41,  Miércoles,11:20 AM,      
-3,     41,  Jueves,11:20 AM,         
-3,     41,  Viernes,7:50 AM,         
-3,     41,  Viernes,11:20 AM,        
+3,     40,  Viernes,7:50 AM,        REPASO, REPASO, REPASO        
+3,     41,  Martes,11:20 AM,        REPASO, REPASO, REPASO        
+3,     41,  Miércoles,11:20 AM,     REPASO, REPASO, REPASO        
+3,     41,  Jueves,11:20 AM,        REPASO, REPASO, REPASO                
+3,     41,  Viernes,7:50 AM,        EXAMEN, EXAMEN, EXAMEN         
 3,     42,  Martes,11:20 AM,         
 3,     42,  Miércoles,11:20 AM,      
 3,     42,  Jueves,11:20 AM,         
 3,     42,  Viernes,7:50 AM,         
-3,     42,  Viernes,11:20 AM,        
 3,     43,  Martes,11:20 AM,         
 3,     43,  Miércoles,11:20 AM,      
 3,     43,  Jueves,11:20 AM,         
 3,     43,  Viernes,7:50 AM,       CTE, CTE, CTE  
-3,     43,  Viernes,11:20 AM,      CTE, CTE, CTE        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,45 +1,45 @@
-Unit,  Week,Day,           Time, Key,     Activity,                                          Section
-2, 13,  Lunes,         10:00 AM,    
-2, 13,  Martes,        10:00 AM,       
-2, 13,  Miércoles,     10:00 AM,    
-2, 13,  Jueves,        10:00 AM,       
-2, 13,  Viernes,       10:00 AM,   CTE,  CTE,  CTE   
-2, 14,  Lunes,         10:00 AM, 
-2, 14,  Martes,        10:00 AM,       
-2, 14,  Miércoles,     10:00 AM,    
-2, 14,  Jueves,        10:00 AM,       
-2, 14,  Viernes,       10:00 AM,      
-2, 15,  Lunes,         10:00 AM, 
-2, 15,  Martes,        10:00 AM,       
-2, 15,  Miércoles,     10:00 AM,    
-2, 15,  Jueves,        10:00 AM,       
-2, 15,  Viernes,       10:00 AM,      
-2, 16,  Lunes,         10:00 AM, 
-2, 16,  Martes,        10:00 AM,       
-2, 16,  Miércoles,     10:00 AM,    
-2, 16,  Jueves,        10:00 AM,       
-2, 16,  Viernes,       10:00 AM,      
-2, 19,  Lunes,         10:00 AM,   No hay clases
-2, 19,  Martes,        10:00 AM,   No hay clases      
-2, 19,  Miércoles,     10:00 AM,   No hay clases   
-2, 19,  Jueves,        10:00 AM,       
-2, 19,  Viernes,       10:00 AM,      
-2, 20,  Lunes,         10:00 AM, 
-2, 20,  Martes,        10:00 AM,       
-2, 20,  Miércoles,     10:00 AM,    
-2, 20,  Jueves,        10:00 AM,       
-2, 20,  Viernes,       10:00 AM,      
-2, 21,  Lunes,         10:00 AM, 
-2, 21,  Martes,        10:00 AM,       
-2, 21,  Miércoles,     10:00 AM,    
-2, 21,  Jueves,        10:00 AM,       
-2, 21,  Viernes,       10:00 AM,      
-2, 22,  Lunes,         10:00 AM, 
-2, 22,  Martes,        10:00 AM,       
-2, 22,  Miércoles,     10:00 AM,    
-2, 22,  Jueves,        10:00 AM,       
-2, 22,  Viernes,       10:00 AM,   CTE,  CTE,  CTE   
-2, 23,  Lunes,         10:00 AM,   No hay clases
+Unit,  Week,Day,           Time,    Key,  Activity,                                          Section
+2, 13,  Lunes,         10:00 AM,    A.26, Diámetro de un círculo,  Círculo
+2, 13,  Martes,        10:00 AM,    A.27, Radio de un círculo,  Círculo   
+2, 13,  Miércoles,     10:00 AM,    A.28, Perímetro,  Círculo
+2, 13,  Jueves,        10:00 AM,    A.29, Área,  Círculo   
+2, 13,  Viernes,       10:00 AM,    CTE,  CTE,  CTE   
+2, 14,  Lunes,         10:00 AM,    A.30, Resolución de problemas,  Círculo
+2, 14,  Martes,        10:00 AM,    A.31, Ángulos interiores,  Polígonos y circunferencias      
+2, 14,  Miércoles,     10:00 AM,    A.32, Ángulos centrales y exteriores,  Polígonos y circunferencias   
+2, 14,  Jueves,        10:00 AM,    A.33, Ángulos centrales e inscritos,  Polígonos y circunferencias      
+2, 14,  Viernes,       10:00 AM,    A.34, Arco de una circunferencia,  Polígonos y circunferencias     
+2, 15,  Lunes,         10:00 AM,    A.35, Área de un sector circular,  Polígonos y circunferencias
+2, 15,  Martes,        10:00 AM,    A.36, Perímetro,  Figuras y cuerpos geométricos      
+2, 15,  Miércoles,     10:00 AM,    A.37, Área,  Figuras y cuerpos geométricos   
+2, 15,  Jueves,        10:00 AM,    A.38, Área lateral y total,  Figuras y cuerpos geométricos      
+2, 15,  Viernes,       10:00 AM,    A.39, Volumen,  Figuras y cuerpos geométricos     
+2, 16,  Lunes,         10:00 AM,    A.40, Resolución de problemas,  Figuras y cuerpos geométricos
+2, 16,  Martes,        10:00 AM,    A.41, Lenguaje algebraico,  Monomios y polinomios      
+2, 16,  Miércoles,     10:00 AM,    A.42, Suma de monomios y polinomios,  Monomios y polinomios   
+2, 16,  Jueves,        10:00 AM,    A.43, Resta de monomios y polinomios,  Monomios y polinomios      
+2, 16,  Viernes,       10:00 AM,    A.44, Operaciones combinadas,  Monomios y polinomios     
+2, 19,  Lunes,         10:00 AM,    No hay clases
+2, 19,  Martes,        10:00 AM,    No hay clases      
+2, 19,  Miércoles,     10:00 AM,    No hay clases   
+2, 19,  Jueves,        10:00 AM,    A.45, Perímetro de figuras geométricas,  Monomios y polinomios       
+2, 19,  Viernes,       10:00 AM,    A.46, Suma y resta de exponentes,  Operaciones con monomios y polinomios      
+2, 20,  Lunes,         10:00 AM,    A.47, Multiplicación de exponentes,  Operaciones con monomios y polinomios 
+2, 20,  Martes,        10:00 AM,    A.48, Multiplicación y división de monomios,  Operaciones con monomios y polinomios       
+2, 20,  Miércoles,     10:00 AM,    A.49, Multiplicación de polinomios,  Operaciones con monomios y polinomios    
+2, 20,  Jueves,        10:00 AM,    A.50, Áreas de figuras geométricas,  Operaciones con monomios y polinomios       
+2, 20,  Viernes,       10:00 AM,    A.51, Unidades de longitud,  Sistema de unidades      
+2, 21,  Lunes,         10:00 AM,    A.52, Unidades de masa,  Sistema de unidades 
+2, 21,  Martes,        10:00 AM,    A.53, Unidades de capacidad,  Sistema de unidades       
+2, 21,  Miércoles,     10:00 AM,    A.54, Unidades de área y volumen,  Sistema de unidades    
+2, 21,  Jueves,        10:00 AM,    A.55, Unidades de capacidad 2,  Sistema de unidades       
+2, 21,  Viernes,       10:00 AM,    REPASO, REPASO, REPASO  
+2, 22,  Lunes,         10:00 AM,    REPASO, REPASO, REPASO
+2, 22,  Martes,        10:00 AM,    REPASO, REPASO, REPASO   
+2, 22,  Miércoles,     10:00 AM,    REPASO, REPASO, REPASO
+2, 22,  Jueves,        10:00 AM,    REPASO, REPASO, REPASO   
+2, 22,  Viernes,       10:00 AM,    CTE,  CTE,  CTE   
+2, 23,  Lunes,         10:00 AM,    No hay clases
 2, 23,  Martes,        10:00 AM,       
 2, 23,  Miércoles,     10:00 AM,    
 2, 23,  Jueves,        10:00 AM,       
@@ -78,33 +78,32 @@ Unit,  Week,Day,           Time, Key,     Activity,                             
 
 
 
-A.26, Diámetro de un círculo,  Círculo
-A.27, Radio de un círculo,  Círculo
-A.28, Perímetro,  Círculo
-A.29, Área,  Círculo
-A.30, Resolución de problemas,  Círculo
-A.31, Ángulos interiores,  Polígonos y circunferencias
-A.32, Ángulos centrales y exteriores,  Polígonos y circunferencias
-A.33, Ángulos centrales e inscritos,  Polígonos y circunferencias
-A.34, Arco de una circunferencia,  Polígonos y circunferencias
-A.35, Área de un sector circular,  Polígonos y circunferencias
-A.36, Perímetro,  Figuras y cuerpos geométricos
-A.37, Área,  Figuras y cuerpos geométricos
-A.38, Área lateral y total,  Figuras y cuerpos geométricos
-A.39, Volumen,  Figuras y cuerpos geométricos
-A.40, Resolución de problemas,  Figuras y cuerpos geométricos
-A.41, Lenguaje algebraico,  Monomios y polinomios
-A.42, Suma de monomios y polinomios,  Monomios y polinomios
-A.43, Resta de monomios y polinomios,  Monomios y polinomios
-A.44, Operaciones combinadas,  Monomios y polinomios
-A.45, Perímetro de figuras geométricas,  Monomios y polinomios
-A.46, Suma y resta de exponentes,  Operaciones con monomios y polinomios
-A.47, Multiplicación de exponentes,  Operaciones con monomios y polinomios
-A.48, Multiplicación y división de monomios,  Operaciones con monomios y polinomios
-A.49, Multiplicación de polinomios,  Operaciones con monomios y polinomios
-A.50, Áreas de figuras geométricas,  Operaciones con monomios y polinomios
-A.51, Unidades de longitud,  Sistema de unidades
-A.52, Unidades de masa,  Sistema de unidades
-A.53, Unidades de capacidad,  Sistema de unidades
-A.54, Unidades de área y volumen,  Sistema de unidades
-A.55, Unidades de capacidad 2,  Sistema de unidades
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
