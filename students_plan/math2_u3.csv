@@ -1,89 +1,67 @@
 Unit,  Week,Day,           Time, Key,     Activity,                                          Section
-3, 32,  Lunes,         10:00 AM,
-3, 32,  Martes,        10:00 AM,      
-3, 32,  Miércoles,     10:00 AM,   
-3, 32,  Jueves,        10:00 AM,      
-3, 32,  Viernes,       10:00 AM,     
-3, 33,  Lunes,         10:00 AM,
-3, 33,  Martes,        10:00 AM,      
-3, 33,  Miércoles,     10:00 AM,   
-3, 33,  Jueves,        10:00 AM,      
-3, 33,  Viernes,       10:00 AM,   
-3, 34,  Lunes,         10:00 AM,
-3, 34,  Martes,        10:00 AM,      
-3, 34,  Miércoles,     10:00 AM,   
-3, 34,  Jueves,        10:00 AM,      
-3, 34,  Viernes,       10:00 AM,     
-3, 35,  Lunes,         10:00 AM,
-3, 35,  Martes,        10:00 AM,      
-3, 35,  Miércoles,     10:00 AM,   
-3, 35,  Jueves,        10:00 AM,      
+3, 32,  Lunes,         10:00 AM,    A.56, Mediana y moda,  Probabilidad y estadística
+3, 32,  Martes,        10:00 AM,    A.57, Promedio,  Probabilidad y estadística      
+3, 32,  Miércoles,     10:00 AM,    A.58, Interpretación de gráficas,  Probabilidad y estadística   
+3, 32,  Jueves,        10:00 AM,    A.59, Eventos mutuamente excluyentes,  Probabilidad y estadística      
+3, 32,  Viernes,       10:00 AM,    A.60, Eventos dependientes e independientes,  Probabilidad y estadística     
+3, 33,  Lunes,         10:00 AM,    A.61, Relaciones proporcionales, Razones y proporciones
+3, 33,  Martes,        10:00 AM,    A.62, Constante de proporcionalidad, Razones y proporciones      
+3, 33,  Miércoles,     10:00 AM,    A.63, Regla de correspondencia, Razones y proporciones   
+3, 33,  Jueves,        10:00 AM,    A.64, Proporción directa e inversa, Razones y proporciones      
+3, 33,  Viernes,       10:00 AM,    A.65, Proporciones compuestas, Razones y proporciones   
+3, 34,  Martes,        10:00 AM,    A.66, Completando la sucesión,  Sucesiones aritméticas      
+3, 34,  Jueves,        10:00 AM,    A.67, Diferencia de una sucesión,  Sucesiones aritméticas    
+3, 35,  Lunes,         10:00 AM,    A.68, Término enésimo 1,  Sucesiones aritméticas
+3, 35,  Miércoles,     10:00 AM,    A.69, Término general,  Sucesiones aritméticas     
+3, 35,  Jueves,        10:00 AM,    A.70, Término enésimo 2,  Sucesiones aritméticas      
 3, 35,  Viernes,       10:00 AM,    CTE, CTE, CTE  
-3, 36,  Lunes,         10:00 AM,
-3, 36,  Martes,        10:00 AM,      
+3, 36,  Lunes,         10:00 AM,    A.71, Lenguaje algebraico,  Ecuaciones lineales
+3, 36,  Martes,        10:00 AM,    A.72, Sustitución de valores,  Ecuaciones lineales      
 3, 36,  Miércoles,     10:00 AM,    No hay clases
-3, 36,  Jueves,        10:00 AM,      
-3, 36,  Viernes,       10:00 AM,     
-3, 37,  Lunes,         10:00 AM,
-3, 37,  Martes,        10:00 AM,      
-3, 37,  Miércoles,     10:00 AM,   
-3, 37,  Jueves,        10:00 AM,      
-3, 37,  Viernes,       10:00 AM,     
-3, 38,  Lunes,         10:00 AM,
-3, 38,  Martes,        10:00 AM,      
-3, 38,  Miércoles,     10:00 AM,   
-3, 38,  Jueves,        10:00 AM,      
-3, 38,  Viernes,       10:00 AM,     
-3, 39,  Lunes,         10:00 AM,
-3, 39,  Martes,        10:00 AM,      
-3, 39,  Miércoles,     10:00 AM,   
-3, 39,  Jueves,        10:00 AM,      
+3, 36,  Viernes,       10:00 AM,    A.73, Ecuaciones de primer grado 1,  Ecuaciones lineales
+3, 37,  Martes,        10:00 AM,    A.74, Ecuaciones de primer grado 2,  Ecuaciones lineales
+3, 37,  Jueves,        10:00 AM,    A.75, Resolución de problemas,  Ecuaciones lineales
+3, 38,  Lunes,         10:00 AM,    A.76, Método de eliminación,  Sistemas de ecuaciones
+3, 38,  Miércoles,     10:00 AM,    A.77, Método de sustitución,  Sistemas de ecuaciones
+3, 38,  Viernes,       10:00 AM,    A.78, Método de igualación,  Sistemas de ecuaciones 
+3, 39,  Martes,        10:00 AM,    A.79, Sistema de ecuaciones 2x2,  Sistemas de ecuaciones
+3, 39,  Jueves,        10:00 AM,    A.80, Sistema de ecuaciones 3x3,  Sistemas de ecuaciones  
 3, 39,  Viernes,       10:00 AM,    CTE, CTE, CTE 
-3, 40,  Lunes,         10:00 AM,
-3, 40,  Martes,        10:00 AM,      
-3, 40,  Miércoles,     10:00 AM,   
-3, 40,  Jueves,        10:00 AM,      
-3, 40,  Viernes,       10:00 AM,     
-3, 41,  Lunes,         10:00 AM,
-3, 41,  Martes,        10:00 AM,      
-3, 41,  Miércoles,     10:00 AM,   
-3, 41,  Jueves,        10:00 AM,      
-3, 41,  Viernes,       10:00 AM,     
-3, 42,  Lunes,         10:00 AM,
-3, 42,  Martes,        10:00 AM,      
-3, 42,  Miércoles,     10:00 AM,   
-3, 42,  Jueves,        10:00 AM,      
-3, 42,  Viernes,       10:00 AM,     
-3, 43,  Lunes,         10:00 AM,
-3, 43,  Martes,        10:00 AM,      
-3, 43,  Miércoles,     10:00 AM,   
-3, 43,  Jueves,        10:00 AM,      
-3, 43,  Viernes,       10:00 AM,    CTE, CTE, CTE
+3, 40,  Lunes,         10:00 AM,    REPASO, REPASO, REPASO
+3, 40,  Martes,        10:00 AM,    REPASO, REPASO, REPASO      
+3, 40,  Miércoles,     10:00 AM,    REPASO, REPASO, REPASO          
+3, 40,  Jueves,        10:00 AM,    REPASO, REPASO, REPASO             
+3, 40,  Viernes,       10:00 AM,    REPASO, REPASO, REPASO            
+3, 41,  Lunes,         10:00 AM,    REPASO, REPASO, REPASO        
+3, 41,  Martes,        10:00 AM,    REPASO, REPASO, REPASO              
+3, 41,  Miércoles,     10:00 AM,    REPASO, REPASO, REPASO           
+3, 41,  Jueves,        10:00 AM,    REPASO, REPASO, REPASO                      
+3, 41,  Viernes,       10:00 AM,    EXAMEN, EXAMEN, EXAMEN              
 
 
 
-A.56, Mediana y moda,  Probabilidad y estadística
-A.57, Promedio,  Probabilidad y estadística
-A.58, Interpretación de gráficas,  Probabilidad y estadística
-A.59, Eventos mutuamente excluyentes,  Probabilidad y estadística
-A.60, Eventos dependientes e independientes,  Probabilidad y estadística
-A.61, Relaciones proporcionales, Razones y proporciones
-A.62, Constante de proporcionalidad, Razones y proporciones
-A.63, Regla de correspondencia, Razones y proporciones
-A.64, Proporción directa e inversa, Razones y proporciones
-A.65, Proporciones compuestas, Razones y proporciones
-A.66, Completando la sucesión,  Sucesiones aritméticas
-A.67, Diferencia de una sucesión,  Sucesiones aritméticas
-A.68, Término enésimo 1,  Sucesiones aritméticas
-A.69, Término general,  Sucesiones aritméticas
-A.70, Término enésimo 2,  Sucesiones aritméticas
-A.71, Lenguaje algebraico,  Ecuaciones lineales
-A.72, Sustitución de valores,  Ecuaciones lineales
-A.73, Ecuaciones de primer grado 1,  Ecuaciones lineales
-A.74, Ecuaciones de primer grado 2,  Ecuaciones lineales
-A.75, Resolución de problemas,  Ecuaciones lineales
-A.76, Método de eliminación,  Sistemas de ecuaciones
-A.77, Método de sustitución,  Sistemas de ecuaciones
-A.78, Método de igualación,  Sistemas de ecuaciones
-A.79, Sistema de ecuaciones 2x2,  Sistemas de ecuaciones
-A.80, Sistema de ecuaciones 3x3,  Sistemas de ecuaciones
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

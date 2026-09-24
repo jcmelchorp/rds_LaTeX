@@ -1,91 +1,90 @@
 Unit,  Week,Day,           Time, Key,     Activity,                                          Section
 2, 13,   Lunes,         12:15 PM,        Me preparo
 2, 13,   Lunes,         13:55 PM,
-2, 13,   Martes,        12:15 PM,   L.1,  Movimiento
-2, 13,   Miércoles,     12:15 PM,   L.1,  Movimiento
-2, 13,   Miércoles,     13:55 PM,   L.1,  Movimiento
+2, 13,   Martes,        12:15 PM,   L.1,  Movimiento,    Libro
+2, 13,   Miércoles,     12:15 PM,   L.1,  Movimiento,    Libro
+2, 13,   Miércoles,     13:55 PM,   L.1,  Movimiento,    Libro
 2, 13,   Viernes,       13:55 PM,   CTE,  CTE,  CTE
-2, 14,   Lunes,         12:15 PM,   A.1,  ¿Trayectoria o desplazamiento?
-2, 14,   Lunes,         13:55 PM,   A.2,  Cambios en el movimiento
-2, 14,   Martes,        12:15 PM,   A.3,  ¡Qué onda!
-2, 14,   Miércoles,     12:15 PM,   A.4,  ¿Cómo se mueven las ondas?
-2, 14,   Miércoles,     13:55 PM,   F.7,  A ruidos necios oídos sordos
-2, 14,   Viernes,       13:55 PM,   L.2,  Velocidad y rapidez
-2, 15,   Lunes,         12:15 PM,   A.5,  ¿Quién fue el más rápido?
-2, 15,   Lunes,         13:55 PM,   A.6,  Explicaciones gráficas de velocidad
-2, 15,   Martes,        12:15 PM,   A.7,  ¿Cómo se describe el movimiento?
-2, 15,   Miércoles,     12:15 PM,   A.8,  ¿Cómo se ven la velocidad y el reposo?
-2, 15,   Miércoles,     13:55 PM,   A.9,  Propagación de ondas
-2, 15,   Viernes,       13:55 PM,   F.8,  Alternativas del transporte urbano
-2, 16,   Lunes,         12:15 PM,   L.3,  Movimiento acelerado
-2, 16,   Lunes,         13:55 PM,   L.3,  Movimiento acelerado
-2, 16,   Martes,        12:15 PM,   A.10, ¿Cuándo es rapidez y cuándo es velocidad?
-2, 16,   Miércoles,     12:15 PM,   A.11, ¿Cómo cambia su rapidez?
-2, 16,   Miércoles,     13:55 PM,   A.12, ¿Es aceleración o es velocidad?
-2, 16,   Viernes,       13:55 PM,   A.13, ¿Se mueve o está quieto?
+2, 14,   Lunes,         12:15 PM,   A.1,  ¿Trayectoria o desplazamiento?,   Plataforma
+2, 14,   Lunes,         13:55 PM,   A.2,  Cambios en el movimiento,   Plataforma
+2, 14,   Martes,        12:15 PM,   A.3,  ¡Qué onda!,   Plataforma
+2, 14,   Miércoles,     12:15 PM,   A.4,  ¿Cómo se mueven las ondas?,   Plataforma
+2, 14,   Miércoles,     13:55 PM,   F.7,  A ruidos necios oídos sordos,   Cuaderno de evidencias
+2, 14,   Viernes,       13:55 PM,   L.2,  Velocidad y rapidez,    Libro
+2, 15,   Lunes,         12:15 PM,   A.5,  ¿Quién fue el más rápido?,   Plataforma
+2, 15,   Lunes,         13:55 PM,   A.6,  Explicaciones gráficas de velocidad,   Plataforma
+2, 15,   Martes,        12:15 PM,   A.7,  ¿Cómo se describe el movimiento?,   Plataforma
+2, 15,   Miércoles,     12:15 PM,   A.8,  ¿Cómo se ven la velocidad y el reposo?,   Plataforma
+2, 15,   Miércoles,     13:55 PM,   A.9,  Propagación de ondas,   Plataforma
+2, 15,   Viernes,       13:55 PM,   F.8,  Alternativas del transporte urbano,   Cuaderno de evidencias
+2, 16,   Lunes,         12:15 PM,   L.3,  Movimiento acelerado,    Libro
+2, 16,   Lunes,         13:55 PM,   L.3,  Movimiento acelerado,    Libro
+2, 16,   Martes,        12:15 PM,   A.10, ¿Cuándo es rapidez y cuándo es velocidad?,   Plataforma
+2, 16,   Miércoles,     12:15 PM,   A.11, ¿Cómo cambia su rapidez?,   Plataforma
+2, 16,   Miércoles,     13:55 PM,   A.12, ¿Es aceleración o es velocidad?,   Plataforma
+2, 16,   Viernes,       13:55 PM,   A.13, ¿Se mueve o está quieto?,   Plataforma
 2, 19,   Lunes,         12:15 PM,   No hay clases
 2, 19,   Lunes,         13:55 PM,   No hay clases
 2, 19,   Martes,        12:15 PM,   No hay clases
 2, 19,   Miércoles,     12:15 PM,   No hay clases
 2, 19,   Miércoles,     13:55 PM,   No hay clases
-2, 19,   Viernes,       13:55 PM,   L.4,  Fuerzas e interacciones  
-2, 20,   Lunes,         12:15 PM,   A.14, Contacto y distancia
-2, 20,   Lunes,         13:55 PM,   A.15, La medición de la fuerza
-2, 20,   Martes,        12:15 PM,   A.16, ¿Cómo se representan las fuerzas?
-2, 20,   Miércoles,     12:15 PM,   L.5,  Suma de fuerzas y equilibrio
-2, 20,   Miércoles,     13:55 PM,   L.5,  Suma de fuerzas y equilibrio
-2, 20,   Viernes,       13:55 PM,   A.17, ¿Cómo se suman las fuerzas?
-2, 21,   Lunes,         12:15 PM,   L.6,  Fuerza de fricción
-2, 21,   Lunes,         13:55 PM,   L.6,  Fuerza de fricción
-2, 21,   Martes,        12:15 PM,   A.18, Fricción en el movimiento
-2, 21,   Miércoles,     12:15 PM,   F.9,  La cuarta revolución industrial
-2, 21,   Miércoles,     13:55 PM,   L.7,  Máquinas simples: palanca y rueda
-2, 21,   Viernes,       13:55 PM,   A.19, ¿Qué máquinas son?
-2, 22,   Lunes,         12:15 PM,   L.8,  Otras máquinas simples
-2, 22,   Lunes,         13:55 PM,   A.20, Máquinas ¿simples o compuestas?
-2, 22,   Martes,        12:15 PM,   A.21, Las ventajas de utilizar una polea
-2, 22,   Miércoles,     12:15 PM,   L.9,  Leyes de Newton
-2, 22,   Miércoles,     13:55 PM,   A.22, La medida de la inercia
+2, 19,   Viernes,       13:55 PM,   L.4,  Fuerzas e interacciones  ,    Libro
+2, 20,   Lunes,         12:15 PM,   A.14, Contacto y distancia,   Plataforma
+2, 20,   Lunes,         13:55 PM,   A.15, La medición de la fuerza,   Plataforma
+2, 20,   Martes,        12:15 PM,   A.16, ¿Cómo se representan las fuerzas?,   Plataforma
+2, 20,   Miércoles,     12:15 PM,   L.5,  Suma de fuerzas y equilibrio,    Libro
+2, 20,   Miércoles,     13:55 PM,   L.5,  Suma de fuerzas y equilibrio,    Libro
+2, 20,   Viernes,       13:55 PM,   A.17, ¿Cómo se suman las fuerzas?,   Plataforma
+2, 21,   Lunes,         12:15 PM,   L.6,  Fuerza de fricción,    Libro
+2, 21,   Lunes,         13:55 PM,   L.6,  Fuerza de fricción,    Libro
+2, 21,   Martes,        12:15 PM,   A.18, Fricción en el movimiento,   Plataforma
+2, 21,   Miércoles,     12:15 PM,   F.9,  La cuarta revolución industrial,   Cuaderno de evidencias
+2, 21,   Miércoles,     13:55 PM,   L.7,  Máquinas simples: palanca y rueda,    Libro
+2, 21,   Viernes,       13:55 PM,   A.19, ¿Qué máquinas son?,   Plataforma
+2, 22,   Lunes,         12:15 PM,   L.8,  Otras máquinas simples,    Libro
+2, 22,   Lunes,         13:55 PM,   A.20, Máquinas ¿simples o compuestas?,   Plataforma
+2, 22,   Martes,        12:15 PM,   A.21, Las ventajas de utilizar una polea,   Plataforma
+2, 22,   Miércoles,     12:15 PM,   L.9,  Leyes de Newton,    Libro
+2, 22,   Miércoles,     13:55 PM,   A.22, La medida de la inercia,   Plataforma
 2, 22,   Viernes,       13:55 PM,   CTE,  CTE,  CTE
 2, 23,   Lunes,         12:15 PM,   No hay clases
 2, 23,   Lunes,         13:55 PM,   No hay clases
-2, 23,   Martes,        12:15 PM,   A.23, Masa e inercia en el movimiento
-2, 23,   Miércoles,     12:15 PM,   A.24, Relación entre fuerza y aceleración
-2, 23,   Miércoles,     13:55 PM,   A.25, Acción y reacción
-2, 23,   Viernes,       13:55 PM,   A.26, Tres ideas fundamentales sobre las fuerzas
-2, 24,   Lunes,         12:15 PM,   F.10, ¡Abróchense los cinturones!
-2, 24,   Lunes,         13:55 PM,   F.10, ¡Abróchense los cinturones!
-2, 24,   Martes,        12:15 PM,   L.10, Ley de la Gravitación Universal
-2, 24,   Miércoles,     12:15 PM,   A.27, Importancia de las aportaciones de Newton
-2, 24,   Miércoles,     13:55 PM,   A.28, ¡A hombros de gigantes!
-2, 24,   Viernes,       13:55 PM,   A.29, El peso en el Universo
-2, 25,   Lunes,         12:15 PM,   L.11, Principio de Pascal
-2, 25,   Lunes,         13:55 PM,   A.30, El barril de Pascal
-2, 25,   Martes,        12:15 PM,   F.11, La prensa hidráulica
-2, 25,   Miércoles,     12:15 PM,   L.12, Principio de Arquímedes
-2, 25,   Miércoles,     13:55 PM,   L.12, Principio de Arquímedes
-2, 25,   Viernes,       13:55 PM,   A.31, Es momento de flotar
-2, 26,   Lunes,         12:15 PM,   A.32, ¿Cómo se representa la fuerza de flotación?
-2, 26,   Lunes,         13:55 PM,   L.13, Energía Mecánica
-2, 26,   Martes,        12:15 PM,   A.33, ¡Ponle energía!
-2, 26,   Miércoles,     12:15 PM,   A.34, ¿Cómo se conserva la energía mecánica?
-2, 26,   Miércoles,     13:55 PM,   L.14, Calor como transferencia de energía.
+2, 23,   Martes,        12:15 PM,   A.23, Masa e inercia en el movimiento,   Plataforma
+2, 23,   Miércoles,     12:15 PM,   A.24, Relación entre fuerza y aceleración,   Plataforma
+2, 23,   Miércoles,     13:55 PM,   A.25, Acción y reacción,   Plataforma
+2, 23,   Viernes,       13:55 PM,   A.26, Tres ideas fundamentales sobre las fuerzas,   Plataforma
+2, 24,   Lunes,         12:15 PM,   F.10, ¡Abróchense los cinturones!,   Cuaderno de evidencias
+2, 24,   Martes,        12:15 PM,   L.10, Ley de la Gravitación Universal,    Libro
+2, 24,   Miércoles,     12:15 PM,   A.27, Importancia de las aportaciones de Newton,   Plataforma
+2, 24,   Miércoles,     13:55 PM,   A.28, ¡A hombros de gigantes!,   Plataforma
+2, 24,   Viernes,       13:55 PM,   A.29, El peso en el Universo,   Plataforma
+2, 25,   Lunes,         12:15 PM,   L.11, Principio de Pascal,    Libro
+2, 25,   Lunes,         13:55 PM,   A.30, El barril de Pascal,   Plataforma
+2, 25,   Martes,        12:15 PM,   F.11, La prensa hidráulica,   Cuaderno de evidencias
+2, 25,   Miércoles,     12:15 PM,   L.12, Principio de Arquímedes,    Libro
+2, 25,   Miércoles,     13:55 PM,   L.12, Principio de Arquímedes,    Libro
+2, 25,   Viernes,       13:55 PM,   A.31, Es momento de flotar,   Plataforma
+2, 26,   Lunes,         12:15 PM,   A.32, ¿Cómo se representa la fuerza de flotación?,   Plataforma
+2, 26,   Lunes,         13:55 PM,   L.13, Energía Mecánica,    Libro
+2, 26,   Martes,        12:15 PM,   A.33, ¡Ponle energía!,   Plataforma
+2, 26,   Miércoles,     12:15 PM,   A.34, ¿Cómo se conserva la energía mecánica?,   Plataforma
+2, 26,   Miércoles,     13:55 PM,   L.14, Calor como transferencia de energía.,    Libro
 2, 26,   Viernes,       13:55 PM,   CTE,  CTE,  CTE
-2, 27,   Lunes,         12:15 PM,   A.35, Mecanismos de transferencia de calor
-2, 27,   Lunes,         13:55 PM,   A.36, Energía térmica
-2, 27,   Martes,        12:15 PM,   L.15, Máquinas térmicas
-2, 27,   Miércoles,     12:15 PM,   A.37, ¿Cómo funcionan las máquinas térmicas?
-2, 27,   Miércoles,     13:55 PM,   A.38, Eficiencia ideal
-2, 27,   Viernes,       13:55 PM,   A.39, Transformación de energía calorífica
-2, 28,   Lunes,         12:15 PM,   F.12, Fuentes de energía y su impacto ambiental
-2, 28,   Lunes,         13:55 PM,   L.16, Energías renovables
-2, 28,   Martes,        12:15 PM,   A.40, Energía eléctrica y fuentes de energía
-2, 28,   Miércoles,     12:15 PM,   F.13, Biomímesis
-2, 28,   Miércoles,     13:55 PM,   L.17, Energía solar
-2, 28,   Viernes,       13:55 PM,   A.41, Aprovechamiento de la energía y consumo sustentable
+2, 27,   Lunes,         12:15 PM,   A.35, Mecanismos de transferencia de calor,   Plataforma
+2, 27,   Lunes,         13:55 PM,   A.36, Energía térmica,   Plataforma
+2, 27,   Martes,        12:15 PM,   L.15, Máquinas térmicas,    Libro
+2, 27,   Miércoles,     12:15 PM,   A.37, ¿Cómo funcionan las máquinas térmicas?,   Plataforma
+2, 27,   Miércoles,     13:55 PM,   A.38, Eficiencia ideal,   Plataforma
+2, 27,   Viernes,       13:55 PM,   A.39, Transformación de energía calorífica,   Plataforma
+2, 28,   Lunes,         12:15 PM,   F.12, Fuentes de energía y su impacto ambiental,   Cuaderno de evidencias
+2, 28,   Lunes,         13:55 PM,   L.16, Energías renovables,    Libro
+2, 28,   Martes,        12:15 PM,   A.40, Energía eléctrica y fuentes de energía,   Plataforma
+2, 28,   Miércoles,     12:15 PM,   F.13, Biomímesis,   Cuaderno de evidencias
+2, 28,   Miércoles,     13:55 PM,   L.17, Energía solar,    Libro
+2, 28,   Viernes,       13:55 PM,   A.41, Aprovechamiento de la energía y consumo sustentable,   Plataforma
 2, 29,   Lunes,         12:15 PM,   No hay clases
 2, 29,   Lunes,         13:55 PM,   No hay clases
-2, 29,   Martes,        12:15 PM,   A.42, Aprovechemos la energía solar
-2, 29,   Miércoles,     12:15 PM,   F.14, ¿Por qué usar un calentador solar?
+2, 29,   Martes,        12:15 PM,   A.42, Aprovechemos la energía solar,   Plataforma
+2, 29,   Miércoles,     12:15 PM,   F.14, ¿Por qué usar un calentador solar?,   Cuaderno de evidencias
 2, 29,   Miércoles,     13:55 PM,   ¿Qué aprendí?
 2, 29,   Viernes,       13:55 PM,   Examen de Unidad 2

@@ -1,50 +1,50 @@
 Unit,  Week,Day,           Time, Key,     Activity,                                          Section
 3, 32,   Lunes,         12:15 PM,   ,     Me preparo
-3, 32,   Lunes,         13:55 PM,  L.1,   Electricidad
-3, 32,   Martes,        12:15 PM,  A.1,   Cargas en movimiento
-3, 32,   Miércoles,     12:15 PM,  F.15,  Energía eléctrica y medio ambiente
-3, 32,   Miércoles,     13:55 PM,  L.2,   Electricidad cuidados y precauciones 
-3, 32,   Viernes,       13:55 PM,  A.2,   Cuidados con el uso de la electricidad
-3, 33,   Lunes,         12:15 PM,  F.16,  ¡Cuidado con la electricidad!
-3, 33,   Lunes,         13:55 PM,  L.3,   Electricidad y magnetismo 
-3, 33,   Martes,        12:15 PM,  A.3,   ¿Qué sabes sobre el magnetismo?
-3, 33,   Miércoles,     12:15 PM,  A.4,   Relación entre electricidad y magnetismo
-3, 33,   Miércoles,     13:55 PM,  L.4,   Luz visible 
-3, 33,   Viernes,       13:55 PM,  A.5,   ¡Qué onda con la luz!
-3, 34,   Lunes,         12:15 PM,  F.17,  Luces deslumbrantes
-3, 34,   Lunes,         13:55 PM,  L.5,   Ondas electromagnéticas
-3, 34,   Martes,        12:15 PM,  A.6,   Características del espectro electromagnético
-3, 34,   Miércoles,     12:15 PM,  A.7,   Los efectos de la radiación electromagnética
-3, 34,   Miércoles,     13:55 PM,  F.18,  Me mantengo alerta
-3, 34,   Viernes,       13:55 PM,  L.6,   El Universo 
-3, 35,   Lunes,         12:15 PM,  A.8,   Las galaxias
-3, 35,   Lunes,         13:55 PM,  A.9,   Grupos de galaxias
-3, 35,   Martes,        12:15 PM,  L.7,   Origen y evolución del Universo 
-3, 35,   Miércoles,     12:15 PM,  A.10,  Expansión del universo
-3, 35,   Miércoles,     13:55 PM,  A.11,  Mecanismos de las estrellas
+3, 32,   Lunes,         13:55 PM,  L.1,   Electricidad,   Libro
+3, 32,   Martes,        12:15 PM,  A.1,   Cargas en movimiento,   Plataforma
+3, 32,   Miércoles,     12:15 PM,  F.15,  Energía eléctrica y medio ambiente,   Cuaderno de evidencias
+3, 32,   Miércoles,     13:55 PM,  L.2,   Electricidad cuidados y precauciones ,   Libro
+3, 32,   Viernes,       13:55 PM,  A.2,   Cuidados con el uso de la electricidad,   Plataforma
+3, 33,   Lunes,         12:15 PM,  F.16,  ¡Cuidado con la electricidad!,   Cuaderno de evidencias
+3, 33,   Lunes,         13:55 PM,  L.3,   Electricidad y magnetismo ,   Libro
+3, 33,   Martes,        12:15 PM,  A.3,   ¿Qué sabes sobre el magnetismo?,   Plataforma
+3, 33,   Miércoles,     12:15 PM,  A.4,   Relación entre electricidad y magnetismo,   Plataforma
+3, 33,   Miércoles,     13:55 PM,  L.4,   Luz visible ,   Libro
+3, 33,   Viernes,       13:55 PM,  A.5,   ¡Qué onda con la luz!,   Plataforma
+3, 34,   Lunes,         12:15 PM,  F.17,  Luces deslumbrantes,   Cuaderno de evidencias
+3, 34,   Lunes,         13:55 PM,  L.5,   Ondas electromagnéticas,   Libro
+3, 34,   Martes,        12:15 PM,  A.6,   Características del espectro electromagnético,   Plataforma
+3, 34,   Miércoles,     12:15 PM,  A.7,   Los efectos de la radiación electromagnética,   Plataforma
+3, 34,   Miércoles,     13:55 PM,  F.18,  Me mantengo alerta,   Cuaderno de evidencias
+3, 34,   Viernes,       13:55 PM,  L.6,   El Universo ,   Libro
+3, 35,   Lunes,         12:15 PM,  A.8,   Las galaxias,   Plataforma
+3, 35,   Lunes,         13:55 PM,  A.9,   Grupos de galaxias,   Plataforma
+3, 35,   Martes,        12:15 PM,  L.7,   Origen y evolución del Universo ,   Libro
+3, 35,   Miércoles,     12:15 PM,  A.10,  Expansión del universo,   Plataforma
+3, 35,   Miércoles,     13:55 PM,  A.11,  Mecanismos de las estrellas,   Plataforma
 3, 35,   Viernes,       13:55 PM,  CTE ,  CTE,  CTE
-3, 36,   Lunes,         12:15 PM,  A.12,  Los cuerpos cósmicos
-3, 36,   Lunes,         13:55 PM,  A.13,  Evolución del Universo
-3, 36,   Martes,        12:15 PM,  L.8,   Descubrimiento del Universo
+3, 36,   Lunes,         12:15 PM,  A.12,  Los cuerpos cósmicos,   Plataforma
+3, 36,   Lunes,         13:55 PM,  A.13,  Evolución del Universo,   Plataforma
+3, 36,   Martes,        12:15 PM,  L.8,   Descubrimiento del Universo,   Libro
 3, 36,   Miércoles,     12:15 PM,  No hay clases
 3, 36,   Miércoles,     13:55 PM,  No hay clases
-3, 36,   Viernes,       13:55 PM,  A.14,  El Universo a simple vista
-3, 37,   Lunes,         12:15 PM,  A.15,  El telescopio y paralaje
-3, 37,   Lunes,         13:55 PM,  A.16,  Exploración de cuerpos celestes por medio de ondas electromagnéticas
-3, 37,   Martes,        12:15 PM,  L.9,   Sistema Solar 
-3, 37,   Miércoles,     12:15 PM,  A.17,  El Sol
-3, 37,   Miércoles,     13:55 PM,  A.18,  Estructura del Sol
-3, 37,   Viernes,       13:55 PM,  A.19,  El Sistema Solar
-3, 38,   Lunes,         12:15 PM,  L.10,  Efecto invernadero causas y consecuencias 
-3, 38,   Lunes,         13:55 PM,  A.20,  El efecto invernadero
-3, 38,   Martes,        12:15 PM,  L.11,  Gases de efecto invernadero 
-3, 38,   Miércoles,     12:15 PM,  A.21,  Gases naturales
-3, 38,   Miércoles,     13:55 PM,  L.12,  Aumento de la temperatura del planeta 
-3, 38,   Viernes,       13:55 PM,  A.22,  Cambio Climático
-3, 39,   Lunes,         12:15 PM,  F.19,  ¿Calentamiento global o cambio climático?
-3, 39,   Lunes,         13:55 PM,  L.13,  Cuidado del ambiente 
-3, 39,   Martes,        12:15 PM,  A.23,  ¿Soy sustentable?
-3, 39,   Miércoles,     12:15 PM,  F.20,  Los guardianes del clima
+3, 36,   Viernes,       13:55 PM,  A.14,  El Universo a simple vista,   Plataforma
+3, 37,   Lunes,         12:15 PM,  A.15,  El telescopio y paralaje,   Plataforma
+3, 37,   Lunes,         13:55 PM,  A.16,  Exploración de cuerpos celestes por medio de ondas electromagnéticas,   Plataforma
+3, 37,   Martes,        12:15 PM,  L.9,   Sistema Solar ,   Libro
+3, 37,   Miércoles,     12:15 PM,  A.17,  El Sol,   Plataforma
+3, 37,   Miércoles,     13:55 PM,  A.18,  Estructura del Sol,   Plataforma
+3, 37,   Viernes,       13:55 PM,  A.19,  El Sistema Solar,   Plataforma
+3, 38,   Lunes,         12:15 PM,  L.10,  Efecto invernadero causas y consecuencias ,   Libro
+3, 38,   Lunes,         13:55 PM,  A.20,  El efecto invernadero,   Plataforma
+3, 38,   Martes,        12:15 PM,  L.11,  Gases de efecto invernadero ,   Libro
+3, 38,   Miércoles,     12:15 PM,  A.21,  Gases naturales,   Plataforma
+3, 38,   Miércoles,     13:55 PM,  L.12,  Aumento de la temperatura del planeta ,   Libro
+3, 38,   Viernes,       13:55 PM,  A.22,  Cambio Climático,   Plataforma
+3, 39,   Lunes,         12:15 PM,  F.19,  ¿Calentamiento global o cambio climático?,   Cuaderno de evidencias
+3, 39,   Lunes,         13:55 PM,  L.13,  Cuidado del ambiente ,   Libro
+3, 39,   Martes,        12:15 PM,  A.23,  ¿Soy sustentable?,   Plataforma
+3, 39,   Miércoles,     12:15 PM,  F.20,  Los guardianes del clima,   Cuaderno de evidencias
 3, 39,   Miércoles,     13:55 PM,      ,  ¿Qué aprendí?
 3, 39,   Viernes,       13:55 PM,  CTE ,  CTE,  CTE
 3, 40,   Lunes,         12:15 PM,  REPASO.REPASO,REPASO
