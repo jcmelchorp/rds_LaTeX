@@ -1,57 +1,74 @@
 Unit,  Week,  Day,           Time,        Key,               Activity,                                          Section
-2,     13,    Lunes,          9:10 AM,   
-2,     13,    Martes,        13:05 AM,   
-2,     13,    Miércoles,      7:00 AM,   
+2,     13,    Lunes,          9:10 AM,   L1,      El clima y la biodiversidad 
+2,     13,    Martes,        13:05 AM,   A.1,     ¿Qué conforma el clima?                     
+2,     13,    Martes,        13:05 AM,   A.2,     Hace calor en la costa y frío en las montañas
+2,     13,    Martes,        13:05 AM,   A.3,     Los climas de la Tierra 
+2,     13,    Miércoles,      7:00 AM,   A.4,     La geografía favorece la biodiversidad
+2,     13,    Miércoles,      7:00 AM,   A.5,     El clima y la biodiversidad                  
+2,     13,    Miércoles,      7:00 AM,   A.6,     Una gran biodiversidad                                   
 2,     13,    Viernes,        7:00 AM,   CTE,  CTE,  CTE
-2,     14,    Lunes,          9:10 AM,   
-2,     14,    Martes,        13:05 AM,   
-2,     14,    Miércoles,      7:00 AM,   
-2,     14,    Viernes,        7:00 AM,   
-2,     15,    Lunes,          9:10 AM,   
-2,     15,    Martes,        13:05 AM,   
-2,     15,    Miércoles,      7:00 AM,   
-2,     15,    Viernes,        7:00 AM,   
-2,     16,    Lunes,          9:10 AM,   
-2,     16,    Martes,        13:05 AM,   
-2,     16,    Miércoles,      7:00 AM,   
-2,     16,    Viernes,        7:00 AM,   
+2,     14,    Lunes,          9:10 AM,   L2,      Cambio climático y sus consecuencia                                                       
+2,     14,    Martes,        13:05 AM,   A.7,     El reto del cambio climático         
+2,     14,    Martes,        13:05 AM,   A.8,     Consecuencias del cambio climático                                                                           
+2,     14,    Miércoles,      7:00 AM,   L3,      Las regiones bioculturales en México y el mundo                                                                                               
+2,     14,    Viernes,        7:00 AM,   A.9,     Regiones bioculturales                                                         
+2,     14,    Viernes,        7:00 AM,   A.10,    Países bioculturales                                                                                                                 
+2,     15,    Lunes,          9:10 AM,   L4,      Origen y consecuencias de los desastres en México y el mundo
+2,     15,    Martes,        13:05 AM,   A.11,    Riesgos del agua y del cielo en la Tierra                                      
+2,     15,    Miércoles,      7:00 AM,   A.12,    Desastres en el ambiente: un riesgo para la humanidad                          
+2,     15,    Viernes,        7:00 AM,   F7,      El clima está cambiando y el mundo enfermando
+2,     16,    Lunes,          9:10 AM,   L5,      La cultura de prevención de desastre
+2,     16,    Martes,        13:05 AM,   A.13,    Sociedad y desastres                                                            
+2,     16,    Miércoles,      7:00 AM,   A.14,    La prevención de desastres una ardua tarea
+2,     16,    Viernes,        7:00 AM,   F8,      La prevención involucra a todo
 2,     19,    Lunes,          9:10 AM,   No hay clases
 2,     19,    Martes,        13:05 AM,   No hay clases
 2,     19,    Miércoles,      7:00 AM,   No hay clases
-2,     19,    Viernes,        7:00 AM,   
-2,     20,    Lunes,          9:10 AM,   
-2,     20,    Martes,        13:05 AM,   
-2,     20,    Miércoles,      7:00 AM,   
-2,     20,    Viernes,        7:00 AM,   
-2,     21,    Lunes,          9:10 AM,   
-2,     21,    Martes,        13:05 AM,   
-2,     21,    Miércoles,      7:00 AM,   
-2,     21,    Viernes,        7:00 AM,   
-2,     22,    Lunes,          9:10 AM,   
-2,     22,    Martes,        13:05 AM,   
-2,     22,    Miércoles,      7:00 AM,   
+2,     19,    Viernes,        7:00 AM,   L6,      Crecimiento distribución y composición de la población                                    
+2,     20,    Lunes,          9:10 AM,   A.15,    La población se multiplica                                                     
+2,     20,    Martes,        13:05 AM,   A.16,    Composición de la población                                                    
+2,     20,    Miércoles,      7:00 AM,   A.17,    ¿Qué ocurre cuando la población aumenta?                                       
+2,     20,    Viernes,        7:00 AM,   F9,      Población y bienestar
+2,     21,    Lunes,          9:10 AM,   L7,      Concentración y dispersión de la población: el espacio urbano y el rural
+2,     21,    Martes,        13:05 AM,   A.18,    Los citadinos del mundo
+2,     21,    Martes,        13:05 AM,   A.19,    La población se dispersa                                                       
+2,     21,    Martes,        13:05 AM,   A.20,    Sociedad y contaminación                                                       
+2,     21,    Miércoles,      7:00 AM,   F10,     Una ciudad al alcance
+2,     21,    Viernes,        7:00 AM,   L8,      La migración
+2,     22,    Lunes,          9:10 AM,   A.21,    ¿Por qué migran las personas?                                                  
+2,     22,    Lunes,          9:10 AM,   A.22,    La migración del campo a la ciudad                                             
+2,     22,    Lunes,          9:10 AM,   A.23,    Los migrantes llegaron                                                         
+2,     22,    Lunes,          9:10 AM,   A.24,    El dinero se mueve                                                             
+2,     22,    Martes,        13:05 AM,   F11,     Trabajo decente para los migrantes
+2,     22,    Miércoles,      7:00 AM,   L9,      Diversidad de grupos sociales y culturales.
 2,     22,    Viernes,        7:00 AM,   CTE,  CTE,  CTE 
 2,     23,    Lunes,          9:10 AM,   No hay clases
-2,     23,    Martes,        13:05 AM,   
-2,     23,    Miércoles,      7:00 AM,   
-2,     23,    Viernes,        7:00 AM,   
-2,     24,    Lunes,          9:10 AM,   
-2,     24,    Martes,        13:05 AM,   
-2,     24,    Miércoles,      7:00 AM,   
-2,     24,    Viernes,        7:00 AM,   
-2,     25,    Lunes,          9:10 AM,   
-2,     25,    Martes,        13:05 AM,   
-2,     25,    Miércoles,      7:00 AM,   
-2,     25,    Viernes,        7:00 AM,   
-2,     26,    Lunes,          9:10 AM,   
-2,     26,    Martes,        13:05 AM,   
-2,     26,    Miércoles,      7:00 AM,   
+2,     23,    Martes,        13:05 AM,   A.25,    La cultura trasciende fronteras
+2,     23,    Martes,        13:05 AM,   A.26,    México diverso en su cultura
+2,     23,    Martes,        13:05 AM,   A.27,    Las lenguas que se hablan en México
+2,     23,    Miércoles,      7:00 AM,   L10,     Espacios juveniles.
+2,     23,    Viernes,        7:00 AM,   L11,     Conflictos territoriales.
+2,     24,    Lunes,          9:10 AM,   A.28,    La disputa por la naturaleza
+2,     24,    Lunes,          9:10 AM,   A.29,    Los conflictos por la tierra
+2,     24,    Martes,        13:05 AM,   F12,     Jóvenes con esperanzas
+2,     24,    Miércoles,      7:00 AM,   L12,     Solución de conflictos territoriales.
+2,     24,    Viernes,        7:00 AM,   A.30,    Etapas para la solución de conflictos
+2,     25,    Lunes,          9:10 AM,   F13,     Un mundo que necesita paz
+2,     25,    Martes,        13:05 AM,   L13,     Procesos productivos y sus implicaciones.
+2,     25,    Miércoles,      7:00 AM,   A.31,    Etapas del proceso productivo
+2,     25,    Viernes,        7:00 AM,   F14,     Procesos productivos
+2,     26,    Lunes,          9:10 AM,   L14,     Producción agrícola y ganadera
+2,     26,    Martes,        13:05 AM,   A.32,    La diversidad ganadera en el mundo
+2,     26,    Martes,        13:05 AM,   A.33,    De dónde proviene lo que consumimos
+2,     26,    Miércoles,      7:00 AM,   L15,     Producción forestal y pesquera
 2,     26,    Viernes,        7:00 AM,   CTE,  CTE,  CTE
-2,     27,    Lunes,          9:10 AM,   
-2,     27,    Martes,        13:05 AM,   
-2,     27,    Miércoles,      7:00 AM,   
-2,     27,    Viernes,        7:00 AM,   
-2,     28,    Lunes,          9:10 AM,   
+2,     27,    Lunes,          9:10 AM,   A.34,    Bosques y selvas de México
+2,     27,    Lunes,          9:10 AM,   A.35,    Aprovechemos nuestros bosques
+2,     27,    Lunes,          9:10 AM,   A.36,    Pescado en la mesa
+2,     27,    Martes,        13:05 AM,   F15,     La riqueza del mar está en peligro
+2,     27,    Miércoles,      7:00 AM,   Qué aprendí        
+2,     27,    Viernes,        7:00 AM,   REPASO,REPASO,REPASO
+2,     28,    Lunes,          9:10 AM,   EXAMEN,EXAMEN,EXAMEN
 2,     28,    Martes,        13:05 AM,   
 2,     28,    Miércoles,      7:00 AM,   
 2,     28,    Viernes,        7:00 AM,   
@@ -59,3 +76,66 @@ Unit,  Week,  Day,           Time,        Key,               Activity,          
 2,     29,    Martes,        13:05 AM,   
 2,     29,    Miércoles,      7:00 AM,   
 2,     29,    Viernes,        7:00 AM,   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

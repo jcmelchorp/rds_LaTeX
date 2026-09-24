@@ -46,30 +46,178 @@ Contenido            Lección                Recurso interactivo             Tí
                         12              A.25.   Agua va, agua viene                                                                 74 
                         12              A.26.   Tomemos conciencia                                                                  79 
                         Qué aprendí     Qué aprendí                                                                                 80
-                                        A.    ¿Qué conforma el clima?                                                         88
-                                        A.    Hace calor en la costa y frío en las montañas                                     89
-                                        A.    Los climas de la Tierra                                                         90
-                                        A.    La geografía favorece la biodiversidad                                             91
-                                        A.    El clima y la biodiversidad                                                     92
-                                        A.    Una gran biodiversidad                                                             93
-                                        A.    El reto del cambio climático                                                     95
-                                        A.    Consecuencias del cambio climático                                                 97
-                                        A.    Regiones bioculturales                                                             101
-                                        A.    Países bioculturales                                                             105
-                                        A.    Riesgos del agua y del cielo en la Tierra                                         108
-                                        A.    Desastres en el ambiente: un riesgo para la humanidad                             110
-                                        A.    Sociedad y desastres                                                             116
-                                        A.    La prevención de desastres una ardua tarea                                         117
-                                        A.    La población se multiplica                                                         121
-                                        A.    Composición de la población                                                     122
-                                        A.    ¿Qué ocurre cuando la población aumenta?                                         123
-                                        A.    Los citadinos del mundo                                                         126
-                                        A.    La población se dispersa                                                         127
-                                        A.    Sociedad y contaminación                                                         129
-                                        A.    ¿Por qué migran las personas?                                                     131
-                                        A.    La migración del campo a la ciudad                                                 133
-                                        A.    Los migrantes llegaron                                                             134
-                                        A.    El dinero se mueve                                                                135
+                                        L1.      El clima y la biodiversidad 
+                        1               A.1.     ¿Qué conforma el clima?                                                         88
+                        1               A.2.     Hace calor en la costa y frío en las montañas                                     89
+                        1               A.3.     Los climas de la Tierra                                                         90
+                        1               A.4.     La geografía favorece la biodiversidad                                             91
+                        1               A.5.     El clima y la biodiversidad                                                     92
+                        1               A.6.     Una gran biodiversidad                                                             93
+                                        L2.      Cambio climático y sus consecuencias
+                        2               A.7.     El reto del cambio climático                                                     95
+                        2               A.8.     Consecuencias del cambio climático                                                 97
+                                        L3.      Las regiones bioculturales en México y el mundo
+                        3               A.9.     Regiones bioculturales                                                             101
+                        3               A.10.    Países bioculturales                                                             105
+                                        L4.      Origen y consecuencias de los desastres en México y el mundo
+                        4               A.11.    Riesgos del agua y del cielo en la Tierra                                         108
+                        4               A.12.    Desastres en el ambiente: un riesgo para la humanidad                             110
+                        4               F7.      El clima está cambiando y el mundo enfermando
+                                        L5.      La cultura de prevención de desastres
+                        5               A.13.    Sociedad y desastres                                                             116
+                        5               A.14.    La prevención de desastres una ardua tarea                                         117
+                        5.              F8.      La prevención involucra a todos
+                                        L6.      Crecimiento, distribución y composición de la población.
+                        6               A.15.    La población se multiplica                                                         121
+                        6               A.16.    Composición de la población                                                     122
+                        6               A.17.    ¿Qué ocurre cuando la población aumenta?                                         123
+                        6               F9.      Población y bienestar
+                                        L7.      Concentración y dispersión de la población: el espacio urbano y el rural.
+                        7               A.18.    Los citadinos del mundo                                                         126
+                        7               A.19.    La población se dispersa                                                         127
+                        7               A.20.    Sociedad y contaminación                                                         129
+                        7               F10.     Una ciudad al alcance
+                                        L8.      La migración
+                        8               A.21.    ¿Por qué migran las personas?                                                     131
+                        8               A.22.    La migración del campo a la ciudad                                                 133
+                        8               A.23.    Los migrantes llegaron                                                             134
+                        8               A.24.    El dinero se mueve                                                                135
+                        8               F11.     Trabajo decente para los migrantes
+                                        L9.      Diversidad de grupos sociales y culturales.
+                        9               A.25.    La cultura trasciende fronteras
+                        9               A.26.    México diverso en su cultura
+                        9               A.27.    Las lenguas que se hablan en México
+                                        L10.     Espacios juveniles.
+                                        L11.     Conflictos territoriales.
+                        11              A.28.    La disputa por la naturaleza
+                        11              A.29.    Los conflictos por la tierra
+                        11              F12.     Jóvenes con esperanzas
+                                        L12.     Solución de conflictos territoriales.
+                        12              A.30.    Etapas para la solución de conflictos
+                        12              F13.     Un mundo que necesita paz
+                                        L13.     Procesos productivos y sus implicaciones.
+                        13              A.31.    Etapas del proceso productivo
+                        13              F14.     Procesos productivos
+                                        L14.     Producción agrícola y ganadera
+                        14              A.32.    La diversidad ganadera en el mundo
+                        14              A.33.    De dónde proviene lo que consumimos
+                                        L15.     Producción forestal y pesquera
+                        15              A.34.    Bosques y selvas de México
+                        15              A.35.    Aprovechemos nuestros bosques
+                        15              A.36.    Pescado en la mesa
+                        15              F15.     La riqueza del mar está en peligro
+                        Qué aprendí     Qué aprendí        
+                        Me preparo      Me preparo                                          
+                                        L1.      Minería e Industria
+                        1               A.1.     ¿Qué necesita la industria?                          
+                        1               A.2.     Tipos de industria                                  
+                        1               A.3.     ¿Dónde se instala la industria?                      
+                        1               F16.     Construyendo el mañana: Innova crea y construye
+                                        L2.      Turismo
+                        2               A.4.     ¡Vámonos de vacaciones!                             
+                        2               A.5.     Turismo en el mundo                                 
+                                        L3.      Comercio y transporte
+                        3               A.6.     ¿Cómo trasladan lo que compramos?                   
+                        3               A.7.     ¿Con quién comercia México?    
+                                        L4.      Índices de bienestar
+                        4               A.8.     El Índice de Desarrollo Humano
+                        4               A.9.     Una vida mejor    
+                        4               F17.     ¿El pobre es pobre porque quiere?
+                                        L5.      Desigualdad socioeconómica
+                        5               A.10.    Países ricos y países pobres en un mundo globalizado 
+                        5               A.11.    Las diferencias socioeconómicas en el mundo 
+                        5               A.12.    Desigualdad y sus consecuencias 
+                                        F18.     Un mundo desigual
+                                        L6.      Problemáticas sociales y ambientales
+                        6               A.13.    ¿Cómo modifico el ambiente?     
+                        6               A.14.    ¿Qué problemas hay?     
+                        6               A.15.    Problemas en la comunidad    
+                        6               A.16.    Huella ecológica    
+                        6               A.17.    Calidad de vida    
+                                        L7.      Prácticas de producción, distribución y consumo sustentables
+                        7               A.18.    Estrategias para cuidar el ambiente 
+                        7               A.19.    Sustentabilidad ambiental, sustento de vida 
+                        7               A.20.    Consumo responsable
+                                        F19.     Piensa antes de comprar.
+                                        L8.      Prácticas sustentables en mi comunidad y en México
+                        8               A.21.    Desarrollo de un consumo sustentable
+                        8               A.22.    Servicios ambientales   
+                                        F20.     Energía geotérmica: un beneficio del vulcanismo
+                                        L9.      Alternativas sustentables de desarrollo social
+                        9               A.23.    Políticas para conseguir el desarrollo social
+                        9               A.24.    Agricultura sostenible
+                        9               A.25.    Necesidades y aspiraciones
+                                        L10.     Protección del suelo
+                        10              A.26.    Recuperemos el suelo
+                        10              A.27.    Medidas de protección
+                        10              A.28.    Medidas de recuperación
+                        Qué aprendí     Qué aprendí        
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+Minería, producción de energía e industria.
+Turismo
+Comercio y transporte
+Las desigualdades socioeconómicas en México y el mundo, y sus efectos en la calidad de vida de las personas.
+Los retos sociales y ambientales en la comunidad, en México y el mundo.
+Las prácticas de producción, distribución y consumo sustentables como alternativas para preservar el medio ambiente y asegurar el bienestar de las generaciones presentes y futuras.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

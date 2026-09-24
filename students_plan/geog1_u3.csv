@@ -1,35 +1,53 @@
-Unit,  Week,  Day,           Time,        Key,               Activity,                                          Section
-3,     32,    Lunes,          9:10 AM,
-3,     32,    Martes,        13:05 AM,
-3,     32,    Miércoles,      7:00 AM,
-3,     32,    Viernes,        7:00 AM,
-3,     33,    Lunes,          9:10 AM,
-3,     33,    Martes,        13:05 AM,
-3,     33,    Miércoles,      7:00 AM,
-3,     33,    Viernes,        7:00 AM,
-3,     34,    Lunes,          9:10 AM,
-3,     34,    Martes,        13:05 AM,
-3,     34,    Miércoles,      7:00 AM,
-3,     34,    Viernes,        7:00 AM,
-3,     35,    Lunes,          9:10 AM,
-3,     35,    Martes,        13:05 AM,
-3,     35,    Miércoles,      7:00 AM,   CTE, CTE, CTE
-3,     35,    Viernes,        7:00 AM,
-3,     36,    Lunes,          9:10 AM,
-3,     36,    Martes,        13:05 AM,
-3,     36,    Miércoles,      7:00 AM,   No hay clases
-3,     36,    Viernes,        7:00 AM,
-3,     37,    Lunes,          9:10 AM,
-3,     37,    Martes,        13:05 AM,
-3,     37,    Miércoles,      7:00 AM,
-3,     37,    Viernes,        7:00 AM,
-3,     38,    Lunes,          9:10 AM,
-3,     38,    Martes,        13:05 AM,
-3,     38,    Miércoles,      7:00 AM,
-3,     38,    Viernes,        7:00 AM,
-3,     39,    Lunes,          9:10 AM,
-3,     39,    Martes,        13:05 AM,
-3,     39,    Miércoles,      7:00 AM,
+Unit,  Week,  Day,           Time,         Key,               Activity,                                          Section
+3,     32,    Lunes,          9:10 AM,    L1,      Minería e Industria
+3,     32,    Martes,        13:05 AM,    A.1,     ¿Qué necesita la industria?                          
+3,     32,    Martes,        13:05 AM,    A.2,     Tipos de industria                                  
+3,     32,    Martes,        13:05 AM,    A.3,     ¿Dónde se instala la industria?                      
+3,     32,    Miércoles,      7:00 AM,    F16,     Construyendo el mañana: Innova crea y construye
+3,     32,    Viernes,        7:00 AM,    L2,      Turismo
+3,     33,    Lunes,          9:10 AM,    A.4,     ¡Vámonos de vacaciones!                             
+3,     33,    Lunes,          9:10 AM,    A.5,     Turismo en el mundo                                 
+3,     33,    Martes,        13:05 AM,    L3,      Comercio y transporte
+3,     33,    Miércoles,      7:00 AM,    A.6,     ¿Cómo trasladan lo que compramos?                   
+3,     33,    Miércoles,      7:00 AM,    A.7,     ¿Con quién comercia México?    
+3,     33,    Viernes,        7:00 AM,    L4,      Índices de bienestar
+3,     34,    Lunes,          9:10 AM,    A.8,     El Índice de Desarrollo Humano
+3,     34,    Martes,        13:05 AM,    A.9,     Una vida mejor    
+3,     34,    Martes,        13:05 AM,    F17,     ¿El pobre es pobre porque quiere?
+3,     34,    Miércoles,      7:00 AM,    L5,      Desigualdad socioeconómica
+3,     34,    Viernes,        7:00 AM,    A.10,    Países ricos y países pobres en un mundo globalizado 
+3,     35,    Lunes,          9:10 AM,    A.11,    Las diferencias socioeconómicas en el mundo 
+3,     35,    Lunes,          9:10 AM,    A.12,    Desigualdad y sus consecuencias 
+3,     35,    Lunes,          9:10 AM,    F18,     Un mundo desigual
+3,     35,    Martes,        13:05 AM,    L6,      Problemáticas sociales y ambientales
+3,     35,    Miércoles,      7:00 AM,    CTE, CTE, CTE
+3,     35,    Viernes,        7:00 AM,    A.13,    ¿Cómo modifico el ambiente?     
+3,     35,    Viernes,        7:00 AM,    A.14,    ¿Qué problemas hay?     
+3,     35,    Viernes,        7:00 AM,    A.15,    Problemas en la comunidad    
+3,     35,    Viernes,        7:00 AM,    A.16,    Huella ecológica    
+3,     35,    Viernes,        7:00 AM,    A.17,    Calidad de vida    
+3,     36,    Lunes,          9:10 AM,    L7,      Prácticas de producción distribución y consumo sustentables
+3,     36,    Martes,        13:05 AM,    A.18,    Estrategias para cuidar el ambiente 
+3,     36,    Martes,        13:05 AM,    A.19,    Sustentabilidad ambiental sustento de vida 
+3,     36,    Martes,        13:05 AM,    A.20,    Consumo responsable
+3,     36,    Miércoles,      7:00 AM,    No hay clases
+3,     36,    Viernes,        7:00 AM,    F19,     Piensa antes de comprar.
+3,     37,    Lunes,          9:10 AM,    L8,      Prácticas sustentables en mi comunidad y en México
+3,     37,    Martes,        13:05 AM,    A.21,    Desarrollo de un consumo sustentable
+3,     37,    Martes,        13:05 AM,    A.22,    Servicios ambientales   
+3,     37,    Miércoles,      7:00 AM,    F20,     Energía geotérmica: un beneficio del vulcanismo
+3,     37,    Viernes,        7:00 AM,    L9,      Alternativas sustentables de desarrollo social
+3,     38,    Lunes,          9:10 AM,    A.23,    Políticas para conseguir el desarrollo social
+3,     38,    Lunes,          9:10 AM,    A.24,    Agricultura sostenible
+3,     38,    Lunes,          9:10 AM,    A.25,    Necesidades y aspiraciones
+3,     38,    Martes,        13:05 AM,    L10,     Protección del suelo
+3,     38,    Miércoles,      7:00 AM,    A.26,    Recuperemos el suelo
+3,     38,    Viernes,        7:00 AM,    A.27,    Medidas de protección
+3,     37,    Viernes,        7:00 AM,    A.28,    Medidas de recuperación
+3,     37,    Viernes,        7:00 AM,    Qué aprendí        
+3,     39,    Lunes,          9:10 AM,    REPASO,REPASO,REPASO
+3,     39,    Martes,        13:05 AM,    REPASO,REPASO,REPASO
+3,     39,    Miércoles,      7:00 AM,    EXAMEN,EXAMEN,EXAMEN
 3,     39,    Viernes,        7:00 AM,    CTE, CTE, CTE
 3,     40,    Lunes,          9:10 AM,
 3,     40,    Martes,        13:05 AM,
