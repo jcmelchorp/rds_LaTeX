@@ -25,14 +25,14 @@ A.20. Resolución de problemas
 Números negativos 1
 A.21. Ubicación en la recta numérica
 A.22. Comparación de negativos
-A.23. Determina el signo
-A.24. Suma y resta con negativos 1
-A.25. Suma y resta con negativos 2
+A.23. Oraciones con números negativos
+A.24. Determina el signo en sumas y restas con negativos
+A.25. Determina el signo en multiplicación y división con negativos
 Números negativos 2
 A.26. Comparación de negativos
 A.27. Suma y resta con negativos
 A.28. Multiplicación y división con negativos
-A.29. Potencias con numeros negativos
+A.29. Potencias con números negativos
 A.30. Jerarquía de operaciones
 
 Números decimales
