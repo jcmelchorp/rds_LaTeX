@@ -209,7 +209,11 @@
 			"**/M1F1.aux": true,
 			"**/M1F1.log": true,
 			"**/M1F1.gz": true,
-			"**/M1F1.out": true
+			"**/M1F1.out": true,
+			"**/fisi_u1_acts.aux": true,
+			"**/fisi_u1_acts.log": true,
+			"**/fisi_u1_acts.gz": true,
+			"**/fisi_u1_acts.out": true
 		}
 	}
 }
