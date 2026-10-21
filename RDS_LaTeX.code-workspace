@@ -213,7 +213,23 @@
 			"**/fisi_u1_acts.aux": true,
 			"**/fisi_u1_acts.log": true,
 			"**/fisi_u1_acts.gz": true,
-			"**/fisi_u1_acts.out": true
+			"**/fisi_u1_acts.out": true,
+			"**/prueba_de_geograf_a.aux": true,
+			"**/prueba_de_geograf_a.log": true,
+			"**/prueba_de_geograf_a.gz": true,
+			"**/prueba_de_geograf_a.out": true,
+			"**/prueba_de_geograf_b.aux": true,
+			"**/prueba_de_geograf_b.log": true,
+			"**/prueba_de_geograf_b.gz": true,
+			"**/prueba_de_geograf_b.out": true,
+			"**/prueba_de_geograf_c.aux": true,
+			"**/prueba_de_geograf_c.log": true,
+			"**/prueba_de_geograf_c.gz": true,
+			"**/prueba_de_geograf_c.out": true,
+			"**/prueba_de_geograf_d.aux": true,
+			"**/prueba_de_geograf_d.log": true,
+			"**/prueba_de_geograf_d.gz": true,
+			"**/prueba_de_geograf_d.out": true
 		}
 	}
 }
