@@ -229,7 +229,11 @@
 			"**/prueba_de_geograf_d.aux": true,
 			"**/prueba_de_geograf_d.log": true,
 			"**/prueba_de_geograf_d.gz": true,
-			"**/prueba_de_geograf_d.out": true
+			"**/prueba_de_geograf_d.out": true,
+			"**/section1.aux": true,
+			"**/section1.log": true,
+			"**/section1.gz": true,
+			"**/section1.out": true
 		}
 	}
 }
