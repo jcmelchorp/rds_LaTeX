@@ -275,7 +275,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
 \newcounter{semana}
 \setcounter{semana}{0}
 \begin{multicols}{5}
-\loaddatafile{2}{math}{1}
+\loaddatafile{2}{phys}{1}
 \foreach \w in {1,...,10}{%{13,14,15,16,19,....,29}%%{32,...,45} {%
 \stepcounter{semana}
 \begin{tcbraster}[%
@@ -300,7 +300,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
 \end{tcbraster}%
 }
 
-\loaddatafile{2}{math}{2}
+\loaddatafile{2}{phys}{2}
 \foreach \w in {13,14,15,16,19,20,21,22,23,24,25,26,27,28,29}{%%{32,...,45} {%
 \stepcounter{semana}
 \begin{tcbraster}[%
@@ -311,7 +311,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
     raster every box/.style={valign=top}, 
     ]
 \dashedbox{%
-\begin{center}
+\begin{center} 
   \adjustbox{width=\textwidth}{\shadowtext{\disciplina} \qquad Semana \circled{\thesemana}} 
   \gradogrupo\\[0.2em]
 \adjustbox{width=\textwidth}{\cicloescolar \unitinfo}
@@ -325,7 +325,7 @@ left=0.5pt, right=0.5pt, top=2pt, bottom=0pt,toptitle=2pt,bottomtitle=2pt,
 \end{tcbraster}%
 }
 
-\loaddatafile{2}{math}{3}
+\loaddatafile{2}{phys}{3}
 \foreach \w in {32,...,41}{%
 \stepcounter{semana}
 \begin{tcbraster}[%

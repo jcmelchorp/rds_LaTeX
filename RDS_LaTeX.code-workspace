@@ -233,7 +233,11 @@
 			"**/section1.aux": true,
 			"**/section1.log": true,
 			"**/section1.gz": true,
-			"**/section1.out": true
+			"**/section1.out": true,
+			"**/2627-studentwork.aux": true,
+			"**/2627-studentwork.log": true,
+			"**/2627-studentwork.gz": true,
+			"**/2627-studentwork.out": true
 		}
 	}
 }
