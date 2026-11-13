@@ -44,8 +44,7 @@ A.21. Conversaciones entre escalas de temperatura
 A.22. ¿Cómo se mide la temperatura?
 P. Temperatura
 ¿Qué aprendí?
-Examen de Unidad 1
-Calificaciones de la Unidad 1
+
 Me preparo
 L.1. Movimiento
 A.1. ¿Trayectoria o desplazamiento?
@@ -127,8 +126,7 @@ A.42. Aprovechemos la energía solar
 F.14. ¿Por qué usar un calentador solar?
 P. Energia
 ¿Qué aprendí?
-Examen de Unidad 2
-Calificaciones de la Unidad 2
+
 Me preparo
 L.1. Electricidad
 A.1. Cargas en movimiento
@@ -181,5 +179,3 @@ A.23. ¿Soy sustentable?
 F.20. Los guardianes del clima
 P. Ambiente
 ¿Qué aprendí?
-Examen de Unidad 3
-Calificaciones de la Unidad 3

@@ -1,0 +1,155 @@
+Me preparo
+L1 El espacio geográfico
+A.1 ¿Mi espacio
+A.2 El componente que sobresale
+A.3 Saberes ancestrales
+F1 Los pueblos indígenas de evidencias   
+L2 Categorías de análisis del espacio geográfico
+A.4 ¿Qué categoría de análisis usarías
+L3 El estudio del espacio geográfico
+A.5 ¿Cuáles son las características del espacio geográfico
+L4 Representaciones cartográficas
+A.6 ¿Croquis planos o mapas
+A.7 Fotografía aérea
+L5 Interpretación y representación de la Información geográfica
+A.8 Representando la realidad
+A.9 ¿Para qué nos sirven los mapas
+F2 ¿Qué muestran los mapas? 
+L6 Tecnologías de la información geográfica
+A.10 ¿GPS O SIG
+A.11 ¿A qué sistema pertenece
+A.12 ¿Cómo funciona un SIG
+A.13 Aprendamos a leer el espacio geográfico
+L7 Las placas tectónicas (vulcanismo)
+A.14 ¡Viva! La Tierra viva 
+A.15 Sismicidad y vulcanismo
+A.16 México se mueve y erupciona
+F3 Un paso adelante 
+L8 Las placas tectónicas (relieve)
+A.17 De las montañas a las depresiones
+A.18 Relieves mexicanos
+A.19 Procesos externos de la Tierra
+L9 El suelo y su importancia
+A.20 Exploremos el suelo
+L10 Aguas continentales en México y el mundo
+F4 Planta sobre planta 
+A.21 Agua que has de tener
+F5 Cuencas y disponibilidad de agua limpia 
+L11 Las cuencas hidrográficas
+A.22 Cuando el río suena agua lleva
+A.23 Cuencas hídricas en el mundo
+A.24 Cuencas hídricas y economía
+F6 Océanos en peligro ¡Paremos la contaminación! 
+L12 Aguas oceánicas
+A.25 Agua va agua viene
+A.26 Tomemos conciencia
+Qué aprendí
+
+Me preparo
+L1 El clima y la biodiversidad
+A.1 ¿Qué conforma el clima
+A.2 Hace calor en la costa y frío en las montañas
+A.3 Los climas de la Tierra
+A.4 La geografía favorece la biodiversidad
+A.5 El clima y la biodiversidad
+A.6 Una gran biodiversidad
+L2 Cambio climático y sus consecuencia
+A.7 El reto del cambio climático
+A.8 Consecuencias del cambio climático
+L3 Las regiones bioculturales en México y el mundo
+A.9 Regiones bioculturales
+A.10 Países bioculturales
+L4 Origen y consecuencias de los desastres en México y el mund
+A.11 Riesgos del agua y del cielo en la Tierra
+A.12 Desastres en el ambiente: un riesgo para la humanidad
+F7 El clima está cambiando y el mundo enfermando 
+L5 La cultura de prevención de desastr
+A.13 Sociedad y desastres
+A.14 La prevención de desastres una ardua tarea
+F8 La prevención involucra a todo 
+L6 Crecimiento distribución y composición de la población
+A.15 La población se multiplica
+A.16 Composición de la población
+A.17 ¿Qué ocurre cuando la población aumenta
+F9 Población y bienestar 
+L7 Concentración y dispersión de la población: el espacio urbano y el rura
+A.18 Los citadinos del mundo
+A.19 La población se dispersa
+A.20 Sociedad y contaminación
+F10 Una ciudad al alcance 
+L8 La migració
+A.21 ¿Por qué migran las personas
+A.22 La migración del campo a la ciudad
+A.23 Los migrantes llegaron
+A.24 El dinero se mueve
+F11 Trabajo decente para los migrantes 
+L9 Diversidad de grupos sociales y culturales
+A.25 La cultura trasciende fronteras
+A.26 México diverso en su cultura
+A.27 Las lenguas que se hablan en México
+L10 Espacios juveniles
+L11 Conflictos territoriales
+A.28 La disputa por la naturaleza
+A.29 Los conflictos por la tierra
+F12 Jóvenes con esperanzas 
+L12 Solución de conflictos territoriales
+A.30 Etapas para la solución de conflictos
+F13 Un mundo que necesita paz 
+L13 Procesos productivos y sus implicaciones
+A.31 Etapas del proceso productivo
+F14 Procesos productivos 
+L14 Producción agrícola y ganader
+A.32 La diversidad ganadera en el mundo
+A.33 De dónde proviene lo que consumimos
+L15 Producción forestal y pesquer
+A.34 Bosques y selvas de México
+A.35 Aprovechemos nuestros bosques
+A.36 Pescado en la mesa
+F15 La riqueza del mar está en peligro 
+Qué aprendí
+
+Me preparo
+L1 Minería e Industria
+A.1 ¿Qué necesita la industria
+A.2 Tipos de industria
+A.3 ¿Dónde se instala la industria
+F16 Construyendo el mañana: Innova crea y construye 
+L2 Turismo
+A.4 ¡Vámonos de vacaciones
+A.5 Turismo en el mundo
+L3 Comercio y transporte
+A.6 ¿Cómo trasladan lo que compramos
+A.7 ¿Con quién comercia México
+L4 Índices de bienestar
+A.8 El Índice de Desarrollo Humano
+A.9 Una vida mejor
+F17 ¿El pobre es pobre porque quiere? 
+L5 Desigualdad socioeconómica
+A.10 Países ricos y países pobres en un mundo globalizado
+A.11 Las diferencias socioeconómicas en el mundo
+A.12 Desigualdad y sus consecuencias
+F18 Un mundo desigual 
+L6 Problemáticas sociales y ambientales
+A.13 ¿Cómo modifico el ambiente
+A.14 ¿Qué problemas hay
+A.15 Problemas en la comunidad
+A.16 Huella ecológica
+A.17 Calidad de vida
+L7 Prácticas de producción distribución y consumo sustentables
+A.18 Estrategias para cuidar el ambiente
+A.19 Sustentabilidad ambiental sustento de vida
+A.20 Consumo responsable
+F19 Piensa antes de comprar 
+L8 Prácticas sustentables en mi comunidad y en México
+A.21 Desarrollo de un consumo sustentable
+A.22 Servicios ambientales
+F20 Energía geotérmica: un beneficio del vulcanismo 
+L9 Alternativas sustentables de desarrollo social
+A.23 Políticas para conseguir el desarrollo social
+A.24 Agricultura sostenible
+A.25 Necesidades y aspiraciones
+L10 Protección del suelo
+A.26 Recuperemos el suelo
+A.27 Medidas de protección
+A.28 Medidas de recuperación
+Qué aprendí
