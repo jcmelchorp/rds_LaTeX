@@ -83,6 +83,7 @@
 \RequirePackage{float} %%% for \begin{figure}[H]
 \RequirePackage{cancel} %% for cancel math numbers, terms or expresions 
 \RequirePackage{etoolbox}
+\usepackage{xintfrac}  %%% Calcula resultado de fracciones y expresiones aritméticas
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1em}
 \setlength{\columnsep}{20pt}
@@ -395,6 +396,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
 
 
+\newcommand{\tipodoc}{\if@repaso Repaso \fi \if@examen Examen \fi}
 
 
 
@@ -504,7 +506,6 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
 
 
 
-
 \newcounter{numberofrows}
 \newcounter{numberofcolumns}
 
@@ -522,7 +523,7 @@ instructiontitle/.style={anchor=north west,fill=white,style=rounded corners,yshi
     \firstpageheader{}{}{}
     \titledoc
     \firstpagefooter{}{\color{colorrds}\thepage \ de \numpages}{}
-    \runningheader{\color{SubjectColor}\themateria}{Examen \@title \ \theunidad \ \thecontrol}{\color{MainColor}\thegrado$^\circ$ de \thenivel}
+    \runningheader{\color{SubjectColor}\themateria}{  \tipodoc \@title \ \theunidad \ \thecontrol}{\color{MainColor}\thegrado$^\circ$ de \thenivel}
     \runningfooter{}{\color{colorrds}\thepage \ de \numpages}{}
     \runningheadrule
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TIKZPICTURE ZONE %%%%%%%%%%%%
